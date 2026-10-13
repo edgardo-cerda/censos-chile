@@ -1,4 +1,4 @@
-"""Tabulado de población por región, área, sexo y edad quinquenal, 1982–2024 (desde microdatos).
+"""Tabulado de población por región, área, sexo y edad quinquenal, 1992–2024 (desde microdatos).
 
 Lee las tablas en Parquet generadas por herramientas/inventario_microdatos.py (carpeta `cache`
 de config.yaml) y escribe productos/tabulados/poblacion_microdatos.csv con el esquema de
@@ -7,7 +7,7 @@ metadatos/esquema_tabulados.yaml.
 Cada fila es una celda disjunta (región × área × sexo × tramo de edad); los totales se obtienen
 sumando. La región se entrega en dos versiones de la DPA, ambas exactas porque las regiones
 creadas en 2007 y 2018 son uniones de comunas completas:
-  - DPA1974: 13 regiones (vigente en 1982, 1992 y 2002).
+  - DPA1974: 13 regiones (vigente en 1992 y 2002).
   - DPA2018: 16 regiones (vigente en 2017 y 2024).
 
 Uso:
@@ -31,24 +31,6 @@ EDAD_TOPE = 85
 # Expresiones SQL por censo. Cada consulta entrega una fila por persona con:
 #   region16 (DPA2018), area (1 urbano / 2 rural), sexo (1 hombre / 2 mujer), edad (NULL = ignorada).
 CONSULTAS = {
-    # 1982: comuna con codificación propia; la provincia sale de Rpc_habitual (región*10 + provincia)
-    # de quienes residen habitualmente en la comuna en que fueron censados (moda por comuna).
-    1982: """
-        WITH p AS (SELECT * FROM '{cache}/1982_personas.parquet'),
-        prov AS (
-            SELECT Comuna, mode(try_cast(Rpc_habitual AS INT)) AS rpc
-            FROM p WHERE Comuna_habitual = Comuna AND try_cast(Rpc_habitual AS INT) > 0
-            GROUP BY Comuna
-        )
-        SELECT CASE WHEN rpc IN (11, 12) THEN 15      -- Arica y Parinacota
-                    WHEN rpc = 101 THEN 14            -- Valdivia -> Los Ríos
-                    WHEN rpc = 81 THEN 16             -- Ñuble
-                    ELSE rpc // 10 END               AS region16,
-               p.Area::INT                            AS area,
-               p.Sexo::INT                            AS sexo,
-               p.Edad::INT                            AS edad
-        FROM p JOIN prov USING (Comuna)
-    """,
     # 1992: comunas en DPA de 15 regiones (códigos "Origen 3"); Ñuble = provincia 84.
     1992: """
         SELECT CASE WHEN g.Comuna::INT // 100 = 84 THEN 16 ELSE g.Comuna::INT // 1000 END AS region16,
@@ -75,8 +57,7 @@ CONSULTAS = {
     """,
 }
 
-FUENTES = {1982: "micro_1982", 1992: "micro_1992", 2002: "micro_2002",
-           2017: "micro_2017", 2024: "micro_2024"}
+FUENTES = {1992: "micro_1992", 2002: "micro_2002", 2017: "micro_2017", 2024: "micro_2024"}
 
 
 def main() -> None:

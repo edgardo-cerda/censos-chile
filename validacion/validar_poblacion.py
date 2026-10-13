@@ -2,7 +2,8 @@
 
 Uso:
   python validacion/validar_poblacion.py
-Sale con código 1 si alguna cifra difiere.
+Solo contrasta los censos presentes en el tabulado (1992 en adelante); las referencias de 1982
+quedan como cifras publicadas para el tabulado digitalizado. Sale con código 1 si alguna cifra difiere.
 """
 
 import sys
@@ -28,7 +29,8 @@ filas = duckdb.sql(f"""
               AND (r.area = '_T' OR t.area = r.area)
               AND (r.sexo = '_T' OR t.sexo = r.sexo))::BIGINT AS microdatos,
            r.fuente_id, r.cuadro
-    FROM r ORDER BY 1, 2, 3
+    FROM r WHERE r.censo::INT IN (SELECT DISTINCT censo FROM t)
+    ORDER BY 1, 2, 3
 """).fetchall()
 
 errores = 0

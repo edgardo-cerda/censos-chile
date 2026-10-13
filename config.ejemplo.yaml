@@ -10,10 +10,6 @@ memoria_duckdb: "4GB"
 
 # Tablas de microdatos, rutas relativas a datos_originales.
 microdatos:
-  1982:
-    viviendas: cpv1982/CPV1982_Censo_1982_Vivienda.csv
-    hogares: cpv1982/CPV1982_Censo_1982_Hogar.csv
-    personas: cpv1982/CPV1982_Censo_1982_Persona.csv
   1992:
     portafolios: cpv1992/PORTAFOLIOS_1992.csv
     viviendas: cpv1992/VIVIENDAS_1992.csv

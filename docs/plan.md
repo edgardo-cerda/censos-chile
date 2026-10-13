@@ -23,7 +23,7 @@ librerías de Python y R, archivos descargables y un sitio de documentación.
 ### A. Tabulados armonizados (1813–2024)
 
 Formato largo con el esquema de [metadatos/esquema_tabulados.yaml](../metadatos/esquema_tabulados.yaml).
-Hasta 1970 provienen de la digitalización de los libros; desde 1982 se calculan con los
+Hasta 1982 provienen de la digitalización de los libros; desde 1992 se calculan con los
 microdatos y se contrastan con las cifras publicadas en su momento.
 
 Decisiones de diseño:
@@ -32,7 +32,10 @@ Decisiones de diseño:
 - El territorio se guarda con su código y nombre originales, la versión de DPA vigente y,
   cuando es posible, su correspondencia con la DPA 2024.
 
-### B. Microdatos armonizados (1982–2024)
+### B. Microdatos armonizados (1992–2024)
+
+Los microdatos de 1982 existen pero se descartaron por problemas de codificación y documentación
+(ver [notas_microdatos.md](notas_microdatos.md)); 1982 se trata como un censo con publicaciones.
 
 Tablas de viviendas, hogares y personas por censo con:
 - identificadores comunes (`censo`, `id_vivienda`, `id_hogar`, `id_persona`),
@@ -53,26 +56,26 @@ Tablas de viviendas, hogares y personas por censo con:
 ### Fase 0: base del proyecto
 - [x] Repositorio, licencias (MIT para el código, CC BY 4.0 para los datos) y estructura.
 - [ ] Completar `fuentes.yaml`: URL directas de 2024 y de los PDF históricos; números de solicitud
-      de transparencia de 1982, 1992 y 2002 (pendiente).
+      de transparencia de 1992 y 2002 (pendiente).
 - [ ] Ubicar los censos sin publicación digital local (1843, 1854, 1875, 1885, 1895).
 
 ### Fase 1: inventarios
-- [x] Inventario automático de microdatos 1982–2024 (`herramientas/inventario_microdatos.py`).
+- [x] Inventario automático de microdatos 1992–2024 (`herramientas/inventario_microdatos.py`).
       Hallazgos en [notas_microdatos.md](notas_microdatos.md).
 - [ ] Matriz de concordancia concepto × censo para microdatos (borrador listo; falta verificar
-      1982 y 2002 contra sus cuestionarios).
-- [ ] Obtener cuestionarios y libros de códigos de 1982 y 2002.
+      2002 contra su cuestionario).
+- [ ] Obtener cuestionario y libro de códigos de 2002 (y cuestionario de 1982 para la digitalización).
 - [ ] Catálogo de cuadros de las publicaciones: censo, número, título, variables,
       desagregación, nivel territorial, página impresa y página del PDF.
 
 ### Fase 2: núcleo (primera versión pública)
 - [ ] Variables núcleo armonizadas: región, área, sexo y edad (fichas en borrador);
-      parentesco y tipo de vivienda (esperan cuestionarios de 1982 y 2002).
+      parentesco y tipo de vivienda (esperan el cuestionario de 2002).
 - [x] Serie de población por región (DPA1974 y DPA2018) × área × sexo × edad quinquenal,
-      1982–2024, desde microdatos (`pipelines/poblacion_nucleo.py`).
-- [ ] Serie por comuna (requiere correspondencia de comunas 1982 y 1992 -> DPA2018).
-- [ ] Validación de microdatos contra los libros publicados (`validacion/`): 1982 y 1992 cargados;
-      1982 difiere en área urbana/rural (ver ficha `area.yaml`).
+      1992–2024, desde microdatos (`pipelines/poblacion_nucleo.py`).
+- [ ] Serie por comuna (requiere correspondencia de comunas 1992 -> DPA2018).
+- [ ] Validación de microdatos contra los libros publicados (`validacion/`): 1992 coincide;
+      faltan cifras publicadas regionales y de 2002, 2017 y 2024.
 - [ ] Librerías Python y R v0.1: `tabulado()`, `microdatos()`, `diccionario()`, `territorio()`.
 - [ ] Sitio de documentación.
 
@@ -81,7 +84,7 @@ Uno a la vez, con el mismo flujo (ficha → correspondencia por censo → códig
 educación; vivienda y servicios; migración y lugar de nacimiento; trabajo (ocupación y rama);
 hogares; fecundidad; pueblos originarios; discapacidad y religión.
 
-### Fase 4: digitalización histórica (1813–1970)
+### Fase 4: digitalización histórica (1813–1982)
 Catálogo de cuadros → render de página → OCR o transcripción asistida → doble verificación →
 controles aritméticos → CSV con fuente. Prioridad según demanda y cobertura del núcleo.
 

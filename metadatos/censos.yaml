@@ -56,7 +56,11 @@ censos:
     microdatos: no
   - anio: 1982
     publicaciones: [pub_1982_v1, pub_1982_v2, pub_1982_v3]
-    microdatos: si
+    microdatos: no
+    notas: >
+      Existen microdatos (entregados por transparencia) pero se descartaron: codificación de comunas
+      propia sin tabla de nombres, sin libro de códigos y área urbana/rural que no reproduce lo publicado.
+      Los resultados de 1982 se toman de los volúmenes publicados (ver docs/notas_microdatos.md).
   - anio: 1992
     publicaciones: [pub_1992]
     microdatos: si

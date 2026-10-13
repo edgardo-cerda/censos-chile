@@ -19,7 +19,7 @@ categorias:
 
 # Una entrada por censo con microdatos (y por publicación, si aplica).
 censos:
-  1982:
+  1992:
     tabla: personas
     variables_originales: [Variable]
     pregunta: null             # texto de la pregunta en el cuestionario, si se conoce

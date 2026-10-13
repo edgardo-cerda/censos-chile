@@ -121,13 +121,6 @@ publicaciones:
     capa_texto: si
 
 microdatos:
-  - id: micro_1982
-    censo: 1982
-    acceso: transparencia
-    solicitud: null  # pendiente: número y fecha de la solicitud
-    formato_original: [csv, sav]
-    tablas: [viviendas, hogares, personas]
-    documentacion: [Cuestionario Censal.xls]
   - id: micro_1992
     censo: 1992
     acceso: transparencia

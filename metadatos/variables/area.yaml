@@ -12,15 +12,6 @@ nota_armonizacion: >
   La definición de área urbana cambia entre censos (umbral de población, actividad económica,
   amanzanamiento). La variable se toma tal como la clasificó cada censo y no se reconstruye.
 censos:
-  1982:
-    tabla: personas / viviendas / hogares
-    variables_originales: [Area]
-    recodificacion: {1: 1, 2: 2}
-    comparabilidad: >
-      No coincide con lo publicado: los microdatos clasifican 239.897 personas más como rurales que
-      el Cuadro 1.01 del volumen I. La diferencia se concentra en localidades de categoría 11 y 12
-      clasificadas rurales (237.778 personas). Pendiente de resolver con la documentación de 1982.
-    estado: borrador
   1992:
     tabla: portafolios
     variables_originales: [Area]

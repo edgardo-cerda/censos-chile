@@ -1,57 +1,57 @@
-tema,concepto,unidad,v1982,v1992,v2002,v2017,v2024,estado,nota
-identificacion,vivienda,vivienda,Comuna+Distrito+zona+Manzana+Sector+Vivienda,Portafolio+Vivienda,Portafolio+VN,COMUNA+ID_ZONA_LOC+NVIV,id_vivienda,borrador,"Construir id_vivienda único por censo. 2002 trae además VN_Renumerado."
-identificacion,hogar,hogar,…+Hogar,Portafolio+Vivienda+Hogar,Portafolio+VN+HN,…+NHOGAR,id_vivienda+id_hogar,borrador,"2002 no tiene tabla de hogares: las variables de hogar están en viviendas (por verificar)."
-identificacion,persona,persona,…+Persona,…+Persona,…+PN,…+PERSONAN,id_vivienda+id_hogar+id_persona,borrador,
-territorio,region,todas,derivar de Comuna,PORTAFOLIOS.Comuna → región,PORTAFOLIOS.Comuna → región,REGION; REGION_15R,region,borrador,"2002 y 2017 vienen en DPA de 16 regiones (con Ñuble). 2017 trae además la versión de 15 regiones."
-territorio,comuna,todas,Comuna,PORTAFOLIOS.Comuna,PORTAFOLIOS.Comuna,COMUNA; COMUNA_15R,comuna,borrador,"1982 usa una codificación propia (201–674): requiere tabla de correspondencia. 1992 en CUT de la época; 2002 recodificado a DPA 2018."
-territorio,distrito_censal,todas,Distrito,PORTAFOLIOS.Distrito,PORTAFOLIOS.Distrito,DC,—,borrador,"No publicado en los microdatos 2024 de personas."
-territorio,area,todas,Area,PORTAFOLIOS.Area,PORTAFOLIOS.Area,AREA,area,borrador,"1 = urbano, 2 = rural en todos (por verificar). La definición de urbano cambia entre censos."
-territorio,localidad_entidad,todas,Localidad; Categoria,PORTAFOLIOS.Cod_Loc; Cod_Ent; Cod_Cat,PORTAFOLIOS.COD_ZONA_LOCALIDAD; COD_MANZANA_ENTIDAD; CATEGORIA,ZC_LOC; ID_ZONA_LOC,—,borrador,
-demografia,sexo,persona,Sexo,Sexo,P18,P08,sexo,borrador,"1 = hombre, 2 = mujer en todos."
-demografia,edad,persona,Edad,Edad,P19,P09,edad,borrador,"1982 y 1992: 0–99. 2002: 0–108. 2024: tope 85 y −66 = suprimido por anonimización."
-demografia,parentesco,persona,Parentesco,Parentesco,P17,P07,parentesco,borrador,"Número de categorías: 10 (1982), 13 (1992), 16 (2002), 19 (2017), 19 (2024). Armonizar a categorías generales."
-demografia,estado_civil,persona,Estado_civil,Estado_civil,P27,—,p23_est_civil,borrador,"Universo: 12+ (1982, por verificar), 14+ (1992), 15+ (2002, 2024). No se preguntó en 2017. 2024 agrega acuerdo de unión civil."
-etnia,pueblo_originario,persona,—,Cultura,P21,P16; P16A,p28_autoid_pueblo; p28_pueblo_pert,borrador,"1992: solo 14+ y 3 pueblos (pregunta por 'cultura'). 2002: pertenencia. 2017 y 2024: autoidentificación. Comparabilidad baja."
-etnia,afrodescendencia,persona,—,—,—,—,p29_afrodescendencia,borrador,Solo 2024.
-etnia,lengua_indigena,persona,—,—,—,—,p30_lengua_indigena,borrador,Solo 2024.
-etnia,religion,persona,—,Religion,P28,—,p31_religion,borrador,"Universo 14+ (1992), 15+ (2002)."
-salud,discapacidad,persona,—,Ceguera; Sordera; Mudez; Paralisis; Def_mental; Ninguna,P20_1 … P20_6,—,p32a … p32f; discapacidad,borrador,"1992 y 2002: deficiencias específicas. 2024: dificultades (Grupo de Washington). No comparables directamente."
-migracion,lugar_nacimiento,persona,Comuna_nacimiento; Rpc_nacimiento,Comuna_Madre_Origen3,P22A; P22B,P12; P12COMUNA; P12PAIS,p25_lug_nacimiento; p25_lug_nacimiento_rec,borrador,"1992 y 2002: comuna de residencia de la madre al nacer (por verificar en 2002). Códigos de comuna en distintas DPA."
-migracion,anio_llegada,persona,—,Año_llegada_pais,P22C,P12A_LLEGADA; P12A_TRAMO,p26_llegada_periodo,borrador,"P22C de 2002 por verificar."
-migracion,nacionalidad,persona,Nacional,—,—,—,p27_nacionalidad,borrador,"1982: variable con valores irregulares y mayoría vacía; revisar contra cuestionario."
-migracion,residencia_habitual,persona,Comuna_habitual; Rpc_habitual,Comuna_habitual_Origen3,P23A; P23B,P10; P10COMUNA; P10PAIS,—,borrador,"2024 es censo de derecho: no aplica."
-migracion,residencia_5_anios,persona,Comuna_1977; Rpc_1977,Comuna_1987_Origen3,P24A; P24B,P11; P11COMUNA; P11PAIS,p24_lug_resid5,borrador,
-educacion,alfabetismo,persona,Sabe_leer,Leer,P25,—,p37_alfabet,borrador,"1982: solo 2,8 millones con respuesta (universo restringido, por verificar). No se preguntó en 2017."
-educacion,asistencia,persona,Asiste,—,—,P13,p33_edu_asiste,borrador,"1992 y 2002: no hay pregunta separada identificada (puede estar dentro del tipo de enseñanza o de la condición de actividad)."
-educacion,nivel_educacional,persona,Tipo_educacion; Curso,Tipo_educacion; Curso,P26A; P26B,P15; P14; P15A,cine11,borrador,"Clasificaciones distintas en cada censo: requiere tabla de correspondencia a niveles generales (y CINE donde se pueda)."
-educacion,anios_estudio,persona,Anios_estudio_aprobado,derivar,derivar,ESCOLARIDAD,escolaridad,borrador,
-trabajo,condicion_actividad,persona,Situacion_empleo,Situacion_empleo,P29,P17,sit_fuerza_trabajo,borrador,"Periodo de referencia: semana anterior. Universo: 12+ (1982, por verificar), 14+ (1992), 15+ (2002, 2017, 2024)."
-trabajo,ocupacion,persona,Ocupacion,Ocupacion,P31,—,cod_ciuo,borrador,"Clasificación por verificar en 1982 y 1992; 2002 a 2 dígitos; 2024 CIUO-08."
-trabajo,rama_actividad,persona,Rama_actividad,Rama_actividad,P32,P18,cod_caenes,borrador,"1982 y 1992 por verificar; 2002 CIIU a 2 dígitos; 2017 secciones (letras); 2024 CAENES."
-trabajo,categoria_ocupacional,persona,Categoria_ocup,Categoria_ocupacional,P30,—,p40_cise_rec,borrador,
-trabajo,lugar_trabajo,persona,—,—,P33A; P33B_Readecuada_origen4,—,p44_lug_trab,borrador,
-trabajo,medio_transporte,persona,—,—,—,—,p45_medio_transporte,borrador,Solo 2024.
-fecundidad,hijos_nacidos_vivos,persona,Hijos_nacidosvivos; Hijos_asignado,Hijos_nacidos_vivos,P34,P19,p46a_tot_hijs_nac,borrador,"Universo: mujeres en edad fértil o mayores (por verificar en cada censo)."
-fecundidad,hijos_sobrevivientes,persona,Hijos_sobrevivientes,Hijos_vivos,P35,P20,p47a_tot_hijs_sobrev,borrador,
-fecundidad,fecha_ultimo_hijo,persona,Ultimo_anio; Hijos_ultimo_anio,Mes_ultimo_hijo; Año_ultimo_hijo,P36A; P36B,P21M; P21A,—,borrador,
-vivienda,tipo_vivienda,vivienda,Tipo_vivienda,Tipo_vivienda,V1,P01,p2_tipo_vivienda; tipo_operativo,borrador,"2024 separa vivienda colectiva y personas en situación de calle en tipo_operativo."
-vivienda,condicion_ocupacion,vivienda,Cond_ocupacion,Cond_ocupacion,V2,P02,p3a_estado_ocupacion; p3b_estado_ocupacion,borrador,
-vivienda,material_paredes,vivienda,Pared,Paredes,V4A,P03A,p4a_mat_paredes,borrador,
-vivienda,material_techo,vivienda,Techo,Techo,V4B,P03B,p4b_mat_techo,borrador,
-vivienda,material_piso,vivienda,Piso,Piso,V4C,P03C,p4c_mat_piso,borrador,
-vivienda,alumbrado_electrico,vivienda,Alumbrado,Alumbrado_electrico,V5,—,p9_fuente_elect,borrador,
-vivienda,origen_agua,vivienda,Origen_agua,Origen_agua,V6,P05,p6_fuente_agua,borrador,
-vivienda,distribucion_agua,vivienda,Agua_sino; Agua_canieria,Agua_cañeria,V7,—,p7_distrib_agua,borrador,
-vivienda,servicio_higienico,vivienda,Excusado_sino; Excusado_uso; Excusado_conexion,Servicio_Higienico,V8,—,p8_serv_hig,borrador,
-vivienda,ducha,vivienda,Ducha_sino; Ducha_uso,Ducha,—,—,—,borrador,
-vivienda,eliminacion_basura,vivienda,—,—,—,—,p10_basura,borrador,Solo 2024.
-vivienda,total_piezas,vivienda,Total_piezas,Total_piezas,V10A,—,—,borrador,
-vivienda,dormitorios,vivienda,Dormitorio; Dormitorio_otro,USO_PIEZAS / HOGAR.Pieza_dormir,V10B_*,P04,p5_num_dormitorios,borrador,"En 1982 y 1992 está en la tabla de hogares."
-vivienda,cantidad_hogares,vivienda,derivar,Hogares,V11 (por verificar),CANT_HOG,cant_hog,borrador,
-vivienda,cantidad_personas,vivienda,derivar,derivar,derivar,CANT_PER,cant_per,borrador,
-hogar,tenencia,hogar,Tenencia,VIVIENDAS.Cond_tenencia,V3 (por verificar),—,p12_tenencia_viv,borrador,"1992 está en viviendas; 1982 y 2024 en hogares."
-hogar,combustible_cocina,hogar,Combustible,Combustible,V9 (por verificar),—,p13_comb_cocina,borrador,
-hogar,combustible_calefaccion,hogar,—,—,—,—,p14_comb_calefaccion,borrador,Solo 2024.
-hogar,equipamiento,hogar,Radio; Tv_bn; Tv_color; Lavadora; Refrigerador; Telefono; …,Radio; TV_BN; TV_Color; Lavadora; Refrigerador; Telefono; Celular; …,—,—,p15a … p15f (TIC),borrador,"2002 y 2017 sin bienes en los microdatos (por verificar 2002). 2024 solo servicios TIC."
-hogar,vehiculos,hogar,Bicicleta; Moto; Auto,*_Part; *_Trab,—,—,—,borrador,
-hogar,tipo_hogar,hogar,Tipo_familia_1; Tipo_familia_2,derivar,derivar,TIPO_HOGAR,tipologia_hogar,borrador,
+tema,concepto,unidad,v1992,v2002,v2017,v2024,estado,nota
+identificacion,vivienda,vivienda,Portafolio+Vivienda,Portafolio+VN,COMUNA+ID_ZONA_LOC+NVIV,id_vivienda,borrador,Construir id_vivienda único por censo. 2002 trae además VN_Renumerado.
+identificacion,hogar,hogar,Portafolio+Vivienda+Hogar,Portafolio+VN+HN,…+NHOGAR,id_vivienda+id_hogar,borrador,2002 no tiene tabla de hogares: las variables de hogar están en viviendas (por verificar).
+identificacion,persona,persona,…+Persona,…+PN,…+PERSONAN,id_vivienda+id_hogar+id_persona,borrador,
+territorio,region,todas,PORTAFOLIOS.Comuna → región,PORTAFOLIOS.Comuna → región,REGION; REGION_15R,region,borrador,2002 y 2017 vienen en DPA de 16 regiones (con Ñuble). 2017 trae además la versión de 15 regiones.
+territorio,comuna,todas,PORTAFOLIOS.Comuna,PORTAFOLIOS.Comuna,COMUNA; COMUNA_15R,comuna,borrador,1992 en CUT de la época; 2002 recodificado a DPA 2018.
+territorio,distrito_censal,todas,PORTAFOLIOS.Distrito,PORTAFOLIOS.Distrito,DC,—,borrador,No publicado en los microdatos 2024 de personas.
+territorio,area,todas,PORTAFOLIOS.Area,PORTAFOLIOS.Area,AREA,area,borrador,"1 = urbano, 2 = rural en todos (por verificar). La definición de urbano cambia entre censos."
+territorio,localidad_entidad,todas,PORTAFOLIOS.Cod_Loc; Cod_Ent; Cod_Cat,PORTAFOLIOS.COD_ZONA_LOCALIDAD; COD_MANZANA_ENTIDAD; CATEGORIA,ZC_LOC; ID_ZONA_LOC,—,borrador,
+demografia,sexo,persona,Sexo,P18,P08,sexo,borrador,"1 = hombre, 2 = mujer en todos."
+demografia,edad,persona,Edad,P19,P09,edad,borrador,1992: 0–99. 2002: 0–108. 2024: tope 85 y −66 = suprimido por anonimización.
+demografia,parentesco,persona,Parentesco,P17,P07,parentesco,borrador,"Número de categorías: 13 (1992), 16 (2002), 19 (2017), 19 (2024). Armonizar a categorías generales."
+demografia,estado_civil,persona,Estado_civil,P27,—,p23_est_civil,borrador,"Universo: 14+ (1992), 15+ (2002, 2024). No se preguntó en 2017. 2024 agrega acuerdo de unión civil."
+etnia,pueblo_originario,persona,Cultura,P21,P16; P16A,p28_autoid_pueblo; p28_pueblo_pert,borrador,1992: solo 14+ y 3 pueblos (pregunta por 'cultura'). 2002: pertenencia. 2017 y 2024: autoidentificación. Comparabilidad baja.
+etnia,afrodescendencia,persona,—,—,—,p29_afrodescendencia,borrador,Solo 2024.
+etnia,lengua_indigena,persona,—,—,—,p30_lengua_indigena,borrador,Solo 2024.
+etnia,religion,persona,Religion,P28,—,p31_religion,borrador,"Universo 14+ (1992), 15+ (2002)."
+salud,discapacidad,persona,Ceguera; Sordera; Mudez; Paralisis; Def_mental; Ninguna,P20_1 … P20_6,—,p32a … p32f; discapacidad,borrador,1992 y 2002: deficiencias específicas. 2024: dificultades (Grupo de Washington). No comparables directamente.
+migracion,lugar_nacimiento,persona,Comuna_Madre_Origen3,P22A; P22B,P12; P12COMUNA; P12PAIS,p25_lug_nacimiento; p25_lug_nacimiento_rec,borrador,1992 y 2002: comuna de residencia de la madre al nacer (por verificar en 2002). Códigos de comuna en distintas DPA.
+migracion,anio_llegada,persona,Año_llegada_pais,P22C,P12A_LLEGADA; P12A_TRAMO,p26_llegada_periodo,borrador,P22C de 2002 por verificar.
+migracion,nacionalidad,persona,—,—,—,p27_nacionalidad,borrador,
+migracion,residencia_habitual,persona,Comuna_habitual_Origen3,P23A; P23B,P10; P10COMUNA; P10PAIS,—,borrador,2024 es censo de derecho: no aplica.
+migracion,residencia_5_anios,persona,Comuna_1987_Origen3,P24A; P24B,P11; P11COMUNA; P11PAIS,p24_lug_resid5,borrador,
+educacion,alfabetismo,persona,Leer,P25,—,p37_alfabet,borrador,No se preguntó en 2017.
+educacion,asistencia,persona,—,—,P13,p33_edu_asiste,borrador,1992 y 2002: no hay pregunta separada identificada (puede estar dentro del tipo de enseñanza o de la condición de actividad).
+educacion,nivel_educacional,persona,Tipo_educacion; Curso,P26A; P26B,P15; P14; P15A,cine11,borrador,Clasificaciones distintas en cada censo: requiere tabla de correspondencia a niveles generales (y CINE donde se pueda).
+educacion,anios_estudio,persona,derivar,derivar,ESCOLARIDAD,escolaridad,borrador,
+trabajo,condicion_actividad,persona,Situacion_empleo,P29,P17,sit_fuerza_trabajo,borrador,"Periodo de referencia: semana anterior. Universo: 14+ (1992), 15+ (2002, 2017, 2024)."
+trabajo,ocupacion,persona,Ocupacion,P31,—,cod_ciuo,borrador,Clasificación por verificar en 1992; 2002 a 2 dígitos; 2024 CIUO-08.
+trabajo,rama_actividad,persona,Rama_actividad,P32,P18,cod_caenes,borrador,1992 por verificar; 2002 CIIU a 2 dígitos; 2017 secciones (letras); 2024 CAENES.
+trabajo,categoria_ocupacional,persona,Categoria_ocupacional,P30,—,p40_cise_rec,borrador,
+trabajo,lugar_trabajo,persona,—,P33A; P33B_Readecuada_origen4,—,p44_lug_trab,borrador,
+trabajo,medio_transporte,persona,—,—,—,p45_medio_transporte,borrador,Solo 2024.
+fecundidad,hijos_nacidos_vivos,persona,Hijos_nacidos_vivos,P34,P19,p46a_tot_hijs_nac,borrador,Universo: mujeres en edad fértil o mayores (por verificar en cada censo).
+fecundidad,hijos_sobrevivientes,persona,Hijos_vivos,P35,P20,p47a_tot_hijs_sobrev,borrador,
+fecundidad,fecha_ultimo_hijo,persona,Mes_ultimo_hijo; Año_ultimo_hijo,P36A; P36B,P21M; P21A,—,borrador,
+vivienda,tipo_vivienda,vivienda,Tipo_vivienda,V1,P01,p2_tipo_vivienda; tipo_operativo,borrador,2024 separa vivienda colectiva y personas en situación de calle en tipo_operativo.
+vivienda,condicion_ocupacion,vivienda,Cond_ocupacion,V2,P02,p3a_estado_ocupacion; p3b_estado_ocupacion,borrador,
+vivienda,material_paredes,vivienda,Paredes,V4A,P03A,p4a_mat_paredes,borrador,
+vivienda,material_techo,vivienda,Techo,V4B,P03B,p4b_mat_techo,borrador,
+vivienda,material_piso,vivienda,Piso,V4C,P03C,p4c_mat_piso,borrador,
+vivienda,alumbrado_electrico,vivienda,Alumbrado_electrico,V5,—,p9_fuente_elect,borrador,
+vivienda,origen_agua,vivienda,Origen_agua,V6,P05,p6_fuente_agua,borrador,
+vivienda,distribucion_agua,vivienda,Agua_cañeria,V7,—,p7_distrib_agua,borrador,
+vivienda,servicio_higienico,vivienda,Servicio_Higienico,V8,—,p8_serv_hig,borrador,
+vivienda,ducha,vivienda,Ducha,—,—,—,borrador,
+vivienda,eliminacion_basura,vivienda,—,—,—,p10_basura,borrador,Solo 2024.
+vivienda,total_piezas,vivienda,Total_piezas,V10A,—,—,borrador,
+vivienda,dormitorios,vivienda,USO_PIEZAS / HOGAR.Pieza_dormir,V10B_*,P04,p5_num_dormitorios,borrador,En 1992 está en la tabla de hogares.
+vivienda,cantidad_hogares,vivienda,Hogares,V11 (por verificar),CANT_HOG,cant_hog,borrador,
+vivienda,cantidad_personas,vivienda,derivar,derivar,CANT_PER,cant_per,borrador,
+hogar,tenencia,hogar,VIVIENDAS.Cond_tenencia,V3 (por verificar),—,p12_tenencia_viv,borrador,1992 está en viviendas; 2024 en hogares.
+hogar,combustible_cocina,hogar,Combustible,V9 (por verificar),—,p13_comb_cocina,borrador,
+hogar,combustible_calefaccion,hogar,—,—,—,p14_comb_calefaccion,borrador,Solo 2024.
+hogar,equipamiento,hogar,Radio; TV_BN; TV_Color; Lavadora; Refrigerador; Telefono; Celular; …,—,—,p15a … p15f (TIC),borrador,2002 y 2017 sin bienes en los microdatos (por verificar 2002). 2024 solo servicios TIC.
+hogar,vehiculos,hogar,*_Part; *_Trab,—,—,—,borrador,
+hogar,tipo_hogar,hogar,derivar,derivar,TIPO_HOGAR,tipologia_hogar,borrador,

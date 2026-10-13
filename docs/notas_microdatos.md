@@ -8,7 +8,6 @@ en [metadatos/concordancia/concordancia_microdatos.csv](../metadatos/concordanci
 
 | Censo | Personas en microdatos | Viviendas | Hogares |
 |---|---:|---:|---:|
-| 1982 | 11.329.736 | 2.522.369 | 2.467.479 |
 | 1992 | 13.348.401 | 3.369.928 | 3.303.894 |
 | 2002 | 15.116.435 | 4.400.247 | sin tabla |
 | 2017 | 17.574.003 | 6.499.574 | 5.664.678 |
@@ -18,15 +17,20 @@ El total de personas de cada censo coincide con la población oficial publicada.
 Los totales de viviendas y hogares incluyen todos los registros (particulares, colectivas,
 desocupadas, etc.) y aún no se contrastan con las publicaciones.
 
-## 1982
+## 1982 (descartado)
 
-- CSV separado por `;`, con nombres de variable descriptivos. Hay también versión `.sav` (no usada).
-- **Códigos de comuna propios (201–674)**, distintos del CUT. Se necesita una tabla de correspondencia.
-- `Nacional` tiene valores irregulares (`*`, `P`, caracteres inválidos) y está vacía en el 78 % de los casos.
-- `Sabe_leer` solo tiene respuesta para unos 2,8 millones de personas: hay que verificar el universo.
-- No se encontró libro de códigos. El archivo `Cuestionario Censal.xls` de la carpeta de 1982
-  corresponde en realidad al **cuestionario de 1992** (incluye celular, microondas y videograbador).
-- Pendiente: obtener el cuestionario de 1982 (probablemente en los volúmenes publicados).
+Los microdatos de 1982 existen (entregados por transparencia) pero **no se usan en el proyecto**.
+Los resultados de 1982 se tomarán de los volúmenes publicados, como los censos anteriores.
+Motivos encontrados en el inventario:
+
+- Códigos de comuna propios (201–674), distintos del CUT y sin tabla de nombres en la entrega.
+- Sin libro de códigos ni cuestionario: el archivo `Cuestionario Censal.xls` de la carpeta de 1982
+  corresponde al cuestionario de 1992.
+- El área urbana/rural no reproduce lo publicado: 239.897 personas más como rurales que en el
+  Cuadro 1.01 del volumen I (la diferencia se concentra en localidades de categoría 11 y 12).
+- Variables con valores irregulares (`Nacional`) o universos sin documentar (`Sabe_leer`).
+
+El total de personas (11.329.736) y los totales por sexo sí coinciden con lo publicado.
 
 ## 1992
 

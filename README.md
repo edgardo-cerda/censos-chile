@@ -13,8 +13,8 @@ documentado y reproducible, con librerías para Python y R.
 
 | Producto | Cobertura | Origen |
 |---|---|---|
-| **Tabulados armonizados**: serie larga en formato largo con un esquema único | 1813–2024 | Libros digitalizados (hasta 1970) y agregación de microdatos (desde 1982) |
-| **Microdatos armonizados**: viviendas, hogares y personas con variables comparables | 1982–2024 | Microdatos públicos del INE |
+| **Tabulados armonizados**: serie larga en formato largo con un esquema único | 1813–2024 | Libros digitalizados (hasta 1982) y agregación de microdatos (desde 1992) |
+| **Microdatos armonizados**: viviendas, hogares y personas con variables comparables | 1992–2024 | Microdatos públicos del INE |
 | **Metadatos**: diccionario de variables, correspondencias territoriales, catálogo de fuentes | todos | Este repositorio |
 
 Cada cifra conserva su procedencia (documento, cuadro, página) y cada variable armonizada

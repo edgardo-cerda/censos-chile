@@ -13,11 +13,6 @@ nota_armonizacion: >
   Se fija un tope común de 85 años porque los microdatos públicos de 2024 truncan la edad en 85.
   Los tabulados usan tramos quinquenales 0-4 … 80-84 y 85 o más; la edad ignorada se informa aparte.
 censos:
-  1982:
-    tabla: personas
-    variables_originales: [Edad]
-    regla: Rango 0–99; 99 se interpreta como "99 o más" (por verificar con la documentación).
-    estado: borrador
   1992:
     tabla: personas
     variables_originales: [Edad]
