@@ -1,0 +1,12 @@
+censo,tabla,orden,variable,n_filas,n_distintos,n_vacios,n_na,tipo_observado,min,max,con_frecuencias
+1992,uso_piezas,1,_fila,13772956,13772956,0,0,numerico,1.0,13772956.0,False
+1992,uso_piezas,2,Portafolio,13772956,245730,0,0,numerico,1.0,259007.0,False
+1992,uso_piezas,3,Vivienda,13772956,99,0,0,numerico,1.0,99.0,True
+1992,uso_piezas,4,Pieza,13772956,10,0,0,numerico,1.0,10.0,True
+1992,uso_piezas,5,Dormitorio,13772956,3,0,0,numerico,0.0,9.0,True
+1992,uso_piezas,6,Living_comedor,13772956,3,0,0,numerico,0.0,9.0,True
+1992,uso_piezas,7,Living,13772956,3,0,0,numerico,0.0,9.0,True
+1992,uso_piezas,8,Comedor,13772956,3,0,0,numerico,0.0,9.0,True
+1992,uso_piezas,9,Cocina,13772956,3,0,0,numerico,0.0,9.0,True
+1992,uso_piezas,10,Trabajo_remunerado,13772956,3,0,0,numerico,0.0,9.0,True
+1992,uso_piezas,11,Otro_Uso,13772956,3,0,0,numerico,0.0,9.0,True

@@ -1,0 +1,88 @@
+# Esquema común de los tabulados armonizados (formato largo: una fila por cifra).
+# Convenciones para dimensiones: "_T" = total de la dimensión, "_Z" = no aplica.
+
+version: 0.1.0
+
+campos:
+  # --- Identificación ---
+  - nombre: censo
+    tipo: entero
+    descripcion: Año del censo.
+  - nombre: indicador
+    tipo: texto
+    descripcion: Código del indicador (p. ej. poblacion, viviendas, hogares). Definido en metadatos/variables/.
+  - nombre: unidad
+    tipo: texto
+    descripcion: Unidad de medida (personas, viviendas, hogares, porcentaje, ...).
+
+  # --- Territorio ---
+  - nombre: territorio_nivel
+    tipo: texto
+    descripcion: Nivel territorial según la división vigente en el censo (pais, provincia, departamento, region, comuna, distrito, ...).
+  - nombre: territorio_cod_orig
+    tipo: texto
+    descripcion: Código tal como aparece en la fuente, o código asignado por el proyecto si la fuente no lo trae.
+  - nombre: territorio_nombre_orig
+    tipo: texto
+    descripcion: Nombre tal como aparece en la fuente.
+  - nombre: dpa_version
+    tipo: texto
+    descripcion: Versión de la división político-administrativa a la que pertenece la unidad.
+  - nombre: territorio_cod_dpa2024
+    tipo: texto
+    nulo: si
+    descripcion: Código equivalente en la DPA 2024, solo cuando la correspondencia es exacta. Las correspondencias parciales viven en metadatos/territorio/.
+
+  # --- Dimensiones de desagregación ---
+  - nombre: area
+    tipo: texto
+    valores: [urbana, rural, _T, _Z]
+    descripcion: Área según la definición del censo (ver nota de comparabilidad).
+  - nombre: sexo
+    tipo: texto
+    valores: [hombre, mujer, _T, _Z]
+  - nombre: edad_min
+    tipo: entero
+    nulo: si
+    descripcion: Límite inferior del tramo de edad (incluido). Nulo = total o no aplica.
+  - nombre: edad_max
+    tipo: entero
+    nulo: si
+    descripcion: Límite superior del tramo (incluido). Nulo con edad_min informado = tramo abierto ("y más").
+  - nombre: dimensiones
+    tipo: json
+    nulo: si
+    descripcion: Otras desagregaciones propias del indicador, como pares clave-valor armonizados (p. ej. {"estado_civil": "casado"}).
+
+  # --- Valor ---
+  - nombre: valor
+    tipo: decimal
+    nulo: si
+  - nombre: estado_valor
+    tipo: texto
+    valores: [ok, ilegible, no_publicado, suprimido, inconsistente]
+    descripcion: Estado de la cifra; si no es "ok", valor puede ser nulo.
+
+  # --- Procedencia ---
+  - nombre: fuente_id
+    tipo: texto
+    descripcion: Identificador en metadatos/fuentes.yaml.
+  - nombre: cuadro
+    tipo: texto
+    nulo: si
+    descripcion: Número o nombre del cuadro en la publicación.
+  - nombre: pagina_impresa
+    tipo: texto
+    nulo: si
+  - nombre: pagina_pdf
+    tipo: entero
+    nulo: si
+  - nombre: metodo
+    tipo: texto
+    valores: [transcripcion_manual, ocr_verificado, texto_pdf, microdatos]
+  - nombre: verificacion
+    tipo: texto
+    valores: [sin_verificar, control_aritmetico, doble_captura, contrastado_publicacion]
+  - nombre: nota
+    tipo: texto
+    nulo: si

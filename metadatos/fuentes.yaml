@@ -1,0 +1,141 @@
+# Catálogo de fuentes originales.
+# acceso: web (descarga pública) | transparencia (entregado por solicitud de acceso a la información)
+# Para microdatos, tamaño y sha256 de cada archivo están en metadatos/inventario/archivos.csv.
+# Campos marcados "por completar" deben llenarse antes de la primera versión pública.
+
+publicaciones:
+  - id: pub_1813
+    censo: 1813
+    archivo: censo-de-población-1813.pdf
+    acceso: web
+    url: null  # por completar
+    capa_texto: no
+  - id: pub_1835
+    censo: 1835
+    archivo: censo-de-población-1835.pdf
+    acceso: web
+    url: null  # por completar
+    capa_texto: no
+  - id: pub_1865
+    censo: 1865
+    archivo: censo-de-población-1865.pdf
+    acceso: web
+    url: null  # por completar
+    capa_texto: no
+  - id: pub_1907
+    censo: 1907
+    archivo: censo-de-población-1907.pdf
+    acceso: web
+    url: null  # por completar
+    paginas_pdf: 1277
+    capa_texto: no
+  - id: pub_1920
+    censo: 1920
+    archivo: censo-de-población-1920.pdf
+    acceso: web
+    url: null  # por completar
+    paginas_pdf: 625
+    capa_texto: no
+  - id: pub_1930
+    censo: 1930
+    archivo: censo-de-población-1930.pdf
+    acceso: web
+    url: null  # por completar
+    paginas_pdf: 1025
+    capa_texto: no
+  - id: pub_1940
+    censo: 1940
+    archivo: censo-de-población-1940.pdf
+    acceso: web
+    url: null  # por completar
+    paginas_pdf: 361
+    capa_texto: no
+  - id: pub_1952
+    censo: 1952
+    archivo: censo-de-población-y-vivienda-1952.pdf
+    acceso: web
+    url: null  # por completar
+    paginas_pdf: 2431
+    capa_texto: no
+  - id: pub_1960
+    censo: 1960
+    archivo: censo-de-población-y-vivienda-1960.pdf
+    acceso: web
+    url: null  # por completar
+    paginas_pdf: 474
+    capa_texto: no
+  - id: pub_1970
+    censo: 1970
+    archivo: censo-de-población-y-vivienda-1970.pdf
+    acceso: web
+    url: null  # por completar
+    paginas_pdf: 169
+    capa_texto: no
+  - id: pub_1982_v1
+    censo: 1982
+    archivo: censo_1982_volumen_i.pdf
+    acceso: web
+    url: null  # por completar
+    paginas_pdf: 391
+    capa_texto: no
+  - id: pub_1982_v2
+    censo: 1982
+    archivo: censo_1982_volumen_ii.pdf
+    acceso: web
+    url: null  # por completar
+    paginas_pdf: 354
+    capa_texto: no
+  - id: pub_1982_v3
+    censo: 1982
+    archivo: censo_1982_volumen_iii.pdf
+    acceso: web
+    url: null  # por completar
+    paginas_pdf: 289
+    capa_texto: no
+  - id: pub_1992
+    censo: 1992
+    archivo: censo1992.pdf
+    acceso: web
+    url: null  # por completar
+    paginas_pdf: 203
+    capa_texto: si
+
+microdatos:
+  - id: micro_1982
+    censo: 1982
+    acceso: transparencia
+    solicitud: null  # por completar: número y fecha de la solicitud
+    formato_original: [csv, sav]
+    tablas: [viviendas, hogares, personas]
+    documentacion: [Cuestionario Censal.xls]
+  - id: micro_1992
+    censo: 1992
+    acceso: transparencia
+    solicitud: null  # por completar
+    formato_original: csv
+    tablas: [portafolios, viviendas, hogares, uso_piezas, personas]
+    tablas_auxiliares: [REGIONES, PROVINCIAS, COMUNAS, DISTRITOS, LOCALIDAD, ENTIDAD, CATEGORIA, PAISES, OCUPACION, RAMA_ACTIVIDAD]
+    documentacion: [ind_code_cl1992.pdf]
+    notas: CSV en codificación latin-1, exportado desde R (primera columna = número de fila).
+  - id: micro_2002
+    censo: 2002
+    acceso: transparencia
+    solicitud: null  # por completar
+    formato_original: csv
+    tablas: [portafolios, viviendas, personas]
+    tablas_auxiliares: [REGIONES, PROVINCIAS, COMUNAS, DISTRITOS, LOCALIDADES, ENTIDADES, CATEGORIAS, Coordenadas_Censo2002]
+    notas: Sin tabla de hogares separada. Variables con códigos de pregunta (P17, P18, ...).
+  - id: micro_2017
+    censo: 2017
+    acceso: web
+    url: null  # por completar
+    formato_original: csv
+    tablas: [viviendas, hogares, personas]
+    documentacion: [Léame - CSV Microdatos Viviendas Censo 2017.pdf, Léame - CSV Microdatos Manzana- entidad Censo 2017.pdf]
+  - id: micro_2024
+    censo: 2024
+    acceso: web
+    url: null  # por completar
+    formato_original: parquet
+    tablas: [viviendas, hogares, personas]
+    documentacion: [diccionario_variables_censo2024.xlsx, manual_uso_microdatos_censo2024.pdf]

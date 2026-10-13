@@ -1,0 +1,77 @@
+# Censos generales de población (y vivienda, desde 1952) levantados en Chile.
+# fecha_referencia y nombre_oficial se completan desde la propia publicación, citando página.
+# microdatos: "si" = microdatos censales completos disponibles para el proyecto.
+
+censos:
+  - anio: 1813
+    publicaciones: [pub_1813]
+    microdatos: no
+    notas: Censo de 1813 (Juan Egaña). Cobertura territorial parcial.
+  - anio: 1835
+    publicaciones: [pub_1835]
+    microdatos: no
+  - anio: 1843
+    publicaciones: []
+    microdatos: no
+    notas: Publicación por ubicar.
+  - anio: 1854
+    publicaciones: []
+    microdatos: no
+    notas: Publicación por ubicar.
+  - anio: 1865
+    publicaciones: [pub_1865]
+    microdatos: no
+  - anio: 1875
+    publicaciones: []
+    microdatos: no
+    notas: Publicación por ubicar.
+  - anio: 1885
+    publicaciones: []
+    microdatos: no
+    notas: Publicación por ubicar.
+  - anio: 1895
+    publicaciones: []
+    microdatos: no
+    notas: Publicación por ubicar.
+  - anio: 1907
+    publicaciones: [pub_1907]
+    microdatos: no
+  - anio: 1920
+    publicaciones: [pub_1920]
+    microdatos: no
+  - anio: 1930
+    publicaciones: [pub_1930]
+    microdatos: no
+  - anio: 1940
+    publicaciones: [pub_1940]
+    microdatos: no
+  - anio: 1952
+    publicaciones: [pub_1952]
+    microdatos: no
+  - anio: 1960
+    publicaciones: [pub_1960]
+    microdatos: no
+  - anio: 1970
+    publicaciones: [pub_1970]
+    microdatos: no
+  - anio: 1982
+    publicaciones: [pub_1982_v1, pub_1982_v2, pub_1982_v3]
+    microdatos: si
+  - anio: 1992
+    publicaciones: [pub_1992]
+    microdatos: si
+  - anio: 2002
+    publicaciones: []
+    microdatos: si
+  - anio: 2012
+    publicaciones: []
+    microdatos: no
+    excluido: si
+    notas: Resultados no validados como estadística oficial; fuera del alcance del proyecto.
+  - anio: 2017
+    publicaciones: []
+    microdatos: si
+    notas: Censo abreviado.
+  - anio: 2024
+    publicaciones: []
+    microdatos: si

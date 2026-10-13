@@ -1,0 +1,12 @@
+censo,tabla,orden,variable,n_filas,n_distintos,n_vacios,n_na,tipo_observado,min,max,con_frecuencias
+2017,hogares,1,REGION,5664678,16,0,0,numerico,1.0,16.0,True
+2017,hogares,2,PROVINCIA,5664678,56,0,0,numerico,11.0,163.0,True
+2017,hogares,3,COMUNA,5664678,346,0,0,numerico,1101.0,16305.0,True
+2017,hogares,4,DC,5664678,34,0,0,numerico,1.0,99.0,True
+2017,hogares,5,AREA,5664678,2,0,0,numerico,1.0,2.0,True
+2017,hogares,6,ZC_LOC,5664678,123,0,0,numerico,1.0,999.0,True
+2017,hogares,7,ID_ZONA_LOC,5664678,15500,0,0,numerico,1.0,16053.0,False
+2017,hogares,8,NVIV,5664678,4115,0,0,numerico,1.0,4296.0,False
+2017,hogares,9,NHOGAR,5664678,36,0,0,numerico,1.0,36.0,True
+2017,hogares,10,TIPO_HOGAR,5664678,8,0,0,numerico,1.0,98.0,True
+2017,hogares,11,TIPO_OPERATIVO,5664678,4,0,0,numerico,1.0,10.0,True

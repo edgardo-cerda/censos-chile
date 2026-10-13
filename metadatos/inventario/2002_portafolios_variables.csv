@@ -1,0 +1,10 @@
+censo,tabla,orden,variable,n_filas,n_distintos,n_vacios,n_na,tipo_observado,min,max,con_frecuencias
+2002,portafolios,1,_fila,401170,401170,0,0,numerico,1.0,401170.0,False
+2002,portafolios,2,Portafolio,401170,401170,0,0,numerico,1.0,801201.0,False
+2002,portafolios,3,Comuna,401170,346,0,0,numerico,1101.0,16305.0,True
+2002,portafolios,4,Area,401170,2,0,0,numerico,1.0,2.0,True
+2002,portafolios,5,Distrito,401170,34,0,0,numerico,1.0,99.0,True
+2002,portafolios,6,COD_ZONA_LOCALIDAD,401170,125,0,1,numerico,1.0,124.0,True
+2002,portafolios,7,COD_MANZANA_ENTIDAD,401170,262,0,0,numerico,1.0,999.0,True
+2002,portafolios,8,CATEGORIA,401170,14,0,0,numerico,1.0,14.0,True
+2002,portafolios,9,Sector,401170,1,0,0,numerico,0.0,0.0,True

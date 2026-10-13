@@ -1,0 +1,65 @@
+# Notas sobre los microdatos originales
+
+Observaciones del inventario automático (`herramientas/inventario_microdatos.py`).
+Perfiles completos en [metadatos/inventario/](../metadatos/inventario/) y correspondencias
+en [metadatos/concordancia/concordancia_microdatos.csv](../metadatos/concordancia/concordancia_microdatos.csv).
+
+## Control de totales
+
+| Censo | Personas en microdatos | Viviendas | Hogares |
+|---|---:|---:|---:|
+| 1982 | 11.329.736 | 2.522.369 | 2.467.479 |
+| 1992 | 13.348.401 | 3.369.928 | 3.303.894 |
+| 2002 | 15.116.435 | 4.400.247 | sin tabla |
+| 2017 | 17.574.003 | 6.499.574 | 5.664.678 |
+| 2024 | 18.480.432 | 7.664.466 | 6.622.597 |
+
+El total de personas de cada censo coincide con la población oficial publicada.
+Los totales de viviendas y hogares incluyen todos los registros (particulares, colectivas,
+desocupadas, etc.) y aún no se contrastan con las publicaciones.
+
+## 1982
+
+- CSV separado por `;`, con nombres de variable descriptivos. Hay también versión `.sav` (no usada).
+- **Códigos de comuna propios (201–674)**, distintos del CUT. Se necesita una tabla de correspondencia.
+- `Nacional` tiene valores irregulares (`*`, `P`, caracteres inválidos) y está vacía en el 78 % de los casos.
+- `Sabe_leer` solo tiene respuesta para unos 2,8 millones de personas: hay que verificar el universo.
+- No se encontró libro de códigos. El archivo `Cuestionario Censal.xls` de la carpeta de 1982
+  corresponde en realidad al **cuestionario de 1992** (incluye celular, microondas y videograbador).
+- Pendiente: obtener el cuestionario de 1982 (probablemente en los volúmenes publicados).
+
+## 1992
+
+- CSV en **latin-1**, exportado desde R (primera columna = número de fila).
+- La geografía está en `PORTAFOLIOS` (comuna, área, distrito, zona, localidad, entidad); viviendas,
+  hogares y personas se unen por `Portafolio` + `Vivienda` + `Hogar`.
+- Las comunas de nacimiento, residencia habitual y residencia en 1987 vienen con sufijo `_Origen3`
+  (una de varias codificaciones posibles; ver `Entrega_censo1992.xls`).
+- Preguntas de pueblos originarios (`Cultura`) y religión solo para personas de 14 años o más.
+  Los conteos coinciden con los publicados (mapuche 928.060; aymara 48.477; rapanui 21.848).
+- Incluye variables derivadas ajenas al cuestionario: `Puntaje`, `CSE_categoria`, `CSE_Decil`, `Quintil_por_puntaje`.
+- Tabla adicional `USO_PIEZAS` (13,8 millones de filas: una por pieza).
+
+## 2002
+
+- Variables con códigos de pregunta (`V1`… en viviendas; `P17`… en personas).
+- **Sin tabla de hogares**: solo viviendas y personas.
+- **Geografía ya recodificada a la DPA de 16 regiones** (comunas hasta 16305; columnas `*_HOMOLOGADA_R16`).
+  Para reconstruir la DPA de 2002 se necesita la correspondencia inversa.
+- Edad hasta 108 años, sin tope.
+- Interpretación de códigos hecha con frecuencias (p. ej. `P21` = 5 → mapuche, 604.349).
+  Pendiente: verificar contra el cuestionario oficial de 2002.
+
+## 2017
+
+- Censo abreviado: pocas variables de vivienda (`P01`–`P05`) y sin estado civil, alfabetismo,
+  ocupación ni religión.
+- Geografía en DPA de 16 regiones, con columnas adicionales `_15R` en la DPA de 15 regiones.
+- Rama de actividad (`P18`) en letras (secciones CIIU).
+
+## 2024
+
+- Parquet con nombres descriptivos y diccionario oficial (`diccionario_variables_censo2024.xlsx`).
+- **Anonimización**: edad con tope en 85 y valor `-66` = suprimido; `comuna_bajo_umbral` marca
+  comunas pequeñas. Esto limita la comparación de edades altas con censos anteriores.
+- Personas en situación de calle y viviendas colectivas se identifican con `tipo_operativo`.

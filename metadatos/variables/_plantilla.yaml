@@ -1,0 +1,30 @@
+# Plantilla de ficha de variable armonizada. Copiar como <nombre>.yaml.
+
+nombre: nombre_variable        # snake_case, único en el proyecto
+etiqueta: Etiqueta corta
+unidad: persona                # persona | hogar | vivienda
+tema: demografia               # demografia | territorio | educacion | trabajo | migracion | vivienda | hogar | ...
+nivel: nucleo                  # nucleo | ampliado
+definicion: >
+  Qué mide la variable armonizada.
+universo: Todas las personas censadas.
+
+# Categorías armonizadas. "general" es comparable entre todos los censos;
+# "detallado" (opcional) conserva distinciones que solo existen en algunos censos.
+categorias:
+  - codigo: 1
+    etiqueta: Categoría
+    # detallado:
+    #   - {codigo: 11, etiqueta: Subcategoría}
+
+# Una entrada por censo con microdatos (y por publicación, si aplica).
+censos:
+  1982:
+    tabla: personas
+    variables_originales: [Variable]
+    pregunta: null             # texto de la pregunta en el cuestionario, si se conoce
+    regla: >
+      Cómo se transforma (recodificación valor_original -> codigo).
+    recodificacion: {}         # {valor_original: codigo_armonizado}
+    comparabilidad: null       # diferencias de definición, universo o captura
+    estado: borrador           # borrador | verificado

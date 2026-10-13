@@ -1,0 +1,34 @@
+# Copiar como config.yaml (no se versiona) y ajustar las rutas locales.
+
+# Carpeta con los archivos originales tal como fueron entregados/descargados.
+datos_originales: "C:/ruta/a/datos_originales"
+
+# Carpeta de trabajo para archivos intermedios (Parquet, temporales de DuckDB).
+cache: "C:/ruta/a/censos-chile-datos/cache"
+
+memoria_duckdb: "4GB"
+
+# Tablas de microdatos, rutas relativas a datos_originales.
+microdatos:
+  1982:
+    viviendas: cpv1982/CPV1982_Censo_1982_Vivienda.csv
+    hogares: cpv1982/CPV1982_Censo_1982_Hogar.csv
+    personas: cpv1982/CPV1982_Censo_1982_Persona.csv
+  1992:
+    portafolios: cpv1992/PORTAFOLIOS_1992.csv
+    viviendas: cpv1992/VIVIENDAS_1992.csv
+    hogares: cpv1992/HOGAR_1992.csv
+    uso_piezas: cpv1992/USO_PIEZAS_1992.csv
+    personas: cpv1992/PERSONAS_1992.csv
+  2002:
+    portafolios: cpv2002/PORTAFOLIOS_2002.csv
+    viviendas: cpv2002/VIVIENDAS_2002.csv
+    personas: cpv2002/PERSONAS_2002.csv
+  2017:
+    viviendas: cpv2017/Microdato_Censo2017-Viviendas.csv
+    hogares: cpv2017/Microdato_Censo2017-Hogares.csv
+    personas: cpv2017/Microdato_Censo2017-Personas.csv
+  2024:
+    viviendas: cpv2024/viviendas_censo2024.parquet
+    hogares: cpv2024/hogares_censo2024.parquet
+    personas: cpv2024/personas_censo2024.parquet

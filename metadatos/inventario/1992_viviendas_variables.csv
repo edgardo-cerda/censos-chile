@@ -1,0 +1,17 @@
+censo,tabla,orden,variable,n_filas,n_distintos,n_vacios,n_na,tipo_observado,min,max,con_frecuencias
+1992,viviendas,1,_fila,3369928,3369928,0,0,numerico,1.0,3369928.0,False
+1992,viviendas,2,Portafolio,3369928,259014,0,0,numerico,1.0,300009.0,False
+1992,viviendas,3,Vivienda,3369928,100,0,0,numerico,0.0,99.0,True
+1992,viviendas,4,Tipo_vivienda,3369928,12,0,0,numerico,1.0,99.0,True
+1992,viviendas,5,Cond_ocupacion,3369928,3,0,0,numerico,1.0,3.0,True
+1992,viviendas,6,Cond_tenencia,3369928,7,0,0,numerico,0.0,6.0,True
+1992,viviendas,7,Paredes,3369928,7,0,0,numerico,0.0,6.0,True
+1992,viviendas,8,Techo,3369928,9,0,0,numerico,0.0,8.0,True
+1992,viviendas,9,Piso,3369928,9,0,0,numerico,0.0,8.0,True
+1992,viviendas,10,Alumbrado_electrico,3369928,5,0,0,numerico,0.0,4.0,True
+1992,viviendas,11,Origen_agua,3369928,5,0,0,numerico,0.0,4.0,True
+1992,viviendas,12,Agua_cañeria,3369928,4,0,0,numerico,0.0,3.0,True
+1992,viviendas,13,Servicio_Higienico,3369928,6,0,0,numerico,0.0,5.0,True
+1992,viviendas,14,Ducha,3369928,3,0,0,numerico,0.0,2.0,True
+1992,viviendas,15,Total_piezas,3369928,12,0,0,numerico,0.0,99.0,True
+1992,viviendas,16,Hogares,3369928,16,0,0,numerico,0.0,15.0,True

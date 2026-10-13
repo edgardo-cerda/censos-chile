@@ -1,0 +1,29 @@
+# Configuración local (rutas a datos)
+config.yaml
+
+# Datos: nunca se versionan los microdatos ni archivos pesados
+*.parquet
+*.sav
+*.dta
+*.duckdb
+*.duckdb.wal
+datos/
+cache/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+dist/
+build/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
