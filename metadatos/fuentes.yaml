@@ -31,6 +31,30 @@ publicaciones:
     pagina: publicaciones_historicas
     url: null  # por completar: enlace directo al PDF
     capa_texto: no
+  - id: pub_1875
+    censo: 1875
+    archivo: censo-de-población-1875.pdf
+    acceso: web
+    pagina: publicaciones_historicas
+    url: null  # por completar: enlace directo al PDF
+    paginas_pdf: 689
+    capa_texto: no
+  - id: pub_1885
+    censo: 1885
+    archivo: censo-de-población-1885.pdf
+    acceso: web
+    pagina: publicaciones_historicas
+    url: null  # por completar: enlace directo al PDF
+    paginas_pdf: 905
+    capa_texto: no
+  - id: pub_1895
+    censo: 1895
+    archivo: censo-de-población-1895.pdf
+    acceso: web
+    pagina: publicaciones_historicas
+    url: null  # por completar: enlace directo al PDF
+    paginas_pdf: 2547
+    capa_texto: no
   - id: pub_1907
     censo: 1907
     archivo: censo-de-población-1907.pdf
@@ -128,7 +152,10 @@ microdatos:
     formato_original: csv
     tablas: [portafolios, viviendas, hogares, uso_piezas, personas]
     tablas_auxiliares: [REGIONES, PROVINCIAS, COMUNAS, DISTRITOS, LOCALIDAD, ENTIDAD, CATEGORIA, PAISES, OCUPACION, RAMA_ACTIVIDAD]
-    documentacion: [ind_code_cl1992.pdf]
+    documentacion:
+      - cpv1982/Cuestionario Censal.xls  # cuestionario de 1992, guardado en la carpeta de 1982
+      - cpv1982/Entrega_censo1992.xls  # descripción de la entrega y codificaciones territoriales
+      - ind_code_cl1992.pdf  # CIIU rev. 3 (CELADE) usada para codificar rama de actividad
     notas: CSV en codificación latin-1, exportado desde R (primera columna = número de fila).
   - id: micro_2002
     censo: 2002
@@ -137,6 +164,7 @@ microdatos:
     formato_original: csv
     tablas: [portafolios, viviendas, personas]
     tablas_auxiliares: [REGIONES, PROVINCIAS, COMUNAS, DISTRITOS, LOCALIDADES, ENTIDADES, CATEGORIAS, Coordenadas_Censo2002]
+    documentacion: [C2002.pdf]  # cuestionario escaneado (8 páginas, sin capa de texto); no hay libro de códigos
     notas: Sin tabla de hogares separada. Variables con códigos de pregunta (P17, P18, ...).
   - id: micro_2017
     censo: 2017
@@ -149,7 +177,7 @@ microdatos:
       identificacion_geografica: https://www.ine.gob.cl/docs/default-source/censo-de-poblacion-y-vivienda/bbdd/censo-2017/csv/csv-identificaci%C3%B3n-geogr%C3%A1fica-censo-2017.rar?sfvrsn=1ae6f56c_2&download=true
       manzana_entidad: https://www.ine.gob.cl/docs/default-source/censo-de-poblacion-y-vivienda/bbdd/censo-2017/csv/csv-manzana---entidad-censo-2017.rar?sfvrsn=1ce846c8_2&download=true
     tablas: [viviendas, hogares, personas]
-    documentacion: [Léame - CSV Microdatos Viviendas Censo 2017.pdf, Léame - CSV Microdatos Manzana- entidad Censo 2017.pdf]
+    documentacion: [cuestionario-censo-2017-viviendas-particulares.pdf, Léame - CSV Microdatos Viviendas Censo 2017.pdf, Léame - CSV Microdatos Manzana- entidad Censo 2017.pdf]
   - id: micro_2024
     censo: 2024
     acceso: web
@@ -157,4 +185,4 @@ microdatos:
     url: null  # por completar: enlaces directos a cada archivo
     formato_original: parquet
     tablas: [viviendas, hogares, personas]
-    documentacion: [diccionario_variables_censo2024.xlsx, manual_uso_microdatos_censo2024.pdf]
+    documentacion: [Cuestionario-Viviendas-Particulares_CPV2024.pdf, diccionario_variables_censo2024.xlsx, diccionario_variables_glosas_censo2024.xlsx, manual_uso_microdatos_censo2024.pdf]

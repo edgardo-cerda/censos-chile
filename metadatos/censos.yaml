@@ -13,26 +13,23 @@ censos:
   - anio: 1843
     publicaciones: []
     microdatos: no
-    notas: Publicación por ubicar.
+    notas: Sin publicación digitalizada disponible.
   - anio: 1854
     publicaciones: []
     microdatos: no
-    notas: Publicación por ubicar.
+    notas: Sin publicación digitalizada disponible.
   - anio: 1865
     publicaciones: [pub_1865]
     microdatos: no
   - anio: 1875
-    publicaciones: []
+    publicaciones: [pub_1875]
     microdatos: no
-    notas: Publicación por ubicar.
   - anio: 1885
-    publicaciones: []
+    publicaciones: [pub_1885]
     microdatos: no
-    notas: Publicación por ubicar.
   - anio: 1895
-    publicaciones: []
+    publicaciones: [pub_1895]
     microdatos: no
-    notas: Publicación por ubicar.
   - anio: 1907
     publicaciones: [pub_1907]
     microdatos: no

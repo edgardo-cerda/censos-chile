@@ -57,18 +57,32 @@ Tablas de viviendas, hogares y personas por censo con:
 - [x] Repositorio, licencias (MIT para el código, CC BY 4.0 para los datos) y estructura.
 - [ ] Completar `fuentes.yaml`: URL directas de 2024 y de los PDF históricos; números de solicitud
       de transparencia de 1992 y 2002 (pendiente).
-- [ ] Ubicar los censos sin publicación digital local (1843, 1854, 1875, 1885, 1895).
+- [x] Reunir las publicaciones digitalizadas: todas salvo 1843 y 1854, que no están digitalizadas.
 
 ### Fase 1: inventarios
 - [x] Inventario automático de microdatos 1992–2024 (`herramientas/inventario_microdatos.py`).
       Hallazgos en [notas_microdatos.md](notas_microdatos.md).
 - [ ] Matriz de concordancia concepto × censo para microdatos (borrador listo; falta verificar
       2002 contra su cuestionario).
-- [ ] Obtener cuestionario y libro de códigos de 2002 (y cuestionario de 1982 para la digitalización).
+- [x] Cuestionarios de 1992 (en la carpeta de 1982), 2002 (escaneado), 2017 y 2024.
+      No existe libro de códigos de 2002: las etiquetas se toman del cuestionario.
+- [ ] Cuestionario de 1982 (para la digitalización; probablemente en los volúmenes publicados).
 - [ ] Catálogo de cuadros de las publicaciones: censo, número, título, variables,
       desagregación, nivel territorial, página impresa y página del PDF.
 
 ### Fase 2: núcleo (primera versión pública)
+- [ ] **Diccionario consolidado de microdatos 1992–2024** (`productos/diccionario/diccionario_censos.xlsx`),
+      antes de armonizar cualquier variable. Permite ver de un vistazo qué existe en cada censo:
+  - hoja `variables`: una fila por variable original (censo, tabla, nombre, etiqueta, pregunta
+    del cuestionario, universo, tipo, n.º de categorías, % sin respuesta, concepto asignado);
+  - hoja `categorias`: una fila por código (censo, tabla, variable, código en la base, etiqueta,
+    frecuencia, fuente de la etiqueta);
+  - hoja `matriz`: concepto × censo con el nombre de la variable en cada año (vista cruzada de
+    la concordancia).
+  Etiquetas desde el diccionario oficial (2024), los cuestionarios (1992, 2002, 2017) y las tablas
+  auxiliares de la entrega (1992, 2002). Las fuentes de verdad son CSV versionados en
+  `metadatos/diccionario/`; el Excel se genera con un script. En esta fase se completa para las
+  variables de identificación, territorio y demografía básica.
 - [ ] Variables núcleo armonizadas: región, área, sexo y edad (fichas en borrador);
       parentesco y tipo de vivienda (esperan el cuestionario de 2002).
 - [x] Serie de población por región (DPA1974 y DPA2018) × área × sexo × edad quinquenal,
@@ -80,7 +94,9 @@ Tablas de viviendas, hogares y personas por censo con:
 - [ ] Sitio de documentación.
 
 ### Fase 3: módulos temáticos
-Uno a la vez, con el mismo flujo (ficha → correspondencia por censo → código → validación → versión):
+Uno a la vez, con el mismo flujo (diccionario consolidado del módulo → ficha → correspondencia
+por censo → código → validación → versión). El primer paso de cada módulo completa y verifica en
+el diccionario consolidado las variables y categorías del tema en todos los censos:
 educación; vivienda y servicios; migración y lugar de nacimiento; trabajo (ocupación y rama);
 hogares; fecundidad; pueblos originarios; discapacidad y religión.
 
@@ -94,6 +110,7 @@ Versiones con DOI (Zenodo), CRAN/PyPI, guía de contribución, registro público
 
 ## Flujo para incorporar una variable
 
+0. Variables y categorías originales completas y verificadas en el diccionario consolidado.
 1. Ficha en `metadatos/variables/<variable>.yaml` con definición, universo y categorías armonizadas.
 2. Por cada censo: variable original, valores observados (desde `metadatos/inventario/`),
    regla de transformación y nota de comparabilidad.
