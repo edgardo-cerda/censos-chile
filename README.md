@@ -7,7 +7,7 @@ documentado y reproducible, con librerías para Python y R.
 > Usa únicamente información pública. Las cifras originales son del INE y de sus
 > organismos predecesores; los errores de procesamiento son responsabilidad de este proyecto.
 
-**Estado:** en construcción (fases 1 y 2: inventario de fuentes y primera serie núcleo). Ver [docs/plan.md](docs/plan.md).
+**Estado:** en construcción (fases 1 y 2: inventario de fuentes y primera serie núcleo). Ver [docs/plan.md](docs/plan.md) y el estado de avance en [docs/estado.md](docs/estado.md).
 
 ## Qué ofrece
 

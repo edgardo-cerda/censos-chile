@@ -1,5 +1,7 @@
 # Plan del proyecto
 
+> Estado de avance, decisiones y próximos pasos: [estado.md](estado.md).
+
 ## Objetivo
 
 Reunir los resultados de todos los censos de población y vivienda de Chile en un formato
