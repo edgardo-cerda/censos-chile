@@ -1,0 +1,12 @@
+censo,area,sexo,valor,fuente_id,cuadro,pagina_impresa,pagina_pdf,nota
+1982,_T,_T,11329736,pub_1982_v1,Cuadro 1.01 (fila Total país),2,40,
+1982,urbana,_T,9316120,pub_1982_v1,Cuadro 1.01 (sección Urbano),24,62,
+1982,rural,_T,2013616,pub_1982_v1,Cuadro 1.01 (sección Rural),46,84,
+1982,_T,hombre,5553409,pub_1982_v1,Cuadro 1.01,2,40,
+1982,_T,mujer,5776327,pub_1982_v1,Cuadro 1.01,2,40,
+1982,urbana,hombre,4464367,pub_1982_v1,Cuadro 1.01,24,62,
+1982,urbana,mujer,4851753,pub_1982_v1,Cuadro 1.01,24,62,
+1982,rural,hombre,1089042,pub_1982_v1,Cuadro 1.01,46,84,
+1982,rural,mujer,924574,pub_1982_v1,Cuadro 1.01,46,84,
+1992,_T,_T,13348401,pub_1992,Cuadro 1 (suma de las 13 regiones),18-35,,
+1992,urbana,_T,11140405,pub_1992,Cuadro 5 (ciudades + pueblos),174-201,,Calculado: la publicación no trae el total urbano explícito.

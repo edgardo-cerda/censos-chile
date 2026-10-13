@@ -52,7 +52,8 @@ Tablas de viviendas, hogares y personas por censo con:
 
 ### Fase 0: base del proyecto
 - [x] Repositorio, licencias (MIT para el código, CC BY 4.0 para los datos) y estructura.
-- [ ] Completar `fuentes.yaml`: URL pública o número de solicitud de transparencia de cada archivo.
+- [ ] Completar `fuentes.yaml`: URL directas de 2024 y de los PDF históricos; números de solicitud
+      de transparencia de 1982, 1992 y 2002 (pendiente).
 - [ ] Ubicar los censos sin publicación digital local (1843, 1854, 1875, 1885, 1895).
 
 ### Fase 1: inventarios
@@ -65,11 +66,13 @@ Tablas de viviendas, hogares y personas por censo con:
       desagregación, nivel territorial, página impresa y página del PDF.
 
 ### Fase 2: núcleo (primera versión pública)
-- [ ] Variables núcleo armonizadas: territorio, área urbana/rural, sexo, edad, parentesco,
-      tipo de vivienda.
-- [ ] Serie de población por sexo × edad quinquenal × área: país y división mayor para todos
-      los censos; comuna desde 1982.
-- [ ] Validación de microdatos 1982–2002 contra los libros publicados.
+- [ ] Variables núcleo armonizadas: región, área, sexo y edad (fichas en borrador);
+      parentesco y tipo de vivienda (esperan cuestionarios de 1982 y 2002).
+- [x] Serie de población por región (DPA1974 y DPA2018) × área × sexo × edad quinquenal,
+      1982–2024, desde microdatos (`pipelines/poblacion_nucleo.py`).
+- [ ] Serie por comuna (requiere correspondencia de comunas 1982 y 1992 -> DPA2018).
+- [ ] Validación de microdatos contra los libros publicados (`validacion/`): 1982 y 1992 cargados;
+      1982 difiere en área urbana/rural (ver ficha `area.yaml`).
 - [ ] Librerías Python y R v0.1: `tabulado()`, `microdatos()`, `diccionario()`, `territorio()`.
 - [ ] Sitio de documentación.
 

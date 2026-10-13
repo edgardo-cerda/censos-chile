@@ -49,6 +49,11 @@ campos:
     tipo: entero
     nulo: si
     descripcion: Límite superior del tramo (incluido). Nulo con edad_min informado = tramo abierto ("y más").
+  - nombre: edad_estado
+    tipo: texto
+    nulo: si
+    valores: [ignorada]
+    descripcion: '"ignorada" para personas sin edad declarada o con edad suprimida (edad_min y edad_max nulos).'
   - nombre: dimensiones
     tipo: json
     nulo: si

@@ -1,0 +1,44 @@
+nombre: area
+etiqueta: Área urbana o rural
+unidad: todas
+tema: territorio
+nivel: nucleo
+definicion: Clasificación urbana o rural del lugar donde se censó a la persona o vivienda.
+universo: Todas las personas, hogares y viviendas.
+categorias:
+  - {codigo: 1, etiqueta: Urbana}
+  - {codigo: 2, etiqueta: Rural}
+nota_armonizacion: >
+  La definición de área urbana cambia entre censos (umbral de población, actividad económica,
+  amanzanamiento). La variable se toma tal como la clasificó cada censo y no se reconstruye.
+censos:
+  1982:
+    tabla: personas / viviendas / hogares
+    variables_originales: [Area]
+    recodificacion: {1: 1, 2: 2}
+    comparabilidad: >
+      No coincide con lo publicado: los microdatos clasifican 239.897 personas más como rurales que
+      el Cuadro 1.01 del volumen I. La diferencia se concentra en localidades de categoría 11 y 12
+      clasificadas rurales (237.778 personas). Pendiente de resolver con la documentación de 1982.
+    estado: borrador
+  1992:
+    tabla: portafolios
+    variables_originales: [Area]
+    recodificacion: {1: 1, 2: 2}
+    comparabilidad: Coincide con la población de ciudades y pueblos publicada (11.140.405).
+    estado: borrador
+  2002:
+    tabla: portafolios
+    variables_originales: [Area]
+    recodificacion: {1: 1, 2: 2}
+    estado: borrador
+  2017:
+    tabla: personas / viviendas / hogares
+    variables_originales: [AREA]
+    recodificacion: {1: 1, 2: 2}
+    estado: borrador
+  2024:
+    tabla: personas / viviendas / hogares
+    variables_originales: [area]
+    recodificacion: {1: 1, 2: 2}
+    estado: verificado

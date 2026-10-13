@@ -1,0 +1,22 @@
+nombre: sexo
+etiqueta: Sexo
+unidad: persona
+tema: demografia
+nivel: nucleo
+definicion: Sexo de la persona según lo declarado en el censo.
+universo: Todas las personas censadas.
+categorias:
+  - {codigo: 1, etiqueta: Hombre}
+  - {codigo: 2, etiqueta: Mujer}
+censos:
+  1982: {tabla: personas, variables_originales: [Sexo], recodificacion: {1: 1, 2: 2}, estado: borrador}
+  1992: {tabla: personas, variables_originales: [Sexo], recodificacion: {1: 1, 2: 2}, estado: borrador}
+  2002: {tabla: personas, variables_originales: [P18], recodificacion: {1: 1, 2: 2}, estado: borrador}
+  2017: {tabla: personas, variables_originales: [P08], recodificacion: {1: 1, 2: 2}, estado: borrador}
+  2024:
+    tabla: personas
+    variables_originales: [sexo]
+    pregunta: "20. ¿Cuál es su sexo?"
+    recodificacion: {1: 1, 2: 2}
+    estado: verificado
+validacion: Totales por sexo de 1982 coinciden con el Cuadro 1.01 del volumen I.

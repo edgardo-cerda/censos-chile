@@ -7,7 +7,7 @@ documentado y reproducible, con librerías para Python y R.
 > Usa únicamente información pública. Las cifras originales son del INE y de sus
 > organismos predecesores; los errores de procesamiento son responsabilidad de este proyecto.
 
-**Estado:** en construcción (fase 1: inventario de fuentes). Ver [docs/plan.md](docs/plan.md).
+**Estado:** en construcción (fases 1 y 2: inventario de fuentes y primera serie núcleo). Ver [docs/plan.md](docs/plan.md).
 
 ## Qué ofrece
 
@@ -31,7 +31,10 @@ metadatos/
   concordancia/             matriz concepto × censo
   inventario/               perfil automático de cada tabla de microdatos
 digitalizacion/             cifras transcritas de las publicaciones (CSV por cuadro)
-herramientas/               scripts de inventario, extracción y validación
+herramientas/               scripts de inventario y extracción
+pipelines/                  generación de productos a partir de las fuentes
+productos/tabulados/        tabulados armonizados (CSV)
+validacion/                 cifras publicadas de referencia y contrastes
 docs/                       plan, criterios y notas metodológicas
 ```
 
@@ -43,7 +46,9 @@ Los microdatos no se versionan en este repositorio. Para correr las herramientas
 
 1. Copiar `config.ejemplo.yaml` como `config.yaml` y ajustar las rutas.
 2. `pip install -r herramientas/requirements.txt`
-3. `python herramientas/inventario_microdatos.py`
+3. `python herramientas/inventario_microdatos.py` (convierte y perfila los microdatos)
+4. `python pipelines/poblacion_nucleo.py` (genera el tabulado de población)
+5. `python validacion/validar_poblacion.py` (contrasta con cifras publicadas)
 
 ## Licencias
 

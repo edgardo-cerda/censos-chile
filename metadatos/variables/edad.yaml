@@ -1,0 +1,42 @@
+nombre: edad
+etiqueta: Edad en años cumplidos
+unidad: persona
+tema: demografia
+nivel: nucleo
+definicion: Edad en años cumplidos a la fecha del censo.
+universo: Todas las personas censadas.
+categorias:
+  - {codigo: "0-84", etiqueta: Años cumplidos}
+  - {codigo: 85, etiqueta: 85 años o más}
+  - {codigo: null, etiqueta: Ignorada}
+nota_armonizacion: >
+  Se fija un tope común de 85 años porque los microdatos públicos de 2024 truncan la edad en 85.
+  Los tabulados usan tramos quinquenales 0-4 … 80-84 y 85 o más; la edad ignorada se informa aparte.
+censos:
+  1982:
+    tabla: personas
+    variables_originales: [Edad]
+    regla: Rango 0–99; 99 se interpreta como "99 o más" (por verificar con la documentación).
+    estado: borrador
+  1992:
+    tabla: personas
+    variables_originales: [Edad]
+    regla: Rango 0–99; 99 se interpreta como "99 o más" (por verificar).
+    estado: borrador
+  2002:
+    tabla: personas
+    variables_originales: [P19]
+    regla: Rango 0–108, sin tope.
+    estado: borrador
+  2017:
+    tabla: personas
+    variables_originales: [P09]
+    regla: Rango 0–100; 100 = "100 o más" (por verificar).
+    estado: borrador
+  2024:
+    tabla: personas
+    variables_originales: [edad]
+    pregunta: "21. ¿Cuántos años cumplidos tiene?"
+    regla: Rango 0–85 (85 = 85 o más); -66 = valor suprimido por anonimización -> ignorada.
+    comparabilidad: 151.199 personas (0,8 %) con edad suprimida en la base pública.
+    estado: verificado

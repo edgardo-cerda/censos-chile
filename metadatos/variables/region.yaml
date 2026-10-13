@@ -1,0 +1,50 @@
+nombre: region
+etiqueta: Región
+unidad: todas
+tema: territorio
+nivel: nucleo
+definicion: Región de empadronamiento, en dos versiones de la división político-administrativa.
+universo: Todas las personas, hogares y viviendas.
+versiones:
+  DPA1974: 13 regiones (I a XII y Metropolitana), vigente en 1982, 1992 y 2002.
+  DPA2018: 16 regiones, vigente desde la creación de Ñuble (2018).
+nota_armonizacion: >
+  Ambas versiones se obtienen de forma exacta para todos los censos porque las regiones creadas
+  después de 1974 son uniones de comunas completas: Arica y Parinacota (15) desde Tarapacá (1),
+  Los Ríos (14) desde Los Lagos (10) y Ñuble (16) desde Biobío (8).
+  Paso de DPA2018 a DPA1974: 15 -> 1, 14 -> 10, 16 -> 8.
+censos:
+  1982:
+    tabla: personas
+    variables_originales: [Comuna, Rpc_habitual, Comuna_habitual]
+    regla: >
+      La comuna 1982 usa una codificación correlativa propia (201–674). Rpc_* = región*10 + provincia.
+      La provincia de cada comuna es la moda de Rpc_habitual entre quienes residen en la misma comuna
+      en que fueron censados. DPA2018: provincias 11 y 12 (Arica, Parinacota) -> 15; 101 (Valdivia) -> 14;
+      81 (Ñuble) -> 16; resto -> Rpc // 10.
+    estado: borrador
+  1992:
+    tabla: portafolios
+    variables_originales: [Comuna]
+    regla: >
+      Comunas en codificación "Origen 3" (DPA de 15 regiones, 2007). Región = código // 1000;
+      provincia 84 (Ñuble) -> región 16.
+    estado: borrador
+  2002:
+    tabla: portafolios
+    variables_originales: [Comuna]
+    regla: Ya recodificado a DPA2018 en la entrega. Región = código // 1000.
+    estado: borrador
+  2017:
+    tabla: personas / viviendas / hogares
+    variables_originales: [REGION]
+    regla: DPA2018. También trae REGION_15R (DPA de 15 regiones).
+    estado: borrador
+  2024:
+    tabla: personas / viviendas / hogares
+    variables_originales: [region]
+    estado: verificado
+validacion: >
+  Población de la Región Metropolitana según microdatos: 4.318.097 (1982), 5.257.937 (1992),
+  6.061.185 (2002), 7.112.808 (2017), 7.400.741 (2024). Pendiente: incorporar las cifras regionales
+  publicadas a validacion/referencias_poblacion.csv.
