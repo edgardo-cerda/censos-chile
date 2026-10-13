@@ -1,0 +1,125 @@
+nombre: tipo_vivienda
+etiqueta: Tipo de vivienda
+unidad: vivienda
+tema: vivienda
+nivel: nucleo
+definicion: Tipo de vivienda según la observación del censista, incluida la distinción entre vivienda particular y colectiva.
+universo: Todos los registros de la tabla de viviendas (incluye los operativos que no son viviendas).
+
+# recodificacion: {código original: [general, detallado]}; detallado nulo = el censo no distingue.
+categorias:
+  - {codigo: 1, etiqueta: Casa}
+  - {codigo: 2, etiqueta: Departamento en edificio}
+  - {codigo: 3, etiqueta: Pieza en casa antigua o en conventillo}
+  - codigo: 4
+    etiqueta: Mediagua, mejora, rancho, choza o vivienda tradicional indígena
+    detallado:
+      - {codigo: 41, etiqueta: Mediagua o mejora}
+      - {codigo: 42, etiqueta: Rancho o choza}
+      - {codigo: 43, etiqueta: Ruca o vivienda tradicional indígena}
+      - {codigo: 44, etiqueta: "Rancho, choza o ruca (1992)"}
+      - {codigo: 45, etiqueta: "Mediagua, mejora, rancho o choza (2017, 2024)"}
+  - {codigo: 5, etiqueta: "Móvil (carpa, vagón, casa rodante o similar)"}
+  - {codigo: 6, etiqueta: Otro tipo de vivienda particular}
+  - codigo: 7
+    etiqueta: Vivienda colectiva
+    detallado:
+      - {codigo: 71, etiqueta: Residencial o pensión}
+      - {codigo: 72, etiqueta: "Hotel, motel o posada"}
+      - {codigo: 73, etiqueta: "Institución (internado, hospital, regimiento, etc.)"}
+      - {codigo: 74, etiqueta: Otra vivienda colectiva}
+  - codigo: 8
+    etiqueta: No es vivienda (operativo de personas en tránsito o en situación de calle)
+    detallado:
+      - {codigo: 81, etiqueta: Operativo de personas en tránsito}
+      - {codigo: 82, etiqueta: Operativo de personas en situación de calle}
+
+nota_armonizacion: >
+  Las categorías precarias se agrupan en la categoría 4 porque cada censo las combina distinto:
+  1992 junta rancho, choza y ruca; 2002 separa las tres; 2017 y 2024 juntan mediagua con rancho y
+  choza, y separan la vivienda tradicional indígena. Los detallados 44 y 45 conservan esas
+  agrupaciones propias. Vivienda particular = categorías 1 a 6.
+
+censos:
+  1992:
+    tabla: viviendas
+    variables_originales: [Tipo_vivienda]
+    pregunta: "1. Indique el tipo de vivienda"
+    recodificacion:
+      1: [1, null]
+      2: [2, null]
+      3: [3, null]
+      4: [4, 41]
+      5: [4, 44]
+      6: [5, null]
+      7: [6, null]
+      8: [7, 71]
+      9: [7, 72]
+      10: [7, 73]
+      11: [7, 74]
+      99: [8, null]
+    comparabilidad: >
+      Código 99 sin etiqueta (79 registros, 7.952 personas, sin hogares): parecen operativos
+      especiales (en tránsito o en situación de calle). Por verificar.
+    estado: borrador
+  2002:
+    tabla: viviendas
+    variables_originales: [V1]
+    pregunta: "1. Indique el tipo de vivienda"
+    recodificacion:
+      1: [1, null]
+      2: [2, null]
+      3: [3, null]
+      4: [4, 41]
+      5: [4, 42]
+      6: [4, 43]
+      7: [5, null]
+      8: [6, null]
+      9: [7, null]
+      10: [8, null]
+    comparabilidad: >
+      Código 10 sin etiqueta (295 registros, 15.401 personas, condición de ocupación 0): parecen
+      operativos especiales (en tránsito o en situación de calle). Por verificar.
+    estado: borrador
+  2017:
+    tabla: viviendas
+    variables_originales: [P01]
+    pregunta: "1. Indique el tipo de vivienda"
+    recodificacion:
+      1: [1, null]
+      2: [2, null]
+      3: [4, 43]
+      4: [3, null]
+      5: [4, 45]
+      6: [5, null]
+      7: [6, null]
+      8: [7, null]
+      9: [8, 81]
+      10: [8, 82]
+    estado: borrador
+  2024:
+    tabla: viviendas
+    variables_originales: [tipo_operativo, p2_tipo_vivienda]
+    pregunta: "2. Seleccione el tipo de vivienda particular"
+    regla: >
+      tipo_operativo 3 -> 7 (vivienda colectiva); tipo_operativo 1 -> [8, 82] (situación de calle);
+      tipo_operativo 2 -> según p2_tipo_vivienda.
+    recodificacion_variable: p2_tipo_vivienda
+    recodificacion:
+      1: [1, null]
+      3: [2, null]
+      5: [4, 43]
+      6: [3, null]
+      7: [4, 45]
+      8: [5, null]
+      9: [6, null]
+    recodificacion_operativo:
+      1: [8, 82]
+      3: [7, null]
+    comparabilidad: >
+      El cuestionario distingue casa con acceso directo y casa en condominio (1, 2) y departamento
+      con y sin ascensor (3, 4), pero la base pública solo trae los códigos 1 y 3. El código 7
+      incluye la vivienda de emergencia. Sin operativo de personas en tránsito. Cada persona en
+      situación de calle es un registro de la tabla de viviendas (21.750), mientras que en 2017 los
+      operativos agrupan personas (219 registros): la categoría 8 no es comparable en número de registros.
+    estado: borrador

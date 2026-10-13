@@ -1,0 +1,159 @@
+nombre: parentesco
+etiqueta: Relación de parentesco con el jefe(a) de hogar
+unidad: persona
+tema: demografia
+nivel: nucleo
+definicion: Relación de cada persona con la persona reconocida como jefa o jefe del hogar.
+universo: Todas las personas censadas.
+
+# recodificacion: {código original: [general, detallado]}; detallado nulo = el censo no distingue.
+categorias:
+  - {codigo: 1, etiqueta: Jefe/a de hogar}
+  - codigo: 2
+    etiqueta: Cónyuge, conviviente o pareja
+    detallado:
+      - {codigo: 21, etiqueta: Esposo/a o cónyuge}
+      - {codigo: 22, etiqueta: Conviviente de hecho o pareja}
+      - {codigo: 23, etiqueta: Conviviente por unión civil}
+  - codigo: 3
+    etiqueta: Hijo/a o hijastro/a
+    detallado:
+      - {codigo: 31, etiqueta: Hijo/a}
+      - {codigo: 32, etiqueta: "Hijastro/a o hijo/a del cónyuge, conviviente o pareja"}
+  - {codigo: 4, etiqueta: Yerno o nuera}
+  - {codigo: 5, etiqueta: Nieto/a}
+  - codigo: 6
+    etiqueta: Hermano/a o cuñado/a
+    detallado:
+      - {codigo: 61, etiqueta: Hermano/a}
+      - {codigo: 62, etiqueta: Cuñado/a}
+  - codigo: 7
+    etiqueta: Padre/madre o suegro/a
+    detallado:
+      - {codigo: 71, etiqueta: Padre/madre}
+      - {codigo: 72, etiqueta: Suegro/a}
+  - codigo: 8
+    etiqueta: Otro pariente
+    detallado:
+      - {codigo: 81, etiqueta: Abuelo/a}
+      - {codigo: 82, etiqueta: Otro pariente (sin abuelo/a)}
+  - {codigo: 9, etiqueta: No pariente}
+  - {codigo: 10, etiqueta: Servicio doméstico puertas adentro}
+  - {codigo: 11, etiqueta: Persona en vivienda colectiva}
+  - codigo: 12
+    etiqueta: Persona censada fuera de una vivienda (en tránsito o en situación de calle)
+    detallado:
+      - {codigo: 121, etiqueta: Persona en tránsito}
+      - {codigo: 122, etiqueta: Persona en situación de calle}
+
+nota_armonizacion: >
+  La categoría general es comparable en los cuatro censos. Es tan agregada como el censo que
+  menos distingue: 1992 junta hermanos con cuñados, padres con suegros e hijos con hijastros, y
+  no separa a los abuelos de otros parientes. Las categorías 11 y 12 no son relaciones de
+  parentesco: identifican a quienes no forman parte de un hogar particular.
+
+censos:
+  1992:
+    tabla: personas
+    variables_originales: [Parentesco]
+    pregunta: "1. ¿Cuál es su relación de parentesco con el jefe o jefa de hogar?"
+    recodificacion:
+      1: [1, null]
+      2: [2, 21]
+      3: [2, 22]
+      4: [3, null]
+      5: [4, null]
+      6: [5, null]
+      7: [6, null]
+      8: [7, null]
+      9: [8, null]
+      10: [9, null]
+      11: [10, null]
+      12: [11, null]
+      99: [12, null]
+    comparabilidad: >
+      Código 99 sin etiqueta (7.952 personas): todas están en los 79 registros con tipo de vivienda
+      99 y sin hogares, que parecen operativos especiales (en tránsito o en situación de calle).
+      Por verificar. "Servicio doméstico" no especifica puertas adentro.
+    estado: borrador
+  2002:
+    tabla: personas
+    variables_originales: [P17]
+    pregunta: "17. ¿Cuál es su relación de parentesco con el jefe o jefa del hogar?"
+    recodificacion:
+      1: [1, null]
+      2: [2, 21]
+      3: [2, 22]
+      4: [3, 31]
+      5: [3, 32]
+      6: [4, null]
+      7: [5, null]
+      8: [6, 61]
+      9: [6, 62]
+      10: [7, 71]
+      11: [7, 72]
+      12: [8, null]
+      13: [9, null]
+      14: [10, null]
+      15: [11, null]
+      16: [12, null]
+    comparabilidad: >
+      Código 16 sin etiqueta (15.401 personas): todas están en los 295 registros con tipo de
+      vivienda 10, que parecen operativos especiales (en tránsito o en situación de calle).
+      Por verificar.
+    estado: borrador
+  2017:
+    tabla: personas
+    variables_originales: [P07]
+    pregunta: "7. ¿Qué relación de parentesco tiene con el jefe/a de hogar?"
+    recodificacion:
+      1: [1, null]
+      2: [2, 21]
+      3: [2, 23]
+      4: [2, 22]
+      5: [3, 31]
+      6: [3, 32]
+      7: [6, 61]
+      8: [7, 71]
+      9: [6, 62]
+      10: [7, 72]
+      11: [4, null]
+      12: [5, null]
+      13: [8, 81]
+      14: [8, 82]
+      15: [9, null]
+      16: [10, null]
+      17: [11, null]
+      18: [12, 121]
+      19: [12, 122]
+    comparabilidad: El acuerdo de unión civil existe desde 2015; antes esas parejas se declaraban convivientes.
+    estado: borrador
+  2024:
+    tabla: personas
+    variables_originales: [parentesco]
+    pregunta: "19. ¿Qué relación de parentesco tiene con la jefa o jefe de hogar?"
+    recodificacion:
+      1: [1, null]
+      2: [2, 21]
+      3: [2, 23]
+      4: [2, 22]
+      5: [3, 31]
+      6: [3, 32]
+      7: [6, 61]
+      8: [7, 71]
+      9: [6, 62]
+      10: [7, 72]
+      11: [4, null]
+      12: [5, null]
+      13: [8, 81]
+      14: [8, 82]
+      15: [9, null]
+      16: [10, null]
+      17: [11, null]
+      19: [12, 122]
+    comparabilidad: >
+      Sin operativo de personas en tránsito (no existe el código 18). El cuestionario de 2024 pide
+      incluir a quienes están temporalmente fuera del hogar, mientras que los censos anteriores
+      registran a quienes alojaron la noche anterior: esto puede explicar la caída de las personas en
+      viviendas colectivas (282.257 en 2017; 119.027 en 2024). Por verificar en la documentación.
+    estado: borrador

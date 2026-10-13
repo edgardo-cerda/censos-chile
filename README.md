@@ -53,6 +53,7 @@ Los microdatos no se versionan en este repositorio. Para correr las herramientas
 5. `python herramientas/generar_diccionario.py` (genera `productos/diccionario/diccionario_censos.xlsx`)
 6. `python pipelines/poblacion_nucleo.py` (genera el tabulado de población)
 7. `python validacion/validar_poblacion.py` (contrasta con cifras publicadas)
+8. `python validacion/revisar_fichas.py` (aplica las fichas de variables al inventario)
 
 ## Licencias
 

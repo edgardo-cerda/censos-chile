@@ -88,8 +88,9 @@ Tablas de viviendas, hogares y personas por censo con:
   Versión 0.1 generada (`herramientas/generar_diccionario.py`): 360 variables y 2.476 códigos;
   2017 y 2024 completos con etiquetas oficiales; quedan sin etiqueta 60 códigos de 1992 y 198 de
   2002 (sobre todo ocupación y rama a 2 dígitos y uso de piezas).
-- [ ] Variables núcleo armonizadas: región, área, sexo y edad (fichas en borrador);
-      parentesco y tipo de vivienda (esperan el cuestionario de 2002).
+- [ ] Variables núcleo armonizadas: fichas en borrador de región, área, sexo, edad, parentesco y
+      tipo de vivienda. `validacion/revisar_fichas.py` comprueba que la recodificación cubra todos
+      los códigos observados. Falta revisión del autor y aplicarlas en los pipelines.
 - [x] Serie de población por región (DPA1974 y DPA2018) × área × sexo × edad quinquenal,
       1992–2024, desde microdatos (`pipelines/poblacion_nucleo.py`).
 - [ ] Serie por comuna (requiere correspondencia de comunas 1992 -> DPA2018).
@@ -119,6 +120,7 @@ Versiones con DOI (Zenodo), CRAN/PyPI, guía de contribución, registro público
 1. Ficha en `metadatos/variables/<variable>.yaml` con definición, universo y categorías armonizadas.
 2. Por cada censo: variable original, valores observados (desde `metadatos/inventario/`),
    regla de transformación y nota de comparabilidad.
-3. Código de transformación en el pipeline del censo.
+3. Código de transformación en el pipeline del censo. `python validacion/revisar_fichas.py <variable>`
+   verifica la recodificación contra las frecuencias del inventario antes de llevarla al pipeline.
 4. Validación: totales contra publicaciones, coherencia entre censos, tests automáticos.
 5. Revisión y publicación en la siguiente versión.

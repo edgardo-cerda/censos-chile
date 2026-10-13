@@ -46,7 +46,7 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 |---|---|
 | Diccionario consolidado (`productos/diccionario/diccionario_censos.xlsx`) | 🟡 v0.1: 360 variables, 2.476 códigos; 2017 y 2024 completos; faltan 60 códigos de 1992 y 198 de 2002 |
 | Fichas región, área, sexo, edad | 🟡 Borrador |
-| Fichas parentesco, tipo de vivienda | ⏳ Pendientes (ya está el cuestionario 2002) |
+| Fichas parentesco, tipo de vivienda | 🟡 Borrador; recodificación verificada contra el inventario (`validacion/revisar_fichas.py`) |
 | Serie de población región × área × sexo × edad, 1992–2024 | ✅ `productos/tabulados/poblacion_microdatos.csv` (8.448 filas) |
 | Serie por comuna | ⏳ Falta correspondencia de comunas 1992 → DPA2018 (por nombre, tablas `COMUNAS_1992`/`COMUNAS_2002`) |
 | Validación contra publicaciones | 🟡 1992 coincide (total y urbano); faltan cifras regionales y de 2002, 2017, 2024 |
@@ -69,7 +69,8 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 
 1. Revisión del diccionario consolidado por el autor; completar los códigos sin etiqueta de
    1992 y 2002 (99/9 probablemente "ignorado"; ocupación y rama 2002; uso de piezas 2002).
-2. Fichas de parentesco y tipo de vivienda.
+2. Revisión de las fichas de parentesco y tipo de vivienda por el autor (operativos especiales de
+   1992 y 2002; efecto del censo de derecho de 2024 en viviendas colectivas).
 3. Correspondencia de comunas 1992 → DPA2018 y serie de población por comuna.
 4. Cifras publicadas de referencia para 2002, 2017 y 2024, y regionales.
 5. Esqueleto de las librerías (`tabulado()`, `diccionario()`). Los microdatos de 2017 vienen en
