@@ -85,6 +85,9 @@ Tablas de viviendas, hogares y personas por censo con:
   auxiliares de la entrega (1992, 2002). Las fuentes de verdad son CSV versionados en
   `metadatos/diccionario/`; el Excel se genera con un script. En esta fase se completa para las
   variables de identificación, territorio y demografía básica.
+  Versión 0.1 generada (`herramientas/generar_diccionario.py`): 360 variables y 2.476 códigos;
+  2017 y 2024 completos con etiquetas oficiales; quedan sin etiqueta 60 códigos de 1992 y 198 de
+  2002 (sobre todo ocupación y rama a 2 dígitos y uso de piezas).
 - [ ] Variables núcleo armonizadas: región, área, sexo y edad (fichas en borrador);
       parentesco y tipo de vivienda (esperan el cuestionario de 2002).
 - [x] Serie de población por región (DPA1974 y DPA2018) × área × sexo × edad quinquenal,

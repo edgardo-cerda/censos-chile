@@ -1,0 +1,198 @@
+censo,tabla,variable,codigo,etiqueta,fuente,nota
+2002,portafolios,Area,1,Urbana,entrega,Por verificar con documentación.
+2002,portafolios,Area,2,Rural,entrega,Por verificar con documentación.
+2002,viviendas,V1,1,Casa,cuestionario,
+2002,viviendas,V1,2,Departamento en edificio,cuestionario,
+2002,viviendas,V1,3,Piezas en casa antigua o en conventillo,cuestionario,
+2002,viviendas,V1,4,"Mejora, mediagua",cuestionario,
+2002,viviendas,V1,5,"Rancho, choza",cuestionario,
+2002,viviendas,V1,6,Ruca,cuestionario,
+2002,viviendas,V1,7,"Móvil (carpa, vagón, container, bote, lancha, similar)",cuestionario,
+2002,viviendas,V1,8,Otro tipo de vivienda particular,cuestionario,
+2002,viviendas,V1,9,"Vivienda colectiva (residencial, hotel, hospital, etc.)",cuestionario,
+2002,viviendas,V2,1,Ocupada con personas presentes,cuestionario,
+2002,viviendas,V2,2,Ocupada con personas ausentes,cuestionario,
+2002,viviendas,V2,3,Desocupada,cuestionario,
+2002,viviendas,V3,1,Propia (pagada totalmente),cuestionario,
+2002,viviendas,V3,2,Propia (pagando a plazo),cuestionario,
+2002,viviendas,V3,3,Arrendada,cuestionario,
+2002,viviendas,V3,4,Cedida por trabajo o servicio,cuestionario,
+2002,viviendas,V3,5,Gratuita,cuestionario,
+2002,viviendas,V4A,1,"Hormigón armado, piedra",cuestionario,
+2002,viviendas,V4A,2,Ladrillo,cuestionario,
+2002,viviendas,V4A,3,"Paneles estructurales, bloque (prefabricado)",cuestionario,
+2002,viviendas,V4A,4,Madera o tabique forrado,cuestionario,
+2002,viviendas,V4A,5,Internit,cuestionario,
+2002,viviendas,V4A,6,"Adobe, barro empajado",cuestionario,
+2002,viviendas,V4A,7,"Desechos (lata, cartones, plástico, etc.)",cuestionario,
+2002,viviendas,V4B,1,"Tejas (arcilla, metálica, cemento)",cuestionario,
+2002,viviendas,V4B,2,"Tejuela (madera, asfáltica)",cuestionario,
+2002,viviendas,V4B,3,Losa de hormigón,cuestionario,
+2002,viviendas,V4B,4,Zinc,cuestionario,
+2002,viviendas,V4B,5,Pizarreño,cuestionario,
+2002,viviendas,V4B,6,Fibra de vidrio/Femocolor,cuestionario,
+2002,viviendas,V4B,7,Fonolita,cuestionario,
+2002,viviendas,V4B,8,Paja embarrada,cuestionario,
+2002,viviendas,V4B,9,"Desechos (lata, cartones, plástico, etc.)",cuestionario,
+2002,viviendas,V4C,1,Parquet,cuestionario,
+2002,viviendas,V4C,2,Baldosín cerámico,cuestionario,
+2002,viviendas,V4C,3,Entablado (madera),cuestionario,
+2002,viviendas,V4C,4,Alfombra muro a muro,cuestionario,
+2002,viviendas,V4C,5,Baldosas de cemento,cuestionario,
+2002,viviendas,V4C,6,"Plásticos (flexit, linóleo, etc.)",cuestionario,
+2002,viviendas,V4C,7,Ladrillo,cuestionario,
+2002,viviendas,V4C,8,Radier,cuestionario,
+2002,viviendas,V4C,9,Tierra,cuestionario,
+2002,viviendas,V5,1,Red pública (Cía. Electricidad),cuestionario,
+2002,viviendas,V5,2,Generador propio o comunitario,cuestionario,
+2002,viviendas,V5,3,Placa solar,cuestionario,
+2002,viviendas,V5,4,No tiene alumbrado eléctrico,cuestionario,
+2002,viviendas,V6,1,Red pública (Cía. Agua Potable),cuestionario,
+2002,viviendas,V6,2,Pozo o noria,cuestionario,
+2002,viviendas,V6,3,"Río, vertiente, estero",cuestionario,
+2002,viviendas,V7,1,Cañería dentro de la vivienda,cuestionario,
+2002,viviendas,V7,2,"Cañería fuera de la vivienda, pero dentro del sitio",cuestionario,
+2002,viviendas,V7,3,No tiene agua por cañería,cuestionario,
+2002,viviendas,V8,1,Conectado a alcantarillado,cuestionario,
+2002,viviendas,V8,2,Conectado a fosa séptica,cuestionario,
+2002,viviendas,V8,3,Cajón sobre pozo negro,cuestionario,
+2002,viviendas,V8,4,Cajón sobre acequia o canal,cuestionario,
+2002,viviendas,V8,5,Químico,cuestionario,
+2002,viviendas,V8,6,No tiene servicio higiénico (W.C.),cuestionario,
+2002,viviendas,V9,1,1 ducha,cuestionario_orden,"Opciones 1, 2, 3, 4, 5 o más y 'No tiene ducha' sin código impreso; el código de 'No tiene ducha' está por verificar (¿6?)."
+2002,viviendas,V9,2,2 duchas,cuestionario_orden,"Opciones 1, 2, 3, 4, 5 o más y 'No tiene ducha' sin código impreso; el código de 'No tiene ducha' está por verificar (¿6?)."
+2002,viviendas,V9,3,3 duchas,cuestionario_orden,"Opciones 1, 2, 3, 4, 5 o más y 'No tiene ducha' sin código impreso; el código de 'No tiene ducha' está por verificar (¿6?)."
+2002,viviendas,V9,4,4 duchas,cuestionario_orden,"Opciones 1, 2, 3, 4, 5 o más y 'No tiene ducha' sin código impreso; el código de 'No tiene ducha' está por verificar (¿6?)."
+2002,viviendas,V9,5,5 o más duchas,cuestionario_orden,"Opciones 1, 2, 3, 4, 5 o más y 'No tiene ducha' sin código impreso; el código de 'No tiene ducha' está por verificar (¿6?)."
+2002,personas,P17,1,Jefe/a hogar,cuestionario,
+2002,personas,P17,2,Esposo(a)/cónyuge,cuestionario,
+2002,personas,P17,3,Conviviente/pareja,cuestionario,
+2002,personas,P17,4,Hijo/a,cuestionario,
+2002,personas,P17,5,Hijastro/a,cuestionario,
+2002,personas,P17,6,Yerno/nuera,cuestionario,
+2002,personas,P17,7,Nieto/a,cuestionario,
+2002,personas,P17,8,Hermano/a,cuestionario,
+2002,personas,P17,9,Cuñado/a,cuestionario,
+2002,personas,P17,10,Padres,cuestionario,
+2002,personas,P17,11,Suegro/a,cuestionario,
+2002,personas,P17,12,Otro pariente,cuestionario,
+2002,personas,P17,13,No pariente,cuestionario,
+2002,personas,P17,14,Servicio doméstico puertas adentro,cuestionario,
+2002,personas,P17,15,Miembro hogar colectivo,cuestionario,
+2002,personas,P18,1,Hombre,cuestionario_orden,El cuestionario no imprime el código.
+2002,personas,P18,2,Mujer,cuestionario_orden,El cuestionario no imprime el código.
+2002,personas,P20_1,1,Marcada,inferido,La entrega separa cada opción en una columna 0/1.
+2002,personas,P20_2,1,Marcada,inferido,La entrega separa cada opción en una columna 0/1.
+2002,personas,P20_3,1,Marcada,inferido,La entrega separa cada opción en una columna 0/1.
+2002,personas,P20_4,1,Marcada,inferido,La entrega separa cada opción en una columna 0/1.
+2002,personas,P20_5,1,Marcada,inferido,La entrega separa cada opción en una columna 0/1.
+2002,personas,P20_6,1,Marcada,inferido,La entrega separa cada opción en una columna 0/1.
+2002,personas,P21,1,Alacalufe (Kawashkar),cuestionario,
+2002,personas,P21,2,Atacameño,cuestionario,
+2002,personas,P21,3,Aimara,cuestionario,
+2002,personas,P21,4,Colla,cuestionario,
+2002,personas,P21,5,Mapuche,cuestionario,
+2002,personas,P21,6,Quechua,cuestionario,
+2002,personas,P21,7,Rapa Nui,cuestionario,
+2002,personas,P21,8,Yámana (Yagán),cuestionario,
+2002,personas,P21,9,Ninguno de los anteriores,cuestionario,
+2002,personas,P22A_HOMOLOGADA_R16,1,En esta comuna,inferido,El cuestionario no imprime códigos; asignados por el orden de las opciones y las frecuencias.
+2002,personas,P22A_HOMOLOGADA_R16,2,En otra comuna,inferido,El cuestionario no imprime códigos; asignados por el orden de las opciones y las frecuencias.
+2002,personas,P22A_HOMOLOGADA_R16,3,En otro país,inferido,El cuestionario no imprime códigos; asignados por el orden de las opciones y las frecuencias.
+2002,personas,P23A_HOMOLOGADA_R16,1,Sí,inferido,El cuestionario no imprime códigos; asignados por el orden de las opciones y las frecuencias.
+2002,personas,P23A_HOMOLOGADA_R16,2,No (vive en otra comuna),inferido,El cuestionario no imprime códigos; asignados por el orden de las opciones y las frecuencias.
+2002,personas,P23A_HOMOLOGADA_R16,3,No (vive en otro país),inferido,El cuestionario no imprime códigos; asignados por el orden de las opciones y las frecuencias.
+2002,personas,P24A_HOMOLOGADA_R16,1,En esta comuna,inferido,El cuestionario no imprime códigos; asignados por el orden de las opciones y las frecuencias.
+2002,personas,P24A_HOMOLOGADA_R16,2,En otra comuna,inferido,El cuestionario no imprime códigos; asignados por el orden de las opciones y las frecuencias.
+2002,personas,P24A_HOMOLOGADA_R16,3,En otro país,inferido,El cuestionario no imprime códigos; asignados por el orden de las opciones y las frecuencias.
+2002,personas,P25,1,Sí,cuestionario_orden,El cuestionario no imprime el código.
+2002,personas,P25,2,No,cuestionario_orden,El cuestionario no imprime el código.
+2002,personas,P26A,1,Nunca asistió,cuestionario,
+2002,personas,P26A,2,Pre-básica,cuestionario,
+2002,personas,P26A,3,Especial/diferencial,cuestionario,
+2002,personas,P26A,4,Básica/primaria,cuestionario,
+2002,personas,P26A,5,Media común,cuestionario,
+2002,personas,P26A,6,Humanidades,cuestionario,
+2002,personas,P26A,7,Media comercial,cuestionario,
+2002,personas,P26A,8,Media industrial,cuestionario,
+2002,personas,P26A,9,Media agrícola,cuestionario,
+2002,personas,P26A,10,Media marítima,cuestionario,
+2002,personas,P26A,11,Normal,cuestionario,
+2002,personas,P26A,12,Técnica femenina,cuestionario,
+2002,personas,P26A,13,Centro de formación técnica,cuestionario,
+2002,personas,P26A,14,Instituto profesional,cuestionario,
+2002,personas,P26A,15,Universitaria,cuestionario,
+2002,personas,P27,1,Casado/a,cuestionario,
+2002,personas,P27,2,Conviviente/pareja,cuestionario,
+2002,personas,P27,3,Soltero/a,cuestionario,
+2002,personas,P27,4,Anulado/a,cuestionario,
+2002,personas,P27,5,Separado/a,cuestionario,
+2002,personas,P27,6,Viudo/a,cuestionario,
+2002,personas,P28,1,Católica,cuestionario,
+2002,personas,P28,2,Evangélica,cuestionario,
+2002,personas,P28,3,Testigo de Jehová,cuestionario,
+2002,personas,P28,4,Judaica,cuestionario,
+2002,personas,P28,5,Mormón,cuestionario,
+2002,personas,P28,6,Musulmana,cuestionario,
+2002,personas,P28,7,Ortodoxa,cuestionario,
+2002,personas,P28,8,Otra religión o credo,cuestionario,
+2002,personas,P28,9,"Ninguna, ateo, agnóstico",cuestionario,
+2002,personas,P29,1,Trabajando por ingreso,cuestionario,
+2002,personas,P29,2,"Sin trabajar, pero tiene empleo",cuestionario,
+2002,personas,P29,3,"Buscando trabajo, habiendo trabajado antes",cuestionario,
+2002,personas,P29,4,Trabajando para un familiar sin pago en dinero,cuestionario,
+2002,personas,P29,5,Buscando trabajo por primera vez,cuestionario,
+2002,personas,P29,6,En quehaceres de su hogar,cuestionario,
+2002,personas,P29,7,Estudiando,cuestionario,
+2002,personas,P29,8,Jubilado o rentista,cuestionario,
+2002,personas,P29,9,Incapacitado permanentemente para trabajar,cuestionario,
+2002,personas,P29,10,Otra situación,cuestionario,
+2002,personas,P30,1,"Trabajador asalariado (empleado, obrero, jornalero, etc.)",cuestionario,
+2002,personas,P30,2,Trabajador de servicio doméstico,cuestionario,
+2002,personas,P30,3,Trabajador por cuenta propia,cuestionario,
+2002,personas,P30,4,"Empleador, empresario o patrón",cuestionario,
+2002,personas,P30,5,Familiar no remunerado,cuestionario,
+2002,personas,P33A,1,En esta comuna,inferido,El cuestionario no imprime códigos; asignados por el orden de las opciones y las frecuencias.
+2002,personas,P33A,2,En otra comuna,inferido,El cuestionario no imprime códigos; asignados por el orden de las opciones y las frecuencias.
+2002,personas,P36A,1,Enero,cuestionario,
+2002,personas,P36A,2,Febrero,cuestionario,
+2002,personas,P36A,3,Marzo,cuestionario,
+2002,personas,P36A,4,Abril,cuestionario,
+2002,personas,P36A,5,Mayo,cuestionario,
+2002,personas,P36A,6,Junio,cuestionario,
+2002,personas,P36A,7,Julio,cuestionario,
+2002,personas,P36A,8,Agosto,cuestionario,
+2002,personas,P36A,9,Septiembre,cuestionario,
+2002,personas,P36A,10,Octubre,cuestionario,
+2002,personas,P36A,11,Noviembre,cuestionario,
+2002,personas,P36A,12,Diciembre,cuestionario,
+2002,viviendas,V3,0,No aplica (vivienda colectiva o no ocupada con personas presentes),inferido,Verificado: los 500.799 registros con 0 son viviendas colectivas o no ocupadas con personas presentes.
+2002,viviendas,V4A,0,No aplica (vivienda colectiva o no ocupada con personas presentes),inferido,Verificado: los 500.799 registros con 0 son viviendas colectivas o no ocupadas con personas presentes.
+2002,viviendas,V4B,0,No aplica (vivienda colectiva o no ocupada con personas presentes),inferido,Verificado: los 500.799 registros con 0 son viviendas colectivas o no ocupadas con personas presentes.
+2002,viviendas,V4C,0,No aplica (vivienda colectiva o no ocupada con personas presentes),inferido,Verificado: los 500.799 registros con 0 son viviendas colectivas o no ocupadas con personas presentes.
+2002,viviendas,V5,0,No aplica (vivienda colectiva o no ocupada con personas presentes),inferido,Verificado: los 500.799 registros con 0 son viviendas colectivas o no ocupadas con personas presentes.
+2002,viviendas,V6,0,No aplica (vivienda colectiva o no ocupada con personas presentes),inferido,Verificado: los 500.799 registros con 0 son viviendas colectivas o no ocupadas con personas presentes.
+2002,viviendas,V7,0,No aplica (vivienda colectiva o no ocupada con personas presentes),inferido,Verificado: los 500.799 registros con 0 son viviendas colectivas o no ocupadas con personas presentes.
+2002,viviendas,V8,0,No aplica (vivienda colectiva o no ocupada con personas presentes),inferido,Verificado: los 500.799 registros con 0 son viviendas colectivas o no ocupadas con personas presentes.
+2002,viviendas,V9,0,No aplica (vivienda colectiva o no ocupada con personas presentes),inferido,Verificado: los 500.799 registros con 0 son viviendas colectivas o no ocupadas con personas presentes.
+2002,viviendas,V10B_1,91,No aplica (vivienda colectiva o no ocupada con personas presentes),inferido,Mismo número de registros (500.799) que el 0 de V3 a V9.
+2002,viviendas,V10B_2,91,No aplica (vivienda colectiva o no ocupada con personas presentes),inferido,Mismo número de registros (500.799) que el 0 de V3 a V9.
+2002,viviendas,V10B_3,91,No aplica (vivienda colectiva o no ocupada con personas presentes),inferido,Mismo número de registros (500.799) que el 0 de V3 a V9.
+2002,viviendas,V10B_4,91,No aplica (vivienda colectiva o no ocupada con personas presentes),inferido,Mismo número de registros (500.799) que el 0 de V3 a V9.
+2002,viviendas,V10B_5,91,No aplica (vivienda colectiva o no ocupada con personas presentes),inferido,Mismo número de registros (500.799) que el 0 de V3 a V9.
+2002,viviendas,V10B_6,91,No aplica (vivienda colectiva o no ocupada con personas presentes),inferido,Mismo número de registros (500.799) que el 0 de V3 a V9.
+2002,viviendas,V10B_7,91,No aplica (vivienda colectiva o no ocupada con personas presentes),inferido,Mismo número de registros (500.799) que el 0 de V3 a V9.
+2002,viviendas,V10B_8,91,No aplica (vivienda colectiva o no ocupada con personas presentes),inferido,Mismo número de registros (500.799) que el 0 de V3 a V9.
+2002,personas,P20_1,0,No marcada,inferido,La entrega separa cada opción en una columna 0/1.
+2002,personas,P20_2,0,No marcada,inferido,La entrega separa cada opción en una columna 0/1.
+2002,personas,P20_3,0,No marcada,inferido,La entrega separa cada opción en una columna 0/1.
+2002,personas,P20_4,0,No marcada,inferido,La entrega separa cada opción en una columna 0/1.
+2002,personas,P20_5,0,No marcada,inferido,La entrega separa cada opción en una columna 0/1.
+2002,personas,P20_6,0,No marcada,inferido,La entrega separa cada opción en una columna 0/1.
+2002,personas,P24A_HOMOLOGADA_R16,0,No aplica (menor de 5 años),inferido,Verificado: 1.151.076 = personas de 0 a 4 años.
+2002,personas,P25,0,No aplica (menor de 5 años),inferido,Verificado: 1.151.076 = personas de 0 a 4 años.
+2002,personas,P26A,0,No aplica (menor de 5 años),inferido,Verificado: 1.151.076 = personas de 0 a 4 años.
+2002,personas,P27,0,No aplica (menor de 15 años),inferido,Verificado: 3.890.126 = personas de 0 a 14 años.
+2002,personas,P28,0,No aplica (menor de 15 años),inferido,Verificado: 3.890.126 = personas de 0 a 14 años.
+2002,personas,P29,0,No aplica (menor de 15 años),inferido,Verificado: 3.890.126 = personas de 0 a 14 años.
+2002,personas,P30,0,No aplica (menor de 15 años o sin trabajo actual ni anterior),inferido,Verificado: 0 = menores de 15 años y personas en las situaciones 5 a 10 de la pregunta 29.

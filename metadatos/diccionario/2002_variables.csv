@@ -1,0 +1,69 @@
+censo,tabla,variable,etiqueta,pregunta,universo,tipo,fuente,nota
+2002,portafolios,Portafolio,Número de portafolio,,,identificador,entrega,
+2002,portafolios,Comuna,Comuna (recodificada a DPA de 16 regiones),,,territorial,tabla_auxiliar,Nombres en COMUNAS_2002.csv.
+2002,portafolios,Area,Área urbana o rural,,,categorica,entrega,
+2002,portafolios,Distrito,Distrito censal,,,territorial,tabla_auxiliar,
+2002,portafolios,COD_ZONA_LOCALIDAD,Zona (urbano) o localidad (rural),,,territorial,tabla_auxiliar,
+2002,portafolios,COD_MANZANA_ENTIDAD,Manzana (urbano) o entidad (rural),,,territorial,tabla_auxiliar,
+2002,portafolios,CATEGORIA,Categoría de la localidad o entidad,,,categorica,tabla_auxiliar,Glosas en CATEGORIAS_2002.csv.
+2002,portafolios,Sector,Sector,,,numerica,sin_documentacion,Siempre 0.
+2002,viviendas,Portafolio,Número de portafolio,,,identificador,entrega,
+2002,viviendas,VN,Número de vivienda,,,identificador,cuestionario,
+2002,personas,Portafolio,Número de portafolio,,,identificador,entrega,
+2002,personas,VN,Número de vivienda,,,identificador,cuestionario,
+2002,viviendas,VN_Renumerado,Número de vivienda renumerado,,,identificador,sin_documentacion,
+2002,personas,HN,Número de hogar,,,identificador,cuestionario,
+2002,personas,PN,Número de persona,,,identificador,cuestionario,
+2002,viviendas,V1,Tipo de vivienda,1. Indique el tipo de vivienda,Todas las viviendas,categorica,cuestionario,
+2002,viviendas,V2,Condición de ocupación,2. Indique si la vivienda está,Todas las viviendas,categorica,cuestionario,
+2002,viviendas,V3,Tenencia de la vivienda,3. La vivienda que usted ocupa es,Viviendas particulares ocupadas con personas presentes,categorica,cuestionario,
+2002,viviendas,V4A,Material predominante de las paredes exteriores,4a. El material de construcción predominante es: en las paredes exteriores,Viviendas particulares ocupadas con personas presentes,categorica,cuestionario,
+2002,viviendas,V4B,Material predominante de la cubierta del techo,4b. El material de construcción predominante es: en la cubierta del techo,Viviendas particulares ocupadas con personas presentes,categorica,cuestionario,
+2002,viviendas,V4C,Material predominante del piso,4c. El material de construcción predominante es: en el piso,Viviendas particulares ocupadas con personas presentes,categorica,cuestionario,
+2002,viviendas,V5,Alumbrado eléctrico,5. El alumbrado eléctrico proviene de,Viviendas particulares ocupadas con personas presentes,categorica,cuestionario,
+2002,viviendas,V6,Origen del agua,6. El agua que usa esta vivienda proviene de,Viviendas particulares ocupadas con personas presentes,categorica,cuestionario,
+2002,viviendas,V7,Distribución del agua,7. A esta vivienda llega agua por,Viviendas particulares ocupadas con personas presentes,categorica,cuestionario,
+2002,viviendas,V8,Servicio higiénico,8. El servicio higiénico (W.C.) de esta vivienda es o está,Viviendas particulares ocupadas con personas presentes,categorica,cuestionario,
+2002,viviendas,V9,Número de duchas,9. ¿Cuántas duchas tiene esta vivienda?,Viviendas particulares ocupadas con personas presentes,categorica,cuestionario,
+2002,viviendas,V10A,"Total de piezas (sin baños, con cocina)","10. Sin considerar el o los baños, ¿cuántas piezas en total tiene esta vivienda incluida la cocina?",Viviendas particulares ocupadas con personas presentes,numerica,cuestionario,
+2002,viviendas,V10B_1,Uso de las piezas (columna 1),10. Indique el o los usos que tiene cada pieza,Viviendas particulares ocupadas con personas presentes,categorica,cuestionario,"Usos en el cuestionario: dormitorio, living-comedor, living, comedor, cocina, trabajo remunerado, estudio, otro uso. Correspondencia columna-uso y códigos por verificar."
+2002,viviendas,V10B_2,Uso de las piezas (columna 2),10. Indique el o los usos que tiene cada pieza,Viviendas particulares ocupadas con personas presentes,categorica,cuestionario,"Usos en el cuestionario: dormitorio, living-comedor, living, comedor, cocina, trabajo remunerado, estudio, otro uso. Correspondencia columna-uso y códigos por verificar."
+2002,viviendas,V10B_3,Uso de las piezas (columna 3),10. Indique el o los usos que tiene cada pieza,Viviendas particulares ocupadas con personas presentes,categorica,cuestionario,"Usos en el cuestionario: dormitorio, living-comedor, living, comedor, cocina, trabajo remunerado, estudio, otro uso. Correspondencia columna-uso y códigos por verificar."
+2002,viviendas,V10B_4,Uso de las piezas (columna 4),10. Indique el o los usos que tiene cada pieza,Viviendas particulares ocupadas con personas presentes,categorica,cuestionario,"Usos en el cuestionario: dormitorio, living-comedor, living, comedor, cocina, trabajo remunerado, estudio, otro uso. Correspondencia columna-uso y códigos por verificar."
+2002,viviendas,V10B_5,Uso de las piezas (columna 5),10. Indique el o los usos que tiene cada pieza,Viviendas particulares ocupadas con personas presentes,categorica,cuestionario,"Usos en el cuestionario: dormitorio, living-comedor, living, comedor, cocina, trabajo remunerado, estudio, otro uso. Correspondencia columna-uso y códigos por verificar."
+2002,viviendas,V10B_6,Uso de las piezas (columna 6),10. Indique el o los usos que tiene cada pieza,Viviendas particulares ocupadas con personas presentes,categorica,cuestionario,"Usos en el cuestionario: dormitorio, living-comedor, living, comedor, cocina, trabajo remunerado, estudio, otro uso. Correspondencia columna-uso y códigos por verificar."
+2002,viviendas,V10B_7,Uso de las piezas (columna 7),10. Indique el o los usos que tiene cada pieza,Viviendas particulares ocupadas con personas presentes,categorica,cuestionario,"Usos en el cuestionario: dormitorio, living-comedor, living, comedor, cocina, trabajo remunerado, estudio, otro uso. Correspondencia columna-uso y códigos por verificar."
+2002,viviendas,V10B_8,Uso de las piezas (columna 8),10. Indique el o los usos que tiene cada pieza,Viviendas particulares ocupadas con personas presentes,categorica,cuestionario,"Usos en el cuestionario: dormitorio, living-comedor, living, comedor, cocina, trabajo remunerado, estudio, otro uso. Correspondencia columna-uso y códigos por verificar."
+2002,viviendas,V11,Número de hogares en la vivienda,11. ¿Cuántos hogares hay en esta vivienda?,Viviendas particulares ocupadas con personas presentes,numerica,cuestionario,
+2002,personas,P17,Relación de parentesco con el jefe(a) del hogar,17. ¿Cuál es su relación de parentesco con el jefe o jefa del hogar?,Todas las personas,categorica,cuestionario,
+2002,personas,P18,Sexo,18. Sexo,Todas las personas,categorica,cuestionario,
+2002,personas,P19,Edad en años cumplidos,19. ¿Cuántos años cumplidos tiene?,Todas las personas,numerica,cuestionario,Sin tope (hasta 108).
+2002,personas,P20_1,Presenta: ceguera total,20. ¿Presenta usted alguna de las siguientes deficiencias?,Todas las personas,categorica,cuestionario,Una columna por opción (0/1).
+2002,personas,P20_2,Presenta: sordera total,20. ¿Presenta usted alguna de las siguientes deficiencias?,Todas las personas,categorica,cuestionario,Una columna por opción (0/1).
+2002,personas,P20_3,Presenta: mudez,20. ¿Presenta usted alguna de las siguientes deficiencias?,Todas las personas,categorica,cuestionario,Una columna por opción (0/1).
+2002,personas,P20_4,Presenta: lisiado/parálisis,20. ¿Presenta usted alguna de las siguientes deficiencias?,Todas las personas,categorica,cuestionario,Una columna por opción (0/1).
+2002,personas,P20_5,Presenta: deficiencia mental,20. ¿Presenta usted alguna de las siguientes deficiencias?,Todas las personas,categorica,cuestionario,Una columna por opción (0/1).
+2002,personas,P20_6,Presenta: ninguna de las anteriores,20. ¿Presenta usted alguna de las siguientes deficiencias?,Todas las personas,categorica,cuestionario,Una columna por opción (0/1).
+2002,personas,P21,Pueblo originario o indígena,21. ¿Pertenece usted a alguno de los siguientes pueblos originarios o indígenas?,Todas las personas,categorica,cuestionario,
+2002,personas,P22A_HOMOLOGADA_R16,Lugar de residencia de la madre al nacer,"22. Cuando usted nació, ¿en qué comuna o lugar vivía su madre?",Todas las personas,categorica,cuestionario,
+2002,personas,P22B_HOMOLOGADA_R16,Comuna o país de residencia de la madre al nacer,22. (nombre de la comuna o país),Todas las personas,territorial,tabla_auxiliar,Comunas recodificadas a DPA de 16 regiones.
+2002,personas,P22C,Año de llegada al país,22. Año llegada al país,Nacidos en el extranjero,numerica,cuestionario,
+2002,personas,P23A_HOMOLOGADA_R16,Vive habitualmente en esta comuna,23. ¿Vive usted habitualmente en esta comuna?,Todas las personas,categorica,cuestionario,
+2002,personas,P23B_HOMOLOGADA_R16,Comuna o país de residencia habitual,23. ¿En qué comuna vive? / En otro país,Todas las personas,territorial,tabla_auxiliar,
+2002,personas,P24A_HOMOLOGADA_R16,Lugar de residencia en abril de 1997,24. ¿En qué comuna o lugar vivía usted en abril de 1997?,Personas de 5 años o más,categorica,cuestionario,
+2002,personas,P24B_HOMOLOGADA_R16,Comuna o país de residencia en abril de 1997,24. (nombre de la comuna o país),Personas de 5 años o más,territorial,tabla_auxiliar,
+2002,personas,P25,Sabe leer y escribir,25. ¿Sabe usted leer y escribir?,Personas de 5 años o más,categorica,cuestionario,
+2002,personas,P26A,Último nivel aprobado en la enseñanza formal,26. ¿Cuál es el último nivel y curso que aprobó en la enseñanza formal? (nivel),Personas de 5 años o más,categorica,cuestionario,
+2002,personas,P26B,Último curso aprobado,26. ¿Cuál es el último nivel y curso que aprobó en la enseñanza formal? (curso/año),Personas de 5 años o más,numerica,cuestionario,
+2002,personas,P27,Estado civil o conyugal,27. ¿Cuál es su estado civil o conyugal actual?,Personas de 15 años o más,categorica,cuestionario,
+2002,personas,P28,Religión,28. ¿Qué religión profesa?,Personas de 15 años o más,categorica,cuestionario,
+2002,personas,P29,Situación en la semana pasada,29. ¿En cuál de estas situaciones se encontraba la mayor parte de la semana pasada?,Personas de 15 años o más,categorica,cuestionario,
+2002,personas,P30,Categoría ocupacional,30. ¿En este trabajo es (o era)?,Personas de 15 años o más,categorica,cuestionario,
+2002,personas,P31,Ocupación (2 dígitos),31. ¿Qué ocupación o tipo de trabajo desempeña actualmente o desempeñaba si está cesante?,Personas de 15 años o más,categorica,cuestionario,Clasificación no documentada en la entrega.
+2002,personas,P32,Rama de actividad (2 dígitos),32. ¿A qué se dedica principalmente el establecimiento donde trabaja o trabajaba si está cesante?,Personas de 15 años o más,categorica,cuestionario,Clasificación no documentada en la entrega (probablemente CIIU rev. 3).
+2002,personas,P33A,Lugar de trabajo o estudio,33. ¿Cuál es la comuna donde Ud. trabaja o estudia?,"Personas que respondieron 1, 2, 4 o 7 en la pregunta 29",categorica,cuestionario,
+2002,personas,P33B_Readecuada_origen4,Comuna de trabajo o estudio,33. (nombre de la comuna),"Personas que respondieron 1, 2, 4 o 7 en la pregunta 29",territorial,tabla_auxiliar,Codificación 'origen 4' sin documentación.
+2002,personas,P34,Hijas e hijos nacidos vivos,34. ¿Cuántas hijas e hijos nacidos vivos ha tenido en total?,Mujeres de 15 años o más,numerica,cuestionario,
+2002,personas,P35,Hijas e hijos vivos actualmente,35. ¿Cuántos están vivos actualmente?,Mujeres de 15 años o más,numerica,cuestionario,
+2002,personas,P36A,Mes de nacimiento del último hijo nacido vivo,36. ¿Cuándo nació su último hijo/a nacido vivo? (mes),Mujeres de 15 años o más,categorica,cuestionario,
+2002,personas,P36B,Año de nacimiento del último hijo nacido vivo,36. ¿Cuándo nació su último hijo/a nacido vivo? (año),Mujeres de 15 años o más,numerica,cuestionario,

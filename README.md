@@ -29,11 +29,13 @@ metadatos/
   esquema_tabulados.yaml    esquema común de los tabulados
   variables/                fichas de variables armonizadas (una por variable)
   concordancia/             matriz concepto × censo
+  diccionario/              etiquetas de variables y categorías por censo (oficiales o transcritas)
   inventario/               perfil automático de cada tabla de microdatos
 digitalizacion/             cifras transcritas de las publicaciones (CSV por cuadro)
 herramientas/               scripts de inventario y extracción
 pipelines/                  generación de productos a partir de las fuentes
 productos/tabulados/        tabulados armonizados (CSV)
+productos/diccionario/      diccionario consolidado de variables y categorías (Excel)
 validacion/                 cifras publicadas de referencia y contrastes
 docs/                       plan, criterios y notas metodológicas
 ```
@@ -47,8 +49,10 @@ Los microdatos no se versionan en este repositorio. Para correr las herramientas
 1. Copiar `config.ejemplo.yaml` como `config.yaml` y ajustar las rutas.
 2. `pip install -r herramientas/requirements.txt`
 3. `python herramientas/inventario_microdatos.py` (convierte y perfila los microdatos)
-4. `python pipelines/poblacion_nucleo.py` (genera el tabulado de población)
-5. `python validacion/validar_poblacion.py` (contrasta con cifras publicadas)
+4. `python herramientas/importar_etiquetas_oficiales.py` (etiquetas oficiales de 2017 y 2024)
+5. `python herramientas/generar_diccionario.py` (genera `productos/diccionario/diccionario_censos.xlsx`)
+6. `python pipelines/poblacion_nucleo.py` (genera el tabulado de población)
+7. `python validacion/validar_poblacion.py` (contrasta con cifras publicadas)
 
 ## Licencias
 

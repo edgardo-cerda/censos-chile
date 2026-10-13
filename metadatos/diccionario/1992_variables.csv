@@ -1,0 +1,108 @@
+censo,tabla,variable,etiqueta,pregunta,universo,tipo,fuente,nota
+1992,portafolios,Origen,Codificación territorial de la entrega,,,categorica,entrega,Siempre 3: la entrega usa la codificación 'Origen 3' (ver Entrega_censo1992.xls).
+1992,portafolios,Portafolios,Número de portafolio,,,identificador,entrega,
+1992,portafolios,Comuna,"Comuna (DPA de 15 regiones, codificación Origen 3)",,,territorial,tabla_auxiliar,Nombres en COMUNAS_1992.csv.
+1992,portafolios,Area,Área urbana o rural,,,categorica,entrega,
+1992,portafolios,Distrito,Distrito censal,,,territorial,tabla_auxiliar,
+1992,portafolios,Zona,Zona censal,,,territorial,entrega,
+1992,portafolios,Manzana,Manzana,,,territorial,entrega,
+1992,portafolios,Cod_Loc,Código de localidad,,,territorial,tabla_auxiliar,
+1992,portafolios,Cod_Ent,Código de entidad,,,territorial,tabla_auxiliar,
+1992,portafolios,Cod_Cat,Categoría de la entidad,,,categorica,tabla_auxiliar,Glosas en CATEGORIA_1992.csv.
+1992,portafolios,Sector,Sector,,,territorial,entrega,
+1992,portafolios,Ada,Sin documentación,,,numerica,sin_documentacion,Siempre 0.
+1992,portafolios,Tipo_estrato,Tipo de estrato,,,categorica,sin_documentacion,
+1992,portafolios,Estrato,Estrato,,,numerica,sin_documentacion,
+1992,portafolios,Tipo_estrato_2002,Tipo de estrato (2002),,,categorica,sin_documentacion,
+1992,portafolios,Estrato_2002,Estrato (2002),,,numerica,sin_documentacion,
+1992,viviendas,Portafolio,Número de portafolio,,,identificador,entrega,
+1992,hogares,Portafolio,Número de portafolio,,,identificador,entrega,
+1992,personas,Portafolio,Número de portafolio,,,identificador,entrega,
+1992,uso_piezas,Portafolio,Número de portafolio,,,identificador,entrega,
+1992,viviendas,Vivienda,Número de vivienda en el portafolio,,,identificador,entrega,
+1992,hogares,Vivienda,Número de vivienda en el portafolio,,,identificador,entrega,
+1992,personas,Vivienda,Número de vivienda en el portafolio,,,identificador,entrega,
+1992,uso_piezas,Vivienda,Número de vivienda en el portafolio,,,identificador,entrega,
+1992,hogares,Hogar,Número de hogar en la vivienda,,,identificador,entrega,
+1992,personas,Hogar,Número de hogar en la vivienda,,,identificador,entrega,
+1992,viviendas,Tipo_vivienda,Tipo de vivienda,1. Indique el tipo de vivienda,Todas las viviendas,categorica,cuestionario,
+1992,viviendas,Cond_ocupacion,Condición de ocupación,2. Indique si la vivienda está,Todas las viviendas,categorica,cuestionario,
+1992,viviendas,Cond_tenencia,Tenencia de la vivienda,3. La vivienda que usted ocupa es,Viviendas particulares ocupadas,categorica,cuestionario,
+1992,viviendas,Paredes,Material predominante de las paredes exteriores,4a. El material de construcción predominante es: en las paredes exteriores,Viviendas particulares ocupadas,categorica,cuestionario,
+1992,viviendas,Techo,Material predominante de la cubierta del techo,4b. El material de construcción predominante es: en la cubierta del techo,Viviendas particulares ocupadas,categorica,cuestionario,
+1992,viviendas,Piso,Material predominante del piso,4c. El material de construcción predominante es: en el piso,Viviendas particulares ocupadas,categorica,cuestionario,
+1992,viviendas,Alumbrado_electrico,Alumbrado eléctrico,5. El alumbrado eléctrico es de,Viviendas particulares ocupadas,categorica,cuestionario,
+1992,viviendas,Origen_agua,Origen del agua,6. El agua que usa esta vivienda es de,Viviendas particulares ocupadas,categorica,cuestionario,
+1992,viviendas,Agua_cañeria,Distribución del agua,7. A esta vivienda llega agua por,Viviendas particulares ocupadas,categorica,cuestionario,
+1992,viviendas,Servicio_Higienico,Servicio higiénico,8. El servicio higiénico (W.C.) es o está,Viviendas particulares ocupadas,categorica,cuestionario,
+1992,viviendas,Ducha,Tiene ducha y/o tina,9. ¿Tiene ducha y/o tina?,Viviendas particulares ocupadas,categorica,cuestionario,
+1992,viviendas,Total_piezas,"Total de piezas (sin baños, con cocina)","10. Sin considerar el o los baños, ¿cuántas piezas en total tiene esta vivienda? (no olvide la cocina)",Viviendas particulares ocupadas,numerica,cuestionario,
+1992,viviendas,Hogares,Número de hogares,11. ¿Cuántos grupos de personas (hogares) cocinan en forma separada?,Viviendas particulares ocupadas,numerica,cuestionario,
+1992,uso_piezas,Pieza,Número de pieza,10. Uso de cada pieza,Viviendas particulares ocupadas,identificador,cuestionario,
+1992,uso_piezas,Dormitorio,Uso de la pieza: Dormitorio,10. Indique el o los usos que tiene cada pieza,Viviendas particulares ocupadas,categorica,cuestionario,"Una columna por uso; códigos no documentados (valores 0, 1 y 9)."
+1992,uso_piezas,Living_comedor,Uso de la pieza: Living-comedor,10. Indique el o los usos que tiene cada pieza,Viviendas particulares ocupadas,categorica,cuestionario,"Una columna por uso; códigos no documentados (valores 0, 1 y 9)."
+1992,uso_piezas,Living,Uso de la pieza: Living,10. Indique el o los usos que tiene cada pieza,Viviendas particulares ocupadas,categorica,cuestionario,"Una columna por uso; códigos no documentados (valores 0, 1 y 9)."
+1992,uso_piezas,Comedor,Uso de la pieza: Comedor,10. Indique el o los usos que tiene cada pieza,Viviendas particulares ocupadas,categorica,cuestionario,"Una columna por uso; códigos no documentados (valores 0, 1 y 9)."
+1992,uso_piezas,Cocina,Uso de la pieza: Cocina,10. Indique el o los usos que tiene cada pieza,Viviendas particulares ocupadas,categorica,cuestionario,"Una columna por uso; códigos no documentados (valores 0, 1 y 9)."
+1992,uso_piezas,Trabajo_remunerado,Uso de la pieza: Trabajo remunerado,10. Indique el o los usos que tiene cada pieza,Viviendas particulares ocupadas,categorica,cuestionario,"Una columna por uso; códigos no documentados (valores 0, 1 y 9)."
+1992,uso_piezas,Otro_Uso,Uso de la pieza: Otro uso,10. Indique el o los usos que tiene cada pieza,Viviendas particulares ocupadas,categorica,cuestionario,"Una columna por uso; códigos no documentados (valores 0, 1 y 9)."
+1992,hogares,Combustible,Combustible principal para cocinar,12. ¿Cuál es el principal combustible usado para cocinar?,Hogares en viviendas particulares ocupadas,categorica,cuestionario,
+1992,hogares,Pieza_dormir,Piezas usadas solo para dormir,13. ¿Cuántas piezas usa este hogar solamente para dormir?,Hogares en viviendas particulares ocupadas,numerica,cuestionario,
+1992,hogares,Radio,"Tiene radio, radio cassette",14. ¿Tiene el hogar alguno de los siguientes artefactos?,Hogares en viviendas particulares ocupadas,categorica,cuestionario,
+1992,hogares,TV_BN,Tiene televisor blanco/negro,14. ¿Tiene el hogar alguno de los siguientes artefactos?,Hogares en viviendas particulares ocupadas,categorica,cuestionario,
+1992,hogares,TV_Color,Tiene televisor a color,14. ¿Tiene el hogar alguno de los siguientes artefactos?,Hogares en viviendas particulares ocupadas,categorica,cuestionario,
+1992,hogares,Videograbador,"Tiene videograbador, pasapelículas",14. ¿Tiene el hogar alguno de los siguientes artefactos?,Hogares en viviendas particulares ocupadas,categorica,cuestionario,
+1992,hogares,Minicomponente,Tiene minicomponente y/o equipo de alta fidelidad,14. ¿Tiene el hogar alguno de los siguientes artefactos?,Hogares en viviendas particulares ocupadas,categorica,cuestionario,
+1992,hogares,Lav_prog,Tiene lavadora programable,14. ¿Tiene el hogar alguno de los siguientes artefactos?,Hogares en viviendas particulares ocupadas,categorica,cuestionario,
+1992,hogares,Lavadora,Tiene lavadora,14. ¿Tiene el hogar alguno de los siguientes artefactos?,Hogares en viviendas particulares ocupadas,categorica,cuestionario,'Lavadora' (no programable) no figura en el cuestionario disponible.
+1992,hogares,Refrigerador,Tiene refrigerador,14. ¿Tiene el hogar alguno de los siguientes artefactos?,Hogares en viviendas particulares ocupadas,categorica,cuestionario,
+1992,hogares,Microondas,Tiene horno microondas,14. ¿Tiene el hogar alguno de los siguientes artefactos?,Hogares en viviendas particulares ocupadas,categorica,cuestionario,
+1992,hogares,Celular,Tiene teléfono celular,14. ¿Tiene el hogar alguno de los siguientes artefactos?,Hogares en viviendas particulares ocupadas,categorica,cuestionario,
+1992,hogares,Telefono,Tiene teléfono,14. ¿Tiene el hogar alguno de los siguientes artefactos?,Hogares en viviendas particulares ocupadas,categorica,cuestionario,
+1992,hogares,Bicicleta_Part,Tiene bicicleta para uso particular,15. ¿Tiene este hogar alguno de los siguientes vehículos destinados solo para uso particular?,Hogares en viviendas particulares ocupadas,categorica,cuestionario,
+1992,hogares,Moto_Part,Tiene moto para uso particular,15. ¿Tiene este hogar alguno de los siguientes vehículos destinados solo para uso particular?,Hogares en viviendas particulares ocupadas,categorica,cuestionario,
+1992,hogares,Auto_Part,Tiene automóvil o station para uso particular,15. ¿Tiene este hogar alguno de los siguientes vehículos destinados solo para uso particular?,Hogares en viviendas particulares ocupadas,categorica,cuestionario,
+1992,hogares,Camioneta_Part,Tiene camioneta o furgón para uso particular,15. ¿Tiene este hogar alguno de los siguientes vehículos destinados solo para uso particular?,Hogares en viviendas particulares ocupadas,categorica,cuestionario,
+1992,hogares,Bicicleta_Trab,Tiene bicicleta o triciclo para trabajo,16. ¿Tiene este hogar alguno de los siguientes vehículos destinados para fines de trabajo?,Hogares en viviendas particulares ocupadas,categorica,cuestionario,
+1992,hogares,Moto_Trab,Tiene moto para trabajo,16. ¿Tiene este hogar alguno de los siguientes vehículos destinados para fines de trabajo?,Hogares en viviendas particulares ocupadas,categorica,cuestionario,
+1992,hogares,Auto_trab,Tiene automóvil (taxi u otro uso de trabajo) para trabajo,16. ¿Tiene este hogar alguno de los siguientes vehículos destinados para fines de trabajo?,Hogares en viviendas particulares ocupadas,categorica,cuestionario,
+1992,hogares,Station_trab,"Tiene station, jeep para trabajo",16. ¿Tiene este hogar alguno de los siguientes vehículos destinados para fines de trabajo?,Hogares en viviendas particulares ocupadas,categorica,cuestionario,
+1992,hogares,Camioneta_trab,Tiene camioneta o furgón utilitario para trabajo,16. ¿Tiene este hogar alguno de los siguientes vehículos destinados para fines de trabajo?,Hogares en viviendas particulares ocupadas,categorica,cuestionario,
+1992,hogares,Camion_trab,Tiene camión para trabajo,16. ¿Tiene este hogar alguno de los siguientes vehículos destinados para fines de trabajo?,Hogares en viviendas particulares ocupadas,categorica,cuestionario,
+1992,hogares,Tractor_trab,Tiene tractor para trabajo,16. ¿Tiene este hogar alguno de los siguientes vehículos destinados para fines de trabajo?,Hogares en viviendas particulares ocupadas,categorica,cuestionario,
+1992,hogares,Carreta_trab,Tiene carreta o carretela para trabajo,16. ¿Tiene este hogar alguno de los siguientes vehículos destinados para fines de trabajo?,Hogares en viviendas particulares ocupadas,categorica,cuestionario,
+1992,hogares,TH,Total de hombres del hogar,,Hogares en viviendas particulares ocupadas,numerica,derivada,
+1992,hogares,TM,Total de mujeres del hogar,,Hogares en viviendas particulares ocupadas,numerica,derivada,
+1992,hogares,TP,Total de personas del hogar,,Hogares en viviendas particulares ocupadas,numerica,derivada,
+1992,hogares,Puntaje,Puntaje socioeconómico,,Hogares en viviendas particulares ocupadas,numerica,sin_documentacion,Variable derivada ajena al cuestionario.
+1992,hogares,CSE_categoria,Categoría socioeconómica,,Hogares en viviendas particulares ocupadas,categorica,sin_documentacion,Variable derivada ajena al cuestionario.
+1992,hogares,CSE_Decil,Decil socioeconómico,,Hogares en viviendas particulares ocupadas,categorica,sin_documentacion,Variable derivada ajena al cuestionario.
+1992,personas,Persona,Número de persona,,,identificador,entrega,
+1992,personas,Parentesco,Relación de parentesco con el jefe(a) de hogar,1. ¿Cuál es su relación de parentesco con el jefe o jefa de hogar?,todas las personas,categorica,cuestionario,
+1992,personas,Sexo,Sexo,2. Sexo,todas las personas,categorica,cuestionario,
+1992,personas,Edad,Edad en años cumplidos,3. ¿Cuántos años cumplidos tiene?,todas las personas,numerica,cuestionario,Menores de 1 año = 0; 99 = 99 años o más.
+1992,personas,Ceguera,Presenta: ceguera total,4. ¿Presenta alguna de las siguientes características?,todas las personas,categorica,cuestionario,Una columna por opción (0/1).
+1992,personas,Sordera,Presenta: sordera total,4. ¿Presenta alguna de las siguientes características?,todas las personas,categorica,cuestionario,Una columna por opción (0/1).
+1992,personas,Mudez,Presenta: mudez,4. ¿Presenta alguna de las siguientes características?,todas las personas,categorica,cuestionario,Una columna por opción (0/1).
+1992,personas,Paralisis,"Presenta: parálisis, lisiado",4. ¿Presenta alguna de las siguientes características?,todas las personas,categorica,cuestionario,Una columna por opción (0/1).
+1992,personas,Def_mental,Presenta: deficiencia mental,4. ¿Presenta alguna de las siguientes características?,todas las personas,categorica,cuestionario,Una columna por opción (0/1).
+1992,personas,Ninguna,Presenta: ninguna de las anteriores,4. ¿Presenta alguna de las siguientes características?,todas las personas,categorica,cuestionario,Una columna por opción (0/1). La opción 'ninguna' no figura en el cuestionario disponible.
+1992,personas,Comuna_Madre_Origen3,Comuna o país de residencia de la madre al nacer,"5. Cuando Ud. nació, ¿en qué comuna o lugar vivía su madre?",todas las personas,territorial,tabla_auxiliar,Comunas (COMUNAS_1992.csv) y países desde el código 700 (PAISES_1992.csv).
+1992,personas,Año_llegada_pais,Año de llegada al país,5. Año de llegada al país,Nacidos en el extranjero,numerica,cuestionario,
+1992,personas,Comuna_habitual_Origen3,Comuna o país de residencia habitual,6. ¿Vive Ud. habitualmente en esta comuna?,todas las personas,territorial,tabla_auxiliar,
+1992,personas,Comuna_1987_Origen3,Comuna o país de residencia en abril de 1987,7. ¿En qué comuna o lugar vivía usted en abril de 1987?,Personas de 5 años o más,territorial,tabla_auxiliar,
+1992,personas,Tipo_educacion,Tipo de enseñanza del último curso aprobado,8. ¿Cuál es el último curso que aprobó en la enseñanza regular? (tipo de enseñanza),Personas de 5 años o más,categorica,cuestionario,
+1992,personas,Curso,Último curso aprobado,8. ¿Cuál es el último curso que aprobó en la enseñanza regular? (curso),Personas de 5 años o más,numerica,cuestionario,
+1992,personas,Leer,Sabe leer y escribir,9. ¿Sabe leer y escribir?,Personas de 5 años o más,categorica,cuestionario,
+1992,personas,Estado_civil,Estado civil,10. ¿Cuál es su estado civil actual?,Personas de 14 años o más,categorica,cuestionario,
+1992,personas,Situacion_empleo,Situación en la semana pasada,11. ¿En cuál de estas situaciones se encontraba la semana pasada?,Personas de 14 años o más,categorica,cuestionario,
+1992,personas,Ocupacion,Ocupación,12. Indique la ocupación o tipo de trabajo que desempeña (o desempeñaba si está cesante),Personas de 14 años o más,categorica,tabla_auxiliar,Glosas en OCUPACION_1992.csv.
+1992,personas,Categoria_ocupacional,Categoría ocupacional,13. ¿En este trabajo es (o era)?,Personas de 14 años o más,categorica,cuestionario,
+1992,personas,Rama_actividad,Rama de actividad económica,14. ¿A qué se dedica principalmente el establecimiento... donde trabaja?,Personas de 14 años o más,categorica,tabla_auxiliar,Glosas en RAMA_ACTIVIDAD_1992.csv (CIIU rev. 3).
+1992,personas,Religion,Religión,15. ¿Qué religión profesa?,Personas de 14 años o más,categorica,cuestionario,
+1992,personas,Cultura,Pertenencia a cultura originaria,"16. Si usted es chileno, ¿se considera perteneciente a alguna de las siguientes culturas?",Personas de 14 años o más,categorica,cuestionario,
+1992,personas,Hijos_nacidos_vivos,Hijos nacidos vivos,17. ¿Cuántos hijos nacidos vivos ha tenido?,Mujeres de 14 años o más,numerica,cuestionario,
+1992,personas,Hijos_vivos,Hijos vivos actualmente,"18. De estos, ¿cuántos están vivos actualmente?",Mujeres de 14 años o más,numerica,cuestionario,
+1992,personas,Mes_ultimo_hijo,Mes de nacimiento del último hijo nacido vivo,19. ¿Cuándo nació su último hijo nacido vivo? (mes),Mujeres de 14 años o más,categorica,cuestionario,
+1992,personas,Año_ultimo_hijo,Año de nacimiento del último hijo nacido vivo,19. ¿Cuándo nació su último hijo nacido vivo? (año),Mujeres de 14 años o más,categorica,cuestionario,Opciones 87 a 92 (1987–1992).
+1992,personas,Quintil_por_puntaje,Quintil socioeconómico,,todas las personas,categorica,sin_documentacion,Variable derivada ajena al cuestionario.

@@ -1,0 +1,15 @@
+censo,tabla,variable,codigo,etiqueta,fuente,nota
+2002,portafolios,CATEGORIA,1,CIUDAD,tabla_auxiliar,CATEGORIAS_2002.csv
+2002,portafolios,CATEGORIA,2,PUEBLO,tabla_auxiliar,CATEGORIAS_2002.csv
+2002,portafolios,CATEGORIA,3,ALDEA,tabla_auxiliar,CATEGORIAS_2002.csv
+2002,portafolios,CATEGORIA,4,CASERIO,tabla_auxiliar,CATEGORIAS_2002.csv
+2002,portafolios,CATEGORIA,5,ASENTAMIENTO MINERO,tabla_auxiliar,CATEGORIAS_2002.csv
+2002,portafolios,CATEGORIA,6,FUNDO - ESTANCIA - HACIENDA,tabla_auxiliar,CATEGORIAS_2002.csv
+2002,portafolios,CATEGORIA,7,PARCELA - HIJUELA,tabla_auxiliar,CATEGORIAS_2002.csv
+2002,portafolios,CATEGORIA,8,PARCELA DE AGRADO,tabla_auxiliar,CATEGORIAS_2002.csv
+2002,portafolios,CATEGORIA,9,COMUNIDAD INDIGENA,tabla_auxiliar,CATEGORIAS_2002.csv
+2002,portafolios,CATEGORIA,10,COMUNIDAD AGRICOLA,tabla_auxiliar,CATEGORIAS_2002.csv
+2002,portafolios,CATEGORIA,11,CAMPAMENTO,tabla_auxiliar,CATEGORIAS_2002.csv
+2002,portafolios,CATEGORIA,12,VERANADA - MAJADA - AGUADA,tabla_auxiliar,CATEGORIAS_2002.csv
+2002,portafolios,CATEGORIA,13,OTROS,tabla_auxiliar,CATEGORIAS_2002.csv
+2002,portafolios,CATEGORIA,14,REZAGADOS,tabla_auxiliar,CATEGORIAS_2002.csv

@@ -42,17 +42,23 @@ El total de personas (11.329.736) y los totales por sexo sí coinciden con lo pu
 - Preguntas de pueblos originarios (`Cultura`) y religión solo para personas de 14 años o más.
   Los conteos coinciden con los publicados (mapuche 928.060; aymara 48.477; rapanui 21.848).
 - Incluye variables derivadas ajenas al cuestionario: `Puntaje`, `CSE_categoria`, `CSE_Decil`, `Quintil_por_puntaje`.
+- El código 0 corresponde a "no aplica" (verificado contra el universo de cada pregunta).
 - Tabla adicional `USO_PIEZAS` (13,8 millones de filas: una por pieza).
 
 ## 2002
 
 - Variables con códigos de pregunta (`V1`… en viviendas; `P17`… en personas).
-- **Sin tabla de hogares**: solo viviendas y personas.
+- **Sin tabla de hogares**: solo viviendas y personas. El cuestionario sí preguntó por el hogar
+  (combustible, dormitorios, ducha, artefactos y vehículos: preguntas 12 a 16), pero esas variables
+  no vienen en la entrega.
 - **Geografía ya recodificada a la DPA de 16 regiones** (comunas hasta 16305; columnas `*_HOMOLOGADA_R16`).
   Para reconstruir la DPA de 2002 se necesita la correspondencia inversa.
 - Edad hasta 108 años, sin tope.
-- Interpretación de códigos hecha con frecuencias (p. ej. `P21` = 5 → mapuche, 604.349).
-  Pendiente: verificar contra el cuestionario oficial de 2002.
+- Códigos transcritos del cuestionario escaneado (`C2002.pdf`); no existe libro de códigos. Algunas
+  preguntas no imprimen el código (sexo, sí/no, lugar de residencia): se asignaron por el orden de las
+  opciones y quedan marcadas como `cuestionario_orden` o `inferido` en el diccionario.
+- El código 0 corresponde a "no aplica" (verificado contra el universo de cada pregunta).
+- Sin clasificación documentada para ocupación (`P31`) y rama (`P32`) a 2 dígitos.
 
 ## 2017
 
@@ -60,6 +66,8 @@ El total de personas (11.329.736) y los totales por sexo sí coinciden con lo pu
   ocupación ni religión.
 - Geografía en DPA de 16 regiones, con columnas adicionales `_15R` en la DPA de 15 regiones.
 - Rama de actividad (`P18`) en letras (secciones CIIU).
+- Las etiquetas oficiales de todas las variables vienen como `etiquetas_*.csv` dentro de los `.rar`
+  públicos; códigos 98 = no aplica y 99 = missing.
 
 ## 2024
 

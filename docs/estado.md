@@ -36,7 +36,7 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 | Punto | Estado |
 |---|---|
 | Inventario automático de microdatos 1992–2024 | ✅ Totales de personas coinciden con los oficiales |
-| Matriz de concordancia (`metadatos/concordancia/`) | 🟡 Borrador, 56 conceptos; falta verificar 2002 contra su cuestionario |
+| Matriz de concordancia (`metadatos/concordancia/`) | 🟡 Borrador, 56 conceptos; 2002 corregido con su cuestionario |
 | Cuestionarios 1992, 2002, 2017, 2024 | ✅ Disponibles (2002 escaneado, sin capa de texto; no hay libro de códigos 2002) |
 | Cuestionario de 1982 | ⏳ Buscar en los volúmenes publicados |
 | Catálogo de cuadros de las publicaciones | ⏳ No iniciado |
@@ -44,7 +44,7 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 ### Fase 2: núcleo
 | Punto | Estado |
 |---|---|
-| Diccionario consolidado (Excel: hojas `variables`, `categorias`, `matriz`) | ⏳ Diseñado en el plan; **siguiente paso** |
+| Diccionario consolidado (`productos/diccionario/diccionario_censos.xlsx`) | 🟡 v0.1: 360 variables, 2.476 códigos; 2017 y 2024 completos; faltan 60 códigos de 1992 y 198 de 2002 |
 | Fichas región, área, sexo, edad | 🟡 Borrador |
 | Fichas parentesco, tipo de vivienda | ⏳ Pendientes (ya está el cuestionario 2002) |
 | Serie de población región × área × sexo × edad, 1992–2024 | ✅ `productos/tabulados/poblacion_microdatos.csv` (8.448 filas) |
@@ -67,10 +67,9 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 
 ## Próximos pasos (en orden)
 
-1. Diccionario consolidado de microdatos 1992–2024: CSV en `metadatos/diccionario/` y script
-   que genera `productos/diccionario/diccionario_censos.xlsx`. Etiquetas desde el diccionario
-   oficial 2024, los cuestionarios 1992, 2002 (leer imágenes) y 2017, y las tablas auxiliares.
-2. Verificar la concordancia de 2002 contra su cuestionario; fichas de parentesco y tipo de vivienda.
+1. Revisión del diccionario consolidado por el autor; completar los códigos sin etiqueta de
+   1992 y 2002 (99/9 probablemente "ignorado"; ocupación y rama 2002; uso de piezas 2002).
+2. Fichas de parentesco y tipo de vivienda.
 3. Correspondencia de comunas 1992 → DPA2018 y serie de población por comuna.
 4. Cifras publicadas de referencia para 2002, 2017 y 2024, y regionales.
 5. Esqueleto de las librerías (`tabulado()`, `diccionario()`). Los microdatos de 2017 vienen en
@@ -85,6 +84,8 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 - Regenerar productos:
   ```
   python herramientas/inventario_microdatos.py   # solo si cambian los microdatos
+  python herramientas/importar_etiquetas_oficiales.py
+  python herramientas/generar_diccionario.py
   python pipelines/poblacion_nucleo.py
   python validacion/validar_poblacion.py
   ```

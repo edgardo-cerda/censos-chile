@@ -177,6 +177,7 @@ microdatos:
       identificacion_geografica: https://www.ine.gob.cl/docs/default-source/censo-de-poblacion-y-vivienda/bbdd/censo-2017/csv/csv-identificaci%C3%B3n-geogr%C3%A1fica-censo-2017.rar?sfvrsn=1ae6f56c_2&download=true
       manzana_entidad: https://www.ine.gob.cl/docs/default-source/censo-de-poblacion-y-vivienda/bbdd/censo-2017/csv/csv-manzana---entidad-censo-2017.rar?sfvrsn=1ce846c8_2&download=true
     tablas: [viviendas, hogares, personas]
+    etiquetas: etiquetas_*.csv dentro de cada .rar (importadas por herramientas/importar_etiquetas_oficiales.py)
     documentacion: [cuestionario-censo-2017-viviendas-particulares.pdf, Léame - CSV Microdatos Viviendas Censo 2017.pdf, Léame - CSV Microdatos Manzana- entidad Censo 2017.pdf]
   - id: micro_2024
     censo: 2024

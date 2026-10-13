@@ -1,0 +1,7 @@
+censo,tabla,variable,codigo,etiqueta,fuente,nota
+2017,viviendas,AREA,1,Urbano,tabla_auxiliar,microdato_censo2017-areas.csv
+2017,viviendas,AREA,2,Rural,tabla_auxiliar,microdato_censo2017-areas.csv
+2017,hogares,AREA,1,Urbano,tabla_auxiliar,microdato_censo2017-areas.csv
+2017,hogares,AREA,2,Rural,tabla_auxiliar,microdato_censo2017-areas.csv
+2017,personas,AREA,1,Urbano,tabla_auxiliar,microdato_censo2017-areas.csv
+2017,personas,AREA,2,Rural,tabla_auxiliar,microdato_censo2017-areas.csv

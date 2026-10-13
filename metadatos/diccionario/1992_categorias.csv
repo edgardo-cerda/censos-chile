@@ -1,0 +1,248 @@
+censo,tabla,variable,codigo,etiqueta,fuente,nota
+1992,portafolios,Area,1,Urbana,entrega,Por verificar con documentación; coincide con la población urbana publicada.
+1992,portafolios,Area,2,Rural,entrega,Por verificar con documentación; coincide con la población urbana publicada.
+1992,viviendas,Tipo_vivienda,1,Casa,cuestionario,
+1992,viviendas,Tipo_vivienda,2,Departamento en edificio,cuestionario,
+1992,viviendas,Tipo_vivienda,3,Pieza en casa antigua o en conventillo,cuestionario,
+1992,viviendas,Tipo_vivienda,4,"Mejora, mediagua",cuestionario,
+1992,viviendas,Tipo_vivienda,5,"Rancho, choza o ruca",cuestionario,
+1992,viviendas,Tipo_vivienda,6,"Móvil (carpa, vagón, etc.)",cuestionario,
+1992,viviendas,Tipo_vivienda,7,Otro (vivienda particular),cuestionario,
+1992,viviendas,Tipo_vivienda,8,"Residencial, pensión",cuestionario,
+1992,viviendas,Tipo_vivienda,9,"Hotel, motel, posada",cuestionario,
+1992,viviendas,Tipo_vivienda,10,"Institución (internado, hospital, regimiento, etc.)",cuestionario,
+1992,viviendas,Tipo_vivienda,11,Otro (vivienda colectiva),cuestionario,
+1992,viviendas,Cond_ocupacion,1,Ocupada con personas presentes,cuestionario,
+1992,viviendas,Cond_ocupacion,2,Ocupada con personas ausentes,cuestionario,
+1992,viviendas,Cond_ocupacion,3,Desocupada,cuestionario,
+1992,viviendas,Cond_tenencia,1,Propia (pagada totalmente),cuestionario,
+1992,viviendas,Cond_tenencia,2,Propia (pagada a plazo),cuestionario,
+1992,viviendas,Cond_tenencia,3,Arrendada,cuestionario,
+1992,viviendas,Cond_tenencia,4,Cedida por servicio,cuestionario,
+1992,viviendas,Cond_tenencia,5,Gratuita,cuestionario,
+1992,viviendas,Cond_tenencia,6,Otra condición,cuestionario,
+1992,viviendas,Paredes,1,"Ladrillo, concreto, bloque",cuestionario,
+1992,viviendas,Paredes,2,Madera o tabique forrado,cuestionario,
+1992,viviendas,Paredes,3,Adobe,cuestionario,
+1992,viviendas,Paredes,4,"Barro empajado, quincha, pirca",cuestionario,
+1992,viviendas,Paredes,5,"Desechos (lata, cartones, etc.)",cuestionario,
+1992,viviendas,Paredes,6,Otros materiales,cuestionario,
+1992,viviendas,Techo,1,Zinc,cuestionario,
+1992,viviendas,Techo,2,Losa de hormigón,cuestionario,
+1992,viviendas,Techo,3,Pizarreño,cuestionario,
+1992,viviendas,Techo,4,Tejas,cuestionario,
+1992,viviendas,Techo,5,Tejuela de madera,cuestionario,
+1992,viviendas,Techo,6,Fonolita,cuestionario,
+1992,viviendas,Techo,7,Paja embarrada,cuestionario,
+1992,viviendas,Techo,8,Otros materiales,cuestionario,
+1992,viviendas,Piso,1,"Parquet, entablado (madera)",cuestionario,
+1992,viviendas,Piso,2,Baldosín cerámico,cuestionario,
+1992,viviendas,Piso,3,Alfombra muro a muro,cuestionario,
+1992,viviendas,Piso,4,Plástico (flexit u otro),cuestionario,
+1992,viviendas,Piso,5,"Baldosa de cemento, radier",cuestionario,
+1992,viviendas,Piso,6,Ladrillo,cuestionario,
+1992,viviendas,Piso,7,Tierra,cuestionario,
+1992,viviendas,Piso,8,Otros materiales,cuestionario,
+1992,viviendas,Alumbrado_electrico,1,Red pública (Cía. de electricidad),cuestionario,
+1992,viviendas,Alumbrado_electrico,2,Generador (propio o comunitario),cuestionario,
+1992,viviendas,Alumbrado_electrico,3,Otro,cuestionario,
+1992,viviendas,Alumbrado_electrico,4,No tiene alumbrado eléctrico,cuestionario,
+1992,viviendas,Origen_agua,1,Red pública,cuestionario,
+1992,viviendas,Origen_agua,2,Pozo o noria,cuestionario,
+1992,viviendas,Origen_agua,3,"Río, vertiente, estero",cuestionario,
+1992,viviendas,Origen_agua,4,Otro,cuestionario,
+1992,viviendas,Agua_cañeria,1,Cañería dentro de la vivienda,cuestionario,
+1992,viviendas,Agua_cañeria,2,"Cañería fuera de la vivienda, pero dentro del sitio",cuestionario,
+1992,viviendas,Agua_cañeria,3,No tiene agua por cañería,cuestionario,
+1992,viviendas,Servicio_Higienico,1,Conectado a alcantarillado o fosa séptica,cuestionario,
+1992,viviendas,Servicio_Higienico,2,Cajón sobre pozo negro,cuestionario,
+1992,viviendas,Servicio_Higienico,3,Cajón sobre acequia o canal,cuestionario,
+1992,viviendas,Servicio_Higienico,4,Conectado a otro sistema,cuestionario,
+1992,viviendas,Servicio_Higienico,5,No tiene servicio higiénico,cuestionario,
+1992,viviendas,Ducha,1,Sí,cuestionario,
+1992,viviendas,Ducha,2,No,cuestionario,
+1992,hogares,Combustible,1,Gas,cuestionario,
+1992,hogares,Combustible,2,Parafina,cuestionario,
+1992,hogares,Combustible,3,Leña o carbón,cuestionario,
+1992,hogares,Combustible,4,Electricidad,cuestionario,
+1992,hogares,Combustible,5,Otro,cuestionario,
+1992,hogares,Combustible,6,No tiene cocina,cuestionario,
+1992,hogares,Radio,1,Sí,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Radio,2,No,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,TV_BN,1,Sí,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,TV_BN,2,No,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,TV_Color,1,Sí,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,TV_Color,2,No,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Videograbador,1,Sí,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Videograbador,2,No,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Minicomponente,1,Sí,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Minicomponente,2,No,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Lav_prog,1,Sí,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Lav_prog,2,No,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Lavadora,1,Sí,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Lavadora,2,No,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Refrigerador,1,Sí,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Refrigerador,2,No,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Microondas,1,Sí,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Microondas,2,No,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Celular,1,Sí,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Celular,2,No,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Telefono,1,Sí,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Telefono,2,No,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Bicicleta_Part,1,Sí,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Bicicleta_Part,2,No,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Moto_Part,1,Sí,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Moto_Part,2,No,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Auto_Part,1,Sí,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Auto_Part,2,No,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Camioneta_Part,1,Sí,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Camioneta_Part,2,No,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Bicicleta_Trab,1,Sí,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Bicicleta_Trab,2,No,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Moto_Trab,1,Sí,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Moto_Trab,2,No,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Auto_trab,1,Sí,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Auto_trab,2,No,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Station_trab,1,Sí,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Station_trab,2,No,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Camioneta_trab,1,Sí,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Camioneta_trab,2,No,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Camion_trab,1,Sí,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Camion_trab,2,No,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Tractor_trab,1,Sí,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Tractor_trab,2,No,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Carreta_trab,1,Sí,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,hogares,Carreta_trab,2,No,cuestionario_orden,"El cuestionario muestra SÍ/NO sin código; se asume 1 = Sí, 2 = No."
+1992,personas,Parentesco,1,Jefe o jefa,cuestionario,
+1992,personas,Parentesco,2,Cónyuge,cuestionario,
+1992,personas,Parentesco,3,Conviviente,cuestionario,
+1992,personas,Parentesco,4,"Hijo/a, hijastro/a",cuestionario,
+1992,personas,Parentesco,5,Yerno/nuera,cuestionario,
+1992,personas,Parentesco,6,Nieto/a,cuestionario,
+1992,personas,Parentesco,7,"Hermano/a, cuñado/a",cuestionario,
+1992,personas,Parentesco,8,Padres/suegros,cuestionario,
+1992,personas,Parentesco,9,Otro pariente,cuestionario,
+1992,personas,Parentesco,10,No pariente,cuestionario,
+1992,personas,Parentesco,11,Servicio doméstico,cuestionario,
+1992,personas,Parentesco,12,Miembro del hogar colectivo,cuestionario,
+1992,personas,Sexo,1,Hombre,cuestionario,
+1992,personas,Sexo,2,Mujer,cuestionario,
+1992,personas,Edad,99,99 años o más,cuestionario,
+1992,personas,Ceguera,1,Marcada,inferido,La entrega separa cada opción en una columna 0/1.
+1992,personas,Sordera,1,Marcada,inferido,La entrega separa cada opción en una columna 0/1.
+1992,personas,Mudez,1,Marcada,inferido,La entrega separa cada opción en una columna 0/1.
+1992,personas,Paralisis,1,Marcada,inferido,La entrega separa cada opción en una columna 0/1.
+1992,personas,Def_mental,1,Marcada,inferido,La entrega separa cada opción en una columna 0/1.
+1992,personas,Ninguna,1,Marcada,inferido,La entrega separa cada opción en una columna 0/1.
+1992,personas,Tipo_educacion,0,Nunca asistió,cuestionario,El código 0 también podría incluir a menores de 5 años (por verificar).
+1992,personas,Tipo_educacion,1,Kínder,cuestionario,El código 0 también podría incluir a menores de 5 años (por verificar).
+1992,personas,Tipo_educacion,2,Básica o primaria,cuestionario,El código 0 también podría incluir a menores de 5 años (por verificar).
+1992,personas,Tipo_educacion,3,Media común,cuestionario,El código 0 también podría incluir a menores de 5 años (por verificar).
+1992,personas,Tipo_educacion,4,Humanidades,cuestionario,El código 0 también podría incluir a menores de 5 años (por verificar).
+1992,personas,Tipo_educacion,5,Media comercial,cuestionario,El código 0 también podría incluir a menores de 5 años (por verificar).
+1992,personas,Tipo_educacion,6,Media industrial,cuestionario,El código 0 también podría incluir a menores de 5 años (por verificar).
+1992,personas,Tipo_educacion,7,Media agrícola,cuestionario,El código 0 también podría incluir a menores de 5 años (por verificar).
+1992,personas,Tipo_educacion,8,Media marítima,cuestionario,El código 0 también podría incluir a menores de 5 años (por verificar).
+1992,personas,Tipo_educacion,9,Minera,cuestionario,El código 0 también podría incluir a menores de 5 años (por verificar).
+1992,personas,Tipo_educacion,10,Técnica femenina,cuestionario,El código 0 también podría incluir a menores de 5 años (por verificar).
+1992,personas,Tipo_educacion,11,Normal,cuestionario,El código 0 también podría incluir a menores de 5 años (por verificar).
+1992,personas,Tipo_educacion,12,Centro de formación técnica,cuestionario,El código 0 también podría incluir a menores de 5 años (por verificar).
+1992,personas,Tipo_educacion,13,Instituto profesional,cuestionario,El código 0 también podría incluir a menores de 5 años (por verificar).
+1992,personas,Tipo_educacion,14,Universitaria,cuestionario,El código 0 también podría incluir a menores de 5 años (por verificar).
+1992,personas,Leer,1,Sí,cuestionario,
+1992,personas,Leer,2,No,cuestionario,
+1992,personas,Estado_civil,1,Casado,cuestionario,
+1992,personas,Estado_civil,2,Conviviente,cuestionario,
+1992,personas,Estado_civil,3,Soltero,cuestionario,
+1992,personas,Estado_civil,4,Viudo,cuestionario,
+1992,personas,Estado_civil,5,Separado,cuestionario,
+1992,personas,Estado_civil,6,Anulado,cuestionario,
+1992,personas,Situacion_empleo,1,Trabajando por ingreso,cuestionario,
+1992,personas,Situacion_empleo,2,"Sin trabajar, pero tiene trabajo",cuestionario,
+1992,personas,Situacion_empleo,3,Trabajando para un familiar sin pago en dinero,cuestionario,
+1992,personas,Situacion_empleo,4,Buscando trabajo habiendo trabajado antes,cuestionario,
+1992,personas,Situacion_empleo,5,Buscando trabajo por primera vez,cuestionario,
+1992,personas,Situacion_empleo,6,En quehaceres de su hogar,cuestionario,
+1992,personas,Situacion_empleo,7,Estudiando sin trabajar,cuestionario,
+1992,personas,Situacion_empleo,8,Pensionado o jubilado sin trabajar,cuestionario,
+1992,personas,Situacion_empleo,9,Incapacitado permanente para trabajar,cuestionario,
+1992,personas,Situacion_empleo,10,Otra situación,cuestionario,
+1992,personas,Categoria_ocupacional,1,Patrón o empleador,cuestionario,
+1992,personas,Categoria_ocupacional,2,Trabajador por cuenta propia,cuestionario,
+1992,personas,Categoria_ocupacional,3,Trabajador de servicio doméstico del hogar,cuestionario,
+1992,personas,Categoria_ocupacional,4,"Trabajador asalariado (empleado, obrero, jornalero)",cuestionario,
+1992,personas,Categoria_ocupacional,5,Familiar no remunerado,cuestionario,
+1992,personas,Religion,1,Católica,cuestionario,
+1992,personas,Religion,2,Evangélica,cuestionario,
+1992,personas,Religion,3,Protestante,cuestionario,
+1992,personas,Religion,4,Indiferente o ateo,cuestionario,
+1992,personas,Religion,5,Otra religión,cuestionario,
+1992,personas,Cultura,1,Mapuche,cuestionario,
+1992,personas,Cultura,2,Aymara,cuestionario,
+1992,personas,Cultura,3,Rapanui,cuestionario,
+1992,personas,Cultura,4,Ninguna de las anteriores,cuestionario,
+1992,personas,Hijos_nacidos_vivos,18,18 o más,cuestionario,
+1992,personas,Hijos_vivos,18,18 o más,cuestionario,
+1992,personas,Mes_ultimo_hijo,1,Enero,cuestionario,
+1992,personas,Mes_ultimo_hijo,2,Febrero,cuestionario,
+1992,personas,Mes_ultimo_hijo,3,Marzo,cuestionario,
+1992,personas,Mes_ultimo_hijo,4,Abril,cuestionario,
+1992,personas,Mes_ultimo_hijo,5,Mayo,cuestionario,
+1992,personas,Mes_ultimo_hijo,6,Junio,cuestionario,
+1992,personas,Mes_ultimo_hijo,7,Julio,cuestionario,
+1992,personas,Mes_ultimo_hijo,8,Agosto,cuestionario,
+1992,personas,Mes_ultimo_hijo,9,Septiembre,cuestionario,
+1992,personas,Mes_ultimo_hijo,10,Octubre,cuestionario,
+1992,personas,Mes_ultimo_hijo,11,Noviembre,cuestionario,
+1992,personas,Mes_ultimo_hijo,12,Diciembre,cuestionario,
+1992,personas,Año_ultimo_hijo,87,1987,cuestionario,
+1992,personas,Año_ultimo_hijo,88,1988,cuestionario,
+1992,personas,Año_ultimo_hijo,89,1989,cuestionario,
+1992,personas,Año_ultimo_hijo,90,1990,cuestionario,
+1992,personas,Año_ultimo_hijo,91,1991,cuestionario,
+1992,personas,Año_ultimo_hijo,92,1992,cuestionario,
+1992,viviendas,Cond_tenencia,0,No aplica (vivienda colectiva o no ocupada con personas presentes),inferido,Verificado: los 268.572 registros con 0 son viviendas colectivas o no ocupadas con personas presentes.
+1992,viviendas,Paredes,0,No aplica (vivienda colectiva o no ocupada con personas presentes),inferido,Verificado: los 268.572 registros con 0 son viviendas colectivas o no ocupadas con personas presentes.
+1992,viviendas,Techo,0,No aplica (vivienda colectiva o no ocupada con personas presentes),inferido,Verificado: los 268.572 registros con 0 son viviendas colectivas o no ocupadas con personas presentes.
+1992,viviendas,Piso,0,No aplica (vivienda colectiva o no ocupada con personas presentes),inferido,Verificado: los 268.572 registros con 0 son viviendas colectivas o no ocupadas con personas presentes.
+1992,viviendas,Alumbrado_electrico,0,No aplica (vivienda colectiva o no ocupada con personas presentes),inferido,Verificado: los 268.572 registros con 0 son viviendas colectivas o no ocupadas con personas presentes.
+1992,viviendas,Origen_agua,0,No aplica (vivienda colectiva o no ocupada con personas presentes),inferido,Verificado: los 268.572 registros con 0 son viviendas colectivas o no ocupadas con personas presentes.
+1992,viviendas,Agua_cañeria,0,No aplica (vivienda colectiva o no ocupada con personas presentes),inferido,Verificado: los 268.572 registros con 0 son viviendas colectivas o no ocupadas con personas presentes.
+1992,viviendas,Servicio_Higienico,0,No aplica (vivienda colectiva o no ocupada con personas presentes),inferido,Verificado: los 268.572 registros con 0 son viviendas colectivas o no ocupadas con personas presentes.
+1992,viviendas,Ducha,0,No aplica (vivienda colectiva o no ocupada con personas presentes),inferido,Verificado: los 268.572 registros con 0 son viviendas colectivas o no ocupadas con personas presentes.
+1992,hogares,Combustible,0,No aplica (hogar en vivienda colectiva),inferido,Verificado: los 10.115 hogares con 0 están en viviendas colectivas.
+1992,hogares,Radio,0,No aplica (hogar en vivienda colectiva),inferido,Verificado: los 10.115 hogares con 0 están en viviendas colectivas.
+1992,hogares,TV_BN,0,No aplica (hogar en vivienda colectiva),inferido,Verificado: los 10.115 hogares con 0 están en viviendas colectivas.
+1992,hogares,TV_Color,0,No aplica (hogar en vivienda colectiva),inferido,Verificado: los 10.115 hogares con 0 están en viviendas colectivas.
+1992,hogares,Videograbador,0,No aplica (hogar en vivienda colectiva),inferido,Verificado: los 10.115 hogares con 0 están en viviendas colectivas.
+1992,hogares,Minicomponente,0,No aplica (hogar en vivienda colectiva),inferido,Verificado: los 10.115 hogares con 0 están en viviendas colectivas.
+1992,hogares,Lav_prog,0,No aplica (hogar en vivienda colectiva),inferido,Verificado: los 10.115 hogares con 0 están en viviendas colectivas.
+1992,hogares,Lavadora,0,No aplica (hogar en vivienda colectiva),inferido,Verificado: los 10.115 hogares con 0 están en viviendas colectivas.
+1992,hogares,Refrigerador,0,No aplica (hogar en vivienda colectiva),inferido,Verificado: los 10.115 hogares con 0 están en viviendas colectivas.
+1992,hogares,Microondas,0,No aplica (hogar en vivienda colectiva),inferido,Verificado: los 10.115 hogares con 0 están en viviendas colectivas.
+1992,hogares,Celular,0,No aplica (hogar en vivienda colectiva),inferido,Verificado: los 10.115 hogares con 0 están en viviendas colectivas.
+1992,hogares,Telefono,0,No aplica (hogar en vivienda colectiva),inferido,Verificado: los 10.115 hogares con 0 están en viviendas colectivas.
+1992,hogares,Bicicleta_Part,0,No aplica (hogar en vivienda colectiva),inferido,Verificado: los 10.115 hogares con 0 están en viviendas colectivas.
+1992,hogares,Moto_Part,0,No aplica (hogar en vivienda colectiva),inferido,Verificado: los 10.115 hogares con 0 están en viviendas colectivas.
+1992,hogares,Auto_Part,0,No aplica (hogar en vivienda colectiva),inferido,Verificado: los 10.115 hogares con 0 están en viviendas colectivas.
+1992,hogares,Camioneta_Part,0,No aplica (hogar en vivienda colectiva),inferido,Verificado: los 10.115 hogares con 0 están en viviendas colectivas.
+1992,hogares,Bicicleta_Trab,0,No aplica (hogar en vivienda colectiva),inferido,Verificado: los 10.115 hogares con 0 están en viviendas colectivas.
+1992,hogares,Moto_Trab,0,No aplica (hogar en vivienda colectiva),inferido,Verificado: los 10.115 hogares con 0 están en viviendas colectivas.
+1992,hogares,Auto_trab,0,No aplica (hogar en vivienda colectiva),inferido,Verificado: los 10.115 hogares con 0 están en viviendas colectivas.
+1992,hogares,Station_trab,0,No aplica (hogar en vivienda colectiva),inferido,Verificado: los 10.115 hogares con 0 están en viviendas colectivas.
+1992,hogares,Camioneta_trab,0,No aplica (hogar en vivienda colectiva),inferido,Verificado: los 10.115 hogares con 0 están en viviendas colectivas.
+1992,hogares,Camion_trab,0,No aplica (hogar en vivienda colectiva),inferido,Verificado: los 10.115 hogares con 0 están en viviendas colectivas.
+1992,hogares,Tractor_trab,0,No aplica (hogar en vivienda colectiva),inferido,Verificado: los 10.115 hogares con 0 están en viviendas colectivas.
+1992,hogares,Carreta_trab,0,No aplica (hogar en vivienda colectiva),inferido,Verificado: los 10.115 hogares con 0 están en viviendas colectivas.
+1992,personas,Ceguera,0,No marcada,inferido,La entrega separa cada opción en una columna 0/1.
+1992,personas,Sordera,0,No marcada,inferido,La entrega separa cada opción en una columna 0/1.
+1992,personas,Mudez,0,No marcada,inferido,La entrega separa cada opción en una columna 0/1.
+1992,personas,Paralisis,0,No marcada,inferido,La entrega separa cada opción en una columna 0/1.
+1992,personas,Def_mental,0,No marcada,inferido,La entrega separa cada opción en una columna 0/1.
+1992,personas,Ninguna,0,No marcada,inferido,La entrega separa cada opción en una columna 0/1.
+1992,personas,Leer,0,No aplica (menor de 5 años),inferido,Verificado: 1.452.635 = personas de 0 a 4 años.
+1992,personas,Estado_civil,0,No aplica (menor de 14 años),inferido,Verificado: 3.688.034 = personas de 0 a 13 años.
+1992,personas,Situacion_empleo,0,No aplica (menor de 14 años),inferido,Verificado: 3.688.034 = personas de 0 a 13 años.
+1992,personas,Religion,0,No aplica (menor de 14 años),inferido,Verificado: 3.688.034 = personas de 0 a 13 años.
+1992,personas,Cultura,0,No aplica (menor de 14 años),inferido,Verificado: 3.688.034 = personas de 0 a 13 años.
+1992,personas,Categoria_ocupacional,0,No aplica (menor de 14 años o sin trabajo actual ni anterior),inferido,Verificado: 0 = menores de 14 años y personas en las situaciones 5 a 10 de la pregunta 11.

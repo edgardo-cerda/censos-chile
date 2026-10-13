@@ -43,15 +43,15 @@ vivienda,alumbrado_electrico,vivienda,Alumbrado_electrico,V5,—,p9_fuente_elect
 vivienda,origen_agua,vivienda,Origen_agua,V6,P05,p6_fuente_agua,borrador,
 vivienda,distribucion_agua,vivienda,Agua_cañeria,V7,—,p7_distrib_agua,borrador,
 vivienda,servicio_higienico,vivienda,Servicio_Higienico,V8,—,p8_serv_hig,borrador,
-vivienda,ducha,vivienda,Ducha,—,—,—,borrador,
+vivienda,ducha,vivienda,Ducha,V9,—,—,borrador,1992: tiene ducha y/o tina (sí/no). 2002: número de duchas.
 vivienda,eliminacion_basura,vivienda,—,—,—,p10_basura,borrador,Solo 2024.
 vivienda,total_piezas,vivienda,Total_piezas,V10A,—,—,borrador,
 vivienda,dormitorios,vivienda,USO_PIEZAS / HOGAR.Pieza_dormir,V10B_*,P04,p5_num_dormitorios,borrador,En 1992 está en la tabla de hogares.
-vivienda,cantidad_hogares,vivienda,Hogares,V11 (por verificar),CANT_HOG,cant_hog,borrador,
+vivienda,cantidad_hogares,vivienda,Hogares,V11,CANT_HOG,cant_hog,borrador,
 vivienda,cantidad_personas,vivienda,derivar,derivar,CANT_PER,cant_per,borrador,
-hogar,tenencia,hogar,VIVIENDAS.Cond_tenencia,V3 (por verificar),—,p12_tenencia_viv,borrador,1992 está en viviendas; 2024 en hogares.
-hogar,combustible_cocina,hogar,Combustible,V9 (por verificar),—,p13_comb_cocina,borrador,
+hogar,tenencia,hogar,VIVIENDAS.Cond_tenencia,V3,—,p12_tenencia_viv,borrador,1992 y 2002 en viviendas; 2024 en hogares.
+hogar,combustible_cocina,hogar,Combustible,—,—,p13_comb_cocina,borrador,2002: preguntado (P12) pero la entrega no trae variables de hogar.
 hogar,combustible_calefaccion,hogar,—,—,—,p14_comb_calefaccion,borrador,Solo 2024.
-hogar,equipamiento,hogar,Radio; TV_BN; TV_Color; Lavadora; Refrigerador; Telefono; Celular; …,—,—,p15a … p15f (TIC),borrador,2002 y 2017 sin bienes en los microdatos (por verificar 2002). 2024 solo servicios TIC.
-hogar,vehiculos,hogar,*_Part; *_Trab,—,—,—,borrador,
+hogar,equipamiento,hogar,Radio; TV_BN; TV_Color; Lavadora; Refrigerador; Telefono; Celular; …,—,—,p15a … p15f (TIC),borrador,2002: preguntado (P15) pero la entrega no trae variables de hogar. 2017 no lo preguntó. 2024 solo servicios TIC.
+hogar,vehiculos,hogar,*_Part; *_Trab,—,—,—,borrador,2002: preguntado (P16) pero la entrega no trae variables de hogar.
 hogar,tipo_hogar,hogar,derivar,derivar,TIPO_HOGAR,tipologia_hogar,borrador,
