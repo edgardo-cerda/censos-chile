@@ -58,7 +58,7 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 | Punto | Estado |
 |---|---|
 | 3. Módulos temáticos | ⏳ No iniciado (solo borrador en la concordancia) |
-| 4. Digitalización histórica 1813–1982 | 🟡 Herramientas y formato listos; catálogo con 1930–1992 (209 entradas). Transcritos: 1952 C9; 1930 C9 (provincia/departamento/comuna × área × sexo) y C10; 1960 C1.1.1 y C1.2 (4.452 cifras; 5 erratas de imprenta anotadas; contraste entre cuadros sin diferencias de transcripción). Falta 1982 C1.01 y 1940. Ver [digitalizacion.md](digitalizacion.md) |
+| 4. Digitalización histórica 1813–1982 | 🟡 Herramientas y formato listos; catálogo con 1930–1992 (209 entradas). Transcritos: 1952 C9; 1930 C9 (provincia/departamento/comuna × área × sexo) y C10; 1960 C1.1.1 y C1.2; 1982 C1.01 (región/provincia/comuna × área × sexo, 1.166 filas). Total 7.950 cifras; 5 erratas de imprenta anotadas; contraste entre cuadros sin diferencias de transcripción. Falta 1940. Ver [digitalizacion.md](digitalizacion.md) |
 | 5. Publicación (Zenodo, CRAN/PyPI) | ⏳ No iniciado |
 
 ## Pendientes del autor
@@ -76,8 +76,8 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 4. Cifras publicadas de referencia para 2002, 2017 y 2024, y regionales.
 5. Esqueleto de las librerías (`tabulado()`, `diccionario()`). Los microdatos de 2017 vienen en
    `.rar`: en R usar el paquete `archive`; en Python requiere una dependencia adicional.
-6. Fase 4: transcribir 1982 C1.01 (región/provincia/comuna × sexo, secciones total, urbano y
-   rural) y 1940 (págs. 76-115); luego completar el catálogo (1813–1920, 1952, 1982 tomos II-III).
+6. Fase 4: 1940 (págs. 76-115, hasta distrito; definir alcance); luego completar el catálogo
+   (1813–1920, 1952, 1982 tomos II-III).
 
 ## Cómo retomar
 

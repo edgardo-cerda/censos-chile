@@ -183,7 +183,7 @@ pub_1982_v1,1982,Introducción - Capítulo I,1,Conceptos y definiciones utilizad
 pub_1982_v1,1982,Introducción - Capítulo II,1,Códigos de grupos y subgrupos de ocupación,texto,VI,,desconocida,pendiente,
 pub_1982_v1,1982,Introducción - Capítulo II,2,Códigos de gran división y división de rama de actividad económica,texto,IX,,desconocida,pendiente,
 pub_1982_v1,1982,Introducción - Capítulo III,1,Breve análisis de las cifras,texto,XII,,desconocida,pendiente,
-pub_1982_v1,1982,Características personales,1.01,"Población total, por sexo e índice de masculinidad, según división geográfica",cuadro,2,40,verificada,pendiente,"Tres secciones: TOTAL (PDF 40), URBANO (PDF 62) y RURAL (PDF 84)."
+pub_1982_v1,1982,Características personales,1.01,"Población total, por sexo e índice de masculinidad, según división geográfica",cuadro,2,40,verificada,transcrito,"Tres secciones: TOTAL (PDF 40-61), URBANO (PDF 62-83) y RURAL (PDF 84-104). Transcrito en digitalizacion/1982/pub_1982_v1_c1_01.csv."
 pub_1982_v1,1982,Características personales,1.03,"Población total, por sexo, índice de masculinidad y distribución porcentual, según grupos quinquenales, años simples de edad y área urbana-rural",cuadro,67,105,verificada,pendiente,
 pub_1982_v1,1982,Características personales,1.04,"Población de 15 años y más, por estado civil, según grupos de edad, sexo y área urbana-rural",cuadro,82,120,estimada,pendiente,
 pub_1982_v1,1982,Características de la fecundidad,2.01,"Población femenina de 15 años y más, por número de hijos nacidos vivos y promedio de hijos por cada 100 mujeres, según grupos de edad y área urbana-rural",cuadro,91,129,estimada,pendiente,

@@ -93,8 +93,12 @@ totales se confunden 0, 6, 8 y 9: se transcriben como suma de las filas urbana y
 **1970.** Volumen "Total País": sin cuadros por provincia de población por área. Índice en
 PDF 2–3; conceptos y definiciones en PDF 4–9.
 
-**1982.** Tomo I: índice en PDF 5–6. Cuadro 1.01 repetido en secciones TOTAL (PDF 40),
-URBANO (PDF 62) y RURAL (PDF 84), por región, provincia y comuna. Tomos II y III sin revisar.
+**1982.** Tomo I: índice en PDF 5–6. Cuadro 1.01 repetido en secciones TOTAL (PDF 40–61),
+URBANO (PDF 62–83) y RURAL (PDF 84–104), por región, provincia y comuna; las secciones urbano y
+rural omiten las unidades sin población del área. Las páginas del PDF ya vienen en la orientación
+correcta (no usar `--rotar`; el visor puede mostrarlas giradas). El OCR lee mal este listado
+(confunde 0/C, 8/6 y separadores): se transcribió leyendo cada página a 170 dpi. Sin erratas:
+todas las sumas cuadran. Tomos II y III sin revisar.
 
 **1992** (publicación "Ciudades, pueblos y aldeas"). No trae totales país ni urbano/rural
 explícitos: total = suma de las 13 regiones del Cuadro 1; urbana = ciudades + pueblos del

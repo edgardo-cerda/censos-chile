@@ -1,0 +1,116 @@
+# Transcripción del Cuadro 1.01 del censo de 1982 (Tomo I).
+# El CSV del mismo nombre reproduce el cuadro tal como está impreso, sin la columna de índice de
+# masculinidad (derivable). El cuadro se repite en tres secciones (etiqueta arriba a la derecha):
+# TOTAL (PDF 40-61), URBANO (PDF 62-83) y RURAL (PDF 84-104). Las secciones URBANO y RURAL omiten
+# las unidades sin población del área respectiva. "-" = guion impreso (mujeres de la comuna Antártica).
+# Los nombres van como en el listado de computador: mayúsculas y sin tildes (sí con Ñ y Ü).
+
+fuente_id: pub_1982_v1
+cuadro: "1.01"
+titulo: Población total, por sexo e índice de masculinidad, según división geográfica
+paginas:
+  # desde: primera fila (territorio) de cada página
+  - {pdf: 40, impresa: "2", desde: "TOTAL PAIS"}
+  - {pdf: 41, impresa: "3", desde: "ANTOFAGASTA"}
+  - {pdf: 42, impresa: "4", desde: "ATACAMA"}
+  - {pdf: 43, impresa: "5", desde: "COQUIMBO"}
+  - {pdf: 44, impresa: "6", desde: "VALPARAISO"}
+  - {pdf: 45, impresa: "7", desde: "QUILLOTA"}
+  - {pdf: 46, impresa: "8", desde: "LIB. GRAL. BDO. O'HIGGINS"}
+  - {pdf: 47, impresa: "9", desde: "COLCHAGUA"}
+  - {pdf: 48, impresa: "10", desde: "MAULE"}
+  - {pdf: 49, impresa: "11", desde: "LINARES"}
+  - {pdf: 50, impresa: "12", desde: "BIOBIO"}
+  - {pdf: 51, impresa: "13", desde: "BIOBIO"}
+  - {pdf: 52, impresa: "14", desde: "CONCEPCION"}
+  - {pdf: 53, impresa: "15", desde: "LA ARAUCANIA"}
+  - {pdf: 54, impresa: "16", desde: "CAUTIN"}
+  - {pdf: 55, impresa: "17", desde: "LOS LAGOS"}
+  - {pdf: 56, impresa: "18", desde: "LLANQUIHUE"}
+  - {pdf: 57, impresa: "19", desde: "AISEN DEL GRL. C. IBAÑEZ DEL C."}
+  - {pdf: 58, impresa: "20", desde: "MAGALLANES Y ANTART. CHILENA"}
+  - {pdf: 59, impresa: "21", desde: "METROPOLITANA DE SANTIAGO"}
+  - {pdf: 60, impresa: "22", desde: "LA GRANJA"}
+  - {pdf: 61, impresa: "23", desde: "CHACABUCO"}
+  - {pdf: 62, impresa: "24", desde: "TOTAL PAIS"}
+  - {pdf: 63, impresa: "25", desde: "ANTOFAGASTA"}
+  - {pdf: 64, impresa: "26", desde: "ATACAMA"}
+  - {pdf: 65, impresa: "27", desde: "COQUIMBO"}
+  - {pdf: 66, impresa: "28", desde: "VALPARAISO"}
+  - {pdf: 67, impresa: "29", desde: "QUILLOTA"}
+  - {pdf: 68, impresa: "30", desde: "LIB. GRAL. BDO. O'HIGGINS"}
+  - {pdf: 69, impresa: "31", desde: "COLCHAGUA"}
+  - {pdf: 70, impresa: "32", desde: "MAULE"}
+  - {pdf: 71, impresa: "33", desde: "LINARES"}
+  - {pdf: 72, impresa: "34", desde: "BIOBIO"}
+  - {pdf: 73, impresa: "35", desde: "BIOBIO"}
+  - {pdf: 74, impresa: "36", desde: "CONCEPCION"}
+  - {pdf: 75, impresa: "37", desde: "LA ARAUCANIA"}
+  - {pdf: 76, impresa: "38", desde: "CAUTIN"}
+  - {pdf: 77, impresa: "39", desde: "LOS LAGOS"}
+  - {pdf: 78, impresa: "40", desde: "LLANQUIHUE"}
+  - {pdf: 79, impresa: "41", desde: "AISEN DEL GRL. C. IBAÑEZ DEL C."}
+  - {pdf: 80, impresa: "42", desde: "MAGALLANES Y ANTART. CHILENA"}
+  - {pdf: 81, impresa: "43", desde: "METROPOLITANA DE SANTIAGO"}
+  - {pdf: 82, impresa: "44", desde: "LA GRANJA"}
+  - {pdf: 83, impresa: "45", desde: "CHACABUCO"}
+  - {pdf: 84, impresa: "46", desde: "TOTAL PAIS"}
+  - {pdf: 85, impresa: "47", desde: "ANTOFAGASTA"}
+  - {pdf: 86, impresa: "48", desde: "ATACAMA"}
+  - {pdf: 87, impresa: "49", desde: "COQUIMBO"}
+  - {pdf: 88, impresa: "50", desde: "VALPARAISO"}
+  - {pdf: 89, impresa: "51", desde: "QUILLOTA"}
+  - {pdf: 90, impresa: "52", desde: "LIB. GRAL. BDO. O'HIGGINS"}
+  - {pdf: 91, impresa: "53", desde: "COLCHAGUA"}
+  - {pdf: 92, impresa: "54", desde: "MAULE"}
+  - {pdf: 93, impresa: "55", desde: "LINARES"}
+  - {pdf: 94, impresa: "56", desde: "BIOBIO"}
+  - {pdf: 95, impresa: "57", desde: "BIOBIO"}
+  - {pdf: 96, impresa: "58", desde: "CONCEPCION"}
+  - {pdf: 97, impresa: "59", desde: "LA ARAUCANIA"}
+  - {pdf: 98, impresa: "60", desde: "CAUTIN"}
+  - {pdf: 99, impresa: "61", desde: "LOS LAGOS"}
+  - {pdf: 100, impresa: "62", desde: "LLANQUIHUE"}
+  - {pdf: 101, impresa: "63", desde: "AISEN DEL GRL. C. IBAÑEZ DEL C."}
+  - {pdf: 102, impresa: "64", desde: "MAGALLANES Y ANTART. CHILENA"}
+  - {pdf: 103, impresa: "65", desde: "METROPOLITANA DE SANTIAGO"}
+  - {pdf: 104, impresa: "66", desde: "MAIPO"}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion:
+  fecha: 2026-10-15
+  por: Claude (asistido)
+  recortes_dpi: 170
+  nota: >
+    Lectura visual de cada página. Todas las filas cumplen hombres + mujeres = total, la
+    jerarquía comuna -> provincia -> región -> país en las tres secciones, y urbano + rural =
+    total en cada unidad, sin ninguna diferencia. Un OCR independiente (RapidOCR) coincidió
+    exactamente en 430 filas; el resto de sus diferencias son errores del OCR.
+
+indicador: poblacion
+unidad: personas
+
+territorio:
+  columna: territorio
+  columna_nivel: nivel
+  niveles: [region, provincia, comuna]
+  dpa_version: DPA1982
+
+filas:
+  area: {columna: seccion, valores: {TOTAL: _T, URBANO: urbana, RURAL: rural}}
+
+columnas:
+  total: {censo: 1982, sexo: _T}
+  hombres: {censo: 1982, sexo: hombre}
+  mujeres: {censo: 1982, sexo: mujer}
+
+notas_cuadro:
+  - >
+    División político-administrativa de 1982: 13 regiones, provincias y comunas (anterior a la
+    creación de las regiones de Arica y Parinacota, Los Ríos y Ñuble).
+
+controles:
+  - {tipo: suma_dimension, dimension: sexo, total: _T, partes: [hombre, mujer]}
+  - {tipo: suma_dimension, dimension: area, total: _T, partes: [urbana, rural]}
+  - {tipo: jerarquia}
+  - {tipo: suma_territorio, total: pais, partes: region}
