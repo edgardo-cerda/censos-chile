@@ -4,7 +4,7 @@ Punto de retorno para retomar el trabajo. El plan completo y su lista de tareas 
 [plan.md](plan.md); este archivo resume dónde quedó cada punto, las decisiones tomadas y lo
 que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 
-**Última actualización:** 2026-10-13 (solo commits locales; nada subido a GitHub todavía).
+**Última actualización:** 2026-10-15 (solo commits locales; nada subido a GitHub todavía).
 
 ## Decisiones tomadas
 
@@ -20,6 +20,7 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 | Región | Dos versiones exactas: DPA1974 (13 regiones) y DPA2018 (16). |
 | Diccionario consolidado | Antes de armonizar, consolidar variables y categorías de 1992–2024 en un Excel generado desde CSV versionados. |
 | Publicación | No subir a GitHub hasta que el autor lo indique. |
+| Digitalización | Cada cuadro se transcribe tal como está impreso (CSV) con un YAML de procedencia y mapeo; las erratas de la publicación se conservan y se anotan como `inconsistente`, no se corrigen. |
 
 ## Estado por fase
 
@@ -57,7 +58,7 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 | Punto | Estado |
 |---|---|
 | 3. Módulos temáticos | ⏳ No iniciado (solo borrador en la concordancia) |
-| 4. Digitalización histórica 1813–1982 | ⏳ No iniciado; 9 cifras nacionales de 1982 transcritas en `validacion/referencias_poblacion.csv` |
+| 4. Digitalización histórica 1813–1982 | 🟡 Herramientas y formato listos; catálogo con 1930–1992 (209 entradas); piloto 1952 C9 transcrito (729 cifras, provincias × área, 1865–1952). Ver [digitalizacion.md](digitalizacion.md) |
 | 5. Publicación (Zenodo, CRAN/PyPI) | ⏳ No iniciado |
 
 ## Pendientes del autor
@@ -75,7 +76,9 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 4. Cifras publicadas de referencia para 2002, 2017 y 2024, y regionales.
 5. Esqueleto de las librerías (`tabulado()`, `diccionario()`). Los microdatos de 2017 vienen en
    `.rar`: en R usar el paquete `archive`; en Python requiere una dependencia adicional.
-6. Catálogo de cuadros de las publicaciones (empezando por 1982 y 1992).
+6. Fase 4: completar el catálogo (1813–1920, 1952, 1982 tomos II-III) y transcribir los cuadros
+   de población por provincia × área × sexo de cada censo (1930 C9-C10, 1960 C1.1.1 y C1.2,
+   1982 C1.01, 1940 págs. 76-115).
 
 ## Cómo retomar
 
@@ -89,5 +92,10 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
   python herramientas/generar_diccionario.py
   python pipelines/poblacion_nucleo.py
   python validacion/validar_poblacion.py
+  python pipelines/tabulados_publicaciones.py   # cuadros digitalizados
   ```
 - Hallazgos sobre cada base: [notas_microdatos.md](notas_microdatos.md).
+- Procedimiento de digitalización y notas de cada publicación: [digitalizacion.md](digitalizacion.md).
+- PDF de las publicaciones: `<datos_originales>/censos previos`. Ahí quedan también los archivos
+  de la extracción previa (`notas_extraccion_censos_previos.txt`, `indices_censos_1930_1992.xlsx`,
+  `poblacion_urbana_rural_censos_1930_1992.xlsx`), ya incorporados al repositorio.

@@ -6,6 +6,10 @@ datos_originales: "C:/ruta/a/datos_originales"
 # Carpeta de trabajo para archivos intermedios (Parquet, temporales de DuckDB).
 cache: "C:/ruta/a/censos-chile-datos/cache"
 
+# Carpeta con los PDF de las publicaciones censales (opcional; por defecto,
+# "<datos_originales>/censos previos").
+# publicaciones: "C:/ruta/a/publicaciones"
+
 memoria_duckdb: "4GB"
 
 # Tablas de microdatos, rutas relativas a datos_originales.

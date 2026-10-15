@@ -27,6 +27,8 @@ metadatos/
   censos.yaml               censos levantados en Chile y fuentes disponibles
   fuentes.yaml              documentos y archivos originales (procedencia, acceso, checksum)
   esquema_tabulados.yaml    esquema común de los tabulados
+  catalogo_cuadros.csv      cuadros de las publicaciones (título, páginas, estado de digitalización)
+  paginacion.csv            desfase entre página impresa y página del PDF de cada publicación
   variables/                fichas de variables armonizadas (una por variable)
   concordancia/             matriz concepto × censo
   diccionario/              etiquetas de variables y categorías por censo (oficiales o transcritas)
@@ -54,6 +56,7 @@ Los microdatos no se versionan en este repositorio. Para correr las herramientas
 6. `python pipelines/poblacion_nucleo.py` (genera el tabulado de población)
 7. `python validacion/validar_poblacion.py` (contrasta con cifras publicadas)
 8. `python validacion/revisar_fichas.py` (aplica las fichas de variables al inventario)
+9. `python pipelines/tabulados_publicaciones.py` (cuadros digitalizados de las publicaciones → tabulado y controles; ver [docs/digitalizacion.md](docs/digitalizacion.md))
 
 ## Licencias
 

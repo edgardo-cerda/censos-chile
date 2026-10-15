@@ -1,0 +1,3 @@
+fuente_id,cuadro,control,censo,territorio,area,sexo,total,suma_partes,diferencia,explicada
+pub_1952,9,suma_dimension,1865,Santiago,_T,_T,341683,341653,-30,True
+pub_1952,9,suma_territorio,1865,(partes),rural,_T,1298560,1298530,-30,True

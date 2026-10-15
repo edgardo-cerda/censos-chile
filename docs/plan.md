@@ -109,6 +109,15 @@ hogares; fecundidad; pueblos originarios; discapacidad y religión.
 ### Fase 4: digitalización histórica (1813–1982)
 Catálogo de cuadros → render de página → OCR o transcripción asistida → doble verificación →
 controles aritméticos → CSV con fuente. Prioridad según demanda y cobertura del núcleo.
+Procedimiento y notas por publicación en [digitalizacion.md](digitalizacion.md).
+- [x] Herramientas: render y OCR de páginas (`herramientas/paginas.py`), formato de
+      transcripción (CSV tal como está impreso + YAML) y pipeline con controles
+      (`pipelines/tabulados_publicaciones.py`).
+- [ ] Catálogo de cuadros (`metadatos/catalogo_cuadros.csv`): 1930, 1940, 1952 (solo C9), 1960,
+      1970, 1982 (Tomo I) y 1992 cargados desde los índices; faltan 1813–1920, 1952 completo
+      y 1982 tomos II y III.
+- [ ] Núcleo: población por provincia × área (× sexo) de cada censo. Piloto hecho:
+      1952 C9 (provincias × urbana/rural, 1865–1952).
 
 ### Fase 5: publicación y comunidad
 Versiones con DOI (Zenodo), CRAN/PyPI, guía de contribución, registro público de erratas

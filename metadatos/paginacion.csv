@@ -1,0 +1,9 @@
+fuente_id,impresa_desde,impresa_hasta,desfase,estado,nota
+pub_1930,1,999,-2,verificado,PDF = impresa - 2 (51 -> 49; 56 -> 54).
+pub_1940,1,999,6,verificado,PDF = impresa + 6 (1 -> 7; 74 -> 80; 76 -> 82; 115 -> 121).
+pub_1952,44,44,-4,verificado,Sin índice; desfase comprobado solo en la zona del Cuadro 9.
+pub_1960,1,118,15,verificado,Primera parte (117 -> 132).
+pub_1960,119,999,14,verificado,Segunda parte (124 -> 138; 128 -> 142).
+pub_1970,1,999,10,verificado,PDF = impresa + 10 (1 -> 11).
+pub_1982_v1,1,999,38,verificado,PDF = impresa + 38 (2 -> 40; 51 -> 89; 67 -> 105).
+pub_1992,1,999,0,verificado,La página impresa coincide con la del PDF.

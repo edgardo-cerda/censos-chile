@@ -57,7 +57,7 @@ campos:
   - nombre: dimensiones
     tipo: json
     nulo: si
-    descripcion: Otras desagregaciones propias del indicador, como pares clave-valor armonizados (p. ej. {"estado_civil": "casado"}).
+    descripcion: 'Otras desagregaciones propias del indicador, como pares clave-valor armonizados (p. ej. {"estado_civil": "casado"}).'
 
   # --- Valor ---
   - nombre: valor
@@ -65,8 +65,11 @@ campos:
     nulo: si
   - nombre: estado_valor
     tipo: texto
-    valores: [ok, ilegible, no_publicado, suprimido, inconsistente]
-    descripcion: Estado de la cifra; si no es "ok", valor puede ser nulo.
+    valores: [ok, ilegible, no_publicado, suprimido, inconsistente, guion]
+    descripcion: >
+      Estado de la cifra; si no es "ok", valor puede ser nulo. "guion" = la publicación imprime
+      un guion (según el cuadro, cero o unidad inexistente en ese censo); valor queda nulo.
+      "inconsistente" = cifra transcrita tal como está impresa, pero no cuadra con los totales.
 
   # --- Procedencia ---
   - nombre: fuente_id

@@ -1,0 +1,67 @@
+# Transcripción del Cuadro N.° 9 del censo de 1952.
+# El CSV del mismo nombre reproduce el cuadro tal como está impreso ("-" = guion impreso).
+
+fuente_id: pub_1952
+cuadro: "9"
+titulo: Población del país por provincias según áreas urbana y rural desde el censo del año 1865 al de 1952
+paginas:
+  # desde: primera fila (territorio) de cada página
+  - {pdf: 40, impresa: "44", desde: REPUBLICA}
+  - {pdf: 41, impresa: "45", desde: Valdivia}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion: {fecha: 2026-10-15, por: Claude (asistido), recortes_dpi: 200-400}
+
+indicador: poblacion
+unidad: personas
+fijas: {sexo: _T}
+
+territorio:
+  columna: territorio
+  nivel: {REPUBLICA: pais, _otro: provincia}
+  # Cada columna presenta las provincias vigentes en ese censo, con los nombres de 1952
+  # (p. ej., en 1930 Aconcagua incluye Valparaíso). Ver nota de comparabilidad.
+  dpa_version: "provincias_{censo}"
+
+filas:
+  area: {columna: area, valores: {Total: _T, Urbana: urbana, Rural: rural}}
+
+columnas:
+  # Encabezado de la columna -> dimensiones
+  "1865": {censo: 1865}
+  "1875": {censo: 1875}
+  "1885": {censo: 1885}
+  "1895": {censo: 1895}
+  "1907": {censo: 1907}
+  "1920": {censo: 1920}
+  "1930": {censo: 1930}
+  "1940": {censo: 1940}
+  "1952": {censo: 1952}
+
+notas_cuadro:
+  - >
+    (1) Por no tener el dato por áreas censales, no se incluye la población del Depto. de Arica
+    en la provincia de Tarapacá en los censos de 1885, 1895, 1907 y 1920.
+  - >
+    Las cifras de 1907 y 1920 difieren por eso del Cuadro 10 del censo de 1930 (que sí incluye
+    Arica). Las de 1940 son las revisadas (urbana 2.639.311), no las de la publicación de 1940.
+
+notas_celdas:
+  - territorio: Santiago
+    area: Rural
+    columna: "1865"
+    estado_valor: inconsistente
+    nota: >
+      Impreso 200 118 (lectura clara a 400 dpi), pero urbana + rural = 341 653 frente al total
+      impreso de 341 683, y la suma de las provincias rurales queda 30 bajo la República.
+      Probable errata de imprenta: el valor coherente es 200 148.
+  - territorio: Aconcagua
+    area: Urbana
+    columna: "1865"
+    nota: >
+      Último dígito cortado por la línea de la columna (se lee 1 o 4); se adopta 23 544, que
+      cuadra con el total y el rural.
+
+controles:
+  - {tipo: suma_dimension, dimension: area, total: _T, partes: [urbana, rural]}
+  - {tipo: suma_territorio, total: pais, partes: provincia}
