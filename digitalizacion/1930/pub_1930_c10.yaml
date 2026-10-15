@@ -1,0 +1,56 @@
+# Transcripción del Cuadro 10 del censo de 1930.
+# El CSV del mismo nombre reproduce el cuadro tal como está impreso ("-" = guion impreso).
+
+fuente_id: pub_1930
+cuadro: "10"
+titulo: Población urbana y rural por provincias según los censos de 1895 a 1930
+paginas:
+  - {pdf: 54, impresa: "56", desde: Tarapacá}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion: {fecha: 2026-10-15, por: Claude (asistido), recortes_dpi: 250-500}
+
+indicador: poblacion
+unidad: personas
+fijas: {sexo: _T}
+
+territorio:
+  columna: territorio
+  nivel: {República: pais, _otro: provincia}
+  # Las filas son las provincias de 1930 (DFL de 1927-28); las cifras de 1895, 1907 y 1920
+  # están reagrupadas en esas provincias (p. ej., Aconcagua incluye Valparaíso).
+  dpa_version: provincias_1930
+
+columnas:
+  1930_urbana: {censo: 1930, area: urbana}
+  1930_rural: {censo: 1930, area: rural}
+  1930_total: {censo: 1930, area: _T}
+  1920_urbana: {censo: 1920, area: urbana}
+  1920_rural: {censo: 1920, area: rural}
+  1920_total: {censo: 1920, area: _T}
+  1907_urbana: {censo: 1907, area: urbana}
+  1907_rural: {censo: 1907, area: rural}
+  1907_total: {censo: 1907, area: _T}
+  1895_urbana: {censo: 1895, area: urbana}
+  1895_rural: {censo: 1895, area: rural}
+  1895_total: {censo: 1895, area: _T}
+
+notas_cuadro:
+  - >
+    (*) Para calcular la población urbana de 1930, 1920 y 1907 se consideraron los pueblos y
+    ciudades con más de un mil habitantes. En 1895 se consideraron además algunos caseríos y aldeas.
+  - >
+    A diferencia del Cuadro 9 del censo de 1952, las cifras de 1907 y 1920 incluyen el
+    departamento de Arica (Tarapacá).
+
+notas_celdas:
+  - territorio: Atacama
+    columna: 1930_total
+    estado_valor: inconsistente
+    nota: >
+      Impreso 61 008 (lectura clara a 500 dpi), pero urbana + rural = 61 098, que es también
+      la cifra del Cuadro 9 de 1952. Probable errata de imprenta.
+
+controles:
+  - {tipo: suma_dimension, dimension: area, total: _T, partes: [urbana, rural]}
+  - {tipo: suma_territorio, total: pais, partes: provincia}

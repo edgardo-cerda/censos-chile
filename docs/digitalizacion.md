@@ -13,6 +13,9 @@ sabe de cada PDF. Las cifras resultantes van a `productos/tabulados/tabulados_pu
    python herramientas/paginas.py pub_1952 --impresa 44 --dpi 200 --recorte 0.35,0.60
    python herramientas/paginas.py pub_1940 --pdf 82-121 --ocr       # borrador OCR por filas
    ```
+   Para cuadros largos, `herramientas/ocr_cuadro.py` genera un borrador celda por celda (OCR de
+   cada columna entre las líneas del cuadro). En 1930 funcionó en páginas nítidas pero desalineó
+   filas en otras: conviene probarlo en una página y, si falla, leer franjas a 200 dpi.
    La página completa a 110–130 dpi sirve para ubicarse; para leer cifras, recortes horizontales
    a 200 dpi, y a 400 dpi para dígitos dudosos (`--recorte y0,y1,x0,x1`, fracciones de la página).
 3. **Transcribir** en `digitalizacion/<censo>/<fuente>_c<cuadro>.csv` el cuadro tal como está
@@ -22,8 +25,10 @@ sabe de cada PDF. Las cifras resultantes van a `productos/tabulados/tabulados_pu
    de cada página), cómo se mapean filas y columnas a las dimensiones del esquema, notas del
    cuadro, notas de celdas y controles. Ejemplo: [digitalizacion/1952/pub_1952_c09.yaml](../digitalizacion/1952/pub_1952_c09.yaml).
 5. **Controlar** con `python pipelines/tabulados_publicaciones.py`: aplica los controles del
-   YAML (partes = total por dimensión y por territorio) y lista las diferencias en
-   `validacion/controles_digitalizacion.csv`. Una diferencia se resuelve de dos formas:
+   YAML (partes = total por dimensión, por territorio y por jerarquía provincia → departamento →
+   comuna) y lista las diferencias en `validacion/controles_digitalizacion.csv`. Además compara
+   las cifras que publican varios cuadros (mismo censo, división y unidad) en
+   `validacion/contraste_fuentes.csv`. Una diferencia se resuelve de dos formas:
    - error de transcripción: se relee el recorte y se corrige el CSV;
    - error de la propia publicación: la cifra se deja **tal como está impresa** y se anota la
      celda con `estado_valor: inconsistente` y una nota que explique el valor coherente.
@@ -59,7 +64,12 @@ Hallazgos de la extracción previa (septiembre de 2026), antes de este flujo.
 **1930.** Índice en la página 2 del PDF. Cuadro 10 (pág. 56): urbana y rural por provincias,
 1895–1930. Urbana = pueblos y ciudades de más de 1.000 habitantes (1907–1930); en 1895 se
 incluyeron además algunos caseríos y aldeas. Sus cifras de 1907 y 1920 incluyen el
-departamento de Arica, a diferencia del Cuadro 9 de 1952.
+departamento de Arica, a diferencia del Cuadro 9 de 1952. Las cifras de 1895–1920 del Cuadro 10
+están reagrupadas en las provincias de 1930, por lo que no son comparables provincia a provincia
+con el Cuadro 9 de 1952 (que usa las provincias de cada censo). Cuadro 9 (PDF 49–53): urbana y
+rural × sexo por provincia, departamento y comuna, más los totales del país de 1920 y 1907.
+Erratas impresas: Atacama total 61.008 (coherente 61.098; en los cuadros 9 y 10), Penco mujeres
+5.441 (5.444) y Cunco rural 16.601 (16.604).
 
 **1940.** Reedición de cuadros publicados en la Revista Estadística Chilena (1941–46). Las cifras
 fueron **ajustadas** (~2,8 %) por la Dirección de Estadística, sin publicar la población
@@ -74,8 +84,11 @@ Valparaíso urbana + rural = 423.001 frente a 425.065 impreso; Llanquihue 117.22
 1865 a 1952. En 1885–1920 excluye el departamento de Arica. Errata: Santiago 1865 rural
 impreso 200.118 (coherente: 200.148).
 
-**1960.** Índice en PDF 5–7. Cuadro 1.1.1 (PDF 138): urbana y rural por provincias 1940, 1952
-y 1960. En ese cuadro la urbana 1940 se lee "2.638.311" (tipografía ambigua 8/9; cuadra 2.639.311).
+**1960.** Índice en PDF 5–7. Cuadros girados 90° (`--rotar 90`). Cuadro 1.1.1 (PDF 138):
+urbana y rural por provincias 1940, 1952 y 1960; la urbana 1940 puede leerse "2.638.311"
+(cuadra 2.639.311). Errata: Chiloé 1952 total impreso 100.637 (coherente 100.687, como en 1952).
+Cuadro 1.2 (PDF 142–143): provincias × área × sexo, 1960. En la tipografía negrita de los
+totales se confunden 0, 6, 8 y 9: se transcriben como suma de las filas urbana y rural.
 
 **1970.** Volumen "Total País": sin cuadros por provincia de población por área. Índice en
 PDF 2–3; conceptos y definiciones en PDF 4–9.

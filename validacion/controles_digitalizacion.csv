@@ -1,3 +1,17 @@
 fuente_id,cuadro,control,censo,territorio,area,sexo,total,suma_partes,diferencia,explicada
+pub_1930,9,suma_dimension,1930,Atacama,_T,_T,61008,61098,90,True
+pub_1930,9,suma_dimension,1930,Penco,_T,mujer,5441,5444,3,True
+pub_1930,9,suma_dimension,1930,Cunco,_T,_T,18269,18266,-3,True
+pub_1930,9,suma_dimension,1930,Atacama,_T,_T,61008,61098,90,True
+pub_1930,9,suma_dimension,1930,Penco,_T,_T,11189,11186,-3,True
+pub_1930,9,suma_dimension,1930,Cunco,rural,_T,16601,16604,3,True
+pub_1930,9,jerarquia,1930,Atacama,_T,_T,61008,61098,90,True
+pub_1930,9,jerarquia,1930,Concepción,_T,mujer,77074,77071,-3,True
+pub_1930,9,jerarquia,1930,Temuco,rural,_T,84961,84958,-3,True
+pub_1930,9,suma_territorio,1930,(partes),_T,_T,4287445,4287355,-90,True
+pub_1930,10,suma_dimension,1930,Atacama,_T,_T,61008,61098,90,True
+pub_1930,10,suma_territorio,1930,(partes),_T,_T,4287445,4287355,-90,True
 pub_1952,9,suma_dimension,1865,Santiago,_T,_T,341683,341653,-30,True
 pub_1952,9,suma_territorio,1865,(partes),rural,_T,1298560,1298530,-30,True
+pub_1960,1.1.1,suma_dimension,1952,Chiloé,_T,_T,100637,100687,50,True
+pub_1960,1.1.1,suma_territorio,1952,(partes),_T,_T,5932995,5932945,-50,True

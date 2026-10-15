@@ -8,7 +8,8 @@ Cada cuadro transcrito vive en digitalizacion/<censo>/ como un par de archivos:
 
 Escribe productos/tabulados/tabulados_publicaciones.csv con el esquema de
 metadatos/esquema_tabulados.yaml y validacion/controles_digitalizacion.csv con cada control
-que no cuadra. Sale con código 1 si un control falla en una celda que no está anotada como
+que no cuadra, y validacion/contraste_fuentes.csv con las cifras que aparecen en más de un cuadro
+(mismo censo, división territorial, unidad y dimensiones) y difieren entre ellos. Sale con código 1 si un control falla en una celda que no está anotada como
 "inconsistente" en el YAML (es decir, un posible error de transcripción).
 
 Uso:
@@ -33,6 +34,7 @@ RAIZ = Path(__file__).resolve().parents[1]
 ENTRADA = RAIZ / "digitalizacion"
 SALIDA = RAIZ / "productos" / "tabulados" / "tabulados_publicaciones.csv"
 CONTROLES = RAIZ / "validacion" / "controles_digitalizacion.csv"
+CONTRASTE = RAIZ / "validacion" / "contraste_fuentes.csv"
 
 ESQUEMA = [c["nombre"] for c in
            yaml.safe_load((RAIZ / "metadatos" / "esquema_tabulados.yaml").read_text(encoding="utf-8"))["campos"]]
@@ -60,22 +62,50 @@ def procesar(meta_ruta: Path) -> tuple[list[dict], list[dict]]:
         filas = list(csv.DictReader(f))
 
     terr = meta["territorio"]
-    niveles = terr["nivel"]
-    notas = {(n["territorio"], n["area"], n["columna"]): n for n in meta.get("notas_celdas", [])}
+    niveles = terr.get("nivel", {})
+    # Cuadros jerárquicos: el nivel viene en una columna y las filas de cada unidad siguen a su
+    # unidad superior (provincia, sus departamentos, las comunas de cada departamento...).
+    col_nivel = terr.get("columna_nivel")
+    orden = terr.get("niveles", [])
+    ancestros: dict[str, str] = {}
+
+    def nota_de(nombre, nivel, area, col):
+        """Nota de una celda: territorio, columna, columna "area" si existe y nivel si se indica."""
+        for n in meta.get("notas_celdas", []):
+            if (n["territorio"], n.get("area"), n["columna"]) == (nombre, area, col) and n.get("nivel", nivel) == nivel:
+                return n
+        return {}
     paginas = meta["paginas"]
-    inicio_pagina = {p["desde"]: p for p in paginas if "desde" in p}
 
     salida = []
-    pagina = paginas[0]
+    n_pagina = 0
     for fila in filas:
         nombre = fila[terr["columna"]]
-        pagina = inicio_pagina.get(nombre, pagina)
+        # La página cambia en la primera fila indicada como "desde" de la página siguiente.
+        if n_pagina + 1 < len(paginas) and paginas[n_pagina + 1].get("desde") == nombre:
+            n_pagina += 1
+        pagina = paginas[n_pagina]
+        if col_nivel and fila[col_nivel] not in orden:
+            # Nivel fuera de la jerarquía (p. ej. el total país al final del cuadro).
+            nivel, padre, cod = fila[col_nivel], "", codigo(nombre)
+        elif col_nivel:
+            nivel = fila[col_nivel]
+            i = orden.index(nivel)
+            padre = ancestros.get(orden[i - 1], "") if i > 0 else ""
+            cod = f"{padre}/{codigo(nombre)}" if padre else codigo(nombre)
+            ancestros[nivel] = cod
+            for inferior in orden[i + 1:]:
+                ancestros.pop(inferior, None)
+        else:
+            nivel = niveles.get(nombre, niveles.get("_otro"))
+            padre, cod = "", codigo(nombre)
         dims_fila = {}
         for dim, regla in meta.get("filas", {}).items():
-            dims_fila[dim] = regla["valores"][fila[regla["columna"]]]
+            crudo = fila[regla["columna"]]
+            dims_fila[dim] = regla["valores"][crudo] if "valores" in regla else (int(crudo) if crudo.isdigit() else crudo)
         for col, dims_col in meta["columnas"].items():
             v, estado = valor(fila[col])
-            nota = notas.get((nombre, fila.get("area"), col), {})
+            nota = nota_de(nombre, nivel, fila.get("area"), col)
             dims = {**meta.get("fijas", {}), **dims_fila, **dims_col}
             censo = dims.pop("censo")
             otras = {k: dims.pop(k) for k in list(dims) if k not in DIMENSIONES}
@@ -83,8 +113,8 @@ def procesar(meta_ruta: Path) -> tuple[list[dict], list[dict]]:
                 "censo": censo,
                 "indicador": meta["indicador"],
                 "unidad": meta["unidad"],
-                "territorio_nivel": niveles.get(nombre, niveles.get("_otro")),
-                "territorio_cod_orig": codigo(nombre),
+                "territorio_nivel": nivel,
+                "territorio_cod_orig": cod,
                 "territorio_nombre_orig": nombre,
                 "dpa_version": terr["dpa_version"].format(censo=censo),
                 "territorio_cod_dpa2024": "",
@@ -103,6 +133,7 @@ def procesar(meta_ruta: Path) -> tuple[list[dict], list[dict]]:
                 "metodo": meta["metodo"],
                 "verificacion": meta["verificacion"],
                 "nota": " ".join(nota.get("nota", "").split()),
+                "_padre": padre,
             })
     return salida, controlar(meta, salida)
 
@@ -121,9 +152,17 @@ def controlar(meta: dict, filas: list[dict]) -> list[dict]:
                 d = c["dimension"]
                 k = clave(f, {d})
                 es_total, es_parte = f[d] == c["total"], f[d] in c["partes"]
-            else:  # suma_territorio
+            elif c["tipo"] == "suma_territorio":
                 k = clave(f, {"territorio_cod_orig"})
                 es_total, es_parte = f["territorio_nivel"] == c["total"], f["territorio_nivel"] == c["partes"]
+            else:  # jerarquia: cada unidad = suma de sus unidades inmediatamente inferiores
+                base = clave(f, {"territorio_cod_orig"})
+                grupos[base + (("u", f["territorio_cod_orig"]),)]["total"] = f
+                if f["_padre"]:
+                    g = grupos[base + (("u", f["_padre"]),)]
+                    g["partes"] += f["valor"] or 0
+                    g["celdas"].append(f)
+                continue
             g = grupos[k]
             if es_total:
                 g["total"] = f
@@ -132,18 +171,44 @@ def controlar(meta: dict, filas: list[dict]) -> list[dict]:
                 g["celdas"].append(f)
         for k, g in grupos.items():
             t = g["total"]
-            if t is None or t["valor"] == "":
+            if t is None or t["valor"] == "" or not g["celdas"]:
                 continue
             if g["partes"] != t["valor"]:
                 celdas = [t] + g["celdas"]
                 fallas.append({
                     "fuente_id": meta["fuente_id"], "cuadro": meta["cuadro"], "control": c["tipo"],
-                    "censo": t["censo"], "territorio": t["territorio_nombre_orig"] if c["tipo"] == "suma_dimension" else "(partes)",
+                    "censo": t["censo"], "territorio": t["territorio_nombre_orig"] if c["tipo"] != "suma_territorio" else "(partes)",
                     "area": t["area"], "sexo": t["sexo"],
                     "total": t["valor"], "suma_partes": g["partes"], "diferencia": g["partes"] - t["valor"],
                     "explicada": any(x["estado_valor"] == "inconsistente" for x in celdas),
                 })
     return fallas
+
+
+def contrastar(filas: list[dict]) -> tuple[int, list[dict]]:
+    """Compara las cifras que publican varios cuadros; devuelve (n.º de pares, pares distintos)."""
+    por_clave = defaultdict(list)
+    for f in filas:
+        if f["valor"] == "":
+            continue
+        k = tuple(f[c] for c in ("censo", "dpa_version", "territorio_nivel", "territorio_cod_orig", "area", "sexo",
+                                  "edad_min", "edad_max", "edad_estado", "dimensiones"))
+        por_clave[k].append(f)
+    pares, distintos = 0, []
+    for grupo in por_clave.values():
+        for i, a in enumerate(grupo):
+            for b in grupo[i + 1:]:
+                if (a["fuente_id"], a["cuadro"]) == (b["fuente_id"], b["cuadro"]):
+                    continue
+                pares += 1
+                if a["valor"] != b["valor"]:
+                    distintos.append({
+                        "censo": a["censo"], "territorio": a["territorio_nombre_orig"], "nivel": a["territorio_nivel"],
+                        "area": a["area"], "sexo": a["sexo"],
+                        "fuente_a": f"{a['fuente_id']} c{a['cuadro']}", "valor_a": a["valor"], "estado_a": a["estado_valor"],
+                        "fuente_b": f"{b['fuente_id']} c{b['cuadro']}", "valor_b": b["valor"], "estado_b": b["estado_valor"],
+                    })
+    return pares, distintos
 
 
 def main() -> None:
@@ -156,7 +221,7 @@ def main() -> None:
 
     SALIDA.parent.mkdir(parents=True, exist_ok=True)
     with SALIDA.open("w", newline="", encoding="utf-8") as fh:
-        w = csv.DictWriter(fh, ESQUEMA, lineterminator="\n")
+        w = csv.DictWriter(fh, ESQUEMA, extrasaction="ignore", lineterminator="\n")
         w.writeheader()
         w.writerows(filas)
     campos = ["fuente_id", "cuadro", "control", "censo", "territorio", "area", "sexo", "total", "suma_partes", "diferencia", "explicada"]
@@ -164,6 +229,15 @@ def main() -> None:
         w = csv.DictWriter(fh, campos, lineterminator="\n")
         w.writeheader()
         w.writerows(fallas)
+
+    pares, distintos = contrastar(filas)
+    with CONTRASTE.open("w", newline="", encoding="utf-8") as fh:
+        campos = ["censo", "territorio", "nivel", "area", "sexo", "fuente_a", "valor_a", "estado_a", "fuente_b", "valor_b", "estado_b"]
+        w = csv.DictWriter(fh, campos, lineterminator="\n")
+        w.writeheader()
+        w.writerows(distintos)
+    print(f"Contraste entre cuadros: {pares} pares de cifras repetidas, {len(distintos)} distintas "
+          f"-> {CONTRASTE.relative_to(RAIZ).as_posix()}")
 
     sin_explicar = [f for f in fallas if not f["explicada"]]
     for f in fallas:

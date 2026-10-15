@@ -1,0 +1,4 @@
+censo,territorio,nivel,area,sexo,fuente_a,valor_a,estado_a,fuente_b,valor_b,estado_b
+1930,Atacama,provincia,_T,_T,pub_1930 c9,61008,inconsistente,pub_1952 c9,61098,ok
+1930,Atacama,provincia,_T,_T,pub_1930 c10,61008,inconsistente,pub_1952 c9,61098,ok
+1952,Chiloé,provincia,_T,_T,pub_1952 c9,100687,ok,pub_1960 c1.1.1,100637,inconsistente

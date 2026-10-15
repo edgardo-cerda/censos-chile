@@ -1,0 +1,50 @@
+# Transcripción del Cuadro N.° 1.1.1 del censo de 1960 (página girada 90°: --rotar 90).
+# El CSV del mismo nombre reproduce el cuadro tal como está impreso (los ceros están impresos como 0).
+
+fuente_id: pub_1960
+cuadro: "1.1.1"
+titulo: Población según censos 1940, 1952 y 1960, clasificada en urbana y rural, por provincias
+paginas:
+  - {pdf: 138, impresa: "124", desde: TOTAL}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion: {fecha: 2026-10-15, por: Claude (asistido), recortes_dpi: 220-400}
+
+indicador: poblacion
+unidad: personas
+fijas: {sexo: _T}
+
+territorio:
+  columna: territorio
+  nivel: {TOTAL: pais, _otro: provincia}
+  # Las provincias de 1960 (25 + Territorio Antártico); las cifras de 1940 y 1952 se presentan
+  # en las mismas provincias, que no cambiaron entre 1940 y 1960.
+  dpa_version: "provincias_{censo}"
+
+columnas:
+  1940_total: {censo: 1940, area: _T}
+  1940_urbano: {censo: 1940, area: urbana}
+  1940_rural: {censo: 1940, area: rural}
+  1952_total: {censo: 1952, area: _T}
+  1952_urbano: {censo: 1952, area: urbana}
+  1952_rural: {censo: 1952, area: rural}
+  1960_total: {censo: 1960, area: _T}
+  1960_urbano: {censo: 1960, area: urbana}
+  1960_rural: {censo: 1960, area: rural}
+
+notas_cuadro:
+  - >
+    Las cifras de 1940 son las revisadas (urbana 2.639.311), no las de la publicación de 1940.
+    En la impresión el 9 de "2.639.311" puede leerse como 8; la cifra con 9 es la que cuadra.
+
+notas_celdas:
+  - territorio: Chiloé
+    columna: 1952_total
+    estado_valor: inconsistente
+    nota: >
+      Impreso 100.637 (lectura clara a 400 dpi), pero urbano + rural = 18.096 + 82.591 = 100.687,
+      que es la cifra del Cuadro 9 del censo de 1952. Probable errata de imprenta.
+
+controles:
+  - {tipo: suma_dimension, dimension: area, total: _T, partes: [urbana, rural]}
+  - {tipo: suma_territorio, total: pais, partes: provincia}

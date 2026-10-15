@@ -15,8 +15,8 @@ pub_1930,1930,III Parte,5,Intensidad del desarrollo de la población de las ciud
 pub_1930,1930,III Parte,6,Población de los pueblos de 1.001 a 5.000 habitantes en 1930 y en censos anteriores,cuadro,48,46,estimada,pendiente,
 pub_1930,1930,III Parte,7,"Densidad de la población por km² por provincias, en 1930 y en censos anteriores",cuadro,50,48,estimada,pendiente,
 pub_1930,1930,III Parte,8,Entidades de población clasificadas por categorías en 1930,cuadro,50,48,estimada,pendiente,
-pub_1930,1930,III Parte,9,"Población urbana y rural con distinción del sexo en 1930, por provincias, departamentos y comunas",cuadro,51,49,verificada,pendiente,
-pub_1930,1930,III Parte,10,"Población urbana y rural por provincias, según los censos de 1895 a 1930",cuadro,56,54,verificada,pendiente,
+pub_1930,1930,III Parte,9,"Población urbana y rural con distinción del sexo en 1930, por provincias, departamentos y comunas",cuadro,51,49,verificada,transcrito,PDF 49-53. Transcrito en digitalizacion/1930/pub_1930_c09.csv (sin columnas de %).
+pub_1930,1930,III Parte,10,"Población urbana y rural por provincias, según los censos de 1895 a 1930",cuadro,56,54,verificada,transcrito,Transcrito en digitalizacion/1930/pub_1930_c10.csv.
 pub_1930,1930,III Parte,11,"Población urbana y % de intensidad de su desarrollo por provincias, según los censos de 1907 a 1930",cuadro,56,54,verificada,pendiente,
 pub_1930,1930,III Parte,12,"Resumen de la distribución de la población según el sexo y número de viviendas, en 1930, por provincias, departamentos y comunas",cuadro,57,55,estimada,pendiente,
 pub_1930,1930,III Parte,13,"Población detallada por entidades y categorías, por distritos y comunas, en 1930, con indicación del sexo y número de viviendas",cuadro,62,60,estimada,pendiente,
@@ -74,10 +74,10 @@ pub_1960,1960,Primera parte - II. Análisis demográfico de las cifras censales,
 pub_1960,1960,Primera parte - II. Análisis demográfico de las cifras censales,15,Categoría de ocupación,texto,116,131,estimada,pendiente,
 pub_1960,1960,Primera parte - II. Análisis demográfico de las cifras censales,16,Población económicamente inactiva,texto,118,133,estimada,pendiente,
 pub_1960,1960,Segunda parte - 1. Características demográficas,1.1,"Población según los Censos de 1940, 1952 y 1960, por Provincias",cuadro,123,137,estimada,pendiente,
-pub_1960,1960,Segunda parte - 1. Características demográficas,1.1.1,"Población según Censos de 1940, 1952 y 1960, clasificada en urbana y rural, por Provincias",cuadro,124,138,verificada,pendiente,
+pub_1960,1960,Segunda parte - 1. Características demográficas,1.1.1,"Población según Censos de 1940, 1952 y 1960, clasificada en urbana y rural, por Provincias",cuadro,124,138,verificada,transcrito,Página girada. Transcrito en digitalizacion/1960/pub_1960_c1_1_1.csv.
 pub_1960,1960,Segunda parte - 1. Características demográficas,1.1.2,"Población según los Censos de 1940, 1952 y 1960, por Provincias y ciudades más importantes del País",cuadro,125,139,verificada,pendiente,
 pub_1960,1960,Segunda parte - 1. Características demográficas,1.1.3,"Población según los Censos de 1940, 1952 y 1960, por sexo y grupos de edades",cuadro,127,141,estimada,pendiente,
-pub_1960,1960,Segunda parte - 1. Características demográficas,1.2,"Población por sexo, clasificada en urbana y rural, por Provincias",cuadro,128,142,verificada,pendiente,
+pub_1960,1960,Segunda parte - 1. Características demográficas,1.2,"Población por sexo, clasificada en urbana y rural, por Provincias",cuadro,128,142,verificada,transcrito,"PDF 142-143, páginas giradas. Transcrito en digitalizacion/1960/pub_1960_c1_2.csv."
 pub_1960,1960,Segunda parte - 1. Características demográficas,1.2.1,"Población según grupos de edades, por Provincias",cuadro,130,144,estimada,pendiente,
 pub_1960,1960,Segunda parte - 1. Características demográficas,1.2.2,Población de las comunas cabeceras de provincias por grupos de edades y sexo,cuadro,132,146,estimada,pendiente,
 pub_1960,1960,Segunda parte - 1. Características demográficas,1.2.3,Población por sexo del Gran Santiago y de las ciudades principales del País,cuadro,141,155,estimada,pendiente,

@@ -1,0 +1,86 @@
+# Transcripción del Cuadro 9 del censo de 1930.
+# El CSV del mismo nombre reproduce el cuadro tal como está impreso ("-" = guion impreso), sin las
+# columnas de porcentaje (% urbano y % rural de cada unidad), que se derivan de las demás.
+# Columna "censo": las tres filas finales (República 1930, 1920 y 1907) traen los totales del país
+# de los censos anteriores con la misma apertura.
+
+fuente_id: pub_1930
+cuadro: "9"
+titulo: Población urbana y rural con distinción del sexo en 1930, por provincias, departamentos y comunas
+paginas:
+  # desde: primera fila (territorio) de cada página
+  - {pdf: 49, impresa: "51", desde: Tarapacá}
+  - {pdf: 50, impresa: "52", desde: Aconcagua}
+  - {pdf: 51, impresa: "53", desde: Caupolicán}
+  - {pdf: 52, impresa: "54", desde: Yungay}
+  - {pdf: 53, impresa: "55", desde: Villarrica}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion:
+  fecha: 2026-10-15
+  por: Claude (asistido)
+  recortes_dpi: 200-400
+  nota: >
+    Lectura visual de franjas a 200 dpi; el OCR (herramientas/ocr_cuadro.py) se probó como
+    borrador pero desalineaba filas desde la página 50. Dígitos dudosos verificados a 400 dpi.
+
+indicador: poblacion
+unidad: personas
+
+territorio:
+  columna: territorio
+  columna_nivel: nivel
+  # Las filas de cada unidad siguen a su unidad superior. Aysen y Magallanes figuran como
+  # territorios (TERR.) y se registran en el nivel provincia.
+  niveles: [provincia, departamento, comuna]
+  dpa_version: provincias_1930
+
+filas:
+  censo: {columna: censo}
+
+columnas:
+  urbana_hombres: {area: urbana, sexo: hombre}
+  urbana_mujeres: {area: urbana, sexo: mujer}
+  urbana_total: {area: urbana, sexo: _T}
+  rural_hombres: {area: rural, sexo: hombre}
+  rural_mujeres: {area: rural, sexo: mujer}
+  rural_total: {area: rural, sexo: _T}
+  total_hombres: {area: _T, sexo: hombre}
+  total_mujeres: {area: _T, sexo: mujer}
+  total_total: {area: _T, sexo: _T}
+
+notas_cuadro:
+  - >
+    Urbana = pueblos y ciudades de más de 1.000 habitantes (nota del Cuadro 10 del mismo volumen).
+  - >
+    Las provincias son las de la división de 1927-28 (p. ej., Aconcagua incluye Valparaíso;
+    Colchagua incluye Rancagua y Caupolicán; Talca incluye Curicó).
+
+notas_celdas:
+  - territorio: Atacama
+    nivel: provincia
+    columna: total_total
+    estado_valor: inconsistente
+    nota: >
+      Impreso 61 008, pero hombres + mujeres y urbana + rural dan 61 098, igual que la suma de
+      sus departamentos. La misma errata aparece en el Cuadro 10 de este volumen.
+  - territorio: Penco
+    nivel: comuna
+    columna: total_mujeres
+    estado_valor: inconsistente
+    nota: >
+      Impreso 5 441 (lectura clara a 400 dpi), pero urbana + rural = 2 430 + 3 014 = 5 444 y
+      hombres + mujeres = 11 189 cuadra con 5 444. Probable errata de imprenta.
+  - territorio: Cunco
+    nivel: comuna
+    columna: rural_total
+    estado_valor: inconsistente
+    nota: >
+      Impreso 16 601 (lectura clara a 400 dpi), pero hombres + mujeres = 8 968 + 7 636 = 16 604,
+      que también cuadra con el total de la comuna (18 269). Probable errata de imprenta.
+
+controles:
+  - {tipo: suma_dimension, dimension: area, total: _T, partes: [urbana, rural]}
+  - {tipo: suma_dimension, dimension: sexo, total: _T, partes: [hombre, mujer]}
+  - {tipo: jerarquia}
+  - {tipo: suma_territorio, total: pais, partes: provincia}

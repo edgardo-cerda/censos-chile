@@ -1,0 +1,42 @@
+# Transcripción del Cuadro N.° 1.2 del censo de 1960 (páginas giradas 90°: --rotar 90).
+# El CSV del mismo nombre reproduce el cuadro: dos paneles por página, aquí en una sola lista.
+# Territorio Antártico no trae fila de área urbana y deja en blanco la columna de mujeres.
+
+fuente_id: pub_1960
+cuadro: "1.2"
+titulo: Población por sexo, clasificada en urbana y rural, por provincias
+paginas:
+  - {pdf: 142, impresa: "128", desde: TOTAL}
+  - {pdf: 143, impresa: "129", desde: Ñuble}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion:
+  fecha: 2026-10-15
+  por: Claude (asistido)
+  recortes_dpi: 250
+  nota: >
+    Las cifras en negrita (filas de total de cada provincia y del país) usan una tipografía en
+    que 0, 6, 8 y 9 se confunden; se transcribieron como la suma de las filas de área urbana y
+    rural (tipografía normal, legible), que en todos los casos es compatible con la lectura de la
+    negrita y con los totales del Cuadro 1.1.1.
+
+indicador: poblacion
+unidad: personas
+
+territorio:
+  columna: territorio
+  nivel: {TOTAL: pais, _otro: provincia}
+  dpa_version: provincias_1960
+
+filas:
+  area: {columna: area, valores: {Total: _T, Area Urbana: urbana, Area Rural: rural}}
+
+columnas:
+  totales: {censo: 1960, sexo: _T}
+  hombres: {censo: 1960, sexo: hombre}
+  mujeres: {censo: 1960, sexo: mujer}
+
+controles:
+  - {tipo: suma_dimension, dimension: area, total: _T, partes: [urbana, rural]}
+  - {tipo: suma_dimension, dimension: sexo, total: _T, partes: [hombre, mujer]}
+  - {tipo: suma_territorio, total: pais, partes: provincia}
