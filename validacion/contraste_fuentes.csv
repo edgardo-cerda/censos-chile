@@ -1,4 +1,26 @@
 censo,territorio,nivel,area,sexo,fuente_a,valor_a,estado_a,fuente_b,valor_b,estado_b
 1930,Atacama,provincia,_T,_T,pub_1930 c9,61008,inconsistente,pub_1952 c9,61098,ok
 1930,Atacama,provincia,_T,_T,pub_1930 c10,61008,inconsistente,pub_1952 c9,61098,ok
+1940,Antofagasta,provincia,_T,_T,pub_1940 cp76,115147,inconsistente,pub_1952 c9,145147,ok
+1940,Antofagasta,provincia,_T,_T,pub_1940 cp76,115147,inconsistente,pub_1960 c1.1.1,145147,ok
+1940,Valparaíso,provincia,urbana,_T,pub_1940 cp76,350622,ok,pub_1952 c9,352314,ok
+1940,Valparaíso,provincia,urbana,_T,pub_1940 cp76,350622,ok,pub_1960 c1.1.1,352314,ok
+1940,Valparaíso,provincia,rural,_T,pub_1940 cp76,72379,ok,pub_1952 c9,72751,ok
+1940,Valparaíso,provincia,rural,_T,pub_1940 cp76,72379,ok,pub_1960 c1.1.1,72751,ok
+1940,Santiago,provincia,urbana,_T,pub_1940 cp76,1051791,ok,pub_1952 c9,1057425,ok
+1940,Santiago,provincia,urbana,_T,pub_1940 cp76,1051791,ok,pub_1960 c1.1.1,1057425,ok
+1940,Santiago,provincia,rural,_T,pub_1940 cp76,209926,ok,pub_1952 c9,211080,ok
+1940,Santiago,provincia,rural,_T,pub_1940 cp76,209926,ok,pub_1960 c1.1.1,211080,ok
+1940,Santiago,provincia,_T,_T,pub_1940 cp76,1261717,ok,pub_1952 c9,1268505,ok
+1940,Santiago,provincia,_T,_T,pub_1940 cp76,1261717,ok,pub_1960 c1.1.1,1268505,ok
+1940,Colchagua,provincia,urbana,_T,pub_1940 cp76,29882,ok,pub_1952 c9,28388,ok
+1940,Colchagua,provincia,urbana,_T,pub_1940 cp76,29882,ok,pub_1960 c1.1.1,28388,ok
+1940,Colchagua,provincia,rural,_T,pub_1940 cp76,108154,ok,pub_1952 c9,102860,ok
+1940,Colchagua,provincia,rural,_T,pub_1940 cp76,108154,ok,pub_1960 c1.1.1,102860,ok
+1940,Colchagua,provincia,_T,_T,pub_1940 cp76,138036,ok,pub_1952 c9,131248,ok
+1940,Colchagua,provincia,_T,_T,pub_1940 cp76,138036,ok,pub_1960 c1.1.1,131248,ok
+1940,Maule,provincia,rural,_T,pub_1940 cp76,47907,inconsistente,pub_1952 c9,47908,ok
+1940,Maule,provincia,rural,_T,pub_1940 cp76,47907,inconsistente,pub_1960 c1.1.1,47908,ok
+1940,Llanquihue,provincia,_T,_T,pub_1940 cp76,115425,inconsistente,pub_1952 c9,117225,ok
+1940,Llanquihue,provincia,_T,_T,pub_1940 cp76,115425,inconsistente,pub_1960 c1.1.1,117225,ok
 1952,Chiloé,provincia,_T,_T,pub_1952 c9,100687,ok,pub_1960 c1.1.1,100637,inconsistente

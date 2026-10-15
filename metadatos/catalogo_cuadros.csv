@@ -34,7 +34,7 @@ pub_1940,1940,Instrucción y estado civil,,"Población por edades individuales, 
 pub_1940,1940,Instrucción y estado civil,,"Población por edades individuales, sexo, estado civil e instrucción - Provincias",cuadro,21,27,estimada,pendiente,
 pub_1940,1940,Instrucción y estado civil,,Ciudades de 5 000 habitantes o más en 1940 y censos anteriores,cuadro,73,79,estimada,pendiente,
 pub_1940,1940,Urbanismo,,Pueblos de 1 000 a 5 000 habitantes en 1940 y censos anteriores,cuadro,74,80,verificada,pendiente,
-pub_1940,1940,Urbanismo,,"Población urbana-rural por sexo según provincias, departamentos, comunas y distritos con indicación del número de viviendas",cuadro,76,82,verificada,pendiente,
+pub_1940,1940,Urbanismo,,"Población urbana-rural por sexo según provincias, departamentos, comunas y distritos con indicación del número de viviendas",cuadro,76,82,verificada,transcrito,PDF 82-121. Transcrito hasta comuna (sin distritos) en digitalizacion/1940/pub_1940_p076.csv.
 pub_1940,1940,Características económicas,,Población económicamente activa por sexo y provincias,cuadro,116,122,estimada,pendiente,
 pub_1940,1940,Características económicas,,"Activos según sexo, trabajo y situación por provincias",cuadro,117,123,estimada,pendiente,
 pub_1940,1940,Características económicas,,"Actividades según situación, edades y sexo",cuadro,121,127,estimada,pendiente,

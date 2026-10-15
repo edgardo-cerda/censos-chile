@@ -1,0 +1,168 @@
+# Transcripción del cuadro "Población urbana-rural por sexo según provincias, departamentos,
+# comunas y distritos, con indicación del número de viviendas" del censo de 1940.
+# El cuadro no tiene número: se identifica por su página impresa inicial (76).
+# El CSV reproduce las filas de comuna, departamento y provincia tal como están impresas, sin los
+# distritos ni las columnas de porcentaje. En este cuadro los totales van DESPUÉS de sus unidades
+# (las comunas preceden a su departamento y los departamentos a su provincia). "-" = guion impreso.
+# El cuadro no trae total del país.
+
+fuente_id: pub_1940
+cuadro: "p76"
+titulo: Población urbana-rural por sexo según provincias, departamentos, comunas y distritos, con indicación del número de viviendas
+paginas:
+  # desde: primera fila transcrita de cada página
+  - {pdf: 82, impresa: "76", desde: "Arica"}
+  - {pdf: 83, impresa: "77", desde: "Lagunas"}
+  - {pdf: 84, impresa: "78", desde: "Chañaral"}
+  - {pdf: 85, impresa: "79", desde: "La Serena"}
+  - {pdf: 86, impresa: "80", desde: "Ovalle"}
+  - {pdf: 87, impresa: "81", desde: "Mincha"}
+  - {pdf: 88, impresa: "82", desde: "Papudo"}
+  - {pdf: 89, impresa: "83", desde: "Quillota"}
+  - {pdf: 90, impresa: "84", desde: "Valparaíso"}
+  - {pdf: 91, impresa: "85", desde: "Santiago"}
+  - {pdf: 92, impresa: "86", desde: "Quinta Normal"}
+  - {pdf: 93, impresa: "87", desde: "Isla de Maipo"}
+  - {pdf: 94, impresa: "88", desde: "Cartagena"}
+  - {pdf: 95, impresa: "89", desde: "Doñihue"}
+  - {pdf: 96, impresa: "90", desde: "Malloa"}
+  - {pdf: 97, impresa: "91", desde: "Pumanque"}
+  - {pdf: 98, impresa: "92", desde: "Curicó"}
+  - {pdf: 99, impresa: "93", desde: "San Clemente"}
+  - {pdf: 100, impresa: "94", desde: "Constitución"}
+  - {pdf: 101, impresa: "95", desde: "San Javier"}
+  - {pdf: 102, impresa: "96", desde: "Colbún"}
+  - {pdf: 103, impresa: "97", desde: "Quirihue"}
+  - {pdf: 104, impresa: "98", desde: "Ninhue"}
+  - {pdf: 105, impresa: "99", desde: "Coihueco"}
+  - {pdf: 106, impresa: "100", desde: "Tomé"}
+  - {pdf: 107, impresa: "101", desde: "Talcahuano"}
+  - {pdf: 108, impresa: "102", desde: "Coronel"}
+  - {pdf: 109, impresa: "103", desde: "Arauco"}
+  - {pdf: 110, impresa: "104", desde: "Los Angeles"}
+  - {pdf: 111, impresa: "105", desde: "Quilleco"}
+  - {pdf: 112, impresa: "106", desde: "Angol"}
+  - {pdf: 113, impresa: "107", desde: "Lumaco"}
+  - {pdf: 114, impresa: "108", desde: "Lautaro"}
+  - {pdf: 115, impresa: "109", desde: "Vilcún"}
+  - {pdf: 116, impresa: "110", desde: "Valdivia"}
+  - {pdf: 117, impresa: "111", desde: "Puerto Octay"}
+  - {pdf: 118, impresa: "112", desde: "Maullín"}
+  - {pdf: 119, impresa: "113", desde: "Quemchi"}
+  - {pdf: 120, impresa: "114", desde: "Achao"}
+  - {pdf: 121, impresa: "115", desde: "Magallanes"}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion:
+  fecha: 2026-10-15
+  por: Claude (asistido)
+  recortes_dpi: 160-400
+  nota: >
+    Lectura visual de media página a 160 dpi; dígitos dudosos a 400 dpi. Las filas de comuna
+    impresas en negrita poco legible (Bío-Bío, Malleco) se contrastaron con la suma de sus distritos.
+
+indicador: poblacion
+unidad: personas
+
+territorio:
+  columna: territorio
+  columna_nivel: nivel
+  niveles: [provincia, departamento, comuna]
+  totales_al_final: true
+  dpa_version: provincias_1940
+
+columnas:
+  urbana_viviendas: {censo: 1940, area: urbana, indicador: viviendas, unidad: viviendas}
+  urbana_hombres: {censo: 1940, area: urbana, sexo: hombre}
+  urbana_mujeres: {censo: 1940, area: urbana, sexo: mujer}
+  urbana_total: {censo: 1940, area: urbana, sexo: _T}
+  rural_viviendas: {censo: 1940, area: rural, indicador: viviendas, unidad: viviendas}
+  rural_hombres: {censo: 1940, area: rural, sexo: hombre}
+  rural_mujeres: {censo: 1940, area: rural, sexo: mujer}
+  rural_total: {censo: 1940, area: rural, sexo: _T}
+  total_habitantes: {censo: 1940, area: _T, sexo: _T}
+
+notas_cuadro:
+  - >
+    Reedición de los cuadros publicados en la Revista Estadística Chilena (1942-43). Según la
+    introducción del volumen, las cifras de 1940 fueron ajustadas por la Dirección de Estadística.
+  - >
+    Las 25 provincias suman 5.021.474 habitantes según la columna de total, frente a 5.023.539 de
+    la población oficial; las cifras revisadas por provincia y área aparecen en el Cuadro 9 de 1952
+    y el Cuadro 1.1.1 de 1960.
+  - >
+    Diferencias con las cifras revisadas (1952 C9 y 1960 C1.1.1), que no son errores de transcripción:
+    Santiago (1.261.717 aquí, 1.268.505 revisada) y Colchagua (138.036 y 131.248) suman lo mismo
+    (1.399.753): la revisión traspasó 6.788 personas de Colchagua a Santiago. En Valparaíso la
+    revisión reparte entre urbana y rural a las 2.064 personas de la Bahía (urbana 352.314, rural
+    72.751).
+
+notas_celdas:
+  - territorio: "Antofagasta"
+    nivel: provincia
+    columna: total_habitantes
+    estado_valor: inconsistente
+    nota: 'Impreso 115.147 (lectura clara a 400 dpi); urbana + rural y la suma de departamentos dan 145.147, la cifra de los censos de 1952 y 1960. Errata de imprenta.'
+  - territorio: "Valparaíso"
+    nivel: comuna
+    columna: total_habitantes
+    estado_valor: inconsistente
+    nota: 'Incluye 2.064 personas de la fila "Bahía", que solo trae total (sin urbana ni rural): por eso supera en 2.064 a urbana + rural (213.550).'
+  - territorio: "Valparaíso"
+    nivel: departamento
+    columna: total_habitantes
+    estado_valor: inconsistente
+    nota: 'Incluye las 2.064 personas de la Bahía de Valparaíso, no clasificadas en urbana ni rural.'
+  - territorio: "Valparaíso"
+    nivel: provincia
+    columna: total_habitantes
+    estado_valor: inconsistente
+    nota: 'Incluye las 2.064 personas de la Bahía de Valparaíso, no clasificadas en urbana ni rural (urbana + rural = 423.001). Las cifras revisadas de 1960 dan urbana 352.314 y rural 72.751.'
+  - territorio: "Maule"
+    nivel: provincia
+    columna: rural_total
+    estado_valor: inconsistente
+    nota: 'Impreso 47.907; hombres + mujeres y la suma de departamentos dan 47.908 (el total de la provincia, 70.497, cuadra con 47.908).'
+  - territorio: "Atacama"
+    nivel: provincia
+    columna: rural_viviendas
+    estado_valor: inconsistente
+    nota: 'Impreso 8.126; la suma de los departamentos da 8.136.'
+  - territorio: "Yungay"
+    nivel: departamento
+    columna: rural_viviendas
+    estado_valor: inconsistente
+    nota: 'Impreso 4.759; la suma de las comunas da 4.758.'
+  - territorio: "Ñuble"
+    nivel: provincia
+    columna: rural_mujeres
+    estado_valor: inconsistente
+    nota: 'Impreso 77.709; la suma de los departamentos da 77.679, que cuadra con rural total (162.510) menos hombres.'
+  - territorio: "Calbuco"
+    nivel: comuna
+    columna: total_habitantes
+    estado_valor: inconsistente
+    nota: 'Impreso 14.605; urbana + rural = 2.049 + 14.356 = 16.405 (dígitos transpuestos).'
+  - territorio: "Calbuco"
+    nivel: departamento
+    columna: total_habitantes
+    estado_valor: inconsistente
+    nota: 'Impreso 14.605; urbana + rural = 16.405.'
+  - territorio: "Llanquihue"
+    nivel: provincia
+    columna: total_habitantes
+    estado_valor: inconsistente
+    nota: 'Impreso 115.425; urbana + rural = 117.225. La diferencia (1.800) es la de Calbuco (14.605 impreso frente a 16.405).'
+  - territorio: "Iquique"
+    nivel: comuna
+    columna: urbana_viviendas
+    nota: 'Negrita ambigua (8.702 u 8.782); se adopta 8.702, que cuadra con el departamento (9.530).'
+  - territorio: "Los Sauces"
+    nivel: comuna
+    columna: urbana_viviendas
+    nota: 'Negrita ambigua (428 o 478); se adopta 428, la suma de sus distritos, que cuadra con el departamento Angol (3.756).'
+
+controles:
+  - {tipo: suma_dimension, dimension: sexo, total: _T, partes: [hombre, mujer]}
+  - {tipo: suma_dimension, dimension: area, total: _T, partes: [urbana, rural]}
+  - {tipo: jerarquia}

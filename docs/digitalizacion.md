@@ -76,9 +76,14 @@ fueron **ajustadas** (~2,8 %) por la Dirección de Estadística, sin publicar la
 efectivamente empadronada (introducción, PDF 4–6). El cuadro urbano-rural por provincias,
 departamentos, comunas y distritos (págs. 76–115) no trae total país y tiene inconsistencias
 propias: la suma provincial (5.021.474) queda 2.065 bajo el total oficial (5.023.539);
-Valparaíso urbana + rural = 423.001 frente a 425.065 impreso; Llanquihue 117.225 frente a
-115.425; Maule, diferencia de 1. Las cifras revisadas aparecen en 1952 (Cuadro 9) y 1960
-(Cuadro 1.1.1): urbana 2.639.311, rural 2.384.228.
+Valparaíso urbana + rural = 423.001 frente a 425.065 impreso (la diferencia son las 2.064
+personas de la Bahía, sin clasificar por área); Llanquihue 117.225 frente a 115.425 (errata en
+Calbuco: 14.605 por 16.405); Maule, diferencia de 1. Las cifras revisadas aparecen en 1952
+(Cuadro 9) y 1960 (Cuadro 1.1.1): urbana 2.639.311, rural 2.384.228; la revisión traspasa 6.788
+personas de Colchagua a Santiago. Transcrito hasta comuna (PDF 82–121, 388 filas); los totales van
+después de sus unidades (`totales_al_final` en el YAML). Otras erratas: Antofagasta total
+115.147 (145.147), viviendas rurales de Atacama y Yungay, mujeres rurales de Ñuble (77.709 por
+77.679). La provincia de Osorno figura separada de Llanquihue.
 
 **1952.** Sin índice. Cuadro 9 (pág. 44–45, PDF 40–41): provincias × total/urbana/rural de
 1865 a 1952. En 1885–1920 excluye el departamento de Arica. Errata: Santiago 1865 rural

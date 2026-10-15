@@ -56,18 +56,45 @@ def valor(texto: str) -> tuple[int | None, str]:
     return int(texto.replace(".", "").replace(" ", "")), "ok"
 
 
+def ubicar(filas: list[dict], terr: dict) -> list[tuple[str, str, str]]:
+    """(nivel, código del padre, código) de cada fila.
+
+    Sin columna de nivel, el nivel sale del diccionario territorio.nivel. Con columna de nivel
+    (cuadros jerárquicos), las filas de cada unidad siguen a su unidad superior; con
+    totales_al_final la unidad superior viene después de sus unidades (se recorre al revés).
+    El código es la ruta de nombres normalizados (p. ej. tarapaca/arica/arica).
+    """
+    col_nivel = terr.get("columna_nivel")
+    if not col_nivel:
+        niveles = terr.get("nivel", {})
+        return [(niveles.get(f[terr["columna"]], niveles.get("_otro")), "", codigo(f[terr["columna"]])) for f in filas]
+    orden = terr.get("niveles", [])
+    al_reves = terr.get("totales_al_final", False)
+    ancestros: dict[str, str] = {}
+    resultado = []
+    for fila in (reversed(filas) if al_reves else filas):
+        nombre, nivel = fila[terr["columna"]], fila[col_nivel]
+        if nivel not in orden:
+            # Nivel fuera de la jerarquía (p. ej. el total país al final del cuadro).
+            resultado.append((nivel, "", codigo(nombre)))
+            continue
+        i = orden.index(nivel)
+        padre = ancestros.get(orden[i - 1], "") if i > 0 else ""
+        cod = f"{padre}/{codigo(nombre)}" if padre else codigo(nombre)
+        ancestros[nivel] = cod
+        for inferior in orden[i + 1:]:
+            ancestros.pop(inferior, None)
+        resultado.append((nivel, padre, cod))
+    return resultado[::-1] if al_reves else resultado
+
+
 def procesar(meta_ruta: Path) -> tuple[list[dict], list[dict]]:
     meta = yaml.safe_load(meta_ruta.read_text(encoding="utf-8"))
     with meta_ruta.with_suffix(".csv").open(encoding="utf-8") as f:
         filas = list(csv.DictReader(f))
 
     terr = meta["territorio"]
-    niveles = terr.get("nivel", {})
-    # Cuadros jerárquicos: el nivel viene en una columna y las filas de cada unidad siguen a su
-    # unidad superior (provincia, sus departamentos, las comunas de cada departamento...).
-    col_nivel = terr.get("columna_nivel")
-    orden = terr.get("niveles", [])
-    ancestros: dict[str, str] = {}
+    ubicacion = ubicar(filas, terr)
 
     def nota_de(nombre, nivel, area, col):
         """Nota de una celda: territorio, columna, columna "area" si existe y nivel si se indica."""
@@ -79,26 +106,12 @@ def procesar(meta_ruta: Path) -> tuple[list[dict], list[dict]]:
 
     salida = []
     n_pagina = 0
-    for fila in filas:
+    for fila, (nivel, padre, cod) in zip(filas, ubicacion):
         nombre = fila[terr["columna"]]
         # La página cambia en la primera fila indicada como "desde" de la página siguiente.
         if n_pagina + 1 < len(paginas) and paginas[n_pagina + 1].get("desde") == nombre:
             n_pagina += 1
         pagina = paginas[n_pagina]
-        if col_nivel and fila[col_nivel] not in orden:
-            # Nivel fuera de la jerarquía (p. ej. el total país al final del cuadro).
-            nivel, padre, cod = fila[col_nivel], "", codigo(nombre)
-        elif col_nivel:
-            nivel = fila[col_nivel]
-            i = orden.index(nivel)
-            padre = ancestros.get(orden[i - 1], "") if i > 0 else ""
-            cod = f"{padre}/{codigo(nombre)}" if padre else codigo(nombre)
-            ancestros[nivel] = cod
-            for inferior in orden[i + 1:]:
-                ancestros.pop(inferior, None)
-        else:
-            nivel = niveles.get(nombre, niveles.get("_otro"))
-            padre, cod = "", codigo(nombre)
         dims_fila = {}
         for dim, regla in meta.get("filas", {}).items():
             crudo = fila[regla["columna"]]
@@ -108,11 +121,13 @@ def procesar(meta_ruta: Path) -> tuple[list[dict], list[dict]]:
             nota = nota_de(nombre, nivel, fila.get("area"), col)
             dims = {**meta.get("fijas", {}), **dims_fila, **dims_col}
             censo = dims.pop("censo")
+            indicador = dims.pop("indicador", meta["indicador"])
+            unidad = dims.pop("unidad", meta["unidad"])
             otras = {k: dims.pop(k) for k in list(dims) if k not in DIMENSIONES}
             salida.append({
                 "censo": censo,
-                "indicador": meta["indicador"],
-                "unidad": meta["unidad"],
+                "indicador": indicador,
+                "unidad": unidad,
                 "territorio_nivel": nivel,
                 "territorio_cod_orig": cod,
                 "territorio_nombre_orig": nombre,
@@ -143,7 +158,7 @@ def controlar(meta: dict, filas: list[dict]) -> list[dict]:
     fallas = []
 
     def clave(f, sin):
-        return tuple((k, f[k]) for k in ("censo", "territorio_cod_orig", "area", "sexo", "edad_min", "dimensiones") if k not in sin)
+        return tuple((k, f[k]) for k in ("censo", "indicador", "territorio_cod_orig", "area", "sexo", "edad_min", "dimensiones") if k not in sin)
 
     for c in meta.get("controles", []):
         grupos: dict = defaultdict(lambda: {"total": None, "partes": 0, "celdas": []})
@@ -191,7 +206,7 @@ def contrastar(filas: list[dict]) -> tuple[int, list[dict]]:
     for f in filas:
         if f["valor"] == "":
             continue
-        k = tuple(f[c] for c in ("censo", "dpa_version", "territorio_nivel", "territorio_cod_orig", "area", "sexo",
+        k = tuple(f[c] for c in ("censo", "indicador", "dpa_version", "territorio_nivel", "territorio_cod_orig", "area", "sexo",
                                   "edad_min", "edad_max", "edad_estado", "dimensiones"))
         por_clave[k].append(f)
     pares, distintos = 0, []
