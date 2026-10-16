@@ -1,9 +1,132 @@
 fuente_id,impresa_desde,impresa_hasta,desfase,estado,nota
+pub_1865,1,17,31,muestreo,Ancla 4 -> 35. Tramo entre anclas leídas en el encabezado; desfase variable (láminas o páginas faltantes en el escaneo).
+pub_1865,18,76,32,muestreo,Ancla 18 -> 50. 
+pub_1865,77,106,33,muestreo,Ancla 77 -> 110. 
+pub_1865,107,121,33,muestreo,Ancla 107 -> 140. 
+pub_1865,122,211,33,muestreo,Ancla 122 -> 155. 
+pub_1865,212,226,33,muestreo,Ancla 212 -> 245. 
+pub_1865,227,240,33,muestreo,Ancla 227 -> 260. 
+pub_1865,241,271,34,muestreo,Ancla 241 -> 275. 
+pub_1865,272,316,33,muestreo,Ancla 272 -> 305. 
+pub_1865,317,331,33,muestreo,Ancla 317 -> 350. 
+pub_1865,332,346,33,muestreo,Ancla 332 -> 365. 
+pub_1865,347,349,33,muestreo,Ancla 347 -> 380. 
+pub_1865,350,351,33,muestreo,Ancla 350 -> 383. 
+pub_1865,352,376,33,muestreo,Ancla 352 -> 385. 
+pub_1865,377,391,33,muestreo,Ancla 377 -> 410. 
+pub_1865,392,9999,33,muestreo,Ancla 392 -> 425. 
+pub_1875,1,25,56,muestreo,Ancla 4 -> 60. Tramo entre anclas leídas en el encabezado; desfase variable (láminas o páginas faltantes en el escaneo).
+pub_1875,26,47,54,muestreo,Ancla 26 -> 80. 
+pub_1875,48,68,52,muestreo,Ancla 48 -> 100. 
+pub_1875,69,91,51,muestreo,Ancla 69 -> 120. 
+pub_1875,92,111,48,muestreo,Ancla 92 -> 140. 
+pub_1875,112,133,48,muestreo,Ancla 112 -> 160. 
+pub_1875,134,155,46,muestreo,Ancla 134 -> 180. 
+pub_1875,156,176,44,muestreo,Ancla 156 -> 200. 
+pub_1875,177,197,43,muestreo,Ancla 177 -> 220. 
+pub_1875,198,218,42,muestreo,Ancla 198 -> 240. 
+pub_1875,219,241,41,muestreo,Ancla 219 -> 260. 
+pub_1875,242,264,38,muestreo,Ancla 242 -> 280. 
+pub_1875,265,287,35,muestreo,Ancla 265 -> 300. 
+pub_1875,288,308,32,muestreo,Ancla 288 -> 320. 
+pub_1875,309,330,31,muestreo,Ancla 309 -> 340. 
+pub_1875,331,351,29,muestreo,Ancla 331 -> 360. 
+pub_1875,352,373,28,muestreo,Ancla 352 -> 380. 
+pub_1875,374,393,26,muestreo,Ancla 374 -> 400. 
+pub_1875,394,435,26,muestreo,Ancla 394 -> 420. 
+pub_1875,436,455,24,muestreo,Ancla 436 -> 460. 
+pub_1875,456,477,24,muestreo,Ancla 456 -> 480. 
+pub_1875,478,497,22,muestreo,Ancla 478 -> 500. 
+pub_1875,498,520,22,muestreo,Ancla 498 -> 520. 
+pub_1875,521,540,19,muestreo,Ancla 521 -> 540. 
+pub_1875,541,562,19,muestreo,Ancla 541 -> 560. 
+pub_1875,563,583,17,muestreo,Ancla 563 -> 580. 
+pub_1875,584,607,16,muestreo,Ancla 584 -> 600. 
+pub_1875,608,644,16,muestreo,Ancla 608 -> 624. 
+pub_1875,645,648,16,muestreo,Ancla 645 -> 661. 
+pub_1875,649,661,15,muestreo,Ancla 649 -> 664. 
+pub_1875,662,9999,15,muestreo,Ancla 662 -> 677. 
+pub_1885,1,142,48,muestreo,Ancla 15 -> 63. Tramo entre anclas leídas en el encabezado; desfase variable (láminas o páginas faltantes en el escaneo).
+pub_1885,143,268,45,muestreo,Ancla 143 -> 188. 
+pub_1885,269,370,44,muestreo,Ancla 269 -> 313. 
+pub_1885,371,422,42,muestreo,Ancla 371 -> 413. 
+pub_1885,423,524,40,muestreo,Ancla 423 -> 463. 
+pub_1885,525,775,38,muestreo,Ancla 525 -> 563. 
+pub_1885,776,866,37,muestreo,Ancla 776 -> 813. 
+pub_1885,867,870,33,muestreo,Ancla 867 -> 900. 
+pub_1885,871,9999,34,muestreo,Ancla 871 -> 905. 
+pub_1907,1,15,65,muestreo,Ancla 11 -> 76. Tramo entre anclas leídas en el encabezado; desfase variable (láminas o páginas faltantes en el escaneo).
+pub_1907,16,17,65,muestreo,Ancla 16 -> 81. 
+pub_1907,18,24,65,muestreo,Ancla 18 -> 83. 
+pub_1907,25,52,65,muestreo,Ancla 25 -> 90. 
+pub_1907,53,79,62,muestreo,Ancla 53 -> 115. 
+pub_1907,80,133,60,muestreo,Ancla 80 -> 140. 
+pub_1907,134,159,56,muestreo,Ancla 134 -> 190. 
+pub_1907,160,186,55,muestreo,Ancla 160 -> 215. 
+pub_1907,187,212,53,muestreo,Ancla 187 -> 240. 
+pub_1907,213,239,52,muestreo,Ancla 213 -> 265. 
+pub_1907,240,267,50,muestreo,Ancla 240 -> 290. 
+pub_1907,268,293,47,muestreo,Ancla 268 -> 315. 
+pub_1907,294,318,46,muestreo,Ancla 294 -> 340. 
+pub_1907,319,345,46,muestreo,Ancla 319 -> 365. 
+pub_1907,346,397,44,muestreo,Ancla 346 -> 390. 
+pub_1907,398,424,42,muestreo,Ancla 398 -> 440. 
+pub_1907,425,477,40,muestreo,Ancla 425 -> 465. 
+pub_1907,478,505,37,muestreo,Ancla 478 -> 515. 
+pub_1907,506,534,34,muestreo,Ancla 506 -> 540. 
+pub_1907,535,561,30,muestreo,Ancla 535 -> 565. 
+pub_1907,562,589,28,muestreo,Ancla 562 -> 590. 
+pub_1907,590,644,25,muestreo,Ancla 590 -> 615. 
+pub_1907,645,673,20,muestreo,Ancla 645 -> 665. 
+pub_1907,674,729,16,muestreo,Ancla 674 -> 690. 
+pub_1907,730,756,10,muestreo,Ancla 730 -> 740. 
+pub_1907,757,785,8,muestreo,Ancla 757 -> 765. 
+pub_1907,786,812,4,muestreo,Ancla 786 -> 790. 
+pub_1907,813,841,2,muestreo,Ancla 813 -> 815. 
+pub_1907,842,867,-2,muestreo,Ancla 842 -> 840. 
+pub_1907,868,892,-3,muestreo,Ancla 868 -> 865. 
+pub_1907,893,922,-3,muestreo,Ancla 893 -> 890. 
+pub_1907,923,976,-8,muestreo,Ancla 923 -> 915. 
+pub_1907,977,1003,-12,muestreo,Ancla 977 -> 965. 
+pub_1907,1004,1032,-14,muestreo,Ancla 1004 -> 990. 
+pub_1907,1033,1118,-18,muestreo,Ancla 1033 -> 1015. 
+pub_1907,1119,1144,-29,muestreo,Ancla 1119 -> 1090. 
+pub_1907,1145,1171,-30,muestreo,Ancla 1145 -> 1115. 
+pub_1907,1172,1199,-32,muestreo,Ancla 1172 -> 1140. 
+pub_1907,1200,1254,-35,muestreo,Ancla 1200 -> 1165. 
+pub_1907,1255,1280,-40,muestreo,Ancla 1255 -> 1215. 
+pub_1907,1281,1305,-41,muestreo,Ancla 1281 -> 1240. 
+pub_1907,1306,1306,-41,muestreo,Ancla 1306 -> 1265. 
+pub_1907,1307,1311,-41,muestreo,Ancla 1307 -> 1266. 
+pub_1907,1312,1319,-43,muestreo,Ancla 1312 -> 1269. 
+pub_1907,1320,9999,-43,muestreo,Ancla 1320 -> 1277. 
+pub_1920,1,999,15,verificado,PDF = impresa + 15 en todo el volumen (1 -> 16; 586 -> 601).
 pub_1930,1,999,-2,verificado,PDF = impresa - 2 (51 -> 49; 56 -> 54).
 pub_1940,1,999,6,verificado,PDF = impresa + 6 (1 -> 7; 74 -> 80; 76 -> 82; 115 -> 121).
-pub_1952,44,44,-4,verificado,Sin índice; desfase comprobado solo en la zona del Cuadro 9.
+pub_1952,1,11,-2,muestreo,"Ancla 8 -> 6. Tramo entre anclas leídas en el encabezado; desfase variable (láminas o páginas faltantes en el escaneo). Solo el Tomo I (Resumen del País, PDF 1-239); faltan las págs. 85-116. El Tomo II y la división territorial tienen otra numeración: usar --pdf con la página del catálogo."
+pub_1952,12,17,-3,muestreo,Ancla 12 -> 9. 
+pub_1952,18,31,-3,muestreo,Ancla 18 -> 15. 
+pub_1952,32,35,-3,muestreo,Ancla 32 -> 29. 
+pub_1952,36,83,-4,muestreo,Ancla 36 -> 32. 
+pub_1952,84,84,-4,muestreo,Ancla 84 -> 80. Las págs. 85-116 faltan en el escaneo (PDF 80 -> 81 salta de la 84 a la 117).
+pub_1952,117,119,-36,muestreo,Ancla 117 -> 81. 
+pub_1952,120,126,-37,muestreo,Ancla 120 -> 83. 
+pub_1952,127,130,-37,muestreo,Ancla 127 -> 90. 
+pub_1952,131,268,-39,muestreo,Ancla 131 -> 92. 
+pub_1952,269,9999,-39,muestreo,Ancla 269 -> 230. 
 pub_1960,1,118,15,verificado,Primera parte (117 -> 132).
 pub_1960,119,999,14,verificado,Segunda parte (124 -> 138; 128 -> 142).
 pub_1970,1,999,10,verificado,PDF = impresa + 10 (1 -> 11).
 pub_1982_v1,1,999,38,verificado,PDF = impresa + 38 (2 -> 40; 51 -> 89; 67 -> 105).
+pub_1982_v2,1,999,15,verificado,PDF = impresa + 15 (pie de página leído cada 12 páginas).
+pub_1982_v3,1,22,57,muestreo,Ancla 11 -> 68. Tramo entre anclas leídas en el encabezado; desfase variable (láminas o páginas faltantes en el escaneo).
+pub_1982_v3,23,35,57,muestreo,Ancla 23 -> 80. 
+pub_1982_v3,36,59,56,muestreo,Ancla 36 -> 92. 
+pub_1982_v3,60,95,56,muestreo,Ancla 60 -> 116. 
+pub_1982_v3,96,119,56,muestreo,Ancla 96 -> 152. 
+pub_1982_v3,120,132,56,muestreo,Ancla 120 -> 176. 
+pub_1982_v3,133,144,55,muestreo,Ancla 133 -> 188. 
+pub_1982_v3,145,168,55,muestreo,Ancla 145 -> 200. 
+pub_1982_v3,169,192,55,muestreo,Ancla 169 -> 224. 
+pub_1982_v3,193,9999,55,muestreo,Ancla 193 -> 248. 
 pub_1992,1,999,0,verificado,La página impresa coincide con la del PDF.

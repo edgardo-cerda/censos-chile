@@ -4,7 +4,7 @@ Punto de retorno para retomar el trabajo. El plan completo y su lista de tareas 
 [plan.md](plan.md); este archivo resume dónde quedó cada punto, las decisiones tomadas y lo
 que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 
-**Última actualización:** 2026-10-15 (solo commits locales; nada subido a GitHub todavía).
+**Última actualización:** 2026-10-16 (solo commits locales; nada subido a GitHub todavía).
 
 ## Decisiones tomadas
 
@@ -40,7 +40,7 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 | Matriz de concordancia (`metadatos/concordancia/`) | 🟡 Borrador, 56 conceptos; 2002 corregido con su cuestionario |
 | Cuestionarios 1992, 2002, 2017, 2024 | ✅ Disponibles (2002 escaneado, sin capa de texto; no hay libro de códigos 2002) |
 | Cuestionario de 1982 | ⏳ Buscar en los volúmenes publicados |
-| Catálogo de cuadros de las publicaciones | ⏳ No iniciado |
+| Catálogo de cuadros de las publicaciones | ✅ 1813–1992, 638 entradas (ver Fase 4) |
 
 ### Fase 2: núcleo
 | Punto | Estado |
@@ -58,7 +58,7 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 | Punto | Estado |
 |---|---|
 | 3. Módulos temáticos | ⏳ No iniciado (solo borrador en la concordancia) |
-| 4. Digitalización histórica 1813–1982 | 🟡 Herramientas y formato listos; catálogo con 1930–1992 (209 entradas). Transcritos: 1952 C9; 1930 C9 (provincia/departamento/comuna × área × sexo) y C10; 1960 C1.1.1 y C1.2; 1982 C1.01 (región/provincia/comuna × área × sexo, 1.166 filas); 1940 urbano-rural hasta comuna (388 filas, con viviendas). Total 11.442 cifras; erratas de imprenta anotadas; contraste entre cuadros sin diferencias de transcripción. Ver [digitalizacion.md](digitalizacion.md) |
+| 4. Digitalización histórica 1813–1982 | 🟡 Herramientas y formato listos; catálogo completo 1813–1992 (638 entradas: 423 cuadros, 133 bloques por provincia y 82 textos; página del PDF verificada en 214 y estimada en 399; los cuadros nacionales 1 y 2 de 1952 faltan en el escaneo). Transcritos: 1952 C9; 1930 C9 (provincia/departamento/comuna × área × sexo) y C10; 1960 C1.1.1 y C1.2; 1982 C1.01 (región/provincia/comuna × área × sexo, 1.166 filas); 1940 urbano-rural hasta comuna (388 filas, con viviendas). Total 11.442 cifras; erratas de imprenta anotadas; contraste entre cuadros sin diferencias de transcripción. Ver [digitalizacion.md](digitalizacion.md) |
 | 5. Publicación (Zenodo, CRAN/PyPI) | ⏳ No iniciado |
 
 ## Pendientes del autor
@@ -76,8 +76,10 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 4. Cifras publicadas de referencia para 2002, 2017 y 2024, y regionales.
 5. Esqueleto de las librerías (`tabulado()`, `diccionario()`). Los microdatos de 2017 vienen en
    `.rar`: en R usar el paquete `archive`; en Python requiere una dependencia adicional.
-6. Fase 4: completar el catálogo (1813–1920, 1952, 1982 tomos II-III) y seguir con población por
-   territorio × área × sexo de 1952 y 1970, y de 1907 y 1920 desde sus propias publicaciones.
+6. Fase 4: población por territorio × área × sexo. 1907 y 1920 por departamento desde los
+   cuadros 1, 3 y 4 de 1920 (págs. 1–7, PDF 16–22); 1952 por comuna desde el Tomo I (Cuadro 4) y
+   el Tomo II (Cuadro 1 de cada provincia); 1970. Los cuadros nacionales 1 y 2 de 1952 faltan en
+   el escaneo: buscar otro ejemplar.
 
 ## Cómo retomar
 

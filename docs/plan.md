@@ -69,8 +69,8 @@ Tablas de viviendas, hogares y personas por censo con:
 - [x] Cuestionarios de 1992 (en la carpeta de 1982), 2002 (escaneado), 2017 y 2024.
       No existe libro de códigos de 2002: las etiquetas se toman del cuestionario.
 - [ ] Cuestionario de 1982 (para la digitalización; probablemente en los volúmenes publicados).
-- [ ] Catálogo de cuadros de las publicaciones: censo, número, título, variables,
-      desagregación, nivel territorial, página impresa y página del PDF.
+- [x] Catálogo de cuadros de las publicaciones: censo, número, título, página impresa y página
+      del PDF (detalle en la Fase 4).
 
 ### Fase 2: núcleo (primera versión pública)
 - [ ] **Diccionario consolidado de microdatos 1992–2024** (`productos/diccionario/diccionario_censos.xlsx`),
@@ -113,9 +113,10 @@ Procedimiento y notas por publicación en [digitalizacion.md](digitalizacion.md)
 - [x] Herramientas: render y OCR de páginas (`herramientas/paginas.py`), formato de
       transcripción (CSV tal como está impreso + YAML) y pipeline con controles
       (`pipelines/tabulados_publicaciones.py`).
-- [ ] Catálogo de cuadros (`metadatos/catalogo_cuadros.csv`): 1930, 1940, 1952 (solo C9), 1960,
-      1970, 1982 (Tomo I) y 1992 cargados desde los índices; faltan 1813–1920, 1952 completo
-      y 1982 tomos II y III.
+- [x] Catálogo de cuadros (`metadatos/catalogo_cuadros.csv`): 1813–1992, 638 entradas, desde los
+      índices o, donde no los hay, desde las portadas y encabezados
+      (`herramientas/muestreo_paginas.py`). Desfases por tramos en `metadatos/paginacion.csv`.
+      Pendiente: variables, desagregación y nivel territorial de cada cuadro (hoy en el título).
 - [ ] Núcleo: población por provincia × área (× sexo) de cada censo. Piloto hecho:
       1952 C9 (provincias × urbana/rural, 1865–1952).
 

@@ -6,7 +6,12 @@ sabe de cada PDF. Las cifras resultantes van a `productos/tabulados/tabulados_pu
 ## Flujo
 
 1. **Ubicar el cuadro** en [metadatos/catalogo_cuadros.csv](../metadatos/catalogo_cuadros.csv)
-   (título, página impresa, página del PDF y si esta última está verificada o es estimada).
+   (título, página impresa, página del PDF y su estado: `verificada` si se vio en la página,
+   `estimada` si se interpoló entre páginas de referencia y puede errar en unas pocas,
+   `desconocida` si no se ubicó y `ausente` si la página falta en el escaneo). En 1813, en las
+   publicaciones del siglo XIX, en 1907 y en la división territorial de 1952, cada provincia es
+   una entrada de tipo `bloque`:
+   la nota trae sus páginas y la lista de cuadros que contiene, que se repite en cada provincia.
 2. **Renderizar** la página con `herramientas/paginas.py`:
    ```
    python herramientas/paginas.py pub_1952 --pdf 40                 # página completa, 120 dpi
@@ -49,7 +54,14 @@ Criterios:
 
 - Todos son escaneos sin capa de texto, salvo `censo1992.pdf` (texto extraíble con pymupdf).
 - No traen marcadores útiles y la paginación impresa no coincide con la del PDF: los desfases
-  conocidos están en [metadatos/paginacion.csv](../metadatos/paginacion.csv).
+  conocidos están en [metadatos/paginacion.csv](../metadatos/paginacion.csv). En 1865, 1875,
+  1885, 1907, 1952 (Tomo I) y 1982 (Tomo III) el desfase cambia a lo largo del volumen (láminas
+  intercaladas o páginas que faltan en el escaneo): van en tramos con estado `muestreo`, entre
+  páginas de referencia leídas cada 15–25 páginas, y dentro de un tramo pueden errar en unas
+  pocas. 1895 y 1952 juntan varios tomos con numeración propia en un solo PDF: para ellos se usa
+  `--pdf` con la página del catálogo.
+- Las páginas de referencia se leen con `herramientas/muestreo_paginas.py` (OCR del encabezado y
+  del pie; guarda cada página apenas la lee, así que se corre por tandas cortas).
 - Algunas tablas vienen giradas 90° (p. ej. 1960, cuadros 1.1.1 y 1.2): `--rotar 90`.
 - 1970 y 1982 son listados de computador: 1970 sin separador de miles, 1982 con coma (11,329,736).
 - OCR (RapidOCR): 12–17 s por página a 130 dpi con un solo proceso; varios procesos en paralelo
@@ -59,7 +71,43 @@ Criterios:
 
 ## Notas por publicación
 
-Hallazgos de la extracción previa (septiembre de 2026), antes de este flujo.
+Las de 1930–1992 vienen en parte de la extracción previa (septiembre de 2026); las de 1813–1920 y
+los tomos completos de 1952 y 1982 se agregaron al armar el catálogo (octubre de 2026).
+
+**1813** (edición del Archivo Nacional, 1953). Sin índice. Por provincia, de Copiapó a Talca:
+cuadros "Censo de territorio" por distrito y un "Censo de provincia" con el total (estado civil
+por sexo, edades y clases). No hay datos de Santiago. Concepción figura con las matrículas de
+1812 por curatos (PDF 261–263). Los totales de Rancagua y Colchagua están cruzados: tras los
+distritos de Rancagua viene un total rotulado Colchagua (PDF 217) y el de Rancagua aparece
+después de los distritos de Colchagua (PDF 231).
+
+**1835** ("Repertorio Chileno"). Dos páginas impresas por página del PDF. Índice en PDF 114–116.
+Habitantes en el art. 3 (pág. 3) y en el capítulo IX, por provincia y departamento (págs. 171–222).
+
+**1865.** Índice en PDF 2–4. Un bloque por provincia y el Censo general de la República
+(págs. 321–392). Desfase +31 al comienzo y +33 desde la pág. 77.
+
+**1875.** Índice en PDF 3–5. Provincias, cuadros generales (págs. 601–645) y comparativos
+(pág. 647). El desfase baja de +56 al comienzo a +16 al final.
+
+**1885.** Solo el tomo I de 2. Índice en PDF 9–11; cuadros generales en págs. 839–867. El PDF no
+trae profesiones ni extranjeros.
+
+**1895.** Cuatro tomos en un PDF, cada uno con su índice (PDF 2–4, 609–612, 1326–1329 y
+1995–1998). Cuadros generales en el tomo IV, págs. 467–551 (PDF ~2457–2539). El número de página
+cae más abajo que en otros volúmenes (franja de 0,16 en el muestreo).
+
+**1907.** Índice al final (PDF 1274–1277), por provincia y departamento. Cada departamento trae 11
+cuadros numerados (urbana y rural por subdelegación y distrito, entidades pobladas,
+nacionalidad, religión, instrucción, edades, profesiones, estado civil, propietarios, defectos
+físicos), y cada provincia un resumen. Resumen general de la República en págs. 1261–1308;
+indios araucanos en pág. 1309. Memoria, anexos y láminas en PDF 2–67. El desfase va de +65 a −41
+(faltan páginas en el escaneo).
+
+**1920.** Sin índice en el PDF: los capítulos I a IX se ubicaron por sus portadas. Desfase +15
+constante. El capítulo I trae los cuadros más útiles para la serie: Cuadro 1 (pág. 1),
+población por departamento y provincia de 1865 a 1920; Cuadro 3 (pág. 4), urbana y rural por
+departamento en 1895, 1907 y 1920; Cuadro 4 (pág. 6), urbana y rural por sexo en 1920.
 
 **1930.** Índice en la página 2 del PDF. Cuadro 10 (pág. 56): urbana y rural por provincias,
 1895–1930. Urbana = pueblos y ciudades de más de 1.000 habitantes (1907–1930); en 1895 se
@@ -85,9 +133,29 @@ después de sus unidades (`totales_al_final` en el YAML). Otras erratas: Antofag
 115.147 (145.147), viviendas rurales de Atacama y Yungay, mujeres rurales de Ñuble (77.709 por
 77.679). La provincia de Osorno figura separada de Llanquihue.
 
-**1952.** Sin índice. Cuadro 9 (pág. 44–45, PDF 40–41): provincias × total/urbana/rural de
-1865 a 1952. En 1885–1920 excluye el departamento de Arica. Errata: Santiago 1865 rural
-impreso 200.118 (coherente: 200.148).
+**1952.** El PDF (2.431 págs.) junta varias piezas:
+- Tomo I, Resumen del País (PDF 1–239; índice en PDF 232–234): reseña histórica, cuadros
+  comparativos 1–10 (págs. 30–45) y cuadros nacionales 1–31 por provincia (págs. 103–269).
+  **Faltan en el escaneo las págs. 85–116**, con los gráficos 1–10 y los cuadros nacionales 1
+  (edades × sexo × área) y 2 (provincias × sexo × área). El Cuadro 4 (pág. 123) trae la población,
+  superficie y densidad por provincia, departamento y comuna. Desfase −3/−4 hasta la pág. 84 y −39
+  desde la 131.
+- Tomo II, Núcleo Central (PDF 1056–1950; índice en PDF 1947–1949): Aconcagua, Valparaíso,
+  Santiago, O'Higgins y Colchagua, con 14 cuadros cada una. Los cuadros 1–8 traen el resumen de la
+  provincia y luego cada comuna. Los preliminares (PDF 1069–1074) traen la población por comuna
+  de 1875 a 1940. Desfase de +1082 a +1078 según la provincia.
+- División territorial y población por entidades (mecanografiado, sin índice ni paginación
+  continua): Concepción, Ñuble, Linares, Maule, Arauco, Bío-Bío, Malleco y Cautín en PDF 240–1055;
+  Tarapacá, Antofagasta, Atacama, Coquimbo, Aconcagua y Valparaíso (con Isla de Pascua) en
+  PDF 1951–2373. Por comuna-subdelegación: decreto de límites, mapa y población por distrito y
+  entidad (categoría, viviendas, hombres, mujeres). Cada provincia cierra con una hoja de
+  abreviaturas de las categorías.
+- Censo de vivienda (PDF 2374–2431).
+Talca, Curicó y las provincias de Valdivia a Magallanes solo aparecen en los cuadros por
+provincia del Tomo I.
+Cuadro comparativo 9 (págs. 44–45, PDF 40–41): provincias × total/urbana/rural de 1865 a 1952.
+En 1885–1920 excluye el departamento de Arica. Errata: Santiago 1865 rural impreso 200.118
+(coherente: 200.148).
 
 **1960.** Índice en PDF 5–7. Cuadros girados 90° (`--rotar 90`). Cuadro 1.1.1 (PDF 138):
 urbana y rural por provincias 1940, 1952 y 1960; la urbana 1940 puede leerse "2.638.311"
@@ -103,7 +171,10 @@ URBANO (PDF 62–83) y RURAL (PDF 84–104), por región, provincia y comuna; la
 rural omiten las unidades sin población del área. Las páginas del PDF ya vienen en la orientación
 correcta (no usar `--rotar`; el visor puede mostrarlas giradas). El OCR lee mal este listado
 (confunde 0/C, 8/6 y separadores): se transcribió leyendo cada página a 170 dpi. Sin erratas:
-todas las sumas cuadran. Tomos II y III sin revisar.
+todas las sumas cuadran. Tomo II (índice en PDF 5; desfase +15): características ocupacionales
+(cuadros 4.06–4.18) y educacionales (5.01–5.04). Tomo III (índice en PDF 5–7; desfase ~+56):
+vivienda (1.01–1.06), hogar (2.01–2.11) y familia (3.01–3.23), varios repetidos en cifras
+relativas.
 
 **1992** (publicación "Ciudades, pueblos y aldeas"). No trae totales país ni urbano/rural
 explícitos: total = suma de las 13 regiones del Cuadro 1; urbana = ciudades + pueblos del
