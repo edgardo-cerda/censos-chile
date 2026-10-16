@@ -2,7 +2,7 @@
 
 Cada cuadro transcrito vive en digitalizacion/<censo>/ como un par de archivos:
   - <fuente>_<cuadro>.csv: el cuadro tal como está impreso (filas y columnas del original;
-    "-" = guion impreso, celda vacía = no impreso).
+    "-" = guion impreso, ".." = dos puntos impresos (sin dato), celda vacía = no impreso).
   - <fuente>_<cuadro>.yaml: procedencia (fuente, cuadro, páginas), mapeo de filas y columnas a
     las dimensiones del esquema, notas del cuadro y de celdas, y controles a aplicar.
 
@@ -51,7 +51,7 @@ def valor(texto: str) -> tuple[int | None, str]:
     texto = texto.strip()
     if texto == "-":
         return None, "guion"
-    if texto == "":
+    if texto in ("", ".."):
         return None, "no_publicado"
     return int(texto.replace(".", "").replace(" ", "")), "ok"
 
@@ -173,7 +173,7 @@ def controlar(meta: dict, filas: list[dict]) -> list[dict]:
             else:  # jerarquia: cada unidad = suma de sus unidades inmediatamente inferiores
                 base = clave(f, {"territorio_cod_orig"})
                 grupos[base + (("u", f["territorio_cod_orig"]),)]["total"] = f
-                if f["_padre"]:
+                if f["_padre"] and f["valor"] != "":  # las partes sin dato no se suman
                     g = grupos[base + (("u", f["_padre"]),)]
                     g["partes"] += f["valor"] or 0
                     g["celdas"].append(f)
@@ -181,8 +181,8 @@ def controlar(meta: dict, filas: list[dict]) -> list[dict]:
             g = grupos[k]
             if es_total:
                 g["total"] = f
-            elif es_parte:
-                g["partes"] += f["valor"] or 0
+            elif es_parte and f["valor"] != "":
+                g["partes"] += f["valor"]
                 g["celdas"].append(f)
         for k, g in grupos.items():
             t = g["total"]

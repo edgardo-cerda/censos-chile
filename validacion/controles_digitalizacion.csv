@@ -1,4 +1,8 @@
 fuente_id,cuadro,control,censo,territorio,area,sexo,total,suma_partes,diferencia,explicada
+pub_1920,1,jerarquia,1865,Atacama,_T,_T,77456,77453,-3,True
+pub_1920,1,suma_territorio,1865,(partes),_T,_T,1819223,1819226,3,True
+pub_1920,3,suma_territorio,1895,(partes),urbana,_T,1223408,1240102,16694,True
+pub_1920,3,suma_territorio,1895,(partes),rural,_T,1464577,1472043,7466,True
 pub_1930,9,suma_dimension,1930,Atacama,_T,_T,61008,61098,90,True
 pub_1930,9,suma_dimension,1930,Penco,_T,mujer,5441,5444,3,True
 pub_1930,9,suma_dimension,1930,Cunco,_T,_T,18269,18266,-3,True

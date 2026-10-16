@@ -1,0 +1,66 @@
+# Transcripción del Cuadro 4 del censo de 1920.
+# El CSV del mismo nombre reproduce el cuadro tal como está impreso. ".." = dos puntos impresos
+# (sin población urbana en el departamento). Los totales van DESPUÉS de sus unidades (los
+# departamentos preceden a su provincia). La pág. 7 imprime "Curetpo" por Curepto.
+
+fuente_id: pub_1920
+cuadro: "4"
+titulo: Población urbana y rural con distinción del sexo en 1920, por departamentos y provincias
+paginas:
+  # desde: primera fila (territorio) de cada página
+  - {pdf: 21, impresa: "6", desde: Tarata}
+  - {pdf: 22, impresa: "7", desde: Lontué}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion:
+  fecha: 2026-10-16
+  por: Claude (asistido)
+  recortes_dpi: 220-300
+
+indicador: poblacion
+unidad: personas
+
+territorio:
+  columna: territorio
+  columna_nivel: nivel
+  niveles: [provincia, departamento]
+  totales_al_final: true
+  dpa_version: provincias_1920
+
+columnas:
+  urbana_hombres: {censo: 1920, area: urbana, sexo: hombre}
+  urbana_mujeres: {censo: 1920, area: urbana, sexo: mujer}
+  urbana_total: {censo: 1920, area: urbana, sexo: _T}
+  rural_hombres: {censo: 1920, area: rural, sexo: hombre}
+  rural_mujeres: {censo: 1920, area: rural, sexo: mujer}
+  rural_total: {censo: 1920, area: rural, sexo: _T}
+  total_hombres: {censo: 1920, area: _T, sexo: hombre}
+  total_mujeres: {censo: 1920, area: _T, sexo: mujer}
+  total_total: {censo: 1920, area: _T, sexo: _T}
+
+notas_cuadro:
+  - >
+    Cuadra en todas sus sumas y con los totales del Cuadro 1. Difiere del Cuadro 3 en la
+    población urbana o rural de Curepto, Talca, Concepción y Ancud (ver las notas del Cuadro 3).
+
+notas_celdas:
+  - territorio: Magallanes
+    nivel: provincia
+    columna: total_total
+    estado_valor: ilegible
+    nota: >
+      Las últimas cifras quedan bajo un doblez de la hoja escaneada (se lee "28 96").
+      Se registra 28 960 = hombres + mujeres, igual al Cuadro 1.
+  - territorio: República
+    nivel: pais
+    columna: total_total
+    estado_valor: ilegible
+    nota: >
+      Las últimas cifras quedan bajo un doblez de la hoja escaneada (se lee "3 753").
+      Se registra 3 753 799 = hombres + mujeres, igual al Cuadro 1.
+
+controles:
+  - {tipo: suma_dimension, dimension: area, total: _T, partes: [urbana, rural]}
+  - {tipo: suma_dimension, dimension: sexo, total: _T, partes: [hombre, mujer]}
+  - {tipo: jerarquia}
+  - {tipo: suma_territorio, total: pais, partes: provincia}

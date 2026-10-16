@@ -1,0 +1,127 @@
+# Transcripción del Cuadro 3 del censo de 1920.
+# El CSV del mismo nombre reproduce el cuadro tal como está impreso, sin las columnas de
+# porcentaje de población urbana. ".." = dos puntos impresos (sin dato). El cuadro no trae
+# columna de total: urbana + rural de cada censo se contrasta con el Cuadro 1.
+# Los totales van DESPUÉS de sus unidades (los departamentos preceden a su provincia).
+
+fuente_id: pub_1920
+cuadro: "3"
+titulo: Población urbana y rural según los censos de 1895 a 1920 y porcentaje de población urbana, por departamentos y provincias
+paginas:
+  # desde: primera fila (territorio) de cada página
+  - {pdf: 19, impresa: "4", desde: Tarata}
+  - {pdf: 20, impresa: "5", desde: Lontué}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion:
+  fecha: 2026-10-16
+  por: Claude (asistido)
+  recortes_dpi: 200-400
+
+indicador: poblacion
+unidad: personas
+fijas: {sexo: _T}
+
+territorio:
+  columna: territorio
+  columna_nivel: nivel
+  niveles: [provincia, departamento]
+  totales_al_final: true
+  dpa_version: provincias_1920
+
+columnas:
+  urbana_1895: {censo: 1895, area: urbana}
+  rural_1895: {censo: 1895, area: rural}
+  urbana_1907: {censo: 1907, area: urbana}
+  rural_1907: {censo: 1907, area: rural}
+  urbana_1920: {censo: 1920, area: urbana}
+  rural_1920: {censo: 1920, area: rural}
+
+notas_cuadro:
+  - >
+    En 1895 y 1907 varios departamentos no traen la división urbana/rural ("..") y su población
+    figura dentro de otros, que por eso no son comparables con el Cuadro 1 ni con 1920.
+    1895: Tacna solo como provincia; Santa Cruz repartido entre Vichuquén y Curicó; Chanco
+    entre Constitución y Cauquenes; Llaima entre Imperial y Temuco; Villarrica dentro de
+    Valdivia; Río Bueno dentro de La Unión; San Antonio dentro de Melipilla; además, 3 814
+    personas de Osorno figuran en Llanquihue, 1 196 de La Ligua en Petorca, 8 de Elqui en
+    La Serena y 1 142 de Cachapoal (O'Higgins) en Melipilla (Santiago).
+    1907: Tarata dentro de Tacna; Villarrica dentro de Valdivia; Río Bueno dentro de La Unión;
+    San Antonio dentro de Melipilla; además, 1 593 de La Ligua en Petorca y 1 090 de Cachapoal
+    en Melipilla. Por estos traslados, Santiago y O'Higgins de 1895 y 1907 difieren del
+    Cuadro 1; las demás provincias coinciden.
+  - >
+    En 1920 este cuadro difiere en seis cifras del Cuadro 4, que cuadra con el Cuadro 1 (ver
+    notas de celdas). Para 1920 preferir el Cuadro 4.
+
+notas_celdas:
+  - territorio: República
+    nivel: pais
+    columna: urbana_1895
+    estado_valor: inconsistente
+    nota: >
+      Excluye la provincia de Tacna (16 694): la suma de las provincias da 1 240 102.
+      Coincide con el Cuadro N.° 9 de 1952 salvo por 1 (1 223 407).
+  - territorio: República
+    nivel: pais
+    columna: rural_1895
+    estado_valor: inconsistente
+    nota: >
+      Excluye la provincia de Tacna (7 466): la suma de las provincias da 1 472 043.
+  - territorio: Curepto
+    nivel: departamento
+    columna: rural_1920
+    estado_valor: inconsistente
+    nota: >
+      Impreso 20 731; el Cuadro 4 da 19 372, que con la urbana (2 675) cuadra con el total del
+      Cuadro 1 (22 047). La diferencia (1 359) aparece con signo contrario en Talca.
+  - territorio: Talca
+    nivel: departamento
+    columna: rural_1920
+    estado_valor: inconsistente
+    nota: >
+      Impreso 45 734; el Cuadro 4 da 47 093, que cuadra con el total del Cuadro 1 (85 982).
+  - territorio: Concepción
+    nivel: departamento
+    columna: urbana_1920
+    estado_valor: inconsistente
+    nota: >
+      Impreso 72 071 (el porcentaje impreso, 86,20, corresponde a esta cifra); el Cuadro 4 da
+      71 130, que cuadra con el total del Cuadro 1 (82 662). La diferencia (941) se arrastra al
+      total de Concepción y de la República.
+  - territorio: Concepción
+    nivel: provincia
+    columna: urbana_1920
+    estado_valor: inconsistente
+    nota: >
+      Impreso 142 452; el Cuadro 4 da 141 511 (ver el departamento de Concepción).
+  - territorio: Ancud
+    nivel: departamento
+    columna: rural_1920
+    estado_valor: inconsistente
+    nota: >
+      Impreso 23 871; el Cuadro 4 da 23 888, que cuadra con el total del Cuadro 1 (28 183). La
+      diferencia (17) se arrastra al total de Chiloé y de la República.
+  - territorio: Chiloé
+    nivel: provincia
+    columna: rural_1920
+    estado_valor: inconsistente
+    nota: >
+      Impreso 101 889; el Cuadro 4 da 101 906 (ver Ancud).
+  - territorio: República
+    nivel: pais
+    columna: urbana_1920
+    estado_valor: inconsistente
+    nota: >
+      Impreso 1 749 562; el Cuadro 4 da 1 748 621 (diferencia de 941, de Concepción). El
+      Cuadro N.° 9 de 1952 da 1 723 552 sin Tacna.
+  - territorio: República
+    nivel: pais
+    columna: rural_1920
+    estado_valor: inconsistente
+    nota: >
+      Impreso 2 005 161; el Cuadro 4 da 2 005 178 (diferencia de 17, de Ancud).
+
+controles:
+  - {tipo: jerarquia}
+  - {tipo: suma_territorio, total: pais, partes: provincia}

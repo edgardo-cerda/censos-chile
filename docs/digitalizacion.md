@@ -24,8 +24,9 @@ sabe de cada PDF. Las cifras resultantes van a `productos/tabulados/tabulados_pu
    La página completa a 110–130 dpi sirve para ubicarse; para leer cifras, recortes horizontales
    a 200 dpi, y a 400 dpi para dígitos dudosos (`--recorte y0,y1,x0,x1`, fracciones de la página).
 3. **Transcribir** en `digitalizacion/<censo>/<fuente>_c<cuadro>.csv` el cuadro tal como está
-   impreso: mismas filas, mismas columnas, nombres como aparecen. Guion impreso = `-`; celda en
-   blanco = vacío. Las cifras sin separador de miles.
+   impreso: mismas filas, mismas columnas, nombres como aparecen. Guion impreso = `-`; dos puntos
+   impresos (sin dato) = `..`; celda en blanco = vacío. Las cifras sin separador de miles. Los
+   controles no suman las partes sin dato.
 4. **Describir** en el `.yaml` del mismo nombre: fuente, cuadro, páginas (con la primera fila
    de cada página), cómo se mapean filas y columnas a las dimensiones del esquema, notas del
    cuadro, notas de celdas y controles. Ejemplo: [digitalizacion/1952/pub_1952_c09.yaml](../digitalizacion/1952/pub_1952_c09.yaml).
@@ -108,6 +109,19 @@ indios araucanos en pág. 1309. Memoria, anexos y láminas en PDF 2–67. El des
 constante. El capítulo I trae los cuadros más útiles para la serie: Cuadro 1 (pág. 1),
 población por departamento y provincia de 1865 a 1920; Cuadro 3 (pág. 4), urbana y rural por
 departamento en 1895, 1907 y 1920; Cuadro 4 (pág. 6), urbana y rural por sexo en 1920.
+Los tres están transcritos (PDF 16–17, 19–20 y 21–22), por departamento y provincia de la
+división de 1920, con Tacna (Tarata, Tacna y Arica) desde 1885. La diferencia con el Cuadro 9 de
+1952 en el total del país de 1885–1920 es exactamente la provincia de Tacna. ".." = sin dato.
+- Cuadro 1: errata en Atacama 1865 (77.456 impreso; los departamentos y el total del país dan
+  77.453). En el ejemplar escaneado, Constitución 1895 (26.199) está tachado a mano.
+- Cuadro 3: en 1895 y 1907 varios departamentos no traen la división urbana/rural y su
+  población va incluida en otros (p. ej., San Antonio en Melipilla, Villarrica en Valdivia,
+  Santa Cruz repartido entre Vichuquén y Curicó en 1895); la lista está en el YAML. En 1895 el
+  total del país excluye Tacna. En 1920 difiere del Cuadro 4 en Curepto, Talca, Concepción y
+  Ancud: el Cuadro 4 cuadra con el Cuadro 1 y con el Cuadro 9 de 1952, así que para 1920 se
+  prefiere el Cuadro 4.
+- Cuadro 4: todas las sumas cuadran. Un doblez de la hoja tapa las últimas cifras del total de
+  Magallanes y de la República, que se reconstruyen como hombres + mujeres (estado `ilegible`).
 
 **1930.** Índice en la página 2 del PDF. Cuadro 10 (pág. 56): urbana y rural por provincias,
 1895–1930. Urbana = pueblos y ciudades de más de 1.000 habitantes (1907–1930); en 1895 se

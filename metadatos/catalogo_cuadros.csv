@@ -213,10 +213,10 @@ pub_1907,1907,Resumen general,,Resumen general de la República,bloque,1261,1221
 pub_1907,1907,Censo de los indios araucanos,,"Censo de los indios araucanos por provincia, departamento y subdelegación",cuadro,1309,1267,estimada,pendiente,"Págs. impresas 1309-1315 (Arauco, Bío-Bío, Malleco, Cautín, Valdivia...)."
 pub_1907,1907,,,Fe de erratas,texto,1316,1273,estimada,pendiente,
 pub_1920,1920,Introducción,,"Introducción (organización del censo, instrucciones, clasificación de profesiones)",texto,,2,verificada,pendiente,Págs. romanas; en el PDF están incompletas y desordenadas (PDF 2-15).
-pub_1920,1920,Capítulo I. Población,1,"Población según los censos de 1865 a 1920 y porcentaje de aumento o disminución anual, por departamentos y provincias",cuadro,1,16,verificada,pendiente,
+pub_1920,1920,Capítulo I. Población,1,"Población según los censos de 1865 a 1920 y porcentaje de aumento o disminución anual, por departamentos y provincias",cuadro,1,16,verificada,transcrito,PDF 16-17. Transcrito en digitalizacion/1920/pub_1920_c01.csv (sin columnas de %).
 pub_1920,1920,Capítulo I. Población,2,"Densidad de la población por kilómetro cuadrado desde 1865 hasta 1920, por provincias",cuadro,3,18,verificada,pendiente,
-pub_1920,1920,Capítulo I. Población,3,"Población urbana y rural según los censos de 1895 a 1920 y porcentaje de población urbana, por departamentos y provincias",cuadro,4,19,verificada,pendiente,
-pub_1920,1920,Capítulo I. Población,4,"Población urbana y rural con distinción del sexo en 1920, por departamentos y provincias",cuadro,6,21,verificada,pendiente,
+pub_1920,1920,Capítulo I. Población,3,"Población urbana y rural según los censos de 1895 a 1920 y porcentaje de población urbana, por departamentos y provincias",cuadro,4,19,verificada,transcrito,PDF 19-20. Transcrito en digitalizacion/1920/pub_1920_c03.csv (sin columnas de %).
+pub_1920,1920,Capítulo I. Población,4,"Población urbana y rural con distinción del sexo en 1920, por departamentos y provincias",cuadro,6,21,verificada,transcrito,PDF 21-22. Transcrito en digitalizacion/1920/pub_1920_c04.csv.
 pub_1920,1920,Capítulo I. Población,5,"Población urbana y rural en 1920, por distritos, subdelegaciones y comunas",cuadro,8,23,estimada,pendiente,Inicio estimado (sigue al cuadro 4); se extiende hasta la pág. 104.
 pub_1920,1920,Capítulo I. Población,6,"Población de las ciudades de más de 5.000 habitantes, desde 1854 hasta 1920, y porcentaje de aumento o disminución anual",cuadro,104,119,verificada,pendiente,
 pub_1920,1920,Capítulo I. Población,,"Población de las ciudades, con distinción del sexo, por comunas",cuadro,105,120,estimada,pendiente,Págs. 105-230. Número de cuadro no verificado.

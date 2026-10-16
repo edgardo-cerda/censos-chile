@@ -1,4 +1,20 @@
 censo,territorio,nivel,area,sexo,fuente_a,valor_a,estado_a,fuente_b,valor_b,estado_b
+1920,República,pais,_T,_T,pub_1920 c1,3753799,ok,pub_1952 c9,3714887,ok
+1920,República,pais,_T,_T,pub_1920 c4,3753799,ilegible,pub_1952 c9,3714887,ok
+1920,Curepto,departamento,rural,_T,pub_1920 c3,20731,inconsistente,pub_1920 c4,19372,ok
+1920,Talca,departamento,rural,_T,pub_1920 c3,45734,inconsistente,pub_1920 c4,47093,ok
+1920,Concepción,departamento,urbana,_T,pub_1920 c3,72071,inconsistente,pub_1920 c4,71130,ok
+1920,Concepción,provincia,urbana,_T,pub_1920 c3,142452,inconsistente,pub_1920 c4,141511,ok
+1920,Concepción,provincia,urbana,_T,pub_1920 c3,142452,inconsistente,pub_1952 c9,141511,ok
+1920,Ancud,departamento,rural,_T,pub_1920 c3,23871,inconsistente,pub_1920 c4,23888,ok
+1920,Chiloé,provincia,rural,_T,pub_1920 c3,101889,inconsistente,pub_1920 c4,101906,ok
+1920,Chiloé,provincia,rural,_T,pub_1920 c3,101889,inconsistente,pub_1952 c9,101906,ok
+1920,República,pais,urbana,_T,pub_1920 c3,1749562,inconsistente,pub_1920 c4,1748621,ok
+1920,República,pais,urbana,_T,pub_1920 c3,1749562,inconsistente,pub_1952 c9,1723552,ok
+1920,República,pais,urbana,_T,pub_1920 c4,1748621,ok,pub_1952 c9,1723552,ok
+1920,República,pais,rural,_T,pub_1920 c3,2005161,inconsistente,pub_1920 c4,2005178,ok
+1920,República,pais,rural,_T,pub_1920 c3,2005161,inconsistente,pub_1952 c9,1991335,ok
+1920,República,pais,rural,_T,pub_1920 c4,2005178,ok,pub_1952 c9,1991335,ok
 1930,Atacama,provincia,_T,_T,pub_1930 c9,61008,inconsistente,pub_1952 c9,61098,ok
 1930,Atacama,provincia,_T,_T,pub_1930 c10,61008,inconsistente,pub_1952 c9,61098,ok
 1940,Antofagasta,provincia,_T,_T,pub_1940 cp76,115147,inconsistente,pub_1952 c9,145147,ok

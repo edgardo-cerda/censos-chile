@@ -1,0 +1,65 @@
+# Transcripción del Cuadro 1 del censo de 1920.
+# El CSV del mismo nombre reproduce el cuadro tal como está impreso, sin las columnas de
+# porcentaje de aumento o disminución anual, que se derivan de las demás. ".." = dos puntos
+# impresos (sin dato: el departamento no existía o el territorio no era chileno en ese censo).
+# Los totales van DESPUÉS de sus unidades (los departamentos preceden a su provincia).
+
+fuente_id: pub_1920
+cuadro: "1"
+titulo: Población según los censos de 1865 a 1920 y porcentaje de aumento o disminución anual, por departamentos y provincias
+paginas:
+  # desde: primera fila (territorio) de cada página
+  - {pdf: 16, impresa: "1", desde: Tarata}
+  - {pdf: 17, impresa: "2", desde: Lontué}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion:
+  fecha: 2026-10-16
+  por: Claude (asistido)
+  recortes_dpi: 220-400
+
+indicador: poblacion
+unidad: personas
+fijas: {area: _T, sexo: _T}
+
+territorio:
+  columna: territorio
+  columna_nivel: nivel
+  niveles: [provincia, departamento]
+  totales_al_final: true
+  # Las cifras de cada censo están reordenadas según la división de 1920 (p. ej., Malleco 1865
+  # solo trae Angol): no corresponden a las provincias vigentes en cada censo.
+  dpa_version: provincias_1920
+
+columnas:
+  "1865": {censo: 1865}
+  "1875": {censo: 1875}
+  "1885": {censo: 1885}
+  "1895": {censo: 1895}
+  "1907": {censo: 1907}
+  "1920": {censo: 1920}
+
+notas_cuadro:
+  - >
+    Incluye Tacna (Tarata, Tacna y Arica) y Tarapacá desde 1885. Por eso el total de la
+    República difiere del Cuadro N.° 9 del censo de 1952, que excluye Tacna.
+
+notas_celdas:
+  - territorio: Atacama
+    nivel: provincia
+    columna: "1865"
+    estado_valor: inconsistente
+    nota: >
+      Impreso 77 456 (lectura clara a 400 dpi), pero sus departamentos suman 77 453, y con
+      77 453 cuadra el total de la República (1 819 223). Probable errata de imprenta.
+  - territorio: Constitución
+    nivel: departamento
+    columna: "1895"
+    nota: >
+      Impreso 26 199, tachado a mano en el ejemplar escaneado con una cifra manuscrita
+      (¿30 129?). Se transcribe lo impreso, que cuadra con el total de Maule. El Cuadro 3 da
+      para Constitución 1895 urbana + rural = 30 179, porque ahí incluye parte de Chanco.
+
+controles:
+  - {tipo: jerarquia}
+  - {tipo: suma_territorio, total: pais, partes: provincia}
