@@ -73,8 +73,9 @@ ESTADO = {
     1920: ("Falta edad", "Edad: estado civil por edad y sexo (págs. 235–275, PDF ~250); revisar su nivel territorial.",
            "Departamento × área × sexo (Cuadro 4); edad del país en decenios (1952 C7). El Cuadro 3 tiene seis "
            "cifras de 1920 que no cuadran: usar el Cuadro 4."),
-    1930: ("Falta edad", "Edad: el volumen disponible no trae cuadros por edad; buscar otra publicación de 1930.",
-           "Comuna × área × sexo (Cuadro 9); edad del país en decenios (1952 C7). Errata en el total de Atacama."),
+    1930: ("Núcleo completo",
+           "Opcional: comuna × sexo × edad simple (PDF ~337-480, muy extenso). Área × edad no viene.",
+           "Comuna × área × sexo (Cuadro 9) y provincia × sexo × edad simple (tomo de edades, Cuadro 4: 5.253 cifras, totales = país y 1952 C5; décadas = 1952 C7). Erratas: Atacama (C9, C10), Valdivia edades 30, 31 y 40; compensadas en Cautín y Magallanes."),
     1940: ("Núcleo completo",
            "Opcional: edades individuales por provincia y sexo (pág. 8, PDF ~14). El volumen no trae edad por comuna ni área × edad.",
            "Comuna × área × sexo con viviendas (cifras ajustadas, pág. 76) y provincia × sexo × edad quinquenal (cifras revisadas, pág. 332; coincide con los comparativos de 1952). Las dos series difieren por el ajuste de ~2,8 %."),

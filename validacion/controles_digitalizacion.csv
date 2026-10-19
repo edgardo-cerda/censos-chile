@@ -37,6 +37,15 @@ pub_1930,9,jerarquia,1930,Temuco,rural,_T,84961,84958,-3,True
 pub_1930,9,suma_territorio,1930,(partes),_T,_T,4287445,4287355,-90,True
 pub_1930,10,suma_dimension,1930,Atacama,_T,_T,61008,61098,90,True
 pub_1930,10,suma_territorio,1930,(partes),_T,_T,4287445,4287355,-90,True
+pub_1930,edad4,suma_dimension,1930,Valdivia,_T,_T,5844,5847,3,True
+pub_1930,edad4,suma_dimension,1930,Valdivia,_T,_T,1772,1742,-30,True
+pub_1930,edad4,suma_dimension,1930,Valdivia,_T,_T,4678,3678,-1000,True
+pub_1930,edad4,suma_dimension,1930,Cautín,_T,hombre,192333,192323,-10,True
+pub_1930,edad4,suma_dimension,1930,Cautín,_T,mujer,191458,191468,10,True
+pub_1930,edad4,suma_dimension,1930,Valdivia,_T,hombre,121287,120277,-1010,True
+pub_1930,edad4,suma_dimension,1930,Valdivia,_T,_T,236115,236132,17,True
+pub_1930,edad4,suma_dimension,1930,Magallanes,_T,mujer,16332,16331,-1,True
+pub_1930,edad4,suma_dimension,1930,Magallanes,_T,_T,37913,37912,-1,True
 pub_1940,p76,suma_dimension,1940,Maule,rural,_T,47907,47908,1,True
 pub_1940,p76,suma_dimension,1940,Ñuble,rural,_T,162510,162540,30,True
 pub_1940,p76,suma_dimension,1940,Antofagasta,_T,_T,115147,145147,30000,True

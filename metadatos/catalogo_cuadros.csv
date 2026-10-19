@@ -263,6 +263,8 @@ pub_1930,1930,III Parte,11,"Población urbana y % de intensidad de su desarrollo
 pub_1930,1930,III Parte,12,"Resumen de la distribución de la población según el sexo y número de viviendas, en 1930, por provincias, departamentos y comunas",cuadro,57,55,estimada,1930,comuna,sexo,completa,verificada,pendiente,
 pub_1930,1930,III Parte,13,"Población detallada por entidades y categorías, por distritos y comunas, en 1930, con indicación del sexo y número de viviendas",cuadro,62,60,estimada,1930,entidad,sexo,completa,verificada,pendiente,
 pub_1930,1930,III Parte,14,"Población araucana con distinción del sexo en 1930, comparada con censos anteriores",cuadro,297,295,estimada,,,,,,pendiente,
+pub_1930,1930,Tomo de edades,4,"Edad, estado civil y sexo de los habitantes en 1930, por provincias",cuadro,8,315,verificada,1930,provincia,sexo+edad,completa,verificada,transcrito,"PDF 315-336. Columnas de total transcritas en digitalizacion/1930/pub_1930_edad4.csv. Sigue (PDF ~337-480) «Edad, estado civil y sexo de los habitantes, por comunas»."
+pub_1930,1930,Tomo de edades,,"Edad, estado civil y sexo de los habitantes, por comunas, en 1930",cuadro,,337,estimada,1930,comuna,sexo+edad,completa,verificada,pendiente,"Visto en PDF 341-342 y 350. Edades simples por comuna; también trae nacionalidad, religión e instrucción por comuna más adelante (PDF ~500-850)."
 pub_1940,1940,,,Nota preliminar,texto,i,,desconocida,,,,,,pendiente,
 pub_1940,1940,,,Introducción,texto,ii,,desconocida,,,,,,pendiente,
 pub_1940,1940,Cuadros generales,,Población de Chile entre 1875-1940,cuadro,1,7,verificada,1875;1885;1895;1907;1920;1930;1940,comuna,,completa,verificada,pendiente,

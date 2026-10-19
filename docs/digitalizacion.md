@@ -170,6 +170,12 @@ con el Cuadro 9 de 1952 (que usa las provincias de cada censo). Cuadro 9 (PDF 49
 rural × sexo por provincia, departamento y comuna, más los totales del país de 1920 y 1907.
 Erratas impresas: Atacama total 61.008 (coherente 61.098; en los cuadros 9 y 10), Penco mujeres
 5.441 (5.444) y Cunco rural 16.601 (16.604).
+El PDF trae después de la pág. 297 un tomo de edades (numeración propia, desfase ~+307): Cuadro 4,
+edad simple × estado civil × sexo por provincia (PDF 315–336; transcritas las columnas de total en
+`pub_1930_edad4`), y luego el mismo cuadro por comunas (PDF ~337–480), nacionalidad, religión e
+instrucción por comunas y actividades. Erratas del Cuadro 4: Valdivia 30 años (total 5.844, coherente
+5.847), 31 años (1.772 → 1.742) y 40 años (hombres 1.213 y total 4.678 → 2.223 y 4.688), coherentes con
+1952 C7; en Cautín hombres y mujeres se compensan en ±10 y en Magallanes faltan 1 mujer en las edades.
 
 **1940.** Reedición de cuadros publicados en la Revista Estadística Chilena (1941–46). Las
 primeras páginas (PDF 7 en adelante) traen la población por provincia, departamento y comuna de

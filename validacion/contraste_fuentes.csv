@@ -32,8 +32,10 @@ censo,territorio,nivel,area,sexo,fuente_a,valor_a,estado_a,fuente_b,valor_b,esta
 1920,República,pais,rural,_T,pub_1920 c4,2005178,ok,pub_1952 c9,1991335,ok
 1920,República,pais,_T,hombre,pub_1920 c4,1865827,ok,pub_1952 c5,1843070,ok
 1920,República,pais,_T,mujer,pub_1920 c4,1887972,ok,pub_1952 c5,1871817,ok
+1930,Atacama,provincia,_T,_T,pub_1930 c9,61008,inconsistente,pub_1930 cedad4,61098,ok
 1930,Atacama,provincia,_T,_T,pub_1930 c9,61008,inconsistente,pub_1952 c5,61098,ok
 1930,Atacama,provincia,_T,_T,pub_1930 c9,61008,inconsistente,pub_1952 c9,61098,ok
+1930,Atacama,provincia,_T,_T,pub_1930 c10,61008,inconsistente,pub_1930 cedad4,61098,ok
 1930,Atacama,provincia,_T,_T,pub_1930 c10,61008,inconsistente,pub_1952 c5,61098,ok
 1930,Atacama,provincia,_T,_T,pub_1930 c10,61008,inconsistente,pub_1952 c9,61098,ok
 1940,Antofagasta,provincia,_T,_T,pub_1940 cp76,115147,inconsistente,pub_1952 c5,145147,ok
