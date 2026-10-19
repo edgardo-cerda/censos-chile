@@ -517,9 +517,9 @@ pub_1960,1960,Segunda parte - 3. Características económicas,3.7.2,"Población 
 pub_1960,1960,Segunda parte - 3. Características económicas,3.8,"Población de 12 y más años, económicamente inactiva, según tipo de actividad, por provincias y sexo",cuadro,445,459,estimada,,,,,,pendiente,
 pub_1960,1960,Segunda parte - 3. Características económicas,3.8.1,"Población de 12 y más años, económicamente inactiva, según tipo de actividad por sexo, años simples y grupos de edades",cuadro,447,461,estimada,,,,,,pendiente,
 pub_1960,1960,Tercera parte,III,Códigos,texto,,,desconocida,,,,,,pendiente,
-pub_1970,1970,,3,"Población total por área urbana y rural y sexo, según grupos quinquenales y años simples de edad",cuadro,1,11,verificada,1970,pais,area+sexo+edad,completa,verificada,pendiente,Número de cuadro corregido a mano en el original.
+pub_1970,1970,,3,"Población total por área urbana y rural y sexo, según grupos quinquenales y años simples de edad",cuadro,1,11,verificada,1970,pais,area+sexo+edad,completa,verificada,transcrito,PDF 11-14. Transcrito en digitalizacion/1970/pub_1970_c03.csv.
 pub_1970,1970,,4,"Población de 12 años y más por estado civil, según sexo y grupos quinquenales de edad",cuadro,5,15,estimada,,,,,,pendiente,
-pub_1970,1970,,5,"Población total por religión, según provincias",cuadro,11,21,estimada,,,,,,pendiente,
+pub_1970,1970,,5,"Población total por religión, según provincias",cuadro,11,21,estimada,1970,provincia,,completa,verificada,transcrito,Solo la columna TOTAL (población por provincia) transcrita en digitalizacion/1970/pub_1970_c05.csv.
 pub_1970,1970,,6,"Población total por religión, según grupos quinquenales de edad",cuadro,12,22,estimada,,,,,,pendiente,
 pub_1970,1970,,8,"Población total por lugar de residencia habitual actual, según sexo y lugar de nacimiento",cuadro,13,23,estimada,,,,,,pendiente,
 pub_1970,1970,,9,"Población nacida en el extranjero residente en Chile, por grupos de edad, según sexo, continente y país de nacimiento",cuadro,22,32,estimada,,,,,,pendiente,

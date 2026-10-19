@@ -229,6 +229,10 @@ totales se confunden 0, 6, 8 y 9: se transcriben como suma de las filas urbana y
 
 **1970.** Volumen "Total País": sin cuadros por provincia de población por área. Índice en
 PDF 2–3; conceptos y definiciones en PDF 4–9.
+Transcritos el Cuadro 3 (país × área × sexo × edad simple, PDF 11–14; todas las sumas cuadran) y
+la columna TOTAL del Cuadro 5 (población por provincia, PDF 21). Los demás cuadros por provincia
+son de subpoblaciones (10, 5 o 12 años y más). Los volúmenes por provincia de 1970 no están en los
+PDF disponibles.
 
 **1982.** Tomo I: índice en PDF 5–6. Cuadro 1.01 repetido en secciones TOTAL (PDF 40–61),
 URBANO (PDF 62–83) y RURAL (PDF 84–104), por región, provincia y comuna; las secciones urbano y

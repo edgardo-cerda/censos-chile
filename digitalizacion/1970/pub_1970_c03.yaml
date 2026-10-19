@@ -1,0 +1,68 @@
+# Transcripción del Cuadro N.° 3 del censo de 1970 (volumen «Total País»): población total por área
+# urbana y rural y sexo, según grupos quinquenales y años simples de edad. Solo el país.
+# El CSV reproduce las nueve columnas impresas; la columna grupo es el rótulo y edad_min /
+# edad_max se agregan para el mapeo. El último grupo es «85 años y más», sin años simples.
+
+fuente_id: pub_1970
+cuadro: "3"
+titulo: Población total por área urbana y rural y sexo, según grupos quinquenales y años simples de edad
+paginas:
+  - {pdf: 11, impresa: "1", desde: Total país}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion:
+  fecha: 2026-10-19
+  por: Claude (asistido)
+  recortes_dpi: 180
+  nota: >
+    Lectura visual a 180 dpi (PDF 11-14, mecanografiado). Una mancha tapa la columna de mujeres
+    rurales de 60 a 64 años (PDF 13) y en 55 años se lee mal la de hombres rurales: esas cifras se
+    toman de total - hombres (o mujeres) del área, y coinciden con la suma de los años simples.
+
+indicador: poblacion
+unidad: personas
+fijas: {censo: 1970}
+
+territorio:
+  columna: territorio
+  nivel: {_otro: pais}
+  dpa_version: provincias_1970
+
+filas:
+  edad_min: {columna: edad_min}
+  edad_max: {columna: edad_max}
+
+columnas:
+  total_total: {area: _T, sexo: _T}
+  total_hombres: {area: _T, sexo: hombre}
+  total_mujeres: {area: _T, sexo: mujer}
+  urbana_total: {area: urbana, sexo: _T}
+  urbana_hombres: {area: urbana, sexo: hombre}
+  urbana_mujeres: {area: urbana, sexo: mujer}
+  rural_total: {area: rural, sexo: _T}
+  rural_hombres: {area: rural, sexo: hombre}
+  rural_mujeres: {area: rural, sexo: mujer}
+
+notas_cuadro:
+  - >
+    Las 936 cifras cuadran: hombres + mujeres = total y urbana + rural = total en cada fila; los
+    años simples suman su grupo y los grupos suman el total. Sin edad ignorada. El volumen no trae
+    la edad por provincia.
+
+notas_celdas:
+  - territorio: Total país
+    grupo: "18"
+    columna: total_total
+    nota: "Se lee 187100; se adopta 183100 = hombres + mujeres = urbana + rural."
+  - territorio: Total país
+    grupo: "55"
+    columna: rural_hombres
+    nota: "Se lee 2425; se adopta 9425 = total rural - mujeres rurales."
+
+controles:
+  - {tipo: suma_dimension, dimension: sexo, total: _T, partes: [hombre, mujer]}
+  - {tipo: suma_dimension, dimension: area, total: _T, partes: [urbana, rural]}
+  - tipo: suma_dimension
+    dimension: [edad_min, edad_max]
+    total: ["", ""]
+    partes: [[0, 4], [5, 9], [10, 14], [15, 19], [20, 24], [25, 29], [30, 34], [35, 39], [40, 44], [45, 49], [50, 54], [55, 59], [60, 64], [65, 69], [70, 74], [75, 79], [80, 84], [85, ""]]

@@ -86,8 +86,9 @@ ESTADO = {
     1960: ("Falta edad", "Edad: 1.2.1 grupos de edades por provincias (PDF ~144); 1.3 área × sexo × años de edad "
                          "del país (PDF ~156).",
            "Provincia × área × sexo (Cuadro 1.2)."),
-    1970: ("Catalogado", "Sexo × edad × área del país: Cuadro 3 (PDF 11). Buscar una publicación por provincia.",
-           "El volumen «Total País» no trae cuadros por provincia de población por área."),
+    1970: ("Núcleo completo",
+           "Nada más en el volumen «Total País». Buscar los volúmenes provinciales de 1970 (área, sexo y edad por provincia y comuna).",
+           "País × área × sexo × edad simple (Cuadro 3, 936 cifras, todas cuadran) y población total por provincia (Cuadro 5). El volumen disponible no trae área, sexo ni edad por provincia."),
     1982: ("Núcleo completo",
            "Nada más para el núcleo en los volúmenes publicados (la edad solo viene para el país). Tomos II y III: ocupación, educación, vivienda, hogar y familia (módulos temáticos).",
            "Región, provincia y comuna × área × sexo (Cuadro 1.01); país × área × sexo × edad simple (Cuadro 1.03, 1.089 cifras, todas las sumas cuadran). Los volúmenes no traen edad bajo el nivel país."),

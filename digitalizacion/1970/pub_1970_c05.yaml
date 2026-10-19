@@ -1,0 +1,33 @@
+# Transcripción de la columna TOTAL del Cuadro N.° 5 del censo de 1970 (volumen «Total País»):
+# población total por religión, según provincias. Solo se transcribe el total de cada provincia
+# (núcleo); las columnas por religión quedan para el módulo temático.
+
+fuente_id: pub_1970
+cuadro: "5"
+titulo: Población total por religión, según provincias
+paginas:
+  - {pdf: 21, impresa: "11", desde: TOTAL}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion: {fecha: 2026-10-19, por: Claude (asistido), recortes_dpi: 250}
+
+indicador: poblacion
+unidad: personas
+fijas: {censo: 1970, area: _T, sexo: _T}
+
+territorio:
+  columna: territorio
+  nivel: {TOTAL: pais, _otro: provincia}
+  dpa_version: provincias_1970
+
+columnas:
+  total: {}
+
+notas_cuadro:
+  - >
+    Las 25 provincias suman el total del país (8 884 768), igual al del Cuadro 3. Es la única
+    población total por provincia del volumen «Total País»: no trae área, sexo ni edad por
+    provincia para toda la población (los cuadros 15, 20 y 22 son de 10, 5 y 12 años y más).
+
+controles:
+  - {tipo: suma_territorio, total: pais, partes: provincia}
