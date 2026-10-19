@@ -214,6 +214,7 @@ def controlar(meta: dict, filas: list[dict]) -> list[dict]:
                     "explicada": any(x["estado_valor"] == "inconsistente" for x in celdas) or any(
                         e["territorio"] == t["territorio_nombre_orig"] and e.get("sexo", t["sexo"]) == t["sexo"]
                         and e.get("diferencia", g["partes"] - t["valor"]) == g["partes"] - t["valor"]
+                        and str(e.get("edad_min", t["edad_min"])) == str(t["edad_min"])
                         for e in c.get("excepciones", [])),
                 })
     return fallas

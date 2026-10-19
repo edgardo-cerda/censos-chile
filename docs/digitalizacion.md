@@ -186,6 +186,9 @@ personas de Colchagua a Santiago. Transcrito hasta comuna (PDF 82–121, 388 fil
 después de sus unidades (`totales_al_final` en el YAML). Otras erratas: Antofagasta total
 115.147 (145.147), viviendas rurales de Atacama y Yungay, mujeres rurales de Ñuble (77.709 por
 77.679). La provincia de Osorno figura separada de Llanquihue.
+Población por grupos quinquenales de edad, sexo y provincias (págs. 332–335, PDF 338–341,
+mecanografiado): cifras revisadas; cada provincia cuadra, y la fila del país difiere de la suma de
+las provincias en seis celdas (±1 a ±3, compensadas dentro de cada sexo).
 
 **1952.** El PDF (2.431 págs.) junta varias piezas:
 - Tomo I, Resumen del País (PDF 1–239; índice en PDF 232–234): reseña histórica, cuadros

@@ -52,6 +52,12 @@ pub_1940,p76,jerarquia,1940,Atacama,rural,_T,8126,8136,10,True
 pub_1940,p76,jerarquia,1940,Maule,rural,_T,47907,47908,1,True
 pub_1940,p76,jerarquia,1940,Ñuble,rural,mujer,77709,77679,-30,True
 pub_1940,p76,jerarquia,1940,Yungay,rural,_T,4759,4758,-1,True
+pub_1940,p332,suma_territorio,1940,(partes),_T,hombre,313667,313668,1,True
+pub_1940,p332,suma_territorio,1940,(partes),_T,mujer,222506,222505,-1,True
+pub_1940,p332,suma_territorio,1940,(partes),_T,mujer,174974,174975,1,True
+pub_1940,p332,suma_territorio,1940,(partes),_T,hombre,86081,86080,-1,True
+pub_1940,p332,suma_territorio,1940,(partes),_T,mujer,2738,2741,3,True
+pub_1940,p332,suma_territorio,1940,(partes),_T,mujer,1354,1351,-3,True
 pub_1952,5,suma_dimension,1885,Malleco,_T,_T,81767,78767,-3000,True
 pub_1952,5,suma_territorio,1885,(partes),_T,hombre,1248124,1245124,-3000,True
 pub_1952,5,suma_territorio,1895,(partes),_T,hombre,1332769,1332768,-1,True

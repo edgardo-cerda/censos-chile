@@ -1,0 +1,59 @@
+# Transcripción del cuadro «Población por grupos quinquenales de edad, sexo y provincias» del censo
+# de 1940 (págs. 332-335, PDF 338-341, mecanografiado). Sin número de cuadro: se identifica por su
+# página impresa inicial. Una fila por provincia y grupo de edad; el país va al final.
+
+fuente_id: pub_1940
+cuadro: "p332"
+titulo: Población por grupos quinquenales de edad, sexo y provincias
+paginas:
+  - {pdf: 338, impresa: "332", desde: Tarapacá}
+  - {pdf: 339, impresa: "333", desde: Colchagua}
+  - {pdf: 340, impresa: "334", desde: Bío-Bío}
+  - {pdf: 341, impresa: "335", desde: Magallanes}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion: {fecha: 2026-10-19, por: Claude (asistido), recortes_dpi: 170}
+
+indicador: poblacion
+unidad: personas
+fijas: {censo: 1940, area: _T}
+
+territorio:
+  columna: territorio
+  nivel: {PAIS: pais, _otro: provincia}
+  dpa_version: provincias_1940
+
+filas:
+  edad_min: {columna: edad_min}
+  edad_max: {columna: edad_max}
+
+columnas:
+  hombres: {sexo: hombre}
+  mujeres: {sexo: mujer}
+
+notas_cuadro:
+  - >
+    Son las cifras revisadas de 1940 (total 5 023 539, como en los cuadros comparativos de 1952 y
+    1960), no las ajustadas del cuadro urbano-rural de este volumen. Cada provincia suma su total
+    por edad y sexo, y sus totales coinciden con el comparativo 5 de 1952. El país coincide con el
+    comparativo 7 de 1952 por decenios.
+  - >
+    La fila del país difiere de la suma de las provincias en seis celdas, por 1 a 3 personas que
+    se compensan dentro de cada sexo (0-4 y 50-54 hombres; 25-29, 30-34, 90-94 y 95-99 mujeres):
+    impreso así; se dejan como excepciones del control.
+
+controles:
+  - tipo: suma_dimension
+    dimension: [edad_min, edad_max]
+    total: ["", ""]
+    partes: [[0, 4], [5, 9], [10, 14], [15, 19], [20, 24], [25, 29], [30, 34], [35, 39], [40, 44], [45, 49], [50, 54], [55, 59], [60, 64], [65, 69], [70, 74], [75, 79], [80, 84], [85, 89], [90, 94], [95, 99], [100, ""]]
+  - tipo: suma_territorio
+    total: pais
+    partes: provincia
+    excepciones:
+      - {territorio: PAIS, sexo: hombre, edad_min: 0, diferencia: 1}
+      - {territorio: PAIS, sexo: hombre, edad_min: 50, diferencia: -1}
+      - {territorio: PAIS, sexo: mujer, edad_min: 25, diferencia: -1}
+      - {territorio: PAIS, sexo: mujer, edad_min: 30, diferencia: 1}
+      - {territorio: PAIS, sexo: mujer, edad_min: 90, diferencia: 3}
+      - {territorio: PAIS, sexo: mujer, edad_min: 95, diferencia: -3}

@@ -75,10 +75,9 @@ ESTADO = {
            "cifras de 1920 que no cuadran: usar el Cuadro 4."),
     1930: ("Falta edad", "Edad: el volumen disponible no trae cuadros por edad; buscar otra publicación de 1930.",
            "Comuna × área × sexo (Cuadro 9); edad del país en decenios (1952 C7). Errata en el total de Atacama."),
-    1940: ("Falta edad", "Edad: población por edades individuales, sexo y provincias (pág. 8, PDF ~14) o por grupos "
-                         "de edades (pág. 332, PDF ~338).",
-           "Comuna × área × sexo, con viviendas; edad del país en decenios (1952 C7). Cifras ajustadas (~2,8 %); las "
-           "revisadas están en 1952 C5, C9 y 1960 C1.1.1."),
+    1940: ("Núcleo completo",
+           "Opcional: edades individuales por provincia y sexo (pág. 8, PDF ~14). El volumen no trae edad por comuna ni área × edad.",
+           "Comuna × área × sexo con viviendas (cifras ajustadas, pág. 76) y provincia × sexo × edad quinquenal (cifras revisadas, pág. 332; coincide con los comparativos de 1952). Las dos series difieren por el ajuste de ~2,8 %."),
     1952: ("Parcial",
            "Área × sexo por provincia: el Cuadro Nacional 2 falta en el escaneo (buscar otro ejemplar). Comuna × área × sexo × edad solo para el Núcleo Central (Tomo II, Cuadro 1 de cada provincia: muy extenso). Sexo por comuna para 14 provincias en la división territorial (mecanografiada).",
            "Comuna (total, Cuadro Nacional 4: 271 comunas), provincia × área (C9), provincia × sexo (C5) y país × sexo × edad quinquenal (Cuadro Nacional 7, coincide con el comparativo 7). Faltan en el escaneo las págs. 85–116 (cuadros nacionales 1 y 2)."),

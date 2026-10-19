@@ -285,7 +285,7 @@ pub_1940,1940,Características económicas,,Ocupaciones específicas por sexo - 
 pub_1940,1940,Características económicas,,Ocupaciones específicas por sexo - Provincias y comunas,cuadro,202,208,estimada,,,,,,pendiente,
 pub_1940,1940,,,Reducciones indígenas,cuadro,321,327,estimada,,,,,,pendiente,
 pub_1940,1940,,,Extranjeros según nacionalidad y sexo por provincias,cuadro,330,336,estimada,,,,,,pendiente,
-pub_1940,1940,,,"Población por grupos de edades, sexo y provincias",cuadro,332,338,estimada,1940,provincia,sexo+edad,completa,título,pendiente,
+pub_1940,1940,,,"Población por grupos quinquenales de edad, sexo y provincias",cuadro,332,338,verificada,1940,provincia,sexo+edad,completa,verificada,transcrito,Págs. 332-335 (PDF 338-341). Transcrito en digitalizacion/1940/pub_1940_p332.csv.
 pub_1952,1952,Tomo I. Resumen del País,,"Portada, créditos e introducción",texto,5,3,estimada,,,,,,pendiente,PDF 1-5.
 pub_1952,1952,Tomo I. Resumen del País,,Rasgos geográficos: descripción del país,texto,9,7,estimada,,,,,,pendiente,Inicio estimado.
 pub_1952,1952,Tomo I. Resumen del País,,Historia censal: reseña de la historia censal del país,texto,11,8,estimada,,,,,,pendiente,Págs. 11-29 aprox. (con cuadros de empadronamientos coloniales en el texto).
