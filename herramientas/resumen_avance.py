@@ -88,17 +88,18 @@ ESTADO = {
            "Provincia × área × sexo (Cuadro 1.2)."),
     1970: ("Catalogado", "Sexo × edad × área del país: Cuadro 3 (PDF 11). Buscar una publicación por provincia.",
            "El volumen «Total País» no trae cuadros por provincia de población por área."),
-    1982: ("Falta edad", "Edad: Cuadro 1.03, sexo × edad × área (PDF 105); revisar su nivel territorial.",
-           "Región, provincia y comuna × área × sexo (Cuadro 1.01). Todas las sumas cuadran."),
+    1982: ("Núcleo completo",
+           "Nada más para el núcleo en los volúmenes publicados (la edad solo viene para el país). Tomos II y III: ocupación, educación, vivienda, hogar y familia (módulos temáticos).",
+           "Región, provincia y comuna × área × sexo (Cuadro 1.01); país × área × sexo × edad simple (Cuadro 1.03, 1.089 cifras, todas las sumas cuadran). Los volúmenes no traen edad bajo el nivel país."),
 }
 COLOR_ESTADO = {
     "Núcleo completo": "C6EFCE", "Falta edad": "DDEBF7", "Parcial": "FFEB9C",
     "Serie desde otros censos": "FCE4D6", "Catalogado": "EDEDED", "Sin publicación": "D9D9D9",
 }
-NIVELES = ["comuna", "departamento", "provincia", "region", "pais"]  # de más fino a más grueso
+NIVELES = ["distrito", "comuna", "partido", "departamento", "provincia", "region", "pais"]  # de más fino a más grueso
 # Niveles del catálogo (metadatos/catalogo_cuadros.csv, columna nivel_territorial), de más fino a más grueso.
-NIVELES_PDF = ["entidad", "distrito", "comuna", "parroquia", "departamento", "provincia", "region", "pais"]
-NOMBRE_NIVEL = {"entidad": "Entidad", "distrito": "Distrito", "comuna": "Comuna", "parroquia": "Parroquia",
+NIVELES_PDF = ["entidad", "distrito", "comuna", "parroquia", "partido", "departamento", "provincia", "region", "pais"]
+NOMBRE_NIVEL = {"entidad": "Entidad", "distrito": "Distrito", "comuna": "Comuna", "parroquia": "Parroquia", "partido": "Partido",
                 "departamento": "Departamento", "provincia": "Provincia", "region": "Región", "pais": "País"}
 DESAGREGACIONES = {"Total": [], "Área": ["area"], "Área × sexo": ["area", "sexo"], "Sexo × edad": ["sexo", "edad"]}
 
@@ -355,7 +356,7 @@ def main() -> None:
     fl = t + 3
     ws.cell(fl, 1, "Estados").font = F_BOLD
     leyenda = {
-        "Núcleo completo": "Población por territorio × área × sexo × edad transcrita (estructura demográfica básica).",
+        "Núcleo completo": "Población por territorio × área × sexo × edad transcrita al nivel más fino que traen los PDF.",
         "Falta edad": "Población por territorio × área × sexo transcrita; falta la edad.",
         "Parcial": "Hay cifras por territorio y área, pero falta sexo (salvo para el país) o falta bajar de provincia.",
         "Serie desde otros censos": "Cifras tomadas de cuadros comparativos de censos posteriores; "

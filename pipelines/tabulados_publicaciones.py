@@ -163,7 +163,7 @@ def controlar(meta: dict, filas: list[dict]) -> list[dict]:
     fallas = []
 
     def clave(f, sin):
-        return tuple((k, f[k]) for k in ("censo", "indicador", "territorio_cod_orig", "area", "sexo", "edad_min", "edad_estado",
+        return tuple((k, f[k]) for k in ("censo", "indicador", "territorio_cod_orig", "area", "sexo", "edad_min", "edad_max", "edad_estado",
                                          "dimensiones") if k not in sin)
 
     for c in meta.get("controles", []):
@@ -175,7 +175,8 @@ def controlar(meta: dict, filas: list[dict]) -> list[dict]:
                 dims = d if isinstance(d, list) else [d]
                 val = tuple(f[x] for x in dims) if isinstance(d, list) else f[d]
                 comparar = (lambda x: tuple(x)) if isinstance(d, list) else (lambda x: x)
-                k = clave(f, set(dims))
+                # El tramo de edad se identifica por edad_min y edad_max: si se suma por edad, ambos salen de la clave.
+                k = clave(f, set(dims) | ({"edad_min", "edad_max"} if {"edad_min", "edad_max"} & set(dims) else set()))
                 es_total = val == comparar(c["total"])
                 es_parte = val in [comparar(x) for x in c["partes"]]
             elif c["tipo"] == "suma_territorio":

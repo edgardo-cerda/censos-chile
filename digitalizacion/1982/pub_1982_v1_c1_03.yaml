@@ -1,0 +1,57 @@
+# Transcripción del Cuadro 1.03 del censo de 1982 (Tomo I): población total por sexo según grupos
+# quinquenales y años simples de edad, en tres secciones (TOTAL, URBANO y RURAL). Solo el país.
+# El CSV reproduce las columnas de población; se omiten el índice de masculinidad y los porcentajes.
+# Cada sección trae el total, los grupos quinquenales y, debajo de cada uno, sus años simples; la
+# columna grupo es el rótulo impreso y edad_min / edad_max se agregan para el mapeo.
+
+fuente_id: pub_1982_v1
+cuadro: "1.03"
+titulo: Población total, por sexo, índice de masculinidad y distribución porcentual, según grupos quinquenales, años simples de edad y área urbana-rural
+paginas:
+  - {pdf: 105, impresa: "67", desde: Total país}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion:
+  fecha: 2026-10-19
+  por: Claude (asistido)
+  recortes_dpi: 170
+  nota: >
+    Lectura visual de las columnas de población a 170 dpi (PDF 105-119: TOTAL 105-109, URBANO
+    110-114, RURAL 115-119); el OCR se descartó por confundir separadores y dígitos.
+
+indicador: poblacion
+unidad: personas
+fijas: {censo: 1982}
+
+territorio:
+  columna: territorio
+  nivel: {_otro: pais}
+  dpa_version: DPA1982
+
+filas:
+  area: {columna: area, valores: {Total: _T, Urbano: urbana, Rural: rural}}
+  edad_min: {columna: edad_min}
+  edad_max: {columna: edad_max}
+
+columnas:
+  total: {sexo: _T}
+  hombres: {sexo: hombre}
+  mujeres: {sexo: mujer}
+
+notas_cuadro:
+  - >
+    Las 1.089 cifras cuadran: hombres + mujeres = total en cada fila; los años simples suman su
+    grupo quinquenal; los grupos suman el total de la sección; urbano + rural = total en cada
+    fila. El control automático cubre sexo, área y grupos quinquenales (los años simples no se
+    pueden declarar a la vez como partes del total sin duplicar). No hay edad ignorada.
+  - >
+    El último grupo es "95 años y más" y el último año simple "99 años y más". El volumen no trae
+    la edad por región, provincia ni comuna.
+
+controles:
+  - {tipo: suma_dimension, dimension: sexo, total: _T, partes: [hombre, mujer]}
+  - {tipo: suma_dimension, dimension: area, total: _T, partes: [urbana, rural]}
+  - tipo: suma_dimension
+    dimension: [edad_min, edad_max]
+    total: ["", ""]
+    partes: [[0, 4], [5, 9], [10, 14], [15, 19], [20, 24], [25, 29], [30, 34], [35, 39], [40, 44], [45, 49], [50, 54], [55, 59], [60, 64], [65, 69], [70, 74], [75, 79], [80, 84], [85, 89], [90, 94], [95, ""]]
