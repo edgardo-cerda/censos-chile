@@ -1,0 +1,59 @@
+# Transcripción del Cuadro N.° 1.3 del censo de 1960 (páginas giradas 90°: --rotar 90): población
+# clasificada en urbana y rural, según sexo, por años simples de edad. Solo el país.
+# Los menores de un año vienen por meses (0 a 11 meses), sin total de 0 años: se registran con
+# edad 0 y la dimensión adicional "meses". La última fila es "100 años" y se registra como 100 y
+# más (abierta), porque no hay otra fila mayor y las edades suman el total.
+
+fuente_id: pub_1960
+cuadro: "1.3"
+titulo: Población clasificada en urbana y rural, según sexo, por años simples de edad
+paginas:
+  - {pdf: 156, impresa: "142", desde: República}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion:
+  fecha: 2026-10-19
+  por: Claude (asistido)
+  recortes_dpi: 190
+  nota: >
+    Lectura visual a 190 dpi (PDF 156-160). Dos cifras con el último dígito borroso (hombres de 57
+    y 59 años) se fijaron con total - mujeres.
+
+indicador: poblacion
+unidad: personas
+fijas: {censo: 1960}
+
+territorio:
+  columna: territorio
+  nivel: {_otro: pais}
+  dpa_version: provincias_1960
+
+filas:
+  edad_min: {columna: edad_min}
+  edad_max: {columna: edad_max}
+  meses: {columna: meses}
+
+columnas:
+  total_total: {area: _T, sexo: _T}
+  total_hombres: {area: _T, sexo: hombre}
+  total_mujeres: {area: _T, sexo: mujer}
+  urbana_total: {area: urbana, sexo: _T}
+  urbana_hombres: {area: urbana, sexo: hombre}
+  urbana_mujeres: {area: urbana, sexo: mujer}
+  rural_total: {area: rural, sexo: _T}
+  rural_hombres: {area: rural, sexo: hombre}
+  rural_mujeres: {area: rural, sexo: mujer}
+
+notas_cuadro:
+  - >
+    Las 1.017 cifras cuadran: hombres + mujeres = total y urbana + rural = total en cada fila, y la
+    suma de meses y años simples es igual al total impreso (en negrita) de cada columna. Coincide
+    con el Cuadro 1.2 (total, urbana y rural por sexo). Sin edad ignorada.
+
+controles:
+  - {tipo: suma_dimension, dimension: sexo, total: _T, partes: [hombre, mujer]}
+  - {tipo: suma_dimension, dimension: area, total: _T, partes: [urbana, rural]}
+  - tipo: suma_dimension
+    dimension: [edad_min, edad_max, dimensiones]
+    total: ["", "", ""]
+    partes: [[0, 0, "{\"meses\": 0}"], [0, 0, "{\"meses\": 1}"], [0, 0, "{\"meses\": 2}"], [0, 0, "{\"meses\": 3}"], [0, 0, "{\"meses\": 4}"], [0, 0, "{\"meses\": 5}"], [0, 0, "{\"meses\": 6}"], [0, 0, "{\"meses\": 7}"], [0, 0, "{\"meses\": 8}"], [0, 0, "{\"meses\": 9}"], [0, 0, "{\"meses\": 10}"], [0, 0, "{\"meses\": 11}"], [1, 1, ""], [2, 2, ""], [3, 3, ""], [4, 4, ""], [5, 5, ""], [6, 6, ""], [7, 7, ""], [8, 8, ""], [9, 9, ""], [10, 10, ""], [11, 11, ""], [12, 12, ""], [13, 13, ""], [14, 14, ""], [15, 15, ""], [16, 16, ""], [17, 17, ""], [18, 18, ""], [19, 19, ""], [20, 20, ""], [21, 21, ""], [22, 22, ""], [23, 23, ""], [24, 24, ""], [25, 25, ""], [26, 26, ""], [27, 27, ""], [28, 28, ""], [29, 29, ""], [30, 30, ""], [31, 31, ""], [32, 32, ""], [33, 33, ""], [34, 34, ""], [35, 35, ""], [36, 36, ""], [37, 37, ""], [38, 38, ""], [39, 39, ""], [40, 40, ""], [41, 41, ""], [42, 42, ""], [43, 43, ""], [44, 44, ""], [45, 45, ""], [46, 46, ""], [47, 47, ""], [48, 48, ""], [49, 49, ""], [50, 50, ""], [51, 51, ""], [52, 52, ""], [53, 53, ""], [54, 54, ""], [55, 55, ""], [56, 56, ""], [57, 57, ""], [58, 58, ""], [59, 59, ""], [60, 60, ""], [61, 61, ""], [62, 62, ""], [63, 63, ""], [64, 64, ""], [65, 65, ""], [66, 66, ""], [67, 67, ""], [68, 68, ""], [69, 69, ""], [70, 70, ""], [71, 71, ""], [72, 72, ""], [73, 73, ""], [74, 74, ""], [75, 75, ""], [76, 76, ""], [77, 77, ""], [78, 78, ""], [79, 79, ""], [80, 80, ""], [81, 81, ""], [82, 82, ""], [83, 83, ""], [84, 84, ""], [85, 85, ""], [86, 86, ""], [87, 87, ""], [88, 88, ""], [89, 89, ""], [90, 90, ""], [91, 91, ""], [92, 92, ""], [93, 93, ""], [94, 94, ""], [95, 95, ""], [96, 96, ""], [97, 97, ""], [98, 98, ""], [99, 99, ""], [100, "", ""]]

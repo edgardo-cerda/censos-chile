@@ -226,6 +226,9 @@ urbana y rural por provincias 1940, 1952 y 1960; la urbana 1940 puede leerse "2.
 (cuadra 2.639.311). Errata: Chiloé 1952 total impreso 100.637 (coherente 100.687, como en 1952).
 Cuadro 1.2 (PDF 142–143): provincias × área × sexo, 1960. En la tipografía negrita de los
 totales se confunden 0, 6, 8 y 9: se transcriben como suma de las filas urbana y rural.
+Cuadro 1.2.1 (PDF 144–145): provincias × 17 grupos de edad, sin sexo. Cuadro 1.3 (PDF 156–160):
+país × área × sexo por años simples; los menores de 1 año vienen por meses (dimensión `meses`)
+y la última fila, «100 años», se toma como 100 y más. Todas las sumas cuadran.
 
 **1970.** Volumen "Total País": sin cuadros por provincia de población por área. Índice en
 PDF 2–3; conceptos y definiciones en PDF 4–9.

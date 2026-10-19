@@ -83,9 +83,9 @@ ESTADO = {
                       "escaneo; el Cuadro 1 del Tomo II la trae por comuna para el Núcleo Central.",
            "Provincia × área (C9, 1960 C1.1.1) y × sexo (C5); edad del país en decenios con edad ignorada (C7). "
            "Faltan en el escaneo las págs. 85–116 (cuadros nacionales 1 y 2)."),
-    1960: ("Falta edad", "Edad: 1.2.1 grupos de edades por provincias (PDF ~144); 1.3 área × sexo × años de edad "
-                         "del país (PDF ~156).",
-           "Provincia × área × sexo (Cuadro 1.2)."),
+    1960: ("Núcleo completo",
+           "Opcional: 1.2.2 (comunas cabeceras de provincia por edad y sexo, PDF ~146). El volumen no trae sexo × edad por provincia ni datos por comuna para todo el país.",
+           "Provincia × área × sexo (1.2), provincia × edad en 17 grupos (1.2.1) y país × área × sexo × edad simple, con meses bajo 1 año (1.3). Todas las sumas cuadran; los totales en negrita se fijaron con las sumas."),
     1970: ("Núcleo completo",
            "Nada más en el volumen «Total País». Buscar los volúmenes provinciales de 1970 (área, sexo y edad por provincia y comuna).",
            "País × área × sexo × edad simple (Cuadro 3, 936 cifras, todas cuadran) y población total por provincia (Cuadro 5). El volumen disponible no trae área, sexo ni edad por provincia."),

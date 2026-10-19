@@ -1,0 +1,60 @@
+# Transcripción del Cuadro N.° 1.2.1 del censo de 1960 (páginas giradas 90°: --rotar 90):
+# población según grupos de edades, por provincias. Sin sexo ni área. En el original el cuadro sigue
+# en la página siguiente ("Continuación") con las mismas filas; en el CSV van juntas.
+
+fuente_id: pub_1960
+cuadro: "1.2.1"
+titulo: Población según grupos de edades, por provincias
+paginas:
+  - {pdf: 144, impresa: "130", desde: TOTAL}
+  - {pdf: 145, impresa: "131", columnas: [e35_39, e40_44, e45_49, e50_54, e55_59, e60_64, e65_84, e85]}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion:
+  fecha: 2026-10-19
+  por: Claude (asistido)
+  recortes_dpi: 200
+  nota: >
+    La fila TOTAL va en negrita, tipografía en que 0, 6, 8 y 9 se confunden: se transcribió como la
+    suma de las provincias (tipografía normal), compatible con la lectura de la negrita (p. ej.
+    876 279 por "878.279", 363 879 por "383.878").
+
+indicador: poblacion
+unidad: personas
+fijas: {censo: 1960, area: _T, sexo: _T}
+
+territorio:
+  columna: territorio
+  nivel: {TOTAL: pais, _otro: provincia}
+  dpa_version: provincias_1960
+
+columnas:
+  total: {}
+  e0: {edad_min: 0, edad_max: 0}
+  e1_4: {edad_min: 1, edad_max: 4}
+  e5_9: {edad_min: 5, edad_max: 9}
+  e10_14: {edad_min: 10, edad_max: 14}
+  e15_19: {edad_min: 15, edad_max: 19}
+  e20_24: {edad_min: 20, edad_max: 24}
+  e25_29: {edad_min: 25, edad_max: 29}
+  e30_34: {edad_min: 30, edad_max: 34}
+  e35_39: {edad_min: 35, edad_max: 39}
+  e40_44: {edad_min: 40, edad_max: 44}
+  e45_49: {edad_min: 45, edad_max: 49}
+  e50_54: {edad_min: 50, edad_max: 54}
+  e55_59: {edad_min: 55, edad_max: 59}
+  e60_64: {edad_min: 60, edad_max: 64}
+  e65_84: {edad_min: 65, edad_max: 84}
+  e85: {edad_min: 85}
+
+notas_cuadro:
+  - >
+    Grupos impresos: 0 años, 1 a 4, quinquenales de 5 a 64, "65 a 84" y "85 y más". Cada provincia
+    suma su total por edades y el total coincide con el Cuadro 1.2 (y 1.1.1). Sin edad ignorada.
+
+controles:
+  - tipo: suma_dimension
+    dimension: [edad_min, edad_max]
+    total: ["", ""]
+    partes: [[0, 0], [1, 4], [5, 9], [10, 14], [15, 19], [20, 24], [25, 29], [30, 34], [35, 39], [40, 44], [45, 49], [50, 54], [55, 59], [60, 64], [65, 84], [85, ""]]
+  - {tipo: suma_territorio, total: pais, partes: provincia}

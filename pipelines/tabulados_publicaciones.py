@@ -120,6 +120,8 @@ def procesar(meta_ruta: Path) -> tuple[list[dict], list[dict]]:
         dims_fila = {}
         for dim, regla in meta.get("filas", {}).items():
             crudo = fila[regla["columna"]]
+            if crudo == "" and dim not in DIMENSIONES and "valores" not in regla:
+                continue  # dimensión adicional sin valor en esta fila (p. ej. meses solo bajo 1 año)
             dims_fila[dim] = regla["valores"][crudo] if "valores" in regla else (int(crudo) if crudo.isdigit() else crudo)
         for col, dims_col in meta["columnas"].items():
             v, estado = valor(fila[col])
