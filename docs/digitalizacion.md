@@ -160,6 +160,11 @@ división de 1920, con Tacna (Tarata, Tacna y Arica) desde 1885. La diferencia c
   prefiere el Cuadro 4.
 - Cuadro 4: todas las sumas cuadran. Un doblez de la hoja tapa las últimas cifras del total de
   Magallanes y de la República, que se reconstruyen como hombres + mujeres (estado `ilegible`).
+- Capítulo II, cuadro 4 (págs. 234–275, PDF 249–290): estado civil por edad y sexo de cada
+  departamento; transcritas las columnas de total (`pub_1920_ec_edad`, 28 grupos de edad). Valida con
+  el Cuadro 4 y, sin Tacna, con el comparativo 7 de 1952 por decenios. Talca imprime como total la cifra
+  errada del Cuadro 3 y tiene dos filas erradas (45–49 hombres, 60–64 mujeres y total), resueltas con las
+  columnas por estado civil; también hay erratas en La Ligua (2 años) y Llanquihue (40–44, 85–89).
 
 **1930.** Índice en la página 2 del PDF. Cuadro 10 (pág. 56): urbana y rural por provincias,
 1895–1930. Urbana = pueblos y ciudades de más de 1.000 habitantes (1907–1930); en 1895 se

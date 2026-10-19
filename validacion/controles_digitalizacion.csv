@@ -25,6 +25,17 @@ pub_1920,1,jerarquia,1865,Atacama,_T,_T,77456,77453,-3,True
 pub_1920,1,suma_territorio,1865,(partes),_T,_T,1819223,1819226,3,True
 pub_1920,3,suma_territorio,1895,(partes),urbana,_T,1223408,1240102,16694,True
 pub_1920,3,suma_territorio,1895,(partes),rural,_T,1464577,1472043,7466,True
+pub_1920,II.4,suma_dimension,1920,La Ligua,_T,_T,384,484,100,True
+pub_1920,II.4,suma_dimension,1920,Talca,_T,_T,3237,3233,-4,True
+pub_1920,II.4,suma_dimension,1920,Talca,_T,_T,2468,2561,93,True
+pub_1920,II.4,suma_dimension,1920,Llanquihue,_T,_T,1955,2055,100,True
+pub_1920,II.4,suma_dimension,1920,Llanquihue,_T,_T,43,34,-9,True
+pub_1920,II.4,suma_dimension,1920,La Ligua,_T,_T,17276,17176,-100,True
+pub_1920,II.4,suma_dimension,1920,Talca,_T,hombre,40834,41517,683,True
+pub_1920,II.4,suma_dimension,1920,Talca,_T,mujer,43789,44458,669,True
+pub_1920,II.4,suma_dimension,1920,Talca,_T,_T,84623,85886,1263,True
+pub_1920,II.4,suma_dimension,1920,Llanquihue,_T,hombre,22237,22337,100,True
+pub_1920,II.4,suma_dimension,1920,Llanquihue,_T,mujer,20984,20975,-9,True
 pub_1930,9,suma_dimension,1930,Atacama,_T,_T,61008,61098,90,True
 pub_1930,9,suma_dimension,1930,Penco,_T,mujer,5441,5444,3,True
 pub_1930,9,suma_dimension,1930,Cunco,_T,_T,18269,18266,-3,True

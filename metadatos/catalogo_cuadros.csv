@@ -225,7 +225,7 @@ pub_1920,1920,Capítulo I. Población,,"Población de las ciudades, con distinci
 pub_1920,1920,Capítulo II. Estado civil,1,Estado civil de la población (capítulo),cuadro,231,246,estimada,,,,,,pendiente,Portada del capítulo; título del cuadro 1 no verificado.
 pub_1920,1920,Capítulo II. Estado civil,2,"Estado civil de los habitantes en 1920, con distinción del sexo, por departamentos y provincias",cuadro,232,247,verificada,,,,,,pendiente,
 pub_1920,1920,Capítulo II. Estado civil,,Estado civil de la población desde 1895 hasta 1920,cuadro,234,249,estimada,,,,,,pendiente,Título leído por OCR; no verificado.
-pub_1920,1920,Capítulo II. Estado civil,,"Estado civil de los habitantes con distinción de la edad y del sexo, en 1920",cuadro,235,250,estimada,1920,departamento,sexo+edad,completa,verificada,pendiente,Págs. 235-275.
+pub_1920,1920,Capítulo II. Estado civil,4,"Estado civil de los habitantes en 1920, con distinción de la edad y del sexo, por departamentos",cuadro,234,249,verificada,1920,departamento,sexo+edad,completa,verificada,transcrito,Págs. 234-275 (PDF 249-290). Columnas de total transcritas en digitalizacion/1920/pub_1920_ec_edad.csv.
 pub_1920,1920,Capítulo III. Nacionalidad,1,Nacionalidad de la población extranjera desde 1854 hasta 1920,cuadro,276,291,verificada,,,,,,pendiente,
 pub_1920,1920,Capítulo III. Nacionalidad,,"Población chilena y extranjera con distinción del sexo, en 1920",cuadro,282,297,estimada,,,,,,pendiente,Título leído por OCR.
 pub_1920,1920,Capítulo III. Nacionalidad,,"Nacionalidad de los extranjeros por sexo, en 1920",cuadro,294,309,estimada,,,,,,pendiente,Inicio estimado; se extiende hasta la pág. 302.

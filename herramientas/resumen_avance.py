@@ -70,9 +70,9 @@ ESTADO = {
                       "1907 (bloques).",
            "Departamento × área desde 1920 C1 y C3; provincia × sexo (1952 C5); área × sexo (1930 C9) y edad en "
            "decenios (1952 C7) solo para el país."),
-    1920: ("Falta edad", "Edad: estado civil por edad y sexo (págs. 235–275, PDF ~250); revisar su nivel territorial.",
-           "Departamento × área × sexo (Cuadro 4); edad del país en decenios (1952 C7). El Cuadro 3 tiene seis "
-           "cifras de 1920 que no cuadran: usar el Cuadro 4."),
+    1920: ("Núcleo completo",
+           "Opcional: comunas y subdelegaciones × área × sexo (Cuadro 5, págs. 8–104). La edad no viene por área ni bajo departamento.",
+           "Departamento × área × sexo (Cuadro 4) y departamento × sexo × edad en 28 grupos (cap. II, cuadro 4: 7.221 cifras; decenios = 1952 C7). Erratas: Talca (total del departamento = Cuadro 3 errado; 45–49 y 60–64), La Ligua (2 años), Llanquihue (40–44, 85–89)."),
     1930: ("Núcleo completo",
            "Opcional: comuna × sexo × edad simple (PDF ~337-480, muy extenso). Área × edad no viene.",
            "Comuna × área × sexo (Cuadro 9) y provincia × sexo × edad simple (tomo de edades, Cuadro 4: 5.253 cifras, totales = país y 1952 C5; décadas = 1952 C7). Erratas: Atacama (C9, C10), Valdivia edades 30, 31 y 40; compensadas en Cautín y Magallanes."),

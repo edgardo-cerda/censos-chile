@@ -1,0 +1,65 @@
+# Transcripción de las columnas TOTAL (hombres, mujeres, total) del cuadro 4 del capítulo II,
+# «Estado civil de los habitantes en 1920, con distinción de la edad y del sexo, por departamentos»
+# (págs. 234-275, PDF 249-290). Se omiten las columnas por estado civil (módulo temático), que sí se
+# usaron para verificar las cifras dudosas. 82 departamentos y el territorio de Magallanes, con 28
+# grupos de edad: menos de 1 año, 1 a 5 años simples, 6-7, 8-9, 10-11, 12-14, quinquenales de 15 a
+# 99 y 100 o más.
+
+fuente_id: pub_1920
+cuadro: "II.4"
+titulo: Estado civil de los habitantes en 1920, con distinción de la edad y del sexo, por departamentos
+paginas:
+  - {pdf: 249, impresa: "234", desde: Tarata}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion:
+  fecha: 2026-10-20
+  por: Claude (asistido)
+  recortes_dpi: 230-500
+  nota: >
+    Lectura visual de las columnas de total a 230 dpi; cada departamento se validó con hombres +
+    mujeres = total en cada fila, con la suma de las edades y con el total del Cuadro 4 del
+    capítulo I. La página de cada fila no se registra por separado (PDF 249-290 en orden).
+
+indicador: poblacion
+unidad: personas
+fijas: {censo: 1920, area: _T}
+
+territorio:
+  columna: territorio
+  nivel: {Magallanes: provincia, _otro: departamento}
+  dpa_version: provincias_1920
+
+filas:
+  edad_min: {columna: edad_min}
+  edad_max: {columna: edad_max}
+
+columnas:
+  hombres: {sexo: hombre}
+  mujeres: {sexo: mujer}
+  total: {sexo: _T}
+
+notas_cuadro:
+  - >
+    Los totales de los departamentos coinciden con el Cuadro 4 del capítulo I salvo Talca, que
+    repite la cifra errada del Cuadro 3 (84 623 en vez de 85 982); sus edades, en cambio, suman lo
+    del Cuadro 4 una vez corregidas dos erratas de fila (ver notas de celdas). Sin Tacna, los
+    decenios coinciden exactamente con el comparativo 7 de 1952.
+
+notas_celdas:
+  - {territorio: La Ligua, edad: "2 años", columna: total, estado_valor: inconsistente, nota: "Impreso 384; hombres + mujeres = 484."}
+  - {territorio: Talca, edad: "45-49", columna: hombres, estado_valor: inconsistente, nota: "Impreso 1 603; solteros + casados + viudos = 1 607, coherente con el total de la fila (3 237) y con 1952 C7."}
+  - {territorio: Talca, edad: "60-64", columna: mujeres, estado_valor: inconsistente, nota: "Impreso 1 295; solteras + casadas + viudas = 1 298."}
+  - {territorio: Talca, edad: "60-64", columna: total, estado_valor: inconsistente, nota: "Impreso 2 468; por estado civil 2 564 (1 266 + 1 298)."}
+  - {territorio: Talca, edad: Total, columna: hombres, estado_valor: inconsistente, nota: "Impreso 40 834 (como el Cuadro 3); las edades corregidas y el Cuadro 4 dan 41 521."}
+  - {territorio: Talca, edad: Total, columna: mujeres, estado_valor: inconsistente, nota: "Impreso 43 789; las edades corregidas y el Cuadro 4 dan 44 461."}
+  - {territorio: Talca, edad: Total, columna: total, estado_valor: inconsistente, nota: "Impreso 84 623; las edades corregidas y el Cuadro 4 dan 85 982."}
+  - {territorio: Llanquihue, edad: "40-44", columna: hombres, estado_valor: inconsistente, nota: "Impreso 1 130; por estado civil (198 + 781 + 51) y por el total de la fila (1 955 - 925) son 1 030."}
+  - {territorio: Llanquihue, edad: "85-89", columna: mujeres, estado_valor: inconsistente, nota: "Impreso 20; por estado civil (3 + 26) y por el total de la fila (43 - 14) son 29."}
+
+controles:
+  - {tipo: suma_dimension, dimension: sexo, total: _T, partes: [hombre, mujer]}
+  - tipo: suma_dimension
+    dimension: [edad_min, edad_max]
+    total: ["", ""]
+    partes: [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4], [5, 5], [6, 7], [8, 9], [10, 11], [12, 14], [15, 19], [20, 24], [25, 29], [30, 34], [35, 39], [40, 44], [45, 49], [50, 54], [55, 59], [60, 64], [65, 69], [70, 74], [75, 79], [80, 84], [85, 89], [90, 94], [95, 99], [100, ""]]

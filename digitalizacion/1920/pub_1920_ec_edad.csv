@@ -1,0 +1,2408 @@
+territorio,nivel,edad,edad_min,edad_max,hombres,mujeres,total
+Tarata,departamento,Menos de 1 año,0,0,69,77,146
+Tarata,departamento,1 año,1,1,50,36,86
+Tarata,departamento,2 años,2,2,67,75,142
+Tarata,departamento,3 años,3,3,70,67,137
+Tarata,departamento,4 años,4,4,67,60,127
+Tarata,departamento,5 años,5,5,81,75,156
+Tarata,departamento,6-7,6,7,160,137,297
+Tarata,departamento,8-9,8,9,136,130,266
+Tarata,departamento,10-11,10,11,97,92,189
+Tarata,departamento,12-14,12,14,181,129,310
+Tarata,departamento,15-19,15,19,185,170,355
+Tarata,departamento,20-24,20,24,140,164,304
+Tarata,departamento,25-29,25,29,127,160,287
+Tarata,departamento,30-34,30,34,131,165,296
+Tarata,departamento,35-39,35,39,136,131,267
+Tarata,departamento,40-44,40,44,131,145,276
+Tarata,departamento,45-49,45,49,100,84,184
+Tarata,departamento,50-54,50,54,111,82,193
+Tarata,departamento,55-59,55,59,31,53,84
+Tarata,departamento,60-64,60,64,79,75,154
+Tarata,departamento,65-69,65,69,17,23,40
+Tarata,departamento,70-74,70,74,32,43,75
+Tarata,departamento,75-79,75,79,13,15,28
+Tarata,departamento,80-84,80,84,25,30,55
+Tarata,departamento,85-89,85,89,8,8,16
+Tarata,departamento,90-94,90,94,9,17,26
+Tarata,departamento,95-99,95,99,2,4,6
+Tarata,departamento,100 ó más,100,,1,-,1
+Tarata,departamento,Total,,,2256,2247,4503
+Tacna,departamento,Menos de 1 año,0,0,190,223,413
+Tacna,departamento,1 año,1,1,120,133,253
+Tacna,departamento,2 años,2,2,180,205,385
+Tacna,departamento,3 años,3,3,163,218,381
+Tacna,departamento,4 años,4,4,173,205,378
+Tacna,departamento,5 años,5,5,184,201,385
+Tacna,departamento,6-7,6,7,410,410,820
+Tacna,departamento,8-9,8,9,376,364,740
+Tacna,departamento,10-11,10,11,343,349,692
+Tacna,departamento,12-14,12,14,488,467,955
+Tacna,departamento,15-19,15,19,1038,817,1855
+Tacna,departamento,20-24,20,24,2372,776,3148
+Tacna,departamento,25-29,25,29,1251,653,1904
+Tacna,departamento,30-34,30,34,1004,460,1464
+Tacna,departamento,35-39,35,39,1087,479,1566
+Tacna,departamento,40-44,40,44,847,313,1160
+Tacna,departamento,45-49,45,49,615,263,878
+Tacna,departamento,50-54,50,54,283,245,528
+Tacna,departamento,55-59,55,59,163,144,307
+Tacna,departamento,60-64,60,64,147,185,332
+Tacna,departamento,65-69,65,69,80,70,150
+Tacna,departamento,70-74,70,74,79,116,195
+Tacna,departamento,75-79,75,79,29,27,56
+Tacna,departamento,80-84,80,84,25,38,63
+Tacna,departamento,85-89,85,89,8,12,20
+Tacna,departamento,90-94,90,94,7,19,26
+Tacna,departamento,95-99,95,99,1,4,5
+Tacna,departamento,100 ó más,100,,-,2,2
+Tacna,departamento,Total,,,11663,7398,19061
+Arica,departamento,Menos de 1 año,0,0,193,239,432
+Arica,departamento,1 año,1,1,123,104,227
+Arica,departamento,2 años,2,2,208,189,397
+Arica,departamento,3 años,3,3,203,208,411
+Arica,departamento,4 años,4,4,171,196,367
+Arica,departamento,5 años,5,5,202,203,405
+Arica,departamento,6-7,6,7,346,374,720
+Arica,departamento,8-9,8,9,354,319,673
+Arica,departamento,10-11,10,11,320,269,589
+Arica,departamento,12-14,12,14,476,402,878
+Arica,departamento,15-19,15,19,744,664,1408
+Arica,departamento,20-24,20,24,867,640,1507
+Arica,departamento,25-29,25,29,882,617,1499
+Arica,departamento,30-34,30,34,859,438,1297
+Arica,departamento,35-39,35,39,863,427,1290
+Arica,departamento,40-44,40,44,714,303,1017
+Arica,departamento,45-49,45,49,575,261,836
+Arica,departamento,50-54,50,54,321,231,552
+Arica,departamento,55-59,55,59,146,123,269
+Arica,departamento,60-64,60,64,131,140,271
+Arica,departamento,65-69,65,69,53,53,106
+Arica,departamento,70-74,70,74,41,46,87
+Arica,departamento,75-79,75,79,20,15,35
+Arica,departamento,80-84,80,84,16,27,43
+Arica,departamento,85-89,85,89,1,6,7
+Arica,departamento,90-94,90,94,6,9,15
+Arica,departamento,95-99,95,99,2,3,5
+Arica,departamento,100 ó más,100,,1,4,5
+Arica,departamento,Total,,,8838,6510,15348
+Pisagua,departamento,Menos de 1 año,0,0,306,286,592
+Pisagua,departamento,1 año,1,1,196,151,347
+Pisagua,departamento,2 años,2,2,291,295,586
+Pisagua,departamento,3 años,3,3,254,276,530
+Pisagua,departamento,4 años,4,4,250,226,476
+Pisagua,departamento,5 años,5,5,237,224,461
+Pisagua,departamento,6-7,6,7,533,455,988
+Pisagua,departamento,8-9,8,9,451,433,884
+Pisagua,departamento,10-11,10,11,428,390,818
+Pisagua,departamento,12-14,12,14,630,518,1148
+Pisagua,departamento,15-19,15,19,1161,848,2009
+Pisagua,departamento,20-24,20,24,1394,793,2187
+Pisagua,departamento,25-29,25,29,1443,861,2304
+Pisagua,departamento,30-34,30,34,1208,592,1800
+Pisagua,departamento,35-39,35,39,1254,547,1801
+Pisagua,departamento,40-44,40,44,886,412,1298
+Pisagua,departamento,45-49,45,49,640,314,954
+Pisagua,departamento,50-54,50,54,458,271,729
+Pisagua,departamento,55-59,55,59,281,173,454
+Pisagua,departamento,60-64,60,64,207,155,362
+Pisagua,departamento,65-69,65,69,131,66,197
+Pisagua,departamento,70-74,70,74,61,54,115
+Pisagua,departamento,75-79,75,79,33,28,61
+Pisagua,departamento,80-84,80,84,27,23,50
+Pisagua,departamento,85-89,85,89,10,6,16
+Pisagua,departamento,90-94,90,94,7,5,12
+Pisagua,departamento,95-99,95,99,1,-,1
+Pisagua,departamento,100 ó más,100,,1,2,3
+Pisagua,departamento,Total,,,12779,8404,21183
+Tarapacá,departamento,Menos de 1 año,0,0,1180,1087,2267
+Tarapacá,departamento,1 año,1,1,615,593,1208
+Tarapacá,departamento,2 años,2,2,963,865,1828
+Tarapacá,departamento,3 años,3,3,950,893,1843
+Tarapacá,departamento,4 años,4,4,857,837,1694
+Tarapacá,departamento,5 años,5,5,886,860,1746
+Tarapacá,departamento,6-7,6,7,1887,1693,3580
+Tarapacá,departamento,8-9,8,9,1583,1629,3212
+Tarapacá,departamento,10-11,10,11,1675,1640,3315
+Tarapacá,departamento,12-14,12,14,2310,2321,4631
+Tarapacá,departamento,15-19,15,19,4039,3748,7787
+Tarapacá,departamento,20-24,20,24,4939,3540,8479
+Tarapacá,departamento,25-29,25,29,5057,3572,8629
+Tarapacá,departamento,30-34,30,34,4033,2494,6527
+Tarapacá,departamento,35-39,35,39,4099,2593,6692
+Tarapacá,departamento,40-44,40,44,3029,1929,4958
+Tarapacá,departamento,45-49,45,49,2067,1318,3385
+Tarapacá,departamento,50-54,50,54,1495,1198,2693
+Tarapacá,departamento,55-59,55,59,1012,741,1753
+Tarapacá,departamento,60-64,60,64,708,730,1438
+Tarapacá,departamento,65-69,65,69,325,318,643
+Tarapacá,departamento,70-74,70,74,254,295,549
+Tarapacá,departamento,75-79,75,79,93,125,218
+Tarapacá,departamento,80-84,80,84,56,112,168
+Tarapacá,departamento,85-89,85,89,23,32,55
+Tarapacá,departamento,90-94,90,94,18,33,51
+Tarapacá,departamento,95-99,95,99,2,9,11
+Tarapacá,departamento,100 ó más,100,,4,6,10
+Tarapacá,departamento,Total,,,44159,35211,79370
+Tocopilla,departamento,Menos de 1 año,0,0,431,437,868
+Tocopilla,departamento,1 año,1,1,129,142,271
+Tocopilla,departamento,2 años,2,2,297,282,579
+Tocopilla,departamento,3 años,3,3,293,293,586
+Tocopilla,departamento,4 años,4,4,248,284,532
+Tocopilla,departamento,5 años,5,5,315,250,565
+Tocopilla,departamento,6-7,6,7,549,483,1032
+Tocopilla,departamento,8-9,8,9,472,484,956
+Tocopilla,departamento,10-11,10,11,463,438,901
+Tocopilla,departamento,12-14,12,14,686,638,1324
+Tocopilla,departamento,15-19,15,19,1263,943,2206
+Tocopilla,departamento,20-24,20,24,1551,909,2460
+Tocopilla,departamento,25-29,25,29,1838,875,2713
+Tocopilla,departamento,30-34,30,34,1536,657,2193
+Tocopilla,departamento,35-39,35,39,1481,723,2204
+Tocopilla,departamento,40-44,40,44,1085,449,1534
+Tocopilla,departamento,45-49,45,49,735,316,1051
+Tocopilla,departamento,50-54,50,54,472,262,734
+Tocopilla,departamento,55-59,55,59,347,141,488
+Tocopilla,departamento,60-64,60,64,178,130,308
+Tocopilla,departamento,65-69,65,69,104,63,167
+Tocopilla,departamento,70-74,70,74,52,50,102
+Tocopilla,departamento,75-79,75,79,26,14,40
+Tocopilla,departamento,80-84,80,84,14,21,35
+Tocopilla,departamento,85-89,85,89,6,4,10
+Tocopilla,departamento,90-94,90,94,2,3,5
+Tocopilla,departamento,95-99,95,99,-,-,-
+Tocopilla,departamento,100 ó más,100,,-,1,1
+Tocopilla,departamento,Total,,,14573,9292,23865
+Antofagasta,departamento,Menos de 1 año,0,0,1838,1785,3623
+Antofagasta,departamento,1 año,1,1,951,963,1914
+Antofagasta,departamento,2 años,2,2,1453,1463,2916
+Antofagasta,departamento,3 años,3,3,1444,1431,2875
+Antofagasta,departamento,4 años,4,4,1301,1321,2622
+Antofagasta,departamento,5 años,5,5,1408,1265,2673
+Antofagasta,departamento,6-7,6,7,2707,2682,5389
+Antofagasta,departamento,8-9,8,9,2333,2391,4724
+Antofagasta,departamento,10-11,10,11,2378,2305,4683
+Antofagasta,departamento,12-14,12,14,3140,3177,6317
+Antofagasta,departamento,15-19,15,19,6173,5170,11343
+Antofagasta,departamento,20-24,20,24,7864,5412,13276
+Antofagasta,departamento,25-29,25,29,8876,5449,14325
+Antofagasta,departamento,30-34,30,34,7446,4287,11733
+Antofagasta,departamento,35-39,35,39,7201,4111,11312
+Antofagasta,departamento,40-44,40,44,4980,2776,7756
+Antofagasta,departamento,45-49,45,49,2958,1811,4769
+Antofagasta,departamento,50-54,50,54,1977,1464,3441
+Antofagasta,departamento,55-59,55,59,1087,889,1976
+Antofagasta,departamento,60-64,60,64,838,836,1674
+Antofagasta,departamento,65-69,65,69,309,301,610
+Antofagasta,departamento,70-74,70,74,253,253,506
+Antofagasta,departamento,75-79,75,79,119,100,219
+Antofagasta,departamento,80-84,80,84,55,106,161
+Antofagasta,departamento,85-89,85,89,21,46,67
+Antofagasta,departamento,90-94,90,94,23,37,60
+Antofagasta,departamento,95-99,95,99,6,20,26
+Antofagasta,departamento,100 ó más,100,,4,13,17
+Antofagasta,departamento,Total,,,69143,51864,121007
+Taltal,departamento,Menos de 1 año,0,0,418,426,844
+Taltal,departamento,1 año,1,1,220,224,444
+Taltal,departamento,2 años,2,2,268,262,530
+Taltal,departamento,3 años,3,3,305,281,586
+Taltal,departamento,4 años,4,4,283,282,565
+Taltal,departamento,5 años,5,5,316,290,606
+Taltal,departamento,6-7,6,7,662,642,1304
+Taltal,departamento,8-9,8,9,594,567,1161
+Taltal,departamento,10-11,10,11,586,560,1146
+Taltal,departamento,12-14,12,14,782,824,1606
+Taltal,departamento,15-19,15,19,1671,1330,3001
+Taltal,departamento,20-24,20,24,1667,1265,2932
+Taltal,departamento,25-29,25,29,1718,1104,2822
+Taltal,departamento,30-34,30,34,1445,831,2276
+Taltal,departamento,35-39,35,39,1571,928,2499
+Taltal,departamento,40-44,40,44,1157,625,1782
+Taltal,departamento,45-49,45,49,734,349,1083
+Taltal,departamento,50-54,50,54,543,325,868
+Taltal,departamento,55-59,55,59,360,181,541
+Taltal,departamento,60-64,60,64,244,168,412
+Taltal,departamento,65-69,65,69,92,74,166
+Taltal,departamento,70-74,70,74,75,67,142
+Taltal,departamento,75-79,75,79,22,33,55
+Taltal,departamento,80-84,80,84,23,22,45
+Taltal,departamento,85-89,85,89,10,10,20
+Taltal,departamento,90-94,90,94,4,8,12
+Taltal,departamento,95-99,95,99,4,3,7
+Taltal,departamento,100 ó más,100,,1,2,3
+Taltal,departamento,Total,,,15775,11683,27458
+Chañaral,departamento,Menos de 1 año,0,0,77,61,138
+Chañaral,departamento,1 año,1,1,73,65,138
+Chañaral,departamento,2 años,2,2,66,56,122
+Chañaral,departamento,3 años,3,3,75,64,139
+Chañaral,departamento,4 años,4,4,47,59,106
+Chañaral,departamento,5 años,5,5,75,53,128
+Chañaral,departamento,6-7,6,7,147,124,271
+Chañaral,departamento,8-9,8,9,109,109,218
+Chañaral,departamento,10-11,10,11,121,116,237
+Chañaral,departamento,12-14,12,14,165,159,324
+Chañaral,departamento,15-19,15,19,282,262,544
+Chañaral,departamento,20-24,20,24,278,241,519
+Chañaral,departamento,25-29,25,29,287,226,513
+Chañaral,departamento,30-34,30,34,268,153,421
+Chañaral,departamento,35-39,35,39,216,153,369
+Chañaral,departamento,40-44,40,44,212,105,317
+Chañaral,departamento,45-49,45,49,140,87,227
+Chañaral,departamento,50-54,50,54,95,54,149
+Chañaral,departamento,55-59,55,59,65,37,102
+Chañaral,departamento,60-64,60,64,37,31,68
+Chañaral,departamento,65-69,65,69,22,22,44
+Chañaral,departamento,70-74,70,74,16,12,28
+Chañaral,departamento,75-79,75,79,12,8,20
+Chañaral,departamento,80-84,80,84,3,3,6
+Chañaral,departamento,85-89,85,89,-,1,1
+Chañaral,departamento,90-94,90,94,-,-,-
+Chañaral,departamento,95-99,95,99,-,-,-
+Chañaral,departamento,100 ó más,100,,-,-,-
+Chañaral,departamento,Total,,,2888,2261,5149
+Copiapó,departamento,Menos de 1 año,0,0,310,294,604
+Copiapó,departamento,1 año,1,1,195,163,358
+Copiapó,departamento,2 años,2,2,260,252,512
+Copiapó,departamento,3 años,3,3,278,272,550
+Copiapó,departamento,4 años,4,4,266,233,499
+Copiapó,departamento,5 años,5,5,279,260,539
+Copiapó,departamento,6-7,6,7,540,539,1079
+Copiapó,departamento,8-9,8,9,469,501,970
+Copiapó,departamento,10-11,10,11,526,513,1039
+Copiapó,departamento,12-14,12,14,765,784,1549
+Copiapó,departamento,15-19,15,19,1146,1210,2356
+Copiapó,departamento,20-24,20,24,776,987,1763
+Copiapó,departamento,25-29,25,29,658,835,1493
+Copiapó,departamento,30-34,30,34,603,634,1237
+Copiapó,departamento,35-39,35,39,638,660,1298
+Copiapó,departamento,40-44,40,44,554,558,1112
+Copiapó,departamento,45-49,45,49,468,482,950
+Copiapó,departamento,50-54,50,54,420,369,789
+Copiapó,departamento,55-59,55,59,352,277,629
+Copiapó,departamento,60-64,60,64,255,289,544
+Copiapó,departamento,65-69,65,69,181,153,334
+Copiapó,departamento,70-74,70,74,118,111,229
+Copiapó,departamento,75-79,75,79,49,70,119
+Copiapó,departamento,80-84,80,84,30,49,79
+Copiapó,departamento,85-89,85,89,17,16,33
+Copiapó,departamento,90-94,90,94,5,12,17
+Copiapó,departamento,95-99,95,99,1,1,2
+Copiapó,departamento,100 ó más,100,,1,5,6
+Copiapó,departamento,Total,,,10160,10529,20689
+Freirina,departamento,Menos de 1 año,0,0,99,100,199
+Freirina,departamento,1 año,1,1,59,53,112
+Freirina,departamento,2 años,2,2,101,97,198
+Freirina,departamento,3 años,3,3,102,108,210
+Freirina,departamento,4 años,4,4,81,82,163
+Freirina,departamento,5 años,5,5,99,115,214
+Freirina,departamento,6-7,6,7,230,177,407
+Freirina,departamento,8-9,8,9,159,178,337
+Freirina,departamento,10-11,10,11,172,173,345
+Freirina,departamento,12-14,12,14,270,259,529
+Freirina,departamento,15-19,15,19,368,413,781
+Freirina,departamento,20-24,20,24,194,288,482
+Freirina,departamento,25-29,25,29,171,223,394
+Freirina,departamento,30-34,30,34,172,213,385
+Freirina,departamento,35-39,35,39,205,212,417
+Freirina,departamento,40-44,40,44,137,139,276
+Freirina,departamento,45-49,45,49,97,109,206
+Freirina,departamento,50-54,50,54,112,112,224
+Freirina,departamento,55-59,55,59,71,77,148
+Freirina,departamento,60-64,60,64,102,94,196
+Freirina,departamento,65-69,65,69,47,45,92
+Freirina,departamento,70-74,70,74,36,46,82
+Freirina,departamento,75-79,75,79,19,14,33
+Freirina,departamento,80-84,80,84,16,12,28
+Freirina,departamento,85-89,85,89,5,4,9
+Freirina,departamento,90-94,90,94,5,7,12
+Freirina,departamento,95-99,95,99,1,-,1
+Freirina,departamento,100 ó más,100,,-,-,-
+Freirina,departamento,Total,,,3130,3350,6480
+Vallenar,departamento,Menos de 1 año,0,0,280,281,561
+Vallenar,departamento,1 año,1,1,133,131,264
+Vallenar,departamento,2 años,2,2,212,202,414
+Vallenar,departamento,3 años,3,3,232,214,446
+Vallenar,departamento,4 años,4,4,211,225,436
+Vallenar,departamento,5 años,5,5,219,239,458
+Vallenar,departamento,6-7,6,7,495,471,966
+Vallenar,departamento,8-9,8,9,397,411,808
+Vallenar,departamento,10-11,10,11,375,379,754
+Vallenar,departamento,12-14,12,14,656,689,1345
+Vallenar,departamento,15-19,15,19,878,1052,1930
+Vallenar,departamento,20-24,20,24,521,813,1334
+Vallenar,departamento,25-29,25,29,454,679,1133
+Vallenar,departamento,30-34,30,34,384,494,878
+Vallenar,departamento,35-39,35,39,386,524,910
+Vallenar,departamento,40-44,40,44,381,461,842
+Vallenar,departamento,45-49,45,49,324,292,616
+Vallenar,departamento,50-54,50,54,294,263,557
+Vallenar,departamento,55-59,55,59,196,189,385
+Vallenar,departamento,60-64,60,64,217,213,430
+Vallenar,departamento,65-69,65,69,109,108,217
+Vallenar,departamento,70-74,70,74,108,105,213
+Vallenar,departamento,75-79,75,79,46,35,81
+Vallenar,departamento,80-84,80,84,22,35,57
+Vallenar,departamento,85-89,85,89,8,23,31
+Vallenar,departamento,90-94,90,94,5,9,14
+Vallenar,departamento,95-99,95,99,6,5,11
+Vallenar,departamento,100 ó más,100,,-,4,4
+Vallenar,departamento,Total,,,7549,8546,16095
+La Serena,departamento,Menos de 1 año,0,0,512,523,1035
+La Serena,departamento,1 año,1,1,245,283,528
+La Serena,departamento,2 años,2,2,414,383,797
+La Serena,departamento,3 años,3,3,417,387,804
+La Serena,departamento,4 años,4,4,420,444,864
+La Serena,departamento,5 años,5,5,451,451,902
+La Serena,departamento,6-7,6,7,887,832,1719
+La Serena,departamento,8-9,8,9,731,756,1487
+La Serena,departamento,10-11,10,11,785,768,1553
+La Serena,departamento,12-14,12,14,1261,1311,2572
+La Serena,departamento,15-19,15,19,1577,2070,3647
+La Serena,departamento,20-24,20,24,889,1556,2445
+La Serena,departamento,25-29,25,29,772,1460,2232
+La Serena,departamento,30-34,30,34,713,1158,1871
+La Serena,departamento,35-39,35,39,822,1164,1986
+La Serena,departamento,40-44,40,44,702,847,1549
+La Serena,departamento,45-49,45,49,517,673,1190
+La Serena,departamento,50-54,50,54,491,675,1166
+La Serena,departamento,55-59,55,59,404,434,838
+La Serena,departamento,60-64,60,64,355,518,873
+La Serena,departamento,65-69,65,69,200,252,452
+La Serena,departamento,70-74,70,74,172,250,422
+La Serena,departamento,75-79,75,79,75,106,181
+La Serena,departamento,80-84,80,84,45,111,156
+La Serena,departamento,85-89,85,89,18,40,58
+La Serena,departamento,90-94,90,94,9,31,40
+La Serena,departamento,95-99,95,99,4,11,15
+La Serena,departamento,100 ó más,100,,4,3,7
+La Serena,departamento,Total,,,13892,17497,31389
+Coquimbo,departamento,Menos de 1 año,0,0,329,320,649
+Coquimbo,departamento,1 año,1,1,201,187,388
+Coquimbo,departamento,2 años,2,2,288,285,573
+Coquimbo,departamento,3 años,3,3,279,298,577
+Coquimbo,departamento,4 años,4,4,267,281,548
+Coquimbo,departamento,5 años,5,5,306,314,620
+Coquimbo,departamento,6-7,6,7,619,578,1197
+Coquimbo,departamento,8-9,8,9,521,534,1055
+Coquimbo,departamento,10-11,10,11,536,535,1071
+Coquimbo,departamento,12-14,12,14,807,816,1623
+Coquimbo,departamento,15-19,15,19,1336,1344,2680
+Coquimbo,departamento,20-24,20,24,882,1196,2078
+Coquimbo,departamento,25-29,25,29,770,1019,1789
+Coquimbo,departamento,30-34,30,34,626,758,1384
+Coquimbo,departamento,35-39,35,39,615,809,1424
+Coquimbo,departamento,40-44,40,44,548,589,1137
+Coquimbo,departamento,45-49,45,49,409,412,821
+Coquimbo,departamento,50-54,50,54,345,416,761
+Coquimbo,departamento,55-59,55,59,296,265,561
+Coquimbo,departamento,60-64,60,64,219,309,528
+Coquimbo,departamento,65-69,65,69,126,121,247
+Coquimbo,departamento,70-74,70,74,121,149,270
+Coquimbo,departamento,75-79,75,79,45,63,108
+Coquimbo,departamento,80-84,80,84,44,72,116
+Coquimbo,departamento,85-89,85,89,10,18,28
+Coquimbo,departamento,90-94,90,94,7,22,29
+Coquimbo,departamento,95-99,95,99,-,9,9
+Coquimbo,departamento,100 ó más,100,,3,1,4
+Coquimbo,departamento,Total,,,10555,11720,22275
+Elqui,departamento,Menos de 1 año,0,0,245,187,432
+Elqui,departamento,1 año,1,1,142,145,287
+Elqui,departamento,2 años,2,2,168,144,312
+Elqui,departamento,3 años,3,3,198,183,381
+Elqui,departamento,4 años,4,4,218,197,415
+Elqui,departamento,5 años,5,5,217,183,400
+Elqui,departamento,6-7,6,7,415,405,820
+Elqui,departamento,8-9,8,9,354,356,710
+Elqui,departamento,10-11,10,11,386,347,733
+Elqui,departamento,12-14,12,14,571,540,1111
+Elqui,departamento,15-19,15,19,795,819,1614
+Elqui,departamento,20-24,20,24,481,658,1139
+Elqui,departamento,25-29,25,29,448,600,1048
+Elqui,departamento,30-34,30,34,447,539,986
+Elqui,departamento,35-39,35,39,475,495,970
+Elqui,departamento,40-44,40,44,431,387,818
+Elqui,departamento,45-49,45,49,315,271,586
+Elqui,departamento,50-54,50,54,338,308,646
+Elqui,departamento,55-59,55,59,220,174,394
+Elqui,departamento,60-64,60,64,263,256,519
+Elqui,departamento,65-69,65,69,129,131,260
+Elqui,departamento,70-74,70,74,118,113,231
+Elqui,departamento,75-79,75,79,53,40,93
+Elqui,departamento,80-84,80,84,35,33,68
+Elqui,departamento,85-89,85,89,12,19,31
+Elqui,departamento,90-94,90,94,5,10,15
+Elqui,departamento,95-99,95,99,-,5,5
+Elqui,departamento,100 ó más,100,,1,2,3
+Elqui,departamento,Total,,,7480,7547,15027
+Ovalle,departamento,Menos de 1 año,0,0,832,841,1673
+Ovalle,departamento,1 año,1,1,493,493,986
+Ovalle,departamento,2 años,2,2,745,655,1400
+Ovalle,departamento,3 años,3,3,796,753,1549
+Ovalle,departamento,4 años,4,4,775,787,1562
+Ovalle,departamento,5 años,5,5,801,877,1678
+Ovalle,departamento,6-7,6,7,1604,1591,3195
+Ovalle,departamento,8-9,8,9,1442,1378,2820
+Ovalle,departamento,10-11,10,11,1432,1370,2802
+Ovalle,departamento,12-14,12,14,2341,2074,4415
+Ovalle,departamento,15-19,15,19,2864,3131,5995
+Ovalle,departamento,20-24,20,24,1539,2402,3941
+Ovalle,departamento,25-29,25,29,1215,2139,3354
+Ovalle,departamento,30-34,30,34,1100,1625,2725
+Ovalle,departamento,35-39,35,39,1202,1686,2888
+Ovalle,departamento,40-44,40,44,1090,1403,2493
+Ovalle,departamento,45-49,45,49,797,941,1738
+Ovalle,departamento,50-54,50,54,843,958,1801
+Ovalle,departamento,55-59,55,59,601,618,1219
+Ovalle,departamento,60-64,60,64,638,768,1406
+Ovalle,departamento,65-69,65,69,306,383,689
+Ovalle,departamento,70-74,70,74,352,410,762
+Ovalle,departamento,75-79,75,79,138,174,312
+Ovalle,departamento,80-84,80,84,117,160,277
+Ovalle,departamento,85-89,85,89,38,54,92
+Ovalle,departamento,90-94,90,94,30,44,74
+Ovalle,departamento,95-99,95,99,7,9,16
+Ovalle,departamento,100 ó más,100,,3,14,17
+Ovalle,departamento,Total,,,24141,27738,51879
+Combarbalá,departamento,Menos de 1 año,0,0,301,275,576
+Combarbalá,departamento,1 año,1,1,115,100,215
+Combarbalá,departamento,2 años,2,2,218,195,413
+Combarbalá,departamento,3 años,3,3,194,234,428
+Combarbalá,departamento,4 años,4,4,251,233,484
+Combarbalá,departamento,5 años,5,5,274,266,540
+Combarbalá,departamento,6-7,6,7,509,493,1002
+Combarbalá,departamento,8-9,8,9,520,438,958
+Combarbalá,departamento,10-11,10,11,431,395,826
+Combarbalá,departamento,12-14,12,14,660,656,1316
+Combarbalá,departamento,15-19,15,19,846,937,1783
+Combarbalá,departamento,20-24,20,24,372,675,1047
+Combarbalá,departamento,25-29,25,29,292,570,862
+Combarbalá,departamento,30-34,30,34,305,465,770
+Combarbalá,departamento,35-39,35,39,338,492,830
+Combarbalá,departamento,40-44,40,44,306,396,702
+Combarbalá,departamento,45-49,45,49,254,258,512
+Combarbalá,departamento,50-54,50,54,211,283,494
+Combarbalá,departamento,55-59,55,59,185,178,363
+Combarbalá,departamento,60-64,60,64,155,202,357
+Combarbalá,departamento,65-69,65,69,81,95,176
+Combarbalá,departamento,70-74,70,74,79,106,185
+Combarbalá,departamento,75-79,75,79,33,49,82
+Combarbalá,departamento,80-84,80,84,20,36,56
+Combarbalá,departamento,85-89,85,89,10,14,24
+Combarbalá,departamento,90-94,90,94,5,10,15
+Combarbalá,departamento,95-99,95,99,1,13,14
+Combarbalá,departamento,100 ó más,100,,1,1,2
+Combarbalá,departamento,Total,,,6967,8065,15032
+Illapel,departamento,Menos de 1 año,0,0,401,371,772
+Illapel,departamento,1 año,1,1,189,186,375
+Illapel,departamento,2 años,2,2,337,335,672
+Illapel,departamento,3 años,3,3,385,363,748
+Illapel,departamento,4 años,4,4,385,355,740
+Illapel,departamento,5 años,5,5,400,387,787
+Illapel,departamento,6-7,6,7,774,809,1583
+Illapel,departamento,8-9,8,9,713,662,1375
+Illapel,departamento,10-11,10,11,651,651,1302
+Illapel,departamento,12-14,12,14,1024,1038,2062
+Illapel,departamento,15-19,15,19,1345,1535,2880
+Illapel,departamento,20-24,20,24,717,1234,1951
+Illapel,departamento,25-29,25,29,595,959,1554
+Illapel,departamento,30-34,30,34,544,788,1332
+Illapel,departamento,35-39,35,39,533,782,1315
+Illapel,departamento,40-44,40,44,544,690,1234
+Illapel,departamento,45-49,45,49,393,434,827
+Illapel,departamento,50-54,50,54,366,531,897
+Illapel,departamento,55-59,55,59,249,285,534
+Illapel,departamento,60-64,60,64,297,377,674
+Illapel,departamento,65-69,65,69,147,171,318
+Illapel,departamento,70-74,70,74,160,183,343
+Illapel,departamento,75-79,75,79,62,74,136
+Illapel,departamento,80-84,80,84,56,94,150
+Illapel,departamento,85-89,85,89,16,17,33
+Illapel,departamento,90-94,90,94,8,30,38
+Illapel,departamento,95-99,95,99,3,8,11
+Illapel,departamento,100 ó más,100,,4,7,11
+Illapel,departamento,Total,,,11298,13356,24654
+Petorca,departamento,Menos de 1 año,0,0,396,371,767
+Petorca,departamento,1 año,1,1,232,208,440
+Petorca,departamento,2 años,2,2,415,364,779
+Petorca,departamento,3 años,3,3,407,393,800
+Petorca,departamento,4 años,4,4,458,408,866
+Petorca,departamento,5 años,5,5,460,439,899
+Petorca,departamento,6-7,6,7,900,843,1743
+Petorca,departamento,8-9,8,9,789,741,1530
+Petorca,departamento,10-11,10,11,727,651,1378
+Petorca,departamento,12-14,12,14,1171,1079,2250
+Petorca,departamento,15-19,15,19,1542,1488,3030
+Petorca,departamento,20-24,20,24,1135,1147,2282
+Petorca,departamento,25-29,25,29,900,1026,1926
+Petorca,departamento,30-34,30,34,619,742,1361
+Petorca,departamento,35-39,35,39,691,779,1470
+Petorca,departamento,40-44,40,44,634,633,1267
+Petorca,departamento,45-49,45,49,499,494,993
+Petorca,departamento,50-54,50,54,427,461,888
+Petorca,departamento,55-59,55,59,355,256,611
+Petorca,departamento,60-64,60,64,328,389,717
+Petorca,departamento,65-69,65,69,211,202,413
+Petorca,departamento,70-74,70,74,164,203,367
+Petorca,departamento,75-79,75,79,66,80,146
+Petorca,departamento,80-84,80,84,46,66,112
+Petorca,departamento,85-89,85,89,18,31,49
+Petorca,departamento,90-94,90,94,14,26,40
+Petorca,departamento,95-99,95,99,4,16,20
+Petorca,departamento,100 ó más,100,,2,9,11
+Petorca,departamento,Total,,,13610,13545,27155
+La Ligua,departamento,Menos de 1 año,0,0,310,299,609
+La Ligua,departamento,1 año,1,1,109,117,226
+La Ligua,departamento,2 años,2,2,244,240,384
+La Ligua,departamento,3 años,3,3,238,261,499
+La Ligua,departamento,4 años,4,4,272,249,521
+La Ligua,departamento,5 años,5,5,289,298,587
+La Ligua,departamento,6-7,6,7,571,574,1145
+La Ligua,departamento,8-9,8,9,510,498,1008
+La Ligua,departamento,10-11,10,11,461,470,931
+La Ligua,departamento,12-14,12,14,709,681,1390
+La Ligua,departamento,15-19,15,19,906,1019,1925
+La Ligua,departamento,20-24,20,24,579,726,1305
+La Ligua,departamento,25-29,25,29,521,666,1187
+La Ligua,departamento,30-34,30,34,382,537,919
+La Ligua,departamento,35-39,35,39,467,505,972
+La Ligua,departamento,40-44,40,44,408,459,867
+La Ligua,departamento,45-49,45,49,342,318,660
+La Ligua,departamento,50-54,50,54,307,288,595
+La Ligua,departamento,55-59,55,59,191,171,362
+La Ligua,departamento,60-64,60,64,190,223,413
+La Ligua,departamento,65-69,65,69,110,94,204
+La Ligua,departamento,70-74,70,74,111,101,212
+La Ligua,departamento,75-79,75,79,35,54,89
+La Ligua,departamento,80-84,80,84,50,48,98
+La Ligua,departamento,85-89,85,89,11,11,22
+La Ligua,departamento,90-94,90,94,14,12,26
+La Ligua,departamento,95-99,95,99,3,6,9
+La Ligua,departamento,100 ó más,100,,5,6,11
+La Ligua,departamento,Total,,,8345,8931,17276
+Putaendo,departamento,Menos de 1 año,0,0,268,215,483
+Putaendo,departamento,1 año,1,1,139,101,240
+Putaendo,departamento,2 años,2,2,198,169,367
+Putaendo,departamento,3 años,3,3,230,244,474
+Putaendo,departamento,4 años,4,4,232,266,498
+Putaendo,departamento,5 años,5,5,229,249,478
+Putaendo,departamento,6-7,6,7,499,519,1018
+Putaendo,departamento,8-9,8,9,417,465,882
+Putaendo,departamento,10-11,10,11,391,396,787
+Putaendo,departamento,12-14,12,14,656,596,1252
+Putaendo,departamento,15-19,15,19,776,802,1578
+Putaendo,departamento,20-24,20,24,552,596,1148
+Putaendo,departamento,25-29,25,29,485,572,1057
+Putaendo,departamento,30-34,30,34,419,491,910
+Putaendo,departamento,35-39,35,39,427,468,895
+Putaendo,departamento,40-44,40,44,399,431,830
+Putaendo,departamento,45-49,45,49,319,284,603
+Putaendo,departamento,50-54,50,54,317,311,628
+Putaendo,departamento,55-59,55,59,203,160,363
+Putaendo,departamento,60-64,60,64,220,258,478
+Putaendo,departamento,65-69,65,69,114,115,229
+Putaendo,departamento,70-74,70,74,109,117,226
+Putaendo,departamento,75-79,75,79,44,38,82
+Putaendo,departamento,80-84,80,84,43,60,103
+Putaendo,departamento,85-89,85,89,15,18,33
+Putaendo,departamento,90-94,90,94,6,22,28
+Putaendo,departamento,95-99,95,99,4,7,11
+Putaendo,departamento,100 ó más,100,,1,5,6
+Putaendo,departamento,Total,,,7712,7975,15687
+San Felipe,departamento,Menos de 1 año,0,0,420,444,864
+San Felipe,departamento,1 año,1,1,197,218,415
+San Felipe,departamento,2 años,2,2,359,367,726
+San Felipe,departamento,3 años,3,3,385,399,784
+San Felipe,departamento,4 años,4,4,388,387,775
+San Felipe,departamento,5 años,5,5,398,402,800
+San Felipe,departamento,6-7,6,7,829,839,1668
+San Felipe,departamento,8-9,8,9,743,747,1490
+San Felipe,departamento,10-11,10,11,652,608,1260
+San Felipe,departamento,12-14,12,14,1048,1028,2076
+San Felipe,departamento,15-19,15,19,1372,1566,2938
+San Felipe,departamento,20-24,20,24,1259,1345,2604
+San Felipe,departamento,25-29,25,29,892,1186,2078
+San Felipe,departamento,30-34,30,34,767,937,1704
+San Felipe,departamento,35-39,35,39,678,872,1550
+San Felipe,departamento,40-44,40,44,679,707,1386
+San Felipe,departamento,45-49,45,49,505,545,1050
+San Felipe,departamento,50-54,50,54,491,628,1119
+San Felipe,departamento,55-59,55,59,276,308,584
+San Felipe,departamento,60-64,60,64,348,503,851
+San Felipe,departamento,65-69,65,69,149,163,312
+San Felipe,departamento,70-74,70,74,168,212,380
+San Felipe,departamento,75-79,75,79,48,75,123
+San Felipe,departamento,80-84,80,84,47,88,135
+San Felipe,departamento,85-89,85,89,17,26,43
+San Felipe,departamento,90-94,90,94,15,24,39
+San Felipe,departamento,95-99,95,99,1,10,11
+San Felipe,departamento,100 ó más,100,,3,6,9
+San Felipe,departamento,Total,,,13134,14640,27774
+Los Andes,departamento,Menos de 1 año,0,0,457,419,876
+Los Andes,departamento,1 año,1,1,217,204,421
+Los Andes,departamento,2 años,2,2,383,353,736
+Los Andes,departamento,3 años,3,3,340,383,723
+Los Andes,departamento,4 años,4,4,369,369,738
+Los Andes,departamento,5 años,5,5,406,411,817
+Los Andes,departamento,6-7,6,7,899,842,1741
+Los Andes,departamento,8-9,8,9,760,755,1515
+Los Andes,departamento,10-11,10,11,677,710,1387
+Los Andes,departamento,12-14,12,14,1088,1049,2137
+Los Andes,departamento,15-19,15,19,1425,1598,3023
+Los Andes,departamento,20-24,20,24,1155,1381,2536
+Los Andes,departamento,25-29,25,29,1043,1163,2206
+Los Andes,departamento,30-34,30,34,876,977,1853
+Los Andes,departamento,35-39,35,39,833,924,1757
+Los Andes,departamento,40-44,40,44,867,765,1632
+Los Andes,departamento,45-49,45,49,621,587,1208
+Los Andes,departamento,50-54,50,54,568,531,1099
+Los Andes,departamento,55-59,55,59,351,297,648
+Los Andes,departamento,60-64,60,64,384,465,849
+Los Andes,departamento,65-69,65,69,171,156,327
+Los Andes,departamento,70-74,70,74,194,184,378
+Los Andes,departamento,75-79,75,79,81,63,144
+Los Andes,departamento,80-84,80,84,58,92,150
+Los Andes,departamento,85-89,85,89,20,24,44
+Los Andes,departamento,90-94,90,94,20,27,47
+Los Andes,departamento,95-99,95,99,5,11,16
+Los Andes,departamento,100 ó más,100,,5,9,14
+Los Andes,departamento,Total,,,14273,14749,29022
+Quillota,departamento,Menos de 1 año,0,0,917,896,1813
+Quillota,departamento,1 año,1,1,434,451,885
+Quillota,departamento,2 años,2,2,763,698,1461
+Quillota,departamento,3 años,3,3,790,799,1589
+Quillota,departamento,4 años,4,4,771,790,1561
+Quillota,departamento,5 años,5,5,831,854,1685
+Quillota,departamento,6-7,6,7,1778,1739,3517
+Quillota,departamento,8-9,8,9,1508,1512,3020
+Quillota,departamento,10-11,10,11,1443,1405,2848
+Quillota,departamento,12-14,12,14,2066,2061,4127
+Quillota,departamento,15-19,15,19,2954,3053,6007
+Quillota,departamento,20-24,20,24,2324,2607,4931
+Quillota,departamento,25-29,25,29,2127,2367,4494
+Quillota,departamento,30-34,30,34,1757,1758,3515
+Quillota,departamento,35-39,35,39,1654,1769,3423
+Quillota,departamento,40-44,40,44,1679,1530,3209
+Quillota,departamento,45-49,45,49,1058,965,2023
+Quillota,departamento,50-54,50,54,1115,1050,2165
+Quillota,departamento,55-59,55,59,680,621,1301
+Quillota,departamento,60-64,60,64,811,829,1640
+Quillota,departamento,65-69,65,69,305,311,616
+Quillota,departamento,70-74,70,74,369,407,776
+Quillota,departamento,75-79,75,79,120,103,223
+Quillota,departamento,80-84,80,84,112,151,263
+Quillota,departamento,85-89,85,89,30,32,62
+Quillota,departamento,90-94,90,94,17,43,60
+Quillota,departamento,95-99,95,99,11,8,19
+Quillota,departamento,100 ó más,100,,6,17,23
+Quillota,departamento,Total,,,28430,28826,57256
+Limache,departamento,Menos de 1 año,0,0,410,432,842
+Limache,departamento,1 año,1,1,206,212,418
+Limache,departamento,2 años,2,2,355,354,709
+Limache,departamento,3 años,3,3,389,362,751
+Limache,departamento,4 años,4,4,354,351,705
+Limache,departamento,5 años,5,5,442,412,854
+Limache,departamento,6-7,6,7,769,777,1546
+Limache,departamento,8-9,8,9,688,704,1392
+Limache,departamento,10-11,10,11,619,631,1250
+Limache,departamento,12-14,12,14,884,860,1744
+Limache,departamento,15-19,15,19,1213,1370,2583
+Limache,departamento,20-24,20,24,961,1126,2087
+Limache,departamento,25-29,25,29,856,1117,1973
+Limache,departamento,30-34,30,34,784,806,1590
+Limache,departamento,35-39,35,39,818,817,1635
+Limache,departamento,40-44,40,44,763,662,1425
+Limache,departamento,45-49,45,49,514,497,1011
+Limache,departamento,50-54,50,54,496,513,1009
+Limache,departamento,55-59,55,59,345,293,638
+Limache,departamento,60-64,60,64,333,374,707
+Limache,departamento,65-69,65,69,206,171,377
+Limache,departamento,70-74,70,74,166,172,338
+Limache,departamento,75-79,75,79,73,74,147
+Limache,departamento,80-84,80,84,56,93,149
+Limache,departamento,85-89,85,89,11,14,25
+Limache,departamento,90-94,90,94,16,19,35
+Limache,departamento,95-99,95,99,8,8,16
+Limache,departamento,100 ó más,100,,2,5,7
+Limache,departamento,Total,,,12737,13226,25963
+Valparaíso,departamento,Menos de 1 año,0,0,3283,3231,6514
+Valparaíso,departamento,1 año,1,1,1581,1625,3206
+Valparaíso,departamento,2 años,2,2,2357,2412,4769
+Valparaíso,departamento,3 años,3,3,2549,2551,5100
+Valparaíso,departamento,4 años,4,4,2554,2577,5131
+Valparaíso,departamento,5 años,5,5,2885,2658,5543
+Valparaíso,departamento,6-7,6,7,5622,5417,11039
+Valparaíso,departamento,8-9,8,9,4883,5073,9956
+Valparaíso,departamento,10-11,10,11,4784,4960,9744
+Valparaíso,departamento,12-14,12,14,6851,7050,13901
+Valparaíso,departamento,15-19,15,19,10617,11936,22553
+Valparaíso,departamento,20-24,20,24,11726,12361,24087
+Valparaíso,departamento,25-29,25,29,10463,12014,22477
+Valparaíso,departamento,30-34,30,34,9018,8917,17935
+Valparaíso,departamento,35-39,35,39,8283,8525,16808
+Valparaíso,departamento,40-44,40,44,7030,6788,13818
+Valparaíso,departamento,45-49,45,49,4397,4603,9000
+Valparaíso,departamento,50-54,50,54,3793,4587,8380
+Valparaíso,departamento,55-59,55,59,2024,2447,4471
+Valparaíso,departamento,60-64,60,64,1842,3151,4993
+Valparaíso,departamento,65-69,65,69,780,1229,2009
+Valparaíso,departamento,70-74,70,74,733,1239,1972
+Valparaíso,departamento,75-79,75,79,282,423,705
+Valparaíso,departamento,80-84,80,84,191,443,634
+Valparaíso,departamento,85-89,85,89,71,117,188
+Valparaíso,departamento,90-94,90,94,32,108,140
+Valparaíso,departamento,95-99,95,99,16,35,51
+Valparaíso,departamento,100 ó más,100,,13,32,45
+Valparaíso,departamento,Total,,,108660,116509,225169
+Casablanca,departamento,Menos de 1 año,0,0,188,151,339
+Casablanca,departamento,1 año,1,1,113,119,232
+Casablanca,departamento,2 años,2,2,180,164,344
+Casablanca,departamento,3 años,3,3,180,169,349
+Casablanca,departamento,4 años,4,4,193,173,366
+Casablanca,departamento,5 años,5,5,200,187,387
+Casablanca,departamento,6-7,6,7,419,386,805
+Casablanca,departamento,8-9,8,9,325,350,675
+Casablanca,departamento,10-11,10,11,342,284,626
+Casablanca,departamento,12-14,12,14,440,435,875
+Casablanca,departamento,15-19,15,19,637,599,1236
+Casablanca,departamento,20-24,20,24,514,430,944
+Casablanca,departamento,25-29,25,29,471,383,854
+Casablanca,departamento,30-34,30,34,404,343,747
+Casablanca,departamento,35-39,35,39,359,273,632
+Casablanca,departamento,40-44,40,44,358,271,629
+Casablanca,departamento,45-49,45,49,282,172,454
+Casablanca,departamento,50-54,50,54,236,170,406
+Casablanca,departamento,55-59,55,59,175,116,291
+Casablanca,departamento,60-64,60,64,177,153,330
+Casablanca,departamento,65-69,65,69,105,58,163
+Casablanca,departamento,70-74,70,74,70,72,142
+Casablanca,departamento,75-79,75,79,44,21,65
+Casablanca,departamento,80-84,80,84,31,36,67
+Casablanca,departamento,85-89,85,89,12,5,17
+Casablanca,departamento,90-94,90,94,7,13,20
+Casablanca,departamento,95-99,95,99,3,6,9
+Casablanca,departamento,100 ó más,100,,2,4,6
+Casablanca,departamento,Total,,,6467,5543,12010
+Santiago,departamento,Menos de 1 año,0,0,7679,7743,15422
+Santiago,departamento,1 año,1,1,4183,4356,8539
+Santiago,departamento,2 años,2,2,5944,5958,11902
+Santiago,departamento,3 años,3,3,6243,6352,12595
+Santiago,departamento,4 años,4,4,6204,6434,12638
+Santiago,departamento,5 años,5,5,6585,6521,13106
+Santiago,departamento,6-7,6,7,13371,13149,26520
+Santiago,departamento,8-9,8,9,11800,12210,24010
+Santiago,departamento,10-11,10,11,11220,11232,22452
+Santiago,departamento,12-14,12,14,16462,17157,33619
+Santiago,departamento,15-19,15,19,25915,33088,59003
+Santiago,departamento,20-24,20,24,26915,33217,60132
+Santiago,departamento,25-29,25,29,23245,30228,53473
+Santiago,departamento,30-34,30,34,19114,22757,41871
+Santiago,departamento,35-39,35,39,17650,21575,39225
+Santiago,departamento,40-44,40,44,14564,17500,32064
+Santiago,departamento,45-49,45,49,9776,12232,22008
+Santiago,departamento,50-54,50,54,8991,12555,21546
+Santiago,departamento,55-59,55,59,5111,6933,12044
+Santiago,departamento,60-64,60,64,5163,8442,13605
+Santiago,departamento,65-69,65,69,2293,3374,5667
+Santiago,departamento,70-74,70,74,2164,3712,5876
+Santiago,departamento,75-79,75,79,967,1379,2346
+Santiago,departamento,80-84,80,84,777,1554,2331
+Santiago,departamento,85-89,85,89,243,388,631
+Santiago,departamento,90-94,90,94,186,347,533
+Santiago,departamento,95-99,95,99,72,127,199
+Santiago,departamento,100 ó más,100,,36,105,141
+Santiago,departamento,Total,,,252873,300625,553498
+La Victoria,departamento,Menos de 1 año,0,0,987,895,1882
+La Victoria,departamento,1 año,1,1,569,529,1098
+La Victoria,departamento,2 años,2,2,828,698,1526
+La Victoria,departamento,3 años,3,3,899,811,1710
+La Victoria,departamento,4 años,4,4,882,861,1743
+La Victoria,departamento,5 años,5,5,907,806,1713
+La Victoria,departamento,6-7,6,7,1888,1841,3729
+La Victoria,departamento,8-9,8,9,1662,1597,3259
+La Victoria,departamento,10-11,10,11,1493,1426,2919
+La Victoria,departamento,12-14,12,14,2136,2045,4181
+La Victoria,departamento,15-19,15,19,3400,3053,6453
+La Victoria,departamento,20-24,20,24,3141,2548,5689
+La Victoria,departamento,25-29,25,29,2573,2226,4799
+La Victoria,departamento,30-34,30,34,2174,1864,4038
+La Victoria,departamento,35-39,35,39,2016,1836,3852
+La Victoria,departamento,40-44,40,44,1852,1564,3416
+La Victoria,departamento,45-49,45,49,1275,1061,2336
+La Victoria,departamento,50-54,50,54,1193,1101,2294
+La Victoria,departamento,55-59,55,59,723,551,1274
+La Victoria,departamento,60-64,60,64,849,798,1647
+La Victoria,departamento,65-69,65,69,322,257,579
+La Victoria,departamento,70-74,70,74,390,354,744
+La Victoria,departamento,75-79,75,79,146,92,238
+La Victoria,departamento,80-84,80,84,160,155,315
+La Victoria,departamento,85-89,85,89,35,35,70
+La Victoria,departamento,90-94,90,94,32,58,90
+La Victoria,departamento,95-99,95,99,17,10,27
+La Victoria,departamento,100 ó más,100,,12,16,28
+La Victoria,departamento,Total,,,32561,29088,61649
+Melipilla,departamento,Menos de 1 año,0,0,697,693,1390
+Melipilla,departamento,1 año,1,1,358,396,754
+Melipilla,departamento,2 años,2,2,607,587,1194
+Melipilla,departamento,3 años,3,3,702,729,1431
+Melipilla,departamento,4 años,4,4,724,713,1437
+Melipilla,departamento,5 años,5,5,711,664,1375
+Melipilla,departamento,6-7,6,7,1600,1442,3042
+Melipilla,departamento,8-9,8,9,1313,1263,2576
+Melipilla,departamento,10-11,10,11,1238,1112,2350
+Melipilla,departamento,12-14,12,14,1792,1470,3262
+Melipilla,departamento,15-19,15,19,2374,2276,4650
+Melipilla,departamento,20-24,20,24,1824,1751,3575
+Melipilla,departamento,25-29,25,29,1644,1624,3268
+Melipilla,departamento,30-34,30,34,1343,1364,2707
+Melipilla,departamento,35-39,35,39,1349,1287,2636
+Melipilla,departamento,40-44,40,44,1210,1105,2315
+Melipilla,departamento,45-49,45,49,900,701,1601
+Melipilla,departamento,50-54,50,54,906,820,1726
+Melipilla,departamento,55-59,55,59,539,422,961
+Melipilla,departamento,60-64,60,64,637,653,1290
+Melipilla,departamento,65-69,65,69,273,232,505
+Melipilla,departamento,70-74,70,74,296,300,596
+Melipilla,departamento,75-79,75,79,105,99,204
+Melipilla,departamento,80-84,80,84,133,133,266
+Melipilla,departamento,85-89,85,89,31,31,62
+Melipilla,departamento,90-94,90,94,33,39,72
+Melipilla,departamento,95-99,95,99,11,12,23
+Melipilla,departamento,100 ó más,100,,8,17,25
+Melipilla,departamento,Total,,,23358,21935,45293
+San Antonio,departamento,Menos de 1 año,0,0,343,363,706
+San Antonio,departamento,1 año,1,1,209,223,432
+San Antonio,departamento,2 años,2,2,368,334,702
+San Antonio,departamento,3 años,3,3,389,379,768
+San Antonio,departamento,4 años,4,4,388,363,751
+San Antonio,departamento,5 años,5,5,466,349,815
+San Antonio,departamento,6-7,6,7,877,810,1687
+San Antonio,departamento,8-9,8,9,747,710,1457
+San Antonio,departamento,10-11,10,11,659,643,1302
+San Antonio,departamento,12-14,12,14,913,808,1721
+San Antonio,departamento,15-19,15,19,1353,1297,2650
+San Antonio,departamento,20-24,20,24,1090,1104,2194
+San Antonio,departamento,25-29,25,29,961,947,1908
+San Antonio,departamento,30-34,30,34,750,721,1471
+San Antonio,departamento,35-39,35,39,721,671,1392
+San Antonio,departamento,40-44,40,44,693,578,1271
+San Antonio,departamento,45-49,45,49,492,403,895
+San Antonio,departamento,50-54,50,54,402,430,832
+San Antonio,departamento,55-59,55,59,263,210,473
+San Antonio,departamento,60-64,60,64,289,299,588
+San Antonio,departamento,65-69,65,69,139,116,255
+San Antonio,departamento,70-74,70,74,163,145,308
+San Antonio,departamento,75-79,75,79,45,48,93
+San Antonio,departamento,80-84,80,84,74,69,143
+San Antonio,departamento,85-89,85,89,22,19,41
+San Antonio,departamento,90-94,90,94,18,15,33
+San Antonio,departamento,95-99,95,99,8,8,16
+San Antonio,departamento,100 ó más,100,,7,7,14
+San Antonio,departamento,Total,,,12849,12069,24918
+Maipo,departamento,Menos de 1 año,0,0,470,428,898
+Maipo,departamento,1 año,1,1,342,353,695
+Maipo,departamento,2 años,2,2,463,433,896
+Maipo,departamento,3 años,3,3,508,518,1026
+Maipo,departamento,4 años,4,4,526,497,1023
+Maipo,departamento,5 años,5,5,527,503,1030
+Maipo,departamento,6-7,6,7,1080,1067,2147
+Maipo,departamento,8-9,8,9,962,922,1884
+Maipo,departamento,10-11,10,11,811,833,1644
+Maipo,departamento,12-14,12,14,1281,1128,2409
+Maipo,departamento,15-19,15,19,1843,1572,3415
+Maipo,departamento,20-24,20,24,1427,1206,2633
+Maipo,departamento,25-29,25,29,1355,1094,2449
+Maipo,departamento,30-34,30,34,1057,940,1997
+Maipo,departamento,35-39,35,39,1059,918,1977
+Maipo,departamento,40-44,40,44,1008,838,1846
+Maipo,departamento,45-49,45,49,705,527,1232
+Maipo,departamento,50-54,50,54,694,574,1268
+Maipo,departamento,55-59,55,59,386,279,665
+Maipo,departamento,60-64,60,64,535,496,1031
+Maipo,departamento,65-69,65,69,219,174,393
+Maipo,departamento,70-74,70,74,250,189,439
+Maipo,departamento,75-79,75,79,75,75,150
+Maipo,departamento,80-84,80,84,106,98,204
+Maipo,departamento,85-89,85,89,28,21,49
+Maipo,departamento,90-94,90,94,17,31,48
+Maipo,departamento,95-99,95,99,8,10,18
+Maipo,departamento,100 ó más,100,,13,7,20
+Maipo,departamento,Total,,,17755,15731,33486
+Rancagua,departamento,Menos de 1 año,0,0,986,1022,2008
+Rancagua,departamento,1 año,1,1,470,499,969
+Rancagua,departamento,2 años,2,2,899,804,1703
+Rancagua,departamento,3 años,3,3,918,843,1761
+Rancagua,departamento,4 años,4,4,821,811,1632
+Rancagua,departamento,5 años,5,5,878,774,1652
+Rancagua,departamento,6-7,6,7,1775,1723,3498
+Rancagua,departamento,8-9,8,9,1595,1580,3175
+Rancagua,departamento,10-11,10,11,1347,1297,2644
+Rancagua,departamento,12-14,12,14,2037,1964,4001
+Rancagua,departamento,15-19,15,19,3086,2938,6024
+Rancagua,departamento,20-24,20,24,3579,2615,6194
+Rancagua,departamento,25-29,25,29,3548,2599,6147
+Rancagua,departamento,30-34,30,34,2793,1999,4792
+Rancagua,departamento,35-39,35,39,2303,1869,4172
+Rancagua,departamento,40-44,40,44,1847,1552,3399
+Rancagua,departamento,45-49,45,49,1174,1017,2191
+Rancagua,departamento,50-54,50,54,1091,1035,2126
+Rancagua,departamento,55-59,55,59,569,522,1091
+Rancagua,departamento,60-64,60,64,736,785,1521
+Rancagua,departamento,65-69,65,69,247,291,538
+Rancagua,departamento,70-74,70,74,345,340,685
+Rancagua,departamento,75-79,75,79,109,97,206
+Rancagua,departamento,80-84,80,84,130,175,305
+Rancagua,departamento,85-89,85,89,32,23,55
+Rancagua,departamento,90-94,90,94,31,49,80
+Rancagua,departamento,95-99,95,99,5,15,20
+Rancagua,departamento,100 ó más,100,,12,11,23
+Rancagua,departamento,Total,,,33363,29249,62612
+Cachapoal,departamento,Menos de 1 año,0,0,401,369,770
+Cachapoal,departamento,1 año,1,1,167,123,290
+Cachapoal,departamento,2 años,2,2,289,284,573
+Cachapoal,departamento,3 años,3,3,351,333,684
+Cachapoal,departamento,4 años,4,4,339,309,648
+Cachapoal,departamento,5 años,5,5,333,329,662
+Cachapoal,departamento,6-7,6,7,705,743,1448
+Cachapoal,departamento,8-9,8,9,674,630,1304
+Cachapoal,departamento,10-11,10,11,569,536,1105
+Cachapoal,departamento,12-14,12,14,945,799,1744
+Cachapoal,departamento,15-19,15,19,1200,1148,2348
+Cachapoal,departamento,20-24,20,24,812,950,1762
+Cachapoal,departamento,25-29,25,29,718,822,1540
+Cachapoal,departamento,30-34,30,34,608,717,1325
+Cachapoal,departamento,35-39,35,39,600,647,1247
+Cachapoal,departamento,40-44,40,44,549,591,1140
+Cachapoal,departamento,45-49,45,49,409,374,783
+Cachapoal,departamento,50-54,50,54,396,441,837
+Cachapoal,departamento,55-59,55,59,241,206,447
+Cachapoal,departamento,60-64,60,64,386,387,773
+Cachapoal,departamento,65-69,65,69,149,127,276
+Cachapoal,departamento,70-74,70,74,206,184,390
+Cachapoal,departamento,75-79,75,79,62,69,131
+Cachapoal,departamento,80-84,80,84,80,84,164
+Cachapoal,departamento,85-89,85,89,14,12,26
+Cachapoal,departamento,90-94,90,94,27,17,44
+Cachapoal,departamento,95-99,95,99,4,9,13
+Cachapoal,departamento,100 ó más,100,,10,9,19
+Cachapoal,departamento,Total,,,11244,11249,22493
+Caupolicán,departamento,Menos de 1 año,0,0,1203,1216,2419
+Caupolicán,departamento,1 año,1,1,567,588,1155
+Caupolicán,departamento,2 años,2,2,987,986,1973
+Caupolicán,departamento,3 años,3,3,1127,1135,2262
+Caupolicán,departamento,4 años,4,4,1104,1049,2153
+Caupolicán,departamento,5 años,5,5,1249,1104,2353
+Caupolicán,departamento,6-7,6,7,2575,2508,5083
+Caupolicán,departamento,8-9,8,9,2191,2082,4273
+Caupolicán,departamento,10-11,10,11,2023,1807,3830
+Caupolicán,departamento,12-14,12,14,3023,2811,5834
+Caupolicán,departamento,15-19,15,19,3858,3850,7708
+Caupolicán,departamento,20-24,20,24,2807,2804,5611
+Caupolicán,departamento,25-29,25,29,2583,2669,5252
+Caupolicán,departamento,30-34,30,34,2060,2236,4296
+Caupolicán,departamento,35-39,35,39,2037,2086,4123
+Caupolicán,departamento,40-44,40,44,1972,2014,3986
+Caupolicán,departamento,45-49,45,49,1384,1312,2696
+Caupolicán,departamento,50-54,50,54,1477,1560,3037
+Caupolicán,departamento,55-59,55,59,832,768,1600
+Caupolicán,departamento,60-64,60,64,1215,1277,2492
+Caupolicán,departamento,65-69,65,69,486,447,933
+Caupolicán,departamento,70-74,70,74,622,637,1259
+Caupolicán,departamento,75-79,75,79,190,187,377
+Caupolicán,departamento,80-84,80,84,260,299,559
+Caupolicán,departamento,85-89,85,89,46,63,109
+Caupolicán,departamento,90-94,90,94,75,84,159
+Caupolicán,departamento,95-99,95,99,20,24,44
+Caupolicán,departamento,100 ó más,100,,15,33,48
+Caupolicán,departamento,Total,,,37988,37636,75624
+San Fernando,departamento,Menos de 1 año,0,0,1289,1305,2594
+San Fernando,departamento,1 año,1,1,662,612,1274
+San Fernando,departamento,2 años,2,2,1224,1155,2379
+San Fernando,departamento,3 años,3,3,1331,1332,2663
+San Fernando,departamento,4 años,4,4,1293,1208,2501
+San Fernando,departamento,5 años,5,5,1441,1264,2705
+San Fernando,departamento,6-7,6,7,2987,2762,5749
+San Fernando,departamento,8-9,8,9,2623,2453,5076
+San Fernando,departamento,10-11,10,11,2431,2143,4574
+San Fernando,departamento,12-14,12,14,3505,3292,6797
+San Fernando,departamento,15-19,15,19,4497,4874,9371
+San Fernando,departamento,20-24,20,24,3735,4068,7803
+San Fernando,departamento,25-29,25,29,3110,3519,6629
+San Fernando,departamento,30-34,30,34,2676,2952,5628
+San Fernando,departamento,35-39,35,39,2302,2502,4804
+San Fernando,departamento,40-44,40,44,2420,2427,4847
+San Fernando,departamento,45-49,45,49,1555,1618,3173
+San Fernando,departamento,50-54,50,54,1708,1830,3538
+San Fernando,departamento,55-59,55,59,937,899,1836
+San Fernando,departamento,60-64,60,64,1434,1461,2895
+San Fernando,departamento,65-69,65,69,526,493,1019
+San Fernando,departamento,70-74,70,74,672,655,1327
+San Fernando,departamento,75-79,75,79,223,217,440
+San Fernando,departamento,80-84,80,84,345,337,682
+San Fernando,departamento,85-89,85,89,63,74,137
+San Fernando,departamento,90-94,90,94,83,85,168
+San Fernando,departamento,95-99,95,99,22,17,39
+San Fernando,departamento,100 ó más,100,,24,46,70
+San Fernando,departamento,Total,,,45118,45600,90718
+Santa Cruz,departamento,Menos de 1 año,0,0,443,366,809
+Santa Cruz,departamento,1 año,1,1,193,204,397
+Santa Cruz,departamento,2 años,2,2,408,394,802
+Santa Cruz,departamento,3 años,3,3,417,403,820
+Santa Cruz,departamento,4 años,4,4,404,430,834
+Santa Cruz,departamento,5 años,5,5,509,392,901
+Santa Cruz,departamento,6-7,6,7,977,915,1892
+Santa Cruz,departamento,8-9,8,9,793,781,1574
+Santa Cruz,departamento,10-11,10,11,711,701,1412
+Santa Cruz,departamento,12-14,12,14,1141,1059,2200
+Santa Cruz,departamento,15-19,15,19,1514,1595,3109
+Santa Cruz,departamento,20-24,20,24,1017,1266,2283
+Santa Cruz,departamento,25-29,25,29,838,1048,1886
+Santa Cruz,departamento,30-34,30,34,725,927,1652
+Santa Cruz,departamento,35-39,35,39,672,810,1482
+Santa Cruz,departamento,40-44,40,44,612,799,1411
+Santa Cruz,departamento,45-49,45,49,471,498,969
+Santa Cruz,departamento,50-54,50,54,510,572,1082
+Santa Cruz,departamento,55-59,55,59,311,298,609
+Santa Cruz,departamento,60-64,60,64,409,517,926
+Santa Cruz,departamento,65-69,65,69,193,188,381
+Santa Cruz,departamento,70-74,70,74,251,246,497
+Santa Cruz,departamento,75-79,75,79,87,82,169
+Santa Cruz,departamento,80-84,80,84,115,109,224
+Santa Cruz,departamento,85-89,85,89,19,24,43
+Santa Cruz,departamento,90-94,90,94,25,39,64
+Santa Cruz,departamento,95-99,95,99,4,10,14
+Santa Cruz,departamento,100 ó más,100,,6,10,16
+Santa Cruz,departamento,Total,,,13775,14683,28458
+Vichuquén,departamento,Menos de 1 año,0,0,240,212,452
+Vichuquén,departamento,1 año,1,1,209,203,412
+Vichuquén,departamento,2 años,2,2,334,284,618
+Vichuquén,departamento,3 años,3,3,318,319,637
+Vichuquén,departamento,4 años,4,4,298,359,657
+Vichuquén,departamento,5 años,5,5,343,332,675
+Vichuquén,departamento,6-7,6,7,673,652,1325
+Vichuquén,departamento,8-9,8,9,586,568,1154
+Vichuquén,departamento,10-11,10,11,540,540,1080
+Vichuquén,departamento,12-14,12,14,829,771,1600
+Vichuquén,departamento,15-19,15,19,1012,1163,2175
+Vichuquén,departamento,20-24,20,24,790,1026,1816
+Vichuquén,departamento,25-29,25,29,669,855,1524
+Vichuquén,departamento,30-34,30,34,502,736,1238
+Vichuquén,departamento,35-39,35,39,531,593,1124
+Vichuquén,departamento,40-44,40,44,451,616,1067
+Vichuquén,departamento,45-49,45,49,374,437,811
+Vichuquén,departamento,50-54,50,54,338,464,802
+Vichuquén,departamento,55-59,55,59,220,227,447
+Vichuquén,departamento,60-64,60,64,317,369,686
+Vichuquén,departamento,65-69,65,69,128,152,280
+Vichuquén,departamento,70-74,70,74,165,209,374
+Vichuquén,departamento,75-79,75,79,56,71,127
+Vichuquén,departamento,80-84,80,84,77,96,173
+Vichuquén,departamento,85-89,85,89,17,24,41
+Vichuquén,departamento,90-94,90,94,18,23,41
+Vichuquén,departamento,95-99,95,99,4,10,14
+Vichuquén,departamento,100 ó más,100,,4,6,10
+Vichuquén,departamento,Total,,,10043,11317,21360
+Curicó,departamento,Menos de 1 año,0,0,869,927,1796
+Curicó,departamento,1 año,1,1,448,394,842
+Curicó,departamento,2 años,2,2,740,710,1450
+Curicó,departamento,3 años,3,3,760,780,1540
+Curicó,departamento,4 años,4,4,752,830,1582
+Curicó,departamento,5 años,5,5,770,785,1555
+Curicó,departamento,6-7,6,7,1685,1657,3342
+Curicó,departamento,8-9,8,9,1464,1468,2932
+Curicó,departamento,10-11,10,11,1340,1322,2662
+Curicó,departamento,12-14,12,14,2105,2014,4119
+Curicó,departamento,15-19,15,19,3010,3239,6249
+Curicó,departamento,20-24,20,24,2414,2699,5113
+Curicó,departamento,25-29,25,29,2129,2477,4606
+Curicó,departamento,30-34,30,34,1743,1987,3730
+Curicó,departamento,35-39,35,39,1738,1813,3551
+Curicó,departamento,40-44,40,44,1611,1673,3284
+Curicó,departamento,45-49,45,49,1079,1035,2114
+Curicó,departamento,50-54,50,54,1162,1259,2421
+Curicó,departamento,55-59,55,59,618,555,1173
+Curicó,departamento,60-64,60,64,893,978,1871
+Curicó,departamento,65-69,65,69,380,299,679
+Curicó,departamento,70-74,70,74,440,431,871
+Curicó,departamento,75-79,75,79,135,126,261
+Curicó,departamento,80-84,80,84,159,189,348
+Curicó,departamento,85-89,85,89,35,38,73
+Curicó,departamento,90-94,90,94,35,48,83
+Curicó,departamento,95-99,95,99,14,21,35
+Curicó,departamento,100 ó más,100,,16,32,48
+Curicó,departamento,Total,,,28544,29786,58330
+Lontué,departamento,Menos de 1 año,0,0,403,404,807
+Lontué,departamento,1 año,1,1,176,200,376
+Lontué,departamento,2 años,2,2,307,320,627
+Lontué,departamento,3 años,3,3,317,336,653
+Lontué,departamento,4 años,4,4,344,324,668
+Lontué,departamento,5 años,5,5,323,342,665
+Lontué,departamento,6-7,6,7,780,723,1503
+Lontué,departamento,8-9,8,9,663,650,1313
+Lontué,departamento,10-11,10,11,609,576,1185
+Lontué,departamento,12-14,12,14,988,853,1841
+Lontué,departamento,15-19,15,19,1364,1353,2717
+Lontué,departamento,20-24,20,24,1077,1049,2126
+Lontué,departamento,25-29,25,29,1095,1027,2122
+Lontué,departamento,30-34,30,34,870,828,1698
+Lontué,departamento,35-39,35,39,862,798,1660
+Lontué,departamento,40-44,40,44,800,734,1534
+Lontué,departamento,45-49,45,49,512,466,978
+Lontué,departamento,50-54,50,54,545,518,1063
+Lontué,departamento,55-59,55,59,321,221,542
+Lontué,departamento,60-64,60,64,458,401,859
+Lontué,departamento,65-69,65,69,144,119,263
+Lontué,departamento,70-74,70,74,204,166,370
+Lontué,departamento,75-79,75,79,57,57,114
+Lontué,departamento,80-84,80,84,71,68,139
+Lontué,departamento,85-89,85,89,25,17,42
+Lontué,departamento,90-94,90,94,20,23,43
+Lontué,departamento,95-99,95,99,5,7,12
+Lontué,departamento,100 ó más,100,,2,6,8
+Lontué,departamento,Total,,,13342,12586,25928
+Curepto,departamento,Menos de 1 año,0,0,349,307,656
+Curepto,departamento,1 año,1,1,200,183,383
+Curepto,departamento,2 años,2,2,295,293,588
+Curepto,departamento,3 años,3,3,310,340,650
+Curepto,departamento,4 años,4,4,329,324,653
+Curepto,departamento,5 años,5,5,348,330,678
+Curepto,departamento,6-7,6,7,668,652,1320
+Curepto,departamento,8-9,8,9,587,575,1162
+Curepto,departamento,10-11,10,11,542,567,1109
+Curepto,departamento,12-14,12,14,863,803,1666
+Curepto,departamento,15-19,15,19,1117,1188,2305
+Curepto,departamento,20-24,20,24,749,1011,1760
+Curepto,departamento,25-29,25,29,610,911,1521
+Curepto,departamento,30-34,30,34,454,667,1121
+Curepto,departamento,35-39,35,39,493,671,1164
+Curepto,departamento,40-44,40,44,458,628,1086
+Curepto,departamento,45-49,45,49,367,425,792
+Curepto,departamento,50-54,50,54,427,494,921
+Curepto,departamento,55-59,55,59,258,263,521
+Curepto,departamento,60-64,60,64,357,422,779
+Curepto,departamento,65-69,65,69,140,159,299
+Curepto,departamento,70-74,70,74,188,198,386
+Curepto,departamento,75-79,75,79,72,79,151
+Curepto,departamento,80-84,80,84,94,138,232
+Curepto,departamento,85-89,85,89,22,29,51
+Curepto,departamento,90-94,90,94,22,32,54
+Curepto,departamento,95-99,95,99,1,12,13
+Curepto,departamento,100 ó más,100,,9,17,26
+Curepto,departamento,Total,,,10329,11718,22047
+Talca,departamento,Menos de 1 año,0,0,1115,1235,2350
+Talca,departamento,1 año,1,1,637,708,1345
+Talca,departamento,2 años,2,2,925,1016,1941
+Talca,departamento,3 años,3,3,1016,1136,2152
+Talca,departamento,4 años,4,4,1043,1091,2134
+Talca,departamento,5 años,5,5,1184,1214,2398
+Talca,departamento,6-7,6,7,2345,2329,4674
+Talca,departamento,8-9,8,9,2054,2159,4213
+Talca,departamento,10-11,10,11,1988,2006,3994
+Talca,departamento,12-14,12,14,2966,3046,6012
+Talca,departamento,15-19,15,19,4601,5128,9729
+Talca,departamento,20-24,20,24,3739,4228,7967
+Talca,departamento,25-29,25,29,3372,3654,7026
+Talca,departamento,30-34,30,34,2703,3091,5794
+Talca,departamento,35-39,35,39,2412,2486,4898
+Talca,departamento,40-44,40,44,2342,2557,4899
+Talca,departamento,45-49,45,49,1603,1630,3237
+Talca,departamento,50-54,50,54,1755,1854,3609
+Talca,departamento,55-59,55,59,882,867,1749
+Talca,departamento,60-64,60,64,1266,1295,2468
+Talca,departamento,65-69,65,69,463,448,911
+Talca,departamento,70-74,70,74,595,626,1221
+Talca,departamento,75-79,75,79,175,208,383
+Talca,departamento,80-84,80,84,218,271,489
+Talca,departamento,85-89,85,89,49,70,119
+Talca,departamento,90-94,90,94,38,55,93
+Talca,departamento,95-99,95,99,13,20,33
+Talca,departamento,100 ó más,100,,18,30,48
+Talca,departamento,Total,,,40834,43789,84623
+Constitución,departamento,Menos de 1 año,0,0,307,294,601
+Constitución,departamento,1 año,1,1,205,199,404
+Constitución,departamento,2 años,2,2,349,307,656
+Constitución,departamento,3 años,3,3,349,358,707
+Constitución,departamento,4 años,4,4,300,334,634
+Constitución,departamento,5 años,5,5,360,304,664
+Constitución,departamento,6-7,6,7,743,671,1414
+Constitución,departamento,8-9,8,9,638,570,1208
+Constitución,departamento,10-11,10,11,584,523,1107
+Constitución,departamento,12-14,12,14,839,848,1687
+Constitución,departamento,15-19,15,19,1078,1289,2367
+Constitución,departamento,20-24,20,24,735,1080,1815
+Constitución,departamento,25-29,25,29,700,1009,1709
+Constitución,departamento,30-34,30,34,586,844,1430
+Constitución,departamento,35-39,35,39,531,665,1196
+Constitución,departamento,40-44,40,44,560,701,1261
+Constitución,departamento,45-49,45,49,360,456,816
+Constitución,departamento,50-54,50,54,439,550,989
+Constitución,departamento,55-59,55,59,267,249,516
+Constitución,departamento,60-64,60,64,387,463,850
+Constitución,departamento,65-69,65,69,155,170,325
+Constitución,departamento,70-74,70,74,206,209,415
+Constitución,departamento,75-79,75,79,85,72,157
+Constitución,departamento,80-84,80,84,62,95,157
+Constitución,departamento,85-89,85,89,19,26,45
+Constitución,departamento,90-94,90,94,11,20,31
+Constitución,departamento,95-99,95,99,5,9,14
+Constitución,departamento,100 ó más,100,,2,7,9
+Constitución,departamento,Total,,,10862,12322,23184
+Chanco,departamento,Menos de 1 año,0,0,181,196,377
+Chanco,departamento,1 año,1,1,140,132,272
+Chanco,departamento,2 años,2,2,250,203,453
+Chanco,departamento,3 años,3,3,255,232,487
+Chanco,departamento,4 años,4,4,265,230,495
+Chanco,departamento,5 años,5,5,257,241,498
+Chanco,departamento,6-7,6,7,544,485,1029
+Chanco,departamento,8-9,8,9,518,469,987
+Chanco,departamento,10-11,10,11,483,420,903
+Chanco,departamento,12-14,12,14,723,697,1420
+Chanco,departamento,15-19,15,19,1072,1029,2101
+Chanco,departamento,20-24,20,24,733,727,1460
+Chanco,departamento,25-29,25,29,586,719,1305
+Chanco,departamento,30-34,30,34,467,567,1034
+Chanco,departamento,35-39,35,39,423,437,860
+Chanco,departamento,40-44,40,44,492,555,1047
+Chanco,departamento,45-49,45,49,352,315,667
+Chanco,departamento,50-54,50,54,362,378,740
+Chanco,departamento,55-59,55,59,181,175,356
+Chanco,departamento,60-64,60,64,319,309,628
+Chanco,departamento,65-69,65,69,113,106,219
+Chanco,departamento,70-74,70,74,170,157,327
+Chanco,departamento,75-79,75,79,50,49,99
+Chanco,departamento,80-84,80,84,60,65,125
+Chanco,departamento,85-89,85,89,6,7,13
+Chanco,departamento,90-94,90,94,10,12,22
+Chanco,departamento,95-99,95,99,-,4,4
+Chanco,departamento,100 ó más,100,,2,2,4
+Chanco,departamento,Total,,,9014,8918,17932
+Cauquenes,departamento,Menos de 1 año,0,0,413,404,817
+Cauquenes,departamento,1 año,1,1,220,192,412
+Cauquenes,departamento,2 años,2,2,386,399,785
+Cauquenes,departamento,3 años,3,3,446,440,886
+Cauquenes,departamento,4 años,4,4,479,353,832
+Cauquenes,departamento,5 años,5,5,441,411,852
+Cauquenes,departamento,6-7,6,7,910,866,1776
+Cauquenes,departamento,8-9,8,9,819,841,1660
+Cauquenes,departamento,10-11,10,11,770,689,1459
+Cauquenes,departamento,12-14,12,14,1186,1172,2358
+Cauquenes,departamento,15-19,15,19,1572,1804,3376
+Cauquenes,departamento,20-24,20,24,1438,1532,2970
+Cauquenes,departamento,25-29,25,29,1029,1425,2454
+Cauquenes,departamento,30-34,30,34,778,1165,1943
+Cauquenes,departamento,35-39,35,39,688,975,1663
+Cauquenes,departamento,40-44,40,44,779,961,1740
+Cauquenes,departamento,45-49,45,49,494,638,1132
+Cauquenes,departamento,50-54,50,54,526,765,1291
+Cauquenes,departamento,55-59,55,59,316,299,615
+Cauquenes,departamento,60-64,60,64,516,676,1192
+Cauquenes,departamento,65-69,65,69,205,212,417
+Cauquenes,departamento,70-74,70,74,254,318,572
+Cauquenes,departamento,75-79,75,79,83,98,181
+Cauquenes,departamento,80-84,80,84,115,133,248
+Cauquenes,departamento,85-89,85,89,24,21,45
+Cauquenes,departamento,90-94,90,94,27,42,69
+Cauquenes,departamento,95-99,95,99,14,10,24
+Cauquenes,departamento,100 ó más,100,,-,8,8
+Cauquenes,departamento,Total,,,14928,16849,31777
+Itata,departamento,Menos de 1 año,0,0,597,584,1181
+Itata,departamento,1 año,1,1,276,257,533
+Itata,departamento,2 años,2,2,523,491,1014
+Itata,departamento,3 años,3,3,544,538,1082
+Itata,departamento,4 años,4,4,605,575,1180
+Itata,departamento,5 años,5,5,639,626,1265
+Itata,departamento,6-7,6,7,1292,1270,2562
+Itata,departamento,8-9,8,9,1141,1080,2221
+Itata,departamento,10-11,10,11,1063,965,2028
+Itata,departamento,12-14,12,14,1631,1487,3118
+Itata,departamento,15-19,15,19,2098,2110,4208
+Itata,departamento,20-24,20,24,1573,1763,3336
+Itata,departamento,25-29,25,29,1364,1671,3035
+Itata,departamento,30-34,30,34,1009,1328,2337
+Itata,departamento,35-39,35,39,1026,1112,2138
+Itata,departamento,40-44,40,44,985,1162,2147
+Itata,departamento,45-49,45,49,651,754,1405
+Itata,departamento,50-54,50,54,727,919,1646
+Itata,departamento,55-59,55,59,394,376,770
+Itata,departamento,60-64,60,64,597,700,1297
+Itata,departamento,65-69,65,69,256,268,524
+Itata,departamento,70-74,70,74,312,342,654
+Itata,departamento,75-79,75,79,112,109,221
+Itata,departamento,80-84,80,84,120,181,301
+Itata,departamento,85-89,85,89,26,33,59
+Itata,departamento,90-94,90,94,20,28,48
+Itata,departamento,95-99,95,99,8,10,18
+Itata,departamento,100 ó más,100,,2,8,10
+Itata,departamento,Total,,,19591,20747,40338
+Loncomilla,departamento,Menos de 1 año,0,0,488,447,935
+Loncomilla,departamento,1 año,1,1,184,210,394
+Loncomilla,departamento,2 años,2,2,353,339,692
+Loncomilla,departamento,3 años,3,3,326,393,719
+Loncomilla,departamento,4 años,4,4,356,370,726
+Loncomilla,departamento,5 años,5,5,428,401,829
+Loncomilla,departamento,6-7,6,7,860,783,1643
+Loncomilla,departamento,8-9,8,9,717,731,1448
+Loncomilla,departamento,10-11,10,11,634,687,1321
+Loncomilla,departamento,12-14,12,14,1017,1071,2088
+Loncomilla,departamento,15-19,15,19,1415,1544,2959
+Loncomilla,departamento,20-24,20,24,1073,1331,2404
+Loncomilla,departamento,25-29,25,29,930,1140,2070
+Loncomilla,departamento,30-34,30,34,785,895,1680
+Loncomilla,departamento,35-39,35,39,810,847,1657
+Loncomilla,departamento,40-44,40,44,691,782,1473
+Loncomilla,departamento,45-49,45,49,507,563,1070
+Loncomilla,departamento,50-54,50,54,492,579,1071
+Loncomilla,departamento,55-59,55,59,283,289,572
+Loncomilla,departamento,60-64,60,64,486,482,968
+Loncomilla,departamento,65-69,65,69,188,201,389
+Loncomilla,departamento,70-74,70,74,225,223,448
+Loncomilla,departamento,75-79,75,79,102,103,205
+Loncomilla,departamento,80-84,80,84,76,91,167
+Loncomilla,departamento,85-89,85,89,39,34,73
+Loncomilla,departamento,90-94,90,94,22,37,59
+Loncomilla,departamento,95-99,95,99,6,8,14
+Loncomilla,departamento,100 ó más,100,,12,12,24
+Loncomilla,departamento,Total,,,13505,14593,28098
+Linares,departamento,Menos de 1 año,0,0,931,857,1788
+Linares,departamento,1 año,1,1,442,430,872
+Linares,departamento,2 años,2,2,723,747,1470
+Linares,departamento,3 años,3,3,837,783,1620
+Linares,departamento,4 años,4,4,741,762,1503
+Linares,departamento,5 años,5,5,780,704,1484
+Linares,departamento,6-7,6,7,1554,1572,3126
+Linares,departamento,8-9,8,9,1416,1478,2894
+Linares,departamento,10-11,10,11,1308,1315,2623
+Linares,departamento,12-14,12,14,2102,1918,4020
+Linares,departamento,15-19,15,19,2804,2964,5768
+Linares,departamento,20-24,20,24,2435,2668,5103
+Linares,departamento,25-29,25,29,2142,2412,4554
+Linares,departamento,30-34,30,34,1771,1878,3649
+Linares,departamento,35-39,35,39,1563,1638,3201
+Linares,departamento,40-44,40,44,1432,1576,3008
+Linares,departamento,45-49,45,49,977,987,1964
+Linares,departamento,50-54,50,54,1028,1163,2191
+Linares,departamento,55-59,55,59,610,570,1180
+Linares,departamento,60-64,60,64,807,876,1683
+Linares,departamento,65-69,65,69,315,291,606
+Linares,departamento,70-74,70,74,380,386,766
+Linares,departamento,75-79,75,79,135,131,266
+Linares,departamento,80-84,80,84,134,160,294
+Linares,departamento,85-89,85,89,26,53,79
+Linares,departamento,90-94,90,94,26,29,55
+Linares,departamento,95-99,95,99,10,19,29
+Linares,departamento,100 ó más,100,,4,6,10
+Linares,departamento,Total,,,27433,28373,55806
+Parral,departamento,Menos de 1 año,0,0,612,539,1151
+Parral,departamento,1 año,1,1,201,213,414
+Parral,departamento,2 años,2,2,509,431,940
+Parral,departamento,3 años,3,3,571,521,1092
+Parral,departamento,4 años,4,4,538,523,1061
+Parral,departamento,5 años,5,5,505,469,974
+Parral,departamento,6-7,6,7,1067,1011,2078
+Parral,departamento,8-9,8,9,941,938,1879
+Parral,departamento,10-11,10,11,840,830,1670
+Parral,departamento,12-14,12,14,1288,1279,2567
+Parral,departamento,15-19,15,19,1773,1970,3743
+Parral,departamento,20-24,20,24,1538,1709,3247
+Parral,departamento,25-29,25,29,1295,1466,2761
+Parral,departamento,30-34,30,34,1037,1162,2199
+Parral,departamento,35-39,35,39,956,1085,2041
+Parral,departamento,40-44,40,44,970,984,1954
+Parral,departamento,45-49,45,49,599,636,1235
+Parral,departamento,50-54,50,54,689,724,1413
+Parral,departamento,55-59,55,59,353,353,706
+Parral,departamento,60-64,60,64,474,565,1039
+Parral,departamento,65-69,65,69,184,153,337
+Parral,departamento,70-74,70,74,236,240,476
+Parral,departamento,75-79,75,79,70,68,138
+Parral,departamento,80-84,80,84,83,95,178
+Parral,departamento,85-89,85,89,22,19,41
+Parral,departamento,90-94,90,94,15,18,33
+Parral,departamento,95-99,95,99,2,3,5
+Parral,departamento,100 ó más,100,,4,4,8
+Parral,departamento,Total,,,17372,18008,35380
+San Carlos,departamento,Menos de 1 año,0,0,622,612,1234
+San Carlos,departamento,1 año,1,1,363,321,684
+San Carlos,departamento,2 años,2,2,623,629,1252
+San Carlos,departamento,3 años,3,3,731,694,1425
+San Carlos,departamento,4 años,4,4,693,660,1353
+San Carlos,departamento,5 años,5,5,754,666,1420
+San Carlos,departamento,6-7,6,7,1504,1418,2922
+San Carlos,departamento,8-9,8,9,1321,1264,2585
+San Carlos,departamento,10-11,10,11,1228,1141,2369
+San Carlos,departamento,12-14,12,14,1880,1700,3580
+San Carlos,departamento,15-19,15,19,2427,2617,5044
+San Carlos,departamento,20-24,20,24,1877,2108,3985
+San Carlos,departamento,25-29,25,29,1692,1981,3673
+San Carlos,departamento,30-34,30,34,1394,1579,2973
+San Carlos,departamento,35-39,35,39,1239,1378,2617
+San Carlos,departamento,40-44,40,44,1170,1285,2455
+San Carlos,departamento,45-49,45,49,870,810,1680
+San Carlos,departamento,50-54,50,54,839,884,1723
+San Carlos,departamento,55-59,55,59,451,462,913
+San Carlos,departamento,60-64,60,64,687,714,1401
+San Carlos,departamento,65-69,65,69,269,265,534
+San Carlos,departamento,70-74,70,74,280,324,604
+San Carlos,departamento,75-79,75,79,113,82,195
+San Carlos,departamento,80-84,80,84,118,132,250
+San Carlos,departamento,85-89,85,89,40,30,70
+San Carlos,departamento,90-94,90,94,22,28,50
+San Carlos,departamento,95-99,95,99,10,7,17
+San Carlos,departamento,100 ó más,100,,6,13,19
+San Carlos,departamento,Total,,,23223,23804,47027
+Chillán,departamento,Menos de 1 año,0,0,1111,1116,2227
+Chillán,departamento,1 año,1,1,491,466,957
+Chillán,departamento,2 años,2,2,834,885,1719
+Chillán,departamento,3 años,3,3,945,1003,1948
+Chillán,departamento,4 años,4,4,986,941,1927
+Chillán,departamento,5 años,5,5,1006,985,1991
+Chillán,departamento,6-7,6,7,2184,2045,4229
+Chillán,departamento,8-9,8,9,2055,2019,4074
+Chillán,departamento,10-11,10,11,1765,1691,3456
+Chillán,departamento,12-14,12,14,2778,2842,5620
+Chillán,departamento,15-19,15,19,3765,4561,8326
+Chillán,departamento,20-24,20,24,2975,3871,6846
+Chillán,departamento,25-29,25,29,2457,3567,6024
+Chillán,departamento,30-34,30,34,2027,2691,4718
+Chillán,departamento,35-39,35,39,2019,2437,4456
+Chillán,departamento,40-44,40,44,1862,2284,4146
+Chillán,departamento,45-49,45,49,1337,1463,2800
+Chillán,departamento,50-54,50,54,1280,1595,2875
+Chillán,departamento,55-59,55,59,717,776,1493
+Chillán,departamento,60-64,60,64,879,1194,2073
+Chillán,departamento,65-69,65,69,385,406,791
+Chillán,departamento,70-74,70,74,430,558,988
+Chillán,departamento,75-79,75,79,157,150,307
+Chillán,departamento,80-84,80,84,158,243,401
+Chillán,departamento,85-89,85,89,34,56,90
+Chillán,departamento,90-94,90,94,31,55,86
+Chillán,departamento,95-99,95,99,12,19,31
+Chillán,departamento,100 ó más,100,,4,9,13
+Chillán,departamento,Total,,,34684,39928,74612
+Bulnes,departamento,Menos de 1 año,0,0,297,307,604
+Bulnes,departamento,1 año,1,1,164,161,325
+Bulnes,departamento,2 años,2,2,286,277,563
+Bulnes,departamento,3 años,3,3,315,357,672
+Bulnes,departamento,4 años,4,4,322,322,644
+Bulnes,departamento,5 años,5,5,304,317,621
+Bulnes,departamento,6-7,6,7,672,676,1348
+Bulnes,departamento,8-9,8,9,622,636,1258
+Bulnes,departamento,10-11,10,11,579,529,1108
+Bulnes,departamento,12-14,12,14,934,887,1821
+Bulnes,departamento,15-19,15,19,1150,1270,2420
+Bulnes,departamento,20-24,20,24,807,1045,1852
+Bulnes,departamento,25-29,25,29,783,923,1706
+Bulnes,departamento,30-34,30,34,536,782,1318
+Bulnes,departamento,35-39,35,39,631,691,1322
+Bulnes,departamento,40-44,40,44,586,651,1237
+Bulnes,departamento,45-49,45,49,418,450,868
+Bulnes,departamento,50-54,50,54,423,488,911
+Bulnes,departamento,55-59,55,59,254,248,502
+Bulnes,departamento,60-64,60,64,283,331,614
+Bulnes,departamento,65-69,65,69,131,129,260
+Bulnes,departamento,70-74,70,74,115,148,263
+Bulnes,departamento,75-79,75,79,58,38,96
+Bulnes,departamento,80-84,80,84,40,67,107
+Bulnes,departamento,85-89,85,89,12,23,35
+Bulnes,departamento,90-94,90,94,7,9,16
+Bulnes,departamento,95-99,95,99,2,5,7
+Bulnes,departamento,100 ó más,100,,-,6,6
+Bulnes,departamento,Total,,,10731,11773,22504
+Yungay,departamento,Menos de 1 año,0,0,365,348,713
+Yungay,departamento,1 año,1,1,277,238,515
+Yungay,departamento,2 años,2,2,307,291,598
+Yungay,departamento,3 años,3,3,373,380,753
+Yungay,departamento,4 años,4,4,398,365,763
+Yungay,departamento,5 años,5,5,406,359,765
+Yungay,departamento,6-7,6,7,811,801,1612
+Yungay,departamento,8-9,8,9,779,681,1460
+Yungay,departamento,10-11,10,11,690,647,1337
+Yungay,departamento,12-14,12,14,1231,949,2180
+Yungay,departamento,15-19,15,19,1582,1461,3043
+Yungay,departamento,20-24,20,24,1161,1230,2391
+Yungay,departamento,25-29,25,29,1038,1066,2104
+Yungay,departamento,30-34,30,34,786,787,1573
+Yungay,departamento,35-39,35,39,677,754,1431
+Yungay,departamento,40-44,40,44,651,676,1327
+Yungay,departamento,45-49,45,49,473,404,877
+Yungay,departamento,50-54,50,54,431,455,886
+Yungay,departamento,55-59,55,59,234,214,448
+Yungay,departamento,60-64,60,64,326,350,676
+Yungay,departamento,65-69,65,69,119,123,242
+Yungay,departamento,70-74,70,74,134,145,279
+Yungay,departamento,75-79,75,79,64,60,124
+Yungay,departamento,80-84,80,84,58,69,127
+Yungay,departamento,85-89,85,89,11,9,20
+Yungay,departamento,90-94,90,94,14,17,31
+Yungay,departamento,95-99,95,99,1,3,4
+Yungay,departamento,100 ó más,100,,-,3,3
+Yungay,departamento,Total,,,13397,12885,26282
+Coelemu,departamento,Menos de 1 año,0,0,386,366,752
+Coelemu,departamento,1 año,1,1,193,187,380
+Coelemu,departamento,2 años,2,2,361,296,657
+Coelemu,departamento,3 años,3,3,363,402,765
+Coelemu,departamento,4 años,4,4,413,395,808
+Coelemu,departamento,5 años,5,5,410,381,791
+Coelemu,departamento,6-7,6,7,826,830,1656
+Coelemu,departamento,8-9,8,9,738,760,1498
+Coelemu,departamento,10-11,10,11,721,673,1394
+Coelemu,departamento,12-14,12,14,1075,932,2007
+Coelemu,departamento,15-19,15,19,1253,1393,2646
+Coelemu,departamento,20-24,20,24,1000,1152,2152
+Coelemu,departamento,25-29,25,29,971,1080,2051
+Coelemu,departamento,30-34,30,34,721,842,1563
+Coelemu,departamento,35-39,35,39,733,878,1611
+Coelemu,departamento,40-44,40,44,672,707,1379
+Coelemu,departamento,45-49,45,49,510,502,1012
+Coelemu,departamento,50-54,50,54,501,543,1044
+Coelemu,departamento,55-59,55,59,267,241,508
+Coelemu,departamento,60-64,60,64,334,395,729
+Coelemu,departamento,65-69,65,69,135,171,306
+Coelemu,departamento,70-74,70,74,148,180,328
+Coelemu,departamento,75-79,75,79,68,58,126
+Coelemu,departamento,80-84,80,84,67,91,158
+Coelemu,departamento,85-89,85,89,20,30,50
+Coelemu,departamento,90-94,90,94,10,15,25
+Coelemu,departamento,95-99,95,99,4,8,12
+Coelemu,departamento,100 ó más,100,,1,2,3
+Coelemu,departamento,Total,,,12901,13510,26411
+Talcahuano,departamento,Menos de 1 año,0,0,516,484,1000
+Talcahuano,departamento,1 año,1,1,294,312,606
+Talcahuano,departamento,2 años,2,2,404,426,830
+Talcahuano,departamento,3 años,3,3,425,457,882
+Talcahuano,departamento,4 años,4,4,401,437,838
+Talcahuano,departamento,5 años,5,5,444,483,927
+Talcahuano,departamento,6-7,6,7,658,735,1393
+Talcahuano,departamento,8-9,8,9,620,693,1313
+Talcahuano,departamento,10-11,10,11,630,644,1274
+Talcahuano,departamento,12-14,12,14,1024,1093,2117
+Talcahuano,departamento,15-19,15,19,1924,1817,3741
+Talcahuano,departamento,20-24,20,24,1483,1477,2960
+Talcahuano,departamento,25-29,25,29,1297,1322,2619
+Talcahuano,departamento,30-34,30,34,1031,1103,2134
+Talcahuano,departamento,35-39,35,39,878,908,1786
+Talcahuano,departamento,40-44,40,44,804,831,1635
+Talcahuano,departamento,45-49,45,49,643,580,1223
+Talcahuano,departamento,50-54,50,54,432,455,887
+Talcahuano,departamento,55-59,55,59,321,326,647
+Talcahuano,departamento,60-64,60,64,326,322,648
+Talcahuano,departamento,65-69,65,69,114,119,233
+Talcahuano,departamento,70-74,70,74,98,92,190
+Talcahuano,departamento,75-79,75,79,30,48,78
+Talcahuano,departamento,80-84,80,84,30,37,67
+Talcahuano,departamento,85-89,85,89,17,22,39
+Talcahuano,departamento,90-94,90,94,6,4,10
+Talcahuano,departamento,95-99,95,99,8,6,14
+Talcahuano,departamento,100 ó más,100,,-,7,7
+Talcahuano,departamento,Total,,,14858,15240,30098
+Concepción,departamento,Menos de 1 año,0,0,1270,1060,2330
+Concepción,departamento,1 año,1,1,594,619,1213
+Concepción,departamento,2 años,2,2,913,885,1798
+Concepción,departamento,3 años,3,3,942,972,1914
+Concepción,departamento,4 años,4,4,1017,985,2002
+Concepción,departamento,5 años,5,5,1035,982,2017
+Concepción,departamento,6-7,6,7,2019,2084,4103
+Concepción,departamento,8-9,8,9,1839,1864,3703
+Concepción,departamento,10-11,10,11,1687,1767,3454
+Concepción,departamento,12-14,12,14,2776,2873,5649
+Concepción,departamento,15-19,15,19,4136,5289,9425
+Concepción,departamento,20-24,20,24,4030,5028,9058
+Concepción,departamento,25-29,25,29,3349,4440,7789
+Concepción,departamento,30-34,30,34,2609,3358,5967
+Concepción,departamento,35-39,35,39,2534,3007,5541
+Concepción,departamento,40-44,40,44,2038,2472,4510
+Concepción,departamento,45-49,45,49,1345,1706,3051
+Concepción,departamento,50-54,50,54,1274,1760,3034
+Concepción,departamento,55-59,55,59,697,828,1525
+Concepción,departamento,60-64,60,64,751,1276,2027
+Concepción,departamento,65-69,65,69,325,471,796
+Concepción,departamento,70-74,70,74,283,541,824
+Concepción,departamento,75-79,75,79,115,188,303
+Concepción,departamento,80-84,80,84,140,232,372
+Concepción,departamento,85-89,85,89,51,81,132
+Concepción,departamento,90-94,90,94,30,59,89
+Concepción,departamento,95-99,95,99,9,9,18
+Concepción,departamento,100 ó más,100,,4,14,18
+Concepción,departamento,Total,,,37812,44850,82662
+Puchacay,departamento,Menos de 1 año,0,0,255,226,481
+Puchacay,departamento,1 año,1,1,89,114,203
+Puchacay,departamento,2 años,2,2,238,250,488
+Puchacay,departamento,3 años,3,3,255,280,535
+Puchacay,departamento,4 años,4,4,265,271,536
+Puchacay,departamento,5 años,5,5,269,256,525
+Puchacay,departamento,6-7,6,7,554,547,1101
+Puchacay,departamento,8-9,8,9,496,468,964
+Puchacay,departamento,10-11,10,11,463,409,872
+Puchacay,departamento,12-14,12,14,703,608,1311
+Puchacay,departamento,15-19,15,19,839,857,1696
+Puchacay,departamento,20-24,20,24,719,688,1407
+Puchacay,departamento,25-29,25,29,604,651,1255
+Puchacay,departamento,30-34,30,34,447,567,1014
+Puchacay,departamento,35-39,35,39,448,468,916
+Puchacay,departamento,40-44,40,44,465,457,922
+Puchacay,departamento,45-49,45,49,339,331,670
+Puchacay,departamento,50-54,50,54,303,299,602
+Puchacay,departamento,55-59,55,59,176,172,348
+Puchacay,departamento,60-64,60,64,250,269,519
+Puchacay,departamento,65-69,65,69,112,106,218
+Puchacay,departamento,70-74,70,74,116,121,237
+Puchacay,departamento,75-79,75,79,40,44,84
+Puchacay,departamento,80-84,80,84,47,58,105
+Puchacay,departamento,85-89,85,89,11,14,25
+Puchacay,departamento,90-94,90,94,11,12,23
+Puchacay,departamento,95-99,95,99,1,6,7
+Puchacay,departamento,100 ó más,100,,2,4,6
+Puchacay,departamento,Total,,,8517,8553,17070
+Rere,departamento,Menos de 1 año,0,0,634,749,1383
+Rere,departamento,1 año,1,1,446,451,897
+Rere,departamento,2 años,2,2,629,587,1216
+Rere,departamento,3 años,3,3,770,668,1438
+Rere,departamento,4 años,4,4,705,634,1339
+Rere,departamento,5 años,5,5,737,712,1449
+Rere,departamento,6-7,6,7,1274,1292,2566
+Rere,departamento,8-9,8,9,1249,1250,2499
+Rere,departamento,10-11,10,11,1178,1118,2296
+Rere,departamento,12-14,12,14,1776,1558,3334
+Rere,departamento,15-19,15,19,2265,2252,4517
+Rere,departamento,20-24,20,24,1701,1679,3380
+Rere,departamento,25-29,25,29,1411,1574,2985
+Rere,departamento,30-34,30,34,1149,1344,2493
+Rere,departamento,35-39,35,39,1104,1227,2331
+Rere,departamento,40-44,40,44,1025,1113,2138
+Rere,departamento,45-49,45,49,708,821,1529
+Rere,departamento,50-54,50,54,617,738,1355
+Rere,departamento,55-59,55,59,390,375,765
+Rere,departamento,60-64,60,64,475,549,1024
+Rere,departamento,65-69,65,69,214,211,425
+Rere,departamento,70-74,70,74,249,248,497
+Rere,departamento,75-79,75,79,71,98,169
+Rere,departamento,80-84,80,84,95,118,213
+Rere,departamento,85-89,85,89,21,31,52
+Rere,departamento,90-94,90,94,20,23,43
+Rere,departamento,95-99,95,99,5,7,12
+Rere,departamento,100 ó más,100,,8,5,13
+Rere,departamento,Total,,,20926,21432,42358
+Lautaro,departamento,Menos de 1 año,0,0,674,592,1266
+Lautaro,departamento,1 año,1,1,475,316,791
+Lautaro,departamento,2 años,2,2,622,484,1106
+Lautaro,departamento,3 años,3,3,718,549,1267
+Lautaro,departamento,4 años,4,4,668,534,1202
+Lautaro,departamento,5 años,5,5,629,517,1146
+Lautaro,departamento,6-7,6,7,1213,1123,2336
+Lautaro,departamento,8-9,8,9,1134,1036,2170
+Lautaro,departamento,10-11,10,11,1047,1007,2054
+Lautaro,departamento,12-14,12,14,1505,1538,3043
+Lautaro,departamento,15-19,15,19,2538,2252,4790
+Lautaro,departamento,20-24,20,24,2706,2307,5013
+Lautaro,departamento,25-29,25,29,2430,2204,4634
+Lautaro,departamento,30-34,30,34,1814,1699,3513
+Lautaro,departamento,35-39,35,39,1653,1481,3134
+Lautaro,departamento,40-44,40,44,1435,1377,2812
+Lautaro,departamento,45-49,45,49,1031,919,1950
+Lautaro,departamento,50-54,50,54,896,855,1751
+Lautaro,departamento,55-59,55,59,511,520,1031
+Lautaro,departamento,60-64,60,64,569,638,1207
+Lautaro,departamento,65-69,65,69,314,256,570
+Lautaro,departamento,70-74,70,74,275,257,532
+Lautaro,departamento,75-79,75,79,129,138,267
+Lautaro,departamento,80-84,80,84,120,143,263
+Lautaro,departamento,85-89,85,89,61,64,125
+Lautaro,departamento,90-94,90,94,32,37,69
+Lautaro,departamento,95-99,95,99,6,12,18
+Lautaro,departamento,100 ó más,100,,5,6,11
+Lautaro,departamento,Total,,,25210,22861,48071
+Arauco,departamento,Menos de 1 año,0,0,236,235,471
+Arauco,departamento,1 año,1,1,169,177,346
+Arauco,departamento,2 años,2,2,229,225,454
+Arauco,departamento,3 años,3,3,256,257,513
+Arauco,departamento,4 años,4,4,281,310,591
+Arauco,departamento,5 años,5,5,263,263,526
+Arauco,departamento,6-7,6,7,581,555,1136
+Arauco,departamento,8-9,8,9,516,513,1029
+Arauco,departamento,10-11,10,11,494,496,990
+Arauco,departamento,12-14,12,14,701,675,1376
+Arauco,departamento,15-19,15,19,837,957,1794
+Arauco,departamento,20-24,20,24,644,779,1423
+Arauco,departamento,25-29,25,29,566,696,1262
+Arauco,departamento,30-34,30,34,396,561,957
+Arauco,departamento,35-39,35,39,464,504,968
+Arauco,departamento,40-44,40,44,375,427,802
+Arauco,departamento,45-49,45,49,337,302,639
+Arauco,departamento,50-54,50,54,278,300,578
+Arauco,departamento,55-59,55,59,200,175,375
+Arauco,departamento,60-64,60,64,238,244,482
+Arauco,departamento,65-69,65,69,119,106,225
+Arauco,departamento,70-74,70,74,111,123,234
+Arauco,departamento,75-79,75,79,45,38,83
+Arauco,departamento,80-84,80,84,48,60,108
+Arauco,departamento,85-89,85,89,10,12,22
+Arauco,departamento,90-94,90,94,10,15,25
+Arauco,departamento,95-99,95,99,2,8,10
+Arauco,departamento,100 ó más,100,,4,2,6
+Arauco,departamento,Total,,,8410,9015,17425
+Lebu,departamento,Menos de 1 año,0,0,545,583,1128
+Lebu,departamento,1 año,1,1,391,520,911
+Lebu,departamento,2 años,2,2,590,634,1224
+Lebu,departamento,3 años,3,3,523,480,1003
+Lebu,departamento,4 años,4,4,479,501,980
+Lebu,departamento,5 años,5,5,525,604,1129
+Lebu,departamento,6-7,6,7,732,858,1590
+Lebu,departamento,8-9,8,9,717,602,1319
+Lebu,departamento,10-11,10,11,791,806,1597
+Lebu,departamento,12-14,12,14,1149,1085,2234
+Lebu,departamento,15-19,15,19,1409,1556,2965
+Lebu,departamento,20-24,20,24,1010,986,1996
+Lebu,departamento,25-29,25,29,811,810,1621
+Lebu,departamento,30-34,30,34,611,710,1321
+Lebu,departamento,35-39,35,39,730,647,1377
+Lebu,departamento,40-44,40,44,533,487,1020
+Lebu,departamento,45-49,45,49,438,302,740
+Lebu,departamento,50-54,50,54,499,345,844
+Lebu,departamento,55-59,55,59,308,194,502
+Lebu,departamento,60-64,60,64,325,152,477
+Lebu,departamento,65-69,65,69,129,104,233
+Lebu,departamento,70-74,70,74,108,95,203
+Lebu,departamento,75-79,75,79,86,40,126
+Lebu,departamento,80-84,80,84,61,36,97
+Lebu,departamento,85-89,85,89,44,26,70
+Lebu,departamento,90-94,90,94,2,8,10
+Lebu,departamento,95-99,95,99,4,3,7
+Lebu,departamento,100 ó más,100,,-,2,2
+Lebu,departamento,Total,,,13550,13176,26726
+Cañete,departamento,Menos de 1 año,0,0,214,211,425
+Cañete,departamento,1 año,1,1,153,171,324
+Cañete,departamento,2 años,2,2,253,242,495
+Cañete,departamento,3 años,3,3,298,264,562
+Cañete,departamento,4 años,4,4,296,289,585
+Cañete,departamento,5 años,5,5,318,245,563
+Cañete,departamento,6-7,6,7,587,526,1113
+Cañete,departamento,8-9,8,9,497,487,984
+Cañete,departamento,10-11,10,11,430,462,892
+Cañete,departamento,12-14,12,14,717,575,1292
+Cañete,departamento,15-19,15,19,871,896,1767
+Cañete,departamento,20-24,20,24,615,675,1290
+Cañete,departamento,25-29,25,29,580,640,1220
+Cañete,departamento,30-34,30,34,393,474,867
+Cañete,departamento,35-39,35,39,389,402,791
+Cañete,departamento,40-44,40,44,298,394,692
+Cañete,departamento,45-49,45,49,271,256,527
+Cañete,departamento,50-54,50,54,232,234,466
+Cañete,departamento,55-59,55,59,166,129,295
+Cañete,departamento,60-64,60,64,156,186,342
+Cañete,departamento,65-69,65,69,108,73,181
+Cañete,departamento,70-74,70,74,85,92,177
+Cañete,departamento,75-79,75,79,45,28,73
+Cañete,departamento,80-84,80,84,52,37,89
+Cañete,departamento,85-89,85,89,21,17,38
+Cañete,departamento,90-94,90,94,11,7,18
+Cañete,departamento,95-99,95,99,6,2,8
+Cañete,departamento,100 ó más,100,,3,3,6
+Cañete,departamento,Total,,,8065,8017,16082
+La Laja,departamento,Menos de 1 año,0,0,1038,970,2008
+La Laja,departamento,1 año,1,1,561,512,1073
+La Laja,departamento,2 años,2,2,870,846,1716
+La Laja,departamento,3 años,3,3,999,980,1979
+La Laja,departamento,4 años,4,4,986,970,1956
+La Laja,departamento,5 años,5,5,1024,996,2020
+La Laja,departamento,6-7,6,7,2144,2030,4174
+La Laja,departamento,8-9,8,9,1852,1820,3672
+La Laja,departamento,10-11,10,11,1652,1713,3365
+La Laja,departamento,12-14,12,14,2774,2453,5227
+La Laja,departamento,15-19,15,19,3501,3782,7283
+La Laja,departamento,20-24,20,24,2637,3019,5656
+La Laja,departamento,25-29,25,29,2389,2726,5115
+La Laja,departamento,30-34,30,34,1738,2049,3787
+La Laja,departamento,35-39,35,39,1663,1814,3477
+La Laja,departamento,40-44,40,44,1499,1691,3190
+La Laja,departamento,45-49,45,49,1100,1128,2228
+La Laja,departamento,50-54,50,54,1099,1117,2216
+La Laja,departamento,55-59,55,59,641,599,1240
+La Laja,departamento,60-64,60,64,704,866,1570
+La Laja,departamento,65-69,65,69,345,345,690
+La Laja,departamento,70-74,70,74,347,349,696
+La Laja,departamento,75-79,75,79,149,148,297
+La Laja,departamento,80-84,80,84,132,186,318
+La Laja,departamento,85-89,85,89,40,54,94
+La Laja,departamento,90-94,90,94,39,42,81
+La Laja,departamento,95-99,95,99,14,20,34
+La Laja,departamento,100 ó más,100,,9,16,25
+La Laja,departamento,Total,,,31946,33241,65187
+Nacimiento,departamento,Menos de 1 año,0,0,277,268,545
+Nacimiento,departamento,1 año,1,1,175,169,344
+Nacimiento,departamento,2 años,2,2,305,273,578
+Nacimiento,departamento,3 años,3,3,305,325,630
+Nacimiento,departamento,4 años,4,4,315,313,628
+Nacimiento,departamento,5 años,5,5,335,271,606
+Nacimiento,departamento,6-7,6,7,666,600,1266
+Nacimiento,departamento,8-9,8,9,559,569,1128
+Nacimiento,departamento,10-11,10,11,553,508,1061
+Nacimiento,departamento,12-14,12,14,803,696,1499
+Nacimiento,departamento,15-19,15,19,1008,1078,2086
+Nacimiento,departamento,20-24,20,24,798,813,1611
+Nacimiento,departamento,25-29,25,29,682,778,1460
+Nacimiento,departamento,30-34,30,34,509,551,1060
+Nacimiento,departamento,35-39,35,39,476,464,940
+Nacimiento,departamento,40-44,40,44,424,443,867
+Nacimiento,departamento,45-49,45,49,347,329,676
+Nacimiento,departamento,50-54,50,54,297,300,597
+Nacimiento,departamento,55-59,55,59,186,148,334
+Nacimiento,departamento,60-64,60,64,224,196,420
+Nacimiento,departamento,65-69,65,69,89,91,180
+Nacimiento,departamento,70-74,70,74,87,94,181
+Nacimiento,departamento,75-79,75,79,32,54,86
+Nacimiento,departamento,80-84,80,84,41,47,88
+Nacimiento,departamento,85-89,85,89,11,16,27
+Nacimiento,departamento,90-94,90,94,12,12,24
+Nacimiento,departamento,95-99,95,99,-,9,9
+Nacimiento,departamento,100 ó más,100,,1,3,4
+Nacimiento,departamento,Total,,,9517,9418,18935
+Mulchén,departamento,Menos de 1 año,0,0,345,333,678
+Mulchén,departamento,1 año,1,1,166,171,337
+Mulchén,departamento,2 años,2,2,326,289,615
+Mulchén,departamento,3 años,3,3,340,382,722
+Mulchén,departamento,4 años,4,4,333,332,665
+Mulchén,departamento,5 años,5,5,351,371,722
+Mulchén,departamento,6-7,6,7,763,712,1475
+Mulchén,departamento,8-9,8,9,656,645,1301
+Mulchén,departamento,10-11,10,11,577,597,1174
+Mulchén,departamento,12-14,12,14,936,867,1803
+Mulchén,departamento,15-19,15,19,1275,1212,2487
+Mulchén,departamento,20-24,20,24,1164,1070,2234
+Mulchén,departamento,25-29,25,29,955,898,1853
+Mulchén,departamento,30-34,30,34,699,673,1372
+Mulchén,departamento,35-39,35,39,704,573,1277
+Mulchén,departamento,40-44,40,44,607,496,1103
+Mulchén,departamento,45-49,45,49,459,351,810
+Mulchén,departamento,50-54,50,54,370,315,685
+Mulchén,departamento,55-59,55,59,278,182,460
+Mulchén,departamento,60-64,60,64,305,245,550
+Mulchén,departamento,65-69,65,69,132,78,210
+Mulchén,departamento,70-74,70,74,113,98,211
+Mulchén,departamento,75-79,75,79,46,31,77
+Mulchén,departamento,80-84,80,84,29,44,73
+Mulchén,departamento,85-89,85,89,8,7,15
+Mulchén,departamento,90-94,90,94,9,18,27
+Mulchén,departamento,95-99,95,99,2,3,5
+Mulchén,departamento,100 ó más,100,,4,5,9
+Mulchén,departamento,Total,,,11952,10998,22950
+Angol,departamento,Menos de 1 año,0,0,624,611,1235
+Angol,departamento,1 año,1,1,259,245,504
+Angol,departamento,2 años,2,2,474,424,898
+Angol,departamento,3 años,3,3,572,494,1066
+Angol,departamento,4 años,4,4,495,511,1006
+Angol,departamento,5 años,5,5,542,522,1064
+Angol,departamento,6-7,6,7,1059,1012,2071
+Angol,departamento,8-9,8,9,945,966,1911
+Angol,departamento,10-11,10,11,829,810,1639
+Angol,departamento,12-14,12,14,1243,1197,2440
+Angol,departamento,15-19,15,19,1788,1847,3635
+Angol,departamento,20-24,20,24,1450,1519,2969
+Angol,departamento,25-29,25,29,1294,1389,2683
+Angol,departamento,30-34,30,34,966,968,1934
+Angol,departamento,35-39,35,39,916,855,1771
+Angol,departamento,40-44,40,44,792,800,1592
+Angol,departamento,45-49,45,49,612,501,1113
+Angol,departamento,50-54,50,54,562,511,1073
+Angol,departamento,55-59,55,59,373,277,650
+Angol,departamento,60-64,60,64,371,372,743
+Angol,departamento,65-69,65,69,147,148,295
+Angol,departamento,70-74,70,74,168,163,331
+Angol,departamento,75-79,75,79,59,65,124
+Angol,departamento,80-84,80,84,57,72,129
+Angol,departamento,85-89,85,89,20,18,38
+Angol,departamento,90-94,90,94,15,19,34
+Angol,departamento,95-99,95,99,7,4,11
+Angol,departamento,100 ó más,100,,5,9,14
+Angol,departamento,Total,,,16644,16329,32973
+Collipulli,departamento,Menos de 1 año,0,0,372,279,651
+Collipulli,departamento,1 año,1,1,188,183,371
+Collipulli,departamento,2 años,2,2,302,297,599
+Collipulli,departamento,3 años,3,3,295,327,622
+Collipulli,departamento,4 años,4,4,298,287,585
+Collipulli,departamento,5 años,5,5,292,295,587
+Collipulli,departamento,6-7,6,7,638,575,1213
+Collipulli,departamento,8-9,8,9,599,605,1204
+Collipulli,departamento,10-11,10,11,575,519,1094
+Collipulli,departamento,12-14,12,14,842,804,1646
+Collipulli,departamento,15-19,15,19,1153,1186,2339
+Collipulli,departamento,20-24,20,24,947,936,1883
+Collipulli,departamento,25-29,25,29,799,813,1612
+Collipulli,departamento,30-34,30,34,633,683,1316
+Collipulli,departamento,35-39,35,39,589,450,1039
+Collipulli,departamento,40-44,40,44,478,489,967
+Collipulli,departamento,45-49,45,49,448,343,791
+Collipulli,departamento,50-54,50,54,396,297,693
+Collipulli,departamento,55-59,55,59,221,184,405
+Collipulli,departamento,60-64,60,64,281,207,488
+Collipulli,departamento,65-69,65,69,138,103,241
+Collipulli,departamento,70-74,70,74,144,99,243
+Collipulli,departamento,75-79,75,79,58,44,102
+Collipulli,departamento,80-84,80,84,45,42,87
+Collipulli,departamento,85-89,85,89,20,9,29
+Collipulli,departamento,90-94,90,94,12,11,23
+Collipulli,departamento,95-99,95,99,6,5,11
+Collipulli,departamento,100 ó más,100,,1,3,4
+Collipulli,departamento,Total,,,10770,10075,20845
+Traiguén,departamento,Menos de 1 año,0,0,596,615,1211
+Traiguén,departamento,1 año,1,1,329,342,671
+Traiguén,departamento,2 años,2,2,570,631,1201
+Traiguén,departamento,3 años,3,3,572,532,1104
+Traiguén,departamento,4 años,4,4,548,604,1152
+Traiguén,departamento,5 años,5,5,537,697,1234
+Traiguén,departamento,6-7,6,7,1004,1079,2083
+Traiguén,departamento,8-9,8,9,1204,952,2156
+Traiguén,departamento,10-11,10,11,1047,974,2021
+Traiguén,departamento,12-14,12,14,1650,1481,3131
+Traiguén,departamento,15-19,15,19,2189,1947,4136
+Traiguén,departamento,20-24,20,24,1937,1493,3430
+Traiguén,departamento,25-29,25,29,1683,1383,3066
+Traiguén,departamento,30-34,30,34,1165,995,2160
+Traiguén,departamento,35-39,35,39,1271,1015,2286
+Traiguén,departamento,40-44,40,44,825,831,1656
+Traiguén,departamento,45-49,45,49,760,499,1259
+Traiguén,departamento,50-54,50,54,528,529,1057
+Traiguén,departamento,55-59,55,59,344,297,641
+Traiguén,departamento,60-64,60,64,396,386,782
+Traiguén,departamento,65-69,65,69,196,184,380
+Traiguén,departamento,70-74,70,74,157,163,320
+Traiguén,departamento,75-79,75,79,69,91,160
+Traiguén,departamento,80-84,80,84,52,70,122
+Traiguén,departamento,85-89,85,89,21,30,51
+Traiguén,departamento,90-94,90,94,10,28,38
+Traiguén,departamento,95-99,95,99,1,11,12
+Traiguén,departamento,100 ó más,100,,5,9,14
+Traiguén,departamento,Total,,,19666,17868,37534
+Mariluán,departamento,Menos de 1 año,0,0,447,512,959
+Mariluán,departamento,1 año,1,1,196,235,431
+Mariluán,departamento,2 años,2,2,365,427,792
+Mariluán,departamento,3 años,3,3,447,379,826
+Mariluán,departamento,4 años,4,4,449,431,880
+Mariluán,departamento,5 años,5,5,417,460,877
+Mariluán,departamento,6-7,6,7,881,934,1815
+Mariluán,departamento,8-9,8,9,870,853,1723
+Mariluán,departamento,10-11,10,11,765,804,1569
+Mariluán,departamento,12-14,12,14,1242,1036,2278
+Mariluán,departamento,15-19,15,19,1758,1648,3406
+Mariluán,departamento,20-24,20,24,1509,1357,2866
+Mariluán,departamento,25-29,25,29,1353,1149,2502
+Mariluán,departamento,30-34,30,34,950,861,1811
+Mariluán,departamento,35-39,35,39,854,786,1640
+Mariluán,departamento,40-44,40,44,826,708,1534
+Mariluán,departamento,45-49,45,49,566,504,1070
+Mariluán,departamento,50-54,50,54,576,464,1040
+Mariluán,departamento,55-59,55,59,322,267,589
+Mariluán,departamento,60-64,60,64,320,311,631
+Mariluán,departamento,65-69,65,69,193,159,352
+Mariluán,departamento,70-74,70,74,131,115,246
+Mariluán,departamento,75-79,75,79,54,37,91
+Mariluán,departamento,80-84,80,84,52,46,98
+Mariluán,departamento,85-89,85,89,11,10,21
+Mariluán,departamento,90-94,90,94,7,11,18
+Mariluán,departamento,95-99,95,99,3,1,4
+Mariluán,departamento,100 ó más,100,,5,3,8
+Mariluán,departamento,Total,,,15569,14508,30077
+Llaima,departamento,Menos de 1 año,0,0,640,615,1255
+Llaima,departamento,1 año,1,1,276,250,526
+Llaima,departamento,2 años,2,2,469,503,972
+Llaima,departamento,3 años,3,3,527,557,1084
+Llaima,departamento,4 años,4,4,567,502,1069
+Llaima,departamento,5 años,5,5,554,505,1059
+Llaima,departamento,6-7,6,7,1084,1094,2178
+Llaima,departamento,8-9,8,9,989,1005,1994
+Llaima,departamento,10-11,10,11,912,882,1794
+Llaima,departamento,12-14,12,14,1370,1290,2660
+Llaima,departamento,15-19,15,19,1803,1826,3629
+Llaima,departamento,20-24,20,24,1846,1557,3403
+Llaima,departamento,25-29,25,29,1459,1485,2944
+Llaima,departamento,30-34,30,34,1084,1126,2210
+Llaima,departamento,35-39,35,39,1017,836,1853
+Llaima,departamento,40-44,40,44,822,769,1591
+Llaima,departamento,45-49,45,49,622,534,1156
+Llaima,departamento,50-54,50,54,595,494,1089
+Llaima,departamento,55-59,55,59,353,289,642
+Llaima,departamento,60-64,60,64,388,353,741
+Llaima,departamento,65-69,65,69,179,175,354
+Llaima,departamento,70-74,70,74,172,157,329
+Llaima,departamento,75-79,75,79,84,77,161
+Llaima,departamento,80-84,80,84,81,71,152
+Llaima,departamento,85-89,85,89,27,20,47
+Llaima,departamento,90-94,90,94,22,13,35
+Llaima,departamento,95-99,95,99,8,9,17
+Llaima,departamento,100 ó más,100,,9,8,17
+Llaima,departamento,Total,,,17959,17002,34961
+Imperial,departamento,Menos de 1 año,0,0,905,981,1886
+Imperial,departamento,1 año,1,1,749,684,1433
+Imperial,departamento,2 años,2,2,999,937,1936
+Imperial,departamento,3 años,3,3,1078,1038,2116
+Imperial,departamento,4 años,4,4,1006,982,1988
+Imperial,departamento,5 años,5,5,969,974,1943
+Imperial,departamento,6-7,6,7,1931,1939,3870
+Imperial,departamento,8-9,8,9,1895,1737,3632
+Imperial,departamento,10-11,10,11,1591,1511,3102
+Imperial,departamento,12-14,12,14,2524,2190,4714
+Imperial,departamento,15-19,15,19,3076,3261,6337
+Imperial,departamento,20-24,20,24,2496,2631,5127
+Imperial,departamento,25-29,25,29,2305,2539,4844
+Imperial,departamento,30-34,30,34,1703,1794,3497
+Imperial,departamento,35-39,35,39,1441,1558,2999
+Imperial,departamento,40-44,40,44,1366,1377,2743
+Imperial,departamento,45-49,45,49,921,930,1851
+Imperial,departamento,50-54,50,54,881,836,1717
+Imperial,departamento,55-59,55,59,472,456,928
+Imperial,departamento,60-64,60,64,651,667,1318
+Imperial,departamento,65-69,65,69,268,256,524
+Imperial,departamento,70-74,70,74,310,399,709
+Imperial,departamento,75-79,75,79,167,149,316
+Imperial,departamento,80-84,80,84,173,253,426
+Imperial,departamento,85-89,85,89,60,52,112
+Imperial,departamento,90-94,90,94,46,83,129
+Imperial,departamento,95-99,95,99,14,28,42
+Imperial,departamento,100 ó más,100,,13,25,38
+Imperial,departamento,Total,,,30010,30267,60277
+Temuco,departamento,Menos de 1 año,0,0,1495,1497,2992
+Temuco,departamento,1 año,1,1,991,1143,2134
+Temuco,departamento,2 años,2,2,1521,1463,2984
+Temuco,departamento,3 años,3,3,1509,1477,2986
+Temuco,departamento,4 años,4,4,1519,1534,3053
+Temuco,departamento,5 años,5,5,1569,1508,3077
+Temuco,departamento,6-7,6,7,2878,2815,5693
+Temuco,departamento,8-9,8,9,2701,2648,5349
+Temuco,departamento,10-11,10,11,2585,2356,4941
+Temuco,departamento,12-14,12,14,3883,3485,7368
+Temuco,departamento,15-19,15,19,5406,4991,10397
+Temuco,departamento,20-24,20,24,4542,4478,9020
+Temuco,departamento,25-29,25,29,4007,4171,8178
+Temuco,departamento,30-34,30,34,3038,3250,6288
+Temuco,departamento,35-39,35,39,2709,2840,5549
+Temuco,departamento,40-44,40,44,2326,2510,4836
+Temuco,departamento,45-49,45,49,1703,1698,3401
+Temuco,departamento,50-54,50,54,1490,1631,3121
+Temuco,departamento,55-59,55,59,936,1007,1943
+Temuco,departamento,60-64,60,64,991,963,1954
+Temuco,departamento,65-69,65,69,448,488,936
+Temuco,departamento,70-74,70,74,458,420,878
+Temuco,departamento,75-79,75,79,217,214,431
+Temuco,departamento,80-84,80,84,231,237,468
+Temuco,departamento,85-89,85,89,81,68,149
+Temuco,departamento,90-94,90,94,80,76,156
+Temuco,departamento,95-99,95,99,21,29,50
+Temuco,departamento,100 ó más,100,,23,35,58
+Temuco,departamento,Total,,,49358,49032,98390
+Villarrica,departamento,Menos de 1 año,0,0,898,963,1861
+Villarrica,departamento,1 año,1,1,567,641,1208
+Villarrica,departamento,2 años,2,2,901,816,1717
+Villarrica,departamento,3 años,3,3,917,846,1763
+Villarrica,departamento,4 años,4,4,981,877,1858
+Villarrica,departamento,5 años,5,5,949,962,1911
+Villarrica,departamento,6-7,6,7,1857,1739,3596
+Villarrica,departamento,8-9,8,9,1704,1622,3326
+Villarrica,departamento,10-11,10,11,1604,1604,3208
+Villarrica,departamento,12-14,12,14,2473,2460,4933
+Villarrica,departamento,15-19,15,19,3033,3168,6201
+Villarrica,departamento,20-24,20,24,2368,2192,4560
+Villarrica,departamento,25-29,25,29,2084,2108,4192
+Villarrica,departamento,30-34,30,34,1530,1678,3208
+Villarrica,departamento,35-39,35,39,1432,1537,2969
+Villarrica,departamento,40-44,40,44,1315,1176,2491
+Villarrica,departamento,45-49,45,49,1069,897,1966
+Villarrica,departamento,50-54,50,54,904,753,1657
+Villarrica,departamento,55-59,55,59,627,467,1094
+Villarrica,departamento,60-64,60,64,721,516,1237
+Villarrica,departamento,65-69,65,69,302,209,511
+Villarrica,departamento,70-74,70,74,295,246,541
+Villarrica,departamento,75-79,75,79,101,114,215
+Villarrica,departamento,80-84,80,84,114,107,221
+Villarrica,departamento,85-89,85,89,34,28,62
+Villarrica,departamento,90-94,90,94,26,26,52
+Villarrica,departamento,95-99,95,99,10,16,26
+Villarrica,departamento,100 ó más,100,,17,17,34
+Villarrica,departamento,Total,,,28833,27785,56618
+Valdivia,departamento,Menos de 1 año,0,0,1256,1169,2425
+Valdivia,departamento,1 año,1,1,817,817,1634
+Valdivia,departamento,2 años,2,2,1130,1059,2189
+Valdivia,departamento,3 años,3,3,1193,1059,2252
+Valdivia,departamento,4 años,4,4,1243,1128,2371
+Valdivia,departamento,5 años,5,5,1082,1040,2122
+Valdivia,departamento,6-7,6,7,2368,2152,4520
+Valdivia,departamento,8-9,8,9,2154,1989,4143
+Valdivia,departamento,10-11,10,11,1890,1743,3633
+Valdivia,departamento,12-14,12,14,2980,2552,5532
+Valdivia,departamento,15-19,15,19,4289,3994,8283
+Valdivia,departamento,20-24,20,24,3825,3621,7446
+Valdivia,departamento,25-29,25,29,3387,3186,6573
+Valdivia,departamento,30-34,30,34,2642,2337,4979
+Valdivia,departamento,35-39,35,39,2391,2091,4482
+Valdivia,departamento,40-44,40,44,1936,1646,3582
+Valdivia,departamento,45-49,45,49,1434,1168,2602
+Valdivia,departamento,50-54,50,54,1250,989,2239
+Valdivia,departamento,55-59,55,59,751,601,1352
+Valdivia,departamento,60-64,60,64,729,681,1410
+Valdivia,departamento,65-69,65,69,348,273,621
+Valdivia,departamento,70-74,70,74,307,290,597
+Valdivia,departamento,75-79,75,79,138,123,261
+Valdivia,departamento,80-84,80,84,105,147,252
+Valdivia,departamento,85-89,85,89,34,39,73
+Valdivia,departamento,90-94,90,94,29,39,68
+Valdivia,departamento,95-99,95,99,13,10,23
+Valdivia,departamento,100 ó más,100,,11,19,30
+Valdivia,departamento,Total,,,39732,35962,75694
+La Unión,departamento,Menos de 1 año,0,0,402,407,809
+La Unión,departamento,1 año,1,1,261,257,518
+La Unión,departamento,2 años,2,2,387,380,767
+La Unión,departamento,3 años,3,3,462,423,885
+La Unión,departamento,4 años,4,4,400,452,852
+La Unión,departamento,5 años,5,5,429,398,827
+La Unión,departamento,6-7,6,7,876,814,1690
+La Unión,departamento,8-9,8,9,719,717,1436
+La Unión,departamento,10-11,10,11,649,616,1265
+La Unión,departamento,12-14,12,14,980,829,1809
+La Unión,departamento,15-19,15,19,1273,1299,2572
+La Unión,departamento,20-24,20,24,1152,1093,2245
+La Unión,departamento,25-29,25,29,1042,950,1992
+La Unión,departamento,30-34,30,34,790,680,1470
+La Unión,departamento,35-39,35,39,715,656,1371
+La Unión,departamento,40-44,40,44,657,531,1188
+La Unión,departamento,45-49,45,49,504,331,835
+La Unión,departamento,50-54,50,54,400,311,711
+La Unión,departamento,55-59,55,59,250,170,420
+La Unión,departamento,60-64,60,64,276,221,497
+La Unión,departamento,65-69,65,69,138,107,245
+La Unión,departamento,70-74,70,74,111,111,222
+La Unión,departamento,75-79,75,79,52,43,95
+La Unión,departamento,80-84,80,84,36,47,83
+La Unión,departamento,85-89,85,89,18,14,32
+La Unión,departamento,90-94,90,94,8,17,25
+La Unión,departamento,95-99,95,99,5,5,10
+La Unión,departamento,100 ó más,100,,2,4,6
+La Unión,departamento,Total,,,12994,11883,24877
+Río Bueno,departamento,Menos de 1 año,0,0,364,308,672
+Río Bueno,departamento,1 año,1,1,170,170,340
+Río Bueno,departamento,2 años,2,2,276,252,528
+Río Bueno,departamento,3 años,3,3,278,301,579
+Río Bueno,departamento,4 años,4,4,295,264,559
+Río Bueno,departamento,5 años,5,5,302,246,548
+Río Bueno,departamento,6-7,6,7,633,562,1195
+Río Bueno,departamento,8-9,8,9,555,540,1095
+Río Bueno,departamento,10-11,10,11,491,480,971
+Río Bueno,departamento,12-14,12,14,790,681,1471
+Río Bueno,departamento,15-19,15,19,987,1030,2017
+Río Bueno,departamento,20-24,20,24,850,822,1672
+Río Bueno,departamento,25-29,25,29,738,650,1388
+Río Bueno,departamento,30-34,30,34,459,475,934
+Río Bueno,departamento,35-39,35,39,479,398,877
+Río Bueno,departamento,40-44,40,44,442,373,815
+Río Bueno,departamento,45-49,45,49,284,243,527
+Río Bueno,departamento,50-54,50,54,259,250,509
+Río Bueno,departamento,55-59,55,59,158,129,287
+Río Bueno,departamento,60-64,60,64,200,185,385
+Río Bueno,departamento,65-69,65,69,96,75,171
+Río Bueno,departamento,70-74,70,74,80,82,162
+Río Bueno,departamento,75-79,75,79,51,51,102
+Río Bueno,departamento,80-84,80,84,51,45,96
+Río Bueno,departamento,85-89,85,89,14,10,24
+Río Bueno,departamento,90-94,90,94,8,10,18
+Río Bueno,departamento,95-99,95,99,2,2,4
+Río Bueno,departamento,100 ó más,100,,2,4,6
+Río Bueno,departamento,Total,,,9314,8638,17952
+Osorno,departamento,Menos de 1 año,0,0,922,891,1813
+Osorno,departamento,1 año,1,1,662,628,1290
+Osorno,departamento,2 años,2,2,907,880,1787
+Osorno,departamento,3 años,3,3,1035,998,2033
+Osorno,departamento,4 años,4,4,909,992,1901
+Osorno,departamento,5 años,5,5,943,895,1838
+Osorno,departamento,6-7,6,7,1921,1868,3789
+Osorno,departamento,8-9,8,9,1693,1690,3383
+Osorno,departamento,10-11,10,11,1616,1481,3097
+Osorno,departamento,12-14,12,14,2501,2203,4704
+Osorno,departamento,15-19,15,19,3717,3286,7003
+Osorno,departamento,20-24,20,24,3215,3055,6270
+Osorno,departamento,25-29,25,29,2732,2490,5222
+Osorno,departamento,30-34,30,34,2118,1806,3924
+Osorno,departamento,35-39,35,39,1884,1607,3491
+Osorno,departamento,40-44,40,44,1655,1324,2979
+Osorno,departamento,45-49,45,49,1117,875,1992
+Osorno,departamento,50-54,50,54,1042,827,1869
+Osorno,departamento,55-59,55,59,658,428,1086
+Osorno,departamento,60-64,60,64,656,529,1185
+Osorno,departamento,65-69,65,69,300,241,541
+Osorno,departamento,70-74,70,74,285,243,528
+Osorno,departamento,75-79,75,79,147,107,254
+Osorno,departamento,80-84,80,84,117,130,247
+Osorno,departamento,85-89,85,89,41,27,68
+Osorno,departamento,90-94,90,94,27,22,49
+Osorno,departamento,95-99,95,99,11,19,30
+Osorno,departamento,100 ó más,100,,10,14,24
+Osorno,departamento,Total,,,32841,29556,62397
+Llanquihue,departamento,Menos de 1 año,0,0,744,747,1491
+Llanquihue,departamento,1 año,1,1,480,493,973
+Llanquihue,departamento,2 años,2,2,707,654,1361
+Llanquihue,departamento,3 años,3,3,664,700,1364
+Llanquihue,departamento,4 años,4,4,654,643,1297
+Llanquihue,departamento,5 años,5,5,687,615,1302
+Llanquihue,departamento,6-7,6,7,1279,1335,2614
+Llanquihue,departamento,8-9,8,9,1219,1187,2406
+Llanquihue,departamento,10-11,10,11,1093,1066,2159
+Llanquihue,departamento,12-14,12,14,1688,1502,3190
+Llanquihue,departamento,15-19,15,19,2409,2461,4870
+Llanquihue,departamento,20-24,20,24,2263,2002,4265
+Llanquihue,departamento,25-29,25,29,1808,1709,3517
+Llanquihue,departamento,30-34,30,34,1365,1273,2638
+Llanquihue,departamento,35-39,35,39,1240,1071,2311
+Llanquihue,departamento,40-44,40,44,1130,925,1955
+Llanquihue,departamento,45-49,45,49,741,667,1408
+Llanquihue,departamento,50-54,50,54,716,650,1366
+Llanquihue,departamento,55-59,55,59,474,353,827
+Llanquihue,departamento,60-64,60,64,395,401,796
+Llanquihue,departamento,65-69,65,69,211,168,379
+Llanquihue,departamento,70-74,70,74,168,174,342
+Llanquihue,departamento,75-79,75,79,99,74,173
+Llanquihue,departamento,80-84,80,84,66,60,126
+Llanquihue,departamento,85-89,85,89,14,20,43
+Llanquihue,departamento,90-94,90,94,14,16,30
+Llanquihue,departamento,95-99,95,99,6,8,14
+Llanquihue,departamento,100 ó más,100,,3,1,4
+Llanquihue,departamento,Total,,,22237,20984,43221
+Carelmapu,departamento,Menos de 1 año,0,0,519,529,1048
+Carelmapu,departamento,1 año,1,1,379,360,739
+Carelmapu,departamento,2 años,2,2,488,531,1019
+Carelmapu,departamento,3 años,3,3,524,521,1045
+Carelmapu,departamento,4 años,4,4,537,548,1085
+Carelmapu,departamento,5 años,5,5,546,501,1047
+Carelmapu,departamento,6-7,6,7,1114,1073,2187
+Carelmapu,departamento,8-9,8,9,1063,974,2037
+Carelmapu,departamento,10-11,10,11,1007,834,1841
+Carelmapu,departamento,12-14,12,14,1446,1236,2682
+Carelmapu,departamento,15-19,15,19,1456,1719,3175
+Carelmapu,departamento,20-24,20,24,952,1404,2356
+Carelmapu,departamento,25-29,25,29,922,1239,2161
+Carelmapu,departamento,30-34,30,34,798,947,1745
+Carelmapu,departamento,35-39,35,39,742,828,1570
+Carelmapu,departamento,40-44,40,44,591,727,1318
+Carelmapu,departamento,45-49,45,49,510,548,1058
+Carelmapu,departamento,50-54,50,54,494,515,1009
+Carelmapu,departamento,55-59,55,59,336,311,647
+Carelmapu,departamento,60-64,60,64,337,375,712
+Carelmapu,departamento,65-69,65,69,193,173,366
+Carelmapu,departamento,70-74,70,74,173,186,359
+Carelmapu,departamento,75-79,75,79,92,65,157
+Carelmapu,departamento,80-84,80,84,61,76,137
+Carelmapu,departamento,85-89,85,89,23,25,48
+Carelmapu,departamento,90-94,90,94,7,18,25
+Carelmapu,departamento,95-99,95,99,4,8,12
+Carelmapu,departamento,100 ó más,100,,-,3,3
+Carelmapu,departamento,Total,,,15314,16274,31588
+Ancud,departamento,Menos de 1 año,0,0,411,407,818
+Ancud,departamento,1 año,1,1,266,313,579
+Ancud,departamento,2 años,2,2,421,387,808
+Ancud,departamento,3 años,3,3,450,451,901
+Ancud,departamento,4 años,4,4,428,415,843
+Ancud,departamento,5 años,5,5,476,425,901
+Ancud,departamento,6-7,6,7,891,876,1767
+Ancud,departamento,8-9,8,9,810,790,1600
+Ancud,departamento,10-11,10,11,788,754,1542
+Ancud,departamento,12-14,12,14,1150,1133,2283
+Ancud,departamento,15-19,15,19,1346,1669,3015
+Ancud,departamento,20-24,20,24,926,1256,2182
+Ancud,departamento,25-29,25,29,706,1159,1865
+Ancud,departamento,30-34,30,34,602,985,1587
+Ancud,departamento,35-39,35,39,619,824,1443
+Ancud,departamento,40-44,40,44,498,755,1253
+Ancud,departamento,45-49,45,49,447,576,1023
+Ancud,departamento,50-54,50,54,472,569,1041
+Ancud,departamento,55-59,55,59,296,319,615
+Ancud,departamento,60-64,60,64,400,446,846
+Ancud,departamento,65-69,65,69,228,184,412
+Ancud,departamento,70-74,70,74,186,201,387
+Ancud,departamento,75-79,75,79,113,100,213
+Ancud,departamento,80-84,80,84,74,98,172
+Ancud,departamento,85-89,85,89,24,20,44
+Ancud,departamento,90-94,90,94,6,19,25
+Ancud,departamento,95-99,95,99,8,6,14
+Ancud,departamento,100 ó más,100,,2,2,4
+Ancud,departamento,Total,,,13044,15139,28183
+Quinchao,departamento,Menos de 1 año,0,0,142,153,295
+Quinchao,departamento,1 año,1,1,245,209,454
+Quinchao,departamento,2 años,2,2,257,262,519
+Quinchao,departamento,3 años,3,3,263,267,530
+Quinchao,departamento,4 años,4,4,284,267,551
+Quinchao,departamento,5 años,5,5,301,287,588
+Quinchao,departamento,6-7,6,7,554,503,1057
+Quinchao,departamento,8-9,8,9,529,494,1023
+Quinchao,departamento,10-11,10,11,563,516,1079
+Quinchao,departamento,12-14,12,14,843,759,1602
+Quinchao,departamento,15-19,15,19,866,1038,1904
+Quinchao,departamento,20-24,20,24,546,891,1437
+Quinchao,departamento,25-29,25,29,439,800,1239
+Quinchao,departamento,30-34,30,34,393,636,1029
+Quinchao,departamento,35-39,35,39,419,573,992
+Quinchao,departamento,40-44,40,44,409,520,929
+Quinchao,departamento,45-49,45,49,369,426,795
+Quinchao,departamento,50-54,50,54,328,415,743
+Quinchao,departamento,55-59,55,59,243,236,479
+Quinchao,departamento,60-64,60,64,258,285,543
+Quinchao,departamento,65-69,65,69,118,124,242
+Quinchao,departamento,70-74,70,74,121,125,246
+Quinchao,departamento,75-79,75,79,55,54,109
+Quinchao,departamento,80-84,80,84,45,57,102
+Quinchao,departamento,85-89,85,89,7,7,14
+Quinchao,departamento,90-94,90,94,12,9,21
+Quinchao,departamento,95-99,95,99,5,3,8
+Quinchao,departamento,100 ó más,100,,2,-,2
+Quinchao,departamento,Total,,,8616,9916,18532
+Castro,departamento,Menos de 1 año,0,0,589,591,1180
+Castro,departamento,1 año,1,1,534,522,1056
+Castro,departamento,2 años,2,2,800,804,1604
+Castro,departamento,3 años,3,3,825,806,1631
+Castro,departamento,4 años,4,4,841,782,1623
+Castro,departamento,5 años,5,5,919,914,1833
+Castro,departamento,6-7,6,7,1754,1721,3475
+Castro,departamento,8-9,8,9,1825,1761,3586
+Castro,departamento,10-11,10,11,1717,1597,3314
+Castro,departamento,12-14,12,14,2745,2360,5105
+Castro,departamento,15-19,15,19,3672,3504,7176
+Castro,departamento,20-24,20,24,2966,3119,6085
+Castro,departamento,25-29,25,29,2359,2735,5094
+Castro,departamento,30-34,30,34,1870,2066,3936
+Castro,departamento,35-39,35,39,1703,1969,3672
+Castro,departamento,40-44,40,44,1526,1704,3230
+Castro,departamento,45-49,45,49,1245,1280,2525
+Castro,departamento,50-54,50,54,1181,1154,2335
+Castro,departamento,55-59,55,59,656,674,1330
+Castro,departamento,60-64,60,64,873,805,1678
+Castro,departamento,65-69,65,69,368,329,697
+Castro,departamento,70-74,70,74,412,325,737
+Castro,departamento,75-79,75,79,157,129,286
+Castro,departamento,80-84,80,84,166,134,300
+Castro,departamento,85-89,85,89,43,36,79
+Castro,departamento,90-94,90,94,21,22,43
+Castro,departamento,95-99,95,99,10,5,15
+Castro,departamento,100 ó más,100,,3,5,8
+Castro,departamento,Total,,,31780,31853,63633
+Magallanes,provincia,Menos de 1 año,0,0,497,437,934
+Magallanes,provincia,1 año,1,1,326,267,593
+Magallanes,provincia,2 años,2,2,409,364,773
+Magallanes,provincia,3 años,3,3,415,329,744
+Magallanes,provincia,4 años,4,4,452,317,769
+Magallanes,provincia,5 años,5,5,388,367,755
+Magallanes,provincia,6-7,6,7,578,551,1129
+Magallanes,provincia,8-9,8,9,504,669,1173
+Magallanes,provincia,10-11,10,11,587,633,1220
+Magallanes,provincia,12-14,12,14,762,827,1589
+Magallanes,provincia,15-19,15,19,1508,1078,2586
+Magallanes,provincia,20-24,20,24,2091,1080,3171
+Magallanes,provincia,25-29,25,29,2264,1062,3326
+Magallanes,provincia,30-34,30,34,1951,991,2942
+Magallanes,provincia,35-39,35,39,1456,799,2255
+Magallanes,provincia,40-44,40,44,1290,614,1904
+Magallanes,provincia,45-49,45,49,733,387,1120
+Magallanes,provincia,50-54,50,54,524,288,812
+Magallanes,provincia,55-59,55,59,310,144,454
+Magallanes,provincia,60-64,60,64,185,142,327
+Magallanes,provincia,65-69,65,69,104,54,158
+Magallanes,provincia,70-74,70,74,74,42,116
+Magallanes,provincia,75-79,75,79,29,21,50
+Magallanes,provincia,80-84,80,84,17,13,30
+Magallanes,provincia,85-89,85,89,5,11,16
+Magallanes,provincia,90-94,90,94,3,4,7
+Magallanes,provincia,95-99,95,99,2,2,4
+Magallanes,provincia,100 ó más,100,,1,2,3
+Magallanes,provincia,Total,,,17465,11495,28960
