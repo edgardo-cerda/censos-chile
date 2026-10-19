@@ -36,42 +36,53 @@ SALIDA = RAIZ / "productos" / "avance" / "avance_censos_historicos.xlsx"
 
 CENSOS = [1813, 1835, 1843, 1854, 1865, 1875, 1885, 1895, 1907, 1920, 1930, 1940, 1952, 1960, 1970, 1982]
 
-# Estado, pendiente y observaciones de cada censo (escritos a mano).
+# Estado, pendiente y observaciones de cada censo (escritos a mano). El núcleo es la población
+# por territorio × área × sexo × edad: la estructura demográfica básica.
 ESTADO = {
-    1813: ("Catalogado", "Transcribir los «Censo de provincia» (totales por provincia).",
+    1813: ("Catalogado", "Transcribir los «Censo de provincia»: total y edades por sexo de cada provincia.",
            "Sin índice. No hay datos de Santiago; Concepción figura con las matrículas de 1812. "
            "Totales de Rancagua y Colchagua cruzados en la edición."),
-    1835: ("Catalogado", "Transcribir habitantes por provincia y departamento (cap. IX, págs. 171–222).",
+    1835: ("Catalogado", "Transcribir habitantes por provincia y departamento (arts. 34–42, págs. 171–222) "
+                         "y revisar si trae sexo y edad.",
            "Dos páginas impresas por página del PDF."),
     1843: ("Sin publicación", "Buscar un ejemplar digitalizado.", "No hay publicación digitalizada disponible."),
     1854: ("Sin publicación", "Buscar un ejemplar digitalizado.", "No hay publicación digitalizada disponible."),
-    1865: ("Serie desde otros censos", "Transcribir el Censo general de la República (págs. 321–392) para tener sexo.",
+    1865: ("Serie desde otros censos", "Sexo × edad: clasificación de los habitantes por provincias (pág. 360, PDF 393) "
+                                       "y por departamentos (pág. 352, PDF 385); contrastar con 1952 comparativo 6.",
            "Provincia × área desde 1952 C9; departamento (total) desde 1920 C1. Errata en Atacama (1920 C1) "
            "y en Santiago rural (1952 C9)."),
-    1875: ("Serie desde otros censos", "Transcribir los cuadros generales (págs. 601–645) para tener sexo.",
+    1875: ("Serie desde otros censos", "Sexo × edad: clasificación por departamentos y provincias (pág. 601, PDF ~617); "
+                                       "contrastar con 1952 comparativo 6.",
            "Provincia × área desde 1952 C9; departamento (total) desde 1920 C1."),
-    1885: ("Serie desde otros censos", "Transcribir los cuadros generales (págs. 839–867) para tener sexo.",
+    1885: ("Serie desde otros censos", "Sexo × edad: clasificación por departamentos y provincias (pág. 839, PDF ~873).",
            "El PDF trae solo el tomo I de 2. Provincia × área desde 1952 C9; departamento desde 1920 C1."),
-    1895: ("Serie desde otros censos", "Transcribir los cuadros generales del tomo IV (págs. 467–551) para tener sexo.",
+    1895: ("Serie desde otros censos", "Sexo × edad: clasificación por departamentos y provincias, tomo IV "
+                                       "(pág. 467, PDF ~2457).",
            "Departamento × área desde 1920 C3 (con departamentos agrupados); provincia × área desde 1930 C10 y 1952 C9."),
-    1907: ("Parcial", "Transcribir los resúmenes por provincia del volumen de 1907 (sexo por provincia y departamento).",
+    1907: ("Parcial", "Sexo por provincia: 1952 comparativo 5. Sexo × edad: resúmenes por provincia del volumen "
+                      "de 1907 (bloques).",
            "Departamento × área desde 1920 C1 y C3; área × sexo solo para el país (1930 C9)."),
-    1920: ("Núcleo completo", "Opcional: comunas y subdelegaciones (Cuadro 5, págs. 8–104).",
+    1920: ("Falta edad", "Edad: estado civil por edad y sexo (págs. 235–275, PDF ~250); revisar su nivel territorial.",
            "Departamento × área × sexo (Cuadro 4). El Cuadro 3 tiene seis cifras de 1920 que no cuadran: usar el Cuadro 4."),
-    1930: ("Núcleo completo", "—", "Comuna × área × sexo (Cuadro 9). Errata en el total de Atacama."),
-    1940: ("Núcleo completo", "—",
+    1930: ("Falta edad", "Edad: el volumen disponible no trae cuadros por edad; buscar otra publicación de 1930.",
+           "Comuna × área × sexo (Cuadro 9). Errata en el total de Atacama."),
+    1940: ("Falta edad", "Edad: población por edades individuales, sexo y provincias (pág. 8, PDF ~14) o por grupos "
+                         "de edades (pág. 332, PDF ~338).",
            "Comuna × área × sexo, con viviendas. Cifras ajustadas (~2,8 %); las revisadas están en 1952 C9 y 1960 C1.1.1."),
-    1952: ("Parcial", "Comuna: Tomo I (Cuadro 4) y Tomo II (Cuadro 1 de cada provincia). Buscar otro ejemplar "
-                      "con los cuadros nacionales 1 y 2.",
+    1952: ("Parcial", "Sexo por provincia: comparativo 5. Comuna: Tomo I (Cuadro 4) y Tomo II (Cuadro 1). Sexo × edad × "
+                      "área: el nacional 1 falta en el escaneo; el Cuadro 1 del Tomo II la trae por comuna para el "
+                      "Núcleo Central; comparativo 7 para el país.",
            "Provincia × área (1952 C9, 1960 C1.1.1). Faltan en el escaneo las págs. 85–116 (cuadros nacionales 1 y 2)."),
-    1960: ("Núcleo por provincia", "Bajar a departamento o comuna si hay cuadro.", "Provincia × área × sexo (Cuadro 1.2)."),
-    1970: ("Catalogado", "Buscar una publicación con población por provincia y área.",
+    1960: ("Falta edad", "Edad: 1.2.1 grupos de edades por provincias (PDF ~144); 1.3 área × sexo × años de edad "
+                         "del país (PDF ~156).",
+           "Provincia × área × sexo (Cuadro 1.2)."),
+    1970: ("Catalogado", "Sexo × edad × área del país: Cuadro 3 (PDF 11). Buscar una publicación por provincia.",
            "El volumen «Total País» no trae cuadros por provincia de población por área."),
-    1982: ("Núcleo completo", "Tomos II y III: ocupación, educación, vivienda, hogar y familia.",
+    1982: ("Falta edad", "Edad: Cuadro 1.03, sexo × edad × área (PDF 105); revisar su nivel territorial.",
            "Región, provincia y comuna × área × sexo (Cuadro 1.01). Todas las sumas cuadran."),
 }
 COLOR_ESTADO = {
-    "Núcleo completo": "C6EFCE", "Núcleo por provincia": "DDEBF7", "Parcial": "FFEB9C",
+    "Núcleo completo": "C6EFCE", "Falta edad": "DDEBF7", "Parcial": "FFEB9C",
     "Serie desde otros censos": "FCE4D6", "Catalogado": "EDEDED", "Sin publicación": "D9D9D9",
 }
 NIVELES = ["comuna", "departamento", "provincia", "region", "pais"]  # de más fino a más grueso
@@ -125,7 +136,8 @@ def main() -> None:
     tab = pd.read_csv(RAIZ / "productos" / "tabulados" / "tabulados_publicaciones.csv", dtype=str).fillna("")
     tab["con_area"] = tab.area != "_T"
     tab["con_sexo"] = tab.sexo != "_T"
-    cifras = (tab.groupby(["censo", "fuente_id", "cuadro", "territorio_nivel", "con_area", "con_sexo"])
+    tab["con_edad"] = tab.edad_min != ""
+    cifras = (tab.groupby(["censo", "fuente_id", "cuadro", "territorio_nivel", "con_area", "con_sexo", "con_edad"])
               .agg(cifras=("valor", "size"), con_valor=("valor", lambda x: (x != "").sum()),
                    inconsistentes=("estado_valor", lambda x: (x == "inconsistente").sum()))
               .reset_index())
@@ -135,20 +147,20 @@ def main() -> None:
     # --- Cifras ---------------------------------------------------------------------------
     wc = wb.active
     wc.title = "Cifras"
-    tit = ["Censo", "Publicación", "Cuadro", "Nivel territorial", "Con área", "Con sexo",
+    tit = ["Censo", "Publicación", "Cuadro", "Nivel territorial", "Con área", "Con sexo", "Con edad",
            "Cifras", "Con valor", "Inconsistentes"]
-    cabecera(wc, 1, tit, [8, 14, 9, 16, 10, 10, 10, 10, 14])
+    cabecera(wc, 1, tit, [8, 14, 9, 16, 10, 10, 10, 10, 10, 14])
     for i, r in enumerate(cifras.itertuples(index=False), 2):
         vals = [int(r.censo), r.fuente_id, r.cuadro, r.territorio_nivel, "Sí" if r.con_area else "No",
-                "Sí" if r.con_sexo else "No", int(r.cifras), int(r.con_valor), int(r.inconsistentes)]
+                "Sí" if r.con_sexo else "No", "Sí" if r.con_edad else "No", int(r.cifras), int(r.con_valor), int(r.inconsistentes)]
         for j, v in enumerate(vals, 1):
             c = wc.cell(i, j, v)
             c.font = F_NORMAL
-            if j >= 7:
+            if j >= 8:
                 c.number_format = MILES
     n_cif = len(cifras) + 1
     wc.freeze_panes = "A2"
-    wc.auto_filter.ref = f"A1:I{n_cif}"
+    wc.auto_filter.ref = f"A1:J{n_cif}"
     rng = lambda col: f"Cifras!${col}$2:${col}${n_cif}"
 
     # --- Catálogo -------------------------------------------------------------------------
@@ -168,8 +180,8 @@ def main() -> None:
     # --- Cuadros transcritos --------------------------------------------------------------
     wt = wb.create_sheet("Cuadros transcritos")
     tit = ["Censo de la publicación", "Publicación", "Cuadro", "Título", "Páginas del PDF", "Censos que cubre",
-           "Niveles territoriales", "Área", "Sexo", "Filas", "Cifras", "Inconsistentes anotadas", "Archivo"]
-    cabecera(wt, 1, tit, [11, 13, 8, 60, 12, 22, 30, 7, 7, 8, 10, 13, 42])
+           "Niveles territoriales", "Área", "Sexo", "Edad", "Filas", "Cifras", "Inconsistentes anotadas", "Archivo"]
+    cabecera(wt, 1, tit, [11, 13, 8, 60, 12, 22, 30, 7, 7, 7, 8, 10, 13, 42])
     fila = 2
     for meta_ruta in sorted((RAIZ / "digitalizacion").rglob("*.yaml")):
         meta = yaml.safe_load(meta_ruta.read_text(encoding="utf-8"))
@@ -184,25 +196,25 @@ def main() -> None:
                 f"{min(pdfs)}–{max(pdfs)}" if len(pdfs) > 1 else str(pdfs[0]),
                 ", ".join(map(str, censos)) if len(censos) <= 3 else f"{censos[0]}–{censos[-1]} ({len(censos)} censos)",
                 ", ".join(niveles), "Sí" if sub.con_area.any() else "No", "Sí" if sub.con_sexo.any() else "No",
-                n_filas,
-                f'=SUMIFS({rng("G")},{rng("B")},B{fila},{rng("C")},C{fila})',
-                f'=SUMIFS({rng("I")},{rng("B")},B{fila},{rng("C")},C{fila})',
+                "Sí" if sub.con_edad.any() else "No", n_filas,
+                f'=SUMIFS({rng("H")},{rng("B")},B{fila},{rng("C")},C{fila})',
+                f'=SUMIFS({rng("J")},{rng("B")},B{fila},{rng("C")},C{fila})',
                 rel]
         for j, v in enumerate(vals, 1):
             c = wt.cell(fila, j, v)
             c.font = F_NORMAL
             c.alignment = Alignment(wrap_text=j in (4, 6, 7), vertical="top")
-            if j in (10, 11, 12):
+            if j in (11, 12, 13):
                 c.number_format = MILES
         fila += 1
     n_tr = fila - 1
     wt.cell(fila, 1, "Total").font = F_BOLD
-    for j in (10, 11, 12):
+    for j in (11, 12, 13):
         col = get_column_letter(j)
         c = wt.cell(fila, j, f"=SUM({col}2:{col}{n_tr})")
         c.font, c.number_format, c.fill = F_BOLD, MILES, FILL_TOTAL
     wt.freeze_panes = "A2"
-    wt.auto_filter.ref = f"A1:M{n_tr}"
+    wt.auto_filter.ref = f"A1:N{n_tr}"
 
     # --- Resumen --------------------------------------------------------------------------
     ws = wb.create_sheet("Resumen", 0)
@@ -215,17 +227,20 @@ def main() -> None:
            "Página del PDF verificada", "Página del PDF estimada", "Página sin ubicar o ausente",
            "Cuadros transcritos de la publicación", "Cifras digitalizadas del censo",
            "Nivel más fino: total", "Nivel más fino: área", "Nivel más fino: área × sexo",
+           "Nivel más fino: sexo × edad",
            "Cifras inconsistentes anotadas", "Estado", "Pendiente / próximo paso", "Observaciones"]
-    cabecera(ws, 4, tit, [8, 16, 10, 11, 9, 9, 8, 11, 11, 11, 12, 12, 14, 14, 14, 12, 24, 48, 60])
+    cabecera(ws, 4, tit, [8, 16, 10, 11, 9, 9, 8, 11, 11, 11, 12, 12, 14, 14, 14, 14, 12, 20, 52, 60])
     ws.row_dimensions[4].height = 56
     c_censo, c_tipo, c_est_pdf, c_estado = crng("censo"), crng("tipo"), crng("pagina_pdf_estado"), crng("estado")
 
-    def nivel_mas_fino(fila, area=False, sexo=False):
+    def nivel_mas_fino(fila, area=False, sexo=False, edad=False):
         cond = f'{rng("A")},$A{fila}'
         if area:
             cond += f',{rng("E")},"Sí"'
         if sexo:
             cond += f',{rng("F")},"Sí"'
+        if edad:
+            cond += f',{rng("G")},"Sí"'
         f = '"—"'
         for n in NIVELES[::-1]:
             f = f'IF(COUNTIFS({cond},{rng("D")},"{n}")>0,"{NOMBRE_NIVEL[n]}",{f})'
@@ -249,26 +264,27 @@ def main() -> None:
             f'=COUNTIFS({c_censo},$A{r},{c_est_pdf},"estimada")',
             f'=COUNTIFS({c_censo},$A{r},{c_est_pdf},"desconocida")+COUNTIFS({c_censo},$A{r},{c_est_pdf},"ausente")',
             f'=COUNTIFS({c_censo},$A{r},{c_estado},"transcrito")',
-            f'=SUMIFS({rng("G")},{rng("A")},$A{r})',
+            f'=SUMIFS({rng("H")},{rng("A")},$A{r})',
             nivel_mas_fino(r),
             nivel_mas_fino(r, area=True),
             nivel_mas_fino(r, area=True, sexo=True),
-            f'=SUMIFS({rng("I")},{rng("A")},$A{r})',
+            nivel_mas_fino(r, sexo=True, edad=True),
+            f'=SUMIFS({rng("J")},{rng("A")},$A{r})',
             estado, pendiente, obs,
         ]
         for j, v in enumerate(vals, 1):
             c = ws.cell(r, j, v)
-            c.font = F_INPUT if j >= 17 else F_NORMAL
+            c.font = F_INPUT if j >= 18 else F_NORMAL
             c.border = BORDE
-            c.alignment = Alignment(wrap_text=j in (2, 18, 19), vertical="top",
-                                    horizontal="center" if 3 <= j <= 16 or j == 1 else None)
-            if 3 <= j <= 12 or j == 16:
+            c.alignment = Alignment(wrap_text=j in (2, 19, 20), vertical="top",
+                                    horizontal="center" if 3 <= j <= 17 or j == 1 else None)
+            if 3 <= j <= 12 or j == 17:
                 c.number_format = MILES
-        ws.cell(r, 17).fill = PatternFill("solid", fgColor=COLOR_ESTADO[estado])
+        ws.cell(r, 18).fill = PatternFill("solid", fgColor=COLOR_ESTADO[estado])
     ultima = primera + len(CENSOS) - 1
     t = ultima + 1
     ws.cell(t, 1, "Total").font = F_BOLD
-    for j in list(range(3, 13)) + [16]:
+    for j in list(range(3, 13)) + [17]:
         col = get_column_letter(j)
         c = ws.cell(t, j, f"=SUM({col}{primera}:{col}{ultima})")
         c.font, c.number_format, c.fill = F_BOLD, MILES, FILL_TOTAL
@@ -278,7 +294,7 @@ def main() -> None:
                       "propia publicación. El catálogo de 1992 (9 entradas) no se incluye.").font = F_NOTA
     # Resaltar los niveles "—" (sin cifras) en gris
     gris = Font(name=ARIAL, size=10, color="A6A6A6")
-    ws.conditional_formatting.add(f"M{primera}:O{ultima}",
+    ws.conditional_formatting.add(f"M{primera}:P{ultima}",
                                   FormulaRule(formula=[f'M{primera}="—"'], font=gris))
     ws.freeze_panes = ws.cell(primera, 2)
 
@@ -286,9 +302,9 @@ def main() -> None:
     fl = t + 3
     ws.cell(fl, 1, "Estados").font = F_BOLD
     leyenda = {
-        "Núcleo completo": "Población por territorio × área × sexo transcrita bajo el nivel de provincia.",
-        "Núcleo por provincia": "Población por provincia × área × sexo transcrita.",
-        "Parcial": "Hay cifras por territorio y área, pero falta sexo o falta bajar de provincia.",
+        "Núcleo completo": "Población por territorio × área × sexo × edad transcrita (estructura demográfica básica).",
+        "Falta edad": "Población por territorio × área × sexo transcrita; falta la edad.",
+        "Parcial": "Hay cifras por territorio y área, pero falta sexo (salvo para el país) o falta bajar de provincia.",
         "Serie desde otros censos": "Cifras tomadas de cuadros comparativos de censos posteriores; "
                                     "la publicación propia aún no se transcribe.",
         "Catalogado": "Cuadros catalogados; sin cifras transcritas.",
@@ -318,8 +334,9 @@ def main() -> None:
                            "sin ubicar = desconocida; ausente = falta en el escaneo."),
         ("Cifras digitalizadas del censo", "Todas las cifras referidas a ese censo, de cualquier publicación. Incluye "
                                            "las celdas sin dato impresas como «-» o «..»."),
+        ("Núcleo", "Población por territorio × área × sexo × edad: la estructura demográfica básica de cada censo."),
         ("Nivel más fino", "Nivel territorial más desagregado con cifras: total (sin área ni sexo), con área "
-                           "urbana/rural, y con área × sexo."),
+                           "urbana/rural, con área × sexo y con sexo × edad."),
         ("Cifras inconsistentes", "Cifras transcritas tal como están impresas que no cuadran con sus totales "
                                   "(erratas de la publicación), anotadas en el YAML de cada cuadro."),
         ("", ""),

@@ -76,10 +76,12 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 4. Cifras publicadas de referencia para 2002, 2017 y 2024, y regionales.
 5. Esqueleto de las librerías (`tabulado()`, `diccionario()`). Los microdatos de 2017 vienen en
    `.rar`: en R usar el paquete `archive`; en Python requiere una dependencia adicional.
-6. Fase 4: población por territorio × área × sexo. 1952 por comuna desde el Tomo I (Cuadro 4) y
-   el Tomo II (Cuadro 1 de cada provincia); 1970. 1907 por sexo: solo en el volumen de 1907
-   (resúmenes por provincia), no en los cuadros de 1920. Los cuadros nacionales 1 y 2 de 1952 faltan en
-   el escaneo: buscar otro ejemplar.
+6. Fase 4: núcleo = población por territorio × área × sexo × edad. Ningún censo histórico lo
+   tiene completo todavía: falta la edad en todos. Territorio × área × sexo: 1952 por comuna desde
+   el Tomo I (Cuadro 4) y el Tomo II (Cuadro 1 de cada provincia); sexo por provincia de 1865 a
+   1952 en el comparativo 5 de 1952; 1907 por departamento en los resúmenes del volumen de 1907.
+   Los cuadros de edad de cada censo están en la planilla de avance (columna «Pendiente»). Los
+   cuadros nacionales 1 y 2 de 1952 faltan en el escaneo: buscar otro ejemplar.
 
 ## Cómo retomar
 

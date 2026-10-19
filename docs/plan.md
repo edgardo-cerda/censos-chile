@@ -117,9 +117,13 @@ Procedimiento y notas por publicación en [digitalizacion.md](digitalizacion.md)
       índices o, donde no los hay, desde las portadas y encabezados
       (`herramientas/muestreo_paginas.py`). Desfases por tramos en `metadatos/paginacion.csv`.
       Pendiente: variables, desagregación y nivel territorial de cada cuadro (hoy en el título).
-- [ ] Núcleo: población por provincia × área (× sexo) de cada censo. Hechos: 1952 C9
-      (provincias × urbana/rural, 1865–1952); 1920 C1, C3 y C4 (departamentos, 1865–1920, y
-      área × sexo en 1920); 1930 C9; 1940; 1960 C1.1.1 y C1.2; 1982 C1.01.
+- [ ] Núcleo: población por territorio × área × sexo × edad de cada censo (la estructura
+      demográfica básica). Primero territorio × área × sexo y luego la edad.
+      Territorio × área × sexo hecho en 1920 (departamento), 1930, 1940 y 1982 (comuna) y 1960
+      (provincia); territorio × área en 1952 C9 (provincias, 1865–1952) y 1920 C1 y C3
+      (departamentos, 1865–1920). Edad: pendiente en todos los censos.
+      Avance por censo: `productos/avance/avance_censos_historicos.xlsx`
+      (`herramientas/resumen_avance.py`).
 
 ### Fase 5: publicación y comunidad
 Versiones con DOI (Zenodo), CRAN/PyPI, guía de contribución, registro público de erratas
