@@ -20,6 +20,7 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 | Región | Dos versiones exactas: DPA1974 (13 regiones) y DPA2018 (16). |
 | Diccionario consolidado | Antes de armonizar, consolidar variables y categorías de 1992–2024 en un Excel generado desde CSV versionados. |
 | Publicación | No subir a GitHub hasta que el autor lo indique. |
+| Seguimiento | Después de cada avance se actualizan este archivo y la planilla `productos/avance/avance_censos_historicos.xlsx` (`herramientas/resumen_avance.py`, abrir y guardar en Excel para calcular las fórmulas). |
 | Digitalización | Cada cuadro se transcribe tal como está impreso (CSV) con un YAML de procedencia y mapeo; las erratas de la publicación se conservan y se anotan como `inconsistente`, no se corrigen. |
 | Cuadros comparativos | Para ganar eficiencia, los censos anteriores se rescatan primero desde los cuadros comparativos de publicaciones posteriores (p. ej., 1952 C5–C9, 1920 C1–C3), pero cada cifra rescatada debe validarse contra la publicación original del censo (contraste entre cuadros). |
 | Núcleo | Población por territorio × área × sexo × edad (estructura demográfica básica). Primero territorio × área × sexo; luego la edad. |
