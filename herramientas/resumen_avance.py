@@ -45,8 +45,10 @@ ESTADO = {
     1835: ("Catalogado", "Transcribir habitantes por provincia y departamento (arts. 34–42, págs. 171–222) "
                          "y revisar si trae sexo y edad.",
            "Dos páginas impresas por página del PDF."),
-    1843: ("Sin publicación", "Buscar un ejemplar digitalizado.", "No hay publicación digitalizada disponible."),
-    1854: ("Sin publicación", "Buscar un ejemplar digitalizado.", "No hay publicación digitalizada disponible."),
+    1843: ("Sin publicación", "Transcribir la población por departamento desde el cuadro sinóptico de 1865 (PDF 425) y validarla con el de 1875 (PDF 661).",
+           "No hay publicación digitalizada. Población por departamento en los sinópticos de 1865 y 1875; por provincia en 1952 C4."),
+    1854: ("Sin publicación", "Transcribir la población por departamento desde el cuadro sinóptico de 1865 (PDF 425) y validarla con el de 1875 (PDF 661) y el resumen de 1907 (PDF 1222); buscar un ejemplar digitalizado.",
+           "No hay publicación digitalizada. Población por departamento en los sinópticos de 1865 y 1875 y en el resumen de 1907; por provincia en 1952 C4."),
     1865: ("Serie desde otros censos", "Departamento × sexo × edad: clasificación por departamentos (pág. 352, PDF 385). "
                                        "Área × sexo: revisar si la publicación lo trae.",
            "Provincia × sexo × edad en 6 tramos desde la propia publicación (pág. 360), que valida 1952 C5 y C6 "
@@ -94,8 +96,11 @@ COLOR_ESTADO = {
     "Serie desde otros censos": "FCE4D6", "Catalogado": "EDEDED", "Sin publicación": "D9D9D9",
 }
 NIVELES = ["comuna", "departamento", "provincia", "region", "pais"]  # de más fino a más grueso
-NOMBRE_NIVEL = {"comuna": "Comuna", "departamento": "Departamento", "provincia": "Provincia",
-                "region": "Región", "pais": "País"}
+# Niveles del catálogo (metadatos/catalogo_cuadros.csv, columna nivel_territorial), de más fino a más grueso.
+NIVELES_PDF = ["entidad", "distrito", "comuna", "parroquia", "departamento", "provincia", "region", "pais"]
+NOMBRE_NIVEL = {"entidad": "Entidad", "distrito": "Distrito", "comuna": "Comuna", "parroquia": "Parroquia",
+                "departamento": "Departamento", "provincia": "Provincia", "region": "Región", "pais": "País"}
+DESAGREGACIONES = {"Total": [], "Área": ["area"], "Área × sexo": ["area", "sexo"], "Sexo × edad": ["sexo", "edad"]}
 
 ARIAL = "Arial"
 F_NORMAL = Font(name=ARIAL, size=10)
@@ -106,6 +111,8 @@ F_BOLD = Font(name=ARIAL, size=10, bold=True)
 F_NOTA = Font(name=ARIAL, size=9, italic=True, color="595959")
 FILL_HEAD = PatternFill("solid", fgColor="1F4E78")
 FILL_TOTAL = PatternFill("solid", fgColor="F2F2F2")
+FILL_HEAD_PDF = PatternFill("solid", fgColor="2E75B6")
+FILL_PDF = PatternFill("solid", fgColor="F3F8FC")
 BORDE = Border(bottom=Side(style="thin", color="BFBFBF"))
 MILES = "#,##0;-#,##0;-"
 
@@ -174,13 +181,27 @@ def main() -> None:
     # --- Catálogo -------------------------------------------------------------------------
     wk = wb.create_sheet("Catálogo")
     cols = list(cat.columns)
-    cabecera(wk, 1, cols, [12, 8, 30, 8, 70, 9, 10, 10, 12, 11, 60])
     for i, r in enumerate(cat.itertuples(index=False), 2):
         for j, v in enumerate(r, 1):
             if cols[j - 1] in ("censo", "pagina_pdf") and v.isdigit():
                 v = int(v)
             wk.cell(i, j, v).font = F_NORMAL
     n_cat = len(cat) + 1
+    # Hoja auxiliar con el orden de los niveles territoriales (1 = más fino) y la columna nivel_orden
+    # del catálogo, para buscar el nivel más fino con MINIFS.
+    wv = wb.create_sheet("Niveles")
+    cabecera(wv, 1, ["Orden", "Nivel en el catálogo", "Nombre"], [8, 22, 16])
+    for k, n in enumerate(NIVELES_PDF, 1):
+        for j, v in enumerate((k, n, NOMBRE_NIVEL[n]), 1):
+            wv.cell(k + 1, j, v).font = F_NORMAL
+    n_niv = len(NIVELES_PDF) + 1
+    col_nivel = get_column_letter(cols.index("nivel_territorial") + 1)
+    col_orden = len(cols) + 1
+    cabecera(wk, 1, cols + ["nivel_orden"], [12, 8, 30, 8, 70, 9, 10, 10, 12, 24, 14, 14, 11, 13, 11, 60, 11])
+    for i in range(2, n_cat + 1):
+        c = wk.cell(i, col_orden, f'=IFERROR(MATCH({col_nivel}{i},Niveles!$B$2:$B${n_niv},0),"")')
+        c.font = F_NORMAL
+    cols = cols + ["nivel_orden"]
     wk.freeze_panes = "A2"
     wk.auto_filter.ref = f"A1:{get_column_letter(len(cols))}{n_cat}"
     crng = lambda nombre: f"'Catálogo'!${get_column_letter(cols.index(nombre) + 1)}$2:${get_column_letter(cols.index(nombre) + 1)}${n_cat}"
@@ -233,26 +254,46 @@ def main() -> None:
     ws["A2"].font = F_NOTA
     tit = ["Censo", "Publicaciones", "Páginas del PDF", "Entradas en el catálogo", "Cuadros", "Bloques", "Textos",
            "Página del PDF verificada", "Página del PDF estimada", "Página sin ubicar o ausente",
-           "Cuadros transcritos de la publicación", "Cifras digitalizadas del censo",
-           "Nivel más fino: total", "Nivel más fino: área", "Nivel más fino: área × sexo",
-           "Nivel más fino: sexo × edad",
-           "Cifras inconsistentes anotadas", "Estado", "Pendiente / próximo paso", "Observaciones"]
-    cabecera(ws, 4, tit, [8, 16, 10, 11, 9, 9, 8, 11, 11, 11, 12, 12, 14, 14, 14, 14, 12, 20, 52, 60])
+           "Cuadros transcritos de la publicación", "Cifras digitalizadas del censo"]
+    anchos = [8, 16, 10, 11, 9, 9, 8, 11, 11, 11, 12, 12]
+    for d in DESAGREGACIONES:
+        tit += [f"{d}: transcrito", f"{d}: en los PDF"]
+        anchos += [13, 15]
+    tit += ["Cifras inconsistentes anotadas", "Estado", "Pendiente / próximo paso", "Observaciones"]
+    anchos += [12, 20, 52, 60]
+    cabecera(ws, 4, tit, anchos)
     ws.row_dimensions[4].height = 56
+    c_niv = 13  # primera columna de niveles
+    c_inc = c_niv + 2 * len(DESAGREGACIONES)
+    c_est = c_inc + 1
+    for k in range(len(DESAGREGACIONES)):
+        ws.cell(4, c_niv + 2 * k + 1).fill = FILL_HEAD_PDF
     c_censo, c_tipo, c_est_pdf, c_estado = crng("censo"), crng("tipo"), crng("pagina_pdf_estado"), crng("estado")
+    c_censos, c_vars, c_cob, c_orden = crng("censos_datos"), crng("variables"), crng("cobertura"), crng("nivel_orden")
 
-    def nivel_mas_fino(fila, area=False, sexo=False, edad=False):
+    def nivel_transcrito(fila, variables):
         cond = f'{rng("A")},$A{fila}'
-        if area:
-            cond += f',{rng("E")},"Sí"'
-        if sexo:
-            cond += f',{rng("F")},"Sí"'
-        if edad:
-            cond += f',{rng("G")},"Sí"'
+        for v, col in (("area", "E"), ("sexo", "F"), ("edad", "G")):
+            if v in variables:
+                cond += f',{rng(col)},"Sí"'
         f = '"—"'
         for n in NIVELES[::-1]:
             f = f'IF(COUNTIFS({cond},{rng("D")},"{n}")>0,"{NOMBRE_NIVEL[n]}",{f})'
         return "=" + f
+
+    def nivel_pdf(fila, variables):
+        """Nivel más fino con esas variables en algún cuadro del catálogo que cubra el país; si no hay,
+        el de algún cuadro que cubra solo parte del país, marcado "(parcial)"."""
+        def orden(cobertura):  # orden del nivel más fino (0 = ninguno): primer orden con algún cuadro
+            cond = f'{c_censos},"*"&$A{fila}&"*",{c_est_pdf},"<>ausente",{c_cob},"{cobertura}"'
+            for v in variables:
+                cond += f',{c_vars},"*{v}*"'
+            ordenes = "{" + ",".join(str(k) for k in range(1, len(NIVELES_PDF) + 1)) + "}"
+            return f"IFERROR(MATCH(TRUE,COUNTIFS({cond},{c_orden},{ordenes})>0,0),0)"
+        nombre = lambda o: f"INDEX(Niveles!$C$2:$C${n_niv},{o})"
+        c, p = orden("completa"), orden("parcial")
+        extra = f'IF(AND({p}>0,{p}<{c}),"; "&LOWER({nombre(p)})&" (parcial)","")'
+        return f'=IF({c}>0,{nombre(c)}&{extra},IF({p}>0,{nombre(p)}&" (parcial)","—"))'
 
     primera = 5
     for i, censo in enumerate(CENSOS):
@@ -273,26 +314,25 @@ def main() -> None:
             f'=COUNTIFS({c_censo},$A{r},{c_est_pdf},"desconocida")+COUNTIFS({c_censo},$A{r},{c_est_pdf},"ausente")',
             f'=COUNTIFS({c_censo},$A{r},{c_estado},"transcrito")',
             f'=SUMIFS({rng("H")},{rng("A")},$A{r})',
-            nivel_mas_fino(r),
-            nivel_mas_fino(r, area=True),
-            nivel_mas_fino(r, area=True, sexo=True),
-            nivel_mas_fino(r, sexo=True, edad=True),
-            f'=SUMIFS({rng("J")},{rng("A")},$A{r})',
-            estado, pendiente, obs,
         ]
+        for variables in DESAGREGACIONES.values():
+            vals += [nivel_transcrito(r, variables), nivel_pdf(r, variables)]
+        vals += [f'=SUMIFS({rng("J")},{rng("A")},$A{r})', estado, pendiente, obs]
         for j, v in enumerate(vals, 1):
             c = ws.cell(r, j, v)
-            c.font = F_INPUT if j >= 18 else F_NORMAL
+            c.font = F_INPUT if j >= c_est else F_NORMAL
             c.border = BORDE
-            c.alignment = Alignment(wrap_text=j in (2, 19, 20), vertical="top",
-                                    horizontal="center" if 3 <= j <= 17 or j == 1 else None)
-            if 3 <= j <= 12 or j == 17:
+            c.alignment = Alignment(wrap_text=j in (2, c_est + 1, c_est + 2) or c_niv <= j < c_inc, vertical="top",
+                                    horizontal="center" if j <= c_inc and j != 2 else None)
+            if 3 <= j <= 12 or j == c_inc:
                 c.number_format = MILES
-        ws.cell(r, 18).fill = PatternFill("solid", fgColor=COLOR_ESTADO[estado])
+            if c_niv <= j < c_inc and (j - c_niv) % 2 == 1:
+                c.fill = FILL_PDF
+        ws.cell(r, c_est).fill = PatternFill("solid", fgColor=COLOR_ESTADO[estado])
     ultima = primera + len(CENSOS) - 1
     t = ultima + 1
     ws.cell(t, 1, "Total").font = F_BOLD
-    for j in list(range(3, 13)) + [17]:
+    for j in list(range(3, 13)) + [c_inc]:
         col = get_column_letter(j)
         c = ws.cell(t, j, f"=SUM({col}{primera}:{col}{ultima})")
         c.font, c.number_format, c.fill = F_BOLD, MILES, FILL_TOTAL
@@ -300,10 +340,15 @@ def main() -> None:
     ws.cell(t + 1, 1, "Las cifras se cuentan por el censo al que se refieren, aunque vengan de la publicación de otro "
                       "censo: p. ej., 1865 tiene cifras de 1920 C1 y 1952 C9 sin tener cuadros transcritos de su "
                       "propia publicación. El catálogo de 1992 (9 entradas) no se incluye.").font = F_NOTA
+    ws.cell(t + 2, 1, "«Transcrito»: nivel más fino ya digitalizado. «En los PDF»: nivel más fino que traen las "
+                      "publicaciones según el catálogo (incluidos los cuadros comparativos de censos posteriores); "
+                      "«(parcial)» = solo para parte del país; si para parte del país hay un nivel más fino que para el país "
+                      "completo, se muestran ambos.").font = F_NOTA
     # Resaltar los niveles "—" (sin cifras) en gris
     gris = Font(name=ARIAL, size=10, color="A6A6A6")
-    ws.conditional_formatting.add(f"M{primera}:P{ultima}",
-                                  FormulaRule(formula=[f'M{primera}="—"'], font=gris))
+    ini, fin = get_column_letter(c_niv), get_column_letter(c_inc - 1)
+    ws.conditional_formatting.add(f"{ini}{primera}:{fin}{ultima}",
+                                  FormulaRule(formula=[f'{ini}{primera}="—"'], font=gris))
     ws.freeze_panes = ws.cell(primera, 2)
 
     # Leyenda de estados
@@ -343,8 +388,13 @@ def main() -> None:
         ("Cifras digitalizadas del censo", "Todas las cifras referidas a ese censo, de cualquier publicación. Incluye "
                                            "las celdas sin dato impresas como «-» o «..»."),
         ("Núcleo", "Población por territorio × área × sexo × edad: la estructura demográfica básica de cada censo."),
-        ("Nivel más fino", "Nivel territorial más desagregado con cifras: total (sin área ni sexo), con área "
-                           "urbana/rural, con área × sexo y con sexo × edad."),
+        ("Nivel más fino: transcrito", "Nivel territorial más desagregado con cifras ya digitalizadas: total (sin "
+                                       "área ni sexo), con área urbana/rural, con área × sexo y con sexo × edad."),
+        ("Nivel más fino: en los PDF", "Nivel más desagregado que traen las publicaciones, según las columnas "
+                                       "censos_datos, nivel_territorial, variables y cobertura del catálogo (solo "
+                                       "cuadros de población; no cuenta las páginas ausentes del escaneo). "
+                                       "«(parcial)» = solo hay cuadros para parte del país. Orden de los niveles: "
+                                       "entidad, distrito, comuna, parroquia, departamento, provincia, región, país."),
         ("Cifras inconsistentes", "Cifras transcritas tal como están impresas que no cuadran con sus totales "
                                   "(erratas de la publicación), anotadas en el YAML de cada cuadro."),
         ("", ""),

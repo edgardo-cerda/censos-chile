@@ -12,6 +12,13 @@ sabe de cada PDF. Las cifras resultantes van a `productos/tabulados/tabulados_pu
    publicaciones del siglo XIX, en 1907 y en la división territorial de 1952, cada provincia es
    una entrada de tipo `bloque`:
    la nota trae sus páginas y la lista de cuadros que contiene, que se repite en cada provincia.
+   Los cuadros de población (los del núcleo) traen además su desagregación: `censos_datos` (censos
+   cuyas cifras trae, separados por «;»; los comparativos traen varios), `nivel_territorial` (el más
+   fino: entidad, distrito, comuna, parroquia, departamento, provincia, región o país), `variables`
+   (cruces de `area`, `sexo` y `edad`, unidos por «+»), `cobertura` (`completa` o `parcial`, si solo
+   cubre parte del país) y `desagregacion_fuente` (`verificada` si se vio en la página, `nota` si
+   sale de la descripción del bloque, `título` si solo del título). Con ellas la planilla de avance
+   calcula el nivel más fino disponible en los PDF para cada censo.
 2. **Renderizar** la página con `herramientas/paginas.py`:
    ```
    python herramientas/paginas.py pub_1952 --pdf 40                 # página completa, 120 dpi
@@ -79,6 +86,11 @@ Criterios:
 Las de 1930–1992 vienen en parte de la extracción previa (septiembre de 2026); las de 1813–1920 y
 los tomos completos de 1952 y 1982 se agregaron al armar el catálogo (octubre de 2026).
 
+**Censos sin publicación propia (1843 y 1854).** Sus cifras están en otras publicaciones: por
+departamento en los cuadros sinópticos de 1865 (pág. 392, PDF 425: 1835, 1843, 1854 y 1865) y de
+1875 (pág. 645, PDF 661: 1835 a 1875), y en el resumen general de 1907 (pág. 1263, PDF 1222: 1854
+a 1907, por provincia y departamento); por provincia en el Cuadro 4 de 1952 (1835 a 1952).
+
 **1813** (edición del Archivo Nacional, 1953). Sin índice. Por provincia, de Copiapó a Talca:
 cuadros "Censo de territorio" por distrito y un "Censo de provincia" con el total (estado civil
 por sexo, edades y clases). No hay datos de Santiago. Concepción figura con las matrículas de
@@ -142,7 +154,9 @@ rural × sexo por provincia, departamento y comuna, más los totales del país d
 Erratas impresas: Atacama total 61.008 (coherente 61.098; en los cuadros 9 y 10), Penco mujeres
 5.441 (5.444) y Cunco rural 16.601 (16.604).
 
-**1940.** Reedición de cuadros publicados en la Revista Estadística Chilena (1941–46). Las cifras
+**1940.** Reedición de cuadros publicados en la Revista Estadística Chilena (1941–46). Las
+primeras páginas (PDF 7 en adelante) traen la población por provincia, departamento y comuna de
+1875 a 1940, reordenada según la división de 1940. Las cifras
 fueron **ajustadas** (~2,8 %) por la Dirección de Estadística, sin publicar la población
 efectivamente empadronada (introducción, PDF 4–6). El cuadro urbano-rural por provincias,
 departamentos, comunas y distritos (págs. 76–115) no trae total país y tiene inconsistencias

@@ -116,7 +116,8 @@ Procedimiento y notas por publicación en [digitalizacion.md](digitalizacion.md)
 - [x] Catálogo de cuadros (`metadatos/catalogo_cuadros.csv`): 1813–1992, 638 entradas, desde los
       índices o, donde no los hay, desde las portadas y encabezados
       (`herramientas/muestreo_paginas.py`). Desfases por tramos en `metadatos/paginacion.csv`.
-      Pendiente: variables, desagregación y nivel territorial de cada cuadro (hoy en el título).
+      Desagregación de los cuadros de población (censos con datos, nivel territorial, variables
+      y cobertura) registrada; falta para los demás cuadros (módulos temáticos).
 - [ ] Núcleo: población por territorio × área × sexo × edad de cada censo (la estructura
       demográfica básica). Primero territorio × área × sexo y luego la edad.
       Territorio × área × sexo hecho en 1920 (departamento), 1930, 1940 y 1982 (comuna) y 1960

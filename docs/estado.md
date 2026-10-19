@@ -43,7 +43,7 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 | Matriz de concordancia (`metadatos/concordancia/`) | 🟡 Borrador, 56 conceptos; 2002 corregido con su cuestionario |
 | Cuestionarios 1992, 2002, 2017, 2024 | ✅ Disponibles (2002 escaneado, sin capa de texto; no hay libro de códigos 2002) |
 | Cuestionario de 1982 | ⏳ Buscar en los volúmenes publicados |
-| Catálogo de cuadros de las publicaciones | ✅ 1813–1992, 638 entradas (ver Fase 4) |
+| Catálogo de cuadros de las publicaciones | ✅ 1813–1992, 640 entradas (ver Fase 4); desagregación registrada en los cuadros de población |
 
 ### Fase 2: núcleo
 | Punto | Estado |
@@ -61,7 +61,7 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 | Punto | Estado |
 |---|---|
 | 3. Módulos temáticos | ⏳ No iniciado (solo borrador en la concordancia) |
-| 4. Digitalización histórica 1813–1982 | 🟡 Herramientas y formato listos; catálogo completo 1813–1992 (638 entradas: 423 cuadros, 133 bloques por provincia y 82 textos; página del PDF verificada en 214 y estimada en 399; los cuadros nacionales 1 y 2 de 1952 faltan en el escaneo). Transcritos: 1865 clasificación por provincias (edad × sexo; valida 1952 C6); 1952 comparativos C5 (provincia × sexo 1865–1952), C6 (provincia × sexo × edad 1865 y 1875) y C7 (edad del país 1885–1952); 1920 C1 (departamento/provincia 1865–1920), C3 (× área 1895–1920) y C4 (× área × sexo 1920); 1952 C9; 1930 C9 (provincia/departamento/comuna × área × sexo) y C10; 1960 C1.1.1 y C1.2; 1982 C1.01 (región/provincia/comuna × área × sexo, 1.166 filas); 1940 urbano-rural hasta comuna (388 filas, con viviendas). Total 15.589 cifras; erratas de imprenta anotadas; contraste entre cuadros sin diferencias de transcripción. Ver [digitalizacion.md](digitalizacion.md) y la planilla `productos/avance/avance_censos_historicos.xlsx` |
+| 4. Digitalización histórica 1813–1982 | 🟡 Herramientas y formato listos; catálogo completo 1813–1992 (640 entradas; los cuadros nacionales 1 y 2 de 1952 faltan en el escaneo). Los 205 cuadros de población traen censos con datos, nivel territorial, variables (área, sexo, edad) y cobertura; la planilla compara lo transcrito con lo disponible en los PDF. 1843 y 1854 tienen cifras por departamento en los sinópticos de 1865 y 1875 y en el resumen de 1907. Transcritos: 1865 clasificación por provincias (edad × sexo; valida 1952 C6); 1952 comparativos C5 (provincia × sexo 1865–1952), C6 (provincia × sexo × edad 1865 y 1875) y C7 (edad del país 1885–1952); 1920 C1 (departamento/provincia 1865–1920), C3 (× área 1895–1920) y C4 (× área × sexo 1920); 1952 C9; 1930 C9 (provincia/departamento/comuna × área × sexo) y C10; 1960 C1.1.1 y C1.2; 1982 C1.01 (región/provincia/comuna × área × sexo, 1.166 filas); 1940 urbano-rural hasta comuna (388 filas, con viviendas). Total 15.589 cifras; erratas de imprenta anotadas; contraste entre cuadros sin diferencias de transcripción. Ver [digitalizacion.md](digitalizacion.md) y la planilla `productos/avance/avance_censos_historicos.xlsx` |
 | 5. Publicación (Zenodo, CRAN/PyPI) | ⏳ No iniciado |
 
 ## Pendientes del autor
