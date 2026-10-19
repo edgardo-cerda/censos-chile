@@ -90,7 +90,12 @@ después de los distritos de Colchagua (PDF 231).
 Habitantes en el art. 3 (pág. 3) y en el capítulo IX, por provincia y departamento (págs. 171–222).
 
 **1865.** Índice en PDF 2–4. Un bloque por provincia y el Censo general de la República
-(págs. 321–392). Desfase +31 al comienzo y +33 desde la pág. 77.
+(págs. 321–392). Desfase +31 al comienzo y +33 desde la pág. 77. Clasificación de los habitantes
+por provincias (págs. 360–361, PDF 393–394): transcrita la edad por sexo y los totales; coincide
+cifra por cifra con el Cuadro 6 de 1952. El escaneo es malo: los números de estilo antiguo pierden
+los trazos bajo la línea (4 y 3 se leen como 1; 3 como 8). Diez cifras se fijaron con los totales
+impresos de la provincia y de la República. Los tramos impresos repiten los límites ("de 7 a 15",
+"de 15 a 25"…); se registran como 8–15, 16–25…, igual que 1952.
 
 **1875.** Índice en PDF 3–5. Provincias, cuadros generales (págs. 601–645) y comparativos
 (pág. 647). El desfase baja de +56 al comienzo a +16 al final.

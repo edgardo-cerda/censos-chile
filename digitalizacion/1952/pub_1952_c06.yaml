@@ -48,8 +48,9 @@ notas_cuadro:
   - >
     Según la nota de los cuadros 6 y 7, los datos se sacaron de las publicaciones de cada censo,
     y solo 1865 y 1875 permitían presentar las edades por provincia; los tramos son los de esas
-    publicaciones ("Hasta 7 años" = 0 a 7). Pendiente: validar contra las publicaciones de 1865
-    y 1875. Todos los totales coinciden con el Cuadro 5 de este volumen.
+    publicaciones ("Hasta 7 años" = 0 a 7). Todos los totales coinciden con el Cuadro 5 de este
+    volumen. 1865 validado (2026-10-19): coincide cifra por cifra con la clasificación por
+    provincias de la publicación de 1865 (digitalizacion/1865/pub_1865_p360). 1875: pendiente.
   - >
     Todas las sumas cuadran (sexo, tramos de edad y provincias). Sin edad ignorada.
 

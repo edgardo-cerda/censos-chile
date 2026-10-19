@@ -44,7 +44,8 @@ notas_cuadro:
     provincia y censo coinciden con el Cuadro 9 de este volumen.
   - >
     Los datos provienen de las publicaciones de cada censo (nota de los cuadros 6 y 7); hay que
-    validarlos contra ellas. Contraste hecho (2026-10-19): 1920 coincide por provincia y sexo con
+    validarlos contra ellas. Contraste hecho (2026-10-19): 1865 coincide por provincia y sexo con
+    la publicación de 1865 (pub_1865_p360); 1920 coincide por provincia y sexo con
     el Cuadro 4 de 1920; 1930, con el Cuadro 9 de 1930. Con el Cuadro 1 de 1920 (división de
     1920) coinciden los totales de las provincias que no cambiaron de límites; las demás
     diferencias son cambios de división (p. ej., Santiago 1865 = Santiago + O'Higgins de 1920) o

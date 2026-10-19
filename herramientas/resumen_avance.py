@@ -47,11 +47,11 @@ ESTADO = {
            "Dos páginas impresas por página del PDF."),
     1843: ("Sin publicación", "Buscar un ejemplar digitalizado.", "No hay publicación digitalizada disponible."),
     1854: ("Sin publicación", "Buscar un ejemplar digitalizado.", "No hay publicación digitalizada disponible."),
-    1865: ("Serie desde otros censos", "Validar 1952 C5 y C6 contra la clasificación por provincias según sexo y edad "
-                                       "(pág. 360, PDF 393); por departamentos en pág. 352 (PDF 385). Área × sexo: revisar "
-                                       "si la publicación lo trae.",
-           "Provincia × área (1952 C9) y provincia × sexo × edad en 6 tramos (1952 C5 y C6); departamento (total) "
-           "desde 1920 C1. Errata en Atacama (1920 C1) y en Santiago rural (1952 C9)."),
+    1865: ("Serie desde otros censos", "Departamento × sexo × edad: clasificación por departamentos (pág. 352, PDF 385). "
+                                       "Área × sexo: revisar si la publicación lo trae.",
+           "Provincia × sexo × edad en 6 tramos desde la propia publicación (pág. 360), que valida 1952 C5 y C6 "
+           "cifra por cifra; provincia × área (1952 C9); departamento (total) desde 1920 C1. Errata en Atacama "
+           "(1920 C1) y en Santiago rural (1952 C9)."),
     1875: ("Serie desde otros censos", "Validar 1952 C5 y C6 contra la clasificación urbana y rural por departamentos y "
                                        "provincias según sexo y edad (pág. 601, PDF ~617), que además cruza área × sexo.",
            "Provincia × área (1952 C9) y provincia × sexo × edad en 6 tramos (1952 C5 y C6); departamento (total) "

@@ -1,0 +1,80 @@
+# Transcripción del cuadro "Clasificación de los habitantes por provincias, según el sexo, edad,
+# estado civil i grado de instrucción" del censo de 1865 (Censo general de la República).
+# El cuadro no tiene número: se identifica por su página impresa inicial (360).
+# El CSV reproduce las columnas de edad por sexo y los totales tal como están impresos ("-" = puntos
+# impresos en Magallanes, 80 y más). Se omiten las columnas de número de departamentos,
+# subdelegaciones y distritos, estado civil y grado de instrucción (pendientes para los módulos
+# temáticos). Las provincias van de sur a norte y el total al final.
+
+fuente_id: pub_1865
+cuadro: "p360"
+titulo: Clasificación de los habitantes por provincias, según el sexo, edad, estado civil i grado de instrucción
+paginas:
+  # La pág. 360 trae hasta "De 25 a 50"; la 361 sigue con las mismas filas.
+  - {pdf: 393, impresa: "360", desde: Territorio de Magallanes}
+  - {pdf: 394, impresa: "361", columnas: [50a80_h, 50a80_m, 80mas_h, 80mas_m, total_h, total_m, total_general]}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion:
+  fecha: 2026-10-19
+  por: Claude (asistido)
+  recortes_dpi: 200-400
+  nota: >
+    El escaneo es de baja calidad: los números de estilo antiguo pierden los trazos que bajan de la
+    línea, y 4 o 3 se confunden con 1 (y 3 con 8). Las diez cifras dudosas se resolvieron con los
+    dos totales impresos que las contienen (total de la provincia y total de la República); ver
+    notas de celdas.
+
+indicador: poblacion
+unidad: personas
+fijas: {censo: 1865, area: _T}
+
+territorio:
+  columna: territorio
+  columna_nivel: nivel
+  niveles: [provincia]
+  dpa_version: provincias_1865
+
+columnas:
+  hasta7_h: {sexo: hombre, edad_min: 0, edad_max: 7}
+  hasta7_m: {sexo: mujer, edad_min: 0, edad_max: 7}
+  7a15_h: {sexo: hombre, edad_min: 8, edad_max: 15}
+  7a15_m: {sexo: mujer, edad_min: 8, edad_max: 15}
+  15a25_h: {sexo: hombre, edad_min: 16, edad_max: 25}
+  15a25_m: {sexo: mujer, edad_min: 16, edad_max: 25}
+  25a50_h: {sexo: hombre, edad_min: 26, edad_max: 50}
+  25a50_m: {sexo: mujer, edad_min: 26, edad_max: 50}
+  50a80_h: {sexo: hombre, edad_min: 51, edad_max: 80}
+  50a80_m: {sexo: mujer, edad_min: 51, edad_max: 80}
+  80mas_h: {sexo: hombre, edad_min: 81}
+  80mas_m: {sexo: mujer, edad_min: 81}
+  total_h: {sexo: hombre}
+  total_m: {sexo: mujer}
+  total_general: {sexo: _T}
+
+notas_cuadro:
+  - >
+    Los tramos impresos son "hasta 7 años", "de 7 a 15", "de 15 a 25", "de 25 a 50", "de 50 a 80"
+    y "de 80 adelante": los límites se repiten entre tramos. Se registran como 0-7, 8-15, 16-25,
+    26-50, 51-80 y 81 y más, la misma lectura que hace el Cuadro 6 de 1952.
+  - >
+    Validación del Cuadro 6 de 1952 (2026-10-19): las 196 cifras de edad y sexo y los totales
+    coinciden con él una por una. Diez de ellas son ilegibles en este escaneo y se fijaron con los
+    totales impresos de 1865, que también coinciden con 1952.
+
+notas_celdas:
+  - {territorio: Chiloé, columna: 50a80_m, nota: "Se lee 2314; se adopta 2344, que cuadra con el total de mujeres de Chiloé y con el total de la República (igual al Cuadro 6 de 1952)."}
+  - {territorio: Concepción, columna: 25a50_h, nota: "Se lee 21061; se adopta 21064, que cuadra con el total de hombres de la provincia y de la República (igual al Cuadro 6 de 1952)."}
+  - {territorio: Ñuble, columna: 25a50_h, nota: "Se lee 16831; se adopta 16834, que cuadra con el total de hombres de la provincia y de la República (igual al Cuadro 6 de 1952)."}
+  - {territorio: Maule, columna: 25a50_h, nota: "Se lee 21313; se adopta 24343, que cuadra con el total de hombres de la provincia y de la República (igual al Cuadro 6 de 1952)."}
+  - {territorio: Colchagua, columna: 50a80_h, nota: "Se lee 8512; se adopta 8542, que cuadra con el total de hombres de la provincia y de la República (igual al Cuadro 6 de 1952)."}
+  - {territorio: Santiago, columna: 7a15_h, nota: "Se lee 31066; se adopta 34066, que cuadra con el total de hombres de la provincia y de la República (igual al Cuadro 6 de 1952)."}
+  - {territorio: Santiago, columna: 25a50_h, nota: "Se lee 52411; se adopta 52441, que cuadra con el total de hombres de la provincia y de la República (igual al Cuadro 6 de 1952)."}
+  - {territorio: Valparaíso, columna: 25a50_h, nota: "Se lee 25182; se adopta 25482, que cuadra con el total de hombres de la provincia y de la República (igual al Cuadro 6 de 1952)."}
+  - {territorio: Valparaíso, columna: 25a50_m, nota: "Se lee 21686; se adopta 24688, que cuadra con el total de mujeres de la provincia y de la República (igual al Cuadro 6 de 1952)."}
+  - {territorio: Coquimbo, columna: 7a15_h, nota: "Se lee 15428 (la última cifra puede ser 3 u 8); se adopta 15423, que cuadra con el total de hombres de la provincia y de la República (igual al Cuadro 6 de 1952)."}
+
+controles:
+  - {tipo: suma_dimension, dimension: edad_min, total: "", partes: [0, 8, 16, 26, 51, 81]}
+  - {tipo: suma_dimension, dimension: sexo, total: _T, partes: [hombre, mujer]}
+  - {tipo: suma_territorio, total: pais, partes: provincia}
