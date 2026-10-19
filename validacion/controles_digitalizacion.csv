@@ -1,4 +1,6 @@
 fuente_id,cuadro,control,censo,territorio,area,sexo,total,suma_partes,diferencia,explicada
+pub_1865,p352,suma_dimension,1865,Caupolican,_T,hombre,35762,36762,1000,True
+pub_1865,p352,suma_territorio,1865,(partes),_T,hombre,177278,178278,1000,True
 pub_1875,p645,suma_territorio,1865,(partes),_T,_T,1819223,1728664,-90559,True
 pub_1920,1,jerarquia,1865,Atacama,_T,_T,77456,77453,-3,True
 pub_1920,1,suma_territorio,1865,(partes),_T,_T,1819223,1819226,3,True

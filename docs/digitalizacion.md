@@ -113,6 +113,10 @@ cifra por cifra con el Cuadro 6 de 1952. El escaneo es malo: los números de est
 los trazos bajo la línea (4 y 3 se leen como 1; 3 como 8). Diez cifras se fijaron con los totales
 impresos de la provincia y de la República. Los tramos impresos repiten los límites ("de 7 a 15",
 "de 15 a 25"…); se registran como 8–15, 16–25…, igual que 1952.
+Clasificación por departamentos (págs. 352–353, PDF 385–386): transcrita igual; 62 cifras ilegibles
+se fijaron con la suma de cada fila y la de su provincia (= pág. 360). Errata: Caupolicán 16–25
+hombres impreso 7.760 (coherente 6.760). La provincia de Coquimbo trae además, en su bloque, la
+clasificación por subdelegaciones (PDF 302), que respalda las cifras adoptadas.
 
 **1875.** Índice en PDF 3–5. Provincias, cuadros generales (págs. 601–645) y comparativos
 (pág. 647). El desfase baja de +56 al comienzo a +16 al final.

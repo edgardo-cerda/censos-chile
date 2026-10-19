@@ -1,0 +1,141 @@
+# Transcripción del cuadro "Clasificación de los habitantes por departamentos, según el sexo, edad,
+# estado civil i grado de instrucción" del censo de 1865 (Censo general de la República, págs.
+# 352-353). Sin número de cuadro: se identifica por su página impresa inicial (352).
+# El CSV reproduce la edad por sexo y los totales ("-" = puntos impresos); se omiten el número de
+# subdelegaciones y distritos, el estado civil y la instrucción (pendientes para los módulos
+# temáticos). La columna provincia agrupa los departamentos como las llaves del original.
+
+fuente_id: pub_1865
+cuadro: "p352"
+titulo: Clasificación de los habitantes por departamentos, según el sexo, edad, estado civil i grado de instrucción
+paginas:
+  - {pdf: 385, impresa: "352", desde: Territorio de Magallanes}
+  - {pdf: 386, impresa: "353", columnas: [50a80_h, 50a80_m, 80mas_h, 80mas_m, total_h, total_m, total_general]}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion:
+  fecha: 2026-10-19
+  por: Claude (asistido)
+  recortes_dpi: 210-600
+  nota: >
+    El escaneo es malo y los números de estilo antiguo pierden los trazos bajo la línea: el 4 se lee
+    casi siempre como 1 (y a veces 3 como 1, 6 como 0). Cada cifra entra en dos sumas independientes:
+    el total del sexo en el departamento (fila) y la suma de la provincia, que debe dar la cifra de
+    la clasificación por provincias (pág. 360, validada contra el Cuadro 6 de 1952). Las cifras
+    dudosas se fijaron con esas dos sumas; los totales generales coinciden con el cuadro sinóptico.
+
+indicador: poblacion
+unidad: personas
+fijas: {censo: 1865, area: _T}
+
+territorio:
+  columna: territorio
+  nivel: {Total: pais, _otro: departamento}
+  dpa_version: provincias_1865
+
+columnas:
+  hasta7_h: {sexo: hombre, edad_min: 0, edad_max: 7}
+  hasta7_m: {sexo: mujer, edad_min: 0, edad_max: 7}
+  7a15_h: {sexo: hombre, edad_min: 8, edad_max: 15}
+  7a15_m: {sexo: mujer, edad_min: 8, edad_max: 15}
+  15a25_h: {sexo: hombre, edad_min: 16, edad_max: 25}
+  15a25_m: {sexo: mujer, edad_min: 16, edad_max: 25}
+  25a50_h: {sexo: hombre, edad_min: 26, edad_max: 50}
+  25a50_m: {sexo: mujer, edad_min: 26, edad_max: 50}
+  50a80_h: {sexo: hombre, edad_min: 51, edad_max: 80}
+  50a80_m: {sexo: mujer, edad_min: 51, edad_max: 80}
+  80mas_h: {sexo: hombre, edad_min: 81}
+  80mas_m: {sexo: mujer, edad_min: 81}
+  total_h: {sexo: hombre}
+  total_m: {sexo: mujer}
+  total_general: {sexo: _T}
+
+notas_cuadro:
+  - >
+    Tramos impresos "hasta 7 años", "de 7 a 15", "de 15 a 25", "de 25 a 50", "de 50 a 80" y "de 80
+    adelante"; se registran como 0-7, 8-15, 16-25, 26-50, 51-80 y 81 y más (ver pub_1865_p360).
+  - >
+    Validación: con las cifras adoptadas, las 52 filas cuadran (edades = total de cada sexo; hombres
+    + mujeres = total general, igual al sinóptico de 1865) y la suma de los departamentos de cada
+    provincia es igual, celda por celda, a la clasificación por provincias (pág. 360). Única
+    excepción: Caupolicán 16-25 hombres (errata impresa).
+  - >
+    Coquimbo: en esa provincia varias combinaciones de dígitos satisfacían las sumas; se adoptó la
+    que solo usa la confusión 4/1 del escaneo y que respalda la suma de las subdelegaciones del
+    bloque provincial (PDF 302).
+
+notas_celdas:
+  - territorio: Caupolican
+    columna: 15a25_h
+    estado_valor: inconsistente
+    nota: >
+      Impreso 7760 (el 7 se lee claro a 450 dpi), pero las edades suman 1000 más que el total de
+      hombres del departamento (35 762) y la provincia de Colchagua queda 1000 sobre la pág. 360. El
+      valor coherente es 6760. Errata de imprenta.
+  - {territorio: Ancud, columna: 7a15_m, nota: "Se lee 2151; se adopta 2154, el único valor que cuadra a la vez con el total de mujeres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Castro, columna: 25a50_h, nota: "Se lee 3121; se adopta 3421, el único valor que cuadra a la vez con el total de hombres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Carelmapu, columna: hasta7_h, nota: "Se lee 1631; se adopta 1634, el único valor que cuadra a la vez con el total de hombres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Llanquihue, columna: hasta7_m, nota: "Se lee 813; se adopta 843, el único valor que cuadra a la vez con el total de mujeres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Carelmapu, columna: 25a50_m, nota: "Se lee 1851; se adopta 1854, el único valor que cuadra a la vez con el total de mujeres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Nacimiento, columna: 7a15_h, nota: "Se lee 1981; se adopta 1984, el único valor que cuadra a la vez con el total de hombres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Laja, columna: 50a80_m, nota: "Se lee 1415; se adopta 1445, el único valor que cuadra a la vez con el total de mujeres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Puchacai, columna: 25a50_m, nota: "Se lee 4146; se adopta 4446, el único valor que cuadra a la vez con el total de mujeres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Coelemu, columna: 50a80_h, nota: "Se lee 1311; se adopta 1314, el único valor que cuadra a la vez con el total de hombres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Chillán, columna: 7a15_h, nota: "Se lee 9831; se adopta 9834, el único valor que cuadra a la vez con el total de hombres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Chillán, columna: 50a80_m, nota: "Se lee 3506; se adopta 3566, el único valor que cuadra a la vez con el total de mujeres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Linares, columna: 7a15_m, nota: "Se lee 5551; se adopta 5554, el único valor que cuadra a la vez con el total de mujeres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Linares, columna: 15a25_h, nota: "Se lee 5129; se adopta 5429, el único valor que cuadra a la vez con el total de hombres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Itata, columna: 50a80_h, nota: "Se lee 1203; se adopta 1265, el único valor que cuadra a la vez con el total de hombres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Lontué, columna: 25a50_h, nota: "Se lee 2311; se adopta 2341, el único valor que cuadra a la vez con el total de hombres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Rancagua, columna: 25a50_h, nota: "Se lee 11298; se adopta 14298, el único valor que cuadra a la vez con el total de hombres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Victoria, columna: 50a80_m, nota: "Se lee 1630; se adopta 1636, el único valor que cuadra a la vez con el total de mujeres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Petorca, columna: 15a25_h, nota: "Se lee 2814; se adopta 2844, el único valor que cuadra a la vez con el total de hombres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Coquimbo, columna: 50a80_h, nota: "Se lee 466; se adopta 468, un valor que cuadra a la vez con el total de hombres del departamento y con la suma de la provincia (pág. 360); ver la nota de Coquimbo."}
+  - {territorio: Vallenar, columna: 50a80_m, nota: "Se lee 500; se adopta 506, el único valor que cuadra a la vez con el total de mujeres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Quinchao, columna: hasta7_h, nota: "Se lee 1336; se adopta 1335, el único valor que cuadra a la vez con el total de hombres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Quinchao, columna: 80mas_h, nota: "Se lee 31; se adopta 34, el único valor que cuadra a la vez con el total de hombres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Quinchao, columna: total_h, nota: "Se lee 5178; se adopta 5478, que cuadra con el total general del departamento y el total de hombres de la provincia (pág. 360)."}
+  - {territorio: Llanquihue, columna: 15a25_h, nota: "Se lee 815; se adopta 845, el único valor que cuadra a la vez con el total de hombres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Llanquihue, columna: 50a80_h, nota: "Se lee 351; se adopta 354, el único valor que cuadra a la vez con el total de hombres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Talcahuano, columna: 50a80_m, nota: "Se lee 210; se adopta 240, el único valor que cuadra a la vez con el total de mujeres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Coelemu, columna: 50a80_m, nota: "Se lee 1313; se adopta 1343, el único valor que cuadra a la vez con el total de mujeres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Itata, columna: 25a50_m, nota: "Se lee 5141; se adopta 5441, el único valor que cuadra a la vez con el total de mujeres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Itata, columna: 15a25_m, nota: "Se lee 3973; se adopta 3976, el único valor que cuadra a la vez con el total de mujeres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Parral, columna: 15a25_m, nota: "Se lee 2204; se adopta 2294, el único valor que cuadra a la vez con el total de mujeres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Talca, columna: 15a25_h, nota: "Se lee 7823; se adopta 7826, el único valor que cuadra a la vez con el total de hombres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Talca, columna: 50a80_h, nota: "Se lee 3531; se adopta 3534, el único valor que cuadra a la vez con el total de hombres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Curicó, columna: 15a25_h, nota: "Se lee 8131; se adopta 8134, el único valor que cuadra a la vez con el total de hombres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Curicó, columna: 25a50_h, nota: "Se lee 11936; se adopta 11938, el único valor que cuadra a la vez con el total de hombres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Curicó, columna: 7a15_m, nota: "Se lee 9614; se adopta 9644, el único valor que cuadra a la vez con el total de mujeres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Curicó, columna: 15a25_m, nota: "Se lee 9721; se adopta 9724, el único valor que cuadra a la vez con el total de mujeres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Andes, columna: total_h, nota: "Se lee 14781; se adopta 14784, que cuadra con el total general del departamento y el total de hombres de la provincia (pág. 360)."}
+  - {territorio: Andes, columna: 7a15_h, nota: "Se lee 3101; se adopta 3404, el único valor que cuadra a la vez con el total de hombres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Andes, columna: 25a50_h, nota: "Se lee 4159; se adopta 4459, el único valor que cuadra a la vez con el total de hombres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: San Felipe, columna: hasta7_m, nota: "Se lee 2198; se adopta 2498, el único valor que cuadra a la vez con el total de mujeres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: San Felipe, columna: 25a50_m, nota: "Se lee 4408; se adopta 4498, el único valor que cuadra a la vez con el total de mujeres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Ligua, columna: 25a50_m, nota: "Se lee 2251; se adopta 2054, el único valor que cuadra a la vez con el total de mujeres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Copiapó, columna: hasta7_m, nota: "Se lee 2918; se adopta 2948, el único valor que cuadra a la vez con el total de mujeres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Copiapó, columna: 15a25_m, nota: "Se lee 3185; se adopta 3485, el único valor que cuadra a la vez con el total de mujeres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Copiapó, columna: 25a50_h, nota: "Se lee 11017; se adopta 11047, el único valor que cuadra a la vez con el total de hombres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Vallenar, columna: 25a50_h, nota: "Se lee 2312; se adopta 2512, el único valor que cuadra a la vez con el total de hombres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Caldera, columna: 25a50_h, nota: "Se lee 3794; se adopta 3799, el único valor que cuadra a la vez con el total de hombres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Serena, columna: hasta7_h, nota: "Se lee 2163; se adopta 2463, un valor que cuadra a la vez con el total de hombres del departamento y con la suma de la provincia (pág. 360); ver la nota de Coquimbo."}
+  - {territorio: Serena, columna: 15a25_h, nota: "Se lee 2163; se adopta 2463, un valor que cuadra a la vez con el total de hombres del departamento y con la suma de la provincia (pág. 360); ver la nota de Coquimbo."}
+  - {territorio: Serena, columna: 15a25_m, nota: "Se lee 2515; se adopta 2545, un valor que cuadra a la vez con el total de mujeres del departamento y con la suma de la provincia (pág. 360); ver la nota de Coquimbo."}
+  - {territorio: Illapel, columna: hasta7_h, nota: "Se lee 3013; se adopta 3043, un valor que cuadra a la vez con el total de hombres del departamento y con la suma de la provincia (pág. 360); ver la nota de Coquimbo."}
+  - {territorio: Illapel, columna: 15a25_h, nota: "Se lee 2981; se adopta 2984, un valor que cuadra a la vez con el total de hombres del departamento y con la suma de la provincia (pág. 360); ver la nota de Coquimbo."}
+  - {territorio: Illapel, columna: 15a25_m, nota: "Se lee 3197; se adopta 3497, un valor que cuadra a la vez con el total de mujeres del departamento y con la suma de la provincia (pág. 360); ver la nota de Coquimbo."}
+  - {territorio: Illapel, columna: 25a50_m, nota: "Se lee 4971; se adopta 4871, un valor que cuadra a la vez con el total de mujeres del departamento y con la suma de la provincia (pág. 360); ver la nota de Coquimbo."}
+  - {territorio: Combarbalá, columna: hasta7_h, nota: "Se lee 1213; se adopta 1243, un valor que cuadra a la vez con el total de hombres del departamento y con la suma de la provincia (pág. 360); ver la nota de Coquimbo."}
+  - {territorio: Ovalle, columna: 15a25_h, nota: "Se lee 5311; se adopta 5314, un valor que cuadra a la vez con el total de hombres del departamento y con la suma de la provincia (pág. 360); ver la nota de Coquimbo."}
+  - {territorio: Ovalle, columna: hasta7_m, nota: "Se lee 4731; se adopta 4734, un valor que cuadra a la vez con el total de mujeres del departamento y con la suma de la provincia (pág. 360); ver la nota de Coquimbo."}
+  - {territorio: Ovalle, columna: 15a25_m, nota: "Se lee 5121; se adopta 5421, un valor que cuadra a la vez con el total de mujeres del departamento y con la suma de la provincia (pág. 360); ver la nota de Coquimbo."}
+  - {territorio: Ovalle, columna: 25a50_m, nota: "Se lee 7665; se adopta 7668, un valor que cuadra a la vez con el total de mujeres del departamento y con la suma de la provincia (pág. 360); ver la nota de Coquimbo."}
+  - {territorio: Coquimbo, columna: 25a50_m, nota: "Se lee 2194; se adopta 2198, un valor que cuadra a la vez con el total de mujeres del departamento y con la suma de la provincia (pág. 360); ver la nota de Coquimbo."}
+  - {territorio: Copiapó, columna: 15a25_h, nota: "Se lee 4861; se adopta 4864, el único valor que cuadra a la vez con el total de hombres del departamento y con la suma de la provincia (pág. 360)."}
+  - {territorio: Freirina, columna: 50a80_h, nota: "Se lee 551; se adopta 554, el único valor que cuadra a la vez con el total de hombres del departamento y con la suma de la provincia (pág. 360)."}
+
+controles:
+  - {tipo: suma_dimension, dimension: edad_min, total: "", partes: [0, 8, 16, 26, 51, 81]}
+  - {tipo: suma_dimension, dimension: sexo, total: _T, partes: [hombre, mujer]}
+  - {tipo: suma_territorio, total: pais, partes: departamento}
