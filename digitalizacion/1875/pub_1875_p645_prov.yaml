@@ -1,0 +1,44 @@
+# Totales por provincia del cuadro sinóptico de 1875 (págs. 645-646): una fila por provincia y
+# censo, con las provincias agrupadas por las llaves del original. Los departamentos van en
+# pub_1875_p645.
+
+fuente_id: pub_1875
+cuadro: "p645"
+titulo: Cuadro sinóptico de los censos de la República levantados en 1835, 1843, 1854, 1865 i 1875 (totales por provincia)
+paginas:
+  - {pdf: 661, impresa: "645", desde: Territorio de colonización de Magallanes}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion: {fecha: 2026-10-19, por: Claude (asistido), recortes_dpi: 230-500}
+
+indicador: poblacion
+unidad: personas
+fijas: {area: _T, sexo: _T}
+
+territorio:
+  columna: territorio
+  nivel: {Total: pais, _otro: provincia}
+  dpa_version: "provincias_{censo}"
+
+filas:
+  censo: {columna: censo}
+
+columnas:
+  poblacion: {}
+
+notas_cuadro:
+  - >
+    1875: provincias de 1875. 1865: provincias de 1865, salvo Colchagua, que el cuadro separa en
+    Curicó (90 589, el departamento) y Colchagua (142 456 = San Fernando + Caupolicán); en 1865 la
+    provincia de Colchagua sumaba 233 045. Arauco de 1865 incluye Laja y Nacimiento. 1854: Arauco
+    incluye Laja y Nacimiento; Colchagua, Curicó; Maule, Linares y Parral. 1843 y 1835: las mismas
+    agrupaciones que en el sinóptico de 1865 (ver pub_1865_p392_prov).
+  - >
+    Todos los totales cuadran con sus departamentos y con el total de la República.
+
+notas_celdas:
+  - {territorio: Curicó, columna: poblacion, censo: "1865", nota: "No era provincia en 1865: es el departamento de Curicó de la provincia de Colchagua (233 045)."}
+  - {territorio: Colchagua, columna: poblacion, censo: "1865", nota: "Sin el departamento de Curicó, que el cuadro pone aparte; la provincia de Colchagua de 1865 sumaba 233 045."}
+
+controles:
+  - {tipo: suma_territorio, total: pais, partes: provincia}

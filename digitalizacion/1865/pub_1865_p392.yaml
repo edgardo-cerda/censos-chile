@@ -1,0 +1,70 @@
+# Transcripción del "Cuadro sinóptico de los censos de la República levantados en 1835, 1843, 1854
+# i 1865" (censo de 1865, pág. 392). Sin número de cuadro: se identifica por su página impresa.
+# El CSV trae la población por departamento tal como está impresa ("..": puntos impresos, el
+# departamento no existía); la columna provincia_1865 indica la provincia de 1865 de cada fila. Los
+# totales por provincia de cada censo, con las provincias de ese censo, van en pub_1865_p392_prov.
+
+fuente_id: pub_1865
+cuadro: "p392"
+titulo: Cuadro sinóptico de los censos de la República levantados en 1835, 1843, 1854 i 1865
+paginas:
+  - {pdf: 425, impresa: "392", desde: Colonia de Magallanes}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion:
+  fecha: 2026-10-19
+  por: Claude (asistido)
+  recortes_dpi: 220-400
+  nota: >
+    Escaneo de baja calidad con números de estilo antiguo: 4 y 3 se confunden con 1. Las cifras
+    dudosas se resolvieron con el cuadro sinóptico de 1875 (pub_1875_p645, mismo contenido y
+    escaneo nítido), con las sumas de cada departamento contra el total de su provincia y de la
+    República, y con el Cuadro 1 de 1920. Ver notas de celdas.
+
+indicador: poblacion
+unidad: personas
+fijas: {area: _T, sexo: _T}
+
+territorio:
+  columna: territorio
+  nivel: {Total: pais, _otro: departamento}
+  # Departamentos vigentes en cada censo (".." si no existía).
+  dpa_version: "provincias_{censo}"
+
+columnas:
+  "1865": {censo: 1865}
+  "1854": {censo: 1854}
+  "1843": {censo: 1843}
+  "1835": {censo: 1835}
+
+notas_cuadro:
+  - >
+    Validado contra el cuadro sinóptico de 1875: las 192 cifras de departamento coinciden, salvo
+    Talca 1865 (84 630 aquí; 84 660 en 1875, errata de 1875). En los cuatro censos la suma de los
+    departamentos es igual al total de la República.
+
+notas_celdas:
+  - {territorio: Talca, columna: "1865", nota: "Se lee 81630; se adopta 84630, que cuadra con el total de Talca (100 575) y de la República y con el Cuadro 1 de 1920 (Talca 58 823 + Curepto 25 807)."}
+  - {territorio: Cauquénes, columna: "1865", nota: "Se lee 65041; se adopta 65044, igual al sinóptico de 1875 y que cuadra con el total de Maule."}
+  - {territorio: Elqui, columna: "1865", nota: "Se lee 13015; se adopta 13045, igual al sinóptico de 1875 y al Cuadro 1 de 1920, y que cuadra con el total de Coquimbo."}
+  - {territorio: Vallenar, columna: "1865", nota: "Se lee 13146; se adopta 13446, igual al sinóptico de 1875 y al Cuadro 1 de 1920, y que cuadra con el total de Atacama."}
+  - {territorio: Castro, columna: "1854", nota: "Se lee 24216; se adopta 24246, igual al sinóptico de 1875 y que cuadra con el total de Chiloé."}
+  - {territorio: Puchacai, columna: "1854", nota: "Se lee 26152; se adopta 26452, igual al sinóptico de 1875 y que cuadra con el total de Concepción."}
+  - {territorio: Quillota, columna: "1854", nota: "Se lee 49103; se adopta 49403, igual al sinóptico de 1875 y que cuadra con el total de Valparaíso."}
+  - {territorio: Andes, columna: "1854", nota: "Se lee 24951; se adopta 24954, igual al sinóptico de 1875 y que cuadra con el total de Aconcagua."}
+  - {territorio: Carelmapu, columna: "1843", nota: "Se lee 9191; se adopta 9491, igual al sinóptico de 1875 y que cuadra con el total de Chiloé de 1843."}
+  - {territorio: Lautaro, columna: "1843", nota: "Se lee 13810; se adopta 13849, igual al sinóptico de 1875 y que cuadra con el total de Concepción de 1843."}
+  - {territorio: Parral, columna: "1843", nota: "Se lee 15128; se adopta 15428, igual al sinóptico de 1875 y que cuadra con el total de Maule de 1843."}
+  - {territorio: Putaendo, columna: "1843", nota: "Se lee 15101; se adopta 15401, igual al sinóptico de 1875 y que cuadra con el total de Aconcagua de 1843."}
+  - {territorio: Illapel, columna: "1843", nota: "Se lee 17610; se adopta 17640, igual al sinóptico de 1875 y que cuadra con el total de Coquimbo de 1843."}
+  - {territorio: Castro, columna: "1835", nota: "Se lee 17615; se adopta 17645, igual al sinóptico de 1875 y que cuadra con el total de Chiloé de 1835."}
+  - {territorio: Chillán, columna: "1835", nota: "Se lee 44181; se adopta 44484, igual al sinóptico de 1875 y que cuadra con el total de Concepción de 1835."}
+  - {territorio: Cauquénes, columna: "1835", nota: "Se lee 31631; se adopta 34631, igual al sinóptico de 1875 y que cuadra con el total de Maule de 1835."}
+  - {territorio: Rancagua, columna: "1835", nota: "Se lee 72316; se adopta 72346, igual al sinóptico de 1875 y que cuadra con el total de Santiago de 1835."}
+  - {territorio: Melipilla, columna: "1835", nota: "Se lee 30195; se adopta 30495, igual al sinóptico de 1875 y que cuadra con el total de Santiago de 1835."}
+  - {territorio: Quillota, columna: "1835", nota: "Se lee 41200; se adopta 44200, igual al sinóptico de 1875 y que cuadra con el total de Aconcagua de 1835."}
+  - {territorio: Ligua, columna: "1835", nota: "Se lee 8181; se adopta 8481, igual al sinóptico de 1875 y que cuadra con el total de Aconcagua de 1835."}
+  - {territorio: Putaendo, columna: "1835", nota: "Se lee 12177; se adopta 12477, igual al sinóptico de 1875 y que cuadra con el total de Aconcagua de 1835."}
+
+controles:
+  - {tipo: suma_territorio, total: pais, partes: departamento}

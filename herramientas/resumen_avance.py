@@ -42,18 +42,18 @@ ESTADO = {
     1813: ("Catalogado", "Transcribir los «Censo de provincia»: total y edades por sexo de cada provincia.",
            "Sin índice. No hay datos de Santiago; Concepción figura con las matrículas de 1812. "
            "Totales de Rancagua y Colchagua cruzados en la edición."),
-    1835: ("Catalogado", "Transcribir habitantes por provincia y departamento (arts. 34–42, págs. 171–222) "
-                         "y revisar si trae sexo y edad.",
-           "Dos páginas impresas por página del PDF."),
-    1843: ("Sin publicación", "Transcribir la población por departamento desde el cuadro sinóptico de 1865 (PDF 425) y validarla con el de 1875 (PDF 661).",
-           "No hay publicación digitalizada. Población por departamento en los sinópticos de 1865 y 1875; por provincia en 1952 C4."),
-    1854: ("Sin publicación", "Transcribir la población por departamento desde el cuadro sinóptico de 1865 (PDF 425) y validarla con el de 1875 (PDF 661) y el resumen de 1907 (PDF 1222); buscar un ejemplar digitalizado.",
-           "No hay publicación digitalizada. Población por departamento en los sinópticos de 1865 y 1875 y en el resumen de 1907; por provincia en 1952 C4."),
-    1865: ("Serie desde otros censos", "Departamento × sexo × edad: clasificación por departamentos (pág. 352, PDF 385). "
-                                       "Área × sexo: revisar si la publicación lo trae.",
-           "Provincia × sexo × edad en 6 tramos desde la propia publicación (pág. 360), que valida 1952 C5 y C6 "
-           "cifra por cifra; provincia × área (1952 C9); departamento (total) desde 1920 C1. Errata en Atacama "
-           "(1920 C1) y en Santiago rural (1952 C9)."),
+    1835: ("Serie desde otros censos",
+           "Parroquia × sexo: habitantes por provincia y parroquia (arts. 34–42, págs. 171–222).",
+           "Departamento (total) desde los sinópticos de 1865 y 1875, que coinciden entre sí. Dos páginas impresas por página del PDF."),
+    1843: ("Sin publicación",
+           "Nada más en los PDF disponibles (solo totales por departamento y provincia).",
+           "Sin publicación digitalizada. Departamento y provincia (totales) desde los sinópticos de 1865 y 1875, que coinciden entre sí."),
+    1854: ("Sin publicación",
+           "Opcional: contrastar con el resumen general de 1907 (PDF 1222). Buscar un ejemplar digitalizado.",
+           "Sin publicación digitalizada. Departamento y provincia (totales) desde los sinópticos de 1865 y 1875, que coinciden entre sí."),
+    1865: ("Serie desde otros censos",
+           "Departamento × sexo × edad: clasificación por departamentos (pág. 352, PDF 385). Parroquia y distrito: págs. 386 y bloques provinciales.",
+           "Provincia × sexo × edad en 6 tramos desde la propia publicación (pág. 360), que valida 1952 C5 y C6; departamento (total) desde su sinóptico (pág. 392), validado con el de 1875; provincia × área (1952 C9). Escaneo de baja calidad: cifras dudosas resueltas con sumas y fuentes paralelas."),
     1875: ("Serie desde otros censos", "Validar 1952 C5 y C6 contra la clasificación urbana y rural por departamentos y "
                                        "provincias según sexo y edad (pág. 601, PDF ~617), que además cruza área × sexo.",
            "Provincia × área (1952 C9) y provincia × sexo × edad en 6 tramos (1952 C5 y C6); departamento (total) "

@@ -1,0 +1,58 @@
+# Transcripción del "Cuadro sinóptico de los censos de la República levantados en 1835, 1843, 1854,
+# 1865 i 1875" (censo de 1875, págs. 645-646). Sin número de cuadro: se identifica por su página
+# impresa inicial. El CSV trae la población por departamento tal como está impresa (".." = puntos
+# impresos); las filas siguen la división de 1875 (columna provincia_1875) y cada censo pone su
+# departamento en la fila que le corresponde. Los totales por provincia van en pub_1875_p645_prov.
+
+fuente_id: pub_1875
+cuadro: "p645"
+titulo: Cuadro sinóptico de los censos de la República levantados en 1835, 1843, 1854, 1865 i 1875
+paginas:
+  - {pdf: 661, impresa: "645", desde: Territorio de colonización de Magallanes}
+  - {pdf: 662, impresa: "646", desde: Serena}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion: {fecha: 2026-10-19, por: Claude (asistido), recortes_dpi: 230-500}
+
+indicador: poblacion
+unidad: personas
+fijas: {area: _T, sexo: _T}
+
+territorio:
+  columna: territorio
+  nivel: {Total: pais, _otro: departamento}
+  dpa_version: "provincias_{censo}"
+
+columnas:
+  "1875": {censo: 1875}
+  "1865": {censo: 1865}
+  "1854": {censo: 1854}
+  "1843": {censo: 1843}
+  "1835": {censo: 1835}
+
+notas_cuadro:
+  - >
+    En 1865 el departamento de Curicó (90 589, entonces en la provincia de Colchagua) no figura en
+    la columna de departamentos sino solo en la de provincias, en la fila de la provincia de
+    Curicó de 1875; por eso los departamentos de 1865 suman 90 559 menos que el total (con la
+    errata de Talca). En los demás censos la suma de los departamentos es igual al total.
+  - >
+    Coincide con el sinóptico de 1865 (pub_1865_p392) en todas las cifras de 1835 a 1865, salvo la
+    errata de Talca 1865.
+
+notas_celdas:
+  - territorio: Talca
+    columna: "1865"
+    estado_valor: inconsistente
+    nota: >
+      Impreso 84 660 (lectura clara a 500 dpi), pero el total de Talca (100 575) y el sinóptico de
+      1865 dan 84 630, igual que el Cuadro 1 de 1920. Errata de imprenta.
+  - territorio: Total
+    columna: "1865"
+    estado_valor: inconsistente
+    nota: >
+      La suma de los departamentos queda 90 559 bajo el total: falta Curicó (90 589), impreso solo
+      en la columna de provincias, y Talca trae 30 de más (errata).
+
+controles:
+  - {tipo: suma_territorio, total: pais, partes: departamento}

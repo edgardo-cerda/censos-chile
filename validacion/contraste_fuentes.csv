@@ -1,4 +1,10 @@
 censo,territorio,nivel,area,sexo,fuente_a,valor_a,estado_a,fuente_b,valor_b,estado_b
+1865,Colchagua,provincia,_T,_T,pub_1865 cp360,233045,ok,pub_1875 cp645,142456,ok
+1865,Colchagua,provincia,_T,_T,pub_1865 cp392,233045,ok,pub_1875 cp645,142456,ok
+1865,Colchagua,provincia,_T,_T,pub_1875 cp645,142456,ok,pub_1952 c5,233045,ok
+1865,Colchagua,provincia,_T,_T,pub_1875 cp645,142456,ok,pub_1952 c6,233045,ok
+1865,Colchagua,provincia,_T,_T,pub_1875 cp645,142456,ok,pub_1952 c9,233045,ok
+1865,Talca,departamento,_T,_T,pub_1865 cp392,84630,ok,pub_1875 cp645,84660,inconsistente
 1920,República,pais,_T,_T,pub_1920 c1,3753799,ok,pub_1952 c5,3714887,ok
 1920,República,pais,_T,_T,pub_1920 c1,3753799,ok,pub_1952 c7,3714887,ok
 1920,República,pais,_T,_T,pub_1920 c1,3753799,ok,pub_1952 c9,3714887,ok

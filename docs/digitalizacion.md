@@ -88,8 +88,13 @@ los tomos completos de 1952 y 1982 se agregaron al armar el catálogo (octubre d
 
 **Censos sin publicación propia (1843 y 1854).** Sus cifras están en otras publicaciones: por
 departamento en los cuadros sinópticos de 1865 (pág. 392, PDF 425: 1835, 1843, 1854 y 1865) y de
-1875 (pág. 645, PDF 661: 1835 a 1875), y en el resumen general de 1907 (pág. 1263, PDF 1222: 1854
-a 1907, por provincia y departamento); por provincia en el Cuadro 4 de 1952 (1835 a 1952).
+1875 (págs. 645–646, PDF 661–662: 1835 a 1875), y en el resumen general de 1907 (pág. 1263, PDF
+1222: 1854 a 1907, por provincia y departamento); por provincia en el Cuadro 4 de 1952 (1835 a
+1952). Los dos sinópticos están transcritos (departamentos y, aparte, los totales por provincia
+de cada censo con sus propias provincias) y coinciden cifra por cifra; el de 1865 está mal
+escaneado y sus cifras dudosas se resolvieron con el de 1875, que es nítido. Errata del de 1875:
+Talca 1865 = 84.660 (es 84.630). El de 1875 pone el departamento de Curicó de 1865 solo en la
+columna de provincias.
 
 **1813** (edición del Archivo Nacional, 1953). Sin índice. Por provincia, de Copiapó a Talca:
 cuadros "Censo de territorio" por distrito y un "Censo de provincia" con el total (estado civil

@@ -1,0 +1,46 @@
+# Totales por provincia del cuadro sinóptico de 1865 (pág. 392). En el original cada censo trae su
+# columna "Población por provincias", con llaves que agrupan a los departamentos de la provincia
+# vigente en ese censo; aquí va una fila por provincia y censo. Los departamentos van en
+# pub_1865_p392.
+
+fuente_id: pub_1865
+cuadro: "p392"
+titulo: Cuadro sinóptico de los censos de la República levantados en 1835, 1843, 1854 i 1865 (totales por provincia)
+paginas:
+  - {pdf: 425, impresa: "392", desde: Colonia de Magallanes}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion: {fecha: 2026-10-19, por: Claude (asistido), recortes_dpi: 220-400}
+
+indicador: poblacion
+unidad: personas
+fijas: {area: _T, sexo: _T}
+
+territorio:
+  columna: territorio
+  nivel: {Total: pais, _otro: provincia}
+  dpa_version: "provincias_{censo}"
+
+filas:
+  censo: {columna: censo}
+
+columnas:
+  poblacion: {}
+
+notas_cuadro:
+  - >
+    Composición de las provincias según las llaves del original (comprobada con las sumas de sus
+    departamentos): en 1843, Chiloé incluye Carelmapu; Valdivia, Osorno; Concepción, Laja y
+    Chillán; Maule, San Carlos; y Coquimbo, los departamentos de Atacama. En 1835, Chiloé incluye
+    Carelmapu; Valdivia, Osorno; Concepción, Laja y Chillán; Maule, San Carlos; Santiago,
+    Valparaíso y Casablanca; Aconcagua, Quillota; y Coquimbo, los de Atacama.
+  - >
+    Todos los totales cuadran con sus departamentos y con el total de la República, y coinciden
+    con el sinóptico de 1875.
+
+notas_celdas:
+  - {territorio: Santiago, columna: poblacion, censo: "1854", nota: "Se lee 272199; se adopta 272499, igual al sinóptico de 1875 y a la suma de sus departamentos."}
+  - {territorio: Santiago, columna: poblacion, censo: "1835", nota: "Se lee 253687; se adopta 253887, igual al sinóptico de 1875 y a la suma de sus departamentos."}
+
+controles:
+  - {tipo: suma_territorio, total: pais, partes: provincia}
