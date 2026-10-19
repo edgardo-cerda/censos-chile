@@ -58,7 +58,7 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 | Punto | Estado |
 |---|---|
 | 3. Módulos temáticos | ⏳ No iniciado (solo borrador en la concordancia) |
-| 4. Digitalización histórica 1813–1982 | 🟡 Herramientas y formato listos; catálogo completo 1813–1992 (638 entradas: 423 cuadros, 133 bloques por provincia y 82 textos; página del PDF verificada en 214 y estimada en 399; los cuadros nacionales 1 y 2 de 1952 faltan en el escaneo). Transcritos: 1920 C1 (departamento/provincia 1865–1920), C3 (× área 1895–1920) y C4 (× área × sexo 1920); 1952 C9; 1930 C9 (provincia/departamento/comuna × área × sexo) y C10; 1960 C1.1.1 y C1.2; 1982 C1.01 (región/provincia/comuna × área × sexo, 1.166 filas); 1940 urbano-rural hasta comuna (388 filas, con viviendas). Total 13.689 cifras; erratas de imprenta anotadas; contraste entre cuadros sin diferencias de transcripción. Ver [digitalizacion.md](digitalizacion.md) |
+| 4. Digitalización histórica 1813–1982 | 🟡 Herramientas y formato listos; catálogo completo 1813–1992 (638 entradas: 423 cuadros, 133 bloques por provincia y 82 textos; página del PDF verificada en 214 y estimada en 399; los cuadros nacionales 1 y 2 de 1952 faltan en el escaneo). Transcritos: 1920 C1 (departamento/provincia 1865–1920), C3 (× área 1895–1920) y C4 (× área × sexo 1920); 1952 C9; 1930 C9 (provincia/departamento/comuna × área × sexo) y C10; 1960 C1.1.1 y C1.2; 1982 C1.01 (región/provincia/comuna × área × sexo, 1.166 filas); 1940 urbano-rural hasta comuna (388 filas, con viviendas). Total 13.689 cifras; erratas de imprenta anotadas; contraste entre cuadros sin diferencias de transcripción. Ver [digitalizacion.md](digitalizacion.md) y la planilla `productos/avance/avance_censos_historicos.xlsx` |
 | 5. Publicación (Zenodo, CRAN/PyPI) | ⏳ No iniciado |
 
 ## Pendientes del autor
@@ -94,6 +94,7 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
   python pipelines/poblacion_nucleo.py
   python validacion/validar_poblacion.py
   python pipelines/tabulados_publicaciones.py   # cuadros digitalizados
+  python herramientas/resumen_avance.py        # planilla de avance de los censos históricos
   ```
 - Hallazgos sobre cada base: [notas_microdatos.md](notas_microdatos.md).
 - Procedimiento de digitalización y notas de cada publicación: [digitalizacion.md](digitalizacion.md).
