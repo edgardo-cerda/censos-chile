@@ -61,7 +61,7 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 | Punto | Estado |
 |---|---|
 | 3. Módulos temáticos | ⏳ No iniciado (solo borrador en la concordancia) |
-| 4. Digitalización histórica 1813–1982 | 🟡 Herramientas y formato listos; catálogo completo 1813–1992 (640 entradas; los cuadros nacionales 1 y 2 de 1952 faltan en el escaneo). Los 205 cuadros de población traen censos con datos, nivel territorial, variables (área, sexo, edad) y cobertura; la planilla compara lo transcrito con lo disponible en los PDF. 1843 y 1854 tienen cifras por departamento en los sinópticos de 1865 y 1875 y en el resumen de 1907. Transcritos: 1960 C1.2.1 (provincia × edad) y C1.3 (país × área × sexo × edad simple); 1970 C3 (país × área × sexo × edad simple) y C5 (total por provincia); 1982 C1.03 (país × área × sexo × edad simple); 1835 departamentos × sexo × estado (arts. 34–42); 1813 censos de provincia (14 partidos × sexo × edad y estado civil; distritos × sexo); 1865 clasificación por departamentos (edad × sexo, 52 departamentos; cuadra con la de provincias); cuadros sinópticos de 1865 y 1875 (departamentos y provincias de 1835, 1843, 1854, 1865 y 1875; validados entre sí); 1865 clasificación por provincias (edad × sexo; valida 1952 C6); 1952 comparativos C5 (provincia × sexo 1865–1952), C6 (provincia × sexo × edad 1865 y 1875) y C7 (edad del país 1885–1952); 1920 C1 (departamento/provincia 1865–1920), C3 (× área 1895–1920) y C4 (× área × sexo 1920); 1952 C9; 1930 C9 (provincia/departamento/comuna × área × sexo) y C10; 1960 C1.1.1 y C1.2; 1982 C1.01 (región/provincia/comuna × área × sexo, 1.166 filas); 1940 urbano-rural hasta comuna (388 filas, con viviendas). Total 21.465 cifras; erratas de imprenta anotadas; contraste entre cuadros sin diferencias de transcripción. Ver [digitalizacion.md](digitalizacion.md) y la planilla `productos/avance/avance_censos_historicos.xlsx` |
+| 4. Digitalización histórica 1813–1982 | 🟡 Herramientas y formato listos; catálogo completo 1813–1992 (640 entradas; los cuadros nacionales 1 y 2 de 1952 faltan en el escaneo). Los 205 cuadros de población traen censos con datos, nivel territorial, variables (área, sexo, edad) y cobertura; la planilla compara lo transcrito con lo disponible en los PDF. 1843 y 1854 tienen cifras por departamento en los sinópticos de 1865 y 1875 y en el resumen de 1907. Transcritos: 1952 cuadros nacionales 4 (comunas) y 7 (país × sexo × edad); 1960 C1.2.1 (provincia × edad) y C1.3 (país × área × sexo × edad simple); 1970 C3 (país × área × sexo × edad simple) y C5 (total por provincia); 1982 C1.03 (país × área × sexo × edad simple); 1835 departamentos × sexo × estado (arts. 34–42); 1813 censos de provincia (14 partidos × sexo × edad y estado civil; distritos × sexo); 1865 clasificación por departamentos (edad × sexo, 52 departamentos; cuadra con la de provincias); cuadros sinópticos de 1865 y 1875 (departamentos y provincias de 1835, 1843, 1854, 1865 y 1875; validados entre sí); 1865 clasificación por provincias (edad × sexo; valida 1952 C6); 1952 comparativos C5 (provincia × sexo 1865–1952), C6 (provincia × sexo × edad 1865 y 1875) y C7 (edad del país 1885–1952); 1920 C1 (departamento/provincia 1865–1920), C3 (× área 1895–1920) y C4 (× área × sexo 1920); 1952 C9; 1930 C9 (provincia/departamento/comuna × área × sexo) y C10; 1960 C1.1.1 y C1.2; 1982 C1.01 (región/provincia/comuna × área × sexo, 1.166 filas); 1940 urbano-rural hasta comuna (388 filas, con viviendas). Total 21.935 cifras; erratas de imprenta anotadas; contraste entre cuadros sin diferencias de transcripción. Ver [digitalizacion.md](digitalizacion.md) y la planilla `productos/avance/avance_censos_historicos.xlsx` |
 | 5. Publicación (Zenodo, CRAN/PyPI) | ⏳ No iniciado |
 
 ## Pendientes del autor
@@ -81,17 +81,17 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
    `.rar`: en R usar el paquete `archive`; en Python requiere una dependencia adicional.
 6. Fase 4: núcleo = población por territorio × área × sexo × edad, al nivel más fino que traigan
    los PDF. Orden de trabajo: del censo más reciente hacia atrás (1982, 1970, 1960, 1952, 1940,
-   1930, 1920, 1907, 1895, 1885, 1875, 1865). 1982, 1970 y 1960: completos según los PDF (la edad solo viene para el país; 1970 solo trae el
-   total por provincia: faltan sus volúmenes provinciales). Ningún censo histórico lo
-   tiene completo todavía. Hecho: sexo por provincia 1865–1952 (1952 C5), sexo × edad por
-   provincia 1865 y 1875 (1952 C6) y edad del país 1885–1952 (1952 C7). 1865 validado contra su
-   publicación (coincide cifra por cifra); falta validar 1875 en adelante. 1835–1865 por
-   departamento: hecho (sinópticos de 1865 y 1875). En curso: completar hasta 1865 al nivel más
-   fino de los PDF (1865 departamento × sexo × edad: hecho; parroquia × sexo × edad: borrador sin validar; 1835 departamento × sexo: hecho (la publicación no trae parroquias ni edad); 1813
-   partido × sexo × edad y distrito × sexo: hecho; 1865 distrito desde los bloques provinciales). Siguen: 1952 por comuna desde el Tomo I (Cuadro 4) y el Tomo II
-   (Cuadro 1 de cada provincia); 1907 por departamento en los resúmenes del volumen de 1907.
-   Los cuadros de edad de cada censo están en la planilla de avance (columna «Pendiente»). Los
-   cuadros nacionales 1 y 2 de 1952 faltan en el escaneo: buscar otro ejemplar.
+   1930, 1920, 1907, 1895, 1885, 1875, 1865). El estado de cada censo y el cuadro que falta están en
+   la planilla de avance (columnas «Estado» y «Pendiente»). Resumen:
+   - 1982, 1970 y 1960: completos según los PDF (la edad solo viene para el país; de 1970 solo hay
+     el volumen «Total País»).
+   - 1952: comuna (total), provincia × área y × sexo, país × sexo × edad. Falta área × sexo por
+     provincia (Cuadro Nacional 2, ausente en el escaneo: buscar otro ejemplar) y el detalle por
+     comuna del Tomo II (Núcleo Central).
+   - Siguen 1940, 1930, 1920, 1907, 1895, 1885 y 1875.
+   - Ya hechos de los censos antiguos: 1865 provincia y departamento × sexo × edad; 1835
+     departamento × sexo; 1843 y 1854 departamento (sinópticos); 1813 partido × sexo × edad y
+     distrito × sexo. Borrador sin validar: parroquias de 1865 (`digitalizacion/borradores/`).
 
 ## Cómo retomar
 

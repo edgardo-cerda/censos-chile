@@ -217,6 +217,11 @@ Cuadros comparativos 5 a 7 (págs. 39–43, PDF 35–39), sacados de las publica
   la página de las columnas de la segunda (`columnas` en `paginas`). Todas las sumas cuadran.
 - C7: país por decenios de edad, 1885–1952 (edad ignorada solo en 1952). Los grupos de 1885 suman
   2.497.796 frente al total impreso de 2.497.797.
+Cuadro Nacional 4 (PDF 86–89): población por provincia, departamento y comuna (271 comunas),
+transcrita sin superficie ni densidad. Erratas: Depto. Petorca impreso 34.314 (comunas y densidad:
+34.413); Imperial 75.477 (75.467); las comunas de Rancagua suman 2.000 más que el departamento,
+las de Valdivia 2 menos y las de Castro 5 menos. Cuadro Nacional 7 (PDF 102): la columna «Total
+general» da país × sexo × edad quinquenal y reemplaza al Cuadro Nacional 1, ausente.
 Cuadro comparativo 9 (págs. 44–45, PDF 40–41): provincias × total/urbana/rural de 1865 a 1952.
 En 1885–1920 excluye el departamento de Arica. Errata: Santiago 1865 rural impreso 200.118
 (coherente: 200.148).

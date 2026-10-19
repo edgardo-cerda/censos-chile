@@ -1,0 +1,67 @@
+# Transcripción de la columna «Población» del Cuadro Nacional N.° 4 del censo de 1952 (Tomo I):
+# población, superficie y densidad del país por provincias, departamentos y comunas. Se omiten la
+# superficie (provisoria) y la densidad, que se usaron para verificar cifras dudosas.
+# Cada provincia va seguida de sus departamentos y cada departamento de sus comunas.
+
+fuente_id: pub_1952
+cuadro: "N4"
+titulo: Población, superficie y densidad del país por provincias, departamentos y comunas
+paginas:
+  - {pdf: 86, impresa: "123", desde: REPUBLICA}
+  - {pdf: 87, impresa: "124", desde: Curacaví}
+  - {pdf: 88, impresa: "125", desde: Bulnes}
+  - {pdf: 89, impresa: "126", desde: Llanquihue}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion:
+  fecha: 2026-10-19
+  por: Claude (asistido)
+  recortes_dpi: 210-400
+  nota: >
+    Lectura visual a 210 dpi; el OCR perdía filas. Las cifras que no cuadran se releyeron a 400
+    dpi y se compararon con la densidad impresa.
+
+indicador: poblacion
+unidad: personas
+fijas: {censo: 1952, area: _T, sexo: _T}
+
+territorio:
+  columna: territorio
+  columna_nivel: nivel
+  niveles: [provincia, departamento, comuna]
+  dpa_version: provincias_1952
+
+columnas:
+  poblacion: {}
+
+notas_cuadro:
+  - >
+    25 provincias, 103 departamentos y 271 comunas (Antártida solo como provincia). Las provincias
+    suman el total del país (5 932 995) y coinciden con los cuadros comparativos 5 y 9. Las comunas
+    suman su departamento salvo en Rancagua (+2 000), Valdivia (-2) y Castro (-5), que se dejan como
+    excepciones del control porque no se identifica la comuna errada (en Rancagua todas las
+    densidades impresas son coherentes con sus poblaciones).
+
+notas_celdas:
+  - territorio: Petorca
+    nivel: departamento
+    columna: poblacion
+    estado_valor: inconsistente
+    nota: >
+      Impreso 34 314 (lectura clara a 400 dpi), pero sus comunas suman 34 413, la densidad impresa
+      (6,96 hab./km² sobre 4 944 km²) corresponde a 34 413 y con 34 413 cuadra Aconcagua (128 378).
+  - territorio: Imperial
+    nivel: departamento
+    columna: poblacion
+    estado_valor: inconsistente
+    nota: >
+      Se lee 75 477 (segundo dígito manchado), pero sus comunas suman 75 467 y con 75 467 cuadra
+      Cautín (365 072).
+
+controles:
+  - tipo: jerarquia
+    excepciones:
+      - {territorio: Rancagua, diferencia: 2000}
+      - {territorio: Valdivia, diferencia: -2}
+      - {territorio: Castro, diferencia: -5}
+  - {tipo: suma_territorio, total: pais, partes: provincia}

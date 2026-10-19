@@ -1,0 +1,46 @@
+# Transcripción de la columna «Total general» del Cuadro Nacional N.° 7 del censo de 1952 (Tomo I):
+# población total del país, chilenos y extranjeros, por grupos de edades y sexo. Solo se transcribe
+# el total general (núcleo: país × sexo × edad); las columnas de chilenos y extranjeros quedan para el
+# módulo de migración. Sustituye al Cuadro Nacional N.° 1 (edad × sexo × área), que falta en el
+# escaneo (págs. 85-116).
+
+fuente_id: pub_1952
+cuadro: "N7"
+titulo: Población total del país, chilenos y extranjeros, por grupos de edades y sexo
+paginas:
+  - {pdf: 102, impresa: "141", desde: REPUBLICA}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion: {fecha: 2026-10-19, por: Claude (asistido), recortes_dpi: 260}
+
+indicador: poblacion
+unidad: personas
+fijas: {censo: 1952, area: _T}
+
+territorio:
+  columna: territorio
+  nivel: {_otro: pais}
+  dpa_version: provincias_1952
+
+filas:
+  edad_min: {columna: edad_min}
+  edad_max: {columna: edad_max}
+  edad_estado: {columna: edad_estado}
+
+columnas:
+  ambos_sexos: {sexo: _T}
+  hombres: {sexo: hombre}
+  mujeres: {sexo: mujer}
+
+notas_cuadro:
+  - >
+    Las 69 cifras cuadran (grupos = total; hombres + mujeres = ambos sexos) y los totales coinciden
+    con los cuadros comparativos 5, 7 y 9. Los grupos decenales del comparativo 7 son la suma de
+    estos quinquenales. Sin área: el Cuadro Nacional 1, que la traía, falta en el escaneo.
+
+controles:
+  - {tipo: suma_dimension, dimension: sexo, total: _T, partes: [hombre, mujer]}
+  - tipo: suma_dimension
+    dimension: [edad_min, edad_max, edad_estado]
+    total: ["", "", ""]
+    partes: [[0, 4, ""], [5, 9, ""], [10, 14, ""], [15, 19, ""], [20, 24, ""], [25, 29, ""], [30, 34, ""], [35, 39, ""], [40, 44, ""], [45, 49, ""], [50, 54, ""], [55, 59, ""], [60, 64, ""], [65, 69, ""], [70, 74, ""], [75, 79, ""], [80, 84, ""], [85, 89, ""], [90, 94, ""], [95, 99, ""], [100, "", ""], ["", "", "ignorada"]]

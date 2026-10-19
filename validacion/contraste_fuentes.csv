@@ -64,3 +64,4 @@ censo,territorio,nivel,area,sexo,fuente_a,valor_a,estado_a,fuente_b,valor_b,esta
 1940,Llanquihue,provincia,_T,_T,pub_1940 cp76,115425,inconsistente,pub_1960 c1.1.1,117225,ok
 1952,Chiloé,provincia,_T,_T,pub_1952 c5,100687,ok,pub_1960 c1.1.1,100637,inconsistente
 1952,Chiloé,provincia,_T,_T,pub_1952 c9,100687,ok,pub_1960 c1.1.1,100637,inconsistente
+1952,Chiloé,provincia,_T,_T,pub_1952 cN4,100687,ok,pub_1960 c1.1.1,100637,inconsistente
