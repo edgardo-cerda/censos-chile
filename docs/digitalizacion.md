@@ -109,6 +109,10 @@ registran como `excepciones` del control en el YAML, porque no hay una cifra cul
 
 **1835** ("Repertorio Chileno"). Dos páginas impresas por página del PDF. Índice en PDF 114–116.
 Habitantes en el art. 3 (pág. 3) y en el capítulo IX, por provincia y departamento (págs. 171–222).
+Cada departamento trae hombres y mujeres solteros y casados (sin edad ni parroquias); transcrito en
+`pub_1835_departamentos`, con los habitantes de cada provincia según el texto. Coincide con los
+sinópticos de 1865 y 1875 salvo Cauquenes (34.633, sinópticos 34.631) y el total de Concepción
+(118.364 en el texto; sus departamentos suman 118.362).
 
 **1865.** Índice en PDF 2–4. Un bloque por provincia y el Censo general de la República
 (págs. 321–392). Desfase +31 al comienzo y +33 desde la pág. 77. Clasificación de los habitantes

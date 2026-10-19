@@ -1,0 +1,81 @@
+# Habitantes por departamento en 1835 («Repertorio Chileno», cap. IX, arts. 34-42, págs. 171-222):
+# cada departamento trae hombres y mujeres solteros y casados, y en el texto "contiene N habitantes".
+# Cada provincia (con los habitantes del texto de su artículo) va seguida de sus departamentos;
+# pagina_pdf = página del PDF. En Chiloé, Valdivia y Santiago el original trae además una fila de
+# totales por estado y sexo, que no se repite aquí.
+
+fuente_id: pub_1835
+cuadro: "art34_42"
+titulo: Habitantes por departamento, con distinción del sexo y del estado (solteros y casados)
+paginas:
+  - {pdf: 82, impresa: "171", desde: Chiloé}
+  - {pdf: 84, impresa: "174", desde: Valdivia}
+  - {pdf: 87, impresa: "181", desde: Maule}
+  - {pdf: 90, impresa: "186", desde: Talca}
+  - {pdf: 92, impresa: "190", desde: Santiago}
+  - {pdf: 102, impresa: "210", desde: Aconcagua}
+  - {pdf: 105, impresa: "216", desde: Coquimbo}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion: {fecha: 2026-10-19, por: Claude (asistido), recortes_dpi: 75-400}
+
+indicador: poblacion
+unidad: personas
+fijas: {censo: 1835, area: _T}
+
+territorio:
+  columna: territorio
+  columna_nivel: nivel
+  niveles: [provincia, departamento]
+  dpa_version: provincias_1835
+
+columnas:
+  solteros_h: {sexo: hombre, estado_civil: soltero}
+  casados_h: {sexo: hombre, estado_civil: casado}
+  solteras_m: {sexo: mujer, estado_civil: soltero}
+  casadas_m: {sexo: mujer, estado_civil: casado}
+  total: {sexo: _T}
+
+notas_cuadro:
+  - >
+    "Solt." agrupa a todos los no casados (no hay columna de viudos). En casi todos los
+    departamentos los casados y las casadas son iguales o casi iguales.
+  - >
+    Validación: en cada departamento las cuatro cifras suman los habitantes del texto, y estos
+    coinciden con los cuadros sinópticos de 1865 y 1875 salvo Cauquenes (34 633 aquí; 34 631 en los
+    sinópticos y en el total de Maule). Combarbalá solo trae el total (8 500). Los departamentos de
+    1835 no son siempre los de 1865: Chiloé tiene 10 (San Carlos, Carelmapu, Chacao, Calbuco,
+    Dalcahue, Quenac, Quinchao, Castro, Lemuy, Chonchi) y los sinópticos los agrupan en 4.
+  - >
+    Santiago trae además sus subdelegaciones (Santiago, Renca, Colina, Lampa, Ñuñoa; PDF 93), no
+    transcritas.
+
+  - >
+    Talca no tiene departamentos (17 subdelegaciones): su fila de departamento repite el total de la
+    provincia. Concepción: el texto da 118 364 habitantes, pero sus departamentos suman 118 362, igual
+    que los sinópticos. Maule: 120 185 en el texto, coherente con Cauquenes 34 633 (los sinópticos
+    dan 120 183).
+
+notas_celdas:
+  - territorio: Cauquenes
+    columna: total
+    estado_valor: inconsistente
+    nota: >
+      Texto y suma de la fila: 34 633. Los sinópticos de 1865 y 1875 y el total de Maule (120 183)
+      dan 34 631.
+
+  - territorio: Concepción
+    nivel: provincia
+    columna: total
+    estado_valor: inconsistente
+    nota: >
+      Texto: 118 364 habitantes; sus departamentos suman 118 362, igual que los sinópticos de 1865 y
+      1875.
+
+controles:
+  - {tipo: jerarquia}
+  - tipo: suma_dimension
+    dimension: [sexo, dimensiones]
+    total: [_T, ""]
+    partes: [[hombre, '{"estado_civil": "soltero"}'], [hombre, '{"estado_civil": "casado"}'],
+             [mujer, '{"estado_civil": "soltero"}'], [mujer, '{"estado_civil": "casado"}']]
