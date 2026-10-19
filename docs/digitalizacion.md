@@ -26,7 +26,11 @@ sabe de cada PDF. Las cifras resultantes van a `productos/tabulados/tabulados_pu
 3. **Transcribir** en `digitalizacion/<censo>/<fuente>_c<cuadro>.csv` el cuadro tal como está
    impreso: mismas filas, mismas columnas, nombres como aparecen. Guion impreso = `-`; dos puntos
    impresos (sin dato) = `..`; celda en blanco = vacío. Las cifras sin separador de miles. Los
-   controles no suman las partes sin dato.
+   controles no suman las partes sin dato. Los tramos de edad van como columnas (`edad_min`,
+   `edad_max` en el YAML) o, si son filas, con columnas auxiliares `edad_min`, `edad_max` y
+   `edad_estado`; el control de edad puede combinar dimensiones
+   (`dimension: [edad_min, edad_estado]`) para separar el total de la edad ignorada. Las notas de
+   celda pueden nombrar cualquier columna del CSV (p. ej. `sexo` o `grupo`) para ubicar la fila.
 4. **Describir** en el `.yaml` del mismo nombre: fuente, cuadro, páginas (con la primera fila
    de cada página), cómo se mapean filas y columnas a las dimensiones del esquema, notas del
    cuadro, notas de celdas y controles. Ejemplo: [digitalizacion/1952/pub_1952_c09.yaml](../digitalizacion/1952/pub_1952_c09.yaml).
@@ -167,6 +171,16 @@ después de sus unidades (`totales_al_final` en el YAML). Otras erratas: Antofag
 - Censo de vivienda (PDF 2374–2431).
 Talca, Curicó y las provincias de Valdivia a Magallanes solo aparecen en los cuadros por
 provincia del Tomo I.
+Cuadros comparativos 5 a 7 (págs. 39–43, PDF 35–39), sacados de las publicaciones de cada censo
+(validación pendiente contra ellas):
+- C5: provincias × sexo, 1865–1952; mismos totales que el C9. Malleco 1885: hombres + mujeres
+  quedan 3.000 bajo el total (Mariluán sin sexo); hombres y mujeres del país 1895 difieren en 1 de
+  la suma de las provincias. Santiago 1952: una mancha tapa una cifra del total (1.754.954).
+- C6: provincias × sexo × edad (seis tramos: hasta 7, 8–15, 16–25, 26–50, 51–80, 81 y más) en 1865
+  y 1875. Dos partes con las mismas filas (PDF 36–37 y 38); en el CSV van juntas y el YAML indica
+  la página de las columnas de la segunda (`columnas` en `paginas`). Todas las sumas cuadran.
+- C7: país por decenios de edad, 1885–1952 (edad ignorada solo en 1952). Los grupos de 1885 suman
+  2.497.796 frente al total impreso de 2.497.797.
 Cuadro comparativo 9 (págs. 44–45, PDF 40–41): provincias × total/urbana/rural de 1865 a 1952.
 En 1885–1920 excluye el departamento de Arica. Errata: Santiago 1865 rural impreso 200.118
 (coherente: 200.148).

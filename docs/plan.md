@@ -121,7 +121,9 @@ Procedimiento y notas por publicación en [digitalizacion.md](digitalizacion.md)
       demográfica básica). Primero territorio × área × sexo y luego la edad.
       Territorio × área × sexo hecho en 1920 (departamento), 1930, 1940 y 1982 (comuna) y 1960
       (provincia); territorio × área en 1952 C9 (provincias, 1865–1952) y 1920 C1 y C3
-      (departamentos, 1865–1920). Edad: pendiente en todos los censos.
+      (departamentos, 1865–1920); sexo por provincia 1865–1952 (1952 C5). Edad: provincia × sexo
+      en 1865 y 1875 (1952 C6) y país 1885–1952 (1952 C7). Los censos anteriores se rescatan desde
+      cuadros comparativos de publicaciones posteriores y se validan contra las originales.
       Avance por censo: `productos/avance/avance_censos_historicos.xlsx`
       (`herramientas/resumen_avance.py`).
 

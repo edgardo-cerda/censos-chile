@@ -96,13 +96,18 @@ def procesar(meta_ruta: Path) -> tuple[list[dict], list[dict]]:
     terr = meta["territorio"]
     ubicacion = ubicar(filas, terr)
 
-    def nota_de(nombre, nivel, area, col):
-        """Nota de una celda: territorio, columna, columna "area" si existe y nivel si se indica."""
+    def nota_de(nombre, nivel, fila, col):
+        """Nota de una celda: territorio, columna, columnas "area" y "sexo" si existen, nivel si se
+        indica y cualquier otra columna del CSV que la nota nombre (p. ej. "grupo")."""
         for n in meta.get("notas_celdas", []):
-            if (n["territorio"], n.get("area"), n["columna"]) == (nombre, area, col) and n.get("nivel", nivel) == nivel:
+            claves = {"area", "sexo"} | (set(n) - {"territorio", "columna", "nivel", "estado_valor", "nota"})
+            if ((n["territorio"], n["columna"]) == (nombre, col) and n.get("nivel", nivel) == nivel
+                    and all(n.get(k) == fila.get(k) for k in claves)):
                 return n
         return {}
-    paginas = meta["paginas"]
+    # Páginas por filas ("desde") y, si el cuadro sigue en otra página con más columnas, por columnas.
+    paginas = [p for p in meta["paginas"] if "columnas" not in p]
+    pagina_col = {c: p for p in meta["paginas"] for c in p.get("columnas", [])}
 
     salida = []
     n_pagina = 0
@@ -118,7 +123,7 @@ def procesar(meta_ruta: Path) -> tuple[list[dict], list[dict]]:
             dims_fila[dim] = regla["valores"][crudo] if "valores" in regla else (int(crudo) if crudo.isdigit() else crudo)
         for col, dims_col in meta["columnas"].items():
             v, estado = valor(fila[col])
-            nota = nota_de(nombre, nivel, fila.get("area"), col)
+            nota = nota_de(nombre, nivel, fila, col)
             dims = {**meta.get("fijas", {}), **dims_fila, **dims_col}
             censo = dims.pop("censo")
             indicador = dims.pop("indicador", meta["indicador"])
@@ -143,8 +148,8 @@ def procesar(meta_ruta: Path) -> tuple[list[dict], list[dict]]:
                 "estado_valor": nota.get("estado_valor", estado),
                 "fuente_id": meta["fuente_id"],
                 "cuadro": meta["cuadro"],
-                "pagina_impresa": pagina.get("impresa", ""),
-                "pagina_pdf": pagina.get("pdf", ""),
+                "pagina_impresa": pagina_col.get(col, pagina).get("impresa", ""),
+                "pagina_pdf": pagina_col.get(col, pagina).get("pdf", ""),
                 "metodo": meta["metodo"],
                 "verificacion": meta["verificacion"],
                 "nota": " ".join(nota.get("nota", "").split()),
@@ -158,15 +163,21 @@ def controlar(meta: dict, filas: list[dict]) -> list[dict]:
     fallas = []
 
     def clave(f, sin):
-        return tuple((k, f[k]) for k in ("censo", "indicador", "territorio_cod_orig", "area", "sexo", "edad_min", "dimensiones") if k not in sin)
+        return tuple((k, f[k]) for k in ("censo", "indicador", "territorio_cod_orig", "area", "sexo", "edad_min", "edad_estado",
+                                         "dimensiones") if k not in sin)
 
     for c in meta.get("controles", []):
         grupos: dict = defaultdict(lambda: {"total": None, "partes": 0, "celdas": []})
         for f in filas:
             if c["tipo"] == "suma_dimension":
+                # Una dimensión, o varias como lista (p. ej. [edad_min, edad_estado]) con valores en listas.
                 d = c["dimension"]
-                k = clave(f, {d})
-                es_total, es_parte = f[d] == c["total"], f[d] in c["partes"]
+                dims = d if isinstance(d, list) else [d]
+                val = tuple(f[x] for x in dims) if isinstance(d, list) else f[d]
+                comparar = (lambda x: tuple(x)) if isinstance(d, list) else (lambda x: x)
+                k = clave(f, set(dims))
+                es_total = val == comparar(c["total"])
+                es_parte = val in [comparar(x) for x in c["partes"]]
             elif c["tipo"] == "suma_territorio":
                 k = clave(f, {"territorio_cod_orig"})
                 es_total, es_parte = f["territorio_nivel"] == c["total"], f["territorio_nivel"] == c["partes"]

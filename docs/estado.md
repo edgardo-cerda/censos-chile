@@ -21,6 +21,8 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 | Diccionario consolidado | Antes de armonizar, consolidar variables y categorías de 1992–2024 en un Excel generado desde CSV versionados. |
 | Publicación | No subir a GitHub hasta que el autor lo indique. |
 | Digitalización | Cada cuadro se transcribe tal como está impreso (CSV) con un YAML de procedencia y mapeo; las erratas de la publicación se conservan y se anotan como `inconsistente`, no se corrigen. |
+| Cuadros comparativos | Para ganar eficiencia, los censos anteriores se rescatan primero desde los cuadros comparativos de publicaciones posteriores (p. ej., 1952 C5–C9, 1920 C1–C3), pero cada cifra rescatada debe validarse contra la publicación original del censo (contraste entre cuadros). |
+| Núcleo | Población por territorio × área × sexo × edad (estructura demográfica básica). Primero territorio × área × sexo; luego la edad. |
 
 ## Estado por fase
 
@@ -58,7 +60,7 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 | Punto | Estado |
 |---|---|
 | 3. Módulos temáticos | ⏳ No iniciado (solo borrador en la concordancia) |
-| 4. Digitalización histórica 1813–1982 | 🟡 Herramientas y formato listos; catálogo completo 1813–1992 (638 entradas: 423 cuadros, 133 bloques por provincia y 82 textos; página del PDF verificada en 214 y estimada en 399; los cuadros nacionales 1 y 2 de 1952 faltan en el escaneo). Transcritos: 1920 C1 (departamento/provincia 1865–1920), C3 (× área 1895–1920) y C4 (× área × sexo 1920); 1952 C9; 1930 C9 (provincia/departamento/comuna × área × sexo) y C10; 1960 C1.1.1 y C1.2; 1982 C1.01 (región/provincia/comuna × área × sexo, 1.166 filas); 1940 urbano-rural hasta comuna (388 filas, con viviendas). Total 13.689 cifras; erratas de imprenta anotadas; contraste entre cuadros sin diferencias de transcripción. Ver [digitalizacion.md](digitalizacion.md) y la planilla `productos/avance/avance_censos_historicos.xlsx` |
+| 4. Digitalización histórica 1813–1982 | 🟡 Herramientas y formato listos; catálogo completo 1813–1992 (638 entradas: 423 cuadros, 133 bloques por provincia y 82 textos; página del PDF verificada en 214 y estimada en 399; los cuadros nacionales 1 y 2 de 1952 faltan en el escaneo). Transcritos: 1952 comparativos C5 (provincia × sexo 1865–1952), C6 (provincia × sexo × edad 1865 y 1875) y C7 (edad del país 1885–1952); 1920 C1 (departamento/provincia 1865–1920), C3 (× área 1895–1920) y C4 (× área × sexo 1920); 1952 C9; 1930 C9 (provincia/departamento/comuna × área × sexo) y C10; 1960 C1.1.1 y C1.2; 1982 C1.01 (región/provincia/comuna × área × sexo, 1.166 filas); 1940 urbano-rural hasta comuna (388 filas, con viviendas). Total 15.349 cifras; erratas de imprenta anotadas; contraste entre cuadros sin diferencias de transcripción. Ver [digitalizacion.md](digitalizacion.md) y la planilla `productos/avance/avance_censos_historicos.xlsx` |
 | 5. Publicación (Zenodo, CRAN/PyPI) | ⏳ No iniciado |
 
 ## Pendientes del autor
@@ -77,9 +79,10 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 5. Esqueleto de las librerías (`tabulado()`, `diccionario()`). Los microdatos de 2017 vienen en
    `.rar`: en R usar el paquete `archive`; en Python requiere una dependencia adicional.
 6. Fase 4: núcleo = población por territorio × área × sexo × edad. Ningún censo histórico lo
-   tiene completo todavía: falta la edad en todos. Territorio × área × sexo: 1952 por comuna desde
-   el Tomo I (Cuadro 4) y el Tomo II (Cuadro 1 de cada provincia); sexo por provincia de 1865 a
-   1952 en el comparativo 5 de 1952; 1907 por departamento en los resúmenes del volumen de 1907.
+   tiene completo todavía. Hecho: sexo por provincia 1865–1952 (1952 C5), sexo × edad por
+   provincia 1865 y 1875 (1952 C6) y edad del país 1885–1952 (1952 C7). Falta validarlos contra las
+   publicaciones originales. Siguen: 1952 por comuna desde el Tomo I (Cuadro 4) y el Tomo II
+   (Cuadro 1 de cada provincia); 1907 por departamento en los resúmenes del volumen de 1907.
    Los cuadros de edad de cada censo están en la planilla de avance (columna «Pendiente»). Los
    cuadros nacionales 1 y 2 de 1952 faltan en el escaneo: buscar otro ejemplar.
 

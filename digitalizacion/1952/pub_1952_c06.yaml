@@ -1,0 +1,59 @@
+# Transcripción del Cuadro comparativo N.° 6 del censo de 1952.
+# El CSV del mismo nombre reproduce el cuadro tal como está impreso ("-" = guion impreso). El
+# cuadro viene en dos partes con las mismas filas: "Todos los grupos" a "De 16 a 25" (págs. 40-41)
+# y "De 26 a 50" a "De 81 y más" (pág. 42, "Continuación"); en el CSV van juntas.
+
+fuente_id: pub_1952
+cuadro: "6"
+titulo: Cuadro comparativo de la población del país, por provincias, sexo y grupos de edad, según los censos de 1865 y 1875
+paginas:
+  # desde: primera fila (territorio) de cada página; columnas: columnas que están en otra página
+  - {pdf: 36, impresa: "40", desde: REPUBLICA}
+  - {pdf: 37, impresa: "41", desde: Aconcagua}
+  - {pdf: 38, impresa: "42", columnas: [e26_50_1865, e26_50_1875, e51_80_1865, e51_80_1875, e81_1865, e81_1875]}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion: {fecha: 2026-10-19, por: Claude (asistido), recortes_dpi: 220}
+
+indicador: poblacion
+unidad: personas
+fijas: {area: _T}
+
+territorio:
+  columna: territorio
+  nivel: {REPUBLICA: pais, _otro: provincia}
+  # Provincias vigentes en cada censo; el "T. de Angol" de 1875 es la Malleco del Cuadro 5.
+  dpa_version: "provincias_{censo}"
+
+filas:
+  sexo: {columna: sexo, valores: {Total: _T, Hombres: hombre, Mujeres: mujer}}
+
+columnas:
+  total_1865: {censo: 1865}
+  total_1875: {censo: 1875}
+  e00_07_1865: {censo: 1865, edad_min: 0, edad_max: 7}
+  e00_07_1875: {censo: 1875, edad_min: 0, edad_max: 7}
+  e08_15_1865: {censo: 1865, edad_min: 8, edad_max: 15}
+  e08_15_1875: {censo: 1875, edad_min: 8, edad_max: 15}
+  e16_25_1865: {censo: 1865, edad_min: 16, edad_max: 25}
+  e16_25_1875: {censo: 1875, edad_min: 16, edad_max: 25}
+  e26_50_1865: {censo: 1865, edad_min: 26, edad_max: 50}
+  e26_50_1875: {censo: 1875, edad_min: 26, edad_max: 50}
+  e51_80_1865: {censo: 1865, edad_min: 51, edad_max: 80}
+  e51_80_1875: {censo: 1875, edad_min: 51, edad_max: 80}
+  e81_1865: {censo: 1865, edad_min: 81}
+  e81_1875: {censo: 1875, edad_min: 81}
+
+notas_cuadro:
+  - >
+    Según la nota de los cuadros 6 y 7, los datos se sacaron de las publicaciones de cada censo,
+    y solo 1865 y 1875 permitían presentar las edades por provincia; los tramos son los de esas
+    publicaciones ("Hasta 7 años" = 0 a 7). Pendiente: validar contra las publicaciones de 1865
+    y 1875. Todos los totales coinciden con el Cuadro 5 de este volumen.
+  - >
+    Todas las sumas cuadran (sexo, tramos de edad y provincias). Sin edad ignorada.
+
+controles:
+  - {tipo: suma_dimension, dimension: sexo, total: _T, partes: [hombre, mujer]}
+  - {tipo: suma_dimension, dimension: edad_min, total: "", partes: [0, 8, 16, 26, 51, 81]}
+  - {tipo: suma_territorio, total: pais, partes: provincia}

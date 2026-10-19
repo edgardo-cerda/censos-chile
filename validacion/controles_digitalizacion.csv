@@ -30,6 +30,11 @@ pub_1940,p76,jerarquia,1940,Atacama,rural,_T,8126,8136,10,True
 pub_1940,p76,jerarquia,1940,Maule,rural,_T,47907,47908,1,True
 pub_1940,p76,jerarquia,1940,Ñuble,rural,mujer,77709,77679,-30,True
 pub_1940,p76,jerarquia,1940,Yungay,rural,_T,4759,4758,-1,True
+pub_1952,5,suma_dimension,1885,Malleco,_T,_T,81767,78767,-3000,True
+pub_1952,5,suma_territorio,1885,(partes),_T,hombre,1248124,1245124,-3000,True
+pub_1952,5,suma_territorio,1895,(partes),_T,hombre,1332769,1332768,-1,True
+pub_1952,5,suma_territorio,1895,(partes),_T,mujer,1355215,1355216,1,True
+pub_1952,7,suma_dimension,1885,REPUBLICA,_T,_T,2497797,2497796,-1,True
 pub_1952,9,suma_dimension,1865,Santiago,_T,_T,341683,341653,-30,True
 pub_1952,9,suma_territorio,1865,(partes),rural,_T,1298560,1298530,-30,True
 pub_1960,1.1.1,suma_dimension,1952,Chiloé,_T,_T,100637,100687,50,True

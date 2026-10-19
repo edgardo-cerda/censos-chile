@@ -1,0 +1,86 @@
+# Transcripción del Cuadro comparativo N.° 5 del censo de 1952.
+# El CSV del mismo nombre reproduce el cuadro tal como está impreso ("-" = guion impreso).
+# Mismas provincias y totales que el Cuadro 9 (provincias vigentes en cada censo, con los
+# nombres de 1952), con la apertura por sexo en lugar de área.
+
+fuente_id: pub_1952
+cuadro: "5"
+titulo: Cuadro comparativo de la población del país, por provincias y sexo desde el censo del año 1865 al de 1952
+paginas:
+  # desde: primera fila (territorio) de cada página
+  - {pdf: 35, impresa: "39", desde: REPUBLICA}
+  - {pdf: 36, impresa: "40", desde: Osorno}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion: {fecha: 2026-10-19, por: Claude (asistido), recortes_dpi: 220-400}
+
+indicador: poblacion
+unidad: personas
+fijas: {area: _T}
+
+territorio:
+  columna: territorio
+  nivel: {REPUBLICA: pais, _otro: provincia}
+  dpa_version: "provincias_{censo}"
+
+filas:
+  sexo: {columna: sexo, valores: {Total: _T, Hombres: hombre, Mujeres: mujer}}
+
+columnas:
+  "1865": {censo: 1865}
+  "1875": {censo: 1875}
+  "1885": {censo: 1885}
+  "1895": {censo: 1895}
+  "1907": {censo: 1907}
+  "1920": {censo: 1920}
+  "1930": {censo: 1930}
+  "1940": {censo: 1940}
+  "1952": {censo: 1952}
+
+notas_cuadro:
+  - >
+    (1) Por no tener el dato por sexo del Depto. de Arica, la población de éste no se incluye en
+    la provincia de Tarapacá en los censos de 1885, 1895, 1907 y 1920. Los totales de cada
+    provincia y censo coinciden con el Cuadro 9 de este volumen.
+  - >
+    Los datos provienen de las publicaciones de cada censo (nota de los cuadros 6 y 7); hay que
+    validarlos contra ellas. Contraste hecho (2026-10-19): 1920 coincide por provincia y sexo con
+    el Cuadro 4 de 1920; 1930, con el Cuadro 9 de 1930. Con el Cuadro 1 de 1920 (división de
+    1920) coinciden los totales de las provincias que no cambiaron de límites; las demás
+    diferencias son cambios de división (p. ej., Santiago 1865 = Santiago + O'Higgins de 1920) o
+    el traslado de 1 142 (1895) y 1 090 (1907) personas de O'Higgins a Santiago, que también
+    trae el Cuadro 3 de 1920. Valparaíso 1895 da 220 755 aquí y en el Cuadro 9, y 220 756 (suma
+    de sus departamentos) en el Cuadro 1 de 1920.
+
+notas_celdas:
+  - territorio: Malleco
+    sexo: Hombres
+    columna: "1885"
+    estado_valor: inconsistente
+    nota: >
+      Impreso 41 583 (lectura clara a 400 dpi), pero hombres + mujeres = 78 767 frente al total
+      de 81 767. La diferencia (3 000) es la población de Mariluán en 1885, una cifra redonda
+      (Cuadro 1 de 1920); el total de hombres de la República sí la incluye.
+  - territorio: REPUBLICA
+    sexo: Hombres
+    columna: "1895"
+    estado_valor: inconsistente
+    nota: >
+      Impreso 1 332 769; la suma de las provincias da 1 332 768.
+  - territorio: REPUBLICA
+    sexo: Mujeres
+    columna: "1895"
+    estado_valor: inconsistente
+    nota: >
+      Impreso 1 355 215; la suma de las provincias da 1 355 216.
+  - territorio: Santiago
+    sexo: Total
+    columna: "1952"
+    estado_valor: ilegible
+    nota: >
+      Una mancha tapa la penúltima cifra ("1 754 ?54"). Se registra 1 754 954 = hombres +
+      mujeres, igual al Cuadro 9.
+
+controles:
+  - {tipo: suma_dimension, dimension: sexo, total: _T, partes: [hombre, mujer]}
+  - {tipo: suma_territorio, total: pais, partes: provincia}

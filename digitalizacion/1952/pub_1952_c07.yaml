@@ -1,0 +1,62 @@
+# Transcripción del Cuadro comparativo N.° 7 del censo de 1952.
+# El CSV del mismo nombre reproduce el cuadro tal como está impreso ("-" = guion impreso). La
+# columna "grupo" es el rótulo impreso; territorio, edad_min, edad_max y edad_estado se agregan
+# para el mapeo (el cuadro es solo del país).
+
+fuente_id: pub_1952
+cuadro: "7"
+titulo: Cuadro comparativo de la población del país, por grupos de edad desde el censo del año 1885 al de 1952
+paginas:
+  - {pdf: 39, impresa: "43", desde: REPUBLICA}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion: {fecha: 2026-10-19, por: Claude (asistido), recortes_dpi: 250-600}
+
+indicador: poblacion
+unidad: personas
+fijas: {area: _T, sexo: _T}
+
+territorio:
+  columna: territorio
+  nivel: {REPUBLICA: pais}
+  dpa_version: "provincias_{censo}"
+
+filas:
+  edad_min: {columna: edad_min}
+  edad_max: {columna: edad_max}
+  edad_estado: {columna: edad_estado}
+
+columnas:
+  "1885": {censo: 1885}
+  "1895": {censo: 1895}
+  "1907": {censo: 1907}
+  "1920": {censo: 1920}
+  "1930": {censo: 1930}
+  "1940": {censo: 1940}
+  "1952": {censo: 1952}
+
+notas_cuadro:
+  - >
+    (1) Por no tener el dato por edad de la población del Depto. de Arica, éste no se incluye en
+    la provincia de Tarapacá en los censos de 1885, 1895, 1907 y 1920. Los totales coinciden con
+    los cuadros 5 y 9 de este volumen.
+  - >
+    Según la nota de los cuadros 6 y 7, los datos se sacaron de las publicaciones de cada censo y
+    se reagruparon en decenios; pendiente validarlos contra ellas. Solo 1952 trae edad ignorada.
+
+notas_celdas:
+  - territorio: REPUBLICA
+    grupo: Todos los grupos
+    columna: "1885"
+    estado_valor: inconsistente
+    nota: >
+      Impreso 2 497 797 (igual que en los cuadros 5 y 9), pero los grupos de edad suman
+      2 497 796. El grupo 10-19 se lee 540 016 a 600 dpi (la última cifra está pegada a la línea
+      de la columna).
+
+controles:
+  - tipo: suma_dimension
+    dimension: [edad_min, edad_estado]
+    total: ["", ""]
+    partes: [[0, ""], [10, ""], [20, ""], [30, ""], [40, ""], [50, ""], [60, ""], [70, ""], [80, ""], [90, ""],
+             [100, ""], ["", ignorada]]

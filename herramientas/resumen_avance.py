@@ -47,32 +47,40 @@ ESTADO = {
            "Dos páginas impresas por página del PDF."),
     1843: ("Sin publicación", "Buscar un ejemplar digitalizado.", "No hay publicación digitalizada disponible."),
     1854: ("Sin publicación", "Buscar un ejemplar digitalizado.", "No hay publicación digitalizada disponible."),
-    1865: ("Serie desde otros censos", "Sexo × edad: clasificación de los habitantes por provincias (pág. 360, PDF 393) "
-                                       "y por departamentos (pág. 352, PDF 385); contrastar con 1952 comparativo 6.",
-           "Provincia × área desde 1952 C9; departamento (total) desde 1920 C1. Errata en Atacama (1920 C1) "
-           "y en Santiago rural (1952 C9)."),
-    1875: ("Serie desde otros censos", "Sexo × edad: clasificación por departamentos y provincias (pág. 601, PDF ~617); "
-                                       "contrastar con 1952 comparativo 6.",
-           "Provincia × área desde 1952 C9; departamento (total) desde 1920 C1."),
-    1885: ("Serie desde otros censos", "Sexo × edad: clasificación por departamentos y provincias (pág. 839, PDF ~873).",
-           "El PDF trae solo el tomo I de 2. Provincia × área desde 1952 C9; departamento desde 1920 C1."),
-    1895: ("Serie desde otros censos", "Sexo × edad: clasificación por departamentos y provincias, tomo IV "
-                                       "(pág. 467, PDF ~2457).",
-           "Departamento × área desde 1920 C3 (con departamentos agrupados); provincia × área desde 1930 C10 y 1952 C9."),
-    1907: ("Parcial", "Sexo por provincia: 1952 comparativo 5. Sexo × edad: resúmenes por provincia del volumen "
-                      "de 1907 (bloques).",
-           "Departamento × área desde 1920 C1 y C3; área × sexo solo para el país (1930 C9)."),
+    1865: ("Serie desde otros censos", "Validar 1952 C5 y C6 contra la clasificación por provincias según sexo y edad "
+                                       "(pág. 360, PDF 393); por departamentos en pág. 352 (PDF 385). Área × sexo: revisar "
+                                       "si la publicación lo trae.",
+           "Provincia × área (1952 C9) y provincia × sexo × edad en 6 tramos (1952 C5 y C6); departamento (total) "
+           "desde 1920 C1. Errata en Atacama (1920 C1) y en Santiago rural (1952 C9)."),
+    1875: ("Serie desde otros censos", "Validar 1952 C5 y C6 contra la clasificación urbana y rural por departamentos y "
+                                       "provincias según sexo y edad (pág. 601, PDF ~617), que además cruza área × sexo.",
+           "Provincia × área (1952 C9) y provincia × sexo × edad en 6 tramos (1952 C5 y C6); departamento (total) "
+           "desde 1920 C1."),
+    1885: ("Serie desde otros censos", "Sexo × edad por provincia: clasificación por departamentos y provincias "
+                                       "(pág. 839, PDF ~873); validar con ella 1952 C5 y C7.",
+           "El PDF trae solo el tomo I de 2. Provincia × área (1952 C9) y × sexo (1952 C5); edad del país en decenios "
+           "(1952 C7); departamento desde 1920 C1. Malleco: 3 000 personas sin sexo (1952 C5)."),
+    1895: ("Serie desde otros censos", "Sexo × edad por provincia: clasificación por departamentos y provincias, tomo IV "
+                                       "(pág. 467, PDF ~2457); validar con ella 1952 C5 y C7.",
+           "Departamento × área desde 1920 C3 (con departamentos agrupados); provincia × área (1930 C10, 1952 C9) y "
+           "× sexo (1952 C5); edad del país en decenios (1952 C7)."),
+    1907: ("Parcial", "Área × sexo y sexo × edad por provincia y departamento: resúmenes por provincia del volumen de "
+                      "1907 (bloques).",
+           "Departamento × área desde 1920 C1 y C3; provincia × sexo (1952 C5); área × sexo (1930 C9) y edad en "
+           "decenios (1952 C7) solo para el país."),
     1920: ("Falta edad", "Edad: estado civil por edad y sexo (págs. 235–275, PDF ~250); revisar su nivel territorial.",
-           "Departamento × área × sexo (Cuadro 4). El Cuadro 3 tiene seis cifras de 1920 que no cuadran: usar el Cuadro 4."),
+           "Departamento × área × sexo (Cuadro 4); edad del país en decenios (1952 C7). El Cuadro 3 tiene seis "
+           "cifras de 1920 que no cuadran: usar el Cuadro 4."),
     1930: ("Falta edad", "Edad: el volumen disponible no trae cuadros por edad; buscar otra publicación de 1930.",
-           "Comuna × área × sexo (Cuadro 9). Errata en el total de Atacama."),
+           "Comuna × área × sexo (Cuadro 9); edad del país en decenios (1952 C7). Errata en el total de Atacama."),
     1940: ("Falta edad", "Edad: población por edades individuales, sexo y provincias (pág. 8, PDF ~14) o por grupos "
                          "de edades (pág. 332, PDF ~338).",
-           "Comuna × área × sexo, con viviendas. Cifras ajustadas (~2,8 %); las revisadas están en 1952 C9 y 1960 C1.1.1."),
-    1952: ("Parcial", "Sexo por provincia: comparativo 5. Comuna: Tomo I (Cuadro 4) y Tomo II (Cuadro 1). Sexo × edad × "
-                      "área: el nacional 1 falta en el escaneo; el Cuadro 1 del Tomo II la trae por comuna para el "
-                      "Núcleo Central; comparativo 7 para el país.",
-           "Provincia × área (1952 C9, 1960 C1.1.1). Faltan en el escaneo las págs. 85–116 (cuadros nacionales 1 y 2)."),
+           "Comuna × área × sexo, con viviendas; edad del país en decenios (1952 C7). Cifras ajustadas (~2,8 %); las "
+           "revisadas están en 1952 C5, C9 y 1960 C1.1.1."),
+    1952: ("Parcial", "Comuna: Tomo I (Cuadro 4) y Tomo II (Cuadro 1). Sexo × edad × área: el nacional 1 falta en el "
+                      "escaneo; el Cuadro 1 del Tomo II la trae por comuna para el Núcleo Central.",
+           "Provincia × área (C9, 1960 C1.1.1) y × sexo (C5); edad del país en decenios con edad ignorada (C7). "
+           "Faltan en el escaneo las págs. 85–116 (cuadros nacionales 1 y 2)."),
     1960: ("Falta edad", "Edad: 1.2.1 grupos de edades por provincias (PDF ~144); 1.3 área × sexo × años de edad "
                          "del país (PDF ~156).",
            "Provincia × área × sexo (Cuadro 1.2)."),
