@@ -1,4 +1,22 @@
 fuente_id,cuadro,control,censo,territorio,area,sexo,total,suma_partes,diferencia,explicada
+pub_1813,censo_provincia_distritos,jerarquia,1813,Copiapó,_T,hombre,3793,3787,-6,True
+pub_1813,censo_provincia_distritos,jerarquia,1813,La Serena,_T,mujer,14610,14620,10,True
+pub_1813,censo_provincia_distritos,jerarquia,1813,Aconcagua,_T,hombre,8253,8243,-10,True
+pub_1813,censo_provincia_distritos,jerarquia,1813,Melipilla,_T,hombre,7508,7488,-20,True
+pub_1813,censo_provincia,suma_dimension,1813,Copiapó,_T,hombre,3793,3832,39,True
+pub_1813,censo_provincia,suma_dimension,1813,Copiapó,_T,mujer,4912,4916,4,True
+pub_1813,censo_provincia,suma_dimension,1813,Huasco,_T,hombre,2982,2992,10,True
+pub_1813,censo_provincia,suma_dimension,1813,Huasco,_T,mujer,2542,2642,100,True
+pub_1813,censo_provincia,suma_dimension,1813,La Serena,_T,hombre,14500,14510,10,True
+pub_1813,censo_provincia,suma_dimension,1813,Aconcagua,_T,hombre,8253,8295,42,True
+pub_1813,censo_provincia,suma_dimension,1813,Aconcagua,_T,mujer,9654,9631,-23,True
+pub_1813,censo_provincia,suma_dimension,1813,Valparaíso,_T,hombre,2246,2253,7,True
+pub_1813,censo_provincia,suma_dimension,1813,Valparaíso,_T,mujer,3071,3064,-7,True
+pub_1813,censo_provincia,suma_dimension,1813,Melipilla,_T,hombre,7508,7520,12,True
+pub_1813,censo_provincia,suma_dimension,1813,Melipilla,_T,mujer,8068,8071,3,True
+pub_1813,censo_provincia,suma_dimension,1813,Rancagua,_T,hombre,17421,17424,3,True
+pub_1813,censo_provincia,suma_dimension,1813,Rancagua,_T,mujer,18868,18885,17,True
+pub_1813,censo_provincia,suma_dimension,1813,Curicó,_T,hombre,14082,14126,44,True
 pub_1865,p352,suma_dimension,1865,Caupolican,_T,hombre,35762,36762,1000,True
 pub_1865,p352,suma_territorio,1865,(partes),_T,hombre,177278,178278,1000,True
 pub_1875,p645,suma_territorio,1865,(partes),_T,_T,1819223,1728664,-90559,True

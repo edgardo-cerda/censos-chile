@@ -1,0 +1,102 @@
+# Transcripción de los «Censo de provincia» de 1813 (edición del Archivo Nacional, 1953): la hoja de
+# totales de cada partido, de Copiapó a Talca. Una fila por partido; la columna pagina_pdf indica la
+# hoja. Se transcriben el estado civil por sexo, las edades del total por sexo y los totales; se
+# omiten origen y castas, profesiones y casas de objetos públicos. No hay datos de Santiago y el
+# censo no cubre Concepción (solo matrículas de 1812) ni el sur.
+
+fuente_id: pub_1813
+cuadro: "censo_provincia"
+titulo: Censo de provincia (total de su población), por partido
+paginas:
+  - {pdf: 62, desde: Copiapó}
+  - {pdf: 64, desde: Huasco}
+  - {pdf: 89, desde: La Serena}
+  - {pdf: 99, desde: Petorca}
+  - {pdf: 110, desde: La Ligua}
+  - {pdf: 133, desde: Aconcagua}
+  - {pdf: 144, desde: Los Andes}
+  - {pdf: 161, desde: Quillota}
+  - {pdf: 168, desde: Valparaíso}
+  - {pdf: 184, desde: Melipilla}
+  - {pdf: 217, desde: Colchagua}
+  - {pdf: 231, desde: Rancagua}
+  - {pdf: 249, desde: Curicó}
+  - {pdf: 259, desde: Talca}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion:
+  fecha: 2026-10-19
+  por: Claude (asistido)
+  recortes_dpi: 160-300
+  nota: >
+    Escaneo nítido (edición tipográfica de 1953). Las cifras que no cuadran se releyeron a 300 dpi
+    y están impresas así.
+
+indicador: poblacion
+unidad: personas
+fijas: {censo: 1813, area: _T}
+
+territorio:
+  columna: territorio
+  nivel: {_otro: partido}
+  # Partidos de 1813, con los nombres de las hojas (Provincia del partido de Copiapó, de la villa
+  # de Huasco, de la ciudad de La Serena, etc.).
+  dpa_version: partidos_1813
+
+columnas:
+  hasta7_h: {sexo: hombre, edad_min: 0, edad_max: 7}
+  hasta7_m: {sexo: mujer, edad_min: 0, edad_max: 7}
+  7a15_h: {sexo: hombre, edad_min: 8, edad_max: 15}
+  7a15_m: {sexo: mujer, edad_min: 8, edad_max: 15}
+  15a30_h: {sexo: hombre, edad_min: 16, edad_max: 30}
+  15a30_m: {sexo: mujer, edad_min: 16, edad_max: 30}
+  30a50_h: {sexo: hombre, edad_min: 31, edad_max: 50}
+  30a50_m: {sexo: mujer, edad_min: 31, edad_max: 50}
+  50a100_h: {sexo: hombre, edad_min: 51, edad_max: 100}
+  50a100_m: {sexo: mujer, edad_min: 51, edad_max: 100}
+  casados: {sexo: hombre, estado_civil: casado}
+  solteros: {sexo: hombre, estado_civil: soltero}
+  viudos: {sexo: hombre, estado_civil: viudo}
+  casadas: {sexo: mujer, estado_civil: casado}
+  solteras: {sexo: mujer, estado_civil: soltero}
+  viudas: {sexo: mujer, estado_civil: viudo}
+  total_h: {sexo: hombre}
+  total_m: {sexo: mujer}
+  total_general: {sexo: _T}
+
+notas_cuadro:
+  - >
+    Tramos impresos "de un día a siete años", "de siete a quince", "de quince a treinta", "de treinta
+    a cincuenta" y "de cincuenta a ciento"; se registran como 0-7, 8-15, 16-30, 31-50 y 51-100, la
+    misma lectura que en 1865.
+  - >
+    Validación: en los 14 partidos casados + solteros + viudos = total de hombres, y casadas +
+    solteras + viudas = total de mujeres; hombres + mujeres = total general. Los tramos de edad, en
+    cambio, no suman el total en 8 partidos (diferencias de 3 a 100, ver excepciones del control):
+    están así impresos; la cifra culpable no se puede identificar.
+  - >
+    La edición de 1953 pone la hoja de Colchagua (PDF 217) tras los distritos de Rancagua y la de
+    Rancagua (PDF 231) tras los de Colchagua; cada hoja corresponde a los distritos que lista. La hoja
+    de Rancagua trae además "Total de almas 36.298" frente al total de 36.289.
+
+controles:
+  - {tipo: suma_dimension, dimension: sexo, total: _T, partes: [hombre, mujer]}
+  - tipo: suma_dimension
+    dimension: edad_min
+    total: ""
+    partes: [0, 8, 16, 31, 51]
+    excepciones:
+      - {territorio: Copiapó, sexo: hombre, diferencia: 39}
+      - {territorio: Copiapó, sexo: mujer, diferencia: 4}
+      - {territorio: Huasco, sexo: hombre, diferencia: 10}
+      - {territorio: Huasco, sexo: mujer, diferencia: 100}
+      - {territorio: La Serena, sexo: hombre, diferencia: 10}
+      - {territorio: Aconcagua, sexo: hombre, diferencia: 42}
+      - {territorio: Aconcagua, sexo: mujer, diferencia: -23}
+      - {territorio: Valparaíso, sexo: hombre, diferencia: 7}
+      - {territorio: Valparaíso, sexo: mujer, diferencia: -7}
+      - {territorio: Melipilla, sexo: hombre, diferencia: 12}
+      - {territorio: Melipilla, sexo: mujer, diferencia: 3}
+      - {territorio: Rancagua, sexo: hombre, diferencia: 3}
+      - {territorio: Rancagua, sexo: mujer, diferencia: 17}
+      - {territorio: Curicó, sexo: hombre, diferencia: 44}

@@ -102,6 +102,10 @@ por sexo, edades y clases). No hay datos de Santiago. Concepción figura con las
 1812 por curatos (PDF 261–263). Los totales de Rancagua y Colchagua están cruzados: tras los
 distritos de Rancagua viene un total rotulado Colchagua (PDF 217) y el de Rancagua aparece
 después de los distritos de Colchagua (PDF 231).
+Transcritas las 14 hojas de totales (`pub_1813_provincias`: edad × sexo, estado civil, totales) y
+sus distritos × sexo (`pub_1813_distritos`). Los totales cuadran con el estado civil; las edades
+no suman el total en 8 partidos y los distritos tampoco en 4 (impreso así, releído a 300 dpi): se
+registran como `excepciones` del control en el YAML, porque no hay una cifra culpable identificable.
 
 **1835** ("Repertorio Chileno"). Dos páginas impresas por página del PDF. Índice en PDF 114–116.
 Habitantes en el art. 3 (pág. 3) y en el capítulo IX, por provincia y departamento (págs. 171–222).

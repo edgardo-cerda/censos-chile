@@ -39,9 +39,9 @@ CENSOS = [1813, 1835, 1843, 1854, 1865, 1875, 1885, 1895, 1907, 1920, 1930, 1940
 # Estado, pendiente y observaciones de cada censo (escritos a mano). El núcleo es la población
 # por territorio × área × sexo × edad: la estructura demográfica básica.
 ESTADO = {
-    1813: ("Catalogado", "Transcribir los «Censo de provincia»: total y edades por sexo de cada provincia.",
-           "Sin índice. No hay datos de Santiago; Concepción figura con las matrículas de 1812. "
-           "Totales de Rancagua y Colchagua cruzados en la edición."),
+    1813: ("Parcial",
+           "Opcional: edades por distrito desde los «Censo de territorio» (bloques). Santiago no está en la edición; Concepción solo con matrículas de 1812.",
+           "Partido × sexo × edad (5 tramos) y × estado civil, y distrito × sexo, de los 14 partidos de Copiapó a Talca (cobertura parcial del país). Totales validados con el estado civil; en 8 partidos las edades no suman el total y en 4 los distritos tampoco (impreso así)."),
     1835: ("Serie desde otros censos",
            "Parroquia × sexo: habitantes por provincia y parroquia (arts. 34–42, págs. 171–222).",
            "Departamento (total) desde los sinópticos de 1865 y 1875, que coinciden entre sí. Dos páginas impresas por página del PDF."),

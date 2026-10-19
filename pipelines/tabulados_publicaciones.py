@@ -206,7 +206,12 @@ def controlar(meta: dict, filas: list[dict]) -> list[dict]:
                     "censo": t["censo"], "territorio": t["territorio_nombre_orig"] if c["tipo"] != "suma_territorio" else "(partes)",
                     "area": t["area"], "sexo": t["sexo"],
                     "total": t["valor"], "suma_partes": g["partes"], "diferencia": g["partes"] - t["valor"],
-                    "explicada": any(x["estado_valor"] == "inconsistente" for x in celdas),
+                    # Explicada: alguna celda anotada como inconsistente, o el control declara la
+                    # diferencia como excepción (inconsistencia del original sin celda culpable conocida).
+                    "explicada": any(x["estado_valor"] == "inconsistente" for x in celdas) or any(
+                        e["territorio"] == t["territorio_nombre_orig"] and e.get("sexo", t["sexo"]) == t["sexo"]
+                        and e.get("diferencia", g["partes"] - t["valor"]) == g["partes"] - t["valor"]
+                        for e in c.get("excepciones", [])),
                 })
     return fallas
 

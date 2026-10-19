@@ -1,0 +1,53 @@
+# Población por distritos de cada partido en 1813 («Población por distritos de la provincia», en la
+# hoja de totales de cada partido). Cada partido va seguido de sus distritos; la fila del partido
+# repite el total de hombres y mujeres de su hoja (pub_1813_provincias). Huasco no trae distritos.
+
+fuente_id: pub_1813
+cuadro: "censo_provincia_distritos"
+titulo: Censo de provincia, población por distritos de la provincia
+paginas:
+  - {pdf: 62, desde: Copiapó}
+  - {pdf: 64, desde: Huasco}
+  - {pdf: 89, desde: La Serena}
+  - {pdf: 99, desde: Petorca}
+  - {pdf: 110, desde: La Ligua}
+  - {pdf: 133, desde: Aconcagua}
+  - {pdf: 144, desde: Los Andes}
+  - {pdf: 161, desde: Quillota}
+  - {pdf: 168, desde: Valparaíso}
+  - {pdf: 184, desde: Melipilla}
+  - {pdf: 217, desde: Colchagua}
+  - {pdf: 231, desde: Rancagua}
+  - {pdf: 249, desde: Curicó}
+  - {pdf: 259, desde: Talca}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion: {fecha: 2026-10-19, por: Claude (asistido), recortes_dpi: 160-300}
+
+indicador: poblacion
+unidad: personas
+fijas: {censo: 1813, area: _T}
+
+territorio:
+  columna: territorio
+  columna_nivel: nivel
+  niveles: [partido, distrito]
+  dpa_version: partidos_1813
+
+columnas:
+  hombres: {sexo: hombre}
+  mujeres: {sexo: mujer}
+
+notas_cuadro:
+  - >
+    Los distritos suman el total del partido salvo en Copiapó (hombres, 6 menos), La Serena (mujeres,
+    10 más), Aconcagua (hombres, 10 menos) y Melipilla (hombres, 20 menos); releídos a 300 dpi, están
+    así impresos. En Colchagua, Talca y parte de Rancagua y Curicó los "distritos" son curatos.
+
+controles:
+  - tipo: jerarquia
+    excepciones:
+      - {territorio: Copiapó, sexo: hombre, diferencia: -6}
+      - {territorio: La Serena, sexo: mujer, diferencia: 10}
+      - {territorio: Aconcagua, sexo: hombre, diferencia: -10}
+      - {territorio: Melipilla, sexo: hombre, diferencia: -20}
