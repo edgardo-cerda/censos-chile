@@ -1,0 +1,135 @@
+# Transcripción de las columnas TOTAL (hombres, mujeres, total) del cuadro 7 «Grado de instrucción
+# con distinción de la edad i del sexo» de cada departamento (y del territorio de Magallanes) en el
+# volumen del censo de 1907. Se omiten las columnas «saben leer» y «no saben leer» (módulo temático).
+# 79 unidades con 18 grupos de edad: menos de 1 año, 1-5, 6-9, 10-11, 12-14, 15-16, 17-18, 19-20,
+# 21-24, 25-29, decenales de 30 a 99 y 100 o más. El impreso usa «...» para la celda sin casos; se
+# transcribe como «-».
+
+fuente_id: pub_1907
+cuadro: "7"
+titulo: Grado de instrucción con distinción de la edad i del sexo (por departamento)
+paginas:
+  - {pdf: 78, impresa: "13", desde: Tacna}
+  - {pdf: 87, impresa: "22", desde: Arica}
+  - {pdf: 108, impresa: "43", desde: Tarapacá}
+  - {pdf: 118, impresa: "56", desde: Pisagua}
+  - {pdf: 140, impresa: "78", desde: Antofagasta}
+  - {pdf: 149, impresa: "89", desde: Tocopilla}
+  - {pdf: 159, impresa: "99", desde: Taltal}
+  - {pdf: 185, impresa: "125", desde: Copiapó}
+  - {pdf: 195, impresa: "139", desde: Chañaral}
+  - {pdf: 206, impresa: "150", desde: Freirina}
+  - {pdf: 217, impresa: "162", desde: Vallenar}
+  - {pdf: 240, impresa: "185", desde: La Serena}
+  - {pdf: 250, impresa: "197", desde: Elqui}
+  - {pdf: 259, impresa: "206", desde: Coquimbo}
+  - {pdf: 275, impresa: "223", desde: Ovalle}
+  - {pdf: 285, impresa: "233", desde: Combarbalá}
+  - {pdf: 296, impresa: "246", desde: Illapel}
+  - {pdf: 320, impresa: "273", desde: San Felipe}
+  - {pdf: 335, impresa: "288", desde: Petorca}
+  - {pdf: 344, impresa: "298", desde: La Ligua}
+  - {pdf: 355, impresa: "309", desde: Putaendo}
+  - {pdf: 367, impresa: "321", desde: Los Andes}
+  - {pdf: 394, impresa: "350", desde: Valparaíso}
+  - {pdf: 410, impresa: "366", desde: Quillota}
+  - {pdf: 420, impresa: "376", desde: Limache}
+  - {pdf: 431, impresa: "387", desde: Casablanca}
+  - {pdf: 470, impresa: "430", desde: Santiago}
+  - {pdf: 485, impresa: "445", desde: La Victoria}
+  - {pdf: 502, impresa: "462", desde: Melipilla}
+  - {pdf: 524, impresa: "487", desde: Rancagua}
+  - {pdf: 535, impresa: "498", desde: Maipo}
+  - {pdf: 544, impresa: "510", desde: Cachapoal}
+  - {pdf: 571, impresa: "541", desde: San Fernando}
+  - {pdf: 585, impresa: "555", desde: Caupolicán}
+  - {pdf: 609, impresa: "581", desde: Curicó}
+  - {pdf: 620, impresa: "595", desde: Santa Cruz}
+  - {pdf: 630, impresa: "605", desde: Vichuquén}
+  - {pdf: 654, impresa: "629", desde: Talca}
+  - {pdf: 664, impresa: "639", desde: Lontué}
+  - {pdf: 674, impresa: "654", desde: Curepto}
+  - {pdf: 698, impresa: "682", desde: Linares}
+  - {pdf: 707, impresa: "691", desde: Loncomilla}
+  - {pdf: 717, impresa: "701", desde: Parral}
+  - {pdf: 739, impresa: "723", desde: Cauquenes}
+  - {pdf: 750, impresa: "740", desde: Constitución}
+  - {pdf: 759, impresa: "749", desde: Chanco}
+  - {pdf: 771, impresa: "763", desde: Itata}
+  - {pdf: 795, impresa: "791", desde: Chillán}
+  - {pdf: 807, impresa: "803", desde: San Carlos}
+  - {pdf: 816, impresa: "812", desde: Bulnes}
+  - {pdf: 827, impresa: "825", desde: Yungay}
+  - {pdf: 849, impresa: "851", desde: Concepción}
+  - {pdf: 858, impresa: "860", desde: Talcahuano}
+  - {pdf: 869, impresa: "872", desde: Coelemu}
+  - {pdf: 879, impresa: "882", desde: Puchacay}
+  - {pdf: 889, impresa: "892", desde: Rere}
+  - {pdf: 898, impresa: "901", desde: Lautaro}
+  - {pdf: 919, impresa: "922", desde: Lebu}
+  - {pdf: 930, impresa: "938", desde: Arauco}
+  - {pdf: 940, impresa: "948", desde: Cañete}
+  - {pdf: 968, impresa: "976", desde: La Laja}
+  - {pdf: 978, impresa: "990", desde: Nacimiento}
+  - {pdf: 987, impresa: "999", desde: Mulchén}
+  - {pdf: 1008, impresa: "1022", desde: Angol}
+  - {pdf: 1018, impresa: "1032", desde: Collipulli}
+  - {pdf: 1027, impresa: "1045", desde: Traiguén}
+  - {pdf: 1036, impresa: "1054", desde: Mariluán}
+  - {pdf: 1056, impresa: "1074", desde: Temuco}
+  - {pdf: 1065, impresa: "1083", desde: Llaima}
+  - {pdf: 1073, impresa: "1091", desde: Imperial}
+  - {pdf: 1098, impresa: "1116", desde: Valdivia}
+  - {pdf: 1108, impresa: "1137", desde: La Unión}
+  - {pdf: 1128, impresa: "1158", desde: Llanquihue}
+  - {pdf: 1141, impresa: "1171", desde: Osorno}
+  - {pdf: 1152, impresa: "1184", desde: Carelmapu}
+  - {pdf: 1174, impresa: "1209", desde: Ancud}
+  - {pdf: 1186, impresa: "1221", desde: Castro}
+  - {pdf: 1194, impresa: "1229", desde: Quinchao}
+  - {pdf: 1214, impresa: "1249", desde: Magallanes}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion:
+  fecha: 2026-10-20
+  por: Claude (asistido)
+  recortes_dpi: 200-300
+  nota: >
+    Lectura visual de las columnas de total; cada departamento se validó con hombres + mujeres =
+    total en cada fila y con la suma de las edades. Las páginas indicadas son las del inicio del
+    cuadro de cada departamento (a veces sigue en la página siguiente).
+
+indicador: poblacion
+unidad: personas
+fijas: {censo: 1907, area: _T}
+
+territorio:
+  columna: territorio
+  nivel: {Magallanes: provincia, _otro: departamento}
+  dpa_version: provincias_1907
+
+filas:
+  edad_min: {columna: edad_min}
+  edad_max: {columna: edad_max}
+
+columnas:
+  hombres: {sexo: hombre}
+  mujeres: {sexo: mujer}
+  total: {sexo: _T}
+
+notas_cuadro:
+  - >
+    Todas las filas y columnas cuadran. Las provincias (suma de sus departamentos) coinciden por sexo
+    con el comparativo 5 de 1952, y el país sin Tacna con sus totales y, por decenios de edad, con el
+    comparativo 7 de 1952.
+  - >
+    Los departamentos son los de 1907, no los del Cuadro 1 de 1920: Tacna incluye Tarata; Petorca y
+    La Ligua, Melipilla y Cachapoal (con San Antonio) y Valdivia y La Unión (con Villarrica) tienen
+    otros límites, aunque las sumas por grupo coinciden con 1920 C1.
+
+controles:
+  - {tipo: suma_dimension, dimension: sexo, total: _T, partes: [hombre, mujer]}
+  - tipo: suma_dimension
+    dimension: [edad_min, edad_max]
+    total: ["", ""]
+    partes: [[0, 0], [1, 5], [6, 9], [10, 11], [12, 14], [15, 16], [17, 18], [19, 20], [21, 24], [25, 29], [30, 39], [40, 49], [50, 59], [60, 69], [70, 79], [80, 89], [90, 99], [100, ""]]

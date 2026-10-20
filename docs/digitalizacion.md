@@ -142,6 +142,11 @@ nacionalidad, religión, instrucción, edades, profesiones, estado civil, propie
 físicos), y cada provincia un resumen. Resumen general de la República en págs. 1261–1308;
 indios araucanos en pág. 1309. Memoria, anexos y láminas en PDF 2–67. El desfase va de +65 a −41
 (faltan páginas en el escaneo).
+- Cuadro 7 de cada departamento (grado de instrucción por edad y sexo; PDF 78–1215): transcritas las
+  columnas de total (`pub_1907_c7`, 18 grupos de edad, 79 unidades). Todo cuadra; las provincias
+  coinciden por sexo con 1952 C5 y el país sin Tacna, por decenios, con 1952 C7. Los departamentos son
+  los de 1907: Tacna incluye Tarata, y Petorca/La Ligua, Melipilla/Cachapoal y Valdivia/La Unión tienen
+  otros límites que en el Cuadro 1 de 1920. El impreso usa «...» para celda sin casos (se transcribe «-»).
 
 **1920.** Sin índice en el PDF: los capítulos I a IX se ubicaron por sus portadas. Desfase +15
 constante. El capítulo I trae los cuadros más útiles para la serie: Cuadro 1 (pág. 1),
