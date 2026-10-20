@@ -1,0 +1,203 @@
+# Transcripción del cuadro general «Clasificación de los habitantes por Departamentos i Provincias,
+# según el sexo i edad, desde un mes hasta cien años adelante» del censo de 1895 (tomo IV, págs.
+# 467-486): sexo × 26 grupos de edad por departamento, provincia y país. Las columnas de total
+# general y población urbana y rural del mismo cuadro están en pub_1895_cg_area.
+# El cuadro va en cuatro bloques de provincias de cinco páginas cada uno (menores de 2 años; 2 a 35 o
+# 2 a 25; ... ; 95 y más con totales). Los menores de un año vienen en meses (hasta 1 mes, 1 a 3,
+# 3 a 6 y 6 meses a 1 año): se registran con edad 0 y la dimensión adicional "meses". «De 2 a 5»
+# se registra como 2-4 años (el tramo siguiente empieza en 5). El impreso usa «....» para la celda
+# sin casos; se transcribe como «-». Nombres de departamento como en el Cuadro 1 de 1920 (Serena,
+# Andes, Ligua, Victoria y Union del impreso: La Serena, Los Andes, La Ligua, La Victoria, La Unión).
+
+fuente_id: pub_1895
+cuadro: "IV.467"
+titulo: Clasificación de los habitantes por departamentos i provincias, según el sexo i edad, desde un mes hasta cien años adelante
+paginas:
+  - {pdf: 2455, impresa: "467", desde: Tarapacá}
+  - {pdf: 2460, impresa: "472", desde: Valparaíso}
+  - {pdf: 2465, impresa: "477", desde: Linares}
+  - {pdf: 2470, impresa: "482", desde: Angol}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion:
+  fecha: 2026-10-20
+  por: Claude (asistido)
+  recortes_dpi: 200-300
+  nota: >
+    En el PDF del INE estas páginas (2455-2474) son un escaneo bitonal de ~72 dpi que no se lee con
+    seguridad; la lectura se hizo sobre la copia del tomo IV de Memoria Chilena (MC0055464, PDF
+    463-482; ver metadatos/fuentes.yaml), y las páginas indicadas son las del PDF del INE. Cada
+    celda se validó con la suma de las edades (fila) y la de los departamentos (columna): toda
+    diferencia que no se compensa en ambas se releyó ampliada. Tarapacá y Antofagasta se cotejaron
+    además con el resumen por departamentos de sus tomos provinciales (mismas cifras impresas).
+
+indicador: poblacion
+unidad: personas
+fijas: {censo: 1895, area: _T}
+
+territorio:
+  columna: territorio
+  columna_nivel: nivel
+  niveles: [provincia, departamento]
+  totales_al_final: true
+  dpa_version: provincias_1895
+
+filas:
+  edad_min: {columna: edad_min}
+  edad_max: {columna: edad_max}
+  meses: {columna: meses}
+
+columnas:
+  hombres: {sexo: hombre}
+  mujeres: {sexo: mujer}
+
+notas_cuadro:
+  - >
+    El original trae muchas erratas aritméticas. Donde la fila y la columna fallan por la misma
+    cantidad, la celda culpable se anota como inconsistente con el valor implicado. Las demás
+    diferencias no tienen celda identificable y quedan como excepciones de los controles: filas cuyas
+    edades no suman el total (Antofagasta, Tocopilla, Copiapó, Freirina, Vallenar, Chañaral, Atacama,
+    Cachapoal, O'Higgins, Curicó, Curepto, Talca, Cauquenes, Itata, Maule, los cuatro departamentos de
+    Ñuble, Nacimiento, Mulchén, Bío-Bío, La Unión, Valdivia, Llanquihue y el país) y columnas de
+    Antofagasta, Maule y Ñuble que no suman el total provincial.
+  - >
+    En Colchagua las cifras de menores de 2 años (págs. 472, filas de San Fernando, Caupolicán y
+    total) repiten por error las de 2 a 25 años de la página siguiente. Se transcriben como están y se
+    anotan como inconsistentes; las cifras correctas están en el resumen del tomo provincial,
+    transcrito aparte (pub_1895_colchagua_menores2).
+  - >
+    Totales por sexo de las provincias: coinciden con el comparativo 5 de 1952 salvo Valparaíso
+    (hombres 109 972; 1952 C5: 109 971, aunque los departamentos suman 109 972) y Bío-Bío (mujeres
+    44 085, anotada; 1952 C5: 44 086). El país, 1 332 769 hombres y 1 355 216 mujeres (1952 C5:
+    1 355 215), sin Tacna. Por decenios de edad la fila del país coincide con el comparativo 7 de 1952
+    (diferencias de 1 en los decenios de 10 a 99, por el ajuste de ese cuadro al total 2 687 984).
+
+notas_celdas:
+  - {territorio: Combarbalá, nivel: departamento, edad: Total, columna: mujeres, estado_valor: inconsistente, nota: "Impreso 7 340; la suma de las edades y el total de la provincia implican 7 430."}
+  - {territorio: Coquimbo, nivel: provincia, edad: De 85 a 90, columna: hombres, estado_valor: inconsistente, nota: "Impreso 80; la suma de los departamentos y la de las edades implican 90."}
+  - {territorio: San Fernando, nivel: departamento, edad: Hasta 1 mes, columna: hombres, estado_valor: inconsistente, nota: "Impreso 4 005: repite la cifra de de 2 a 5 años. El resumen del tomo provincial (tomo II, pág. 511) trae 207; ver pub_1895_colchagua_menores2."}
+  - {territorio: San Fernando, nivel: departamento, edad: Hasta 1 mes, columna: mujeres, estado_valor: inconsistente, nota: "Impreso 3 739: repite la cifra de de 2 a 5 años. El resumen del tomo provincial (tomo II, pág. 511) trae 206; ver pub_1895_colchagua_menores2."}
+  - {territorio: San Fernando, nivel: departamento, edad: De 1 a 3 meses, columna: hombres, estado_valor: inconsistente, nota: "Impreso 6 105: repite la cifra de de 5 a 10 años. El resumen del tomo provincial (tomo II, pág. 511) trae 298; ver pub_1895_colchagua_menores2."}
+  - {territorio: San Fernando, nivel: departamento, edad: De 1 a 3 meses, columna: mujeres, estado_valor: inconsistente, nota: "Impreso 5 659: repite la cifra de de 5 a 10 años. El resumen del tomo provincial (tomo II, pág. 511) trae 315; ver pub_1895_colchagua_menores2."}
+  - {territorio: San Fernando, nivel: departamento, edad: De 3 a 6 meses, columna: hombres, estado_valor: inconsistente, nota: "Impreso 5 009: repite la cifra de de 10 a 15 años. El resumen del tomo provincial (tomo II, pág. 511) trae 334; ver pub_1895_colchagua_menores2."}
+  - {territorio: San Fernando, nivel: departamento, edad: De 3 a 6 meses, columna: mujeres, estado_valor: inconsistente, nota: "Impreso 4 568: repite la cifra de de 10 a 15 años. El resumen del tomo provincial (tomo II, pág. 511) trae 316; ver pub_1895_colchagua_menores2."}
+  - {territorio: San Fernando, nivel: departamento, edad: De 6 meses a 1 año, columna: hombres, estado_valor: inconsistente, nota: "Impreso 3 776: repite la cifra de de 15 a 20 años. El resumen del tomo provincial (tomo II, pág. 511) trae 1 146; ver pub_1895_colchagua_menores2."}
+  - {territorio: San Fernando, nivel: departamento, edad: De 6 meses a 1 año, columna: mujeres, estado_valor: inconsistente, nota: "Impreso 4 365: repite la cifra de de 15 a 20 años. El resumen del tomo provincial (tomo II, pág. 511) trae 1 180; ver pub_1895_colchagua_menores2."}
+  - {territorio: San Fernando, nivel: departamento, edad: De 1 a 2 años, columna: hombres, estado_valor: inconsistente, nota: "Impreso 3 101: repite la cifra de de 20 a 25 años. El resumen del tomo provincial (tomo II, pág. 511) trae 1 249; ver pub_1895_colchagua_menores2."}
+  - {territorio: San Fernando, nivel: departamento, edad: De 1 a 2 años, columna: mujeres, estado_valor: inconsistente, nota: "Impreso 3 604: repite la cifra de de 20 a 25 años. El resumen del tomo provincial (tomo II, pág. 511) trae 1 219; ver pub_1895_colchagua_menores2."}
+  - {territorio: San Fernando, nivel: departamento, edad: De 70 a 75, columna: hombres, estado_valor: inconsistente, nota: "Impreso 199; la suma de las edades y el total de la provincia implican 189."}
+  - {territorio: Caupolicán, nivel: departamento, edad: Hasta 1 mes, columna: hombres, estado_valor: inconsistente, nota: "Impreso 3 600: repite la cifra de de 2 a 5 años. El resumen del tomo provincial (tomo II, pág. 511) trae 165; ver pub_1895_colchagua_menores2."}
+  - {territorio: Caupolicán, nivel: departamento, edad: Hasta 1 mes, columna: mujeres, estado_valor: inconsistente, nota: "Impreso 3 504: repite la cifra de de 2 a 5 años. El resumen del tomo provincial (tomo II, pág. 511) trae 206; ver pub_1895_colchagua_menores2."}
+  - {territorio: Caupolicán, nivel: departamento, edad: De 1 a 3 meses, columna: hombres, estado_valor: inconsistente, nota: "Impreso 5 695: repite la cifra de de 5 a 10 años. El resumen del tomo provincial (tomo II, pág. 511) trae 267; ver pub_1895_colchagua_menores2."}
+  - {territorio: Caupolicán, nivel: departamento, edad: De 1 a 3 meses, columna: mujeres, estado_valor: inconsistente, nota: "Impreso 4 994: repite la cifra de de 5 a 10 años. El resumen del tomo provincial (tomo II, pág. 511) trae 251; ver pub_1895_colchagua_menores2."}
+  - {territorio: Caupolicán, nivel: departamento, edad: De 3 a 6 meses, columna: hombres, estado_valor: inconsistente, nota: "Impreso 4 726: repite la cifra de de 10 a 15 años. El resumen del tomo provincial (tomo II, pág. 511) trae 319; ver pub_1895_colchagua_menores2."}
+  - {territorio: Caupolicán, nivel: departamento, edad: De 3 a 6 meses, columna: mujeres, estado_valor: inconsistente, nota: "Impreso 4 343: repite la cifra de de 10 a 15 años. El resumen del tomo provincial (tomo II, pág. 511) trae 323; ver pub_1895_colchagua_menores2."}
+  - {territorio: Caupolicán, nivel: departamento, edad: De 6 meses a 1 año, columna: hombres, estado_valor: inconsistente, nota: "Impreso 3 651: repite la cifra de de 15 a 20 años. El resumen del tomo provincial (tomo II, pág. 511) trae 625; ver pub_1895_colchagua_menores2."}
+  - {territorio: Caupolicán, nivel: departamento, edad: De 6 meses a 1 año, columna: mujeres, estado_valor: inconsistente, nota: "Impreso 4 164: repite la cifra de de 15 a 20 años. El resumen del tomo provincial (tomo II, pág. 511) trae 575; ver pub_1895_colchagua_menores2."}
+  - {territorio: Caupolicán, nivel: departamento, edad: De 1 a 2 años, columna: hombres, estado_valor: inconsistente, nota: "Impreso 3 119: repite la cifra de de 20 a 25 años. El resumen del tomo provincial (tomo II, pág. 511) trae 1 742; ver pub_1895_colchagua_menores2."}
+  - {territorio: Caupolicán, nivel: departamento, edad: De 1 a 2 años, columna: mujeres, estado_valor: inconsistente, nota: "Impreso 3 415: repite la cifra de de 20 a 25 años. El resumen del tomo provincial (tomo II, pág. 511) trae 1 710; ver pub_1895_colchagua_menores2."}
+  - {territorio: Colchagua, nivel: provincia, edad: Hasta 1 mes, columna: hombres, estado_valor: inconsistente, nota: "Impreso 7 605: repite la cifra de de 2 a 5 años. El resumen del tomo provincial (tomo II, pág. 511) trae 372; ver pub_1895_colchagua_menores2."}
+  - {territorio: Colchagua, nivel: provincia, edad: Hasta 1 mes, columna: mujeres, estado_valor: inconsistente, nota: "Impreso 7 243: repite la cifra de de 2 a 5 años. El resumen del tomo provincial (tomo II, pág. 511) trae 412; ver pub_1895_colchagua_menores2."}
+  - {territorio: Colchagua, nivel: provincia, edad: De 1 a 3 meses, columna: hombres, estado_valor: inconsistente, nota: "Impreso 11 800: repite la cifra de de 5 a 10 años. El resumen del tomo provincial (tomo II, pág. 511) trae 565; ver pub_1895_colchagua_menores2."}
+  - {territorio: Colchagua, nivel: provincia, edad: De 1 a 3 meses, columna: mujeres, estado_valor: inconsistente, nota: "Impreso 10 653: repite la cifra de de 5 a 10 años. El resumen del tomo provincial (tomo II, pág. 511) trae 566; ver pub_1895_colchagua_menores2."}
+  - {territorio: Colchagua, nivel: provincia, edad: De 3 a 6 meses, columna: hombres, estado_valor: inconsistente, nota: "Impreso 9 735: repite la cifra de de 10 a 15 años. El resumen del tomo provincial (tomo II, pág. 511) trae 653; ver pub_1895_colchagua_menores2."}
+  - {territorio: Colchagua, nivel: provincia, edad: De 3 a 6 meses, columna: mujeres, estado_valor: inconsistente, nota: "Impreso 8 911: repite la cifra de de 10 a 15 años. El resumen del tomo provincial (tomo II, pág. 511) trae 639; ver pub_1895_colchagua_menores2."}
+  - {territorio: Colchagua, nivel: provincia, edad: De 6 meses a 1 año, columna: hombres, estado_valor: inconsistente, nota: "Impreso 7 427: repite la cifra de de 15 a 20 años. El resumen del tomo provincial (tomo II, pág. 511) trae 1 771; ver pub_1895_colchagua_menores2."}
+  - {territorio: Colchagua, nivel: provincia, edad: De 6 meses a 1 año, columna: mujeres, estado_valor: inconsistente, nota: "Impreso 8 529: repite la cifra de de 15 a 20 años. El resumen del tomo provincial (tomo II, pág. 511) trae 1 755; ver pub_1895_colchagua_menores2."}
+  - {territorio: Colchagua, nivel: provincia, edad: De 1 a 2 años, columna: hombres, estado_valor: inconsistente, nota: "Impreso 6 220: repite la cifra de de 20 a 25 años. El resumen del tomo provincial (tomo II, pág. 511) trae 2 991; ver pub_1895_colchagua_menores2."}
+  - {territorio: Colchagua, nivel: provincia, edad: De 1 a 2 años, columna: mujeres, estado_valor: inconsistente, nota: "Impreso 7 019: repite la cifra de de 20 a 25 años. El resumen del tomo provincial (tomo II, pág. 511) trae 2 929; ver pub_1895_colchagua_menores2."}
+  - {territorio: Colchagua, nivel: provincia, edad: De 50 a 55, columna: hombres, estado_valor: inconsistente, nota: "Impreso 1 583; la suma de los departamentos y la de las edades implican 1 573."}
+  - {territorio: Curicó, nivel: departamento, edad: De 45 a 50, columna: hombres, estado_valor: inconsistente, nota: "Impreso 1 148; la suma de las edades y el total de la provincia implican 1 448."}
+  - {territorio: Vichuquén, nivel: departamento, edad: De 2 a 5, columna: hombres, estado_valor: inconsistente, nota: "Impreso 1 076; la suma de las edades y el total de la provincia implican 1 776."}
+  - {territorio: Curicó, nivel: provincia, edad: De 50 a 55, columna: mujeres, estado_valor: inconsistente, nota: "Impreso 1 906; la suma de los departamentos y la de las edades implican 1 006."}
+  - {territorio: Talca, nivel: provincia, edad: De 20 a 25, columna: mujeres, estado_valor: inconsistente, nota: "Impreso 5 185; la suma de los departamentos y la de las edades implican 6 185."}
+  - {territorio: Parral, nivel: departamento, edad: De 50 a 55, columna: hombres, estado_valor: inconsistente, nota: "Impreso 258; la suma de las edades y el total de la provincia implican 259."}
+  - {territorio: Cañete, nivel: departamento, edad: De 50 a 55, columna: mujeres, estado_valor: inconsistente, nota: "Impreso 86; la suma de las edades y el total de la provincia implican 87."}
+  - {territorio: Bío-Bío, nivel: provincia, edad: De 30 a 35, columna: hombres, estado_valor: inconsistente, nota: "Impreso 1 164; la suma de los departamentos y la de las edades implican 2 164."}
+  - {territorio: Bío-Bío, nivel: provincia, edad: Total, columna: mujeres, estado_valor: inconsistente, nota: "Impreso 44 085; la suma de los departamentos y la de las edades implican 44 086."}
+  - {territorio: Temuco, nivel: departamento, edad: De 75 a 80, columna: mujeres, estado_valor: inconsistente, nota: "Impreso 134; la suma de las edades y el total de la provincia implican 143."}
+  - {territorio: Castro, nivel: departamento, edad: De 55 a 60, columna: hombres, estado_valor: inconsistente, nota: "Impreso 549; la suma de las edades y el total de la provincia implican 636."}
+  - {territorio: Castro, nivel: departamento, edad: De 65 a 70, columna: mujeres, estado_valor: inconsistente, nota: "Impreso 113; la suma de las edades y el total de la provincia implican 213."}
+  - {territorio: Castro, nivel: departamento, edad: De 70 a 75, columna: mujeres, estado_valor: inconsistente, nota: "Impreso 53; la suma de las edades y el total de la provincia implican 63."}
+
+controles:
+  - tipo: suma_dimension
+    dimension: [edad_min, edad_max, dimensiones]
+    total: ["", "", ""]
+    partes: [[0, 0, "{\"meses\": 0}"], [0, 0, "{\"meses\": \"1-2\"}"], [0, 0, "{\"meses\": \"3-5\"}"], [0, 0, "{\"meses\": \"6-11\"}"], [1, 1, ""], [2, 4, ""], [5, 9, ""], [10, 14, ""], [15, 19, ""], [20, 24, ""], [25, 29, ""], [30, 34, ""], [35, 39, ""], [40, 44, ""], [45, 49, ""], [50, 54, ""], [55, 59, ""], [60, 64, ""], [65, 69, ""], [70, 74, ""], [75, 79, ""], [80, 84, ""], [85, 89, ""], [90, 94, ""], [95, 99, ""], [100, "", ""]]
+    excepciones:
+      - {territorio: Antofagasta, sexo: hombre, diferencia: 282}
+      - {territorio: Antofagasta, sexo: mujer, diferencia: 609}
+      - {territorio: Tocopilla, sexo: hombre, diferencia: 3}
+      - {territorio: Tocopilla, sexo: mujer, diferencia: 5}
+      - {territorio: Antofagasta, sexo: hombre, diferencia: -35}
+      - {territorio: Antofagasta, sexo: mujer, diferencia: 614}
+      - {territorio: Copiapó, sexo: hombre, diferencia: -8}
+      - {territorio: Copiapó, sexo: mujer, diferencia: 63}
+      - {territorio: Freirina, sexo: hombre, diferencia: 90}
+      - {territorio: Freirina, sexo: mujer, diferencia: -9}
+      - {territorio: Vallenar, sexo: hombre, diferencia: -109}
+      - {territorio: Vallenar, sexo: mujer, diferencia: 20}
+      - {territorio: Chañaral, sexo: hombre, diferencia: 1}
+      - {territorio: Chañaral, sexo: mujer, diferencia: 1}
+      - {territorio: Atacama, sexo: hombre, diferencia: -26}
+      - {territorio: Atacama, sexo: mujer, diferencia: 75}
+      - {territorio: Cachapoal, sexo: mujer, diferencia: -1}
+      - {territorio: "O'Higgins", sexo: mujer, diferencia: -1}
+      - {territorio: Curicó, sexo: mujer, diferencia: -2}
+      - {territorio: Curicó, sexo: hombre, diferencia: -8}
+      - {territorio: Curepto, sexo: hombre, diferencia: -10}
+      - {territorio: Talca, sexo: hombre, diferencia: -10}
+      - {territorio: Cauquenes, sexo: hombre, diferencia: -131}
+      - {territorio: Cauquenes, sexo: mujer, diferencia: 104}
+      - {territorio: Itata, sexo: hombre, diferencia: 8}
+      - {territorio: Itata, sexo: mujer, diferencia: -12}
+      - {territorio: Maule, sexo: hombre, diferencia: -86}
+      - {territorio: Maule, sexo: mujer, diferencia: 96}
+      - {territorio: Chillán, sexo: hombre, diferencia: -28}
+      - {territorio: Chillán, sexo: mujer, diferencia: 6}
+      - {territorio: Yungay, sexo: hombre, diferencia: -1}
+      - {territorio: Yungay, sexo: mujer, diferencia: 1}
+      - {territorio: Bulnes, sexo: hombre, diferencia: 44}
+      - {territorio: Bulnes, sexo: mujer, diferencia: -24}
+      - {territorio: San Carlos, sexo: hombre, diferencia: 39}
+      - {territorio: San Carlos, sexo: mujer, diferencia: -40}
+      - {territorio: Ñuble, sexo: hombre, diferencia: 50}
+      - {territorio: Ñuble, sexo: mujer, diferencia: -54}
+      - {territorio: Nacimiento, sexo: hombre, diferencia: 1}
+      - {territorio: Nacimiento, sexo: mujer, diferencia: -19}
+      - {territorio: La Unión, sexo: hombre, diferencia: -1}
+      - {territorio: La Unión, sexo: mujer, diferencia: -1}
+      - {territorio: Valdivia, sexo: hombre, diferencia: -1}
+      - {territorio: Valdivia, sexo: mujer, diferencia: -1}
+      - {territorio: Llanquihue, sexo: hombre, diferencia: -10}
+      - {territorio: Llanquihue, sexo: hombre, diferencia: -10}
+      - {territorio: República, sexo: hombre, diferencia: -10}
+  - tipo: jerarquia
+    excepciones:
+      - {territorio: Antofagasta, sexo: hombre, edad_min: 30, diferencia: 320}
+      - {territorio: Maule, sexo: mujer, edad_min: 0, diferencia: -4}
+      - {territorio: Maule, sexo: hombre, edad_min: 40, diferencia: -10}
+      - {territorio: Maule, sexo: hombre, edad_min: 65, diferencia: -27}
+      - {territorio: Ñuble, sexo: mujer, edad_min: 2, diferencia: -2}
+      - {territorio: Ñuble, sexo: mujer, edad_min: 30, diferencia: -20}
+      - {territorio: Ñuble, sexo: mujer, edad_min: 35, diferencia: 20}
+      - {territorio: Ñuble, sexo: hombre, edad_min: 60, diferencia: 4}
+      - {territorio: Ñuble, sexo: mujer, edad_min: 75, diferencia: -1}
+  - tipo: suma_territorio
+    total: pais
+    partes: provincia
+    excepciones:
+      - {territorio: República, sexo: hombre, edad_min: 2, diferencia: -10}
+      - {territorio: República, sexo: hombre, edad_min: 10, diferencia: -2}
+      - {territorio: República, sexo: hombre, edad_min: 15, diferencia: -59}
+      - {territorio: República, sexo: mujer, edad_min: 15, diferencia: 720}
+      - {territorio: República, sexo: hombre, edad_min: 20, diferencia: -35}
+      - {territorio: República, sexo: mujer, edad_min: 25, diferencia: 300}
+      - {territorio: República, sexo: hombre, edad_min: 35, diferencia: 2}
+      - {territorio: República, sexo: hombre, edad_min: 40, diferencia: -1}
+      - {territorio: República, sexo: mujer, edad_min: 45, diferencia: 89}
+      - {territorio: República, sexo: mujer, edad_min: 55, diferencia: -1}
+      - {territorio: República, sexo: hombre, edad_min: 75, diferencia: 10}
+      - {territorio: República, sexo: hombre, edad_min: 80, diferencia: -10}
+      - {territorio: República, sexo: mujer, edad_min: 85, diferencia: 200}

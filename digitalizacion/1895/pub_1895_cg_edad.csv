@@ -1,0 +1,2620 @@
+territorio,nivel,edad,edad_min,edad_max,meses,hombres,mujeres
+Tarapacá,departamento,Hasta 1 mes,0,0,0,109,111
+Tarapacá,departamento,De 1 a 3 meses,0,0,1-2,165,151
+Tarapacá,departamento,De 3 a 6 meses,0,0,3-5,209,236
+Tarapacá,departamento,De 6 meses a 1 año,0,0,6-11,447,440
+Tarapacá,departamento,De 1 a 2 años,1,1,,1083,957
+Tarapacá,departamento,De 2 a 5,2,4,,2040,2039
+Tarapacá,departamento,De 5 a 10,5,9,,3049,2757
+Tarapacá,departamento,De 10 a 15,10,14,,2773,2499
+Tarapacá,departamento,De 15 a 20,15,19,,4155,2901
+Tarapacá,departamento,De 20 a 25,20,24,,4983,2912
+Tarapacá,departamento,De 25 a 30,25,29,,5692,3459
+Tarapacá,departamento,De 30 a 35,30,34,,3876,2487
+Tarapacá,departamento,De 35 a 40,35,39,,3792,2690
+Tarapacá,departamento,De 40 a 45,40,44,,2404,1497
+Tarapacá,departamento,De 45 a 50,45,49,,1987,1332
+Tarapacá,departamento,De 50 a 55,50,54,,1068,545
+Tarapacá,departamento,De 55 a 60,55,59,,941,681
+Tarapacá,departamento,De 60 a 65,60,64,,372,278
+Tarapacá,departamento,De 65 a 70,65,69,,239,233
+Tarapacá,departamento,De 70 a 75,70,74,,74,94
+Tarapacá,departamento,De 75 a 80,75,79,,81,122
+Tarapacá,departamento,De 80 a 85,80,84,,19,31
+Tarapacá,departamento,De 85 a 90,85,89,,24,41
+Tarapacá,departamento,De 90 a 95,90,94,,9,7
+Tarapacá,departamento,De 95 a 100,95,99,,5,10
+Tarapacá,departamento,De 100 adelante,100,,,1,3
+Tarapacá,departamento,Total,,,,39597,28513
+Pisagua,departamento,Hasta 1 mes,0,0,0,35,24
+Pisagua,departamento,De 1 a 3 meses,0,0,1-2,78,54
+Pisagua,departamento,De 3 a 6 meses,0,0,3-5,81,78
+Pisagua,departamento,De 6 meses a 1 año,0,0,6-11,109,118
+Pisagua,departamento,De 1 a 2 años,1,1,,488,466
+Pisagua,departamento,De 2 a 5,2,4,,758,723
+Pisagua,departamento,De 5 a 10,5,9,,903,902
+Pisagua,departamento,De 10 a 15,10,14,,820,623
+Pisagua,departamento,De 15 a 20,15,19,,1399,794
+Pisagua,departamento,De 20 a 25,20,24,,1967,864
+Pisagua,departamento,De 25 a 30,25,29,,1883,1024
+Pisagua,departamento,De 30 a 35,30,34,,1333,589
+Pisagua,departamento,De 35 a 40,35,39,,1335,750
+Pisagua,departamento,De 40 a 45,40,44,,864,345
+Pisagua,departamento,De 45 a 50,45,49,,647,323
+Pisagua,departamento,De 50 a 55,50,54,,323,124
+Pisagua,departamento,De 55 a 60,55,59,,256,167
+Pisagua,departamento,De 60 a 65,60,64,,77,49
+Pisagua,departamento,De 65 a 70,65,69,,63,52
+Pisagua,departamento,De 70 a 75,70,74,,25,14
+Pisagua,departamento,De 75 a 80,75,79,,27,19
+Pisagua,departamento,De 80 a 85,80,84,,11,8
+Pisagua,departamento,De 85 a 90,85,89,,12,15
+Pisagua,departamento,De 90 a 95,90,94,,2,6
+Pisagua,departamento,De 95 a 100,95,99,,6,2
+Pisagua,departamento,De 100 adelante,100,,,2,4
+Pisagua,departamento,Total,,,,13504,8137
+Tarapacá,provincia,Hasta 1 mes,0,0,0,144,135
+Tarapacá,provincia,De 1 a 3 meses,0,0,1-2,243,205
+Tarapacá,provincia,De 3 a 6 meses,0,0,3-5,290,314
+Tarapacá,provincia,De 6 meses a 1 año,0,0,6-11,556,558
+Tarapacá,provincia,De 1 a 2 años,1,1,,1571,1423
+Tarapacá,provincia,De 2 a 5,2,4,,2798,2762
+Tarapacá,provincia,De 5 a 10,5,9,,3952,3659
+Tarapacá,provincia,De 10 a 15,10,14,,3593,3122
+Tarapacá,provincia,De 15 a 20,15,19,,5554,3695
+Tarapacá,provincia,De 20 a 25,20,24,,6950,3776
+Tarapacá,provincia,De 25 a 30,25,29,,7575,4483
+Tarapacá,provincia,De 30 a 35,30,34,,5209,3076
+Tarapacá,provincia,De 35 a 40,35,39,,5127,3440
+Tarapacá,provincia,De 40 a 45,40,44,,3268,1842
+Tarapacá,provincia,De 45 a 50,45,49,,2634,1655
+Tarapacá,provincia,De 50 a 55,50,54,,1391,669
+Tarapacá,provincia,De 55 a 60,55,59,,1197,848
+Tarapacá,provincia,De 60 a 65,60,64,,449,327
+Tarapacá,provincia,De 65 a 70,65,69,,302,285
+Tarapacá,provincia,De 70 a 75,70,74,,99,108
+Tarapacá,provincia,De 75 a 80,75,79,,108,141
+Tarapacá,provincia,De 80 a 85,80,84,,30,39
+Tarapacá,provincia,De 85 a 90,85,89,,36,56
+Tarapacá,provincia,De 90 a 95,90,94,,11,13
+Tarapacá,provincia,De 95 a 100,95,99,,11,12
+Tarapacá,provincia,De 100 adelante,100,,,3,7
+Tarapacá,provincia,Total,,,,53101,36650
+Antofagasta,departamento,Hasta 1 mes,0,0,0,35,31
+Antofagasta,departamento,De 1 a 3 meses,0,0,1-2,47,63
+Antofagasta,departamento,De 3 a 6 meses,0,0,3-5,77,78
+Antofagasta,departamento,De 6 meses a 1 año,0,0,6-11,27,34
+Antofagasta,departamento,De 1 a 2 años,1,1,,456,460
+Antofagasta,departamento,De 2 a 5,2,4,,766,786
+Antofagasta,departamento,De 5 a 10,5,9,,1020,1074
+Antofagasta,departamento,De 10 a 15,10,14,,977,1705
+Antofagasta,departamento,De 15 a 20,15,19,,1157,1125
+Antofagasta,departamento,De 20 a 25,20,24,,1355,1017
+Antofagasta,departamento,De 25 a 30,25,29,,1367,1030
+Antofagasta,departamento,De 30 a 35,30,34,,1385,699
+Antofagasta,departamento,De 35 a 40,35,39,,1044,854
+Antofagasta,departamento,De 40 a 45,40,44,,656,430
+Antofagasta,departamento,De 45 a 50,45,49,,675,482
+Antofagasta,departamento,De 50 a 55,50,54,,381,165
+Antofagasta,departamento,De 55 a 60,55,59,,313,250
+Antofagasta,departamento,De 60 a 65,60,64,,128,84
+Antofagasta,departamento,De 65 a 70,65,69,,67,88
+Antofagasta,departamento,De 70 a 75,70,74,,48,25
+Antofagasta,departamento,De 75 a 80,75,79,,33,22
+Antofagasta,departamento,De 80 a 85,80,84,,13,6
+Antofagasta,departamento,De 85 a 90,85,89,,14,12
+Antofagasta,departamento,De 90 a 95,90,94,,2,2
+Antofagasta,departamento,De 95 a 100,95,99,,-,2
+Antofagasta,departamento,De 100 adelante,100,,,2,-
+Antofagasta,departamento,Total,,,,11763,9915
+Tocopilla,departamento,Hasta 1 mes,0,0,0,18,25
+Tocopilla,departamento,De 1 a 3 meses,0,0,1-2,30,29
+Tocopilla,departamento,De 3 a 6 meses,0,0,3-5,33,26
+Tocopilla,departamento,De 6 meses a 1 año,0,0,6-11,65,66
+Tocopilla,departamento,De 1 a 2 años,1,1,,118,111
+Tocopilla,departamento,De 2 a 5,2,4,,296,254
+Tocopilla,departamento,De 5 a 10,5,9,,420,369
+Tocopilla,departamento,De 10 a 15,10,14,,439,340
+Tocopilla,departamento,De 15 a 20,15,19,,647,320
+Tocopilla,departamento,De 20 a 25,20,24,,978,340
+Tocopilla,departamento,De 25 a 30,25,29,,840,358
+Tocopilla,departamento,De 30 a 35,30,34,,563,259
+Tocopilla,departamento,De 35 a 40,35,39,,612,295
+Tocopilla,departamento,De 40 a 45,40,44,,531,131
+Tocopilla,departamento,De 45 a 50,45,49,,300,140
+Tocopilla,departamento,De 50 a 55,50,54,,137,55
+Tocopilla,departamento,De 55 a 60,55,59,,133,71
+Tocopilla,departamento,De 60 a 65,60,64,,42,30
+Tocopilla,departamento,De 65 a 70,65,69,,30,21
+Tocopilla,departamento,De 70 a 75,70,74,,8,6
+Tocopilla,departamento,De 75 a 80,75,79,,8,5
+Tocopilla,departamento,De 80 a 85,80,84,,-,-
+Tocopilla,departamento,De 85 a 90,85,89,,3,6
+Tocopilla,departamento,De 90 a 95,90,94,,-,1
+Tocopilla,departamento,De 95 a 100,95,99,,1,3
+Tocopilla,departamento,De 100 adelante,100,,,-,-
+Tocopilla,departamento,Total,,,,6249,3256
+Taltal,departamento,Hasta 1 mes,0,0,0,17,23
+Taltal,departamento,De 1 a 3 meses,0,0,1-2,33,33
+Taltal,departamento,De 3 a 6 meses,0,0,3-5,39,27
+Taltal,departamento,De 6 meses a 1 año,0,0,6-11,9,3
+Taltal,departamento,De 1 a 2 años,1,1,,256,247
+Taltal,departamento,De 2 a 5,2,4,,431,390
+Taltal,departamento,De 5 a 10,5,9,,612,589
+Taltal,departamento,De 10 a 15,10,14,,599,551
+Taltal,departamento,De 15 a 20,15,19,,893,490
+Taltal,departamento,De 20 a 25,20,24,,1115,478
+Taltal,departamento,De 25 a 30,25,29,,1005,528
+Taltal,departamento,De 30 a 35,30,34,,706,323
+Taltal,departamento,De 35 a 40,35,39,,783,449
+Taltal,departamento,De 40 a 45,40,44,,519,204
+Taltal,departamento,De 45 a 50,45,49,,405,252
+Taltal,departamento,De 50 a 55,50,54,,243,93
+Taltal,departamento,De 55 a 60,55,59,,200,104
+Taltal,departamento,De 60 a 65,60,64,,94,30
+Taltal,departamento,De 65 a 70,65,69,,37,34
+Taltal,departamento,De 70 a 75,70,74,,18,5
+Taltal,departamento,De 75 a 80,75,79,,8,10
+Taltal,departamento,De 80 a 85,80,84,,1,7
+Taltal,departamento,De 85 a 90,85,89,,2,3
+Taltal,departamento,De 90 a 95,90,94,,-,1
+Taltal,departamento,De 95 a 100,95,99,,2,1
+Taltal,departamento,De 100 adelante,100,,,-,-
+Taltal,departamento,Total,,,,8027,4875
+Antofagasta,provincia,Hasta 1 mes,0,0,0,70,79
+Antofagasta,provincia,De 1 a 3 meses,0,0,1-2,110,125
+Antofagasta,provincia,De 3 a 6 meses,0,0,3-5,149,131
+Antofagasta,provincia,De 6 meses a 1 año,0,0,6-11,101,103
+Antofagasta,provincia,De 1 a 2 años,1,1,,830,818
+Antofagasta,provincia,De 2 a 5,2,4,,1493,1430
+Antofagasta,provincia,De 5 a 10,5,9,,2052,2032
+Antofagasta,provincia,De 10 a 15,10,14,,2015,2596
+Antofagasta,provincia,De 15 a 20,15,19,,2697,1935
+Antofagasta,provincia,De 20 a 25,20,24,,3448,1835
+Antofagasta,provincia,De 25 a 30,25,29,,3212,1916
+Antofagasta,provincia,De 30 a 35,30,34,,2334,1281
+Antofagasta,provincia,De 35 a 40,35,39,,2439,1598
+Antofagasta,provincia,De 40 a 45,40,44,,1706,765
+Antofagasta,provincia,De 45 a 50,45,49,,1380,874
+Antofagasta,provincia,De 50 a 55,50,54,,761,313
+Antofagasta,provincia,De 55 a 60,55,59,,646,425
+Antofagasta,provincia,De 60 a 65,60,64,,264,144
+Antofagasta,provincia,De 65 a 70,65,69,,134,143
+Antofagasta,provincia,De 70 a 75,70,74,,74,36
+Antofagasta,provincia,De 75 a 80,75,79,,49,37
+Antofagasta,provincia,De 80 a 85,80,84,,14,13
+Antofagasta,provincia,De 85 a 90,85,89,,19,21
+Antofagasta,provincia,De 90 a 95,90,94,,2,4
+Antofagasta,provincia,De 95 a 100,95,99,,3,6
+Antofagasta,provincia,De 100 adelante,100,,,2,-
+Antofagasta,provincia,Total,,,,26039,18046
+Copiapó,departamento,Hasta 1 mes,0,0,0,59,44
+Copiapó,departamento,De 1 a 3 meses,0,0,1-2,91,78
+Copiapó,departamento,De 3 a 6 meses,0,0,3-5,75,98
+Copiapó,departamento,De 6 meses a 1 año,0,0,6-11,287,286
+Copiapó,departamento,De 1 a 2 años,1,1,,364,346
+Copiapó,departamento,De 2 a 5,2,4,,1082,968
+Copiapó,departamento,De 5 a 10,5,9,,1628,1592
+Copiapó,departamento,De 10 a 15,10,14,,1392,1412
+Copiapó,departamento,De 15 a 20,15,19,,1258,1305
+Copiapó,departamento,De 20 a 25,20,24,,1162,1113
+Copiapó,departamento,De 25 a 30,25,29,,1081,1130
+Copiapó,departamento,De 30 a 35,30,34,,893,746
+Copiapó,departamento,De 35 a 40,35,39,,1003,940
+Copiapó,departamento,De 40 a 45,40,44,,763,552
+Copiapó,departamento,De 45 a 50,45,49,,706,616
+Copiapó,departamento,De 50 a 55,50,54,,531,401
+Copiapó,departamento,De 55 a 60,55,59,,558,416
+Copiapó,departamento,De 60 a 65,60,64,,324,208
+Copiapó,departamento,De 65 a 70,65,69,,216,189
+Copiapó,departamento,De 70 a 75,70,74,,92,75
+Copiapó,departamento,De 75 a 80,75,79,,69,80
+Copiapó,departamento,De 80 a 85,80,84,,32,26
+Copiapó,departamento,De 85 a 90,85,89,,16,23
+Copiapó,departamento,De 90 a 95,90,94,,6,12
+Copiapó,departamento,De 95 a 100,95,99,,2,13
+Copiapó,departamento,De 100 adelante,100,,,-,6
+Copiapó,departamento,Total,,,,13698,12612
+Freirina,departamento,Hasta 1 mes,0,0,0,19,31
+Freirina,departamento,De 1 a 3 meses,0,0,1-2,45,49
+Freirina,departamento,De 3 a 6 meses,0,0,3-5,49,54
+Freirina,departamento,De 6 meses a 1 año,0,0,6-11,197,184
+Freirina,departamento,De 1 a 2 años,1,1,,215,190
+Freirina,departamento,De 2 a 5,2,4,,605,575
+Freirina,departamento,De 5 a 10,5,9,,898,888
+Freirina,departamento,De 10 a 15,10,14,,785,726
+Freirina,departamento,De 15 a 20,15,19,,642,686
+Freirina,departamento,De 20 a 25,20,24,,532,510
+Freirina,departamento,De 25 a 30,25,29,,625,478
+Freirina,departamento,De 30 a 35,30,34,,387,300
+Freirina,departamento,De 35 a 40,35,39,,483,417
+Freirina,departamento,De 40 a 45,40,44,,330,220
+Freirina,departamento,De 45 a 50,45,49,,361,245
+Freirina,departamento,De 50 a 55,50,54,,240,114
+Freirina,departamento,De 55 a 60,55,59,,233,168
+Freirina,departamento,De 60 a 65,60,64,,93,59
+Freirina,departamento,De 65 a 70,65,69,,106,58
+Freirina,departamento,De 70 a 75,70,74,,35,28
+Freirina,departamento,De 75 a 80,75,79,,29,26
+Freirina,departamento,De 80 a 85,80,84,,10,4
+Freirina,departamento,De 85 a 90,85,89,,7,5
+Freirina,departamento,De 90 a 95,90,94,,1,2
+Freirina,departamento,De 95 a 100,95,99,,2,1
+Freirina,departamento,De 100 adelante,100,,,-,2
+Freirina,departamento,Total,,,,6839,6029
+Vallenar,departamento,Hasta 1 mes,0,0,0,47,21
+Vallenar,departamento,De 1 a 3 meses,0,0,1-2,60,72
+Vallenar,departamento,De 3 a 6 meses,0,0,3-5,49,51
+Vallenar,departamento,De 6 meses a 1 año,0,0,6-11,197,200
+Vallenar,departamento,De 1 a 2 años,1,1,,273,271
+Vallenar,departamento,De 2 a 5,2,4,,826,773
+Vallenar,departamento,De 5 a 10,5,9,,1094,1138
+Vallenar,departamento,De 10 a 15,10,14,,930,960
+Vallenar,departamento,De 15 a 20,15,19,,745,961
+Vallenar,departamento,De 20 a 25,20,24,,601,830
+Vallenar,departamento,De 25 a 30,25,29,,537,692
+Vallenar,departamento,De 30 a 35,30,34,,441,439
+Vallenar,departamento,De 35 a 40,35,39,,460,484
+Vallenar,departamento,De 40 a 45,40,44,,366,312
+Vallenar,departamento,De 45 a 50,45,49,,381,322
+Vallenar,departamento,De 50 a 55,50,54,,208,172
+Vallenar,departamento,De 55 a 60,55,59,,312,231
+Vallenar,departamento,De 60 a 65,60,64,,152,101
+Vallenar,departamento,De 65 a 70,65,69,,109,96
+Vallenar,departamento,De 70 a 75,70,74,,38,32
+Vallenar,departamento,De 75 a 80,75,79,,41,34
+Vallenar,departamento,De 80 a 85,80,84,,16,10
+Vallenar,departamento,De 85 a 90,85,89,,10,10
+Vallenar,departamento,De 90 a 95,90,94,,4,2
+Vallenar,departamento,De 95 a 100,95,99,,2,4
+Vallenar,departamento,De 100 adelante,100,,,-,8
+Vallenar,departamento,Total,,,,8008,8206
+Chañaral,departamento,Hasta 1 mes,0,0,0,2,3
+Chañaral,departamento,De 1 a 3 meses,0,0,1-2,3,6
+Chañaral,departamento,De 3 a 6 meses,0,0,3-5,10,7
+Chañaral,departamento,De 6 meses a 1 año,0,0,6-11,38,30
+Chañaral,departamento,De 1 a 2 años,1,1,,52,51
+Chañaral,departamento,De 2 a 5,2,4,,135,120
+Chañaral,departamento,De 5 a 10,5,9,,233,176
+Chañaral,departamento,De 10 a 15,10,14,,237,212
+Chañaral,departamento,De 15 a 20,15,19,,246,171
+Chañaral,departamento,De 20 a 25,20,24,,287,159
+Chañaral,departamento,De 25 a 30,25,29,,262,143
+Chañaral,departamento,De 30 a 35,30,34,,198,95
+Chañaral,departamento,De 35 a 40,35,39,,267,131
+Chañaral,departamento,De 40 a 45,40,44,,204,79
+Chañaral,departamento,De 45 a 50,45,49,,174,91
+Chañaral,departamento,De 50 a 55,50,54,,122,32
+Chañaral,departamento,De 55 a 60,55,59,,122,39
+Chañaral,departamento,De 60 a 65,60,64,,58,17
+Chañaral,departamento,De 65 a 70,65,69,,29,18
+Chañaral,departamento,De 70 a 75,70,74,,23,10
+Chañaral,departamento,De 75 a 80,75,79,,11,8
+Chañaral,departamento,De 80 a 85,80,84,,4,-
+Chañaral,departamento,De 85 a 90,85,89,,-,1
+Chañaral,departamento,De 90 a 95,90,94,,4,2
+Chañaral,departamento,De 95 a 100,95,99,,-,1
+Chañaral,departamento,De 100 adelante,100,,,-,-
+Chañaral,departamento,Total,,,,2720,1601
+Atacama,provincia,Hasta 1 mes,0,0,0,127,99
+Atacama,provincia,De 1 a 3 meses,0,0,1-2,199,205
+Atacama,provincia,De 3 a 6 meses,0,0,3-5,183,210
+Atacama,provincia,De 6 meses a 1 año,0,0,6-11,719,700
+Atacama,provincia,De 1 a 2 años,1,1,,904,858
+Atacama,provincia,De 2 a 5,2,4,,2648,2436
+Atacama,provincia,De 5 a 10,5,9,,3853,3794
+Atacama,provincia,De 10 a 15,10,14,,3344,3310
+Atacama,provincia,De 15 a 20,15,19,,2891,3123
+Atacama,provincia,De 20 a 25,20,24,,2582,2612
+Atacama,provincia,De 25 a 30,25,29,,2505,2443
+Atacama,provincia,De 30 a 35,30,34,,1919,1580
+Atacama,provincia,De 35 a 40,35,39,,2213,1972
+Atacama,provincia,De 40 a 45,40,44,,1663,1163
+Atacama,provincia,De 45 a 50,45,49,,1622,1274
+Atacama,provincia,De 50 a 55,50,54,,1101,719
+Atacama,provincia,De 55 a 60,55,59,,1225,854
+Atacama,provincia,De 60 a 65,60,64,,627,385
+Atacama,provincia,De 65 a 70,65,69,,460,361
+Atacama,provincia,De 70 a 75,70,74,,188,145
+Atacama,provincia,De 75 a 80,75,79,,150,148
+Atacama,provincia,De 80 a 85,80,84,,62,40
+Atacama,provincia,De 85 a 90,85,89,,33,39
+Atacama,provincia,De 90 a 95,90,94,,15,18
+Atacama,provincia,De 95 a 100,95,99,,6,19
+Atacama,provincia,De 100 adelante,100,,,-,16
+Atacama,provincia,Total,,,,31265,28448
+La Serena,departamento,Hasta 1 mes,0,0,0,43,49
+La Serena,departamento,De 1 a 3 meses,0,0,1-2,104,81
+La Serena,departamento,De 3 a 6 meses,0,0,3-5,126,120
+La Serena,departamento,De 6 meses a 1 año,0,0,6-11,218,251
+La Serena,departamento,De 1 a 2 años,1,1,,710,608
+La Serena,departamento,De 2 a 5,2,4,,1597,1467
+La Serena,departamento,De 5 a 10,5,9,,2292,2372
+La Serena,departamento,De 10 a 15,10,14,,2137,2341
+La Serena,departamento,De 15 a 20,15,19,,1443,2082
+La Serena,departamento,De 20 a 25,20,24,,1191,1748
+La Serena,departamento,De 25 a 30,25,29,,1173,1756
+La Serena,departamento,De 30 a 35,30,34,,788,1050
+La Serena,departamento,De 35 a 40,35,39,,966,1370
+La Serena,departamento,De 40 a 45,40,44,,657,664
+La Serena,departamento,De 45 a 50,45,49,,693,875
+La Serena,departamento,De 50 a 55,50,54,,461,416
+La Serena,departamento,De 55 a 60,55,59,,492,612
+La Serena,departamento,De 60 a 65,60,64,,251,239
+La Serena,departamento,De 65 a 70,65,69,,203,223
+La Serena,departamento,De 70 a 75,70,74,,94,80
+La Serena,departamento,De 75 a 80,75,79,,60,111
+La Serena,departamento,De 80 a 85,80,84,,21,29
+La Serena,departamento,De 85 a 90,85,89,,15,28
+La Serena,departamento,De 90 a 95,90,94,,1,9
+La Serena,departamento,De 95 a 100,95,99,,2,7
+La Serena,departamento,De 100 adelante,100,,,1,5
+La Serena,departamento,Total,,,,15739,18593
+Illapel,departamento,Hasta 1 mes,0,0,0,45,49
+Illapel,departamento,De 1 a 3 meses,0,0,1-2,67,75
+Illapel,departamento,De 3 a 6 meses,0,0,3-5,78,71
+Illapel,departamento,De 6 meses a 1 año,0,0,6-11,277,249
+Illapel,departamento,De 1 a 2 años,1,1,,478,432
+Illapel,departamento,De 2 a 5,2,4,,1418,1439
+Illapel,departamento,De 5 a 10,5,9,,2269,2291
+Illapel,departamento,De 10 a 15,10,14,,1760,1877
+Illapel,departamento,De 15 a 20,15,19,,1229,1725
+Illapel,departamento,De 20 a 25,20,24,,745,1397
+Illapel,departamento,De 25 a 30,25,29,,745,1354
+Illapel,departamento,De 30 a 35,30,34,,578,815
+Illapel,departamento,De 35 a 40,35,39,,711,1130
+Illapel,departamento,De 40 a 45,40,44,,430,553
+Illapel,departamento,De 45 a 50,45,49,,567,653
+Illapel,departamento,De 50 a 55,50,54,,244,262
+Illapel,departamento,De 55 a 60,55,59,,366,410
+Illapel,departamento,De 60 a 65,60,64,,136,162
+Illapel,departamento,De 65 a 70,65,69,,144,184
+Illapel,departamento,De 70 a 75,70,74,,48,56
+Illapel,departamento,De 75 a 80,75,79,,59,84
+Illapel,departamento,De 80 a 85,80,84,,13,16
+Illapel,departamento,De 85 a 90,85,89,,9,18
+Illapel,departamento,De 90 a 95,90,94,,2,12
+Illapel,departamento,De 95 a 100,95,99,,2,3
+Illapel,departamento,De 100 adelante,100,,,2,6
+Illapel,departamento,Total,,,,12422,15323
+Combarbalá,departamento,Hasta 1 mes,0,0,0,43,35
+Combarbalá,departamento,De 1 a 3 meses,0,0,1-2,70,63
+Combarbalá,departamento,De 3 a 6 meses,0,0,3-5,45,34
+Combarbalá,departamento,De 6 meses a 1 año,0,0,6-11,153,146
+Combarbalá,departamento,De 1 a 2 años,1,1,,258,255
+Combarbalá,departamento,De 2 a 5,2,4,,777,739
+Combarbalá,departamento,De 5 a 10,5,9,,1239,1118
+Combarbalá,departamento,De 10 a 15,10,14,,986,1001
+Combarbalá,departamento,De 15 a 20,15,19,,500,804
+Combarbalá,departamento,De 20 a 25,20,24,,307,633
+Combarbalá,departamento,De 25 a 30,25,29,,289,627
+Combarbalá,departamento,De 30 a 35,30,34,,222,363
+Combarbalá,departamento,De 35 a 40,35,39,,288,463
+Combarbalá,departamento,De 40 a 45,40,44,,158,230
+Combarbalá,departamento,De 45 a 50,45,49,,208,308
+Combarbalá,departamento,De 50 a 55,50,54,,130,132
+Combarbalá,departamento,De 55 a 60,55,59,,145,224
+Combarbalá,departamento,De 60 a 65,60,64,,70,68
+Combarbalá,departamento,De 65 a 70,65,69,,67,81
+Combarbalá,departamento,De 70 a 75,70,74,,21,27
+Combarbalá,departamento,De 75 a 80,75,79,,28,30
+Combarbalá,departamento,De 80 a 85,80,84,,10,12
+Combarbalá,departamento,De 85 a 90,85,89,,12,15
+Combarbalá,departamento,De 90 a 95,90,94,,3,10
+Combarbalá,departamento,De 95 a 100,95,99,,1,10
+Combarbalá,departamento,De 100 adelante,100,,,3,2
+Combarbalá,departamento,Total,,,,6033,7340
+Ovalle,departamento,Hasta 1 mes,0,0,0,146,114
+Ovalle,departamento,De 1 a 3 meses,0,0,1-2,210,181
+Ovalle,departamento,De 3 a 6 meses,0,0,3-5,203,168
+Ovalle,departamento,De 6 meses a 1 año,0,0,6-11,652,656
+Ovalle,departamento,De 1 a 2 años,1,1,,965,857
+Ovalle,departamento,De 2 a 5,2,4,,2805,2854
+Ovalle,departamento,De 5 a 10,5,9,,4839,4281
+Ovalle,departamento,De 10 a 15,10,14,,3705,3725
+Ovalle,departamento,De 15 a 20,15,19,,2382,2966
+Ovalle,departamento,De 20 a 25,20,24,,1593,2545
+Ovalle,departamento,De 25 a 30,25,29,,1415,2460
+Ovalle,departamento,De 30 a 35,30,34,,1140,1578
+Ovalle,departamento,De 35 a 40,35,39,,1471,1957
+Ovalle,departamento,De 40 a 45,40,44,,868,974
+Ovalle,departamento,De 45 a 50,45,49,,1124,1266
+Ovalle,departamento,De 50 a 55,50,54,,570,547
+Ovalle,departamento,De 55 a 60,55,59,,837,844
+Ovalle,departamento,De 60 a 65,60,64,,353,367
+Ovalle,departamento,De 65 a 70,65,69,,311,423
+Ovalle,departamento,De 70 a 75,70,74,,125,124
+Ovalle,departamento,De 75 a 80,75,79,,154,162
+Ovalle,departamento,De 80 a 85,80,84,,39,50
+Ovalle,departamento,De 85 a 90,85,89,,34,58
+Ovalle,departamento,De 90 a 95,90,94,,9,20
+Ovalle,departamento,De 95 a 100,95,99,,11,10
+Ovalle,departamento,De 100 adelante,100,,,-,6
+Ovalle,departamento,Total,,,,25961,29193
+Coquimbo,departamento,Hasta 1 mes,0,0,0,14,25
+Coquimbo,departamento,De 1 a 3 meses,0,0,1-2,43,44
+Coquimbo,departamento,De 3 a 6 meses,0,0,3-5,51,40
+Coquimbo,departamento,De 6 meses a 1 año,0,0,6-11,136,151
+Coquimbo,departamento,De 1 a 2 años,1,1,,283,259
+Coquimbo,departamento,De 2 a 5,2,4,,687,684
+Coquimbo,departamento,De 5 a 10,5,9,,1032,951
+Coquimbo,departamento,De 10 a 15,10,14,,903,992
+Coquimbo,departamento,De 15 a 20,15,19,,757,916
+Coquimbo,departamento,De 20 a 25,20,24,,609,750
+Coquimbo,departamento,De 25 a 30,25,29,,581,763
+Coquimbo,departamento,De 30 a 35,30,34,,420,429
+Coquimbo,departamento,De 35 a 40,35,39,,423,577
+Coquimbo,departamento,De 40 a 45,40,44,,321,288
+Coquimbo,departamento,De 45 a 50,45,49,,334,371
+Coquimbo,departamento,De 50 a 55,50,54,,165,156
+Coquimbo,departamento,De 55 a 60,55,59,,243,237
+Coquimbo,departamento,De 60 a 65,60,64,,100,100
+Coquimbo,departamento,De 65 a 70,65,69,,83,99
+Coquimbo,departamento,De 70 a 75,70,74,,38,39
+Coquimbo,departamento,De 75 a 80,75,79,,31,39
+Coquimbo,departamento,De 80 a 85,80,84,,11,5
+Coquimbo,departamento,De 85 a 90,85,89,,9,14
+Coquimbo,departamento,De 90 a 95,90,94,,4,6
+Coquimbo,departamento,De 95 a 100,95,99,,-,5
+Coquimbo,departamento,De 100 adelante,100,,,2,1
+Coquimbo,departamento,Total,,,,7280,7941
+Elqui,departamento,Hasta 1 mes,0,0,0,36,24
+Elqui,departamento,De 1 a 3 meses,0,0,1-2,60,49
+Elqui,departamento,De 3 a 6 meses,0,0,3-5,43,58
+Elqui,departamento,De 6 meses a 1 año,0,0,6-11,192,171
+Elqui,departamento,De 1 a 2 años,1,1,,246,204
+Elqui,departamento,De 2 a 5,2,4,,759,711
+Elqui,departamento,De 5 a 10,5,9,,1249,1109
+Elqui,departamento,De 10 a 15,10,14,,921,895
+Elqui,departamento,De 15 a 20,15,19,,641,760
+Elqui,departamento,De 20 a 25,20,24,,527,614
+Elqui,departamento,De 25 a 30,25,29,,580,682
+Elqui,departamento,De 30 a 35,30,34,,400,435
+Elqui,departamento,De 35 a 40,35,39,,427,493
+Elqui,departamento,De 40 a 45,40,44,,251,273
+Elqui,departamento,De 45 a 50,45,49,,317,345
+Elqui,departamento,De 50 a 55,50,54,,199,164
+Elqui,departamento,De 55 a 60,55,59,,235,212
+Elqui,departamento,De 60 a 65,60,64,,119,119
+Elqui,departamento,De 65 a 70,65,69,,106,109
+Elqui,departamento,De 70 a 75,70,74,,37,52
+Elqui,departamento,De 75 a 80,75,79,,57,48
+Elqui,departamento,De 80 a 85,80,84,,7,15
+Elqui,departamento,De 85 a 90,85,89,,11,10
+Elqui,departamento,De 90 a 95,90,94,,1,4
+Elqui,departamento,De 95 a 100,95,99,,3,2
+Elqui,departamento,De 100 adelante,100,,,1,-
+Elqui,departamento,Total,,,,7425,7558
+Coquimbo,provincia,Hasta 1 mes,0,0,0,327,296
+Coquimbo,provincia,De 1 a 3 meses,0,0,1-2,554,493
+Coquimbo,provincia,De 3 a 6 meses,0,0,3-5,546,491
+Coquimbo,provincia,De 6 meses a 1 año,0,0,6-11,1628,1624
+Coquimbo,provincia,De 1 a 2 años,1,1,,2940,2615
+Coquimbo,provincia,De 2 a 5,2,4,,8043,7894
+Coquimbo,provincia,De 5 a 10,5,9,,12920,12122
+Coquimbo,provincia,De 10 a 15,10,14,,10412,10831
+Coquimbo,provincia,De 15 a 20,15,19,,6952,9253
+Coquimbo,provincia,De 20 a 25,20,24,,4972,7687
+Coquimbo,provincia,De 25 a 30,25,29,,4783,7642
+Coquimbo,provincia,De 30 a 35,30,34,,3548,4670
+Coquimbo,provincia,De 35 a 40,35,39,,4286,5990
+Coquimbo,provincia,De 40 a 45,40,44,,2685,2982
+Coquimbo,provincia,De 45 a 50,45,49,,3243,3818
+Coquimbo,provincia,De 50 a 55,50,54,,1769,1677
+Coquimbo,provincia,De 55 a 60,55,59,,2318,2539
+Coquimbo,provincia,De 60 a 65,60,64,,1029,1055
+Coquimbo,provincia,De 65 a 70,65,69,,914,1119
+Coquimbo,provincia,De 70 a 75,70,74,,363,378
+Coquimbo,provincia,De 75 a 80,75,79,,389,474
+Coquimbo,provincia,De 80 a 85,80,84,,101,127
+Coquimbo,provincia,De 85 a 90,85,89,,80,143
+Coquimbo,provincia,De 90 a 95,90,94,,20,61
+Coquimbo,provincia,De 95 a 100,95,99,,19,37
+Coquimbo,provincia,De 100 adelante,100,,,9,20
+Coquimbo,provincia,Total,,,,74860,86038
+San Felipe,departamento,Hasta 1 mes,0,0,0,70,72
+San Felipe,departamento,De 1 a 3 meses,0,0,1-2,99,103
+San Felipe,departamento,De 3 a 6 meses,0,0,3-5,115,116
+San Felipe,departamento,De 6 meses a 1 año,0,0,6-11,198,213
+San Felipe,departamento,De 1 a 2 años,1,1,,669,656
+San Felipe,departamento,De 2 a 5,2,4,,1215,1267
+San Felipe,departamento,De 5 a 10,5,9,,2055,2030
+San Felipe,departamento,De 10 a 15,10,14,,1907,1805
+San Felipe,departamento,De 15 a 20,15,19,,1462,1847
+San Felipe,departamento,De 20 a 25,20,24,,1308,1470
+San Felipe,departamento,De 25 a 30,25,29,,1176,1428
+San Felipe,departamento,De 30 a 35,30,34,,779,994
+San Felipe,departamento,De 35 a 40,35,39,,892,1298
+San Felipe,departamento,De 40 a 45,40,44,,596,669
+San Felipe,departamento,De 45 a 50,45,49,,603,818
+San Felipe,departamento,De 50 a 55,50,54,,318,369
+San Felipe,departamento,De 55 a 60,55,59,,414,521
+San Felipe,departamento,De 60 a 65,60,64,,194,196
+San Felipe,departamento,De 65 a 70,65,69,,160,236
+San Felipe,departamento,De 70 a 75,70,74,,93,109
+San Felipe,departamento,De 75 a 80,75,79,,87,111
+San Felipe,departamento,De 80 a 85,80,84,,23,34
+San Felipe,departamento,De 85 a 90,85,89,,17,37
+San Felipe,departamento,De 90 a 95,90,94,,4,11
+San Felipe,departamento,De 95 a 100,95,99,,2,7
+San Felipe,departamento,De 100 adelante,100,,,3,10
+San Felipe,departamento,Total,,,,14459,16427
+Los Andes,departamento,Hasta 1 mes,0,0,0,52,49
+Los Andes,departamento,De 1 a 3 meses,0,0,1-2,76,71
+Los Andes,departamento,De 3 a 6 meses,0,0,3-5,97,108
+Los Andes,departamento,De 6 meses a 1 año,0,0,6-11,303,267
+Los Andes,departamento,De 1 a 2 años,1,1,,478,491
+Los Andes,departamento,De 2 a 5,2,4,,1095,1156
+Los Andes,departamento,De 5 a 10,5,9,,1843,1755
+Los Andes,departamento,De 10 a 15,10,14,,1543,1479
+Los Andes,departamento,De 15 a 20,15,19,,1235,1535
+Los Andes,departamento,De 20 a 25,20,24,,985,1124
+Los Andes,departamento,De 25 a 30,25,29,,1065,1360
+Los Andes,departamento,De 30 a 35,30,34,,736,817
+Los Andes,departamento,De 35 a 40,35,39,,857,1032
+Los Andes,departamento,De 40 a 45,40,44,,527,573
+Los Andes,departamento,De 45 a 50,45,49,,591,662
+Los Andes,departamento,De 50 a 55,50,54,,259,261
+Los Andes,departamento,De 55 a 60,55,59,,397,490
+Los Andes,departamento,De 60 a 65,60,64,,157,157
+Los Andes,departamento,De 65 a 70,65,69,,171,175
+Los Andes,departamento,De 70 a 75,70,74,,63,70
+Los Andes,departamento,De 75 a 80,75,79,,77,100
+Los Andes,departamento,De 80 a 85,80,84,,23,23
+Los Andes,departamento,De 85 a 90,85,89,,11,25
+Los Andes,departamento,De 90 a 95,90,94,,7,8
+Los Andes,departamento,De 95 a 100,95,99,,3,4
+Los Andes,departamento,De 100 adelante,100,,,4,6
+Los Andes,departamento,Total,,,,12655,13798
+Putaendo,departamento,Hasta 1 mes,0,0,0,25,24
+Putaendo,departamento,De 1 a 3 meses,0,0,1-2,41,57
+Putaendo,departamento,De 3 a 6 meses,0,0,3-5,51,52
+Putaendo,departamento,De 6 meses a 1 año,0,0,6-11,178,163
+Putaendo,departamento,De 1 a 2 años,1,1,,304,279
+Putaendo,departamento,De 2 a 5,2,4,,748,722
+Putaendo,departamento,De 5 a 10,5,9,,1226,1173
+Putaendo,departamento,De 10 a 15,10,14,,1127,1018
+Putaendo,departamento,De 15 a 20,15,19,,773,907
+Putaendo,departamento,De 20 a 25,20,24,,602,698
+Putaendo,departamento,De 25 a 30,25,29,,590,783
+Putaendo,departamento,De 30 a 35,30,34,,368,478
+Putaendo,departamento,De 35 a 40,35,39,,510,656
+Putaendo,departamento,De 40 a 45,40,44,,327,345
+Putaendo,departamento,De 45 a 50,45,49,,377,477
+Putaendo,departamento,De 50 a 55,50,54,,225,246
+Putaendo,departamento,De 55 a 60,55,59,,316,383
+Putaendo,departamento,De 60 a 65,60,64,,139,135
+Putaendo,departamento,De 65 a 70,65,69,,126,164
+Putaendo,departamento,De 70 a 75,70,74,,43,84
+Putaendo,departamento,De 75 a 80,75,79,,45,64
+Putaendo,departamento,De 80 a 85,80,84,,11,22
+Putaendo,departamento,De 85 a 90,85,89,,8,18
+Putaendo,departamento,De 90 a 95,90,94,,2,4
+Putaendo,departamento,De 95 a 100,95,99,,2,5
+Putaendo,departamento,De 100 adelante,100,,,-,1
+Putaendo,departamento,Total,,,,8164,8958
+La Ligua,departamento,Hasta 1 mes,0,0,0,13,25
+La Ligua,departamento,De 1 a 3 meses,0,0,1-2,31,51
+La Ligua,departamento,De 3 a 6 meses,0,0,3-5,56,57
+La Ligua,departamento,De 6 meses a 1 año,0,0,6-11,114,100
+La Ligua,departamento,De 1 a 2 años,1,1,,214,211
+La Ligua,departamento,De 2 a 5,2,4,,570,593
+La Ligua,departamento,De 5 a 10,5,9,,960,863
+La Ligua,departamento,De 10 a 15,10,14,,865,808
+La Ligua,departamento,De 15 a 20,15,19,,624,717
+La Ligua,departamento,De 20 a 25,20,24,,452,534
+La Ligua,departamento,De 25 a 30,25,29,,378,546
+La Ligua,departamento,De 30 a 35,30,34,,322,343
+La Ligua,departamento,De 35 a 40,35,39,,383,420
+La Ligua,departamento,De 40 a 45,40,44,,262,223
+La Ligua,departamento,De 45 a 50,45,49,,280,276
+La Ligua,departamento,De 50 a 55,50,54,,146,136
+La Ligua,departamento,De 55 a 60,55,59,,209,174
+La Ligua,departamento,De 60 a 65,60,64,,73,70
+La Ligua,departamento,De 65 a 70,65,69,,75,89
+La Ligua,departamento,De 70 a 75,70,74,,41,59
+La Ligua,departamento,De 75 a 80,75,79,,25,50
+La Ligua,departamento,De 80 a 85,80,84,,20,16
+La Ligua,departamento,De 85 a 90,85,89,,12,17
+La Ligua,departamento,De 90 a 95,90,94,,2,4
+La Ligua,departamento,De 95 a 100,95,99,,3,6
+La Ligua,departamento,De 100 adelante,100,,,-,1
+La Ligua,departamento,Total,,,,6130,6389
+Petorca,departamento,Hasta 1 mes,0,0,0,58,48
+Petorca,departamento,De 1 a 3 meses,0,0,1-2,101,96
+Petorca,departamento,De 3 a 6 meses,0,0,3-5,105,102
+Petorca,departamento,De 6 meses a 1 año,0,0,6-11,236,223
+Petorca,departamento,De 1 a 2 años,1,1,,558,482
+Petorca,departamento,De 2 a 5,2,4,,1343,1308
+Petorca,departamento,De 5 a 10,5,9,,1981,1892
+Petorca,departamento,De 10 a 15,10,14,,1812,1681
+Petorca,departamento,De 15 a 20,15,19,,1346,1400
+Petorca,departamento,De 20 a 25,20,24,,950,1164
+Petorca,departamento,De 25 a 30,25,29,,894,1249
+Petorca,departamento,De 30 a 35,30,34,,625,707
+Petorca,departamento,De 35 a 40,35,39,,687,806
+Petorca,departamento,De 40 a 45,40,44,,421,470
+Petorca,departamento,De 45 a 50,45,49,,436,551
+Petorca,departamento,De 50 a 55,50,54,,300,263
+Petorca,departamento,De 55 a 60,55,59,,381,414
+Petorca,departamento,De 60 a 65,60,64,,170,157
+Petorca,departamento,De 65 a 70,65,69,,154,155
+Petorca,departamento,De 70 a 75,70,74,,81,74
+Petorca,departamento,De 75 a 80,75,79,,64,95
+Petorca,departamento,De 80 a 85,80,84,,26,37
+Petorca,departamento,De 85 a 90,85,89,,15,35
+Petorca,departamento,De 90 a 95,90,94,,8,5
+Petorca,departamento,De 95 a 100,95,99,,2,9
+Petorca,departamento,De 100 adelante,100,,,-,8
+Petorca,departamento,Total,,,,12754,13431
+Aconcagua,provincia,Hasta 1 mes,0,0,0,218,218
+Aconcagua,provincia,De 1 a 3 meses,0,0,1-2,348,378
+Aconcagua,provincia,De 3 a 6 meses,0,0,3-5,424,435
+Aconcagua,provincia,De 6 meses a 1 año,0,0,6-11,1029,966
+Aconcagua,provincia,De 1 a 2 años,1,1,,2223,2119
+Aconcagua,provincia,De 2 a 5,2,4,,4971,5046
+Aconcagua,provincia,De 5 a 10,5,9,,8065,7713
+Aconcagua,provincia,De 10 a 15,10,14,,7254,6791
+Aconcagua,provincia,De 15 a 20,15,19,,5440,6406
+Aconcagua,provincia,De 20 a 25,20,24,,4297,4990
+Aconcagua,provincia,De 25 a 30,25,29,,4103,5366
+Aconcagua,provincia,De 30 a 35,30,34,,2830,3339
+Aconcagua,provincia,De 35 a 40,35,39,,3329,4212
+Aconcagua,provincia,De 40 a 45,40,44,,2133,2280
+Aconcagua,provincia,De 45 a 50,45,49,,2287,2784
+Aconcagua,provincia,De 50 a 55,50,54,,1248,1275
+Aconcagua,provincia,De 55 a 60,55,59,,1717,1982
+Aconcagua,provincia,De 60 a 65,60,64,,733,715
+Aconcagua,provincia,De 65 a 70,65,69,,686,819
+Aconcagua,provincia,De 70 a 75,70,74,,321,396
+Aconcagua,provincia,De 75 a 80,75,79,,298,420
+Aconcagua,provincia,De 80 a 85,80,84,,103,132
+Aconcagua,provincia,De 85 a 90,85,89,,63,132
+Aconcagua,provincia,De 90 a 95,90,94,,23,32
+Aconcagua,provincia,De 95 a 100,95,99,,12,31
+Aconcagua,provincia,De 100 adelante,100,,,7,26
+Aconcagua,provincia,Total,,,,54162,59003
+Valparaíso,departamento,Hasta 1 mes,0,0,0,295,331
+Valparaíso,departamento,De 1 a 3 meses,0,0,1-2,486,480
+Valparaíso,departamento,De 3 a 6 meses,0,0,3-5,779,743
+Valparaíso,departamento,De 6 meses a 1 año,0,0,6-11,1171,1249
+Valparaíso,departamento,De 1 a 2 años,1,1,,2445,2301
+Valparaíso,departamento,De 2 a 5,2,4,,4358,4216
+Valparaíso,departamento,De 5 a 10,5,9,,6274,5810
+Valparaíso,departamento,De 10 a 15,10,14,,6351,5933
+Valparaíso,departamento,De 15 a 20,15,19,,7812,7644
+Valparaíso,departamento,De 20 a 25,20,24,,8107,7680
+Valparaíso,departamento,De 25 a 30,25,29,,7893,8371
+Valparaíso,departamento,De 30 a 35,30,34,,5658,5445
+Valparaíso,departamento,De 35 a 40,35,39,,5174,5899
+Valparaíso,departamento,De 40 a 45,40,44,,3322,3412
+Valparaíso,departamento,De 45 a 50,45,49,,2932,3510
+Valparaíso,departamento,De 50 a 55,50,54,,1717,1945
+Valparaíso,departamento,De 55 a 60,55,59,,1512,2222
+Valparaíso,departamento,De 60 a 65,60,64,,763,956
+Valparaíso,departamento,De 65 a 70,65,69,,512,728
+Valparaíso,departamento,De 70 a 75,70,74,,304,345
+Valparaíso,departamento,De 75 a 80,75,79,,219,299
+Valparaíso,departamento,De 80 a 85,80,84,,123,145
+Valparaíso,departamento,De 85 a 90,85,89,,100,96
+Valparaíso,departamento,De 90 a 95,90,94,,57,63
+Valparaíso,departamento,De 95 a 100,95,99,,19,33
+Valparaíso,departamento,De 100 adelante,100,,,13,22
+Valparaíso,departamento,Total,,,,68396,69878
+Casablanca,departamento,Hasta 1 mes,0,0,0,25,26
+Casablanca,departamento,De 1 a 3 meses,0,0,1-2,39,41
+Casablanca,departamento,De 3 a 6 meses,0,0,3-5,52,35
+Casablanca,departamento,De 6 meses a 1 año,0,0,6-11,147,103
+Casablanca,departamento,De 1 a 2 años,1,1,,310,277
+Casablanca,departamento,De 2 a 5,2,4,,589,493
+Casablanca,departamento,De 5 a 10,5,9,,960,759
+Casablanca,departamento,De 10 a 15,10,14,,833,730
+Casablanca,departamento,De 15 a 20,15,19,,726,658
+Casablanca,departamento,De 20 a 25,20,24,,664,505
+Casablanca,departamento,De 25 a 30,25,29,,691,606
+Casablanca,departamento,De 30 a 35,30,34,,372,354
+Casablanca,departamento,De 35 a 40,35,39,,427,354
+Casablanca,departamento,De 40 a 45,40,44,,269,196
+Casablanca,departamento,De 45 a 50,45,49,,248,251
+Casablanca,departamento,De 50 a 55,50,54,,140,128
+Casablanca,departamento,De 55 a 60,55,59,,226,200
+Casablanca,departamento,De 60 a 65,60,64,,95,84
+Casablanca,departamento,De 65 a 70,65,69,,92,90
+Casablanca,departamento,De 70 a 75,70,74,,36,40
+Casablanca,departamento,De 75 a 80,75,79,,52,35
+Casablanca,departamento,De 80 a 85,80,84,,18,21
+Casablanca,departamento,De 85 a 90,85,89,,9,11
+Casablanca,departamento,De 90 a 95,90,94,,7,14
+Casablanca,departamento,De 95 a 100,95,99,,2,1
+Casablanca,departamento,De 100 adelante,100,,,3,1
+Casablanca,departamento,Total,,,,7032,6013
+Limache,departamento,Hasta 1 mes,0,0,0,37,35
+Limache,departamento,De 1 a 3 meses,0,0,1-2,72,88
+Limache,departamento,De 3 a 6 meses,0,0,3-5,87,86
+Limache,departamento,De 6 meses a 1 año,0,0,6-11,149,157
+Limache,departamento,De 1 a 2 años,1,1,,463,503
+Limache,departamento,De 2 a 5,2,4,,916,819
+Limache,departamento,De 5 a 10,5,9,,1386,1257
+Limache,departamento,De 10 a 15,10,14,,1109,1101
+Limache,departamento,De 15 a 20,15,19,,1068,1077
+Limache,departamento,De 20 a 25,20,24,,866,887
+Limache,departamento,De 25 a 30,25,29,,1060,936
+Limache,departamento,De 30 a 35,30,34,,693,629
+Limache,departamento,De 35 a 40,35,39,,745,680
+Limache,departamento,De 40 a 45,40,44,,488,459
+Limache,departamento,De 45 a 50,45,49,,477,464
+Limache,departamento,De 50 a 55,50,54,,272,256
+Limache,departamento,De 55 a 60,55,59,,298,291
+Limache,departamento,De 60 a 65,60,64,,169,208
+Limache,departamento,De 65 a 70,65,69,,137,183
+Limache,departamento,De 70 a 75,70,74,,80,78
+Limache,departamento,De 75 a 80,75,79,,58,70
+Limache,departamento,De 80 a 85,80,84,,23,37
+Limache,departamento,De 85 a 90,85,89,,16,35
+Limache,departamento,De 90 a 95,90,94,,4,14
+Limache,departamento,De 95 a 100,95,99,,4,6
+Limache,departamento,De 100 adelante,100,,,-,2
+Limache,departamento,Total,,,,10677,10358
+Quillota,departamento,Hasta 1 mes,0,0,0,121,103
+Quillota,departamento,De 1 a 3 meses,0,0,1-2,204,194
+Quillota,departamento,De 3 a 6 meses,0,0,3-5,285,270
+Quillota,departamento,De 6 meses a 1 año,0,0,6-11,465,419
+Quillota,departamento,De 1 a 2 años,1,1,,1002,993
+Quillota,departamento,De 2 a 5,2,4,,1921,2044
+Quillota,departamento,De 5 a 10,5,9,,2874,2957
+Quillota,departamento,De 10 a 15,10,14,,2557,2460
+Quillota,departamento,De 15 a 20,15,19,,2400,2589
+Quillota,departamento,De 20 a 25,20,24,,2260,2426
+Quillota,departamento,De 25 a 30,25,29,,2384,2560
+Quillota,departamento,De 30 a 35,30,34,,1723,1638
+Quillota,departamento,De 35 a 40,35,39,,1537,1701
+Quillota,departamento,De 40 a 45,40,44,,1061,1024
+Quillota,departamento,De 45 a 50,45,49,,941,961
+Quillota,departamento,De 50 a 55,50,54,,517,570
+Quillota,departamento,De 55 a 60,55,59,,585,573
+Quillota,departamento,De 60 a 65,60,64,,361,370
+Quillota,departamento,De 65 a 70,65,69,,241,275
+Quillota,departamento,De 70 a 75,70,74,,150,155
+Quillota,departamento,De 75 a 80,75,79,,123,117
+Quillota,departamento,De 80 a 85,80,84,,69,56
+Quillota,departamento,De 85 a 90,85,89,,49,42
+Quillota,departamento,De 90 a 95,90,94,,21,23
+Quillota,departamento,De 95 a 100,95,99,,10,10
+Quillota,departamento,De 100 adelante,100,,,6,5
+Quillota,departamento,Total,,,,23867,24535
+Valparaíso,provincia,Hasta 1 mes,0,0,0,478,495
+Valparaíso,provincia,De 1 a 3 meses,0,0,1-2,801,803
+Valparaíso,provincia,De 3 a 6 meses,0,0,3-5,1203,1134
+Valparaíso,provincia,De 6 meses a 1 año,0,0,6-11,1932,1928
+Valparaíso,provincia,De 1 a 2 años,1,1,,4220,4074
+Valparaíso,provincia,De 2 a 5,2,4,,7784,7572
+Valparaíso,provincia,De 5 a 10,5,9,,11494,10783
+Valparaíso,provincia,De 10 a 15,10,14,,10850,10224
+Valparaíso,provincia,De 15 a 20,15,19,,12006,11968
+Valparaíso,provincia,De 20 a 25,20,24,,11897,11498
+Valparaíso,provincia,De 25 a 30,25,29,,12028,12473
+Valparaíso,provincia,De 30 a 35,30,34,,8446,8066
+Valparaíso,provincia,De 35 a 40,35,39,,7883,8634
+Valparaíso,provincia,De 40 a 45,40,44,,5140,5091
+Valparaíso,provincia,De 45 a 50,45,49,,4598,5186
+Valparaíso,provincia,De 50 a 55,50,54,,2646,2899
+Valparaíso,provincia,De 55 a 60,55,59,,2621,3286
+Valparaíso,provincia,De 60 a 65,60,64,,1388,1618
+Valparaíso,provincia,De 65 a 70,65,69,,982,1276
+Valparaíso,provincia,De 70 a 75,70,74,,570,618
+Valparaíso,provincia,De 75 a 80,75,79,,452,521
+Valparaíso,provincia,De 80 a 85,80,84,,233,259
+Valparaíso,provincia,De 85 a 90,85,89,,174,184
+Valparaíso,provincia,De 90 a 95,90,94,,89,114
+Valparaíso,provincia,De 95 a 100,95,99,,35,50
+Valparaíso,provincia,De 100 adelante,100,,,22,30
+Valparaíso,provincia,Total,,,,109972,110784
+Santiago,departamento,Hasta 1 mes,0,0,0,789,939
+Santiago,departamento,De 1 a 3 meses,0,0,1-2,1219,1347
+Santiago,departamento,De 3 a 6 meses,0,0,3-5,1518,1852
+Santiago,departamento,De 6 meses a 1 año,0,0,6-11,2500,3067
+Santiago,departamento,De 1 a 2 años,1,1,,5685,5747
+Santiago,departamento,De 2 a 5,2,4,,10013,10573
+Santiago,departamento,De 5 a 10,5,9,,15471,15867
+Santiago,departamento,De 10 a 15,10,14,,14409,16019
+Santiago,departamento,De 15 a 20,15,19,,15681,18434
+Santiago,departamento,De 20 a 25,20,24,,15483,18462
+Santiago,departamento,De 25 a 30,25,29,,15552,19073
+Santiago,departamento,De 30 a 35,30,34,,10618,12796
+Santiago,departamento,De 35 a 40,35,39,,10298,12607
+Santiago,departamento,De 40 a 45,40,44,,5935,7769
+Santiago,departamento,De 45 a 50,45,49,,6052,7888
+Santiago,departamento,De 50 a 55,50,54,,3130,3954
+Santiago,departamento,De 55 a 60,55,59,,3863,5044
+Santiago,departamento,De 60 a 65,60,64,,1968,2544
+Santiago,departamento,De 65 a 70,65,69,,1363,1909
+Santiago,departamento,De 70 a 75,70,74,,792,980
+Santiago,departamento,De 75 a 80,75,79,,566,778
+Santiago,departamento,De 80 a 85,80,84,,325,445
+Santiago,departamento,De 85 a 90,85,89,,241,342
+Santiago,departamento,De 90 a 95,90,94,,138,204
+Santiago,departamento,De 95 a 100,95,99,,47,100
+Santiago,departamento,De 100 adelante,100,,,22,49
+Santiago,departamento,Total,,,,143678,168789
+La Victoria,departamento,Hasta 1 mes,0,0,0,89,100
+La Victoria,departamento,De 1 a 3 meses,0,0,1-2,150,160
+La Victoria,departamento,De 3 a 6 meses,0,0,3-5,165,219
+La Victoria,departamento,De 6 meses a 1 año,0,0,6-11,114,470
+La Victoria,departamento,De 1 a 2 años,1,1,,1160,604
+La Victoria,departamento,De 2 a 5,2,4,,2024,2038
+La Victoria,departamento,De 5 a 10,5,9,,3129,2806
+La Victoria,departamento,De 10 a 15,10,14,,2709,2286
+La Victoria,departamento,De 15 a 20,15,19,,2489,2241
+La Victoria,departamento,De 20 a 25,20,24,,2458,1916
+La Victoria,departamento,De 25 a 30,25,29,,2265,1863
+La Victoria,departamento,De 30 a 35,30,34,,1518,1329
+La Victoria,departamento,De 35 a 40,35,39,,1747,1566
+La Victoria,departamento,De 40 a 45,40,44,,957,809
+La Victoria,departamento,De 45 a 50,45,49,,1093,940
+La Victoria,departamento,De 50 a 55,50,54,,546,375
+La Victoria,departamento,De 55 a 60,55,59,,806,617
+La Victoria,departamento,De 60 a 65,60,64,,257,242
+La Victoria,departamento,De 65 a 70,65,69,,274,223
+La Victoria,departamento,De 70 a 75,70,74,,93,82
+La Victoria,departamento,De 75 a 80,75,79,,117,117
+La Victoria,departamento,De 80 a 85,80,84,,18,26
+La Victoria,departamento,De 85 a 90,85,89,,30,32
+La Victoria,departamento,De 90 a 95,90,94,,5,8
+La Victoria,departamento,De 95 a 100,95,99,,10,13
+La Victoria,departamento,De 100 adelante,100,,,4,4
+La Victoria,departamento,Total,,,,24227,21086
+Melipilla,departamento,Hasta 1 mes,0,0,0,177,185
+Melipilla,departamento,De 1 a 3 meses,0,0,1-2,166,181
+Melipilla,departamento,De 3 a 6 meses,0,0,3-5,196,240
+Melipilla,departamento,De 6 meses a 1 año,0,0,6-11,499,467
+Melipilla,departamento,De 1 a 2 años,1,1,,754,720
+Melipilla,departamento,De 2 a 5,2,4,,2030,1975
+Melipilla,departamento,De 5 a 10,5,9,,4743,4737
+Melipilla,departamento,De 10 a 15,10,14,,3835,3827
+Melipilla,departamento,De 15 a 20,15,19,,2607,2724
+Melipilla,departamento,De 20 a 25,20,24,,2043,2019
+Melipilla,departamento,De 25 a 30,25,29,,2125,2113
+Melipilla,departamento,De 30 a 35,30,34,,1351,1462
+Melipilla,departamento,De 35 a 40,35,39,,1682,1644
+Melipilla,departamento,De 40 a 45,40,44,,1179,1225
+Melipilla,departamento,De 45 a 50,45,49,,1250,1209
+Melipilla,departamento,De 50 a 55,50,54,,892,864
+Melipilla,departamento,De 55 a 60,55,59,,1228,1128
+Melipilla,departamento,De 60 a 65,60,64,,682,643
+Melipilla,departamento,De 65 a 70,65,69,,642,631
+Melipilla,departamento,De 70 a 75,70,74,,401,407
+Melipilla,departamento,De 75 a 80,75,79,,250,257
+Melipilla,departamento,De 80 a 85,80,84,,116,111
+Melipilla,departamento,De 85 a 90,85,89,,61,60
+Melipilla,departamento,De 90 a 95,90,94,,28,37
+Melipilla,departamento,De 95 a 100,95,99,,21,20
+Melipilla,departamento,De 100 adelante,100,,,3,9
+Melipilla,departamento,Total,,,,28961,28895
+Santiago,provincia,Hasta 1 mes,0,0,0,1055,1224
+Santiago,provincia,De 1 a 3 meses,0,0,1-2,1535,1688
+Santiago,provincia,De 3 a 6 meses,0,0,3-5,1879,2311
+Santiago,provincia,De 6 meses a 1 año,0,0,6-11,3113,4004
+Santiago,provincia,De 1 a 2 años,1,1,,7599,7071
+Santiago,provincia,De 2 a 5,2,4,,14067,14586
+Santiago,provincia,De 5 a 10,5,9,,23343,23410
+Santiago,provincia,De 10 a 15,10,14,,20953,22132
+Santiago,provincia,De 15 a 20,15,19,,20777,23399
+Santiago,provincia,De 20 a 25,20,24,,19984,22397
+Santiago,provincia,De 25 a 30,25,29,,19942,23049
+Santiago,provincia,De 30 a 35,30,34,,13487,15587
+Santiago,provincia,De 35 a 40,35,39,,13727,15817
+Santiago,provincia,De 40 a 45,40,44,,8071,9803
+Santiago,provincia,De 45 a 50,45,49,,8395,10037
+Santiago,provincia,De 50 a 55,50,54,,4568,5193
+Santiago,provincia,De 55 a 60,55,59,,5897,6789
+Santiago,provincia,De 60 a 65,60,64,,2907,3429
+Santiago,provincia,De 65 a 70,65,69,,2279,2763
+Santiago,provincia,De 70 a 75,70,74,,1286,1469
+Santiago,provincia,De 75 a 80,75,79,,933,1152
+Santiago,provincia,De 80 a 85,80,84,,459,582
+Santiago,provincia,De 85 a 90,85,89,,332,434
+Santiago,provincia,De 90 a 95,90,94,,171,249
+Santiago,provincia,De 95 a 100,95,99,,78,133
+Santiago,provincia,De 100 adelante,100,,,29,62
+Santiago,provincia,Total,,,,196866,218770
+Rancagua,departamento,Hasta 1 mes,0,0,0,118,114
+Rancagua,departamento,De 1 a 3 meses,0,0,1-2,117,122
+Rancagua,departamento,De 3 a 6 meses,0,0,3-5,135,133
+Rancagua,departamento,De 6 meses a 1 año,0,0,6-11,339,353
+Rancagua,departamento,De 1 a 2 años,1,1,,557,506
+Rancagua,departamento,De 2 a 5,2,4,,1321,1292
+Rancagua,departamento,De 5 a 10,5,9,,2711,2824
+Rancagua,departamento,De 10 a 15,10,14,,2129,2298
+Rancagua,departamento,De 15 a 20,15,19,,1733,1756
+Rancagua,departamento,De 20 a 25,20,24,,1416,1350
+Rancagua,departamento,De 25 a 30,25,29,,1294,1356
+Rancagua,departamento,De 30 a 35,30,34,,930,959
+Rancagua,departamento,De 35 a 40,35,39,,1060,1168
+Rancagua,departamento,De 40 a 45,40,44,,770,752
+Rancagua,departamento,De 45 a 50,45,49,,827,808
+Rancagua,departamento,De 50 a 55,50,54,,568,615
+Rancagua,departamento,De 55 a 60,55,59,,704,751
+Rancagua,departamento,De 60 a 65,60,64,,433,450
+Rancagua,departamento,De 65 a 70,65,69,,384,409
+Rancagua,departamento,De 70 a 75,70,74,,261,282
+Rancagua,departamento,De 75 a 80,75,79,,167,186
+Rancagua,departamento,De 80 a 85,80,84,,88,85
+Rancagua,departamento,De 85 a 90,85,89,,48,55
+Rancagua,departamento,De 90 a 95,90,94,,22,24
+Rancagua,departamento,De 95 a 100,95,99,,18,16
+Rancagua,departamento,De 100 adelante,100,,,3,7
+Rancagua,departamento,Total,,,,18153,18671
+Cachapoal,departamento,Hasta 1 mes,0,0,0,85,88
+Cachapoal,departamento,De 1 a 3 meses,0,0,1-2,70,70
+Cachapoal,departamento,De 3 a 6 meses,0,0,3-5,68,91
+Cachapoal,departamento,De 6 meses a 1 año,0,0,6-11,168,180
+Cachapoal,departamento,De 1 a 2 años,1,1,,327,300
+Cachapoal,departamento,De 2 a 5,2,4,,818,693
+Cachapoal,departamento,De 5 a 10,5,9,,1504,1376
+Cachapoal,departamento,De 10 a 15,10,14,,1227,1175
+Cachapoal,departamento,De 15 a 20,15,19,,987,1075
+Cachapoal,departamento,De 20 a 25,20,24,,807,896
+Cachapoal,departamento,De 25 a 30,25,29,,659,765
+Cachapoal,departamento,De 30 a 35,30,34,,542,577
+Cachapoal,departamento,De 35 a 40,35,39,,543,628
+Cachapoal,departamento,De 40 a 45,40,44,,383,446
+Cachapoal,departamento,De 45 a 50,45,49,,390,451
+Cachapoal,departamento,De 50 a 55,50,54,,311,337
+Cachapoal,departamento,De 55 a 60,55,59,,356,377
+Cachapoal,departamento,De 60 a 65,60,64,,240,248
+Cachapoal,departamento,De 65 a 70,65,69,,225,238
+Cachapoal,departamento,De 70 a 75,70,74,,163,185
+Cachapoal,departamento,De 75 a 80,75,79,,134,132
+Cachapoal,departamento,De 80 a 85,80,84,,78,74
+Cachapoal,departamento,De 85 a 90,85,89,,42,49
+Cachapoal,departamento,De 90 a 95,90,94,,23,26
+Cachapoal,departamento,De 95 a 100,95,99,,17,9
+Cachapoal,departamento,De 100 adelante,100,,,6,4
+Cachapoal,departamento,Total,,,,10173,10491
+Maipo,departamento,Hasta 1 mes,0,0,0,58,70
+Maipo,departamento,De 1 a 3 meses,0,0,1-2,116,103
+Maipo,departamento,De 3 a 6 meses,0,0,3-5,103,112
+Maipo,departamento,De 6 meses a 1 año,0,0,6-11,100,361
+Maipo,departamento,De 1 a 2 años,1,1,,773,470
+Maipo,departamento,De 2 a 5,2,4,,1285,1264
+Maipo,departamento,De 5 a 10,5,9,,1965,1835
+Maipo,departamento,De 10 a 15,10,14,,1663,1477
+Maipo,departamento,De 15 a 20,15,19,,1554,1422
+Maipo,departamento,De 20 a 25,20,24,,1304,1119
+Maipo,departamento,De 25 a 30,25,29,,1182,1145
+Maipo,departamento,De 30 a 35,30,34,,863,790
+Maipo,departamento,De 35 a 40,35,39,,1022,927
+Maipo,departamento,De 40 a 45,40,44,,551,457
+Maipo,departamento,De 45 a 50,45,49,,683,544
+Maipo,departamento,De 50 a 55,50,54,,274,243
+Maipo,departamento,De 55 a 60,55,59,,503,390
+Maipo,departamento,De 60 a 65,60,64,,162,140
+Maipo,departamento,De 65 a 70,65,69,,192,148
+Maipo,departamento,De 70 a 75,70,74,,70,61
+Maipo,departamento,De 75 a 80,75,79,,72,94
+Maipo,departamento,De 80 a 85,80,84,,20,21
+Maipo,departamento,De 85 a 90,85,89,,26,26
+Maipo,departamento,De 90 a 95,90,94,,6,12
+Maipo,departamento,De 95 a 100,95,99,,3,5
+Maipo,departamento,De 100 adelante,100,,,2,1
+Maipo,departamento,Total,,,,14552,13237
+O'Higgins,provincia,Hasta 1 mes,0,0,0,261,272
+O'Higgins,provincia,De 1 a 3 meses,0,0,1-2,303,295
+O'Higgins,provincia,De 3 a 6 meses,0,0,3-5,306,336
+O'Higgins,provincia,De 6 meses a 1 año,0,0,6-11,607,894
+O'Higgins,provincia,De 1 a 2 años,1,1,,1657,1276
+O'Higgins,provincia,De 2 a 5,2,4,,3424,3249
+O'Higgins,provincia,De 5 a 10,5,9,,6180,6035
+O'Higgins,provincia,De 10 a 15,10,14,,5019,4950
+O'Higgins,provincia,De 15 a 20,15,19,,4274,4253
+O'Higgins,provincia,De 20 a 25,20,24,,3527,3365
+O'Higgins,provincia,De 25 a 30,25,29,,3135,3266
+O'Higgins,provincia,De 30 a 35,30,34,,2335,2326
+O'Higgins,provincia,De 35 a 40,35,39,,2625,2723
+O'Higgins,provincia,De 40 a 45,40,44,,1704,1655
+O'Higgins,provincia,De 45 a 50,45,49,,1900,1803
+O'Higgins,provincia,De 50 a 55,50,54,,1153,1195
+O'Higgins,provincia,De 55 a 60,55,59,,1563,1518
+O'Higgins,provincia,De 60 a 65,60,64,,835,838
+O'Higgins,provincia,De 65 a 70,65,69,,801,795
+O'Higgins,provincia,De 70 a 75,70,74,,494,528
+O'Higgins,provincia,De 75 a 80,75,79,,373,412
+O'Higgins,provincia,De 80 a 85,80,84,,186,180
+O'Higgins,provincia,De 85 a 90,85,89,,116,130
+O'Higgins,provincia,De 90 a 95,90,94,,51,62
+O'Higgins,provincia,De 95 a 100,95,99,,38,30
+O'Higgins,provincia,De 100 adelante,100,,,11,12
+O'Higgins,provincia,Total,,,,42878,42399
+San Fernando,departamento,Hasta 1 mes,0,0,0,4005,3739
+San Fernando,departamento,De 1 a 3 meses,0,0,1-2,6105,5659
+San Fernando,departamento,De 3 a 6 meses,0,0,3-5,5009,4568
+San Fernando,departamento,De 6 meses a 1 año,0,0,6-11,3776,4365
+San Fernando,departamento,De 1 a 2 años,1,1,,3101,3604
+San Fernando,departamento,De 2 a 5,2,4,,4005,3739
+San Fernando,departamento,De 5 a 10,5,9,,6105,5659
+San Fernando,departamento,De 10 a 15,10,14,,5009,4568
+San Fernando,departamento,De 15 a 20,15,19,,3776,4365
+San Fernando,departamento,De 20 a 25,20,24,,3101,3604
+San Fernando,departamento,De 25 a 30,25,29,,3165,3956
+San Fernando,departamento,De 30 a 35,30,34,,2021,2058
+San Fernando,departamento,De 35 a 40,35,39,,2479,2826
+San Fernando,departamento,De 40 a 45,40,44,,1385,1381
+San Fernando,departamento,De 45 a 50,45,49,,1687,1877
+San Fernando,departamento,De 50 a 55,50,54,,800,744
+San Fernando,departamento,De 55 a 60,55,59,,1380,1348
+San Fernando,departamento,De 60 a 65,60,64,,510,488
+San Fernando,departamento,De 65 a 70,65,69,,597,605
+San Fernando,departamento,De 70 a 75,70,74,,199,177
+San Fernando,departamento,De 75 a 80,75,79,,269,312
+San Fernando,departamento,De 80 a 85,80,84,,55,113
+San Fernando,departamento,De 85 a 90,85,89,,76,97
+San Fernando,departamento,De 90 a 95,90,94,,14,49
+San Fernando,departamento,De 95 a 100,95,99,,19,35
+San Fernando,departamento,De 100 adelante,100,,,4,10
+San Fernando,departamento,Total,,,,39880,41247
+Caupolicán,departamento,Hasta 1 mes,0,0,0,3600,3504
+Caupolicán,departamento,De 1 a 3 meses,0,0,1-2,5695,4994
+Caupolicán,departamento,De 3 a 6 meses,0,0,3-5,4726,4343
+Caupolicán,departamento,De 6 meses a 1 año,0,0,6-11,3651,4164
+Caupolicán,departamento,De 1 a 2 años,1,1,,3119,3415
+Caupolicán,departamento,De 2 a 5,2,4,,3600,3504
+Caupolicán,departamento,De 5 a 10,5,9,,5695,4994
+Caupolicán,departamento,De 10 a 15,10,14,,4726,4343
+Caupolicán,departamento,De 15 a 20,15,19,,3651,4164
+Caupolicán,departamento,De 20 a 25,20,24,,3119,3415
+Caupolicán,departamento,De 25 a 30,25,29,,3127,3524
+Caupolicán,departamento,De 30 a 35,30,34,,1865,1967
+Caupolicán,departamento,De 35 a 40,35,39,,2240,2574
+Caupolicán,departamento,De 40 a 45,40,44,,1280,1222
+Caupolicán,departamento,De 45 a 50,45,49,,1694,1835
+Caupolicán,departamento,De 50 a 55,50,54,,773,736
+Caupolicán,departamento,De 55 a 60,55,59,,1395,1291
+Caupolicán,departamento,De 60 a 65,60,64,,497,447
+Caupolicán,departamento,De 65 a 70,65,69,,564,622
+Caupolicán,departamento,De 70 a 75,70,74,,166,177
+Caupolicán,departamento,De 75 a 80,75,79,,261,313
+Caupolicán,departamento,De 80 a 85,80,84,,63,101
+Caupolicán,departamento,De 85 a 90,85,89,,80,90
+Caupolicán,departamento,De 90 a 95,90,94,,26,34
+Caupolicán,departamento,De 95 a 100,95,99,,18,16
+Caupolicán,departamento,De 100 adelante,100,,,13,34
+Caupolicán,departamento,Total,,,,37971,38468
+Colchagua,provincia,Hasta 1 mes,0,0,0,7605,7243
+Colchagua,provincia,De 1 a 3 meses,0,0,1-2,11800,10653
+Colchagua,provincia,De 3 a 6 meses,0,0,3-5,9735,8911
+Colchagua,provincia,De 6 meses a 1 año,0,0,6-11,7427,8529
+Colchagua,provincia,De 1 a 2 años,1,1,,6220,7019
+Colchagua,provincia,De 2 a 5,2,4,,7605,7243
+Colchagua,provincia,De 5 a 10,5,9,,11800,10653
+Colchagua,provincia,De 10 a 15,10,14,,9735,8911
+Colchagua,provincia,De 15 a 20,15,19,,7427,8529
+Colchagua,provincia,De 20 a 25,20,24,,6220,7019
+Colchagua,provincia,De 25 a 30,25,29,,6292,7480
+Colchagua,provincia,De 30 a 35,30,34,,3886,4025
+Colchagua,provincia,De 35 a 40,35,39,,4719,5400
+Colchagua,provincia,De 40 a 45,40,44,,2665,2603
+Colchagua,provincia,De 45 a 50,45,49,,3381,3712
+Colchagua,provincia,De 50 a 55,50,54,,1583,1480
+Colchagua,provincia,De 55 a 60,55,59,,2775,2639
+Colchagua,provincia,De 60 a 65,60,64,,1007,935
+Colchagua,provincia,De 65 a 70,65,69,,1161,1227
+Colchagua,provincia,De 70 a 75,70,74,,355,354
+Colchagua,provincia,De 75 a 80,75,79,,530,625
+Colchagua,provincia,De 80 a 85,80,84,,118,214
+Colchagua,provincia,De 85 a 90,85,89,,156,187
+Colchagua,provincia,De 90 a 95,90,94,,40,83
+Colchagua,provincia,De 95 a 100,95,99,,37,51
+Colchagua,provincia,De 100 adelante,100,,,17,44
+Colchagua,provincia,Total,,,,77851,79715
+Curicó,departamento,Hasta 1 mes,0,0,0,161,168
+Curicó,departamento,De 1 a 3 meses,0,0,1-2,261,207
+Curicó,departamento,De 3 a 6 meses,0,0,3-5,228,261
+Curicó,departamento,De 6 meses a 1 año,0,0,6-11,198,614
+Curicó,departamento,De 1 a 2 años,1,1,,1830,1164
+Curicó,departamento,De 2 a 5,2,4,,3051,2775
+Curicó,departamento,De 5 a 10,5,9,,4688,4183
+Curicó,departamento,De 10 a 15,10,14,,3844,3714
+Curicó,departamento,De 15 a 20,15,19,,3161,3776
+Curicó,departamento,De 20 a 25,20,24,,2859,3229
+Curicó,departamento,De 25 a 30,25,29,,2755,3155
+Curicó,departamento,De 30 a 35,30,34,,1641,1852
+Curicó,departamento,De 35 a 40,35,39,,2045,2280
+Curicó,departamento,De 40 a 45,40,44,,1098,1143
+Curicó,departamento,De 45 a 50,45,49,,1148,1560
+Curicó,departamento,De 50 a 55,50,54,,600,648
+Curicó,departamento,De 55 a 60,55,59,,1238,1124
+Curicó,departamento,De 60 a 65,60,64,,393,294
+Curicó,departamento,De 65 a 70,65,69,,480,406
+Curicó,departamento,De 70 a 75,70,74,,126,160
+Curicó,departamento,De 75 a 80,75,79,,219,272
+Curicó,departamento,De 80 a 85,80,84,,45,52
+Curicó,departamento,De 85 a 90,85,89,,43,60
+Curicó,departamento,De 90 a 95,90,94,,15,20
+Curicó,departamento,De 95 a 100,95,99,,10,15
+Curicó,departamento,De 100 adelante,100,,,6,7
+Curicó,departamento,Total,,,,32451,33141
+Vichuquén,departamento,Hasta 1 mes,0,0,0,88,117
+Vichuquén,departamento,De 1 a 3 meses,0,0,1-2,129,119
+Vichuquén,departamento,De 3 a 6 meses,0,0,3-5,153,189
+Vichuquén,departamento,De 6 meses a 1 año,0,0,6-11,500,516
+Vichuquén,departamento,De 1 a 2 años,1,1,,614,576
+Vichuquén,departamento,De 2 a 5,2,4,,1076,1664
+Vichuquén,departamento,De 5 a 10,5,9,,3067,2802
+Vichuquén,departamento,De 10 a 15,10,14,,2439,2219
+Vichuquén,departamento,De 15 a 20,15,19,,1658,2222
+Vichuquén,departamento,De 20 a 25,20,24,,1251,1859
+Vichuquén,departamento,De 25 a 30,25,29,,1067,1691
+Vichuquén,departamento,De 30 a 35,30,34,,801,916
+Vichuquén,departamento,De 35 a 40,35,39,,972,1341
+Vichuquén,departamento,De 40 a 45,40,44,,497,649
+Vichuquén,departamento,De 45 a 50,45,49,,768,930
+Vichuquén,departamento,De 50 a 55,50,54,,361,358
+Vichuquén,departamento,De 55 a 60,55,59,,642,711
+Vichuquén,departamento,De 60 a 65,60,64,,257,249
+Vichuquén,departamento,De 65 a 70,65,69,,320,301
+Vichuquén,departamento,De 70 a 75,70,74,,112,120
+Vichuquén,departamento,De 75 a 80,75,79,,163,182
+Vichuquén,departamento,De 80 a 85,80,84,,35,65
+Vichuquén,departamento,De 85 a 90,85,89,,36,43
+Vichuquén,departamento,De 90 a 95,90,94,,11,43
+Vichuquén,departamento,De 95 a 100,95,99,,8,28
+Vichuquén,departamento,De 100 adelante,100,,,6,9
+Vichuquén,departamento,Total,,,,17731,19919
+Curicó,provincia,Hasta 1 mes,0,0,0,249,285
+Curicó,provincia,De 1 a 3 meses,0,0,1-2,390,326
+Curicó,provincia,De 3 a 6 meses,0,0,3-5,381,450
+Curicó,provincia,De 6 meses a 1 año,0,0,6-11,698,1130
+Curicó,provincia,De 1 a 2 años,1,1,,2444,1740
+Curicó,provincia,De 2 a 5,2,4,,4827,4439
+Curicó,provincia,De 5 a 10,5,9,,7755,6985
+Curicó,provincia,De 10 a 15,10,14,,6283,5933
+Curicó,provincia,De 15 a 20,15,19,,4819,5998
+Curicó,provincia,De 20 a 25,20,24,,4110,5088
+Curicó,provincia,De 25 a 30,25,29,,3822,4846
+Curicó,provincia,De 30 a 35,30,34,,2442,2768
+Curicó,provincia,De 35 a 40,35,39,,3017,3621
+Curicó,provincia,De 40 a 45,40,44,,1595,1792
+Curicó,provincia,De 45 a 50,45,49,,2216,2490
+Curicó,provincia,De 50 a 55,50,54,,961,1906
+Curicó,provincia,De 55 a 60,55,59,,1880,1835
+Curicó,provincia,De 60 a 65,60,64,,650,543
+Curicó,provincia,De 65 a 70,65,69,,800,707
+Curicó,provincia,De 70 a 75,70,74,,238,280
+Curicó,provincia,De 75 a 80,75,79,,382,454
+Curicó,provincia,De 80 a 85,80,84,,80,117
+Curicó,provincia,De 85 a 90,85,89,,79,103
+Curicó,provincia,De 90 a 95,90,94,,26,63
+Curicó,provincia,De 95 a 100,95,99,,18,43
+Curicó,provincia,De 100 adelante,100,,,12,16
+Curicó,provincia,Total,,,,50182,53060
+Talca,departamento,Hasta 1 mes,0,0,0,179,186
+Talca,departamento,De 1 a 3 meses,0,0,1-2,273,251
+Talca,departamento,De 3 a 6 meses,0,0,3-5,296,292
+Talca,departamento,De 6 meses a 1 año,0,0,6-11,329,348
+Talca,departamento,De 1 a 2 años,1,1,,1852,1857
+Talca,departamento,De 2 a 5,2,4,,3118,3307
+Talca,departamento,De 5 a 10,5,9,,5172,4930
+Talca,departamento,De 10 a 15,10,14,,4449,4347
+Talca,departamento,De 15 a 20,15,19,,3886,4641
+Talca,departamento,De 20 a 25,20,24,,3514,3872
+Talca,departamento,De 25 a 30,25,29,,3437,4293
+Talca,departamento,De 30 a 35,30,34,,2249,2379
+Talca,departamento,De 35 a 40,35,39,,2540,3013
+Talca,departamento,De 40 a 45,40,44,,1480,1455
+Talca,departamento,De 45 a 50,45,49,,1633,1845
+Talca,departamento,De 50 a 55,50,54,,682,735
+Talca,departamento,De 55 a 60,55,59,,1280,1297
+Talca,departamento,De 60 a 65,60,64,,405,422
+Talca,departamento,De 65 a 70,65,69,,478,512
+Talca,departamento,De 70 a 75,70,74,,164,169
+Talca,departamento,De 75 a 80,75,79,,217,257
+Talca,departamento,De 80 a 85,80,84,,50,76
+Talca,departamento,De 85 a 90,85,89,,58,80
+Talca,departamento,De 90 a 95,90,94,,15,36
+Talca,departamento,De 95 a 100,95,99,,3,14
+Talca,departamento,De 100 adelante,100,,,28,28
+Talca,departamento,Total,,,,37787,40642
+Curepto,departamento,Hasta 1 mes,0,0,0,53,55
+Curepto,departamento,De 1 a 3 meses,0,0,1-2,69,78
+Curepto,departamento,De 3 a 6 meses,0,0,3-5,76,85
+Curepto,departamento,De 6 meses a 1 año,0,0,6-11,62,86
+Curepto,departamento,De 1 a 2 años,1,1,,722,716
+Curepto,departamento,De 2 a 5,2,4,,1348,1231
+Curepto,departamento,De 5 a 10,5,9,,2312,2026
+Curepto,departamento,De 10 a 15,10,14,,1841,1635
+Curepto,departamento,De 15 a 20,15,19,,1434,1695
+Curepto,departamento,De 20 a 25,20,24,,1068,1261
+Curepto,departamento,De 25 a 30,25,29,,1003,1393
+Curepto,departamento,De 30 a 35,30,34,,606,680
+Curepto,departamento,De 35 a 40,35,39,,842,992
+Curepto,departamento,De 40 a 45,40,44,,408,367
+Curepto,departamento,De 45 a 50,45,49,,651,681
+Curepto,departamento,De 50 a 55,50,54,,242,237
+Curepto,departamento,De 55 a 60,55,59,,533,543
+Curepto,departamento,De 60 a 65,60,64,,172,137
+Curepto,departamento,De 65 a 70,65,69,,230,229
+Curepto,departamento,De 70 a 75,70,74,,53,58
+Curepto,departamento,De 75 a 80,75,79,,117,143
+Curepto,departamento,De 80 a 85,80,84,,26,25
+Curepto,departamento,De 85 a 90,85,89,,40,34
+Curepto,departamento,De 90 a 95,90,94,,5,9
+Curepto,departamento,De 95 a 100,95,99,,3,1
+Curepto,departamento,De 100 adelante,100,,,10,12
+Curepto,departamento,Total,,,,13936,14409
+Lontué,departamento,Hasta 1 mes,0,0,0,64,48
+Lontué,departamento,De 1 a 3 meses,0,0,1-2,78,73
+Lontué,departamento,De 3 a 6 meses,0,0,3-5,78,79
+Lontué,departamento,De 6 meses a 1 año,0,0,6-11,77,72
+Lontué,departamento,De 1 a 2 años,1,1,,574,547
+Lontué,departamento,De 2 a 5,2,4,,1038,984
+Lontué,departamento,De 5 a 10,5,9,,1651,1477
+Lontué,departamento,De 10 a 15,10,14,,1361,1291
+Lontué,departamento,De 15 a 20,15,19,,1099,1205
+Lontué,departamento,De 20 a 25,20,24,,994,1052
+Lontué,departamento,De 25 a 30,25,29,,952,1085
+Lontué,departamento,De 30 a 35,30,34,,556,549
+Lontué,departamento,De 35 a 40,35,39,,697,713
+Lontué,departamento,De 40 a 45,40,44,,399,377
+Lontué,departamento,De 45 a 50,45,49,,493,494
+Lontué,departamento,De 50 a 55,50,54,,238,195
+Lontué,departamento,De 55 a 60,55,59,,413,351
+Lontué,departamento,De 60 a 65,60,64,,156,93
+Lontué,departamento,De 65 a 70,65,69,,137,153
+Lontué,departamento,De 70 a 75,70,74,,41,33
+Lontué,departamento,De 75 a 80,75,79,,60,58
+Lontué,departamento,De 80 a 85,80,84,,13,14
+Lontué,departamento,De 85 a 90,85,89,,16,28
+Lontué,departamento,De 90 a 95,90,94,,9,3
+Lontué,departamento,De 95 a 100,95,99,,1,3
+Lontué,departamento,De 100 adelante,100,,,11,4
+Lontué,departamento,Total,,,,11206,10981
+Talca,provincia,Hasta 1 mes,0,0,0,296,289
+Talca,provincia,De 1 a 3 meses,0,0,1-2,420,402
+Talca,provincia,De 3 a 6 meses,0,0,3-5,450,456
+Talca,provincia,De 6 meses a 1 año,0,0,6-11,468,506
+Talca,provincia,De 1 a 2 años,1,1,,3148,3120
+Talca,provincia,De 2 a 5,2,4,,5504,5522
+Talca,provincia,De 5 a 10,5,9,,9135,8433
+Talca,provincia,De 10 a 15,10,14,,7651,7273
+Talca,provincia,De 15 a 20,15,19,,6419,7541
+Talca,provincia,De 20 a 25,20,24,,5576,5185
+Talca,provincia,De 25 a 30,25,29,,5392,6771
+Talca,provincia,De 30 a 35,30,34,,3411,3608
+Talca,provincia,De 35 a 40,35,39,,4079,4718
+Talca,provincia,De 40 a 45,40,44,,2287,2199
+Talca,provincia,De 45 a 50,45,49,,2777,3020
+Talca,provincia,De 50 a 55,50,54,,1162,1167
+Talca,provincia,De 55 a 60,55,59,,2226,2191
+Talca,provincia,De 60 a 65,60,64,,733,652
+Talca,provincia,De 65 a 70,65,69,,845,894
+Talca,provincia,De 70 a 75,70,74,,258,260
+Talca,provincia,De 75 a 80,75,79,,394,458
+Talca,provincia,De 80 a 85,80,84,,89,115
+Talca,provincia,De 85 a 90,85,89,,114,142
+Talca,provincia,De 90 a 95,90,94,,29,48
+Talca,provincia,De 95 a 100,95,99,,7,18
+Talca,provincia,De 100 adelante,100,,,49,44
+Talca,provincia,Total,,,,62929,66032
+Linares,departamento,Hasta 1 mes,0,0,0,88,89
+Linares,departamento,De 1 a 3 meses,0,0,1-2,162,160
+Linares,departamento,De 3 a 6 meses,0,0,3-5,165,177
+Linares,departamento,De 6 meses a 1 año,0,0,6-11,184,344
+Linares,departamento,De 1 a 2 años,1,1,,1348,909
+Linares,departamento,De 2 a 5,2,4,,2248,2081
+Linares,departamento,De 5 a 10,5,9,,3540,3248
+Linares,departamento,De 10 a 15,10,14,,2875,2762
+Linares,departamento,De 15 a 20,15,19,,2173,2671
+Linares,departamento,De 20 a 25,20,24,,1880,2220
+Linares,departamento,De 25 a 30,25,29,,1893,2218
+Linares,departamento,De 30 a 35,30,34,,1125,1337
+Linares,departamento,De 35 a 40,35,39,,1397,1476
+Linares,departamento,De 40 a 45,40,44,,786,845
+Linares,departamento,De 45 a 50,45,49,,916,941
+Linares,departamento,De 50 a 55,50,54,,488,484
+Linares,departamento,De 55 a 60,55,59,,844,743
+Linares,departamento,De 60 a 65,60,64,,240,263
+Linares,departamento,De 65 a 70,65,69,,331,249
+Linares,departamento,De 70 a 75,70,74,,85,103
+Linares,departamento,De 75 a 80,75,79,,146,126
+Linares,departamento,De 80 a 85,80,84,,45,39
+Linares,departamento,De 85 a 90,85,89,,27,39
+Linares,departamento,De 90 a 95,90,94,,4,12
+Linares,departamento,De 95 a 100,95,99,,10,12
+Linares,departamento,De 100 adelante,100,,,1,1
+Linares,departamento,Total,,,,23001,23549
+Parral,departamento,Hasta 1 mes,0,0,0,77,93
+Parral,departamento,De 1 a 3 meses,0,0,1-2,105,94
+Parral,departamento,De 3 a 6 meses,0,0,3-5,97,121
+Parral,departamento,De 6 meses a 1 año,0,0,6-11,302,314
+Parral,departamento,De 1 a 2 años,1,1,,561,504
+Parral,departamento,De 2 a 5,2,4,,1362,1235
+Parral,departamento,De 5 a 10,5,9,,2196,2014
+Parral,departamento,De 10 a 15,10,14,,1831,1786
+Parral,departamento,De 15 a 20,15,19,,1604,1756
+Parral,departamento,De 20 a 25,20,24,,1289,1426
+Parral,departamento,De 25 a 30,25,29,,1257,1442
+Parral,departamento,De 30 a 35,30,34,,714,724
+Parral,departamento,De 35 a 40,35,39,,968,1086
+Parral,departamento,De 40 a 45,40,44,,451,448
+Parral,departamento,De 45 a 50,45,49,,580,720
+Parral,departamento,De 50 a 55,50,54,,258,250
+Parral,departamento,De 55 a 60,55,59,,482,453
+Parral,departamento,De 60 a 65,60,64,,167,152
+Parral,departamento,De 65 a 70,65,69,,188,175
+Parral,departamento,De 70 a 75,70,74,,64,73
+Parral,departamento,De 75 a 80,75,79,,69,100
+Parral,departamento,De 80 a 85,80,84,,25,15
+Parral,departamento,De 85 a 90,85,89,,27,22
+Parral,departamento,De 90 a 95,90,94,,10,12
+Parral,departamento,De 95 a 100,95,99,,2,12
+Parral,departamento,De 100 adelante,100,,,-,1
+Parral,departamento,Total,,,,14687,15028
+Loncomilla,departamento,Hasta 1 mes,0,0,0,93,90
+Loncomilla,departamento,De 1 a 3 meses,0,0,1-2,99,99
+Loncomilla,departamento,De 3 a 6 meses,0,0,3-5,121,138
+Loncomilla,departamento,De 6 meses a 1 año,0,0,6-11,212,217
+Loncomilla,departamento,De 1 a 2 años,1,1,,459,486
+Loncomilla,departamento,De 2 a 5,2,4,,1080,959
+Loncomilla,departamento,De 5 a 10,5,9,,1692,1536
+Loncomilla,departamento,De 10 a 15,10,14,,1510,1536
+Loncomilla,departamento,De 15 a 20,15,19,,1157,1368
+Loncomilla,departamento,De 20 a 25,20,24,,935,1110
+Loncomilla,departamento,De 25 a 30,25,29,,794,987
+Loncomilla,departamento,De 30 a 35,30,34,,656,792
+Loncomilla,departamento,De 35 a 40,35,39,,619,751
+Loncomilla,departamento,De 40 a 45,40,44,,519,604
+Loncomilla,departamento,De 45 a 50,45,49,,483,532
+Loncomilla,departamento,De 50 a 55,50,54,,385,462
+Loncomilla,departamento,De 55 a 60,55,59,,386,467
+Loncomilla,departamento,De 60 a 65,60,64,,306,326
+Loncomilla,departamento,De 65 a 70,65,69,,246,282
+Loncomilla,departamento,De 70 a 75,70,74,,176,212
+Loncomilla,departamento,De 75 a 80,75,79,,144,161
+Loncomilla,departamento,De 80 a 85,80,84,,83,114
+Loncomilla,departamento,De 85 a 90,85,89,,54,61
+Loncomilla,departamento,De 90 a 95,90,94,,25,34
+Loncomilla,departamento,De 95 a 100,95,99,,9,18
+Loncomilla,departamento,De 100 adelante,100,,,4,4
+Loncomilla,departamento,Total,,,,12247,13346
+Linares,provincia,Hasta 1 mes,0,0,0,258,272
+Linares,provincia,De 1 a 3 meses,0,0,1-2,366,353
+Linares,provincia,De 3 a 6 meses,0,0,3-5,383,436
+Linares,provincia,De 6 meses a 1 año,0,0,6-11,698,875
+Linares,provincia,De 1 a 2 años,1,1,,2368,1899
+Linares,provincia,De 2 a 5,2,4,,4690,4275
+Linares,provincia,De 5 a 10,5,9,,7428,6798
+Linares,provincia,De 10 a 15,10,14,,6216,6084
+Linares,provincia,De 15 a 20,15,19,,4934,5795
+Linares,provincia,De 20 a 25,20,24,,4104,4756
+Linares,provincia,De 25 a 30,25,29,,3944,4647
+Linares,provincia,De 30 a 35,30,34,,2495,2853
+Linares,provincia,De 35 a 40,35,39,,2984,3313
+Linares,provincia,De 40 a 45,40,44,,1756,1897
+Linares,provincia,De 45 a 50,45,49,,1979,2193
+Linares,provincia,De 50 a 55,50,54,,1132,1196
+Linares,provincia,De 55 a 60,55,59,,1712,1663
+Linares,provincia,De 60 a 65,60,64,,713,741
+Linares,provincia,De 65 a 70,65,69,,765,706
+Linares,provincia,De 70 a 75,70,74,,325,388
+Linares,provincia,De 75 a 80,75,79,,359,387
+Linares,provincia,De 80 a 85,80,84,,153,168
+Linares,provincia,De 85 a 90,85,89,,108,122
+Linares,provincia,De 90 a 95,90,94,,39,58
+Linares,provincia,De 95 a 100,95,99,,21,42
+Linares,provincia,De 100 adelante,100,,,5,6
+Linares,provincia,Total,,,,49935,51923
+Cauquenes,departamento,Hasta 1 mes,0,0,0,82,74
+Cauquenes,departamento,De 1 a 3 meses,0,0,1-2,125,115
+Cauquenes,departamento,De 3 a 6 meses,0,0,3-5,117,141
+Cauquenes,departamento,De 6 meses a 1 año,0,0,6-11,142,131
+Cauquenes,departamento,De 1 a 2 años,1,1,,1240,1086
+Cauquenes,departamento,De 2 a 5,2,4,,2140,2090
+Cauquenes,departamento,De 5 a 10,5,9,,3551,3504
+Cauquenes,departamento,De 10 a 15,10,14,,2955,2900
+Cauquenes,departamento,De 15 a 20,15,19,,2408,2760
+Cauquenes,departamento,De 20 a 25,20,24,,2018,2281
+Cauquenes,departamento,De 25 a 30,25,29,,1990,2434
+Cauquenes,departamento,De 30 a 35,30,34,,1035,1156
+Cauquenes,departamento,De 35 a 40,35,39,,1533,1772
+Cauquenes,departamento,De 40 a 45,40,44,,650,882
+Cauquenes,departamento,De 45 a 50,45,49,,1055,1151
+Cauquenes,departamento,De 50 a 55,50,54,,377,387
+Cauquenes,departamento,De 55 a 60,55,59,,785,834
+Cauquenes,departamento,De 60 a 65,60,64,,237,261
+Cauquenes,departamento,De 65 a 70,65,69,,269,374
+Cauquenes,departamento,De 70 a 75,70,74,,85,104
+Cauquenes,departamento,De 75 a 80,75,79,,127,177
+Cauquenes,departamento,De 80 a 85,80,84,,40,37
+Cauquenes,departamento,De 85 a 90,85,89,,35,58
+Cauquenes,departamento,De 90 a 95,90,94,,10,24
+Cauquenes,departamento,De 95 a 100,95,99,,4,7
+Cauquenes,departamento,De 100 adelante,100,,,9,22
+Cauquenes,departamento,Total,,,,23150,24658
+Itata,departamento,Hasta 1 mes,0,0,0,83,101
+Itata,departamento,De 1 a 3 meses,0,0,1-2,129,125
+Itata,departamento,De 3 a 6 meses,0,0,3-5,126,161
+Itata,departamento,De 6 meses a 1 año,0,0,6-11,451,454
+Itata,departamento,De 1 a 2 años,1,1,,741,738
+Itata,departamento,De 2 a 5,2,4,,1997,1933
+Itata,departamento,De 5 a 10,5,9,,3266,3109
+Itata,departamento,De 10 a 15,10,14,,2680,2527
+Itata,departamento,De 15 a 20,15,19,,2008,2444
+Itata,departamento,De 20 a 25,20,24,,1578,2017
+Itata,departamento,De 25 a 30,25,29,,1510,2054
+Itata,departamento,De 30 a 35,30,34,,872,1054
+Itata,departamento,De 35 a 40,35,39,,1267,1499
+Itata,departamento,De 40 a 45,40,44,,594,662
+Itata,departamento,De 45 a 50,45,49,,818,991
+Itata,departamento,De 50 a 55,50,54,,374,345
+Itata,departamento,De 55 a 60,55,59,,648,695
+Itata,departamento,De 60 a 65,60,64,,220,249
+Itata,departamento,De 65 a 70,65,69,,275,321
+Itata,departamento,De 70 a 75,70,74,,98,112
+Itata,departamento,De 75 a 80,75,79,,136,151
+Itata,departamento,De 80 a 85,80,84,,18,42
+Itata,departamento,De 85 a 90,85,89,,23,46
+Itata,departamento,De 90 a 95,90,94,,10,17
+Itata,departamento,De 95 a 100,95,99,,10,13
+Itata,departamento,De 100 adelante,100,,,4,4
+Itata,departamento,Total,,,,19928,21876
+Constitución,departamento,Hasta 1 mes,0,0,0,136,160
+Constitución,departamento,De 1 a 3 meses,0,0,1-2,108,110
+Constitución,departamento,De 3 a 6 meses,0,0,3-5,109,127
+Constitución,departamento,De 6 meses a 1 año,0,0,6-11,208,216
+Constitución,departamento,De 1 a 2 años,1,1,,569,521
+Constitución,departamento,De 2 a 5,2,4,,1258,1061
+Constitución,departamento,De 5 a 10,5,9,,2053,1898
+Constitución,departamento,De 10 a 15,10,14,,1707,1912
+Constitución,departamento,De 15 a 20,15,19,,1210,1619
+Constitución,departamento,De 20 a 25,20,24,,1020,1298
+Constitución,departamento,De 25 a 30,25,29,,869,1098
+Constitución,departamento,De 30 a 35,30,34,,732,914
+Constitución,departamento,De 35 a 40,35,39,,742,901
+Constitución,departamento,De 40 a 45,40,44,,595,718
+Constitución,departamento,De 45 a 50,45,49,,583,664
+Constitución,departamento,De 50 a 55,50,54,,471,576
+Constitución,departamento,De 55 a 60,55,59,,487,576
+Constitución,departamento,De 60 a 65,60,64,,349,432
+Constitución,departamento,De 65 a 70,65,69,,316,373
+Constitución,departamento,De 70 a 75,70,74,,229,277
+Constitución,departamento,De 75 a 80,75,79,,177,231
+Constitución,departamento,De 80 a 85,80,84,,114,154
+Constitución,departamento,De 85 a 90,85,89,,74,99
+Constitución,departamento,De 90 a 95,90,94,,38,45
+Constitución,departamento,De 95 a 100,95,99,,16,17
+Constitución,departamento,De 100 adelante,100,,,7,5
+Constitución,departamento,Total,,,,14177,16002
+Maule,provincia,Hasta 1 mes,0,0,0,301,335
+Maule,provincia,De 1 a 3 meses,0,0,1-2,362,350
+Maule,provincia,De 3 a 6 meses,0,0,3-5,352,433
+Maule,provincia,De 6 meses a 1 año,0,0,6-11,801,801
+Maule,provincia,De 1 a 2 años,1,1,,2550,2345
+Maule,provincia,De 2 a 5,2,4,,5395,5084
+Maule,provincia,De 5 a 10,5,9,,8870,8511
+Maule,provincia,De 10 a 15,10,14,,7342,7339
+Maule,provincia,De 15 a 20,15,19,,5626,6823
+Maule,provincia,De 20 a 25,20,24,,4616,5596
+Maule,provincia,De 25 a 30,25,29,,4369,5586
+Maule,provincia,De 30 a 35,30,34,,2639,3124
+Maule,provincia,De 35 a 40,35,39,,3542,4172
+Maule,provincia,De 40 a 45,40,44,,1849,2262
+Maule,provincia,De 45 a 50,45,49,,2456,2806
+Maule,provincia,De 50 a 55,50,54,,1222,1308
+Maule,provincia,De 55 a 60,55,59,,1920,2105
+Maule,provincia,De 60 a 65,60,64,,806,942
+Maule,provincia,De 65 a 70,65,69,,887,1068
+Maule,provincia,De 70 a 75,70,74,,412,493
+Maule,provincia,De 75 a 80,75,79,,440,559
+Maule,provincia,De 80 a 85,80,84,,172,233
+Maule,provincia,De 85 a 90,85,89,,132,203
+Maule,provincia,De 90 a 95,90,94,,58,86
+Maule,provincia,De 95 a 100,95,99,,30,37
+Maule,provincia,De 100 adelante,100,,,20,31
+Maule,provincia,Total,,,,57255,62536
+Chillán,departamento,Hasta 1 mes,0,0,0,109,135
+Chillán,departamento,De 1 a 3 meses,0,0,1-2,212,212
+Chillán,departamento,De 3 a 6 meses,0,0,3-5,271,248
+Chillán,departamento,De 6 meses a 1 año,0,0,6-11,674,686
+Chillán,departamento,De 1 a 2 años,1,1,,1193,1133
+Chillán,departamento,De 2 a 5,2,4,,2837,2797
+Chillán,departamento,De 5 a 10,5,9,,4331,4236
+Chillán,departamento,De 10 a 15,10,14,,3998,3987
+Chillán,departamento,De 15 a 20,15,19,,3426,4156
+Chillán,departamento,De 20 a 25,20,24,,2925,3426
+Chillán,departamento,De 25 a 30,25,29,,2806,3625
+Chillán,departamento,De 30 a 35,30,34,,1675,1879
+Chillán,departamento,De 35 a 40,35,39,,2056,2424
+Chillán,departamento,De 40 a 45,40,44,,1125,1167
+Chillán,departamento,De 45 a 50,45,49,,1369,1591
+Chillán,departamento,De 50 a 55,50,54,,721,673
+Chillán,departamento,De 55 a 60,55,59,,1130,1130
+Chillán,departamento,De 60 a 65,60,64,,440,373
+Chillán,departamento,De 65 a 70,65,69,,368,408
+Chillán,departamento,De 70 a 75,70,74,,159,148
+Chillán,departamento,De 75 a 80,75,79,,203,251
+Chillán,departamento,De 80 a 85,80,84,,66,70
+Chillán,departamento,De 85 a 90,85,89,,51,60
+Chillán,departamento,De 90 a 95,90,94,,24,29
+Chillán,departamento,De 95 a 100,95,99,,12,24
+Chillán,departamento,De 100 adelante,100,,,7,11
+Chillán,departamento,Total,,,,32216,34873
+Yungay,departamento,Hasta 1 mes,0,0,0,91,96
+Yungay,departamento,De 1 a 3 meses,0,0,1-2,90,105
+Yungay,departamento,De 3 a 6 meses,0,0,3-5,103,106
+Yungay,departamento,De 6 meses a 1 año,0,0,6-11,159,131
+Yungay,departamento,De 1 a 2 años,1,1,,590,528
+Yungay,departamento,De 2 a 5,2,4,,1188,943
+Yungay,departamento,De 5 a 10,5,9,,1658,1465
+Yungay,departamento,De 10 a 15,10,14,,1687,1860
+Yungay,departamento,De 15 a 20,15,19,,1227,1398
+Yungay,departamento,De 20 a 25,20,24,,898,1084
+Yungay,departamento,De 25 a 30,25,29,,910,1075
+Yungay,departamento,De 30 a 35,30,34,,487,626
+Yungay,departamento,De 35 a 40,35,39,,622,731
+Yungay,departamento,De 40 a 45,40,44,,411,438
+Yungay,departamento,De 45 a 50,45,49,,438,532
+Yungay,departamento,De 50 a 55,50,54,,248,251
+Yungay,departamento,De 55 a 60,55,59,,385,374
+Yungay,departamento,De 60 a 65,60,64,,185,174
+Yungay,departamento,De 65 a 70,65,69,,205,204
+Yungay,departamento,De 70 a 75,70,74,,94,103
+Yungay,departamento,De 75 a 80,75,79,,95,122
+Yungay,departamento,De 80 a 85,80,84,,40,40
+Yungay,departamento,De 85 a 90,85,89,,39,48
+Yungay,departamento,De 90 a 95,90,94,,19,21
+Yungay,departamento,De 95 a 100,95,99,,7,6
+Yungay,departamento,De 100 adelante,100,,,6,6
+Yungay,departamento,Total,,,,11883,12466
+Bulnes,departamento,Hasta 1 mes,0,0,0,37,35
+Bulnes,departamento,De 1 a 3 meses,0,0,1-2,58,47
+Bulnes,departamento,De 3 a 6 meses,0,0,3-5,73,62
+Bulnes,departamento,De 6 meses a 1 año,0,0,6-11,79,77
+Bulnes,departamento,De 1 a 2 años,1,1,,536,483
+Bulnes,departamento,De 2 a 5,2,4,,985,980
+Bulnes,departamento,De 5 a 10,5,9,,1504,1365
+Bulnes,departamento,De 10 a 15,10,14,,1259,1109
+Bulnes,departamento,De 15 a 20,15,19,,1027,1130
+Bulnes,departamento,De 20 a 25,20,24,,852,950
+Bulnes,departamento,De 25 a 30,25,29,,914,1001
+Bulnes,departamento,De 30 a 35,30,34,,454,519
+Bulnes,departamento,De 35 a 40,35,39,,573,688
+Bulnes,departamento,De 40 a 45,40,44,,352,362
+Bulnes,departamento,De 45 a 50,45,49,,409,456
+Bulnes,departamento,De 50 a 55,50,54,,213,177
+Bulnes,departamento,De 55 a 60,55,59,,325,317
+Bulnes,departamento,De 60 a 65,60,64,,129,121
+Bulnes,departamento,De 65 a 70,65,69,,121,141
+Bulnes,departamento,De 70 a 75,70,74,,26,40
+Bulnes,departamento,De 75 a 80,75,79,,48,63
+Bulnes,departamento,De 80 a 85,80,84,,18,16
+Bulnes,departamento,De 85 a 90,85,89,,16,13
+Bulnes,departamento,De 90 a 95,90,94,,6,2
+Bulnes,departamento,De 95 a 100,95,99,,3,1
+Bulnes,departamento,De 100 adelante,100,,,5,6
+Bulnes,departamento,Total,,,,9978,10185
+San Carlos,departamento,Hasta 1 mes,0,0,0,63,56
+San Carlos,departamento,De 1 a 3 meses,0,0,1-2,92,96
+San Carlos,departamento,De 3 a 6 meses,0,0,3-5,101,114
+San Carlos,departamento,De 6 meses a 1 año,0,0,6-11,84,140
+San Carlos,departamento,De 1 a 2 años,1,1,,1065,942
+San Carlos,departamento,De 2 a 5,2,4,,2028,1884
+San Carlos,departamento,De 5 a 10,5,9,,3240,2823
+San Carlos,departamento,De 10 a 15,10,14,,2549,2492
+San Carlos,departamento,De 15 a 20,15,19,,2008,2471
+San Carlos,departamento,De 20 a 25,20,24,,1644,1971
+San Carlos,departamento,De 25 a 30,25,29,,1573,1811
+San Carlos,departamento,De 30 a 35,30,34,,951,1211
+San Carlos,departamento,De 35 a 40,35,39,,1249,1294
+San Carlos,departamento,De 40 a 45,40,44,,779,844
+San Carlos,departamento,De 45 a 50,45,49,,901,845
+San Carlos,departamento,De 50 a 55,50,54,,354,518
+San Carlos,departamento,De 55 a 60,55,59,,760,611
+San Carlos,departamento,De 60 a 65,60,64,,245,315
+San Carlos,departamento,De 65 a 70,65,69,,287,295
+San Carlos,departamento,De 70 a 75,70,74,,86,127
+San Carlos,departamento,De 75 a 80,75,79,,139,121
+San Carlos,departamento,De 80 a 85,80,84,,21,36
+San Carlos,departamento,De 85 a 90,85,89,,25,35
+San Carlos,departamento,De 90 a 95,90,94,,5,12
+San Carlos,departamento,De 95 a 100,95,99,,3,12
+San Carlos,departamento,De 100 adelante,100,,,1,4
+San Carlos,departamento,Total,,,,20214,21120
+Ñuble,provincia,Hasta 1 mes,0,0,0,300,322
+Ñuble,provincia,De 1 a 3 meses,0,0,1-2,452,460
+Ñuble,provincia,De 3 a 6 meses,0,0,3-5,548,530
+Ñuble,provincia,De 6 meses a 1 año,0,0,6-11,996,1034
+Ñuble,provincia,De 1 a 2 años,1,1,,3384,3086
+Ñuble,provincia,De 2 a 5,2,4,,7038,6606
+Ñuble,provincia,De 5 a 10,5,9,,10733,9889
+Ñuble,provincia,De 10 a 15,10,14,,9493,9448
+Ñuble,provincia,De 15 a 20,15,19,,7688,9155
+Ñuble,provincia,De 20 a 25,20,24,,6319,7431
+Ñuble,provincia,De 25 a 30,25,29,,6203,7512
+Ñuble,provincia,De 30 a 35,30,34,,3567,4255
+Ñuble,provincia,De 35 a 40,35,39,,4500,5117
+Ñuble,provincia,De 40 a 45,40,44,,2667,2811
+Ñuble,provincia,De 45 a 50,45,49,,3117,3424
+Ñuble,provincia,De 50 a 55,50,54,,1536,1619
+Ñuble,provincia,De 55 a 60,55,59,,2600,2432
+Ñuble,provincia,De 60 a 65,60,64,,995,983
+Ñuble,provincia,De 65 a 70,65,69,,981,1048
+Ñuble,provincia,De 70 a 75,70,74,,365,418
+Ñuble,provincia,De 75 a 80,75,79,,485,558
+Ñuble,provincia,De 80 a 85,80,84,,145,162
+Ñuble,provincia,De 85 a 90,85,89,,131,156
+Ñuble,provincia,De 90 a 95,90,94,,54,64
+Ñuble,provincia,De 95 a 100,95,99,,25,43
+Ñuble,provincia,De 100 adelante,100,,,19,27
+Ñuble,provincia,Total,,,,74291,78644
+Concepción,departamento,Hasta 1 mes,0,0,0,124,126
+Concepción,departamento,De 1 a 3 meses,0,0,1-2,218,174
+Concepción,departamento,De 3 a 6 meses,0,0,3-5,213,229
+Concepción,departamento,De 6 meses a 1 año,0,0,6-11,652,638
+Concepción,departamento,De 1 a 2 años,1,1,,884,939
+Concepción,departamento,De 2 a 5,2,4,,2031,1980
+Concepción,departamento,De 5 a 10,5,9,,3166,3192
+Concepción,departamento,De 10 a 15,10,14,,3081,3113
+Concepción,departamento,De 15 a 20,15,19,,2874,3815
+Concepción,departamento,De 20 a 25,20,24,,2698,3352
+Concepción,departamento,De 25 a 30,25,29,,2669,3425
+Concepción,departamento,De 30 a 35,30,34,,1588,1791
+Concepción,departamento,De 35 a 40,35,39,,1769,2244
+Concepción,departamento,De 40 a 45,40,44,,929,1220
+Concepción,departamento,De 45 a 50,45,49,,975,1283
+Concepción,departamento,De 50 a 55,50,54,,417,528
+Concepción,departamento,De 55 a 60,55,59,,647,951
+Concepción,departamento,De 60 a 65,60,64,,272,345
+Concepción,departamento,De 65 a 70,65,69,,238,332
+Concepción,departamento,De 70 a 75,70,74,,94,136
+Concepción,departamento,De 75 a 80,75,79,,80,147
+Concepción,departamento,De 80 a 85,80,84,,24,31
+Concepción,departamento,De 85 a 90,85,89,,21,46
+Concepción,departamento,De 90 a 95,90,94,,9,14
+Concepción,departamento,De 95 a 100,95,99,,11,8
+Concepción,departamento,De 100 adelante,100,,,2,5
+Concepción,departamento,Total,,,,25686,30064
+Lautaro,departamento,Hasta 1 mes,0,0,0,101,113
+Lautaro,departamento,De 1 a 3 meses,0,0,1-2,126,111
+Lautaro,departamento,De 3 a 6 meses,0,0,3-5,122,131
+Lautaro,departamento,De 6 meses a 1 año,0,0,6-11,190,159
+Lautaro,departamento,De 1 a 2 años,1,1,,975,734
+Lautaro,departamento,De 2 a 5,2,4,,1677,1493
+Lautaro,departamento,De 5 a 10,5,9,,2283,2171
+Lautaro,departamento,De 10 a 15,10,14,,2173,1848
+Lautaro,departamento,De 15 a 20,15,19,,1766,1871
+Lautaro,departamento,De 20 a 25,20,24,,1635,1771
+Lautaro,departamento,De 25 a 30,25,29,,1716,1750
+Lautaro,departamento,De 30 a 35,30,34,,1065,898
+Lautaro,departamento,De 35 a 40,35,39,,1300,1327
+Lautaro,departamento,De 40 a 45,40,44,,775,566
+Lautaro,departamento,De 45 a 50,45,49,,757,750
+Lautaro,departamento,De 50 a 55,50,54,,356,279
+Lautaro,departamento,De 55 a 60,55,59,,563,506
+Lautaro,departamento,De 60 a 65,60,64,,189,161
+Lautaro,departamento,De 65 a 70,65,69,,153,163
+Lautaro,departamento,De 70 a 75,70,74,,59,56
+Lautaro,departamento,De 75 a 80,75,79,,62,82
+Lautaro,departamento,De 80 a 85,80,84,,21,19
+Lautaro,departamento,De 85 a 90,85,89,,16,26
+Lautaro,departamento,De 90 a 95,90,94,,3,8
+Lautaro,departamento,De 95 a 100,95,99,,4,10
+Lautaro,departamento,De 100 adelante,100,,,4,7
+Lautaro,departamento,Total,,,,18091,17010
+Talcahuano,departamento,Hasta 1 mes,0,0,0,30,30
+Talcahuano,departamento,De 1 a 3 meses,0,0,1-2,57,45
+Talcahuano,departamento,De 3 a 6 meses,0,0,3-5,65,54
+Talcahuano,departamento,De 6 meses a 1 año,0,0,6-11,53,61
+Talcahuano,departamento,De 1 a 2 años,1,1,,279,288
+Talcahuano,departamento,De 2 a 5,2,4,,474,455
+Talcahuano,departamento,De 5 a 10,5,9,,668,611
+Talcahuano,departamento,De 10 a 15,10,14,,691,554
+Talcahuano,departamento,De 15 a 20,15,19,,967,609
+Talcahuano,departamento,De 20 a 25,20,24,,963,635
+Talcahuano,departamento,De 25 a 30,25,29,,744,648
+Talcahuano,departamento,De 30 a 35,30,34,,460,360
+Talcahuano,departamento,De 35 a 40,35,39,,492,397
+Talcahuano,departamento,De 40 a 45,40,44,,221,175
+Talcahuano,departamento,De 45 a 50,45,49,,209,219
+Talcahuano,departamento,De 50 a 55,50,54,,79,96
+Talcahuano,departamento,De 55 a 60,55,59,,131,145
+Talcahuano,departamento,De 60 a 65,60,64,,59,68
+Talcahuano,departamento,De 65 a 70,65,69,,43,62
+Talcahuano,departamento,De 70 a 75,70,74,,12,18
+Talcahuano,departamento,De 75 a 80,75,79,,17,10
+Talcahuano,departamento,De 80 a 85,80,84,,4,7
+Talcahuano,departamento,De 85 a 90,85,89,,4,9
+Talcahuano,departamento,De 90 a 95,90,94,,1,3
+Talcahuano,departamento,De 95 a 100,95,99,,-,-
+Talcahuano,departamento,De 100 adelante,100,,,-,3
+Talcahuano,departamento,Total,,,,6723,5562
+Rere,departamento,Hasta 1 mes,0,0,0,122,102
+Rere,departamento,De 1 a 3 meses,0,0,1-2,115,108
+Rere,departamento,De 3 a 6 meses,0,0,3-5,121,113
+Rere,departamento,De 6 meses a 1 año,0,0,6-11,109,81
+Rere,departamento,De 1 a 2 años,1,1,,985,872
+Rere,departamento,De 2 a 5,2,4,,1601,1934
+Rere,departamento,De 5 a 10,5,9,,2778,3013
+Rere,departamento,De 10 a 15,10,14,,2399,2426
+Rere,departamento,De 15 a 20,15,19,,1973,2370
+Rere,departamento,De 20 a 25,20,24,,1560,1900
+Rere,departamento,De 25 a 30,25,29,,1526,1791
+Rere,departamento,De 30 a 35,30,34,,821,1030
+Rere,departamento,De 35 a 40,35,39,,1064,1324
+Rere,departamento,De 40 a 45,40,44,,561,601
+Rere,departamento,De 45 a 50,45,49,,739,818
+Rere,departamento,De 50 a 55,50,54,,326,327
+Rere,departamento,De 55 a 60,55,59,,599,589
+Rere,departamento,De 60 a 65,60,64,,209,196
+Rere,departamento,De 65 a 70,65,69,,228,248
+Rere,departamento,De 70 a 75,70,74,,84,82
+Rere,departamento,De 75 a 80,75,79,,105,118
+Rere,departamento,De 80 a 85,80,84,,15,37
+Rere,departamento,De 85 a 90,85,89,,33,48
+Rere,departamento,De 90 a 95,90,94,,13,17
+Rere,departamento,De 95 a 100,95,99,,8,11
+Rere,departamento,De 100 adelante,100,,,7,9
+Rere,departamento,Total,,,,18101,20165
+Puchacay,departamento,Hasta 1 mes,0,0,0,45,35
+Puchacay,departamento,De 1 a 3 meses,0,0,1-2,68,53
+Puchacay,departamento,De 3 a 6 meses,0,0,3-5,91,88
+Puchacay,departamento,De 6 meses a 1 año,0,0,6-11,185,165
+Puchacay,departamento,De 1 a 2 años,1,1,,373,387
+Puchacay,departamento,De 2 a 5,2,4,,693,679
+Puchacay,departamento,De 5 a 10,5,9,,1205,1217
+Puchacay,departamento,De 10 a 15,10,14,,1152,1141
+Puchacay,departamento,De 15 a 20,15,19,,1146,1087
+Puchacay,departamento,De 20 a 25,20,24,,1045,1008
+Puchacay,departamento,De 25 a 30,25,29,,943,879
+Puchacay,departamento,De 30 a 35,30,34,,596,541
+Puchacay,departamento,De 35 a 40,35,39,,557,577
+Puchacay,departamento,De 40 a 45,40,44,,357,351
+Puchacay,departamento,De 45 a 50,45,49,,338,330
+Puchacay,departamento,De 50 a 55,50,54,,227,198
+Puchacay,departamento,De 55 a 60,55,59,,221,258
+Puchacay,departamento,De 60 a 65,60,64,,123,142
+Puchacay,departamento,De 65 a 70,65,69,,57,67
+Puchacay,departamento,De 70 a 75,70,74,,36,43
+Puchacay,departamento,De 75 a 80,75,79,,18,42
+Puchacay,departamento,De 80 a 85,80,84,,19,15
+Puchacay,departamento,De 85 a 90,85,89,,12,13
+Puchacay,departamento,De 90 a 95,90,94,,8,8
+Puchacay,departamento,De 95 a 100,95,99,,2,3
+Puchacay,departamento,De 100 adelante,100,,,1,1
+Puchacay,departamento,Total,,,,9518,9328
+Coelemu,departamento,Hasta 1 mes,0,0,0,70,58
+Coelemu,departamento,De 1 a 3 meses,0,0,1-2,102,98
+Coelemu,departamento,De 3 a 6 meses,0,0,3-5,98,106
+Coelemu,departamento,De 6 meses a 1 año,0,0,6-11,114,141
+Coelemu,departamento,De 1 a 2 años,1,1,,758,649
+Coelemu,departamento,De 2 a 5,2,4,,1319,1217
+Coelemu,departamento,De 5 a 10,5,9,,2011,1955
+Coelemu,departamento,De 10 a 15,10,14,,1724,1565
+Coelemu,departamento,De 15 a 20,15,19,,1462,1612
+Coelemu,departamento,De 20 a 25,20,24,,1354,1318
+Coelemu,departamento,De 25 a 30,25,29,,1173,1330
+Coelemu,departamento,De 30 a 35,30,34,,710,685
+Coelemu,departamento,De 35 a 40,35,39,,865,989
+Coelemu,departamento,De 40 a 45,40,44,,417,492
+Coelemu,departamento,De 45 a 50,45,49,,519,606
+Coelemu,departamento,De 50 a 55,50,54,,246,224
+Coelemu,departamento,De 55 a 60,55,59,,472,448
+Coelemu,departamento,De 60 a 65,60,64,,141,165
+Coelemu,departamento,De 65 a 70,65,69,,170,169
+Coelemu,departamento,De 70 a 75,70,74,,47,61
+Coelemu,departamento,De 75 a 80,75,79,,66,101
+Coelemu,departamento,De 80 a 85,80,84,,17,29
+Coelemu,departamento,De 85 a 90,85,89,,16,32
+Coelemu,departamento,De 90 a 95,90,94,,5,3
+Coelemu,departamento,De 95 a 100,95,99,,2,4
+Coelemu,departamento,De 100 adelante,100,,,1,6
+Coelemu,departamento,Total,,,,13879,14063
+Concepción,provincia,Hasta 1 mes,0,0,0,492,464
+Concepción,provincia,De 1 a 3 meses,0,0,1-2,686,589
+Concepción,provincia,De 3 a 6 meses,0,0,3-5,710,721
+Concepción,provincia,De 6 meses a 1 año,0,0,6-11,1303,1245
+Concepción,provincia,De 1 a 2 años,1,1,,4254,3869
+Concepción,provincia,De 2 a 5,2,4,,7795,7758
+Concepción,provincia,De 5 a 10,5,9,,12111,12159
+Concepción,provincia,De 10 a 15,10,14,,11220,10647
+Concepción,provincia,De 15 a 20,15,19,,10188,11364
+Concepción,provincia,De 20 a 25,20,24,,9255,9984
+Concepción,provincia,De 25 a 30,25,29,,8771,9823
+Concepción,provincia,De 30 a 35,30,34,,5240,5305
+Concepción,provincia,De 35 a 40,35,39,,6047,6858
+Concepción,provincia,De 40 a 45,40,44,,3260,3405
+Concepción,provincia,De 45 a 50,45,49,,3537,4006
+Concepción,provincia,De 50 a 55,50,54,,1651,1652
+Concepción,provincia,De 55 a 60,55,59,,2633,2897
+Concepción,provincia,De 60 a 65,60,64,,993,1077
+Concepción,provincia,De 65 a 70,65,69,,889,1041
+Concepción,provincia,De 70 a 75,70,74,,332,396
+Concepción,provincia,De 75 a 80,75,79,,348,500
+Concepción,provincia,De 80 a 85,80,84,,100,138
+Concepción,provincia,De 85 a 90,85,89,,102,174
+Concepción,provincia,De 90 a 95,90,94,,39,53
+Concepción,provincia,De 95 a 100,95,99,,27,36
+Concepción,provincia,De 100 adelante,100,,,15,31
+Concepción,provincia,Total,,,,91998,96192
+Lebu,departamento,Hasta 1 mes,0,0,0,63,45
+Lebu,departamento,De 1 a 3 meses,0,0,1-2,80,64
+Lebu,departamento,De 3 a 6 meses,0,0,3-5,80,55
+Lebu,departamento,De 6 meses a 1 año,0,0,6-11,94,80
+Lebu,departamento,De 1 a 2 años,1,1,,490,483
+Lebu,departamento,De 2 a 5,2,4,,992,960
+Lebu,departamento,De 5 a 10,5,9,,1476,1343
+Lebu,departamento,De 10 a 15,10,14,,1287,1127
+Lebu,departamento,De 15 a 20,15,19,,994,1093
+Lebu,departamento,De 20 a 25,20,24,,938,839
+Lebu,departamento,De 25 a 30,25,29,,808,871
+Lebu,departamento,De 30 a 35,30,34,,459,432
+Lebu,departamento,De 35 a 40,35,39,,614,617
+Lebu,departamento,De 40 a 45,40,44,,369,314
+Lebu,departamento,De 45 a 50,45,49,,404,355
+Lebu,departamento,De 50 a 55,50,54,,168,135
+Lebu,departamento,De 55 a 60,55,59,,287,214
+Lebu,departamento,De 60 a 65,60,64,,108,69
+Lebu,departamento,De 65 a 70,65,69,,98,80
+Lebu,departamento,De 70 a 75,70,74,,30,35
+Lebu,departamento,De 75 a 80,75,79,,34,36
+Lebu,departamento,De 80 a 85,80,84,,4,7
+Lebu,departamento,De 85 a 90,85,89,,15,11
+Lebu,departamento,De 90 a 95,90,94,,3,7
+Lebu,departamento,De 95 a 100,95,99,,2,-
+Lebu,departamento,De 100 adelante,100,,,1,5
+Lebu,departamento,Total,,,,9898,9277
+Cañete,departamento,Hasta 1 mes,0,0,0,34,46
+Cañete,departamento,De 1 a 3 meses,0,0,1-2,42,56
+Cañete,departamento,De 3 a 6 meses,0,0,3-5,48,51
+Cañete,departamento,De 6 meses a 1 año,0,0,6-11,53,40
+Cañete,departamento,De 1 a 2 años,1,1,,476,430
+Cañete,departamento,De 2 a 5,2,4,,831,753
+Cañete,departamento,De 5 a 10,5,9,,1272,1155
+Cañete,departamento,De 10 a 15,10,14,,1065,952
+Cañete,departamento,De 15 a 20,15,19,,754,891
+Cañete,departamento,De 20 a 25,20,24,,581,671
+Cañete,departamento,De 25 a 30,25,29,,652,713
+Cañete,departamento,De 30 a 35,30,34,,332,343
+Cañete,departamento,De 35 a 40,35,39,,445,457
+Cañete,departamento,De 40 a 45,40,44,,226,219
+Cañete,departamento,De 45 a 50,45,49,,308,258
+Cañete,departamento,De 50 a 55,50,54,,127,86
+Cañete,departamento,De 55 a 60,55,59,,266,180
+Cañete,departamento,De 60 a 65,60,64,,79,62
+Cañete,departamento,De 65 a 70,65,69,,77,67
+Cañete,departamento,De 70 a 75,70,74,,28,22
+Cañete,departamento,De 75 a 80,75,79,,44,24
+Cañete,departamento,De 80 a 85,80,84,,6,7
+Cañete,departamento,De 85 a 90,85,89,,11,13
+Cañete,departamento,De 90 a 95,90,94,,4,6
+Cañete,departamento,De 95 a 100,95,99,,3,2
+Cañete,departamento,De 100 adelante,100,,,9,8
+Cañete,departamento,Total,,,,7773,7513
+Arauco,departamento,Hasta 1 mes,0,0,0,77,65
+Arauco,departamento,De 1 a 3 meses,0,0,1-2,75,58
+Arauco,departamento,De 3 a 6 meses,0,0,3-5,74,55
+Arauco,departamento,De 6 meses a 1 año,0,0,6-11,139,140
+Arauco,departamento,De 1 a 2 años,1,1,,625,534
+Arauco,departamento,De 2 a 5,2,4,,1234,1228
+Arauco,departamento,De 5 a 10,5,9,,1920,1753
+Arauco,departamento,De 10 a 15,10,14,,1669,1486
+Arauco,departamento,De 15 a 20,15,19,,1292,1373
+Arauco,departamento,De 20 a 25,20,24,,1149,1128
+Arauco,departamento,De 25 a 30,25,29,,1111,1194
+Arauco,departamento,De 30 a 35,30,34,,601,601
+Arauco,departamento,De 35 a 40,35,39,,791,829
+Arauco,departamento,De 40 a 45,40,44,,437,360
+Arauco,departamento,De 45 a 50,45,49,,472,453
+Arauco,departamento,De 50 a 55,50,54,,197,161
+Arauco,departamento,De 55 a 60,55,59,,341,277
+Arauco,departamento,De 60 a 65,60,64,,157,131
+Arauco,departamento,De 65 a 70,65,69,,143,142
+Arauco,departamento,De 70 a 75,70,74,,51,56
+Arauco,departamento,De 75 a 80,75,79,,53,48
+Arauco,departamento,De 80 a 85,80,84,,18,13
+Arauco,departamento,De 85 a 90,85,89,,14,20
+Arauco,departamento,De 90 a 95,90,94,,6,4
+Arauco,departamento,De 95 a 100,95,99,,6,10
+Arauco,departamento,De 100 adelante,100,,,3,2
+Arauco,departamento,Total,,,,12655,12121
+Arauco,provincia,Hasta 1 mes,0,0,0,174,156
+Arauco,provincia,De 1 a 3 meses,0,0,1-2,197,178
+Arauco,provincia,De 3 a 6 meses,0,0,3-5,202,161
+Arauco,provincia,De 6 meses a 1 año,0,0,6-11,286,260
+Arauco,provincia,De 1 a 2 años,1,1,,1591,1447
+Arauco,provincia,De 2 a 5,2,4,,3057,2941
+Arauco,provincia,De 5 a 10,5,9,,4668,4251
+Arauco,provincia,De 10 a 15,10,14,,4021,3565
+Arauco,provincia,De 15 a 20,15,19,,3040,3357
+Arauco,provincia,De 20 a 25,20,24,,2668,2638
+Arauco,provincia,De 25 a 30,25,29,,2571,2778
+Arauco,provincia,De 30 a 35,30,34,,1392,1376
+Arauco,provincia,De 35 a 40,35,39,,1850,1903
+Arauco,provincia,De 40 a 45,40,44,,1032,893
+Arauco,provincia,De 45 a 50,45,49,,1184,1066
+Arauco,provincia,De 50 a 55,50,54,,492,383
+Arauco,provincia,De 55 a 60,55,59,,894,671
+Arauco,provincia,De 60 a 65,60,64,,344,262
+Arauco,provincia,De 65 a 70,65,69,,318,289
+Arauco,provincia,De 70 a 75,70,74,,109,113
+Arauco,provincia,De 75 a 80,75,79,,131,108
+Arauco,provincia,De 80 a 85,80,84,,28,27
+Arauco,provincia,De 85 a 90,85,89,,40,44
+Arauco,provincia,De 90 a 95,90,94,,13,17
+Arauco,provincia,De 95 a 100,95,99,,11,12
+Arauco,provincia,De 100 adelante,100,,,13,15
+Arauco,provincia,Total,,,,30326,28911
+La Laja,departamento,Hasta 1 mes,0,0,0,240,220
+La Laja,departamento,De 1 a 3 meses,0,0,1-2,223,211
+La Laja,departamento,De 3 a 6 meses,0,0,3-5,203,181
+La Laja,departamento,De 6 meses a 1 año,0,0,6-11,198,228
+La Laja,departamento,De 1 a 2 años,1,1,,1465,1393
+La Laja,departamento,De 2 a 5,2,4,,2691,2512
+La Laja,departamento,De 5 a 10,5,9,,3768,3561
+La Laja,departamento,De 10 a 15,10,14,,3440,3382
+La Laja,departamento,De 15 a 20,15,19,,2710,2947
+La Laja,departamento,De 20 a 25,20,24,,2280,2576
+La Laja,departamento,De 25 a 30,25,29,,2302,2666
+La Laja,departamento,De 30 a 35,30,34,,1313,1325
+La Laja,departamento,De 35 a 40,35,39,,1565,1684
+La Laja,departamento,De 40 a 45,40,44,,841,828
+La Laja,departamento,De 45 a 50,45,49,,993,1047
+La Laja,departamento,De 50 a 55,50,54,,499,462
+La Laja,departamento,De 55 a 60,55,59,,832,754
+La Laja,departamento,De 60 a 65,60,64,,308,238
+La Laja,departamento,De 65 a 70,65,69,,285,289
+La Laja,departamento,De 70 a 75,70,74,,93,101
+La Laja,departamento,De 75 a 80,75,79,,109,141
+La Laja,departamento,De 80 a 85,80,84,,28,31
+La Laja,departamento,De 85 a 90,85,89,,33,48
+La Laja,departamento,De 90 a 95,90,94,,8,20
+La Laja,departamento,De 95 a 100,95,99,,11,11
+La Laja,departamento,De 100 adelante,100,,,13,20
+La Laja,departamento,Total,,,,26451,26876
+Nacimiento,departamento,Hasta 1 mes,0,0,0,41,32
+Nacimiento,departamento,De 1 a 3 meses,0,0,1-2,30,52
+Nacimiento,departamento,De 3 a 6 meses,0,0,3-5,57,41
+Nacimiento,departamento,De 6 meses a 1 año,0,0,6-11,161,183
+Nacimiento,departamento,De 1 a 2 años,1,1,,428,385
+Nacimiento,departamento,De 2 a 5,2,4,,906,797
+Nacimiento,departamento,De 5 a 10,5,9,,1388,1246
+Nacimiento,departamento,De 10 a 15,10,14,,1090,988
+Nacimiento,departamento,De 15 a 20,15,19,,901,930
+Nacimiento,departamento,De 20 a 25,20,24,,754,761
+Nacimiento,departamento,De 25 a 30,25,29,,659,751
+Nacimiento,departamento,De 30 a 35,30,34,,352,343
+Nacimiento,departamento,De 35 a 40,35,39,,459,471
+Nacimiento,departamento,De 40 a 45,40,44,,246,279
+Nacimiento,departamento,De 45 a 50,45,49,,301,357
+Nacimiento,departamento,De 50 a 55,50,54,,113,110
+Nacimiento,departamento,De 55 a 60,55,59,,224,218
+Nacimiento,departamento,De 60 a 65,60,64,,77,70
+Nacimiento,departamento,De 65 a 70,65,69,,81,73
+Nacimiento,departamento,De 70 a 75,70,74,,25,19
+Nacimiento,departamento,De 75 a 80,75,79,,32,41
+Nacimiento,departamento,De 80 a 85,80,84,,16,11
+Nacimiento,departamento,De 85 a 90,85,89,,15,18
+Nacimiento,departamento,De 90 a 95,90,94,,-,8
+Nacimiento,departamento,De 95 a 100,95,99,,2,3
+Nacimiento,departamento,De 100 adelante,100,,,5,4
+Nacimiento,departamento,Total,,,,8362,8210
+Mulchén,departamento,Hasta 1 mes,0,0,0,66,65
+Mulchén,departamento,De 1 a 3 meses,0,0,1-2,61,72
+Mulchén,departamento,De 3 a 6 meses,0,0,3-5,72,67
+Mulchén,departamento,De 6 meses a 1 año,0,0,6-11,154,131
+Mulchén,departamento,De 1 a 2 años,1,1,,502,496
+Mulchén,departamento,De 2 a 5,2,4,,963,953
+Mulchén,departamento,De 5 a 10,5,9,,1416,1295
+Mulchén,departamento,De 10 a 15,10,14,,1190,1071
+Mulchén,departamento,De 15 a 20,15,19,,1031,1029
+Mulchén,departamento,De 20 a 25,20,24,,934,796
+Mulchén,departamento,De 25 a 30,25,29,,907,813
+Mulchén,departamento,De 30 a 35,30,34,,499,476
+Mulchén,departamento,De 35 a 40,35,39,,612,552
+Mulchén,departamento,De 40 a 45,40,44,,355,273
+Mulchén,departamento,De 45 a 50,45,49,,335,375
+Mulchén,departamento,De 50 a 55,50,54,,168,105
+Mulchén,departamento,De 55 a 60,55,59,,298,224
+Mulchén,departamento,De 60 a 65,60,64,,119,57
+Mulchén,departamento,De 65 a 70,65,69,,82,80
+Mulchén,departamento,De 70 a 75,70,74,,22,20
+Mulchén,departamento,De 75 a 80,75,79,,34,28
+Mulchén,departamento,De 80 a 85,80,84,,9,4
+Mulchén,departamento,De 85 a 90,85,89,,9,9
+Mulchén,departamento,De 90 a 95,90,94,,5,1
+Mulchén,departamento,De 95 a 100,95,99,,-,1
+Mulchén,departamento,De 100 adelante,100,,,7,7
+Mulchén,departamento,Total,,,,9850,9000
+Bío-Bío,provincia,Hasta 1 mes,0,0,0,347,317
+Bío-Bío,provincia,De 1 a 3 meses,0,0,1-2,314,335
+Bío-Bío,provincia,De 3 a 6 meses,0,0,3-5,332,289
+Bío-Bío,provincia,De 6 meses a 1 año,0,0,6-11,513,542
+Bío-Bío,provincia,De 1 a 2 años,1,1,,2395,2274
+Bío-Bío,provincia,De 2 a 5,2,4,,4560,4262
+Bío-Bío,provincia,De 5 a 10,5,9,,6572,6102
+Bío-Bío,provincia,De 10 a 15,10,14,,5720,5441
+Bío-Bío,provincia,De 15 a 20,15,19,,4642,4906
+Bío-Bío,provincia,De 20 a 25,20,24,,3968,4133
+Bío-Bío,provincia,De 25 a 30,25,29,,3868,4230
+Bío-Bío,provincia,De 30 a 35,30,34,,1164,2144
+Bío-Bío,provincia,De 35 a 40,35,39,,2636,2707
+Bío-Bío,provincia,De 40 a 45,40,44,,1442,1380
+Bío-Bío,provincia,De 45 a 50,45,49,,1629,1779
+Bío-Bío,provincia,De 50 a 55,50,54,,780,677
+Bío-Bío,provincia,De 55 a 60,55,59,,1354,1196
+Bío-Bío,provincia,De 60 a 65,60,64,,504,365
+Bío-Bío,provincia,De 65 a 70,65,69,,448,442
+Bío-Bío,provincia,De 70 a 75,70,74,,140,140
+Bío-Bío,provincia,De 75 a 80,75,79,,175,210
+Bío-Bío,provincia,De 80 a 85,80,84,,53,46
+Bío-Bío,provincia,De 85 a 90,85,89,,57,75
+Bío-Bío,provincia,De 90 a 95,90,94,,13,29
+Bío-Bío,provincia,De 95 a 100,95,99,,13,15
+Bío-Bío,provincia,De 100 adelante,100,,,25,31
+Bío-Bío,provincia,Total,,,,44663,44085
+Angol,departamento,Hasta 1 mes,0,0,0,73,72
+Angol,departamento,De 1 a 3 meses,0,0,1-2,81,74
+Angol,departamento,De 3 a 6 meses,0,0,3-5,121,106
+Angol,departamento,De 6 meses a 1 año,0,0,6-11,262,221
+Angol,departamento,De 1 a 2 años,1,1,,621,559
+Angol,departamento,De 2 a 5,2,4,,1109,1070
+Angol,departamento,De 5 a 10,5,9,,1516,1409
+Angol,departamento,De 10 a 15,10,14,,1266,1117
+Angol,departamento,De 15 a 20,15,19,,1181,1216
+Angol,departamento,De 20 a 25,20,24,,1296,970
+Angol,departamento,De 25 a 30,25,29,,1219,1105
+Angol,departamento,De 30 a 35,30,34,,662,589
+Angol,departamento,De 35 a 40,35,39,,880,720
+Angol,departamento,De 40 a 45,40,44,,433,346
+Angol,departamento,De 45 a 50,45,49,,417,434
+Angol,departamento,De 50 a 55,50,54,,193,127
+Angol,departamento,De 55 a 60,55,59,,312,280
+Angol,departamento,De 60 a 65,60,64,,88,82
+Angol,departamento,De 65 a 70,65,69,,95,99
+Angol,departamento,De 70 a 75,70,74,,34,24
+Angol,departamento,De 75 a 80,75,79,,40,43
+Angol,departamento,De 80 a 85,80,84,,3,5
+Angol,departamento,De 85 a 90,85,89,,11,13
+Angol,departamento,De 90 a 95,90,94,,2,2
+Angol,departamento,De 95 a 100,95,99,,-,2
+Angol,departamento,De 100 adelante,100,,,6,9
+Angol,departamento,Total,,,,11921,10694
+Traiguén,departamento,Hasta 1 mes,0,0,0,86,76
+Traiguén,departamento,De 1 a 3 meses,0,0,1-2,119,114
+Traiguén,departamento,De 3 a 6 meses,0,0,3-5,136,128
+Traiguén,departamento,De 6 meses a 1 año,0,0,6-11,130,92
+Traiguén,departamento,De 1 a 2 años,1,1,,928,866
+Traiguén,departamento,De 2 a 5,2,4,,1446,1339
+Traiguén,departamento,De 5 a 10,5,9,,2034,1805
+Traiguén,departamento,De 10 a 15,10,14,,1533,1375
+Traiguén,departamento,De 15 a 20,15,19,,1429,1492
+Traiguén,departamento,De 20 a 25,20,24,,1498,1298
+Traiguén,departamento,De 25 a 30,25,29,,1639,1355
+Traiguén,departamento,De 30 a 35,30,34,,902,785
+Traiguén,departamento,De 35 a 40,35,39,,1103,938
+Traiguén,departamento,De 40 a 45,40,44,,542,395
+Traiguén,departamento,De 45 a 50,45,49,,637,562
+Traiguén,departamento,De 50 a 55,50,54,,240,180
+Traiguén,departamento,De 55 a 60,55,59,,385,330
+Traiguén,departamento,De 60 a 65,60,64,,119,88
+Traiguén,departamento,De 65 a 70,65,69,,121,99
+Traiguén,departamento,De 70 a 75,70,74,,37,41
+Traiguén,departamento,De 75 a 80,75,79,,50,66
+Traiguén,departamento,De 80 a 85,80,84,,19,6
+Traiguén,departamento,De 85 a 90,85,89,,12,14
+Traiguén,departamento,De 90 a 95,90,94,,4,11
+Traiguén,departamento,De 95 a 100,95,99,,7,6
+Traiguén,departamento,De 100 adelante,100,,,8,7
+Traiguén,departamento,Total,,,,15164,13468
+Mariluán,departamento,Hasta 1 mes,0,0,0,58,71
+Mariluán,departamento,De 1 a 3 meses,0,0,1-2,108,89
+Mariluán,departamento,De 3 a 6 meses,0,0,3-5,104,81
+Mariluán,departamento,De 6 meses a 1 año,0,0,6-11,236,252
+Mariluán,departamento,De 1 a 2 años,1,1,,623,583
+Mariluán,departamento,De 2 a 5,2,4,,1310,1235
+Mariluán,departamento,De 5 a 10,5,9,,1683,1576
+Mariluán,departamento,De 10 a 15,10,14,,1247,1167
+Mariluán,departamento,De 15 a 20,15,19,,1233,1250
+Mariluán,departamento,De 20 a 25,20,24,,1220,1088
+Mariluán,departamento,De 25 a 30,25,29,,1351,1196
+Mariluán,departamento,De 30 a 35,30,34,,787,606
+Mariluán,departamento,De 35 a 40,35,39,,975,730
+Mariluán,departamento,De 40 a 45,40,44,,480,348
+Mariluán,departamento,De 45 a 50,45,49,,467,361
+Mariluán,departamento,De 50 a 55,50,54,,216,169
+Mariluán,departamento,De 55 a 60,55,59,,297,205
+Mariluán,departamento,De 60 a 65,60,64,,115,65
+Mariluán,departamento,De 65 a 70,65,69,,107,74
+Mariluán,departamento,De 70 a 75,70,74,,38,35
+Mariluán,departamento,De 75 a 80,75,79,,24,35
+Mariluán,departamento,De 80 a 85,80,84,,10,8
+Mariluán,departamento,De 85 a 90,85,89,,12,15
+Mariluán,departamento,De 90 a 95,90,94,,7,6
+Mariluán,departamento,De 95 a 100,95,99,,1,2
+Mariluán,departamento,De 100 adelante,100,,,6,8
+Mariluán,departamento,Total,,,,12715,11255
+Collipulli,departamento,Hasta 1 mes,0,0,0,49,63
+Collipulli,departamento,De 1 a 3 meses,0,0,1-2,109,92
+Collipulli,departamento,De 3 a 6 meses,0,0,3-5,81,72
+Collipulli,departamento,De 6 meses a 1 año,0,0,6-11,182,217
+Collipulli,departamento,De 1 a 2 años,1,1,,597,584
+Collipulli,departamento,De 2 a 5,2,4,,1222,1194
+Collipulli,departamento,De 5 a 10,5,9,,1671,1526
+Collipulli,departamento,De 10 a 15,10,14,,1305,1192
+Collipulli,departamento,De 15 a 20,15,19,,1061,1190
+Collipulli,departamento,De 20 a 25,20,24,,1124,938
+Collipulli,departamento,De 25 a 30,25,29,,1208,1125
+Collipulli,departamento,De 30 a 35,30,34,,646,692
+Collipulli,departamento,De 35 a 40,35,39,,859,684
+Collipulli,departamento,De 40 a 45,40,44,,464,319
+Collipulli,departamento,De 45 a 50,45,49,,454,378
+Collipulli,departamento,De 50 a 55,50,54,,198,161
+Collipulli,departamento,De 55 a 60,55,59,,350,229
+Collipulli,departamento,De 60 a 65,60,64,,120,69
+Collipulli,departamento,De 65 a 70,65,69,,122,76
+Collipulli,departamento,De 70 a 75,70,74,,36,33
+Collipulli,departamento,De 75 a 80,75,79,,42,26
+Collipulli,departamento,De 80 a 85,80,84,,8,7
+Collipulli,departamento,De 85 a 90,85,89,,11,4
+Collipulli,departamento,De 90 a 95,90,94,,3,2
+Collipulli,departamento,De 95 a 100,95,99,,3,2
+Collipulli,departamento,De 100 adelante,100,,,9,6
+Collipulli,departamento,Total,,,,11934,10881
+Malleco,provincia,Hasta 1 mes,0,0,0,266,282
+Malleco,provincia,De 1 a 3 meses,0,0,1-2,417,369
+Malleco,provincia,De 3 a 6 meses,0,0,3-5,442,387
+Malleco,provincia,De 6 meses a 1 año,0,0,6-11,810,782
+Malleco,provincia,De 1 a 2 años,1,1,,2769,2592
+Malleco,provincia,De 2 a 5,2,4,,5087,4838
+Malleco,provincia,De 5 a 10,5,9,,6904,6316
+Malleco,provincia,De 10 a 15,10,14,,5351,4851
+Malleco,provincia,De 15 a 20,15,19,,4904,5148
+Malleco,provincia,De 20 a 25,20,24,,5138,4294
+Malleco,provincia,De 25 a 30,25,29,,5417,4781
+Malleco,provincia,De 30 a 35,30,34,,2997,2672
+Malleco,provincia,De 35 a 40,35,39,,3817,3072
+Malleco,provincia,De 40 a 45,40,44,,1919,1408
+Malleco,provincia,De 45 a 50,45,49,,1975,1735
+Malleco,provincia,De 50 a 55,50,54,,847,637
+Malleco,provincia,De 55 a 60,55,59,,1344,1044
+Malleco,provincia,De 60 a 65,60,64,,442,304
+Malleco,provincia,De 65 a 70,65,69,,445,348
+Malleco,provincia,De 70 a 75,70,74,,145,133
+Malleco,provincia,De 75 a 80,75,79,,156,170
+Malleco,provincia,De 80 a 85,80,84,,40,26
+Malleco,provincia,De 85 a 90,85,89,,46,46
+Malleco,provincia,De 90 a 95,90,94,,16,21
+Malleco,provincia,De 95 a 100,95,99,,11,12
+Malleco,provincia,De 100 adelante,100,,,29,30
+Malleco,provincia,Total,,,,51734,46298
+Temuco,departamento,Hasta 1 mes,0,0,0,111,109
+Temuco,departamento,De 1 a 3 meses,0,0,1-2,115,115
+Temuco,departamento,De 3 a 6 meses,0,0,3-5,132,111
+Temuco,departamento,De 6 meses a 1 año,0,0,6-11,338,279
+Temuco,departamento,De 1 a 2 años,1,1,,1101,907
+Temuco,departamento,De 2 a 5,2,4,,1891,1760
+Temuco,departamento,De 5 a 10,5,9,,2741,2343
+Temuco,departamento,De 10 a 15,10,14,,2052,1791
+Temuco,departamento,De 15 a 20,15,19,,2018,1860
+Temuco,departamento,De 20 a 25,20,24,,1791,1581
+Temuco,departamento,De 25 a 30,25,29,,2093,1939
+Temuco,departamento,De 30 a 35,30,34,,1219,978
+Temuco,departamento,De 35 a 40,35,39,,1432,1244
+Temuco,departamento,De 40 a 45,40,44,,739,543
+Temuco,departamento,De 45 a 50,45,49,,715,663
+Temuco,departamento,De 50 a 55,50,54,,292,217
+Temuco,departamento,De 55 a 60,55,59,,595,399
+Temuco,departamento,De 60 a 65,60,64,,162,113
+Temuco,departamento,De 65 a 70,65,69,,169,151
+Temuco,departamento,De 70 a 75,70,74,,57,41
+Temuco,departamento,De 75 a 80,75,79,,81,134
+Temuco,departamento,De 80 a 85,80,84,,14,9
+Temuco,departamento,De 85 a 90,85,89,,21,37
+Temuco,departamento,De 90 a 95,90,94,,11,10
+Temuco,departamento,De 95 a 100,95,99,,5,6
+Temuco,departamento,De 100 adelante,100,,,32,26
+Temuco,departamento,Total,,,,19927,17375
+Imperial,departamento,Hasta 1 mes,0,0,0,67,90
+Imperial,departamento,De 1 a 3 meses,0,0,1-2,132,146
+Imperial,departamento,De 3 a 6 meses,0,0,3-5,145,124
+Imperial,departamento,De 6 meses a 1 año,0,0,6-11,540,524
+Imperial,departamento,De 1 a 2 años,1,1,,1107,1078
+Imperial,departamento,De 2 a 5,2,4,,2182,2139
+Imperial,departamento,De 5 a 10,5,9,,2988,2624
+Imperial,departamento,De 10 a 15,10,14,,2480,1997
+Imperial,departamento,De 15 a 20,15,19,,1953,2008
+Imperial,departamento,De 20 a 25,20,24,,1736,1711
+Imperial,departamento,De 25 a 30,25,29,,1842,2102
+Imperial,departamento,De 30 a 35,30,34,,1142,1006
+Imperial,departamento,De 35 a 40,35,39,,1508,1476
+Imperial,departamento,De 40 a 45,40,44,,715,627
+Imperial,departamento,De 45 a 50,45,49,,811,780
+Imperial,departamento,De 50 a 55,50,54,,312,237
+Imperial,departamento,De 55 a 60,55,59,,538,499
+Imperial,departamento,De 60 a 65,60,64,,172,153
+Imperial,departamento,De 65 a 70,65,69,,255,214
+Imperial,departamento,De 70 a 75,70,74,,68,62
+Imperial,departamento,De 75 a 80,75,79,,135,137
+Imperial,departamento,De 80 a 85,80,84,,38,47
+Imperial,departamento,De 85 a 90,85,89,,57,59
+Imperial,departamento,De 90 a 95,90,94,,28,26
+Imperial,departamento,De 95 a 100,95,99,,15,3
+Imperial,departamento,De 100 adelante,100,,,42,42
+Imperial,departamento,Total,,,,21008,19911
+Cautín,provincia,Hasta 1 mes,0,0,0,178,199
+Cautín,provincia,De 1 a 3 meses,0,0,1-2,247,261
+Cautín,provincia,De 3 a 6 meses,0,0,3-5,277,235
+Cautín,provincia,De 6 meses a 1 año,0,0,6-11,878,803
+Cautín,provincia,De 1 a 2 años,1,1,,2208,1985
+Cautín,provincia,De 2 a 5,2,4,,4073,3899
+Cautín,provincia,De 5 a 10,5,9,,5729,4967
+Cautín,provincia,De 10 a 15,10,14,,4532,3788
+Cautín,provincia,De 15 a 20,15,19,,3971,3868
+Cautín,provincia,De 20 a 25,20,24,,3527,3292
+Cautín,provincia,De 25 a 30,25,29,,3935,4041
+Cautín,provincia,De 30 a 35,30,34,,2361,1984
+Cautín,provincia,De 35 a 40,35,39,,2940,2720
+Cautín,provincia,De 40 a 45,40,44,,1454,1170
+Cautín,provincia,De 45 a 50,45,49,,1526,1443
+Cautín,provincia,De 50 a 55,50,54,,604,454
+Cautín,provincia,De 55 a 60,55,59,,1133,898
+Cautín,provincia,De 60 a 65,60,64,,334,266
+Cautín,provincia,De 65 a 70,65,69,,424,365
+Cautín,provincia,De 70 a 75,70,74,,125,103
+Cautín,provincia,De 75 a 80,75,79,,216,280
+Cautín,provincia,De 80 a 85,80,84,,52,56
+Cautín,provincia,De 85 a 90,85,89,,78,96
+Cautín,provincia,De 90 a 95,90,94,,39,36
+Cautín,provincia,De 95 a 100,95,99,,20,9
+Cautín,provincia,De 100 adelante,100,,,74,68
+Cautín,provincia,Total,,,,40935,37286
+Valdivia,departamento,Hasta 1 mes,0,0,0,72,59
+Valdivia,departamento,De 1 a 3 meses,0,0,1-2,123,126
+Valdivia,departamento,De 3 a 6 meses,0,0,3-5,193,178
+Valdivia,departamento,De 6 meses a 1 año,0,0,6-11,242,260
+Valdivia,departamento,De 1 a 2 años,1,1,,1134,1116
+Valdivia,departamento,De 2 a 5,2,4,,1969,1871
+Valdivia,departamento,De 5 a 10,5,9,,3100,2817
+Valdivia,departamento,De 10 a 15,10,14,,2288,1985
+Valdivia,departamento,De 15 a 20,15,19,,2068,2146
+Valdivia,departamento,De 20 a 25,20,24,,1983,1751
+Valdivia,departamento,De 25 a 30,25,29,,1944,1896
+Valdivia,departamento,De 30 a 35,30,34,,1205,991
+Valdivia,departamento,De 35 a 40,35,39,,1329,1227
+Valdivia,departamento,De 40 a 45,40,44,,696,561
+Valdivia,departamento,De 45 a 50,45,49,,750,724
+Valdivia,departamento,De 50 a 55,50,54,,314,274
+Valdivia,departamento,De 55 a 60,55,59,,566,429
+Valdivia,departamento,De 60 a 65,60,64,,185,157
+Valdivia,departamento,De 65 a 70,65,69,,244,180
+Valdivia,departamento,De 70 a 75,70,74,,91,79
+Valdivia,departamento,De 75 a 80,75,79,,92,110
+Valdivia,departamento,De 80 a 85,80,84,,14,27
+Valdivia,departamento,De 85 a 90,85,89,,26,28
+Valdivia,departamento,De 90 a 95,90,94,,12,10
+Valdivia,departamento,De 95 a 100,95,99,,11,9
+Valdivia,departamento,De 100 adelante,100,,,5,7
+Valdivia,departamento,Total,,,,20656,19018
+La Unión,departamento,Hasta 1 mes,0,0,0,32,40
+La Unión,departamento,De 1 a 3 meses,0,0,1-2,74,64
+La Unión,departamento,De 3 a 6 meses,0,0,3-5,81,66
+La Unión,departamento,De 6 meses a 1 año,0,0,6-11,63,78
+La Unión,departamento,De 1 a 2 años,1,1,,665,699
+La Unión,departamento,De 2 a 5,2,4,,1017,1050
+La Unión,departamento,De 5 a 10,5,9,,1729,1528
+La Unión,departamento,De 10 a 15,10,14,,1337,1212
+La Unión,departamento,De 15 a 20,15,19,,1147,1191
+La Unión,departamento,De 20 a 25,20,24,,924,846
+La Unión,departamento,De 25 a 30,25,29,,939,1005
+La Unión,departamento,De 30 a 35,30,34,,521,441
+La Unión,departamento,De 35 a 40,35,39,,689,637
+La Unión,departamento,De 40 a 45,40,44,,324,290
+La Unión,departamento,De 45 a 50,45,49,,394,388
+La Unión,departamento,De 50 a 55,50,54,,183,136
+La Unión,departamento,De 55 a 60,55,59,,280,258
+La Unión,departamento,De 60 a 65,60,64,,95,82
+La Unión,departamento,De 65 a 70,65,69,,121,94
+La Unión,departamento,De 70 a 75,70,74,,48,38
+La Unión,departamento,De 75 a 80,75,79,,59,65
+La Unión,departamento,De 80 a 85,80,84,,15,14
+La Unión,departamento,De 85 a 90,85,89,,14,15
+La Unión,departamento,De 90 a 95,90,94,,2,3
+La Unión,departamento,De 95 a 100,95,99,,3,8
+La Unión,departamento,De 100 adelante,100,,,3,4
+La Unión,departamento,Total,,,,10760,10253
+Valdivia,provincia,Hasta 1 mes,0,0,0,104,99
+Valdivia,provincia,De 1 a 3 meses,0,0,1-2,197,190
+Valdivia,provincia,De 3 a 6 meses,0,0,3-5,274,244
+Valdivia,provincia,De 6 meses a 1 año,0,0,6-11,305,338
+Valdivia,provincia,De 1 a 2 años,1,1,,1799,1815
+Valdivia,provincia,De 2 a 5,2,4,,2986,2921
+Valdivia,provincia,De 5 a 10,5,9,,4829,4345
+Valdivia,provincia,De 10 a 15,10,14,,3625,3197
+Valdivia,provincia,De 15 a 20,15,19,,3215,3337
+Valdivia,provincia,De 20 a 25,20,24,,2907,2597
+Valdivia,provincia,De 25 a 30,25,29,,2883,2901
+Valdivia,provincia,De 30 a 35,30,34,,1726,1432
+Valdivia,provincia,De 35 a 40,35,39,,2018,1864
+Valdivia,provincia,De 40 a 45,40,44,,1020,851
+Valdivia,provincia,De 45 a 50,45,49,,1144,1112
+Valdivia,provincia,De 50 a 55,50,54,,497,410
+Valdivia,provincia,De 55 a 60,55,59,,846,687
+Valdivia,provincia,De 60 a 65,60,64,,280,239
+Valdivia,provincia,De 65 a 70,65,69,,365,274
+Valdivia,provincia,De 70 a 75,70,74,,139,117
+Valdivia,provincia,De 75 a 80,75,79,,151,175
+Valdivia,provincia,De 80 a 85,80,84,,29,41
+Valdivia,provincia,De 85 a 90,85,89,,40,43
+Valdivia,provincia,De 90 a 95,90,94,,14,13
+Valdivia,provincia,De 95 a 100,95,99,,14,17
+Valdivia,provincia,De 100 adelante,100,,,8,11
+Valdivia,provincia,Total,,,,31416,29271
+Llanquihue,departamento,Hasta 1 mes,0,0,0,51,39
+Llanquihue,departamento,De 1 a 3 meses,0,0,1-2,94,81
+Llanquihue,departamento,De 3 a 6 meses,0,0,3-5,97,80
+Llanquihue,departamento,De 6 meses a 1 año,0,0,6-11,136,146
+Llanquihue,departamento,De 1 a 2 años,1,1,,717,622
+Llanquihue,departamento,De 2 a 5,2,4,,1069,1020
+Llanquihue,departamento,De 5 a 10,5,9,,1724,1607
+Llanquihue,departamento,De 10 a 15,10,14,,1370,1151
+Llanquihue,departamento,De 15 a 20,15,19,,1024,1196
+Llanquihue,departamento,De 20 a 25,20,24,,963,989
+Llanquihue,departamento,De 25 a 30,25,29,,902,875
+Llanquihue,departamento,De 30 a 35,30,34,,463,518
+Llanquihue,departamento,De 35 a 40,35,39,,566,536
+Llanquihue,departamento,De 40 a 45,40,44,,349,281
+Llanquihue,departamento,De 45 a 50,45,49,,435,328
+Llanquihue,departamento,De 50 a 55,50,54,,208,158
+Llanquihue,departamento,De 55 a 60,55,59,,306,265
+Llanquihue,departamento,De 60 a 65,60,64,,153,105
+Llanquihue,departamento,De 65 a 70,65,69,,128,99
+Llanquihue,departamento,De 70 a 75,70,74,,64,53
+Llanquihue,departamento,De 75 a 80,75,79,,52,48
+Llanquihue,departamento,De 80 a 85,80,84,,16,7
+Llanquihue,departamento,De 85 a 90,85,89,,10,10
+Llanquihue,departamento,De 90 a 95,90,94,,4,6
+Llanquihue,departamento,De 95 a 100,95,99,,2,7
+Llanquihue,departamento,De 100 adelante,100,,,1,-
+Llanquihue,departamento,Total,,,,10914,10227
+Carelmapu,departamento,Hasta 1 mes,0,0,0,51,53
+Carelmapu,departamento,De 1 a 3 meses,0,0,1-2,82,69
+Carelmapu,departamento,De 3 a 6 meses,0,0,3-5,101,94
+Carelmapu,departamento,De 6 meses a 1 año,0,0,6-11,86,76
+Carelmapu,departamento,De 1 a 2 años,1,1,,809,767
+Carelmapu,departamento,De 2 a 5,2,4,,1182,1151
+Carelmapu,departamento,De 5 a 10,5,9,,2158,1842
+Carelmapu,departamento,De 10 a 15,10,14,,1380,1229
+Carelmapu,departamento,De 15 a 20,15,19,,1047,1245
+Carelmapu,departamento,De 20 a 25,20,24,,882,1067
+Carelmapu,departamento,De 25 a 30,25,29,,846,1016
+Carelmapu,departamento,De 30 a 35,30,34,,504,526
+Carelmapu,departamento,De 35 a 40,35,39,,646,670
+Carelmapu,departamento,De 40 a 45,40,44,,321,265
+Carelmapu,departamento,De 45 a 50,45,49,,439,431
+Carelmapu,departamento,De 50 a 55,50,54,,171,135
+Carelmapu,departamento,De 55 a 60,55,59,,324,280
+Carelmapu,departamento,De 60 a 65,60,64,,141,81
+Carelmapu,departamento,De 65 a 70,65,69,,168,131
+Carelmapu,departamento,De 70 a 75,70,74,,63,37
+Carelmapu,departamento,De 75 a 80,75,79,,74,62
+Carelmapu,departamento,De 80 a 85,80,84,,11,15
+Carelmapu,departamento,De 85 a 90,85,89,,10,15
+Carelmapu,departamento,De 90 a 95,90,94,,2,4
+Carelmapu,departamento,De 95 a 100,95,99,,2,4
+Carelmapu,departamento,De 100 adelante,100,,,1,-
+Carelmapu,departamento,Total,,,,11501,11265
+Osorno,departamento,Hasta 1 mes,0,0,0,48,68
+Osorno,departamento,De 1 a 3 meses,0,0,1-2,122,102
+Osorno,departamento,De 3 a 6 meses,0,0,3-5,147,116
+Osorno,departamento,De 6 meses a 1 año,0,0,6-11,132,114
+Osorno,departamento,De 1 a 2 años,1,1,,1126,1063
+Osorno,departamento,De 2 a 5,2,4,,1710,1571
+Osorno,departamento,De 5 a 10,5,9,,2711,2532
+Osorno,departamento,De 10 a 15,10,14,,2098,1854
+Osorno,departamento,De 15 a 20,15,19,,1857,1925
+Osorno,departamento,De 20 a 25,20,24,,1647,1423
+Osorno,departamento,De 25 a 30,25,29,,1677,1602
+Osorno,departamento,De 30 a 35,30,34,,964,867
+Osorno,departamento,De 35 a 40,35,39,,1146,1027
+Osorno,departamento,De 40 a 45,40,44,,565,424
+Osorno,departamento,De 45 a 50,45,49,,662,588
+Osorno,departamento,De 50 a 55,50,54,,291,232
+Osorno,departamento,De 55 a 60,55,59,,472,408
+Osorno,departamento,De 60 a 65,60,64,,170,156
+Osorno,departamento,De 65 a 70,65,69,,197,169
+Osorno,departamento,De 70 a 75,70,74,,68,43
+Osorno,departamento,De 75 a 80,75,79,,89,96
+Osorno,departamento,De 80 a 85,80,84,,16,18
+Osorno,departamento,De 85 a 90,85,89,,11,36
+Osorno,departamento,De 90 a 95,90,94,,7,9
+Osorno,departamento,De 95 a 100,95,99,,4,7
+Osorno,departamento,De 100 adelante,100,,,14,7
+Osorno,departamento,Total,,,,17951,16457
+Llanquihue,provincia,Hasta 1 mes,0,0,0,150,160
+Llanquihue,provincia,De 1 a 3 meses,0,0,1-2,298,252
+Llanquihue,provincia,De 3 a 6 meses,0,0,3-5,345,290
+Llanquihue,provincia,De 6 meses a 1 año,0,0,6-11,354,336
+Llanquihue,provincia,De 1 a 2 años,1,1,,2652,2452
+Llanquihue,provincia,De 2 a 5,2,4,,3961,3742
+Llanquihue,provincia,De 5 a 10,5,9,,6593,5981
+Llanquihue,provincia,De 10 a 15,10,14,,4848,4234
+Llanquihue,provincia,De 15 a 20,15,19,,3928,4366
+Llanquihue,provincia,De 20 a 25,20,24,,3492,3479
+Llanquihue,provincia,De 25 a 30,25,29,,3425,3493
+Llanquihue,provincia,De 30 a 35,30,34,,1931,1911
+Llanquihue,provincia,De 35 a 40,35,39,,2358,2233
+Llanquihue,provincia,De 40 a 45,40,44,,1235,970
+Llanquihue,provincia,De 45 a 50,45,49,,1536,1347
+Llanquihue,provincia,De 50 a 55,50,54,,670,525
+Llanquihue,provincia,De 55 a 60,55,59,,1102,953
+Llanquihue,provincia,De 60 a 65,60,64,,464,342
+Llanquihue,provincia,De 65 a 70,65,69,,493,399
+Llanquihue,provincia,De 70 a 75,70,74,,195,133
+Llanquihue,provincia,De 75 a 80,75,79,,215,206
+Llanquihue,provincia,De 80 a 85,80,84,,43,40
+Llanquihue,provincia,De 85 a 90,85,89,,31,61
+Llanquihue,provincia,De 90 a 95,90,94,,13,19
+Llanquihue,provincia,De 95 a 100,95,99,,8,18
+Llanquihue,provincia,De 100 adelante,100,,,16,7
+Llanquihue,provincia,Total,,,,40366,37949
+Ancud,departamento,Hasta 1 mes,0,0,0,54,37
+Ancud,departamento,De 1 a 3 meses,0,0,1-2,76,58
+Ancud,departamento,De 3 a 6 meses,0,0,3-5,131,105
+Ancud,departamento,De 6 meses a 1 año,0,0,6-11,70,92
+Ancud,departamento,De 1 a 2 años,1,1,,827,772
+Ancud,departamento,De 2 a 5,2,4,,1346,1214
+Ancud,departamento,De 5 a 10,5,9,,2178,2070
+Ancud,departamento,De 10 a 15,10,14,,1503,1523
+Ancud,departamento,De 15 a 20,15,19,,916,1460
+Ancud,departamento,De 20 a 25,20,24,,771,1250
+Ancud,departamento,De 25 a 30,25,29,,808,1224
+Ancud,departamento,De 30 a 35,30,34,,471,594
+Ancud,departamento,De 35 a 40,35,39,,658,813
+Ancud,departamento,De 40 a 45,40,44,,357,381
+Ancud,departamento,De 45 a 50,45,49,,467,576
+Ancud,departamento,De 50 a 55,50,54,,201,185
+Ancud,departamento,De 55 a 60,55,59,,420,407
+Ancud,departamento,De 60 a 65,60,64,,146,110
+Ancud,departamento,De 65 a 70,65,69,,210,159
+Ancud,departamento,De 70 a 75,70,74,,73,57
+Ancud,departamento,De 75 a 80,75,79,,79,76
+Ancud,departamento,De 80 a 85,80,84,,21,28
+Ancud,departamento,De 85 a 90,85,89,,24,26
+Ancud,departamento,De 90 a 95,90,94,,5,3
+Ancud,departamento,De 95 a 100,95,99,,2,2
+Ancud,departamento,De 100 adelante,100,,,1,3
+Ancud,departamento,Total,,,,11815,13225
+Castro,departamento,Hasta 1 mes,0,0,0,48,49
+Castro,departamento,De 1 a 3 meses,0,0,1-2,88,71
+Castro,departamento,De 3 a 6 meses,0,0,3-5,122,125
+Castro,departamento,De 6 meses a 1 año,0,0,6-11,122,117
+Castro,departamento,De 1 a 2 años,1,1,,1422,1287
+Castro,departamento,De 2 a 5,2,4,,2056,2051
+Castro,departamento,De 5 a 10,5,9,,3413,3182
+Castro,departamento,De 10 a 15,10,14,,2331,2319
+Castro,departamento,De 15 a 20,15,19,,1250,2220
+Castro,departamento,De 20 a 25,20,24,,1046,1906
+Castro,departamento,De 25 a 30,25,29,,1201,1862
+Castro,departamento,De 30 a 35,30,34,,625,918
+Castro,departamento,De 35 a 40,35,39,,1029,1218
+Castro,departamento,De 40 a 45,40,44,,438,478
+Castro,departamento,De 45 a 50,45,49,,714,825
+Castro,departamento,De 50 a 55,50,54,,266,257
+Castro,departamento,De 55 a 60,55,59,,549,549
+Castro,departamento,De 60 a 65,60,64,,181,151
+Castro,departamento,De 65 a 70,65,69,,239,113
+Castro,departamento,De 70 a 75,70,74,,79,53
+Castro,departamento,De 75 a 80,75,79,,116,91
+Castro,departamento,De 80 a 85,80,84,,29,20
+Castro,departamento,De 85 a 90,85,89,,25,22
+Castro,departamento,De 90 a 95,90,94,,10,9
+Castro,departamento,De 95 a 100,95,99,,3,2
+Castro,departamento,De 100 adelante,100,,,-,1
+Castro,departamento,Total,,,,17489,20006
+Quinchao,departamento,Hasta 1 mes,0,0,0,18,20
+Quinchao,departamento,De 1 a 3 meses,0,0,1-2,38,49
+Quinchao,departamento,De 3 a 6 meses,0,0,3-5,68,79
+Quinchao,departamento,De 6 meses a 1 año,0,0,6-11,126,142
+Quinchao,departamento,De 1 a 2 años,1,1,,394,421
+Quinchao,departamento,De 2 a 5,2,4,,836,822
+Quinchao,departamento,De 5 a 10,5,9,,1414,1344
+Quinchao,departamento,De 10 a 15,10,14,,935,926
+Quinchao,departamento,De 15 a 20,15,19,,498,783
+Quinchao,departamento,De 20 a 25,20,24,,438,751
+Quinchao,departamento,De 25 a 30,25,29,,513,730
+Quinchao,departamento,De 30 a 35,30,34,,272,313
+Quinchao,departamento,De 35 a 40,35,39,,394,530
+Quinchao,departamento,De 40 a 45,40,44,,178,211
+Quinchao,departamento,De 45 a 50,45,49,,286,301
+Quinchao,departamento,De 50 a 55,50,54,,123,125
+Quinchao,departamento,De 55 a 60,55,59,,267,264
+Quinchao,departamento,De 60 a 65,60,64,,96,69
+Quinchao,departamento,De 65 a 70,65,69,,97,114
+Quinchao,departamento,De 70 a 75,70,74,,29,36
+Quinchao,departamento,De 75 a 80,75,79,,61,40
+Quinchao,departamento,De 80 a 85,80,84,,14,10
+Quinchao,departamento,De 85 a 90,85,89,,9,16
+Quinchao,departamento,De 90 a 95,90,94,,5,3
+Quinchao,departamento,De 95 a 100,95,99,,1,4
+Quinchao,departamento,De 100 adelante,100,,,-,2
+Quinchao,departamento,Total,,,,7110,8105
+Chiloé,provincia,Hasta 1 mes,0,0,0,120,106
+Chiloé,provincia,De 1 a 3 meses,0,0,1-2,202,178
+Chiloé,provincia,De 3 a 6 meses,0,0,3-5,321,309
+Chiloé,provincia,De 6 meses a 1 año,0,0,6-11,318,351
+Chiloé,provincia,De 1 a 2 años,1,1,,2643,2480
+Chiloé,provincia,De 2 a 5,2,4,,4238,4087
+Chiloé,provincia,De 5 a 10,5,9,,7005,6596
+Chiloé,provincia,De 10 a 15,10,14,,4769,4768
+Chiloé,provincia,De 15 a 20,15,19,,2664,4463
+Chiloé,provincia,De 20 a 25,20,24,,2255,3907
+Chiloé,provincia,De 25 a 30,25,29,,2522,3816
+Chiloé,provincia,De 30 a 35,30,34,,1368,1825
+Chiloé,provincia,De 35 a 40,35,39,,2081,2561
+Chiloé,provincia,De 40 a 45,40,44,,973,1070
+Chiloé,provincia,De 45 a 50,45,49,,1467,1702
+Chiloé,provincia,De 50 a 55,50,54,,590,567
+Chiloé,provincia,De 55 a 60,55,59,,1323,1220
+Chiloé,provincia,De 60 a 65,60,64,,423,330
+Chiloé,provincia,De 65 a 70,65,69,,546,486
+Chiloé,provincia,De 70 a 75,70,74,,181,156
+Chiloé,provincia,De 75 a 80,75,79,,256,207
+Chiloé,provincia,De 80 a 85,80,84,,64,58
+Chiloé,provincia,De 85 a 90,85,89,,58,64
+Chiloé,provincia,De 90 a 95,90,94,,20,15
+Chiloé,provincia,De 95 a 100,95,99,,6,8
+Chiloé,provincia,De 100 adelante,100,,,1,6
+Chiloé,provincia,Total,,,,36414,41336
+Magallanes,provincia,Hasta 1 mes,0,0,0,14,12
+Magallanes,provincia,De 1 a 3 meses,0,0,1-2,17,13
+Magallanes,provincia,De 3 a 6 meses,0,0,3-5,21,13
+Magallanes,provincia,De 6 meses a 1 año,0,0,6-11,15,33
+Magallanes,provincia,De 1 a 2 años,1,1,,115,94
+Magallanes,provincia,De 2 a 5,2,4,,165,154
+Magallanes,provincia,De 5 a 10,5,9,,208,247
+Magallanes,provincia,De 10 a 15,10,14,,194,184
+Magallanes,provincia,De 15 a 20,15,19,,358,200
+Magallanes,provincia,De 20 a 25,20,24,,536,216
+Magallanes,provincia,De 25 a 30,25,29,,593,220
+Magallanes,provincia,De 30 a 35,30,34,,384,138
+Magallanes,provincia,De 35 a 40,35,39,,298,113
+Magallanes,provincia,De 40 a 45,40,44,,151,55
+Magallanes,provincia,De 45 a 50,45,49,,117,59
+Magallanes,provincia,De 50 a 55,50,54,,55,21
+Magallanes,provincia,De 55 a 60,55,59,,54,39
+Magallanes,provincia,De 60 a 65,60,64,,12,11
+Magallanes,provincia,De 65 a 70,65,69,,19,11
+Magallanes,provincia,De 70 a 75,70,74,,1,3
+Magallanes,provincia,De 75 a 80,75,79,,4,2
+Magallanes,provincia,De 80 a 85,80,84,,-,-
+Magallanes,provincia,De 85 a 90,85,89,,-,1
+Magallanes,provincia,De 90 a 95,90,94,,-,-
+Magallanes,provincia,De 95 a 100,95,99,,-,-
+Magallanes,provincia,De 100 adelante,100,,,-,-
+Magallanes,provincia,Total,,,,3331,1839
+República,pais,Hasta 1 mes,0,0,0,6301,6528
+República,pais,De 1 a 3 meses,0,0,1-2,9223,9014
+República,pais,De 3 a 6 meses,0,0,3-5,10671,10955
+República,pais,De 6 meses a 1 año,0,0,6-11,19909,21568
+República,pais,De 1 a 2 años,1,1,,59255,54381
+República,pais,De 2 a 5,2,4,,116219,112746
+República,pais,De 5 a 10,5,9,,182199,171781
+República,pais,De 10 a 15,10,14,,154442,149619
+República,pais,De 15 a 20,15,19,,134473,148162
+República,pais,De 20 a 25,20,24,,122383,128475
+República,pais,De 25 a 30,25,29,,121290,133263
+República,pais,De 30 a 35,30,34,,78111,79345
+República,pais,De 35 a 40,35,39,,88513,94758
+República,pais,De 40 a 45,40,44,,51676,50347
+República,pais,De 45 a 50,45,49,,56100,59236
+República,pais,De 50 a 55,50,54,,28409,27942
+República,pais,De 55 a 60,55,59,,40980,40712
+República,pais,De 60 a 65,60,64,,16932,16503
+República,pais,De 65 a 70,65,69,,15944,16866
+República,pais,De 70 a 75,70,74,,6715,7165
+República,pais,De 75 a 80,75,79,,6984,8204
+República,pais,De 80 a 85,80,84,,2364,2813
+República,pais,De 85 a 90,85,89,,2035,2456
+República,pais,De 90 a 95,90,94,,795,1158
+República,pais,De 95 a 100,95,99,,450,679
+República,pais,De 100 adelante,100,,,386,540
+República,pais,Total,,,,1332769,1355216

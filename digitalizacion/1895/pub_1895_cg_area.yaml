@@ -1,0 +1,82 @@
+# Columnas «Total jeneral», «Población urbana» y «Población rural» del cuadro general «Clasificación de
+# los habitantes por Departamentos i Provincias, según el sexo i edad ... Población urbana i rural» del
+# censo de 1895 (tomo IV, págs. 471, 476, 481 y 486). El área solo viene para el total de ambos sexos.
+# Las columnas por sexo y edad del mismo cuadro están en pub_1895_cg_edad. Al pie de la última página
+# el impreso agrega la población estimada de Tacna (24 160; urbana 16 694, rural 7 466) y la de la
+# República con Tacna (2 712 145; 1 240 102 y 1 472 043): no se transcriben como filas porque Tacna no
+# se censó (ver tomo I, pág. XXX).
+
+fuente_id: pub_1895
+cuadro: "IV.467"
+titulo: Clasificación de los habitantes por departamentos i provincias ... Población urbana i rural (total jeneral, urbana y rural)
+paginas:
+  - {pdf: 2459, impresa: "471", desde: Tarapacá}
+  - {pdf: 2464, impresa: "476", desde: Valparaíso}
+  - {pdf: 2469, impresa: "481", desde: Linares}
+  - {pdf: 2474, impresa: "486", desde: Angol}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion:
+  fecha: 2026-10-20
+  por: Claude (asistido)
+  recortes_dpi: 200-300
+  nota: >
+    Lectura sobre la copia del tomo IV de Memoria Chilena (MC0055464, PDF 467, 472, 477 y 482), porque
+    en el PDF del INE estas páginas son un escaneo bitonal de ~72 dpi; las páginas indicadas son las
+    del PDF del INE.
+
+indicador: poblacion
+unidad: personas
+fijas: {censo: 1895, sexo: _T}
+
+territorio:
+  columna: territorio
+  columna_nivel: nivel
+  niveles: [provincia, departamento]
+  totales_al_final: true
+  dpa_version: provincias_1895
+
+columnas:
+  total: {area: _T}
+  urbana: {area: urbana}
+  rural: {area: rural}
+
+notas_cuadro:
+  - >
+    Urbana y rural coinciden con el Cuadro 3 de 1920 en todos los departamentos y provincias salvo las
+    celdas anotadas, donde 1920 C3 trae el valor corregido. El total de cada departamento es igual a
+    hombres + mujeres (pub_1895_cg_edad) salvo Combarbalá, cuyo total de mujeres está errado. Los
+    totales por departamento difieren del Cuadro 1 de 1920 donde cambiaron los límites (La Ligua,
+    Petorca, Melipilla, Cachapoal, Curicó, Vichuquén, Cauquenes, Constitución, Temuco, Imperial, Valdivia,
+    La Unión, Llanquihue, Osorno): 1920 C1 da 1895 en los límites de 1920.
+  - >
+    En Coquimbo, La Serena (24 466 y 9 866) y Elqui (8 810 y 6 165, que suman 14 975 y no 14 983) no
+    cuadran con el total provincial (87 225 y 73 673); 1920 C3 da a La Serena 24 140 y 10 200. La
+    diferencia de Elqui queda como excepción del control.
+  - >
+    El país suma 2 687 985 sin Tacna; los comparativos 5, 7 y 9 de 1952 dan 2 687 984 (y 1 223 407
+    urbanos) porque restan 1 hombre a Valparaíso (220 755).
+
+notas_celdas:
+  - {territorio: La Serena, nivel: departamento, columna: urbana, estado_valor: inconsistente, nota: "Impreso 24 466; el total de la provincia y el Cuadro 3 de 1920 implican 24 140."}
+  - {territorio: La Serena, nivel: departamento, columna: rural, estado_valor: inconsistente, nota: "Impreso 9 866; el total de la provincia y el Cuadro 3 de 1920 implican 10 200."}
+  - {territorio: Casablanca, nivel: departamento, columna: urbana, estado_valor: inconsistente, nota: "Impreso 2 225; total - rural = 2 255, como el Cuadro 3 de 1920 y la suma provincial."}
+  - {territorio: Limache, nivel: departamento, columna: urbana, estado_valor: inconsistente, nota: "Impreso 13 862; total - rural = 13 863, como el Cuadro 3 de 1920."}
+  - {territorio: Valparaíso, nivel: provincia, columna: urbana, estado_valor: inconsistente, nota: "Impreso 172 852; total - rural = 172 853, como el Cuadro 3 de 1920."}
+  - {territorio: Maipo, nivel: departamento, columna: rural, estado_valor: inconsistente, nota: "Impreso 22 277; total - urbana = 22 777, como el Cuadro 3 de 1920 y la suma provincial."}
+  - {territorio: Constitución, nivel: departamento, columna: urbana, estado_valor: inconsistente, nota: "Impreso 7 590; total - rural = 7 453, como el Cuadro 3 de 1920 y la suma provincial."}
+  - {territorio: Lebu, nivel: departamento, columna: urbana, estado_valor: inconsistente, nota: "Impreso 7 837; total - rural = 7 830, como el Cuadro 3 de 1920 y la suma provincial."}
+  - {territorio: Bío-Bío, nivel: provincia, columna: rural, estado_valor: inconsistente, nota: "Impreso 79 140; total - urbana = 70 140, como la suma de los departamentos y el Cuadro 3 de 1920."}
+  - {territorio: Valdivia, nivel: provincia, columna: total, estado_valor: inconsistente, nota: "Impreso 60 867 (marcado a mano en la copia de Memoria Chilena); hombres + mujeres, urbana + rural y la suma de los departamentos dan 60 687, como 1920 C1 y 1952 C5."}
+
+controles:
+  - tipo: suma_dimension
+    dimension: area
+    total: _T
+    partes: [urbana, rural]
+    excepciones:
+      - {territorio: Elqui, diferencia: -8}
+  - tipo: jerarquia
+  - tipo: suma_territorio
+    total: pais
+    partes: provincia

@@ -133,8 +133,24 @@ clasificación por subdelegaciones (PDF 302), que respalda las cifras adoptadas.
 trae profesiones ni extranjeros.
 
 **1895.** Cuatro tomos en un PDF, cada uno con su índice (PDF 2–4, 609–612, 1326–1329 y
-1995–1998). Cuadros generales en el tomo IV, págs. 467–551 (PDF ~2457–2539). El número de página
-cae más abajo que en otros volúmenes (franja de 0,16 en el muestreo).
+1995–1998). Cuadros generales en el tomo IV, págs. 467–551 (PDF 2455–2539). El número de página
+cae más abajo que en otros volúmenes (franja de 0,16 en el muestreo). Desde la PDF 2086 (Cautín a
+Magallanes y los cuadros generales) el escaneo es bitonal a ~72 dpi y no se lee con seguridad; el
+tomo IV completo está en Memoria Chilena (MC0055464, en grises; impresa = PDF + 4 en los cuadros
+generales), registrado como copia de lectura en `metadatos/fuentes.yaml`.
+Cada provincia trae, al pie del cuadro por subdelegaciones (sexo × edad, en cinco páginas), un
+«Resumen por departamentos i total de la provincia»; en Tarapacá y Antofagasta coincide cifra por
+cifra con el cuadro general. El área (urbana y rural) solo viene para el total, no por sexo.
+Transcrito el cuadro general «Clasificación de los habitantes por departamentos i provincias, según
+el sexo i edad» (págs. 467–486, cuatro bloques de cinco páginas): sexo × 26 grupos de edad
+(`pub_1895_cg_edad`, con meses bajo 1 año) y total, urbana y rural (`pub_1895_cg_area`), por
+departamento, provincia y país. El original tiene muchas erratas: 26 celdas con culpable
+identificable (la fila y la columna fallan por lo mismo) van como `inconsistente` con el valor
+implicado, y las demás como `excepciones` de los controles. En Colchagua las cifras de menores de 2
+años repiten las de 2 a 25 años; las correctas están en el resumen del tomo II, pág. 511
+(`pub_1895_colchagua_menores2`). Validación: provincias por sexo = 1952 C5 (salvo Valparaíso, +1
+hombre, y Bío-Bío, anotada), decenios del país = 1952 C7 (±1), urbana y rural = 1920 C3 (que trae
+corregidas las erratas del cuadro).
 
 **1907.** Índice al final (PDF 1274–1277), por provincia y departamento. Cada departamento trae 11
 cuadros numerados (urbana y rural por subdelegación y distrito, entidades pobladas,

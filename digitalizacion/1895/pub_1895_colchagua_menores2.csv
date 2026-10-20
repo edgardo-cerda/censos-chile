@@ -1,0 +1,16 @@
+territorio,nivel,edad,edad_min,edad_max,meses,hombres,mujeres
+San Fernando,departamento,Hasta 1 mes,0,0,0,207,206
+San Fernando,departamento,De 1 a 3 meses,0,0,1-2,298,315
+San Fernando,departamento,De 3 a 6 meses,0,0,3-5,334,316
+San Fernando,departamento,De 6 meses a 1 año,0,0,6-11,1146,1180
+San Fernando,departamento,De 1 a 2 años,1,1,,1249,1219
+Caupolicán,departamento,Hasta 1 mes,0,0,0,165,206
+Caupolicán,departamento,De 1 a 3 meses,0,0,1-2,267,251
+Caupolicán,departamento,De 3 a 6 meses,0,0,3-5,319,323
+Caupolicán,departamento,De 6 meses a 1 año,0,0,6-11,625,575
+Caupolicán,departamento,De 1 a 2 años,1,1,,1742,1710
+Colchagua,provincia,Hasta 1 mes,0,0,0,372,412
+Colchagua,provincia,De 1 a 3 meses,0,0,1-2,565,566
+Colchagua,provincia,De 3 a 6 meses,0,0,3-5,653,639
+Colchagua,provincia,De 6 meses a 1 año,0,0,6-11,1771,1755
+Colchagua,provincia,De 1 a 2 años,1,1,,2991,2929

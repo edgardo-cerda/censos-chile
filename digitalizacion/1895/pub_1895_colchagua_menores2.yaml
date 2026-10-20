@@ -1,0 +1,45 @@
+# «Resumen por Departamentos i total de la Provincia» del cuadro «Clasificación de los habitantes por
+# subdelegaciones, según el sexo i edad, desde un mes hasta dos años» de la provincia de Colchagua
+# (tomo II, pág. 511). Se transcribe porque el cuadro general del tomo IV (pub_1895_cg_edad) repite en
+# estas celdas las cifras de 2 a 25 años. Mismas convenciones de edad que pub_1895_cg_edad.
+
+fuente_id: pub_1895
+cuadro: "II.511"
+titulo: Clasificación de los habitantes por subdelegaciones, según el sexo i edad, desde un mes hasta dos años (Colchagua; resumen por departamentos)
+paginas:
+  - {pdf: 1118, impresa: "511", desde: San Fernando}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion:
+  fecha: 2026-10-20
+  por: Claude (asistido)
+  recortes_dpi: 130
+
+indicador: poblacion
+unidad: personas
+fijas: {censo: 1895, area: _T}
+
+territorio:
+  columna: territorio
+  columna_nivel: nivel
+  niveles: [provincia, departamento]
+  totales_al_final: true
+  dpa_version: provincias_1895
+
+filas:
+  edad_min: {columna: edad_min}
+  edad_max: {columna: edad_max}
+  meses: {columna: meses}
+
+columnas:
+  hombres: {sexo: hombre}
+  mujeres: {sexo: mujer}
+
+notas_cuadro:
+  - >
+    Las 30 cifras cuadran (departamentos = total provincial). Con ellas las edades de San Fernando y
+    Caupolicán suman sus totales del cuadro general salvo 10 hombres de San Fernando (errata anotada
+    en 70-75 años), y la provincia suma su total.
+
+controles:
+  - {tipo: jerarquia}

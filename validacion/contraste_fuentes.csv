@@ -10,6 +10,48 @@ censo,territorio,nivel,area,sexo,fuente_a,valor_a,estado_a,fuente_b,valor_b,esta
 1865,Colchagua,provincia,_T,_T,pub_1875 cp645,142456,ok,pub_1952 c5,233045,ok
 1865,Colchagua,provincia,_T,_T,pub_1875 cp645,142456,ok,pub_1952 c6,233045,ok
 1865,Colchagua,provincia,_T,_T,pub_1875 cp645,142456,ok,pub_1952 c9,233045,ok
+1895,Valparaíso,provincia,_T,_T,pub_1895 cIV.467,220756,ok,pub_1952 c5,220755,ok
+1895,Valparaíso,provincia,_T,_T,pub_1895 cIV.467,220756,ok,pub_1952 c9,220755,ok
+1895,Bío-Bío,provincia,rural,_T,pub_1895 cIV.467,79140,inconsistente,pub_1952 c9,70140,ok
+1895,Valdivia,provincia,_T,_T,pub_1895 cIV.467,60867,inconsistente,pub_1952 c5,60687,ok
+1895,Valdivia,provincia,_T,_T,pub_1895 cIV.467,60867,inconsistente,pub_1952 c9,60687,ok
+1895,República,pais,_T,_T,pub_1895 cIV.467,2687985,ok,pub_1952 c5,2687984,ok
+1895,República,pais,_T,_T,pub_1895 cIV.467,2687985,ok,pub_1952 c7,2687984,ok
+1895,República,pais,_T,_T,pub_1895 cIV.467,2687985,ok,pub_1952 c9,2687984,ok
+1895,República,pais,urbana,_T,pub_1895 cIV.467,1223408,ok,pub_1952 c9,1223407,ok
+1895,Valparaíso,provincia,_T,hombre,pub_1895 cIV.467,109972,ok,pub_1952 c5,109971,ok
+1895,San Fernando,departamento,_T,hombre,pub_1895 cIV.467,4005,inconsistente,pub_1895 cII.511,207,ok
+1895,San Fernando,departamento,_T,mujer,pub_1895 cIV.467,3739,inconsistente,pub_1895 cII.511,206,ok
+1895,San Fernando,departamento,_T,hombre,pub_1895 cIV.467,6105,inconsistente,pub_1895 cII.511,298,ok
+1895,San Fernando,departamento,_T,mujer,pub_1895 cIV.467,5659,inconsistente,pub_1895 cII.511,315,ok
+1895,San Fernando,departamento,_T,hombre,pub_1895 cIV.467,5009,inconsistente,pub_1895 cII.511,334,ok
+1895,San Fernando,departamento,_T,mujer,pub_1895 cIV.467,4568,inconsistente,pub_1895 cII.511,316,ok
+1895,San Fernando,departamento,_T,hombre,pub_1895 cIV.467,3776,inconsistente,pub_1895 cII.511,1146,ok
+1895,San Fernando,departamento,_T,mujer,pub_1895 cIV.467,4365,inconsistente,pub_1895 cII.511,1180,ok
+1895,San Fernando,departamento,_T,hombre,pub_1895 cIV.467,3101,inconsistente,pub_1895 cII.511,1249,ok
+1895,San Fernando,departamento,_T,mujer,pub_1895 cIV.467,3604,inconsistente,pub_1895 cII.511,1219,ok
+1895,Caupolicán,departamento,_T,hombre,pub_1895 cIV.467,3600,inconsistente,pub_1895 cII.511,165,ok
+1895,Caupolicán,departamento,_T,mujer,pub_1895 cIV.467,3504,inconsistente,pub_1895 cII.511,206,ok
+1895,Caupolicán,departamento,_T,hombre,pub_1895 cIV.467,5695,inconsistente,pub_1895 cII.511,267,ok
+1895,Caupolicán,departamento,_T,mujer,pub_1895 cIV.467,4994,inconsistente,pub_1895 cII.511,251,ok
+1895,Caupolicán,departamento,_T,hombre,pub_1895 cIV.467,4726,inconsistente,pub_1895 cII.511,319,ok
+1895,Caupolicán,departamento,_T,mujer,pub_1895 cIV.467,4343,inconsistente,pub_1895 cII.511,323,ok
+1895,Caupolicán,departamento,_T,hombre,pub_1895 cIV.467,3651,inconsistente,pub_1895 cII.511,625,ok
+1895,Caupolicán,departamento,_T,mujer,pub_1895 cIV.467,4164,inconsistente,pub_1895 cII.511,575,ok
+1895,Caupolicán,departamento,_T,hombre,pub_1895 cIV.467,3119,inconsistente,pub_1895 cII.511,1742,ok
+1895,Caupolicán,departamento,_T,mujer,pub_1895 cIV.467,3415,inconsistente,pub_1895 cII.511,1710,ok
+1895,Colchagua,provincia,_T,hombre,pub_1895 cIV.467,7605,inconsistente,pub_1895 cII.511,372,ok
+1895,Colchagua,provincia,_T,mujer,pub_1895 cIV.467,7243,inconsistente,pub_1895 cII.511,412,ok
+1895,Colchagua,provincia,_T,hombre,pub_1895 cIV.467,11800,inconsistente,pub_1895 cII.511,565,ok
+1895,Colchagua,provincia,_T,mujer,pub_1895 cIV.467,10653,inconsistente,pub_1895 cII.511,566,ok
+1895,Colchagua,provincia,_T,hombre,pub_1895 cIV.467,9735,inconsistente,pub_1895 cII.511,653,ok
+1895,Colchagua,provincia,_T,mujer,pub_1895 cIV.467,8911,inconsistente,pub_1895 cII.511,639,ok
+1895,Colchagua,provincia,_T,hombre,pub_1895 cIV.467,7427,inconsistente,pub_1895 cII.511,1771,ok
+1895,Colchagua,provincia,_T,mujer,pub_1895 cIV.467,8529,inconsistente,pub_1895 cII.511,1755,ok
+1895,Colchagua,provincia,_T,hombre,pub_1895 cIV.467,6220,inconsistente,pub_1895 cII.511,2991,ok
+1895,Colchagua,provincia,_T,mujer,pub_1895 cIV.467,7019,inconsistente,pub_1895 cII.511,2929,ok
+1895,Bío-Bío,provincia,_T,mujer,pub_1895 cIV.467,44085,inconsistente,pub_1952 c5,44086,ok
+1895,República,pais,_T,mujer,pub_1895 cIV.467,1355216,ok,pub_1952 c5,1355215,inconsistente
 1920,República,pais,_T,_T,pub_1920 c1,3753799,ok,pub_1952 c5,3714887,ok
 1920,República,pais,_T,_T,pub_1920 c1,3753799,ok,pub_1952 c7,3714887,ok
 1920,República,pais,_T,_T,pub_1920 c1,3753799,ok,pub_1952 c9,3714887,ok

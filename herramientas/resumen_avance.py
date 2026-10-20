@@ -62,10 +62,12 @@ ESTADO = {
                                        "(pág. 839, PDF ~873); validar con ella 1952 C5 y C7.",
            "El PDF trae solo el tomo I de 2. Provincia × área (1952 C9) y × sexo (1952 C5); edad del país en decenios "
            "(1952 C7); departamento desde 1920 C1. Malleco: 3 000 personas sin sexo (1952 C5)."),
-    1895: ("Serie desde otros censos", "Sexo × edad por provincia: clasificación por departamentos y provincias, tomo IV "
-                                       "(pág. 467, PDF ~2457); validar con ella 1952 C5 y C7.",
-           "Departamento × área desde 1920 C3 (con departamentos agrupados); provincia × área (1930 C10, 1952 C9) y "
-           "× sexo (1952 C5); edad del país en decenios (1952 C7)."),
+    1895: ("Núcleo completo",
+           "Opcional: subdelegación y distrito × sexo × edad, con urbana y rural del total (bloques provinciales de los tomos I a IV). El área no viene por sexo.",
+           "Departamento × sexo × edad en 26 grupos (meses bajo 1 año) y departamento × área del cuadro general del tomo IV "
+           "(págs. 467-486, leído en la copia de Memoria Chilena porque el PDF del INE está a ~72 dpi); provincias = 1952 C5, "
+           "decenios del país = 1952 C7, área = 1920 C3. Muchas erratas del original anotadas; Colchagua menores de 2 años "
+           "desde el tomo II (pág. 511)."),
     1907: ("Núcleo completo",
            "Opcional: subdelegación y distrito × área × sexo (cuadro 1 de cada departamento). La edad no viene por área ni bajo departamento.",
            "Departamento × área × sexo (cuadro 1 del resumen de cada provincia; = 1920 C3 salvo Quillota, que cuenta 2 694 personas como urbanas que el total de Valparaíso pone como rurales) y departamento × sexo × edad en 18 grupos (cuadro 7 de cada departamento; provincias = 1952 C5, decenios = 1952 C7). Tacna incluye Tarata."),

@@ -55,6 +55,14 @@ publicaciones:
     url: null  # por completar: enlace directo al PDF
     paginas_pdf: 2547
     capa_texto: no
+    # Desde la pág. 2086 del PDF (tomo IV: Cautín a Magallanes y cuadros generales) el escaneo es
+    # bitonal a ~72 dpi y no se lee con seguridad; para esas páginas se usa otra copia del tomo IV.
+    copias_lectura:
+      - id: memoriachilena_MC0055464
+        descripcion: Sétimo censo jeneral de la población de Chile, tomo 4 (Memoria Chilena, Biblioteca Nacional)
+        url: https://www.memoriachilena.gob.cl/archivos2/pdfs/MC0055464.pdf
+        paginas_pdf: 555
+        nota: Escaneo en grises (~100 dpi). Página impresa = página del PDF + 4 en los cuadros generales (impresa 467 = PDF 463).
   - id: pub_1907
     censo: 1907
     archivo: censo-de-población-1907.pdf
