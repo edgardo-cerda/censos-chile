@@ -66,9 +66,9 @@ ESTADO = {
                                        "(pág. 467, PDF ~2457); validar con ella 1952 C5 y C7.",
            "Departamento × área desde 1920 C3 (con departamentos agrupados); provincia × área (1930 C10, 1952 C9) y "
            "× sexo (1952 C5); edad del país en decenios (1952 C7)."),
-    1907: ("Parcial",
-           "Área × sexo por departamento: cuadro 1 (población urbana y rural con distinción del sexo) del resumen de cada provincia del volumen de 1907.",
-           "Departamento × sexo × edad en 18 grupos (cuadro 7 de cada departamento, 79 unidades, 4.503 cifras): provincias = 1952 C5 por sexo, decenios = 1952 C7. Departamento × área (1920 C3) y total (1920 C1); Tacna incluye Tarata."),
+    1907: ("Núcleo completo",
+           "Opcional: subdelegación y distrito × área × sexo (cuadro 1 de cada departamento). La edad no viene por área ni bajo departamento.",
+           "Departamento × área × sexo (cuadro 1 del resumen de cada provincia; = 1920 C3 salvo Quillota, que cuenta 2 694 personas como urbanas que el total de Valparaíso pone como rurales) y departamento × sexo × edad en 18 grupos (cuadro 7 de cada departamento; provincias = 1952 C5, decenios = 1952 C7). Tacna incluye Tarata."),
     1920: ("Núcleo completo",
            "Opcional: comunas y subdelegaciones × área × sexo (Cuadro 5, págs. 8–104). La edad no viene por área ni bajo departamento.",
            "Departamento × área × sexo (Cuadro 4) y departamento × sexo × edad en 28 grupos (cap. II, cuadro 4: 7.221 cifras; decenios = 1952 C7). Erratas: Talca (total del departamento = Cuadro 3 errado; 45–49 y 60–64), La Ligua (2 años), Llanquihue (40–44, 85–89)."),

@@ -147,6 +147,10 @@ indios araucanos en pág. 1309. Memoria, anexos y láminas en PDF 2–67. El des
   coinciden por sexo con 1952 C5 y el país sin Tacna, por decenios, con 1952 C7. Los departamentos son
   los de 1907: Tacna incluye Tarata, y Petorca/La Ligua, Melipilla/Cachapoal y Valdivia/La Unión tienen
   otros límites que en el Cuadro 1 de 1920. El impreso usa «...» para celda sin casos (se transcribe «-»).
+- Cuadro 1 del resumen de cada provincia (urbana y rural por sexo y departamento; PDF 91–1211;
+  Magallanes solo trae el resumen por comarcas, se toma su total): `pub_1907_c1`. Coincide con el
+  cuadro 7 y con el Cuadro 3 de 1920, salvo Quillota: su fila cuenta como urbanos 1 450 hombres y
+  1 244 mujeres que el total de Valparaíso (y 1920 C3) pone como rurales.
 
 **1920.** Sin índice en el PDF: los capítulos I a IX se ubicaron por sus portadas. Desfase +15
 constante. El capítulo I trae los cuadros más útiles para la serie: Cuadro 1 (pág. 1),

@@ -1,0 +1,80 @@
+# Transcripción del cuadro 1 «Población urbana i rural con distinción del sexo, por departamentos»
+# del resumen de cada provincia en el volumen del censo de 1907 (en Magallanes, el resumen por
+# comarcas: se transcribe solo su total). Los totales de provincia van después de sus departamentos.
+# La fila nacional no se imprime en estos resúmenes.
+
+fuente_id: pub_1907
+cuadro: "1"
+titulo: Población urbana i rural con distinción del sexo, por departamentos (resumen de cada provincia)
+paginas:
+  - {pdf: 91, impresa: "26", desde: Tacna}
+  - {pdf: 123, impresa: "61", desde: Tarapacá}
+  - {pdf: 163, impresa: "103", desde: Antofagasta}
+  - {pdf: 221, impresa: "166", desde: Copiapó}
+  - {pdf: 300, impresa: "250", desde: La Serena}
+  - {pdf: 371, impresa: "325", desde: San Felipe}
+  - {pdf: 435, impresa: "391", desde: Valparaíso}
+  - {pdf: 506, impresa: "466", desde: Santiago}
+  - {pdf: 548, impresa: "514", desde: Rancagua}
+  - {pdf: 589, impresa: "559", desde: San Fernando}
+  - {pdf: 633, impresa: "608", desde: Curicó}
+  - {pdf: 678, impresa: "658", desde: Talca}
+  - {pdf: 722, impresa: "706", desde: Linares}
+  - {pdf: 776, impresa: "768", desde: Cauquenes}
+  - {pdf: 831, impresa: "829", desde: Chillán}
+  - {pdf: 902, impresa: "905", desde: Concepción}
+  - {pdf: 944, impresa: "952", desde: Lebu}
+  - {pdf: 992, impresa: "1006", desde: La Laja}
+  - {pdf: 1040, impresa: "1058", desde: Angol}
+  - {pdf: 1077, impresa: "1095", desde: Temuco}
+  - {pdf: 1113, impresa: "1142", desde: Valdivia}
+  - {pdf: 1156, impresa: "1188", desde: Llanquihue}
+  - {pdf: 1198, impresa: "1233", desde: Ancud}
+  - {pdf: 1211, impresa: "1246", desde: Magallanes}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion:
+  fecha: 2026-10-20
+  por: Claude (asistido)
+  recortes_dpi: 200-300
+
+indicador: poblacion
+unidad: personas
+fijas: {censo: 1907}
+
+territorio:
+  columna: territorio
+  columna_nivel: nivel
+  niveles: [provincia, departamento]
+  totales_al_final: true
+  dpa_version: provincias_1907
+
+columnas:
+  urbana_hombres: {area: urbana, sexo: hombre}
+  urbana_mujeres: {area: urbana, sexo: mujer}
+  urbana_total: {area: urbana, sexo: _T}
+  rural_hombres: {area: rural, sexo: hombre}
+  rural_mujeres: {area: rural, sexo: mujer}
+  rural_total: {area: rural, sexo: _T}
+  total_hombres: {area: _T, sexo: hombre}
+  total_mujeres: {area: _T, sexo: mujer}
+  total_total: {area: _T, sexo: _T}
+
+notas_cuadro:
+  - >
+    Las sumas cuadran salvo en Valparaíso. Los totales por sexo de cada departamento coinciden con
+    el cuadro 7 (edades), las provincias con el comparativo 5 de 1952 y la población urbana y rural
+    de departamentos y provincias con el Cuadro 3 de 1920, salvo Quillota.
+
+notas_celdas:
+  - {territorio: Quillota, nivel: departamento, columna: urbana_hombres, estado_valor: inconsistente, nota: "Impreso 13 469. El total de la provincia y el Cuadro 3 de 1920 implican 12 019 (urbana 25 491 y rural 27 906 en total): 1 450 hombres y 1 244 mujeres que la fila de Quillota cuenta como urbanos van como rurales en el total de Valparaíso."}
+  - {territorio: Quillota, nivel: departamento, columna: urbana_mujeres, estado_valor: inconsistente, nota: "Impreso 14 716. El total de la provincia y el Cuadro 3 de 1920 implican 13 472 (urbana 25 491 y rural 27 906 en total): 1 450 hombres y 1 244 mujeres que la fila de Quillota cuenta como urbanos van como rurales en el total de Valparaíso."}
+  - {territorio: Quillota, nivel: departamento, columna: urbana_total, estado_valor: inconsistente, nota: "Impreso 28 185. El total de la provincia y el Cuadro 3 de 1920 implican 25 491 (urbana 25 491 y rural 27 906 en total): 1 450 hombres y 1 244 mujeres que la fila de Quillota cuenta como urbanos van como rurales en el total de Valparaíso."}
+  - {territorio: Quillota, nivel: departamento, columna: rural_hombres, estado_valor: inconsistente, nota: "Impreso 13 279. El total de la provincia y el Cuadro 3 de 1920 implican 14 729 (urbana 25 491 y rural 27 906 en total): 1 450 hombres y 1 244 mujeres que la fila de Quillota cuenta como urbanos van como rurales en el total de Valparaíso."}
+  - {territorio: Quillota, nivel: departamento, columna: rural_mujeres, estado_valor: inconsistente, nota: "Impreso 11 933. El total de la provincia y el Cuadro 3 de 1920 implican 13 177 (urbana 25 491 y rural 27 906 en total): 1 450 hombres y 1 244 mujeres que la fila de Quillota cuenta como urbanos van como rurales en el total de Valparaíso."}
+  - {territorio: Quillota, nivel: departamento, columna: rural_total, estado_valor: inconsistente, nota: "Impreso 25 212. El total de la provincia y el Cuadro 3 de 1920 implican 27 906 (urbana 25 491 y rural 27 906 en total): 1 450 hombres y 1 244 mujeres que la fila de Quillota cuenta como urbanos van como rurales en el total de Valparaíso."}
+
+controles:
+  - {tipo: suma_dimension, dimension: area, total: _T, partes: [urbana, rural]}
+  - {tipo: suma_dimension, dimension: sexo, total: _T, partes: [hombre, mujer]}
+  - {tipo: jerarquia}
