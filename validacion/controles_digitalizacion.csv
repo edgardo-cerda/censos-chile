@@ -18,7 +18,9 @@ pub_1813,censo_provincia,suma_dimension,1813,Rancagua,_T,hombre,17421,17424,3,Tr
 pub_1813,censo_provincia,suma_dimension,1813,Rancagua,_T,mujer,18868,18885,17,True
 pub_1813,censo_provincia,suma_dimension,1813,Curicó,_T,hombre,14082,14126,44,True
 pub_1835,art34_42,jerarquia,1835,Concepción,_T,_T,118364,118362,-2,True
+pub_1865,p352,suma_dimension,1865,Quinchao,_T,hombre,5478,5479,1,True
 pub_1865,p352,suma_dimension,1865,Caupolican,_T,hombre,35762,36762,1000,True
+pub_1865,p352,suma_territorio,1865,(partes),_T,hombre,181498,181499,1,True
 pub_1865,p352,suma_territorio,1865,(partes),_T,hombre,177278,178278,1000,True
 pub_1875,602,suma_dimension,1875,Valdivia,_T,_T,17190,12690,-4500,True
 pub_1875,602,jerarquia,1875,Valdivia,urbana,_T,7165,2665,-4500,True

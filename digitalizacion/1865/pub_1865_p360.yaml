@@ -63,16 +63,16 @@ notas_cuadro:
     totales impresos de 1865, que también coinciden con 1952.
 
 notas_celdas:
-  - {territorio: Chiloé, columna: 50a80_m, nota: "Se lee 2314; se adopta 2344, que cuadra con el total de mujeres de Chiloé y con el total de la República (igual al Cuadro 6 de 1952)."}
-  - {territorio: Concepción, columna: 25a50_h, nota: "Se lee 21061; se adopta 21064, que cuadra con el total de hombres de la provincia y de la República (igual al Cuadro 6 de 1952)."}
-  - {territorio: Ñuble, columna: 25a50_h, nota: "Se lee 16831; se adopta 16834, que cuadra con el total de hombres de la provincia y de la República (igual al Cuadro 6 de 1952)."}
-  - {territorio: Maule, columna: 25a50_h, nota: "Se lee 21313; se adopta 24343, que cuadra con el total de hombres de la provincia y de la República (igual al Cuadro 6 de 1952)."}
-  - {territorio: Colchagua, columna: 50a80_h, nota: "Se lee 8512; se adopta 8542, que cuadra con el total de hombres de la provincia y de la República (igual al Cuadro 6 de 1952)."}
-  - {territorio: Santiago, columna: 7a15_h, nota: "Se lee 31066; se adopta 34066, que cuadra con el total de hombres de la provincia y de la República (igual al Cuadro 6 de 1952)."}
-  - {territorio: Santiago, columna: 25a50_h, nota: "Se lee 52411; se adopta 52441, que cuadra con el total de hombres de la provincia y de la República (igual al Cuadro 6 de 1952)."}
-  - {territorio: Valparaíso, columna: 25a50_h, nota: "Se lee 25182; se adopta 25482, que cuadra con el total de hombres de la provincia y de la República (igual al Cuadro 6 de 1952)."}
-  - {territorio: Valparaíso, columna: 25a50_m, nota: "Se lee 21686; se adopta 24688, que cuadra con el total de mujeres de la provincia y de la República (igual al Cuadro 6 de 1952)."}
-  - {territorio: Coquimbo, columna: 7a15_h, nota: "Se lee 15428 (la última cifra puede ser 3 u 8); se adopta 15423, que cuadra con el total de hombres de la provincia y de la República (igual al Cuadro 6 de 1952)."}
+  - {territorio: Chiloé, columna: 50a80_m, nota: "Se lee 2314; se adopta 2344, que cuadra con el total de mujeres de Chiloé y con el total de la República (igual al Cuadro 6 de 1952). La copia de Memoria Chilena (mc_1865) muestra 2344."}
+  - {territorio: Concepción, columna: 25a50_h, nota: "Se lee 21061; se adopta 21064, que cuadra con el total de hombres de la provincia y de la República (igual al Cuadro 6 de 1952). La copia de Memoria Chilena (mc_1865) muestra 21064."}
+  - {territorio: Ñuble, columna: 25a50_h, nota: "Se lee 16831; se adopta 16834, que cuadra con el total de hombres de la provincia y de la República (igual al Cuadro 6 de 1952). La copia de Memoria Chilena (mc_1865) muestra 16834."}
+  - {territorio: Maule, columna: 25a50_h, nota: "Se lee 21313; se adopta 24343, que cuadra con el total de hombres de la provincia y de la República (igual al Cuadro 6 de 1952). La copia de Memoria Chilena (mc_1865) muestra 24343."}
+  - {territorio: Colchagua, columna: 50a80_h, nota: "Se lee 8512; se adopta 8542, que cuadra con el total de hombres de la provincia y de la República (igual al Cuadro 6 de 1952). La copia de Memoria Chilena (mc_1865) muestra 8542."}
+  - {territorio: Santiago, columna: 7a15_h, nota: "Se lee 31066; se adopta 34066, que cuadra con el total de hombres de la provincia y de la República (igual al Cuadro 6 de 1952). La copia de Memoria Chilena (mc_1865) muestra 34066."}
+  - {territorio: Santiago, columna: 25a50_h, nota: "Se lee 52411; se adopta 52441, que cuadra con el total de hombres de la provincia y de la República (igual al Cuadro 6 de 1952). La copia de Memoria Chilena (mc_1865) muestra 52441."}
+  - {territorio: Valparaíso, columna: 25a50_h, nota: "Se lee 25182; se adopta 25482, que cuadra con el total de hombres de la provincia y de la República (igual al Cuadro 6 de 1952). La copia de Memoria Chilena (mc_1865) muestra 25482."}
+  - {territorio: Valparaíso, columna: 25a50_m, nota: "Se lee 21686; se adopta 24688, que cuadra con el total de mujeres de la provincia y de la República (igual al Cuadro 6 de 1952). La copia de Memoria Chilena (mc_1865) muestra 24688."}
+  - {territorio: Coquimbo, columna: 7a15_h, nota: "Se lee 15428 (la última cifra puede ser 3 u 8); se adopta 15423, que cuadra con el total de hombres de la provincia y de la República (igual al Cuadro 6 de 1952). La copia de Memoria Chilena (mc_1865) muestra 15423."}
 
 controles:
   - {tipo: suma_dimension, dimension: edad_min, total: "", partes: [0, 8, 16, 26, 51, 81]}

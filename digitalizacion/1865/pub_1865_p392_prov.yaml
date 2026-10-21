@@ -39,8 +39,8 @@ notas_cuadro:
     con el sinóptico de 1875.
 
 notas_celdas:
-  - {territorio: Santiago, columna: poblacion, censo: "1854", nota: "Se lee 272199; se adopta 272499, igual al sinóptico de 1875 y a la suma de sus departamentos."}
-  - {territorio: Santiago, columna: poblacion, censo: "1835", nota: "Se lee 253687; se adopta 253887, igual al sinóptico de 1875 y a la suma de sus departamentos."}
+  - {territorio: Santiago, columna: poblacion, censo: "1854", nota: "Se lee 272199; se adopta 272499, igual al sinóptico de 1875 y a la suma de sus departamentos. En la copia de Memoria Chilena (mc_1865), de baja resolución, el 4 también se ve como 1."}
+  - {territorio: Santiago, columna: poblacion, censo: "1835", nota: "Se lee 253687; se adopta 253887, igual al sinóptico de 1875 y a la suma de sus departamentos. La copia de Memoria Chilena (mc_1865) muestra 253887."}
 
 controles:
   - {tipo: suma_territorio, total: pais, partes: provincia}

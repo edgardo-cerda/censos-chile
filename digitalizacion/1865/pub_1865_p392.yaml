@@ -44,27 +44,27 @@ notas_cuadro:
     departamentos es igual al total de la República.
 
 notas_celdas:
-  - {territorio: Talca, columna: "1865", nota: "Se lee 81630; se adopta 84630, que cuadra con el total de Talca (100 575) y de la República y con el Cuadro 1 de 1920 (Talca 58 823 + Curepto 25 807)."}
-  - {territorio: Cauquénes, columna: "1865", nota: "Se lee 65041; se adopta 65044, igual al sinóptico de 1875 y que cuadra con el total de Maule."}
-  - {territorio: Elqui, columna: "1865", nota: "Se lee 13015; se adopta 13045, igual al sinóptico de 1875 y al Cuadro 1 de 1920, y que cuadra con el total de Coquimbo."}
-  - {territorio: Vallenar, columna: "1865", nota: "Se lee 13146; se adopta 13446, igual al sinóptico de 1875 y al Cuadro 1 de 1920, y que cuadra con el total de Atacama."}
-  - {territorio: Castro, columna: "1854", nota: "Se lee 24216; se adopta 24246, igual al sinóptico de 1875 y que cuadra con el total de Chiloé."}
-  - {territorio: Puchacai, columna: "1854", nota: "Se lee 26152; se adopta 26452, igual al sinóptico de 1875 y que cuadra con el total de Concepción."}
-  - {territorio: Quillota, columna: "1854", nota: "Se lee 49103; se adopta 49403, igual al sinóptico de 1875 y que cuadra con el total de Valparaíso."}
-  - {territorio: Andes, columna: "1854", nota: "Se lee 24951; se adopta 24954, igual al sinóptico de 1875 y que cuadra con el total de Aconcagua."}
-  - {territorio: Carelmapu, columna: "1843", nota: "Se lee 9191; se adopta 9491, igual al sinóptico de 1875 y que cuadra con el total de Chiloé de 1843."}
-  - {territorio: Lautaro, columna: "1843", nota: "Se lee 13810; se adopta 13849, igual al sinóptico de 1875 y que cuadra con el total de Concepción de 1843."}
-  - {territorio: Parral, columna: "1843", nota: "Se lee 15128; se adopta 15428, igual al sinóptico de 1875 y que cuadra con el total de Maule de 1843."}
-  - {territorio: Putaendo, columna: "1843", nota: "Se lee 15101; se adopta 15401, igual al sinóptico de 1875 y que cuadra con el total de Aconcagua de 1843."}
-  - {territorio: Illapel, columna: "1843", nota: "Se lee 17610; se adopta 17640, igual al sinóptico de 1875 y que cuadra con el total de Coquimbo de 1843."}
-  - {territorio: Castro, columna: "1835", nota: "Se lee 17615; se adopta 17645, igual al sinóptico de 1875 y que cuadra con el total de Chiloé de 1835."}
-  - {territorio: Chillán, columna: "1835", nota: "Se lee 44181; se adopta 44484, igual al sinóptico de 1875 y que cuadra con el total de Concepción de 1835."}
-  - {territorio: Cauquénes, columna: "1835", nota: "Se lee 31631; se adopta 34631, igual al sinóptico de 1875 y que cuadra con el total de Maule de 1835."}
-  - {territorio: Rancagua, columna: "1835", nota: "Se lee 72316; se adopta 72346, igual al sinóptico de 1875 y que cuadra con el total de Santiago de 1835."}
-  - {territorio: Melipilla, columna: "1835", nota: "Se lee 30195; se adopta 30495, igual al sinóptico de 1875 y que cuadra con el total de Santiago de 1835."}
-  - {territorio: Quillota, columna: "1835", nota: "Se lee 41200; se adopta 44200, igual al sinóptico de 1875 y que cuadra con el total de Aconcagua de 1835."}
-  - {territorio: Ligua, columna: "1835", nota: "Se lee 8181; se adopta 8481, igual al sinóptico de 1875 y que cuadra con el total de Aconcagua de 1835."}
-  - {territorio: Putaendo, columna: "1835", nota: "Se lee 12177; se adopta 12477, igual al sinóptico de 1875 y que cuadra con el total de Aconcagua de 1835."}
+  - {territorio: Talca, columna: "1865", nota: "Se lee 81630; se adopta 84630, que cuadra con el total de Talca (100 575) y de la República y con el Cuadro 1 de 1920 (Talca 58 823 + Curepto 25 807). La copia de Memoria Chilena (mc_1865) muestra 84630."}
+  - {territorio: Cauquénes, columna: "1865", nota: "Se lee 65041; se adopta 65044, igual al sinóptico de 1875 y que cuadra con el total de Maule. La copia de Memoria Chilena (mc_1865) muestra 65044."}
+  - {territorio: Elqui, columna: "1865", nota: "Se lee 13015; se adopta 13045, igual al sinóptico de 1875 y al Cuadro 1 de 1920, y que cuadra con el total de Coquimbo. La copia de Memoria Chilena (mc_1865) muestra 13045."}
+  - {territorio: Vallenar, columna: "1865", nota: "Se lee 13146; se adopta 13446, igual al sinóptico de 1875 y al Cuadro 1 de 1920, y que cuadra con el total de Atacama. La copia de Memoria Chilena (mc_1865) muestra 13446."}
+  - {territorio: Castro, columna: "1854", nota: "Se lee 24216; se adopta 24246, igual al sinóptico de 1875 y que cuadra con el total de Chiloé. La copia de Memoria Chilena (mc_1865) muestra 24246."}
+  - {territorio: Puchacai, columna: "1854", nota: "Se lee 26152; se adopta 26452, igual al sinóptico de 1875 y que cuadra con el total de Concepción. La copia de Memoria Chilena (mc_1865) muestra 26452."}
+  - {territorio: Quillota, columna: "1854", nota: "Se lee 49103; se adopta 49403, igual al sinóptico de 1875 y que cuadra con el total de Valparaíso. La copia de Memoria Chilena (mc_1865) muestra 49403."}
+  - {territorio: Andes, columna: "1854", nota: "Se lee 24951; se adopta 24954, igual al sinóptico de 1875 y que cuadra con el total de Aconcagua. La copia de Memoria Chilena (mc_1865) muestra 24954."}
+  - {territorio: Carelmapu, columna: "1843", nota: "Se lee 9191; se adopta 9491, igual al sinóptico de 1875 y que cuadra con el total de Chiloé de 1843. La copia de Memoria Chilena (mc_1865) muestra 9491."}
+  - {territorio: Lautaro, columna: "1843", nota: "Se lee 13810; se adopta 13849, igual al sinóptico de 1875 y que cuadra con el total de Concepción de 1843. La copia de Memoria Chilena (mc_1865) muestra 13849."}
+  - {territorio: Parral, columna: "1843", nota: "Se lee 15128; se adopta 15428, igual al sinóptico de 1875 y que cuadra con el total de Maule de 1843. La copia de Memoria Chilena (mc_1865) muestra 15428."}
+  - {territorio: Putaendo, columna: "1843", nota: "Se lee 15101; se adopta 15401, igual al sinóptico de 1875 y que cuadra con el total de Aconcagua de 1843. La copia de Memoria Chilena (mc_1865) muestra 15401."}
+  - {territorio: Illapel, columna: "1843", nota: "Se lee 17610; se adopta 17640, igual al sinóptico de 1875 y que cuadra con el total de Coquimbo de 1843. La copia de Memoria Chilena (mc_1865) muestra 17640."}
+  - {territorio: Castro, columna: "1835", nota: "Se lee 17615; se adopta 17645, igual al sinóptico de 1875 y que cuadra con el total de Chiloé de 1835. La copia de Memoria Chilena (mc_1865) muestra 17645."}
+  - {territorio: Chillán, columna: "1835", nota: "Se lee 44181; se adopta 44484, igual al sinóptico de 1875 y que cuadra con el total de Concepción de 1835. La copia de Memoria Chilena (mc_1865) muestra 44484."}
+  - {territorio: Cauquénes, columna: "1835", nota: "Se lee 31631; se adopta 34631, igual al sinóptico de 1875 y que cuadra con el total de Maule de 1835. En la copia de Memoria Chilena (mc_1865), de baja resolución, el 4 también se ve como 1."}
+  - {territorio: Rancagua, columna: "1835", nota: "Se lee 72316; se adopta 72346, igual al sinóptico de 1875 y que cuadra con el total de Santiago de 1835. En la copia de Memoria Chilena (mc_1865), de baja resolución, el 4 también se ve como 1."}
+  - {territorio: Melipilla, columna: "1835", nota: "Se lee 30195; se adopta 30495, igual al sinóptico de 1875 y que cuadra con el total de Santiago de 1835. La copia de Memoria Chilena (mc_1865) muestra 30495."}
+  - {territorio: Quillota, columna: "1835", nota: "Se lee 41200; se adopta 44200, igual al sinóptico de 1875 y que cuadra con el total de Aconcagua de 1835. La copia de Memoria Chilena (mc_1865) muestra 44200."}
+  - {territorio: Ligua, columna: "1835", nota: "Se lee 8181; se adopta 8481, igual al sinóptico de 1875 y que cuadra con el total de Aconcagua de 1835. En la copia de Memoria Chilena (mc_1865), de baja resolución, el 4 también se ve como 1."}
+  - {territorio: Putaendo, columna: "1835", nota: "Se lee 12177; se adopta 12477, igual al sinóptico de 1875 y que cuadra con el total de Aconcagua de 1835. La copia de Memoria Chilena (mc_1865) muestra 12477."}
 
 controles:
   - {tipo: suma_territorio, total: pais, partes: departamento}

@@ -134,6 +134,12 @@ Clasificación por departamentos (págs. 352–353, PDF 385–386): transcrita i
 se fijaron con la suma de cada fila y la de su provincia (= pág. 360). Errata: Caupolicán 16–25
 hombres impreso 7.760 (coherente 6.760). La provincia de Coquimbo trae además, en su bloque, la
 clasificación por subdelegaciones (PDF 302), que respalda las cifras adoptadas.
+Revisión con la copia de Memoria Chilena (`mc_1865`, desfase +34: págs. 352–353 = PDF 386–387,
+360–361 = PDF 394–395, 392 = PDF 426). Es otro ejemplar, en gris pero a unos 150 dpi, y a veces
+también deja el 4 como 1. Confirma 55 de las 62 cifras adoptadas en la pág. 352, las 10 de la
+pág. 360 y las del sinóptico. En Itata y Linares (7–15 y 15–25 mujeres) las sumas admitían dos
+soluciones y la copia muestra la otra (4.144/3.973 y 5.551/5.654); Quinchao hasta 7 hombres se lee
+1.336 en ambas copias y queda como errata (coherente 1.335).
 
 **1875.** Índice en PDF 3–5. Provincias, cuadros generales (págs. 601–645) y comparativos
 (pág. 647). El desfase baja de +56 al comienzo a +16 al final. La copia de Memoria Chilena

@@ -100,9 +100,12 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
      copia de Memoria Chilena del tomo I). Cuadra con 1952 C5, C7 y C9 (sin Tacna); 13 erratas anotadas.
    - 1875: departamento × sexo × edad (6 tramos) y departamento × área (cuadro general, págs.
      602–605). Cuadra con 1952 C6 y C9 y con el sinóptico de 1875; 3 erratas anotadas.
+   - 1865 revisado con la copia de Memoria Chilena (págs. 352, 360 y 392): confirma casi todas las
+     cifras fijadas por sumas. En Itata y Linares (7–15 y 15–25 mujeres) las sumas admitían dos
+     soluciones y se había adoptado la equivocada; se corrigieron 4 cifras. Quinchao hasta 7
+     hombres queda como errata impresa (1.336; coherente 1.335).
    - Con esto 1875–1982 tienen el núcleo completo según los PDF (1952: falta la edad bajo el país).
-     Sigue revisar 1865 con la copia de Memoria Chilena (su escaneo del INE es malo y 95 cifras se
-     fijaron por sumas) y, opcionalmente, bajar a subdelegación y distrito.
+     Opcional: bajar a subdelegación y distrito con los bloques provinciales.
    - Ya hechos de los censos antiguos: 1865 provincia y departamento × sexo × edad; 1835
      departamento × sexo; 1843 y 1854 departamento (sinópticos); 1813 partido × sexo × edad y
      distrito × sexo. Borrador sin validar: parroquias de 1865 (`digitalizacion/borradores/`).

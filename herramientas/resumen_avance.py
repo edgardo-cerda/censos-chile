@@ -53,7 +53,7 @@ ESTADO = {
            "Sin publicación digitalizada. Departamento y provincia (totales) desde los sinópticos de 1865 y 1875, que coinciden entre sí."),
     1865: ("Serie desde otros censos",
            "Parroquia × sexo × edad (pág. 386, PDF 419) y subdelegación/distrito × sexo × edad desde los bloques provinciales (p. ej. Coquimbo, PDF 302).",
-           "Departamento × sexo × edad en 6 tramos (pág. 352) y provincia × sexo × edad (pág. 360) desde la propia publicación; valida 1952 C5 y C6. Departamento (total) desde su sinóptico, validado con el de 1875; provincia × área (1952 C9). Escaneo malo: cifras dudosas fijadas con sumas por fila y por provincia. Errata: Caupolicán 16–25 hombres."),
+           "Departamento × sexo × edad en 6 tramos (pág. 352) y provincia × sexo × edad (pág. 360) desde la propia publicación; valida 1952 C5 y C6. Departamento (total) desde su sinóptico, validado con el de 1875; provincia × área (1952 C9). Escaneo malo: cifras dudosas fijadas con sumas por fila y por provincia y revisadas con la copia de Memoria Chilena (4 corregidas en Itata y Linares). Erratas: Caupolicán 16–25 hombres y Quinchao hasta 7 hombres."),
     1875: ("Núcleo completo",
            "Opcional: subdelegación y distrito × sexo × edad, con urbana y rural del total (bloques provinciales). El área no viene por sexo.",
            "Departamento × sexo × edad en 6 tramos y departamento × área del cuadro general (págs. 602-605); provincias = 1952 C6 y C9, "
