@@ -32,7 +32,8 @@ def cargar_config() -> dict:
 
 def ruta_pdf(fuente_id: str, config: dict) -> Path:
     fuentes = yaml.safe_load((RAIZ / "metadatos" / "fuentes.yaml").read_text(encoding="utf-8"))
-    pub = next((p for p in fuentes["publicaciones"] if p["id"] == fuente_id), None)
+    todas = fuentes["publicaciones"] + fuentes.get("copias_memoria_chilena", [])
+    pub = next((p for p in todas if p["id"] == fuente_id), None)
     if pub is None:
         raise SystemExit(f"Fuente desconocida: {fuente_id}")
     carpeta = Path(config.get("publicaciones") or Path(config["datos_originales"]) / "censos previos")

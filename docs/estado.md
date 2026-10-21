@@ -34,7 +34,7 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 | URL de 2017 | ✅ Registradas en `fuentes.yaml` |
 | URL directas de 2024 y de los PDF históricos | ⏳ Pendiente: las páginas del INE cargan los enlaces dinámicamente |
 | Números de solicitudes de transparencia (1992, 2002) | ⏳ Pendiente (autor) |
-| Publicaciones digitalizadas | ✅ Todas salvo 1843 y 1854 (no digitalizadas) |
+| Publicaciones digitalizadas | ✅ Todas salvo 1854; de 1843 solo la provincia del Maule. Copias complementarias de Memoria Chilena para 1813–2002 |
 
 ### Fase 1: inventarios
 | Punto | Estado |
@@ -61,7 +61,7 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 | Punto | Estado |
 |---|---|
 | 3. Módulos temáticos | ⏳ No iniciado (solo borrador en la concordancia) |
-| 4. Digitalización histórica 1813–1982 | 🟡 Herramientas y formato listos; catálogo completo 1813–1992 (645 entradas; los cuadros nacionales 1 y 2 de 1952 faltan en el escaneo). Los 205 cuadros de población traen censos con datos, nivel territorial, variables (área, sexo, edad) y cobertura; la planilla compara lo transcrito con lo disponible en los PDF. 1843 y 1854 tienen cifras por departamento en los sinópticos de 1865 y 1875 y en el resumen de 1907. Transcritos: 1895 departamento × sexo × edad y × área (cuadro general del tomo IV, leído en la copia de Memoria Chilena; Colchagua menores de 2 años del tomo II); 1907 departamento × área × sexo (cuadro 1 de los resúmenes provinciales) y × sexo × edad (cuadro 7 de cada departamento); 1920 departamento × sexo × edad (cap. II, cuadro 4); 1930 provincia × sexo × edad simple (tomo de edades, Cuadro 4); 1940 provincia × sexo × edad quinquenal (pág. 332); 1952 cuadros nacionales 4 (comunas) y 7 (país × sexo × edad); 1960 C1.2.1 (provincia × edad) y C1.3 (país × área × sexo × edad simple); 1970 C3 (país × área × sexo × edad simple) y C5 (total por provincia); 1982 C1.03 (país × área × sexo × edad simple); 1835 departamentos × sexo × estado (arts. 34–42); 1813 censos de provincia (14 partidos × sexo × edad y estado civil; distritos × sexo); 1865 clasificación por departamentos (edad × sexo, 52 departamentos; cuadra con la de provincias); cuadros sinópticos de 1865 y 1875 (departamentos y provincias de 1835, 1843, 1854, 1865 y 1875; validados entre sí); 1865 clasificación por provincias (edad × sexo; valida 1952 C6); 1952 comparativos C5 (provincia × sexo 1865–1952), C6 (provincia × sexo × edad 1865 y 1875) y C7 (edad del país 1885–1952); 1920 C1 (departamento/provincia 1865–1920), C3 (× área 1895–1920) y C4 (× área × sexo 1920); 1952 C9; 1930 C9 (provincia/departamento/comuna × área × sexo) y C10; 1960 C1.1.1 y C1.2; 1982 C1.01 (región/provincia/comuna × área × sexo, 1.166 filas); 1940 urbano-rural hasta comuna (388 filas, con viviendas). Total 46.533 cifras; erratas de imprenta anotadas; contraste entre cuadros sin diferencias de transcripción. Ver [digitalizacion.md](digitalizacion.md) y la planilla `productos/avance/avance_censos_historicos.xlsx` |
+| 4. Digitalización histórica 1813–1982 | 🟡 Herramientas y formato listos; catálogo completo 1813–1992 (645 entradas; los cuadros nacionales 1 y 2 de 1952 faltan en el escaneo del INE y están en la copia de Memoria Chilena). Los 205 cuadros de población traen censos con datos, nivel territorial, variables (área, sexo, edad) y cobertura; la planilla compara lo transcrito con lo disponible en los PDF. 1843 y 1854 tienen cifras por departamento en los sinópticos de 1865 y 1875 y en el resumen de 1907. Transcritos: 1895 departamento × sexo × edad y × área (cuadro general del tomo IV, leído en la copia de Memoria Chilena; Colchagua menores de 2 años del tomo II); 1907 departamento × área × sexo (cuadro 1 de los resúmenes provinciales) y × sexo × edad (cuadro 7 de cada departamento); 1920 departamento × sexo × edad (cap. II, cuadro 4); 1930 provincia × sexo × edad simple (tomo de edades, Cuadro 4); 1940 provincia × sexo × edad quinquenal (pág. 332); 1952 cuadros nacionales 4 (comunas) y 7 (país × sexo × edad); 1960 C1.2.1 (provincia × edad) y C1.3 (país × área × sexo × edad simple); 1970 C3 (país × área × sexo × edad simple) y C5 (total por provincia); 1982 C1.03 (país × área × sexo × edad simple); 1835 departamentos × sexo × estado (arts. 34–42); 1813 censos de provincia (14 partidos × sexo × edad y estado civil; distritos × sexo); 1865 clasificación por departamentos (edad × sexo, 52 departamentos; cuadra con la de provincias); cuadros sinópticos de 1865 y 1875 (departamentos y provincias de 1835, 1843, 1854, 1865 y 1875; validados entre sí); 1865 clasificación por provincias (edad × sexo; valida 1952 C6); 1952 comparativos C5 (provincia × sexo 1865–1952), C6 (provincia × sexo × edad 1865 y 1875) y C7 (edad del país 1885–1952); 1920 C1 (departamento/provincia 1865–1920), C3 (× área 1895–1920) y C4 (× área × sexo 1920); 1952 C9; 1930 C9 (provincia/departamento/comuna × área × sexo) y C10; 1960 C1.1.1 y C1.2; 1982 C1.01 (región/provincia/comuna × área × sexo, 1.166 filas); 1940 urbano-rural hasta comuna (388 filas, con viviendas). Total 46.533 cifras; erratas de imprenta anotadas; contraste entre cuadros sin diferencias de transcripción. Ver [digitalizacion.md](digitalizacion.md) y la planilla `productos/avance/avance_censos_historicos.xlsx` |
 | 5. Publicación (Zenodo, CRAN/PyPI) | ⏳ No iniciado |
 
 ## Pendientes del autor
@@ -86,7 +86,7 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
    - 1982, 1970 y 1960: completos según los PDF (la edad solo viene para el país; de 1970 solo hay
      el volumen «Total País»).
    - 1952: comuna (total), provincia × área y × sexo, país × sexo × edad. Falta área × sexo por
-     provincia (Cuadro Nacional 2, ausente en el escaneo: buscar otro ejemplar) y el detalle por
+     provincia (Cuadro Nacional 2, ausente en el escaneo del INE: está en la copia de Memoria Chilena, PDF 100) y el detalle por
      comuna del Tomo II (Núcleo Central).
    - 1940: comuna × área × sexo y provincia × sexo × edad (completo según los PDF).
    - 1930: comuna × área × sexo y provincia × sexo × edad simple (completo; la edad por comuna
@@ -96,7 +96,7 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
      1920 C3 y 1952 C5 y C7).
    - 1895: departamento × sexo × edad (26 grupos) y departamento × área (completo según los PDF: el
      área no viene por sexo). Cuadra con 1952 C5 y C7 y 1920 C3; muchas erratas del original anotadas.
-   - Siguen 1885 y 1875.
+   - Siguen 1885 (el tomo 2, que falta en el PDF del INE, está en la copia de Memoria Chilena) y 1875.
    - Ya hechos de los censos antiguos: 1865 provincia y departamento × sexo × edad; 1835
      departamento × sexo; 1843 y 1854 departamento (sinópticos); 1813 partido × sexo × edad y
      distrito × sexo. Borrador sin validar: parroquias de 1865 (`digitalizacion/borradores/`).
@@ -120,4 +120,6 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 - Procedimiento de digitalización y notas de cada publicación: [digitalizacion.md](digitalizacion.md).
 - PDF de las publicaciones: `<datos_originales>/censos previos`. Ahí quedan también los archivos
   de la extracción previa (`notas_extraccion_censos_previos.txt`, `indices_censos_1930_1992.xlsx`,
-  `poblacion_urbana_rural_censos_1930_1992.xlsx`), ya incorporados al repositorio.
+  `poblacion_urbana_rural_censos_1930_1992.xlsx`), ya incorporados al repositorio, y las copias de
+  Memoria Chilena (`*-memoria_chilena.pdf`, 26 archivos de 1813 a 2002, listados en
+  `copias_memoria_chilena` de `metadatos/fuentes.yaml`; `paginas.py` acepta sus id, p. ej. `mc_1952_t1`).

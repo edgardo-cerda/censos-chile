@@ -79,14 +79,23 @@ Criterios:
 - OCR (RapidOCR): 12–17 s por página a 130 dpi con un solo proceso; varios procesos en paralelo
   agotan la memoria. Confunde 8/9, 1/l y los separadores de miles y omite celdas: sirve para
   recorrer muchas páginas buscando filas, nunca como transcripción final.
-- 1843 y 1854 no están digitalizados.
+- 1854 no está digitalizado; de 1843 solo se publicó la provincia del Maule.
+- Copias de Memoria Chilena (Biblioteca Nacional): 26 PDF de 1813 a 2002 en la misma carpeta
+  (`*-memoria_chilena.pdf`), listados en `copias_memoria_chilena` de `metadatos/fuentes.yaml` con
+  URL y sha256. Escaneo de ~150 dpi en grises o color, con OCR poco confiable. Sirven para leer
+  páginas mal escaneadas en el PDF del INE y traen obras que faltan: 1843 (Maule y Repertorio
+  nacional), tomo 2 de 1885, noticia preliminar de 1895, cuadros nacionales 1 y 2 de 1952 (PDF
+  94–95 y 100 de `mc_1952_t1`), comparativos 1970–1982 y resultados de 1992 y 2002. `paginas.py`
+  acepta sus id (p. ej. `python herramientas/paginas.py mc_1885_t2 --pdf 13`).
 
 ## Notas por publicación
 
 Las de 1930–1992 vienen en parte de la extracción previa (septiembre de 2026); las de 1813–1920 y
 los tomos completos de 1952 y 1982 se agregaron al armar el catálogo (octubre de 2026).
 
-**Censos sin publicación propia (1843 y 1854).** Sus cifras están en otras publicaciones: por
+**Censos sin publicación propia (1843 y 1854).** De 1843 solo se publicó la provincia del Maule
+(`mc_1843_maule`, cap. 2, PDF 72–98: departamento y subdelegación, por edad y estado civil). Sus
+cifras están en otras publicaciones: por
 departamento en los cuadros sinópticos de 1865 (pág. 392, PDF 425: 1835, 1843, 1854 y 1865) y de
 1875 (págs. 645–646, PDF 661–662: 1835 a 1875), y en el resumen general de 1907 (pág. 1263, PDF
 1222: 1854 a 1907, por provincia y departamento); por provincia en el Cuadro 4 de 1952 (1835 a
@@ -129,7 +138,7 @@ clasificación por subdelegaciones (PDF 302), que respalda las cifras adoptadas.
 **1875.** Índice en PDF 3–5. Provincias, cuadros generales (págs. 601–645) y comparativos
 (pág. 647). El desfase baja de +56 al comienzo a +16 al final.
 
-**1885.** Solo el tomo I de 2. Índice en PDF 9–11; cuadros generales en págs. 839–867. El PDF no
+**1885.** El PDF del INE trae solo el tomo I de 2; el tomo 2 está en Memoria Chilena (`mc_1885_t2`). Índice en PDF 9–11; cuadros generales en págs. 839–867. El PDF no
 trae profesiones ni extranjeros.
 
 **1895.** Cuatro tomos en un PDF, cada uno con su índice (PDF 2–4, 609–612, 1326–1329 y
@@ -137,7 +146,7 @@ trae profesiones ni extranjeros.
 cae más abajo que en otros volúmenes (franja de 0,16 en el muestreo). Desde la PDF 2086 (Cautín a
 Magallanes y los cuadros generales) el escaneo es bitonal a ~72 dpi y no se lee con seguridad; el
 tomo IV completo está en Memoria Chilena (MC0055464, en grises; impresa = PDF + 4 en los cuadros
-generales), registrado como copia de lectura en `metadatos/fuentes.yaml`.
+generales), registrado como `mc_1895_t4` en `metadatos/fuentes.yaml`.
 Cada provincia trae, al pie del cuadro por subdelegaciones (sexo × edad, en cinco páginas), un
 «Resumen por departamentos i total de la provincia»; en Tarapacá y Antofagasta coincide cifra por
 cifra con el cuadro general. El área (urbana y rural) solo viene para el total, no por sexo.

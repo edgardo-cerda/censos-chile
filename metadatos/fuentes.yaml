@@ -57,12 +57,7 @@ publicaciones:
     capa_texto: no
     # Desde la pág. 2086 del PDF (tomo IV: Cautín a Magallanes y cuadros generales) el escaneo es
     # bitonal a ~72 dpi y no se lee con seguridad; para esas páginas se usa otra copia del tomo IV.
-    copias_lectura:
-      - id: memoriachilena_MC0055464
-        descripcion: Sétimo censo jeneral de la población de Chile, tomo 4 (Memoria Chilena, Biblioteca Nacional)
-        url: https://www.memoriachilena.gob.cl/archivos2/pdfs/MC0055464.pdf
-        paginas_pdf: 555
-        nota: Escaneo en grises (~100 dpi). Página impresa = página del PDF + 4 en los cuadros generales (impresa 467 = PDF 463).
+    copias_lectura: [mc_1895_t4]  # ver copias_memoria_chilena
   - id: pub_1907
     censo: 1907
     archivo: censo-de-población-1907.pdf
@@ -151,6 +146,257 @@ publicaciones:
     url: null  # por completar: enlace directo al PDF
     paginas_pdf: 203
     capa_texto: si
+
+# Copias digitalizadas por Memoria Chilena (Biblioteca Nacional de Chile), descargadas el 2026-10-21
+# desde la página «Los censos de población en Chile (1813-2002)» (w3-article-31530). Están en la misma
+# carpeta que las publicaciones del INE. Sirven como fuente complementaria: escaneo en grises o color de
+# ~150 dpi, casi todas con capa de texto OCR (poco confiable para cifras). «complementa» indica la
+# publicación del INE de la misma obra (null si no hay). Las fichas indican la condición de propiedad
+# intelectual de cada obra. No están en Memoria Chilena los censos de 1835, 1854 ni 1940.
+copias_memoria_chilena:
+  - id: mc_1813
+    censo: 1813
+    titulo: Censo de 1813, levantado por Don Juan Egaña
+    archivo: censo-de-población-1813-memoria_chilena.pdf
+    ficha: https://www.memoriachilena.gob.cl/602/w3-article-8952.html
+    url: https://www.memoriachilena.gob.cl/archivos2/pdfs/MC0018882.pdf
+    paginas_pdf: 263
+    sha256: 4bb26ff5a7d0425b2a3390d53111abea680aa89c2999c846c9a58aced64f9f1f
+    complementa: pub_1813
+  - id: mc_1843_maule
+    censo: 1843
+    titulo: Estadística de la República de Chile, provincia del Maule, tomo I (1845)
+    archivo: censo-de-población-1843-provincia_del_maule-memoria_chilena.pdf
+    ficha: https://www.memoriachilena.gob.cl/602/w3-article-85915.html
+    url: https://www.memoriachilena.gob.cl/archivos2/pdfs/MC0054339.pdf
+    paginas_pdf: 217
+    sha256: c8bb89aab47b1e3895666f4ff8fb0f4697141e96b63b98a46cff2853701bc7ba
+    complementa: null
+    nota: >
+      Única provincia publicada del censo de 1843. Cap. 2 (PDF 72-98): población por departamento y
+      subdelegación, por edades (PDF 76) y estado civil (PDF 79), instrucción y vacuna.
+  - id: mc_1843_repertorio
+    censo: 1843
+    titulo: Repertorio nacional formado por la Oficina de Estadística (1850)
+    archivo: censo-de-población-1843-repertorio_nacional_1850-memoria_chilena.pdf
+    ficha: https://www.memoriachilena.gob.cl/602/w3-article-124147.html
+    url: https://www.memoriachilena.gob.cl/archivos2/pdfs/MC0054445.pdf
+    paginas_pdf: 277
+    sha256: afd70f832c4d639001a3b511658631a1e6b8faa7b50a7665a19096c2789fb9c7
+    complementa: null
+    nota: Descripción de cada provincia con la población por subdelegación (p. ej. Copiapó, PDF 82); falta confirmar de qué censo es.
+  - id: mc_1865
+    censo: 1865
+    titulo: Censo jeneral de la República de Chile, levantado el 19 de abril de 1865
+    archivo: censo-de-población-1865-memoria_chilena.pdf
+    ficha: https://www.memoriachilena.gob.cl/602/w3-article-82446.html
+    url: https://www.memoriachilena.gob.cl/archivos2/pdfs/MC0043123.pdf
+    paginas_pdf: 426
+    sha256: 5a3df93fe938f6a8464f1880b7bd3a7f8f6696fe90a59d23d57d5b9e91c8d221
+    complementa: pub_1865
+  - id: mc_1875
+    censo: 1875
+    titulo: Quinto censo jeneral de la población de Chile, levantado el 19 de abril de 1875
+    archivo: censo-de-población-1875-memoria_chilena.pdf
+    ficha: https://www.memoriachilena.gob.cl/602/w3-article-82601.html
+    url: https://www.memoriachilena.gob.cl/archivos2/pdfs/MC0043456.pdf
+    paginas_pdf: 688
+    sha256: f3ee1c24c16fc2381d0ed284c214baffc2dff831fb314fb2383592478b320785
+    complementa: pub_1875
+  - id: mc_1885_t1
+    censo: 1885
+    titulo: Sesto censo jeneral de la población de Chile, levantado el 26 de noviembre de 1885, tomo 1
+    archivo: censo-de-población-1885-tomo1-memoria_chilena.pdf
+    ficha: https://www.memoriachilena.gob.cl/602/w3-article-82447.html
+    url: https://www.memoriachilena.gob.cl/archivos2/pdfs/MC0043124.pdf
+    paginas_pdf: 905
+    sha256: 269f714efbebc612f933a5aff4fce626aed2692c868e9e10f78833d7820337b3
+    complementa: pub_1885
+  - id: mc_1885_t2
+    censo: 1885
+    titulo: Sesto censo jeneral de la población de Chile, levantado el 26 de noviembre de 1885, tomo 2
+    archivo: censo-de-población-1885-tomo2-memoria_chilena.pdf
+    ficha: https://www.memoriachilena.gob.cl/602/w3-article-82450.html
+    url: https://www.memoriachilena.gob.cl/archivos2/pdfs/MC0043127.pdf
+    paginas_pdf: 500
+    sha256: f1111c685c98ff82190c536d6a2a1ec5197252e18b26af10d13aaf35d83a5a38
+    complementa: null
+    nota: El PDF del INE trae solo el tomo 1. El tomo 2 empieza con la introducción y sigue con Magallanes.
+  - id: mc_1895_noticia
+    censo: 1895
+    titulo: Noticia preliminar del censo jeneral de la República de Chile, levantado el 28 de noviembre de 1895
+    archivo: censo-de-población-1895-noticia_preliminar-memoria_chilena.pdf
+    ficha: https://www.memoriachilena.gob.cl/602/w3-article-82448.html
+    url: https://www.memoriachilena.gob.cl/archivos2/pdfs/MC0043125.pdf
+    paginas_pdf: 253
+    sha256: e7014f13b5db93123648035de9d1634528274c5e5bbeab5dbe80afad237f46ae
+    complementa: null
+  - id: mc_1895_t1
+    censo: 1895
+    titulo: Sétimo censo jeneral de la población de Chile, levantado el 28 de noviembre de 1895, tomo 1
+    archivo: censo-de-población-1895-tomo1-memoria_chilena.pdf
+    ficha: https://www.memoriachilena.gob.cl/602/w3-article-86202.html
+    url: https://www.memoriachilena.gob.cl/archivos2/pdfs/MC0055463.pdf
+    paginas_pdf: 606
+    sha256: cd1677f328fd1600bb4d93c0f0caaad99c2ecb158b16a8b3509fab81e05bed9c
+    complementa: pub_1895
+  - id: mc_1895_t2
+    censo: 1895
+    titulo: Sétimo censo jeneral de la población de Chile, levantado el 28 de noviembre de 1895, tomo 2
+    archivo: censo-de-población-1895-tomo2-memoria_chilena.pdf
+    ficha: https://www.memoriachilena.gob.cl/602/w3-article-86200.html
+    url: https://www.memoriachilena.gob.cl/archivos2/pdfs/MC0055461.pdf
+    paginas_pdf: 716
+    sha256: e0f164f2b3ad99b7ba1ee407b74946602204cbf088ca8741d969410d76a0f9bb
+    complementa: pub_1895
+  - id: mc_1895_t3
+    censo: 1895
+    titulo: Sétimo censo jeneral de la población de Chile, levantado el 28 de noviembre de 1895, tomo 3
+    archivo: censo-de-población-1895-tomo3-memoria_chilena.pdf
+    ficha: https://www.memoriachilena.gob.cl/602/w3-article-86201.html
+    url: https://www.memoriachilena.gob.cl/archivos2/pdfs/MC0055462.pdf
+    paginas_pdf: 668
+    sha256: 263dd3acf7b9f1bac7de8a52f015e8be550c6cce5f215ba6ddd3fda78ec10d33
+    complementa: pub_1895
+  - id: mc_1895_t4
+    censo: 1895
+    titulo: Sétimo censo jeneral de la población de Chile, levantado el 28 de noviembre de 1895, tomo cuarto
+    archivo: censo-de-población-1895-tomo4-memoria_chilena.pdf
+    ficha: https://www.memoriachilena.gob.cl/602/w3-article-86203.html
+    url: https://www.memoriachilena.gob.cl/archivos2/pdfs/MC0055464.pdf
+    paginas_pdf: 555
+    sha256: b3f41078db31722d988c6501cec19d963879ed3c3c589b70514870dac7f07dd4
+    complementa: pub_1895
+    nota: Usada para leer los cuadros generales (pub_1895_cg_*), ilegibles en el PDF del INE. Página impresa = PDF + 4 en los cuadros generales.
+  - id: mc_1907
+    censo: 1907
+    titulo: Censo de la República de Chile, levantado el 28 de noviembre de 1907
+    archivo: censo-de-población-1907-memoria_chilena.pdf
+    ficha: https://www.memoriachilena.gob.cl/602/w3-article-8117.html
+    url: https://www.memoriachilena.gob.cl/archivos2/pdfs/MC0007943.pdf
+    paginas_pdf: 1273
+    sha256: a2f62a22cb2b848a22ca4bf4f61aa074bf3d6223cc3577dd99c0baf5006076fb
+    complementa: pub_1907
+  - id: mc_1920
+    censo: 1920
+    titulo: Censo de población de la República de Chile, levantado el 15 de diciembre de 1920
+    archivo: censo-de-población-1920-memoria_chilena.pdf
+    ficha: https://www.memoriachilena.gob.cl/602/w3-article-82449.html
+    url: https://www.memoriachilena.gob.cl/archivos2/pdfs/MC0043126.pdf
+    paginas_pdf: 642
+    sha256: f37aead2239b32e61aea4b5f135ba8c7ab3b6e1b34e727d1e77d4974f7d4495f
+    complementa: pub_1920
+  - id: mc_1930
+    censo: 1930
+    titulo: Resultados del X censo de la población efectuado el 27 de noviembre de 1930 y estadísticas comparativas con censos anteriores
+    archivo: censo-de-población-1930-memoria_chilena.pdf
+    ficha: https://www.memoriachilena.gob.cl/602/w3-article-86204.html
+    url: https://www.memoriachilena.gob.cl/archivos2/pdfs/MC0055465.pdf
+    paginas_pdf: 298
+    sha256: 69f6270b2fe02f59cfdd2ba354ab51ce2620b518efc7685177c2297ad6db0acd
+    complementa: pub_1930
+    nota: Un volumen de 298 páginas; el PDF del INE tiene 1 025.
+  - id: mc_1952_t1
+    censo: 1952
+    titulo: XII censo general de población y I de vivienda, levantado el 24 de abril de 1952, tomo 1, resumen del país
+    archivo: censo-de-población-y-vivienda-1952-tomo1-memoria_chilena.pdf
+    ficha: https://www.memoriachilena.gob.cl/602/w3-article-86205.html
+    url: https://www.memoriachilena.gob.cl/archivos2/pdfs/MC0055466.pdf
+    paginas_pdf: 267
+    sha256: ceb7b7a96c77ab28bae3c36b147d48960b4d4b4582571c5f39269cf6b6af29c0
+    complementa: pub_1952
+    nota: Trae el Cuadro Nacional 2 (población por provincias y sexo, según áreas urbana y rural, pág. 111, PDF 100), que falta en el escaneo del INE.
+  - id: mc_1960
+    censo: 1960
+    titulo: Características básicas de la población (censo 1960)
+    archivo: censo-de-población-y-vivienda-1960-caracteristicas_basicas-memoria_chilena.pdf
+    ficha: https://www.memoriachilena.gob.cl/602/w3-article-86206.html
+    url: https://www.memoriachilena.gob.cl/archivos2/pdfs/MC0055467.pdf
+    paginas_pdf: 75
+    sha256: dee0c59dcdc8badbe8f838e1f312be26455baeba2ffe16ef2163bed3d1d3525e
+    complementa: null
+  - id: mc_1970_1982_t2
+    censo: 1982
+    titulo: Censos de 1970-1982, cifras comparativas, tomo II
+    archivo: censos-1970-1982-cifras_comparativas-tomo2-memoria_chilena.pdf
+    ficha: https://www.memoriachilena.gob.cl/602/w3-article-86207.html
+    url: https://www.memoriachilena.gob.cl/archivos2/pdfs/MC0055468.pdf
+    paginas_pdf: 258
+    sha256: 52a4e8d3fa3e079aa537fd02c522413c8b084aaa6971b919f8716df042d56aea
+    complementa: null
+  - id: mc_1970_1982_t3
+    censo: 1982
+    titulo: Censos de 1970-1982, cifras comparativas, tomo 3
+    archivo: censos-1970-1982-cifras_comparativas-tomo3-memoria_chilena.pdf
+    ficha: https://www.memoriachilena.gob.cl/602/w3-article-86198.html
+    url: https://www.memoriachilena.gob.cl/archivos2/pdfs/MC0055459.pdf
+    paginas_pdf: 336
+    sha256: 0ee062c61c3a3df4da116dcb890232f112779817d5f1614572cdf8d1607b1aa9
+    complementa: null
+  - id: mc_1982_ciudades
+    censo: 1982
+    titulo: Ciudades y pueblos del país, superficie, viviendas, población y densidad (XV censo nacional de población y IV de vivienda)
+    archivo: censo-1982-ciudades_y_pueblos-memoria_chilena.pdf
+    ficha: https://www.memoriachilena.gob.cl/602/w3-article-86208.html
+    url: https://www.memoriachilena.gob.cl/archivos2/pdfs/MC0055469.pdf
+    paginas_pdf: 42
+    sha256: 565f619b708ef4f60d282f072b15befa790cf9b71262e43b080feb60f93a3877
+    complementa: null
+  - id: mc_1992_resultados
+    censo: 1992
+    titulo: Resultados oficiales censo de población 1992, población total país, regiones, comunas, por sexo y edad
+    archivo: censo-1992-resultados_oficiales-memoria_chilena.pdf
+    ficha: https://www.memoriachilena.gob.cl/602/w3-article-86209.html
+    url: https://www.memoriachilena.gob.cl/archivos2/pdfs/MC0055470.pdf
+    paginas_pdf: 84
+    sha256: 23a835ef73204e2f2e936a2552c0f57ab267dac5a0c46379098a20f6ca2bbe36
+    complementa: null
+    nota: Escaneo a 300 dpi, sin capa de texto.
+  - id: mc_1992_informe
+    censo: 1992
+    titulo: Informe demográfico de Chile, según resultados del censo 1992
+    archivo: censo-1992-informe_demografico-memoria_chilena.pdf
+    ficha: https://www.memoriachilena.gob.cl/602/w3-article-86211.html
+    url: https://www.memoriachilena.gob.cl/archivos2/pdfs/MC0055472.pdf
+    paginas_pdf: 55
+    sha256: b405c25cbd9c9292e6cfc076ee791fe29c8abb0944f9073f3d17bdf1606d7880
+    complementa: null
+  - id: mc_2002_v1
+    censo: 2002
+    titulo: Censo 2002, resultados, v.1
+    archivo: censo-2002-resultados-v1-memoria_chilena.pdf
+    ficha: https://www.memoriachilena.gob.cl/602/w3-article-86210.html
+    url: https://www.memoriachilena.gob.cl/archivos2/pdfs/MC0055471.pdf
+    paginas_pdf: 358
+    sha256: 79fd77fd961f66b32ff8debc649927a21e6fccf806565493aea8ba0052772cf5
+    complementa: null
+  - id: mc_2002_t2
+    censo: 2002
+    titulo: Censo 2002, resultados, tomo 2
+    archivo: censo-2002-resultados-tomo2-memoria_chilena.pdf
+    ficha: https://www.memoriachilena.gob.cl/602/w3-article-86199.html
+    url: https://www.memoriachilena.gob.cl/archivos2/pdfs/MC0055460.pdf
+    paginas_pdf: 249
+    sha256: 14d7189b5d8ae8a6744da66b35c0830fe56f6f7580ee814f1779419c944240e4
+    complementa: null
+  - id: mc_estudio_primeros_censos
+    censo: null
+    titulo: Los primeros censos chilenos de población (1854-1920), análisis crítico de las fuentes de datos censales y sugerencias de uso (Boletín de la Academia Chilena de la Historia, n° 119, 2010)
+    archivo: estudio-primeros_censos_1854-1920-memoria_chilena.pdf
+    ficha: https://www.memoriachilena.gob.cl/602/w3-article-85958.html
+    url: https://www.memoriachilena.gob.cl/archivos2/pdfs/MC0054453.pdf
+    paginas_pdf: 42
+    sha256: 4667c7d9c6fbf8670a0d2ab0122f7817cedd4607c055ac7466d97eb8ee383556
+    complementa: null
+  - id: mc_estudio_ine_2009
+    censo: null
+    titulo: Los censos de población en Chile y su evolución histórica hacia el Bicentenario (INE, 2009)
+    archivo: estudio-censos_de_poblacion_en_chile_ine_2009-memoria_chilena.pdf
+    ficha: https://www.memoriachilena.gob.cl/602/w3-article-10433.html
+    url: https://www.memoriachilena.gob.cl/archivos2/pdfs/MC0054244.pdf
+    paginas_pdf: 194
+    sha256: d80be796decba39745e3a80fb6f608e7890ae4d11366a139d6068be1cc670780
+    complementa: null
 
 microdatos:
   - id: micro_1992

@@ -46,8 +46,8 @@ ESTADO = {
            "Nada más en el PDF para el núcleo: no trae edad ni área. Opcional: subdelegaciones de Santiago (PDF 93).",
            "Departamento × sexo × estado (solteros/casados) desde la propia publicación (arts. 34–42), validado con los sinópticos de 1865 y 1875 (salvo Cauquenes, +2). Sin edad en la publicación."),
     1843: ("Sin publicación",
-           "Nada más en los PDF disponibles (solo totales por departamento y provincia).",
-           "Sin publicación digitalizada. Departamento y provincia (totales) desde los sinópticos de 1865 y 1875, que coinciden entre sí."),
+           "Transcribir la provincia del Maule (departamento y subdelegación × sexo × edad; copia de Memoria Chilena mc_1843_maule, PDF 72–98). Revisar la población por subdelegación del Repertorio nacional de 1850 (mc_1843_repertorio).",
+           "Solo se publicó la provincia del Maule (Memoria Chilena), sin transcribir. Departamento y provincia (totales) desde los sinópticos de 1865 y 1875, que coinciden entre sí."),
     1854: ("Sin publicación",
            "Opcional: contrastar con el resumen general de 1907 (PDF 1222). Buscar un ejemplar digitalizado.",
            "Sin publicación digitalizada. Departamento y provincia (totales) desde los sinópticos de 1865 y 1875, que coinciden entre sí."),
@@ -59,8 +59,8 @@ ESTADO = {
            "Provincia × área (1952 C9) y provincia × sexo × edad en 6 tramos (1952 C5 y C6); departamento (total) "
            "desde 1920 C1."),
     1885: ("Serie desde otros censos", "Sexo × edad por provincia: clasificación por departamentos y provincias "
-                                       "(pág. 839, PDF ~873); validar con ella 1952 C5 y C7.",
-           "El PDF trae solo el tomo I de 2. Provincia × área (1952 C9) y × sexo (1952 C5); edad del país en decenios "
+                                       "(pág. 839, PDF ~873); validar con ella 1952 C5 y C7. El tomo 2 está en Memoria Chilena (mc_1885_t2).",
+           "El PDF del INE trae solo el tomo I de 2. Provincia × área (1952 C9) y × sexo (1952 C5); edad del país en decenios "
            "(1952 C7); departamento desde 1920 C1. Malleco: 3 000 personas sin sexo (1952 C5)."),
     1895: ("Núcleo completo",
            "Opcional: subdelegación y distrito × sexo × edad, con urbana y rural del total (bloques provinciales de los tomos I a IV). El área no viene por sexo.",
@@ -81,7 +81,7 @@ ESTADO = {
            "Opcional: edades individuales por provincia y sexo (pág. 8, PDF ~14). El volumen no trae edad por comuna ni área × edad.",
            "Comuna × área × sexo con viviendas (cifras ajustadas, pág. 76) y provincia × sexo × edad quinquenal (cifras revisadas, pág. 332; coincide con los comparativos de 1952). Las dos series difieren por el ajuste de ~2,8 %."),
     1952: ("Parcial",
-           "Área × sexo por provincia: el Cuadro Nacional 2 falta en el escaneo (buscar otro ejemplar). Comuna × área × sexo × edad solo para el Núcleo Central (Tomo II, Cuadro 1 de cada provincia: muy extenso). Sexo por comuna para 14 provincias en la división territorial (mecanografiada).",
+           "Área × sexo por provincia: el Cuadro Nacional 2 falta en el escaneo del INE; transcribirlo desde la copia de Memoria Chilena (mc_1952_t1, PDF 100). Comuna × área × sexo × edad solo para el Núcleo Central (Tomo II, Cuadro 1 de cada provincia: muy extenso). Sexo por comuna para 14 provincias en la división territorial (mecanografiada).",
            "Comuna (total, Cuadro Nacional 4: 271 comunas), provincia × área (C9), provincia × sexo (C5) y país × sexo × edad quinquenal (Cuadro Nacional 7, coincide con el comparativo 7). Faltan en el escaneo las págs. 85–116 (cuadros nacionales 1 y 2)."),
     1960: ("Núcleo completo",
            "Opcional: 1.2.2 (comunas cabeceras de provincia por edad y sexo, PDF ~146). El volumen no trae sexo × edad por provincia ni datos por comuna para todo el país.",
