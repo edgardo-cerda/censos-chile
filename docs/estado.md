@@ -106,6 +106,10 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
      hombres queda como errata impresa (1.336; coherente 1.335).
    - Con esto 1875–1982 tienen el núcleo completo según los PDF (1952: falta la edad bajo el país).
      Opcional: bajar a subdelegación y distrito con los bloques provinciales.
+   - Divisiones territoriales de cada censo: `productos/territorio/divisiones_territoriales_censos.xlsx`
+     (`herramientas/divisiones_territoriales.py`). Provincias, departamentos y comunas de 1813 a 1982,
+     sus cambios entre censos y la prueba de comparabilidad con los cuadros comparativos (1920 C1,
+     1930 C10, 1952 C9, 1960 C1.1.1 y sinópticos). Falta: departamentos y comunas de 1960 y 1970.
    - Ya hechos de los censos antiguos: 1865 provincia y departamento × sexo × edad; 1835
      departamento × sexo; 1843 y 1854 departamento (sinópticos); 1813 partido × sexo × edad y
      distrito × sexo. Borrador sin validar: parroquias de 1865 (`digitalizacion/borradores/`).
