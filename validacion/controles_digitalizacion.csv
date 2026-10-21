@@ -277,5 +277,17 @@ pub_1952,N4,jerarquia,1952,Cautín,_T,_T,365072,365082,10,True
 pub_1952,N4,jerarquia,1952,Imperial,_T,_T,75477,75467,-10,True
 pub_1952,N4,jerarquia,1952,Valdivia,_T,_T,159089,159087,-2,True
 pub_1952,N4,jerarquia,1952,Castro,_T,_T,47832,47827,-5,True
+pub_1952,II.1,suma_dimension,1952,Valparaíso,urbana,_T,8651,8551,-100,True
+pub_1952,II.1,suma_dimension,1952,Santiago,rural,_T,7225,9225,2000,True
+pub_1952,II.1,suma_dimension,1952,O'Higgins,rural,_T,627,527,-100,True
+pub_1952,II.1,suma_dimension,1952,Colchagua,_T,_T,2710,2716,6,True
+pub_1952,II.1,suma_dimension,1952,Valparaíso,_T,_T,9761,9861,100,True
+pub_1952,II.1,suma_dimension,1952,Santiago,_T,hombre,21085,23085,2000,True
+pub_1952,II.1,suma_dimension,1952,O'Higgins,_T,mujer,490,390,-100,True
+pub_1952,II.1,suma_dimension,1952,Colchagua,_T,hombre,1428,1422,-6,True
+pub_1952,II.1,suma_dimension,1952,Valparaíso,urbana,_T,424799,424899,100,True
+pub_1952,II.1,suma_dimension,1952,Santiago,rural,hombre,125610,127610,2000,True
+pub_1952,II.1,suma_dimension,1952,O'Higgins,rural,mujer,62279,62179,-100,True
+pub_1952,II.1,suma_dimension,1952,Colchagua,_T,hombre,71226,71232,6,True
 pub_1960,1.1.1,suma_dimension,1952,Chiloé,_T,_T,100637,100687,50,True
 pub_1960,1.1.1,suma_territorio,1952,(partes),_T,_T,5932995,5932945,-50,True

@@ -266,7 +266,12 @@ las provincias en seis celdas (±1 a ±3, compensadas dentro de cada sexo).
 - Tomo II, Núcleo Central (PDF 1056–1950; índice en PDF 1947–1949): Aconcagua, Valparaíso,
   Santiago, O'Higgins y Colchagua, con 14 cuadros cada una. Los cuadros 1–8 traen el resumen de la
   provincia y luego cada comuna. Los preliminares (PDF 1069–1074) traen la población por comuna
-  de 1875 a 1940. Desfase de +1082 a +1078 según la provincia.
+  de 1875 a 1940. Desfase de +1082 a +1078 según la provincia. Cuadro 1 (edad simple × sexo ×
+  área): transcrito el total de cada provincia (`pub_1952_t2_c01`; PDF 1086–1087, 1213–1214,
+  1346–1347, 1665–1666 y 1816–1817), cuyos totales son iguales al Cuadro Nacional 2. Erratas:
+  Valparaíso 21 años urbana 8.651 (8.551), Santiago 6 años hombres rurales 5.735 (3.735),
+  O'Higgins 53 años mujeres rurales 169 (269) y Colchagua 22 años hombres 1.428 (1.422). El OCR
+  falla en casi la mitad de las filas: se leyó la imagen directamente. Comunas pendientes.
 - División territorial y población por entidades (mecanografiado, sin índice ni paginación
   continua): Concepción, Ñuble, Linares, Maule, Arauco, Bío-Bío, Malleco y Cautín en PDF 240–1055;
   Tarapacá, Antofagasta, Atacama, Coquimbo, Aconcagua y Valparaíso (con Isla de Pascua) en
