@@ -1,17 +1,49 @@
 # Transcripción del Cuadro N.° 1 del Tomo II (Núcleo Central) del censo de 1952, «Población urbana y
-# rural por años de edad y sexo», para el total de cada una de las cinco provincias del Núcleo Central
-# (Aconcagua, Valparaíso, Santiago, O'Higgins y Colchagua). Es la única edad bajo el nivel del país en
-# 1952: las demás provincias no tienen tomo con edad. Cada provincia ocupa dos páginas (edades 0 a 76
-# y, en la siguiente, 77 a 100 y más, sin dato y totales); después vienen sus comunas, que no se
-# transcriben aquí. El CSV reproduce las filas como están impresas, con los totales al final.
+# rural por años de edad y sexo», para cada una de las cinco provincias del Núcleo Central
+# (Aconcagua, Valparaíso, Santiago, O'Higgins y Colchagua) y sus comunas. Es la única edad bajo el
+# nivel del país en 1952: las demás provincias no tienen tomo con edad. Cada provincia ocupa dos
+# páginas (edades 0 a 76 y, en la siguiente, 77 a 100 y más, sin dato y totales); después vienen sus
+# comunas, en el orden del resumen por comunas. Transcritas por ahora las comunas de Aconcagua y
+# Valparaíso. El CSV reproduce las filas como están impresas, con los totales al final; en las
+# comunas no se imprimen las edades sin población (ninguna fila).
 
 fuente_id: pub_1952
 cuadro: "II.1"
-titulo: Población urbana y rural por años de edad y sexo (provincias del Núcleo Central)
+titulo: Población urbana y rural por años de edad y sexo (provincias y comunas del Núcleo Central)
 paginas:
-  # Página de las edades 0-76; la de 77 años en adelante es la siguiente del PDF.
+  # Primera página de cada provincia (edades 0-76; la de 77 años en adelante es la siguiente) y de
+  # cada comuna.
   - {pdf: 1086, impresa: "4", desde: Aconcagua}
+  - {pdf: 1087, impresa: "5", desde: La Ligua}
+  - {pdf: 1088, impresa: "6", desde: Petorca}
+  - {pdf: 1090, impresa: "8", desde: Cabildo}
+  - {pdf: 1091, impresa: "9", desde: Zapallar}
+  - {pdf: 1092, impresa: "10", desde: Papudo}
+  - {pdf: 1094, impresa: "12", desde: San Felipe}
+  - {pdf: 1095, impresa: "13", desde: Panquehue}
+  - {pdf: 1096, impresa: "14", desde: Catemu}
+  - {pdf: 1098, impresa: "16", desde: Putaendo}
+  - {pdf: 1099, impresa: "17", desde: Santa María}
+  - {pdf: 1100, impresa: "18", desde: Los Andes}
+  - {pdf: 1102, impresa: "20", desde: Calle Larga}
+  - {pdf: 1103, impresa: "21", desde: Rinconada}
+  - {pdf: 1104, impresa: "22", desde: San Esteban}
   - {pdf: 1213, impresa: "132", desde: Valparaíso}
+  - {pdf: 1214, impresa: "133", desde: Quillota}
+  - {pdf: 1215, impresa: "134", desde: Puchuncaví}
+  - {pdf: 1217, impresa: "136", desde: Quintero}
+  - {pdf: 1218, impresa: "137", desde: Nogales}
+  - {pdf: 1219, impresa: "138", desde: Hijuelas}
+  - {pdf: 1221, impresa: "140", desde: Llay Llay}
+  - {pdf: 1222, impresa: "141", desde: Calera}
+  - {pdf: 1223, impresa: "142", desde: La Cruz}
+  - {pdf: 1225, impresa: "144", desde: Valparaíso}
+  - {pdf: 1226, impresa: "145", desde: Viña del Mar}
+  - {pdf: 1228, impresa: "147", desde: Limache}
+  - {pdf: 1229, impresa: "148", desde: Quilpué}
+  - {pdf: 1230, impresa: "149", desde: Casablanca}
+  - {pdf: 1232, impresa: "151", desde: Algarrobo}
+  - {pdf: 1233, impresa: "152", desde: Villa Alemana}
   - {pdf: 1346, impresa: "266", desde: Santiago}
   - {pdf: 1665, impresa: "586", desde: "O'Higgins"}
   - {pdf: 1816, impresa: "738", desde: Colchagua}
@@ -31,7 +63,8 @@ fijas: {censo: 1952}
 
 territorio:
   columna: territorio
-  nivel: {_otro: provincia}
+  columna_nivel: nivel
+  niveles: [provincia, comuna]
   dpa_version: provincias_1952
 
 filas:
@@ -52,19 +85,33 @@ columnas:
 
 notas_cuadro:
   - >
-    «00 (*)» = sin dato (edad ignorada). Las 4.635 cifras cuadran por fila y por columna salvo las
-    cuatro erratas anotadas. Los totales de cada provincia (área × sexo) son iguales a los del Cuadro
-    Nacional 2.
+    «00 (*)» = sin dato (edad ignorada). Todas las filas cuadran por fila y por columna salvo las
+    erratas anotadas. Los totales de cada provincia (área × sexo) son iguales a los del Cuadro
+    Nacional 2, y los de cada comuna, a los del resumen por comunas de su provincia.
+  - >
+    La suma de las comunas es igual, edad por edad, a la provincia, salvo las erratas anotadas y en
+    Valparaíso a los 80 y 85 años: las comunas dan 3 hombres urbanos más a los 80 años y 3 menos a
+    los 85 que la fila de la provincia (todas las comunas cuadran por dentro; impreso así).
 
 notas_celdas:
-  - {territorio: Valparaíso, edad: "21", columna: urbana_total, estado_valor: inconsistente, nota: "Impreso 8 651 (lectura clara a 500 dpi); hombres + mujeres = 8 551, que es también lo que da la suma de la columna."}
-  - {territorio: Santiago, edad: "6", columna: rural_hombres, estado_valor: inconsistente, nota: "Impreso 5 735 (lectura clara a 500 dpi); total - mujeres = 3 735, como la suma de la columna y la de urbana + rural."}
-  - {territorio: "O'Higgins", edad: "53", columna: rural_mujeres, estado_valor: inconsistente, nota: "Impreso 169 (lectura clara a 500 dpi); total - hombres = 269, como la suma de la columna y la de urbana + rural."}
-  - {territorio: Colchagua, edad: "22", columna: total_hombres, estado_valor: inconsistente, nota: "Impreso 1 428; urbana + rural = 1 422 y total - mujeres = 1 422, como la suma de la columna."}
+  - {territorio: Valparaíso, nivel: provincia, edad: "21", columna: urbana_total, estado_valor: inconsistente, nota: "Impreso 8 651 (lectura clara a 500 dpi); hombres + mujeres = 8 551, que es también lo que da la suma de la columna."}
+  - {territorio: Santiago, nivel: provincia, edad: "6", columna: rural_hombres, estado_valor: inconsistente, nota: "Impreso 5 735 (lectura clara a 500 dpi); total - mujeres = 3 735, como la suma de la columna y la de urbana + rural."}
+  - {territorio: "O'Higgins", nivel: provincia, edad: "53", columna: rural_mujeres, estado_valor: inconsistente, nota: "Impreso 169 (lectura clara a 500 dpi); total - hombres = 269, como la suma de la columna y la de urbana + rural."}
+  - {territorio: Colchagua, nivel: provincia, edad: "22", columna: total_hombres, estado_valor: inconsistente, nota: "Impreso 1 428; urbana + rural = 1 422 y total - mujeres = 1 422, como la suma de la columna."}
+  - {territorio: Los Andes, nivel: comuna, edad: "54", columna: urbana_total, estado_valor: inconsistente, nota: "Impreso 11 (lectura clara a 450 dpi); hombres + mujeres = 111, como la suma de la columna."}
+  - {territorio: Nogales, nivel: comuna, edad: "23", columna: urbana_mujeres, estado_valor: inconsistente, nota: "Impreso 81 (lectura clara a 450 dpi); total urbano - hombres = 87, como la suma de la columna."}
+  - {territorio: Nogales, nivel: comuna, edad: "40", columna: urbana_total, estado_valor: inconsistente, nota: "Impreso 16 (lectura clara a 450 dpi); hombres + mujeres = 116, como la suma de la columna."}
+  - {territorio: Viña del Mar, nivel: comuna, edad: "33", columna: total_hombres, estado_valor: inconsistente, nota: "Impreso 639 (lectura clara a 450 dpi); urbana + rural = 539 y total - mujeres = 539, como la suma de la columna."}
 
 controles:
   - {tipo: suma_dimension, dimension: sexo, total: _T, partes: [hombre, mujer]}
   - {tipo: suma_dimension, dimension: area, total: _T, partes: [urbana, rural]}
+  - tipo: jerarquia
+    excepciones:
+      - {territorio: Valparaíso, sexo: hombre, edad_min: 80, diferencia: 3}
+      - {territorio: Valparaíso, sexo: _T, edad_min: 80, diferencia: 3}
+      - {territorio: Valparaíso, sexo: hombre, edad_min: 85, diferencia: -3}
+      - {territorio: Valparaíso, sexo: _T, edad_min: 85, diferencia: -3}
   - tipo: suma_dimension
     dimension: [edad_min, edad_max, edad_estado]
     total: ["", "", ""]

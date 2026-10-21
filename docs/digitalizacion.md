@@ -278,7 +278,13 @@ las provincias en seis celdas (±1 a ±3, compensadas dentro de cada sexo).
   1346–1347, 1665–1666 y 1816–1817), cuyos totales son iguales al Cuadro Nacional 2. Erratas:
   Valparaíso 21 años urbana 8.651 (8.551), Santiago 6 años hombres rurales 5.735 (3.735),
   O'Higgins 53 años mujeres rurales 169 (269) y Colchagua 22 años hombres 1.428 (1.422). El OCR
-  falla en casi la mitad de las filas: se leyó la imagen directamente. Comunas pendientes.
+  falla en casi la mitad de las filas: se leyó la imagen directamente. Comunas de Aconcagua (PDF
+  1087–1105) y Valparaíso (PDF 1214–1234) transcritas en el mismo archivo: las edades sin población
+  no se imprimen; cada comuna cuadra con el resumen por comunas (PDF 1085 y 1212) y la suma de las
+  comunas con la provincia. Erratas: Los Andes 54 años urbana 11 (111), Nogales 23 años mujeres
+  urbanas 81 (87) y 40 años urbana 16 (116), Viña del Mar 33 años hombres 639 (539); y en
+  Valparaíso las comunas dan 3 hombres urbanos más a los 80 años y 3 menos a los 85 que la
+  provincia. Pendientes: comunas de Santiago, O'Higgins y Colchagua.
 - División territorial y población por entidades (mecanografiado, sin índice ni paginación
   continua): Concepción, Ñuble, Linares, Maule, Arauco, Bío-Bío, Malleco y Cautín en PDF 240–1055;
   Tarapacá, Antofagasta, Atacama, Coquimbo, Aconcagua y Valparaíso (con Isla de Pascua) en

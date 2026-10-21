@@ -278,15 +278,40 @@ pub_1952,N4,jerarquia,1952,Cautín,_T,_T,365072,365082,10,True
 pub_1952,N4,jerarquia,1952,Imperial,_T,_T,75477,75467,-10,True
 pub_1952,N4,jerarquia,1952,Valdivia,_T,_T,159089,159087,-2,True
 pub_1952,N4,jerarquia,1952,Castro,_T,_T,47832,47827,-5,True
+pub_1952,II.1,suma_dimension,1952,Los Andes,urbana,_T,11,111,100,True
 pub_1952,II.1,suma_dimension,1952,Valparaíso,urbana,_T,8651,8551,-100,True
+pub_1952,II.1,suma_dimension,1952,Nogales,urbana,_T,156,150,-6,True
+pub_1952,II.1,suma_dimension,1952,Nogales,urbana,_T,16,116,100,True
+pub_1952,II.1,suma_dimension,1952,Viña del Mar,_T,_T,1144,1244,100,True
 pub_1952,II.1,suma_dimension,1952,Santiago,rural,_T,7225,9225,2000,True
 pub_1952,II.1,suma_dimension,1952,O'Higgins,rural,_T,627,527,-100,True
 pub_1952,II.1,suma_dimension,1952,Colchagua,_T,_T,2710,2716,6,True
+pub_1952,II.1,suma_dimension,1952,Los Andes,_T,_T,141,41,-100,True
 pub_1952,II.1,suma_dimension,1952,Valparaíso,_T,_T,9761,9861,100,True
+pub_1952,II.1,suma_dimension,1952,Nogales,_T,mujer,142,136,-6,True
+pub_1952,II.1,suma_dimension,1952,Nogales,_T,_T,243,143,-100,True
+pub_1952,II.1,suma_dimension,1952,Viña del Mar,_T,hombre,639,539,-100,True
 pub_1952,II.1,suma_dimension,1952,Santiago,_T,hombre,21085,23085,2000,True
 pub_1952,II.1,suma_dimension,1952,O'Higgins,_T,mujer,490,390,-100,True
 pub_1952,II.1,suma_dimension,1952,Colchagua,_T,hombre,1428,1422,-6,True
+pub_1952,II.1,jerarquia,1952,Aconcagua,urbana,_T,299,199,-100,True
+pub_1952,II.1,jerarquia,1952,Valparaíso,urbana,_T,8651,8551,-100,True
+pub_1952,II.1,jerarquia,1952,Valparaíso,urbana,mujer,4669,4663,-6,True
+pub_1952,II.1,jerarquia,1952,Valparaíso,_T,hombre,2949,3049,100,True
+pub_1952,II.1,jerarquia,1952,Valparaíso,urbana,_T,7397,7297,-100,True
+pub_1952,II.1,jerarquia,1952,Valparaíso,_T,_T,904,907,3,True
+pub_1952,II.1,jerarquia,1952,Valparaíso,_T,hombre,300,303,3,True
+pub_1952,II.1,jerarquia,1952,Valparaíso,urbana,_T,757,760,3,True
+pub_1952,II.1,jerarquia,1952,Valparaíso,urbana,hombre,234,237,3,True
+pub_1952,II.1,jerarquia,1952,Valparaíso,_T,_T,281,278,-3,True
+pub_1952,II.1,jerarquia,1952,Valparaíso,_T,hombre,96,93,-3,True
+pub_1952,II.1,jerarquia,1952,Valparaíso,urbana,_T,234,231,-3,True
+pub_1952,II.1,jerarquia,1952,Valparaíso,urbana,hombre,69,66,-3,True
+pub_1952,II.1,suma_dimension,1952,Los Andes,urbana,_T,19050,18950,-100,True
 pub_1952,II.1,suma_dimension,1952,Valparaíso,urbana,_T,424799,424899,100,True
+pub_1952,II.1,suma_dimension,1952,Nogales,urbana,_T,8674,8574,-100,True
+pub_1952,II.1,suma_dimension,1952,Nogales,urbana,mujer,4423,4417,-6,True
+pub_1952,II.1,suma_dimension,1952,Viña del Mar,_T,hombre,41513,41613,100,True
 pub_1952,II.1,suma_dimension,1952,Santiago,rural,hombre,125610,127610,2000,True
 pub_1952,II.1,suma_dimension,1952,O'Higgins,rural,mujer,62279,62179,-100,True
 pub_1952,II.1,suma_dimension,1952,Colchagua,_T,hombre,71226,71232,6,True
