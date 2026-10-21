@@ -1,0 +1,44 @@
+# Transcripción del Cuadro Nacional N.° 2 del censo de 1952 (Tomo I): población total del país por
+# provincias y sexo, según áreas urbana y rural. Las págs. 85-116 del Tomo I faltan en el PDF del INE
+# (pub_1952); se transcribe desde la copia de Memoria Chilena (mc_1952_t1). Nombres tal como están
+# impresos (Aisén; «Aysen» en los comparativos 5 y 9).
+
+fuente_id: mc_1952_t1
+cuadro: "N2"
+titulo: Población total del país por provincias y sexo, según áreas urbana y rural
+paginas:
+  - {pdf: 100, impresa: "111", desde: REPUBLICA}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion: {fecha: 2026-10-21, por: Claude (asistido), recortes_dpi: 300-600}
+
+indicador: poblacion
+unidad: personas
+fijas: {censo: 1952}
+
+territorio:
+  columna: territorio
+  nivel: {REPUBLICA: pais, _otro: provincia}
+  dpa_version: provincias_1952
+
+columnas:
+  total_total: {area: _T, sexo: _T}
+  total_hombres: {area: _T, sexo: hombre}
+  total_mujeres: {area: _T, sexo: mujer}
+  urbana_total: {area: urbana, sexo: _T}
+  urbana_hombres: {area: urbana, sexo: hombre}
+  urbana_mujeres: {area: urbana, sexo: mujer}
+  rural_total: {area: rural, sexo: _T}
+  rural_hombres: {area: rural, sexo: hombre}
+  rural_mujeres: {area: rural, sexo: mujer}
+
+notas_cuadro:
+  - >
+    Las 243 cifras cuadran (hombres + mujeres = total; urbana + rural = total; provincias =
+    República). El total y el sexo de cada provincia coinciden con los comparativos 5 y 9 y con el
+    Cuadro Nacional 4; urbana y rural, con el comparativo 9.
+
+controles:
+  - {tipo: suma_dimension, dimension: sexo, total: _T, partes: [hombre, mujer]}
+  - {tipo: suma_dimension, dimension: area, total: _T, partes: [urbana, rural]}
+  - {tipo: suma_territorio, total: pais, partes: provincia}

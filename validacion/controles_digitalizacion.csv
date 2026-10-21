@@ -230,6 +230,9 @@ pub_1952,5,suma_territorio,1895,(partes),_T,mujer,1355215,1355216,1,True
 pub_1952,7,suma_dimension,1885,REPUBLICA,_T,_T,2497797,2497796,-1,True
 pub_1952,9,suma_dimension,1865,Santiago,_T,_T,341683,341653,-30,True
 pub_1952,9,suma_territorio,1865,(partes),rural,_T,1298560,1298530,-30,True
+mc_1952_t1,N1,suma_dimension,1952,REPUBLICA,rural,_T,66987,67037,50,True
+mc_1952_t1,N1,suma_dimension,1952,REPUBLICA,_T,hombre,74591,74641,50,True
+mc_1952_t1,N1,suma_dimension,1952,REPUBLICA,rural,hombre,1245602,1245652,50,True
 pub_1952,N4,jerarquia,1952,Aconcagua,_T,_T,128378,128279,-99,True
 pub_1952,N4,jerarquia,1952,Petorca,_T,_T,34314,34413,99,True
 pub_1952,N4,jerarquia,1952,Rancagua,_T,_T,113315,115315,2000,True

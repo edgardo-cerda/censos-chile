@@ -239,7 +239,8 @@ las provincias en seis celdas (±1 a ±3, compensadas dentro de cada sexo).
 - Tomo I, Resumen del País (PDF 1–239; índice en PDF 232–234): reseña histórica, cuadros
   comparativos 1–10 (págs. 30–45) y cuadros nacionales 1–31 por provincia (págs. 103–269).
   **Faltan en el escaneo las págs. 85–116**, con los gráficos 1–10 y los cuadros nacionales 1
-  (edades × sexo × área) y 2 (provincias × sexo × área). El Cuadro 4 (pág. 123) trae la población,
+  (edades × sexo × área) y 2 (provincias × sexo × área), que se leyeron en la copia de Memoria
+  Chilena (`mc_1952_t1`, PDF 94–95 y 100; impresa = PDF + 9 a 11). El Cuadro 4 (pág. 123) trae la población,
   superficie y densidad por provincia, departamento y comuna. Desfase −3/−4 hasta la pág. 84 y −39
   desde la 131.
 - Tomo II, Núcleo Central (PDF 1056–1950; índice en PDF 1947–1949): Aconcagua, Valparaíso,
@@ -269,7 +270,11 @@ Cuadro Nacional 4 (PDF 86–89): población por provincia, departamento y comuna
 transcrita sin superficie ni densidad. Erratas: Depto. Petorca impreso 34.314 (comunas y densidad:
 34.413); Imperial 75.477 (75.467); las comunas de Rancagua suman 2.000 más que el departamento,
 las de Valdivia 2 menos y las de Castro 5 menos. Cuadro Nacional 7 (PDF 102): la columna «Total
-general» da país × sexo × edad quinquenal y reemplaza al Cuadro Nacional 1, ausente.
+general» da país × sexo × edad quinquenal.
+Cuadro Nacional 1 (copia de Memoria Chilena, PDF 94–95): país × área × sexo × edad simple (0 a 99,
+100 y más, ignorada); sus quinquenios coinciden con el Cuadro Nacional 7. Errata: hombres rurales
+de 12 años impreso 35.889 (coherente 35.839). Cuadro Nacional 2 (PDF 100): provincias × área ×
+sexo; todo cuadra y coincide con los comparativos 5 y 9 (escribe «Aisén»; los comparativos, «Aysen»).
 Cuadro comparativo 9 (págs. 44–45, PDF 40–41): provincias × total/urbana/rural de 1865 a 1952.
 En 1885–1920 excluye el departamento de Arica. Errata: Santiago 1865 rural impreso 200.118
 (coherente: 200.148).

@@ -1,8 +1,8 @@
 # Transcripción de la columna «Total general» del Cuadro Nacional N.° 7 del censo de 1952 (Tomo I):
 # población total del país, chilenos y extranjeros, por grupos de edades y sexo. Solo se transcribe
 # el total general (núcleo: país × sexo × edad); las columnas de chilenos y extranjeros quedan para el
-# módulo de migración. Sustituye al Cuadro Nacional N.° 1 (edad × sexo × área), que falta en el
-# escaneo (págs. 85-116).
+# módulo de migración. El Cuadro Nacional N.° 1 (edad simple × sexo × área), que falta en el
+# escaneo del INE (págs. 85-116), está en pub_1952_cn01 (copia de Memoria Chilena).
 
 fuente_id: pub_1952
 cuadro: "N7"
@@ -36,7 +36,7 @@ notas_cuadro:
   - >
     Las 69 cifras cuadran (grupos = total; hombres + mujeres = ambos sexos) y los totales coinciden
     con los cuadros comparativos 5, 7 y 9. Los grupos decenales del comparativo 7 son la suma de
-    estos quinquenales. Sin área: el Cuadro Nacional 1, que la traía, falta en el escaneo.
+    estos quinquenales, y estos, la suma de las edades simples del Cuadro Nacional 1 (pub_1952_cn01).
 
 controles:
   - {tipo: suma_dimension, dimension: sexo, total: _T, partes: [hombre, mujer]}
