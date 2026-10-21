@@ -203,6 +203,7 @@ copias_memoria_chilena:
     paginas_pdf: 688
     sha256: f3ee1c24c16fc2381d0ed284c214baffc2dff831fb314fb2383592478b320785
     complementa: pub_1875
+    nota: Otro ejemplar, misma paginación que el PDF del INE; algunas cifras corregidas a mano por un lector. Usada para releer cifras dudosas del cuadro general (pub_1875_cg_*).
   - id: mc_1885_t1
     censo: 1885
     titulo: Sesto censo jeneral de la población de Chile, levantado el 26 de noviembre de 1885, tomo 1

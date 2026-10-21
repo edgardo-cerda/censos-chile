@@ -1,0 +1,75 @@
+# Transcripción del cuadro general «Poblacion urbana i rural. Clasificacion de los habitantes, por
+# departamentos i provincias, segun el sexo, edad, estado civil i grado de instruccion» del censo de
+# 1875 (págs. 602-605): sexo × 6 grupos de edad por departamento, provincia y país. Las columnas de
+# población urbana y rural del mismo cuadro están en pub_1875_cg_area. Se omiten el número de
+# subdelegaciones y distritos, el estado civil y la instrucción (págs. 603 y 605). El cuadro va en
+# dos pliegos: Magallanes a Curicó (págs. 602-603) y Colchagua a Atacama con el total (604-605).
+# Magallanes y Angol son territorios de colonización sin departamentos (nivel provincia). Nombres de
+# departamento como en el Cuadro 1 de 1920 (Union, Laja, Puchacai, Victoria, Andes, Ligua y Serena
+# del impreso: La Unión, La Laja, Puchacay, La Victoria, Los Andes, La Ligua y La Serena).
+
+fuente_id: pub_1875
+cuadro: "602"
+titulo: Clasificacion de los habitantes, por departamentos i provincias, segun el sexo, edad, estado civil i grado de instruccion
+paginas:
+  - {pdf: 618, impresa: "602", desde: Magallanes}
+  - {pdf: 620, impresa: "604", desde: San Fernando}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion:
+  fecha: 2026-10-21
+  por: Claude (asistido)
+  recortes_dpi: 220-400
+  nota: >
+    Leído en el PDF del INE (escaneo bitonal); las cifras dudosas se releyeron en la copia de Memoria
+    Chilena (mc_1875, mismas páginas), que es otro ejemplar con algunas correcciones a mano de un
+    lector. Se transcribe la cifra impresa, no la corrección manuscrita.
+
+indicador: poblacion
+unidad: personas
+fijas: {censo: 1875, area: _T}
+
+territorio:
+  columna: territorio
+  columna_nivel: nivel
+  niveles: [provincia, departamento]
+  totales_al_final: true
+  dpa_version: provincias_1875
+
+columnas:
+  hasta7_h: {sexo: hombre, edad_min: 0, edad_max: 7}
+  hasta7_m: {sexo: mujer, edad_min: 0, edad_max: 7}
+  7a15_h: {sexo: hombre, edad_min: 8, edad_max: 15}
+  7a15_m: {sexo: mujer, edad_min: 8, edad_max: 15}
+  15a25_h: {sexo: hombre, edad_min: 16, edad_max: 25}
+  15a25_m: {sexo: mujer, edad_min: 16, edad_max: 25}
+  25a50_h: {sexo: hombre, edad_min: 26, edad_max: 50}
+  25a50_m: {sexo: mujer, edad_min: 26, edad_max: 50}
+  50a80_h: {sexo: hombre, edad_min: 51, edad_max: 80}
+  50a80_m: {sexo: mujer, edad_min: 51, edad_max: 80}
+  80mas_h: {sexo: hombre, edad_min: 81}
+  80mas_m: {sexo: mujer, edad_min: 81}
+  total_h: {sexo: hombre}
+  total_m: {sexo: mujer}
+  total_general: {sexo: _T}
+
+notas_cuadro:
+  - >
+    Tramos impresos "hasta 7 años", "de 7 a 15", "de 15 a 25", "de 25 a 50", "de 50 a 80" y "de 80
+    adelante"; se registran como 0-7, 8-15, 16-25, 26-50, 51-80 y 81 y más, como en 1865
+    (pub_1865_p352) y en el comparativo 6 de 1952.
+  - >
+    Validación: todas las filas cuadran (edades = total de cada sexo; hombres + mujeres = total
+    general) y los departamentos suman su provincia, salvo las dos erratas anotadas. Cada provincia
+    y el país coinciden cifra por cifra con el comparativo 6 de 1952 (Angol = «T. de Angol»), y el
+    total general de cada departamento, con el cuadro sinóptico de 1875 (pub_1875_p645).
+
+notas_celdas:
+  - {territorio: Angol, nivel: provincia, columna: 50a80_h, estado_valor: inconsistente, nota: "Impreso 588; la suma de las edades, la de las provincias (República) y el comparativo 6 de 1952 implican 558. En la copia de Memoria Chilena está corregido a mano a 558."}
+  - {territorio: La Unión, nivel: departamento, columna: 80mas_h, estado_valor: inconsistente, nota: "Impreso 26; la suma de las edades y el total de la provincia implican 22."}
+
+controles:
+  - {tipo: suma_dimension, dimension: edad_min, total: "", partes: [0, 8, 16, 26, 51, 81]}
+  - {tipo: suma_dimension, dimension: sexo, total: _T, partes: [hombre, mujer]}
+  - {tipo: jerarquia}
+  - {tipo: suma_territorio, total: pais, partes: provincia}

@@ -136,7 +136,13 @@ hombres impreso 7.760 (coherente 6.760). La provincia de Coquimbo trae además, 
 clasificación por subdelegaciones (PDF 302), que respalda las cifras adoptadas.
 
 **1875.** Índice en PDF 3–5. Provincias, cuadros generales (págs. 601–645) y comparativos
-(pág. 647). El desfase baja de +56 al comienzo a +16 al final.
+(pág. 647). El desfase baja de +56 al comienzo a +16 al final. La copia de Memoria Chilena
+(`mc_1875`) tiene la misma paginación y correcciones a mano de un lector (no se transcriben).
+Cuadro general por departamentos (págs. 602–605, PDF 618–621): urbana y rural (solo del total),
+sexo × 6 tramos de edad, estado civil e instrucción, en dos pliegos. Transcritos la edad y el área
+(`pub_1875_cg_edad` y `_area`): provincias = 1952 C6 y C9; departamentos = sinóptico. Erratas:
+Valdivia urbana 592 (5.092), La Unión hombres de 80 y más 26 (22), Angol hombres de 50 a 80 588
+(558, como 1952 C6).
 
 **1885.** El PDF del INE trae solo el tomo I de 2; el tomo 2 está en Memoria Chilena (`mc_1885_t2`:
 profesiones, inválidos y extranjeros por departamento, cuadros generales de esos temas en págs.

@@ -1,0 +1,53 @@
+# Columnas «Poblacion urbana», «Poblacion rural» y «Total jeneral» del cuadro general «Poblacion
+# urbana i rural. Clasificacion de los habitantes, por departamentos i provincias, segun el sexo, edad,
+# estado civil i grado de instruccion» del censo de 1875 (págs. 602 y 604). El área solo viene para
+# el total de ambos sexos. Las columnas por sexo y edad están en pub_1875_cg_edad (mismos nombres).
+
+fuente_id: pub_1875
+cuadro: "602"
+titulo: Clasificacion de los habitantes, por departamentos i provincias ... Poblacion urbana i rural (total jeneral, urbana y rural)
+paginas:
+  - {pdf: 618, impresa: "602", desde: Magallanes}
+  - {pdf: 620, impresa: "604", desde: San Fernando}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion:
+  fecha: 2026-10-21
+  por: Claude (asistido)
+  recortes_dpi: 220-400
+  nota: >
+    Leído en el PDF del INE; las cifras dudosas se releyeron en la copia de Memoria Chilena (mc_1875).
+
+indicador: poblacion
+unidad: personas
+fijas: {censo: 1875, sexo: _T}
+
+territorio:
+  columna: territorio
+  columna_nivel: nivel
+  niveles: [provincia, departamento]
+  totales_al_final: true
+  dpa_version: provincias_1875
+
+columnas:
+  total: {area: _T}
+  urbana: {area: urbana}
+  rural: {area: rural}
+
+notas_cuadro:
+  - >
+    Urbana y rural de cada provincia y del país coinciden con el comparativo 9 de 1952 (Angol =
+    Malleco), y todas las filas cuadran salvo la errata anotada.
+
+notas_celdas:
+  - {territorio: Valdivia, nivel: departamento, columna: urbana, estado_valor: inconsistente, nota: "Impreso 592; total - rural = 5 092, como la suma provincial. En la copia de Memoria Chilena un lector corrigió a mano urbana y rural a 5 037 y 12 153."}
+
+controles:
+  - tipo: suma_dimension
+    dimension: area
+    total: _T
+    partes: [urbana, rural]
+  - tipo: jerarquia
+  - tipo: suma_territorio
+    total: pais
+    partes: provincia
