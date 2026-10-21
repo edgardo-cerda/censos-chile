@@ -10,6 +10,13 @@ censo,territorio,nivel,area,sexo,fuente_a,valor_a,estado_a,fuente_b,valor_b,esta
 1865,Colchagua,provincia,_T,_T,pub_1875 cp645,142456,ok,pub_1952 c5,233045,ok
 1865,Colchagua,provincia,_T,_T,pub_1875 cp645,142456,ok,pub_1952 c6,233045,ok
 1865,Colchagua,provincia,_T,_T,pub_1875 cp645,142456,ok,pub_1952 c9,233045,ok
+1885,República,pais,_T,_T,pub_1885 c839,2527320,ok,pub_1952 c5,2497797,ok
+1885,República,pais,_T,_T,pub_1885 c839,2527320,ok,pub_1952 c7,2497797,inconsistente
+1885,República,pais,_T,_T,pub_1885 c839,2527320,ok,pub_1952 c9,2497797,ok
+1885,República,pais,urbana,_T,pub_1885 c839,1062544,ok,pub_1952 c9,1041765,ok
+1885,República,pais,rural,_T,pub_1885 c839,1464776,ok,pub_1952 c9,1456032,ok
+1885,República,pais,_T,hombre,pub_1885 c839,1263645,ok,pub_1952 c5,1248124,ok
+1885,República,pais,_T,mujer,pub_1885 c839,1263675,ok,pub_1952 c5,1249673,ok
 1895,Valparaíso,provincia,_T,_T,pub_1895 cIV.467,220756,ok,pub_1952 c5,220755,ok
 1895,Valparaíso,provincia,_T,_T,pub_1895 cIV.467,220756,ok,pub_1952 c9,220755,ok
 1895,Bío-Bío,provincia,rural,_T,pub_1895 cIV.467,79140,inconsistente,pub_1952 c9,70140,ok

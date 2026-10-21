@@ -212,6 +212,7 @@ copias_memoria_chilena:
     paginas_pdf: 905
     sha256: 269f714efbebc612f933a5aff4fce626aed2692c868e9e10f78833d7820337b3
     complementa: pub_1885
+    nota: Otro ejemplar del mismo tomo, sin las manchas del PDF del INE; página impresa = PDF + 32 en los cuadros generales. Usada para el cuadro general (pub_1885_cg_*).
   - id: mc_1885_t2
     censo: 1885
     titulo: Sesto censo jeneral de la población de Chile, levantado el 26 de noviembre de 1885, tomo 2
@@ -221,7 +222,7 @@ copias_memoria_chilena:
     paginas_pdf: 500
     sha256: f1111c685c98ff82190c536d6a2a1ec5197252e18b26af10d13aaf35d83a5a38
     complementa: null
-    nota: El PDF del INE trae solo el tomo 1. El tomo 2 empieza con la introducción y sigue con Magallanes.
+    nota: El PDF del INE trae solo el tomo 1. El tomo 2 trae profesiones, inválidos y extranjeros por departamento (Magallanes a Tacna), sus cuadros generales (págs. 454-464) y los sinópticos.
   - id: mc_1895_noticia
     censo: 1895
     titulo: Noticia preliminar del censo jeneral de la República de Chile, levantado el 28 de noviembre de 1895

@@ -138,8 +138,16 @@ clasificación por subdelegaciones (PDF 302), que respalda las cifras adoptadas.
 **1875.** Índice en PDF 3–5. Provincias, cuadros generales (págs. 601–645) y comparativos
 (pág. 647). El desfase baja de +56 al comienzo a +16 al final.
 
-**1885.** El PDF del INE trae solo el tomo I de 2; el tomo 2 está en Memoria Chilena (`mc_1885_t2`). Índice en PDF 9–11; cuadros generales en págs. 839–867. El PDF no
-trae profesiones ni extranjeros.
+**1885.** El PDF del INE trae solo el tomo I de 2; el tomo 2 está en Memoria Chilena (`mc_1885_t2`:
+profesiones, inválidos y extranjeros por departamento, cuadros generales de esos temas en págs.
+454–464 y sinópticos). Índice en PDF 9–11; cuadros generales en págs. 839–867. En el PDF del INE
+manchas tapan filas del cuadro general por sexo y edad (págs. 839–846); se leyó en la copia de
+Memoria Chilena del tomo I (`mc_1885_t1`, otro ejemplar; impresa = PDF + 32), salvo la columna de
+mujeres de 50 a 55, cortada en esa copia. Transcrito: departamento × sexo × 26 grupos de edad
+(como en 1895, con meses bajo 1 año) y departamento × área (`pub_1885_cg_edad` y `_area`). Incluye
+Tacna (2.527.320 habitantes, como 1920 C1); sin ella, provincias = 1952 C5 y C9 y decenios del país
+= 1952 C7. Erratas anotadas en 13 celdas (p. ej. Chillán, hombres de 25 a 30: 3.527 por 2.527);
+Tacna provincia urbana/rural no es la suma de sus departamentos (el país sí la usa).
 
 **1895.** Cuatro tomos en un PDF, cada uno con su índice (PDF 2–4, 609–612, 1326–1329 y
 1995–1998). Cuadros generales en el tomo IV, págs. 467–551 (PDF 2455–2539). El número de página
@@ -259,7 +267,7 @@ provincia del Tomo I.
 Cuadros comparativos 5 a 7 (págs. 39–43, PDF 35–39), sacados de las publicaciones de cada censo
 (validación pendiente contra ellas):
 - C5: provincias × sexo, 1865–1952; mismos totales que el C9. Malleco 1885: hombres + mujeres
-  quedan 3.000 bajo el total (Mariluán sin sexo); hombres y mujeres del país 1895 difieren en 1 de
+  quedan 3.000 bajo el total; la publicación de 1885 (Angol) da 44.583 hombres, no 41.583: errata del C5; hombres y mujeres del país 1895 difieren en 1 de
   la suma de las provincias. Santiago 1952: una mancha tapa una cifra del total (1.754.954).
 - C6: provincias × sexo × edad (seis tramos: hasta 7, 8–15, 16–25, 26–50, 51–80, 81 y más) en 1865
   y 1875. Dos partes con las mismas filas (PDF 36–37 y 38); en el CSV van juntas y el YAML indica

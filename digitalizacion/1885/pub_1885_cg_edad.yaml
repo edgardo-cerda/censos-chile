@@ -1,0 +1,92 @@
+# Transcripción del cuadro general «Clasificación de los habitantes por departamentos i provincias,
+# según el sexo i la edad, desde un mes hasta cien años adelante. Población urbana i rural» del censo
+# de 1885 (tomo I, págs. 839-846): sexo × 26 grupos de edad por departamento, provincia y país. Las
+# columnas de total general y población urbana y rural del mismo cuadro están en pub_1885_cg_area.
+# El cuadro va en dos bloques de provincias de cuatro páginas cada uno (hasta 15 años; 15 a 55; 55 a
+# 95; 95 y más con totales). Mismas convenciones de edad que el cuadro general de 1895: los menores
+# de un año vienen en meses y se registran con edad 0 y la dimensión adicional "meses"; «De 2 a 5»
+# se registra como 2-4 años. El impreso usa «....» para la celda sin casos; se transcribe como «-».
+# Magallanes y Angol son territorios de colonización sin departamentos (nivel provincia). Nombres de
+# departamento como en el Cuadro 1 de 1920 (Laja, Union, Serena, Andes, Ligua, Victoria y Puerto de
+# Coquimbo del impreso: La Laja, La Unión, La Serena, Los Andes, La Ligua, La Victoria y Coquimbo).
+
+fuente_id: pub_1885
+cuadro: "839"
+titulo: Clasificación de los habitantes por departamentos i provincias, según el sexo i la edad, desde un mes hasta cien años adelante
+paginas:
+  - {pdf: 872, impresa: "839", desde: Magallanes}
+  - {pdf: 876, impresa: "843", desde: Curicó}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion:
+  fecha: 2026-10-21
+  por: Claude (asistido)
+  recortes_dpi: 200-400
+  nota: >
+    En el PDF del INE (PDF 872-879) varias filas están tapadas por manchas; la lectura se hizo sobre
+    la copia del tomo 1 de Memoria Chilena (mc_1885_t1, PDF 871-878, otro ejemplar, limpio), y las
+    páginas indicadas son las del PDF del INE. La columna de mujeres de 50 a 55 años, cortada en esa
+    copia, se leyó en el PDF del INE. Dos cifras con la tipografía dañada en ambos ejemplares se
+    registran con el valor que dan las sumas por fila y columna: Talca (provincia), mujeres de 20 a 25
+    (6 391, se ve «6?91»), y Curicó (provincia), mujeres de 10 a 15 (5 733, se ve «573?»).
+
+indicador: poblacion
+unidad: personas
+fijas: {censo: 1885, area: _T}
+
+territorio:
+  columna: territorio
+  columna_nivel: nivel
+  niveles: [provincia, departamento]
+  totales_al_final: true
+  dpa_version: provincias_1885
+
+filas:
+  edad_min: {columna: edad_min}
+  edad_max: {columna: edad_max}
+  meses: {columna: meses}
+
+columnas:
+  hombres: {sexo: hombre}
+  mujeres: {sexo: mujer}
+
+notas_cuadro:
+  - >
+    Cada celda se validó con la suma de las edades (fila) y la de los departamentos o provincias
+    (columna). Donde ambas fallan por la misma cantidad, la celda culpable se anota como inconsistente
+    con el valor implicado (10 celdas). Quedan como excepciones las mujeres de Combarbalá (las edades
+    suman 9 menos que el total) y de Ovalle (6 más), y las mujeres de 1 a 3 meses de Coquimbo (los
+    departamentos suman 3 menos que la provincia).
+  - >
+    Incluye la provincia de Tacna (Tacna y Arica): el país suma 2 527 320 (1 263 645 hombres y
+    1 263 675 mujeres), como el Cuadro 1 de 1920. Sin Tacna, los totales por sexo de las provincias
+    coinciden con el comparativo 5 de 1952 (Angol = Malleco; ese cuadro imprime 41 583 hombres, 3 000
+    menos que aquí) y la fila del país por decenios coincide con el comparativo 7 de 1952 salvo 60-69
+    años (54 113; 1952 C7: 54 112, cuyos grupos suman 1 menos que su total).
+
+notas_celdas:
+  - {territorio: Mulchén, nivel: departamento, edad: De 10 a 15, columna: hombres, estado_valor: inconsistente, nota: "Impreso 2 398; la suma de las edades y el total de la provincia implican 2 393."}
+  - {territorio: Imperial, nivel: departamento, edad: Total, columna: mujeres, estado_valor: inconsistente, nota: "Impreso 8 875; la suma de las edades y el total de la provincia implican 8 885."}
+  - {territorio: Cañete, nivel: departamento, edad: Hasta 1 mes, columna: hombres, estado_valor: inconsistente, nota: "Impreso 13; la suma de las edades y el total de la provincia implican 33."}
+  - {territorio: Arauco, nivel: departamento, edad: De 1 a 2 años, columna: mujeres, estado_valor: inconsistente, nota: "Impreso 849; la suma de las edades y el total de la provincia implican 549."}
+  - {territorio: Concepción, nivel: departamento, edad: De 95 a 100, columna: mujeres, estado_valor: inconsistente, nota: "Impreso 1; la suma de las edades y el total de la provincia implican 11."}
+  - {territorio: Chillán, nivel: departamento, edad: De 25 a 30, columna: hombres, estado_valor: inconsistente, nota: "Impreso 3 527; la suma de las edades y el total de la provincia implican 2 527."}
+  - {territorio: Linares, nivel: departamento, edad: De 10 a 15, columna: mujeres, estado_valor: inconsistente, nota: "Impreso 2 643; la suma de las edades y el total de la provincia implican 2 463."}
+  - {territorio: Talca, nivel: departamento, edad: De 30 a 35, columna: hombres, estado_valor: inconsistente, nota: "Impreso 1 930; la suma de las edades y el total de la provincia implican 1 936."}
+  - {territorio: República, nivel: pais, edad: De 85 a 90, columna: hombres, estado_valor: inconsistente, nota: "Impreso 1 846; la suma de las edades y la de las provincias implican 1 850."}
+  - {territorio: República, nivel: pais, edad: De 85 a 90, columna: mujeres, estado_valor: inconsistente, nota: "Impreso 2 266; la suma de las edades y la de las provincias implican 2 262."}
+
+controles:
+  - tipo: suma_dimension
+    dimension: [edad_min, edad_max, dimensiones]
+    total: ["", "", ""]
+    partes: [[0, 0, "{\"meses\": 0}"], [0, 0, "{\"meses\": \"1-2\"}"], [0, 0, "{\"meses\": \"3-5\"}"], [0, 0, "{\"meses\": \"6-11\"}"], [1, 1, ""], [2, 4, ""], [5, 9, ""], [10, 14, ""], [15, 19, ""], [20, 24, ""], [25, 29, ""], [30, 34, ""], [35, 39, ""], [40, 44, ""], [45, 49, ""], [50, 54, ""], [55, 59, ""], [60, 64, ""], [65, 69, ""], [70, 74, ""], [75, 79, ""], [80, 84, ""], [85, 89, ""], [90, 94, ""], [95, 99, ""], [100, "", ""]]
+    excepciones:
+      - {territorio: Combarbalá, sexo: mujer, diferencia: -9}
+      - {territorio: Ovalle, sexo: mujer, diferencia: 6}
+  - tipo: jerarquia
+    excepciones:
+      - {territorio: Coquimbo, sexo: mujer, edad_min: 0, diferencia: -3}
+  - tipo: suma_territorio
+    total: pais
+    partes: provincia

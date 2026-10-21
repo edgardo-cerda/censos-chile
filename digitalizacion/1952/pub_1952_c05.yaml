@@ -60,8 +60,9 @@ notas_celdas:
     estado_valor: inconsistente
     nota: >
       Impreso 41 583 (lectura clara a 400 dpi), pero hombres + mujeres = 78 767 frente al total
-      de 81 767. La diferencia (3 000) es la población de Mariluán en 1885, una cifra redonda
-      (Cuadro 1 de 1920); el total de hombres de la República sí la incluye.
+      de 81 767. La publicación de 1885 (cuadro general, pub_1885_cg_edad: Territorio de
+      Colonización de Angol) da 44 583 hombres, con su desglose por edad: errata de 3 000 en este
+      cuadro. El total de hombres de la República sí usa 44 583.
   - territorio: REPUBLICA
     sexo: Hombres
     columna: "1895"

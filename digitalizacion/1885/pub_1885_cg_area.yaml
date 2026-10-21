@@ -1,0 +1,62 @@
+# Columnas «Total jeneral», «Población urbana» y «Población rural» del cuadro general «Clasificación de
+# los habitantes por departamentos i provincias, según el sexo i la edad ... Población urbana i rural»
+# del censo de 1885 (tomo I, págs. 842 y 846). El área solo viene para el total de ambos sexos. Las
+# columnas por sexo y edad del mismo cuadro están en pub_1885_cg_edad (mismos nombres y convenciones).
+
+fuente_id: pub_1885
+cuadro: "839"
+titulo: Clasificación de los habitantes por departamentos i provincias ... Población urbana i rural (total jeneral, urbana y rural)
+paginas:
+  - {pdf: 875, impresa: "842", desde: Magallanes}
+  - {pdf: 879, impresa: "846", desde: Curicó}
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion:
+  fecha: 2026-10-21
+  por: Claude (asistido)
+  recortes_dpi: 200-400
+  nota: >
+    Lectura sobre la copia del tomo 1 de Memoria Chilena (mc_1885_t1, PDF 874 y 878), porque en el
+    PDF del INE varias filas están tapadas por manchas; las páginas indicadas son las del PDF del INE.
+
+indicador: poblacion
+unidad: personas
+fijas: {censo: 1885, sexo: _T}
+
+territorio:
+  columna: territorio
+  columna_nivel: nivel
+  niveles: [provincia, departamento]
+  totales_al_final: true
+  dpa_version: provincias_1885
+
+columnas:
+  total: {area: _T}
+  urbana: {area: urbana}
+  rural: {area: rural}
+
+notas_cuadro:
+  - >
+    El total de cada unidad es igual a hombres + mujeres (pub_1885_cg_edad) salvo Imperial, cuyo total
+    de mujeres está errado. Sin Tacna, urbana y rural de las provincias coinciden con el comparativo 9
+    de 1952 (Angol = Malleco), y el país, con 1 041 765 urbanos y 1 456 032 rurales.
+  - >
+    Tacna: la fila de la provincia (18 083 urbanos y 11 440 rurales) no es la suma de sus
+    departamentos (20 779 y 8 744); el país (1 062 544 y 1 464 776) suma los departamentos, y lo
+    mismo hace el comparativo 9 de 1952 al restar Tacna del país. Se anotan las dos celdas de la
+    provincia.
+
+notas_celdas:
+  - {territorio: Talca, nivel: departamento, columna: urbana, estado_valor: inconsistente, nota: "Impreso 28 538; total - rural = 28 583, como la suma provincial."}
+  - {territorio: Tacna, nivel: provincia, columna: urbana, estado_valor: inconsistente, nota: "Impreso 18 083; los departamentos suman 20 779, cifra que usa el total del país."}
+  - {territorio: Tacna, nivel: provincia, columna: rural, estado_valor: inconsistente, nota: "Impreso 11 440; los departamentos suman 8 744, cifra que usa el total del país."}
+
+controles:
+  - tipo: suma_dimension
+    dimension: area
+    total: _T
+    partes: [urbana, rural]
+  - tipo: jerarquia
+  - tipo: suma_territorio
+    total: pais
+    partes: provincia

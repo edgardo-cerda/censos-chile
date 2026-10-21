@@ -58,10 +58,11 @@ ESTADO = {
                                        "provincias según sexo y edad (pág. 601, PDF ~617), que además cruza área × sexo.",
            "Provincia × área (1952 C9) y provincia × sexo × edad en 6 tramos (1952 C5 y C6); departamento (total) "
            "desde 1920 C1."),
-    1885: ("Serie desde otros censos", "Sexo × edad por provincia: clasificación por departamentos y provincias "
-                                       "(pág. 839, PDF ~873); validar con ella 1952 C5 y C7. El tomo 2 está en Memoria Chilena (mc_1885_t2).",
-           "El PDF del INE trae solo el tomo I de 2. Provincia × área (1952 C9) y × sexo (1952 C5); edad del país en decenios "
-           "(1952 C7); departamento desde 1920 C1. Malleco: 3 000 personas sin sexo (1952 C5)."),
+    1885: ("Núcleo completo",
+           "Opcional: subdelegación y distrito × sexo × edad, con urbana y rural (bloques provinciales del tomo I). El área no viene por sexo. El tomo 2 (Memoria Chilena) trae profesiones y extranjeros.",
+           "Departamento × sexo × edad en 26 grupos (meses bajo 1 año) y departamento × área del cuadro general (págs. 839-846, "
+           "leído en la copia de Memoria Chilena del tomo I porque el PDF del INE tiene filas manchadas). Incluye Tacna; sin ella, "
+           "provincias = 1952 C5 y C9 y decenios del país = 1952 C7. 13 erratas anotadas; 1952 C5 tiene una errata de 3 000 en Malleco (Angol)."),
     1895: ("Núcleo completo",
            "Opcional: subdelegación y distrito × sexo × edad, con urbana y rural del total (bloques provinciales de los tomos I a IV). El área no viene por sexo.",
            "Departamento × sexo × edad en 26 grupos (meses bajo 1 año) y departamento × área del cuadro general del tomo IV "
