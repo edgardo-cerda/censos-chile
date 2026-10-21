@@ -13,7 +13,9 @@ censos:
   - anio: 1843
     publicaciones: []
     microdatos: no
-    notas: Sin publicación digitalizada disponible.
+    notas: >
+      Sin publicación nacional. Solo se publicó la provincia del Maule (copia de Memoria Chilena
+      mc_1843_maule, en metadatos/fuentes.yaml: copias_memoria_chilena).
   - anio: 1854
     publicaciones: []
     microdatos: no

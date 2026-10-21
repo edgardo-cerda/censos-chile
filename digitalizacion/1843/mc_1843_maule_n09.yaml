@@ -1,0 +1,53 @@
+# Transcripción del Cuadro N.º 9 «Poblacion de la provincia del Maule segun el censo de 1843. (Por sus
+# edades.)» de la Estadística de la República de Chile, provincia del Maule, tomo I (1845), única
+# provincia publicada del censo de 1843 (copia de Memoria Chilena). Seis departamentos × sexo × edad;
+# los «Totales jenerales» son la provincia. El CSV trae una fila por unidad y tramo de edad.
+
+fuente_id: mc_1843_maule
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion:
+  fecha: 2026-10-21
+  por: Claude (asistido)
+  recortes_dpi: 110-500
+cuadro: "9"
+titulo: Poblacion de la provincia del Maule segun el censo de 1843 (por sus edades)
+paginas:
+  - {pdf: 76, impresa: "", desde: Cauquenes}
+
+indicador: poblacion
+unidad: personas
+fijas: {censo: 1843, area: _T}
+
+territorio:
+  columna: territorio
+  nivel: {Maule: provincia, _otro: departamento}
+  dpa_version: provincias_1843
+
+filas:
+  edad_min: {columna: edad_min}
+  edad_max: {columna: edad_max}
+
+columnas:
+  hombres: {sexo: hombre}
+  mujeres: {sexo: mujer}
+  total: {sexo: _T}
+
+notas_cuadro:
+  - >
+    Tramos impresos «Hasta 7 años», «De 7 a 15», «15 a 25» … «90 a 100», y luego cada edad de 100 a
+    115 años con personas (100-107, 110, 111 y 115). Se registran como 0-7, 8-15, 16-25 … 81-90 y
+    91-99 (la edad de 100 va aparte), como en 1865 y 1875. «»» impreso = guion.
+  - >
+    Todas las filas y columnas cuadran. Los totales de Cauquenes (46 643), Linares (27 760) e Itata
+    (24 586), y por eso la provincia (146 542), son los mismos del Cuadro N.º 8, pero difieren de la
+    suma de las subdelegaciones del Estado N.º 1 (46 634, 27 753 y 24 584; provincia 146 524), que
+    es la cifra de los sinópticos de 1865 y 1875. Constitución, Parral y San Carlos coinciden.
+
+controles:
+  - {tipo: suma_dimension, dimension: sexo, total: _T, partes: [hombre, mujer]}
+  - tipo: suma_dimension
+    dimension: [edad_min, edad_max]
+    total: ["", ""]
+    partes: [[0, 7], [8, 15], [16, 25], [26, 35], [36, 50], [51, 60], [61, 70], [71, 80], [81, 90], [91, 99], [100, 100], [101, 101], [102, 102], [103, 103], [104, 104], [105, 105], [106, 106], [107, 107], [110, 110], [111, 111], [115, 115]]
+  - {tipo: suma_territorio, total: provincia, partes: departamento}

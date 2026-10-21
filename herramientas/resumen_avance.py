@@ -45,9 +45,9 @@ ESTADO = {
     1835: ("Parcial",
            "Nada más en el PDF para el núcleo: no trae edad ni área. Opcional: subdelegaciones de Santiago (PDF 93).",
            "Departamento × sexo × estado (solteros/casados) desde la propia publicación (arts. 34–42), validado con los sinópticos de 1865 y 1875 (salvo Cauquenes, +2). Sin edad en la publicación."),
-    1843: ("Sin publicación",
-           "Transcribir la provincia del Maule (departamento y subdelegación × sexo × edad; copia de Memoria Chilena mc_1843_maule, PDF 72–98). Revisar la población por subdelegación del Repertorio nacional de 1850 (mc_1843_repertorio).",
-           "Solo se publicó la provincia del Maule (Memoria Chilena), sin transcribir. Departamento y provincia (totales) desde los sinópticos de 1865 y 1875, que coinciden entre sí."),
+    1843: ("Parcial",
+           "Nada más para el núcleo en el tomo del Maule. Revisar la población por subdelegación del Repertorio nacional de 1850 (mc_1843_repertorio), que podría cubrir otras provincias.",
+           "Solo se publicó la provincia del Maule (copia de Memoria Chilena): departamento × sexo × edad (Cuadro N.º 9), departamento × área (N.º 8) y población de sus 36 subdelegaciones y 154 distritos (Estados N.º 1 a 7). Las subdelegaciones suman los departamentos de los sinópticos; los Cuadros 8 y 9 difieren en Cauquenes, Linares e Itata (+18 en la provincia). Resto del país: departamento y provincia (totales) desde los sinópticos de 1865 y 1875."),
     1854: ("Sin publicación",
            "Opcional: contrastar con el resumen general de 1907 (PDF 1222). Buscar un ejemplar digitalizado.",
            "Sin publicación digitalizada. Departamento y provincia (totales) desde los sinópticos de 1865 y 1875, que coinciden entre sí."),
@@ -98,10 +98,10 @@ COLOR_ESTADO = {
     "Núcleo completo": "C6EFCE", "Falta edad": "DDEBF7", "Parcial": "FFEB9C",
     "Serie desde otros censos": "FCE4D6", "Catalogado": "EDEDED", "Sin publicación": "D9D9D9",
 }
-NIVELES = ["distrito", "comuna", "partido", "departamento", "provincia", "region", "pais"]  # de más fino a más grueso
+NIVELES = ["distrito", "subdelegacion", "comuna", "partido", "departamento", "provincia", "region", "pais"]  # de más fino a más grueso
 # Niveles del catálogo (metadatos/catalogo_cuadros.csv, columna nivel_territorial), de más fino a más grueso.
-NIVELES_PDF = ["entidad", "distrito", "comuna", "parroquia", "partido", "departamento", "provincia", "region", "pais"]
-NOMBRE_NIVEL = {"entidad": "Entidad", "distrito": "Distrito", "comuna": "Comuna", "parroquia": "Parroquia", "partido": "Partido",
+NIVELES_PDF = ["entidad", "distrito", "subdelegacion", "comuna", "parroquia", "partido", "departamento", "provincia", "region", "pais"]
+NOMBRE_NIVEL = {"entidad": "Entidad", "distrito": "Distrito", "subdelegacion": "Subdelegación", "comuna": "Comuna", "parroquia": "Parroquia", "partido": "Partido",
                 "departamento": "Departamento", "provincia": "Provincia", "region": "Región", "pais": "País"}
 DESAGREGACIONES = {"Total": [], "Área": ["area"], "Área × sexo": ["area", "sexo"], "Sexo × edad": ["sexo", "edad"]}
 

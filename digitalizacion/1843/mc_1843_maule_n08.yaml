@@ -1,0 +1,43 @@
+# Transcripción del Cuadro N.º 8 «Aglomeracion de la poblacion de los departamentos de la provincia
+# de MAULE segun el censo de 1843» (provincia del Maule, tomo I, 1845; copia de Memoria Chilena):
+# habitantes de las poblaciones (ciudades, villas y aldeas) y de los campos por departamento. Se omite
+# la columna «Número parcial de habitantes» de cada ciudad o villa (ver notas).
+
+fuente_id: mc_1843_maule
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion:
+  fecha: 2026-10-21
+  por: Claude (asistido)
+  recortes_dpi: 110-500
+cuadro: "8"
+titulo: Aglomeracion de la poblacion de los departamentos de la provincia de Maule segun el censo de 1843
+paginas:
+  - {pdf: 75, impresa: "", desde: Cauquenes}
+
+indicador: poblacion
+unidad: personas
+fijas: {censo: 1843, sexo: _T}
+
+territorio:
+  columna: territorio
+  nivel: {Maule: provincia, _otro: departamento}
+  dpa_version: provincias_1843
+
+columnas:
+  poblaciones: {area: urbana}
+  campos: {area: rural}
+  total: {area: _T}
+
+notas_cuadro:
+  - >
+    «Habitantes de las poblaciones» se registra como urbana y «de los campos» como rural. Las
+    poblaciones son: Cauquenes (ciudad de Cauquenes 2 334 y villa de Chanco 100), villa de
+    Constitución, Linares (villa de Linares 2 306 y aldea de Yerbas Buenas 200), villas del Parral,
+    de San Carlos y de Quirihue (Itata). La fila de totales no tiene nombre en el original; es la
+    provincia. Todas las filas y columnas cuadran; los totales son los del Cuadro N.º 9 (ver su nota
+    sobre la diferencia con las subdelegaciones y los sinópticos).
+
+controles:
+  - {tipo: suma_dimension, dimension: area, total: _T, partes: [urbana, rural]}
+  - {tipo: suma_territorio, total: provincia, partes: departamento}

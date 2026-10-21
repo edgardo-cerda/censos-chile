@@ -94,8 +94,15 @@ Las de 1930–1992 vienen en parte de la extracción previa (septiembre de 2026)
 los tomos completos de 1952 y 1982 se agregaron al armar el catálogo (octubre de 2026).
 
 **Censos sin publicación propia (1843 y 1854).** De 1843 solo se publicó la provincia del Maule
-(`mc_1843_maule`, cap. 2, PDF 72–98: departamento y subdelegación, por edad y estado civil). Sus
-cifras están en otras publicaciones: por
+(`mc_1843_maule`), transcrita en `digitalizacion/1843/`: Estado N.º 1 (PDF 58, población de las 36
+subdelegaciones), Estados N.º 2 a 7 (PDF 59–64, los 154 distritos), Cuadro N.º 8 (PDF 75,
+poblaciones y campos por departamento) y N.º 9 (PDF 76, departamento × sexo × edad en 10 tramos y
+edades de 100 a 115). Los distritos suman sus subdelegaciones (salvo Chanco: impreso 4.805, coherente
+1.805) y las subdelegaciones suman los departamentos de los sinópticos (provincia 146.524); los
+Cuadros 8 y 9 dan 146.542 (Cauquenes +9, Linares +7, Itata +2), cuadran por dentro y coinciden
+entre sí. El 5 y el 3 se parecen en el escaneo (Sausal 5.410, Longaví 3.561: confirmados por las
+sumas). El estado civil (N.º 10, PDF 79) queda para los módulos temáticos. Las demás cifras de 1843
+están en otras publicaciones: por
 departamento en los cuadros sinópticos de 1865 (pág. 392, PDF 425: 1835, 1843, 1854 y 1865) y de
 1875 (págs. 645–646, PDF 661–662: 1835 a 1875), y en el resumen general de 1907 (pág. 1263, PDF
 1222: 1854 a 1907, por provincia y departamento); por provincia en el Cuadro 4 de 1952 (1835 a

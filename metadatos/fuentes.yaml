@@ -173,8 +173,11 @@ copias_memoria_chilena:
     sha256: c8bb89aab47b1e3895666f4ff8fb0f4697141e96b63b98a46cff2853701bc7ba
     complementa: null
     nota: >
-      Única provincia publicada del censo de 1843. Cap. 2 (PDF 72-98): población por departamento y
-      subdelegación, por edades (PDF 76) y estado civil (PDF 79), instrucción y vacuna.
+      Única provincia publicada del censo de 1843. Cap. 1: Estado N.º 1 (PDF 58), población de las 36
+      subdelegaciones; Estados N.º 2 a 7 (PDF 59-64), de los 154 distritos. Cap. 2 (PDF 72-98):
+      Cuadro N.º 8 (PDF 75) poblaciones y campos por departamento; N.º 9 (PDF 76) departamento ×
+      sexo × edad; N.º 10 (PDF 79) estado civil; instrucción y vacuna. Sin paginación impresa en los
+      cuadros plegados.
   - id: mc_1843_repertorio
     censo: 1843
     titulo: Repertorio nacional formado por la Oficina de Estadística (1850)

@@ -1,0 +1,60 @@
+# Transcripción de los Estados N.º 1 a 7 de la provincia del Maule (tomo I, 1845; copia de Memoria
+# Chilena): «Cuadro de la demarcacion territorial de cada una de las 36 Subdelegaciones…» (N.º 1) y de
+# los distritos de cada departamento (N.º 2 Cauquenes, 3 Constitución, 4 Linares, 5 Parral, 6 San
+# Carlos y 7 Itata), «con espresion del número de sus habitantes». Solo se transcribe la población;
+# se omiten los límites, la extensión en leguas cuadradas y los habitantes por legua.
+# Los departamentos no traen total en estos cuadros (filas sin cifra); la población de cada
+# subdelegación sale del Estado N.º 1 (PDF 58) y la de cada distrito, de los Estados N.º 2 a 7.
+
+fuente_id: mc_1843_maule
+metodo: transcripcion_manual
+verificacion: control_aritmetico
+transcripcion:
+  fecha: 2026-10-21
+  por: Claude (asistido)
+  recortes_dpi: 110-500
+cuadro: "E1-7"
+titulo: Demarcacion territorial de las subdelegaciones y distritos de la provincia del Maule, con el numero de sus habitantes
+paginas:
+  # Distritos; las cifras de las subdelegaciones están en el Estado N.º 1 (PDF 58).
+  - {pdf: 59, impresa: "", desde: Cauquenes}
+  - {pdf: 60, impresa: "", desde: Constitución}
+  - {pdf: 61, impresa: "", desde: Linares}
+  - {pdf: 62, impresa: "", desde: Parral}
+  - {pdf: 63, impresa: "", desde: San Carlos}
+  - {pdf: 64, impresa: "", desde: Itata}
+
+indicador: poblacion
+unidad: personas
+fijas: {censo: 1843, area: _T, sexo: _T}
+
+territorio:
+  columna: territorio
+  columna_nivel: nivel
+  niveles: [departamento, subdelegacion, distrito]
+  dpa_version: provincias_1843
+
+columnas:
+  poblacion: {}
+
+notas_cuadro:
+  - >
+    Distritos con número y sin nombre («De la pob. hasta la legua»): 1.º a 5.º de Cauquenes, 1.º y
+    2.º del Parral y 1.º a 4.º de Quirihue; también el 4.º de Pocillas. Itata tiene 39 distritos
+    aunque el título del Estado N.º 7 dice 38 (154 en la provincia, como dice el texto, pág. 50).
+    En el Estado N.º 7 la columna de población va corrida respecto de los nombres; las cifras se
+    asignan en orden dentro de cada subdelegación, cuyas sumas cuadran.
+  - >
+    Los distritos de cada subdelegación suman la cifra del Estado N.º 1, salvo Chanco (errata). Las
+    subdelegaciones suman, por departamento, las cifras de los sinópticos de 1865 y 1875 (Cauquenes
+    46 634, Constitución 5 011, Linares 27 753, Parral 15 428, San Carlos 27 114, Itata 24 584;
+    provincia 146 524), no las de los Cuadros N.º 8 y 9 (46 643, 27 760 y 24 586 en tres de ellos).
+  - >
+    Las cifras de Sausal (5 410) y Longaví (3 561) tienen el 5 parecido al 3 en el escaneo; se
+    confirman con la suma de sus distritos (y Sausal, con la extensión por los habitantes por legua).
+
+notas_celdas:
+  - {territorio: Chanco, nivel: distrito, columna: poblacion, estado_valor: inconsistente, nota: "Impreso 4,805 (el 4 más tenue y separado por una coma); la subdelegación de Chanco (11 519) implica 1 805."}
+
+controles:
+  - {tipo: jerarquia}
