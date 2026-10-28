@@ -2,7 +2,7 @@
 
 Para cada ficha de metadatos/variables/ con `recodificacion` por censo:
   - verifica que todos los códigos observados en la base tengan categoría armonizada,
-  - muestra la distribución de la categoría general en cada censo, lado a lado.
+  - muestra la distribución de la versión comparable (categoría general) en cada censo, lado a lado.
 
 No lee los microdatos: usa metadatos/inventario/<censo>_<tabla>_frecuencias.csv.
 
@@ -33,13 +33,15 @@ def frecuencias(censo, tabla: str, variable: str) -> dict[str, int]:
         return {r["valor"]: int(r["n"]) for r in csv.DictReader(f) if r["variable"] == variable}
 
 
-def general(destino) -> int:
-    return destino[0] if isinstance(destino, list) else destino
+def padres(ficha: dict) -> dict[int, int]:
+    """Código detallado de la versión común -> categoría general (versión comparable)."""
+    return {d["codigo"]: c["codigo"] for c in ficha["categorias"] for d in c.get("detallado", [])}
 
 
 def revisar(ficha: dict) -> int:
     print(f"\n=== {ficha['nombre']}: {ficha['etiqueta']}")
-    etiquetas = {c["codigo"]: c["etiqueta"] for c in ficha["categorias"]}
+    etiquetas = {-1: "No aplica", -2: "Ignorado", -3: "Suprimido", **{c["codigo"]: c["etiqueta"] for c in ficha["categorias"]}}
+    general = lambda codigo: padres(ficha).get(codigo, codigo)  # noqa: E731
     conteos = defaultdict(dict)
     errores = 0
     for censo, regla in ficha["censos"].items():
@@ -48,7 +50,9 @@ def revisar(ficha: dict) -> int:
         tabla = regla["tabla"].split(" /")[0].strip()
         variable = regla.get("recodificacion_variable", regla["variables_originales"][0])
         obs = frecuencias(censo, tabla, variable)
-        mapa = {str(k): general(v) for k, v in regla["recodificacion"].items()}
+        mapa = {str(k): general(v) for k, v in {**regla["recodificacion"], **(regla.get("faltantes") or {})}.items()
+                if k is not None}
+        nulo_previsto = None in (regla.get("faltantes") or {})
         cubiertos_por_operativo = 0
         if "recodificacion_operativo" in regla:
             # Registros sin la variable principal, clasificados por el tipo de operativo.
@@ -61,7 +65,7 @@ def revisar(ficha: dict) -> int:
             if codigo in mapa:
                 g = mapa[codigo]
                 conteos[g][censo] = conteos[g].get(censo, 0) + n
-            elif codigo in VACIOS and n == cubiertos_por_operativo:
+            elif codigo in VACIOS and (nulo_previsto or n == cubiertos_por_operativo):
                 continue
             else:
                 errores += 1

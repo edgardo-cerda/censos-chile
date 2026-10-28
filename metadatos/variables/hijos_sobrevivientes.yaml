@@ -1,0 +1,59 @@
+nombre: hijos_sobrevivientes
+etiqueta: Hijas e hijos vivos actualmente
+unidad: persona
+tema: fecundidad
+nivel: ampliado
+definicion: Número de hijas e hijos nacidos vivos de la mujer que están vivos a la fecha del censo.
+universo: >
+  Mujeres de 14 años o más (1992); mujeres de 15 años o más con al menos un hijo nacido vivo (2002,
+  2017, 2024).
+categorias:
+  - {codigo: "0-30", etiqueta: Número de hijas e hijos vivos actualmente}
+universo_comparable:
+  sexo: {en: [2]}
+  edad: {min: 15}
+  hijos_nacidos_vivos: {min: 1}
+
+nota_armonizacion: >
+  Variable numérica. La versión comparable usa el universo común: mujeres de 15 años o más con al
+  menos un hijo nacido vivo (en 1992 se preguntó también a las que no tuvieron hijos, con respuesta 0).
+  Si los hijos nacidos vivos son ignorados, se conserva el valor declarado.
+
+censos:
+  1992:
+    tabla: personas
+    variables_originales: [Hijos_vivos]
+    pregunta: "18. De estos, ¿cuántos están vivos actualmente?"
+    universo: {sexo: {en: [2]}, edad: {min: 14}}
+    rango: [0, 18]
+    faltantes: {99: -2}
+    estado: borrador
+  2002:
+    tabla: personas
+    variables_originales: [P35]
+    pregunta: "35. ¿Cuántos están vivos actualmente?"
+    universo: {sexo: {en: [2]}, edad: {min: 15}, hijos_nacidos_vivos: {min: 1}}
+    rango: [0, 30]
+    faltantes: {null: -2}
+    fuera_de_rango: -2
+    comparabilidad: >
+      Universo inferido de los datos: las mujeres sin hijos nacidos vivos tienen 0 o vacío (salto de
+      la pregunta). Entre las que tuvieron hijos, el vacío se toma como ignorado. Valores sobre 30:
+      ignorado (probables errores de digitación).
+    estado: borrador
+  2017:
+    tabla: personas
+    variables_originales: [P20]
+    pregunta: "20. ¿Cuántos están vivos actualmente?"
+    universo: {sexo: {en: [2]}, edad: {min: 15}, hijos_nacidos_vivos: {min: 1}}
+    rango: [0, 23]
+    faltantes: {98: -1, 99: -2}
+    estado: borrador
+  2024:
+    tabla: personas
+    variables_originales: [p47a_tot_hijs_sobrev]
+    pregunta: "47. ¿Cuántas hijas e hijos están vivos actualmente?"
+    universo: {sexo: {en: [2]}, edad: {min: 15}, hijos_nacidos_vivos: {min: 1}}
+    rango: [0, 22]
+    faltantes: {-99: -2, null: -1}
+    estado: borrador

@@ -6,7 +6,8 @@ nivel: nucleo
 definicion: Relación de cada persona con la persona reconocida como jefa o jefe del hogar.
 universo: Todas las personas censadas.
 
-# recodificacion: {código original: [general, detallado]}; detallado nulo = el censo no distingue.
+# recodificacion: {código original: código común}. La versión comparable (_comp) es la categoría
+# general de cada código común; un código general en la versión común = el censo no distingue el detalle.
 categorias:
   - {codigo: 1, etiqueta: Jefe/a de hogar}
   - codigo: 2
@@ -47,7 +48,7 @@ categorias:
       - {codigo: 122, etiqueta: Persona en situación de calle}
 
 nota_armonizacion: >
-  La categoría general es comparable en los cuatro censos. Es tan agregada como el censo que
+  La versión comparable (parentesco_comp) vale para los cuatro censos. Es tan agregada como el censo que
   menos distingue: 1992 junta hermanos con cuñados, padres con suegros e hijos con hijastros, y
   no separa a los abuelos de otros parientes. Las categorías 11 y 12 no son relaciones de
   parentesco: identifican a quienes no forman parte de un hogar particular.
@@ -58,19 +59,19 @@ censos:
     variables_originales: [Parentesco]
     pregunta: "1. ¿Cuál es su relación de parentesco con el jefe o jefa de hogar?"
     recodificacion:
-      1: [1, null]
-      2: [2, 21]
-      3: [2, 22]
-      4: [3, null]
-      5: [4, null]
-      6: [5, null]
-      7: [6, null]
-      8: [7, null]
-      9: [8, null]
-      10: [9, null]
-      11: [10, null]
-      12: [11, null]
-      99: [12, null]
+      1: 1
+      2: 21
+      3: 22
+      4: 3
+      5: 4
+      6: 5
+      7: 6
+      8: 7
+      9: 8
+      10: 9
+      11: 10
+      12: 11
+      99: 12
     comparabilidad: >
       Código 99 sin etiqueta (7.952 personas): todas están en los 79 registros con tipo de vivienda
       99 y sin hogares, que parecen operativos especiales (en tránsito o en situación de calle).
@@ -81,22 +82,22 @@ censos:
     variables_originales: [P17]
     pregunta: "17. ¿Cuál es su relación de parentesco con el jefe o jefa del hogar?"
     recodificacion:
-      1: [1, null]
-      2: [2, 21]
-      3: [2, 22]
-      4: [3, 31]
-      5: [3, 32]
-      6: [4, null]
-      7: [5, null]
-      8: [6, 61]
-      9: [6, 62]
-      10: [7, 71]
-      11: [7, 72]
-      12: [8, null]
-      13: [9, null]
-      14: [10, null]
-      15: [11, null]
-      16: [12, null]
+      1: 1
+      2: 21
+      3: 22
+      4: 31
+      5: 32
+      6: 4
+      7: 5
+      8: 61
+      9: 62
+      10: 71
+      11: 72
+      12: 8
+      13: 9
+      14: 10
+      15: 11
+      16: 12
     comparabilidad: >
       Código 16 sin etiqueta (15.401 personas): todas están en los 295 registros con tipo de
       vivienda 10, que parecen operativos especiales (en tránsito o en situación de calle).
@@ -107,25 +108,25 @@ censos:
     variables_originales: [P07]
     pregunta: "7. ¿Qué relación de parentesco tiene con el jefe/a de hogar?"
     recodificacion:
-      1: [1, null]
-      2: [2, 21]
-      3: [2, 23]
-      4: [2, 22]
-      5: [3, 31]
-      6: [3, 32]
-      7: [6, 61]
-      8: [7, 71]
-      9: [6, 62]
-      10: [7, 72]
-      11: [4, null]
-      12: [5, null]
-      13: [8, 81]
-      14: [8, 82]
-      15: [9, null]
-      16: [10, null]
-      17: [11, null]
-      18: [12, 121]
-      19: [12, 122]
+      1: 1
+      2: 21
+      3: 23
+      4: 22
+      5: 31
+      6: 32
+      7: 61
+      8: 71
+      9: 62
+      10: 72
+      11: 4
+      12: 5
+      13: 81
+      14: 82
+      15: 9
+      16: 10
+      17: 11
+      18: 121
+      19: 122
     comparabilidad: El acuerdo de unión civil existe desde 2015; antes esas parejas se declaraban convivientes.
     estado: borrador
   2024:
@@ -133,24 +134,24 @@ censos:
     variables_originales: [parentesco]
     pregunta: "19. ¿Qué relación de parentesco tiene con la jefa o jefe de hogar?"
     recodificacion:
-      1: [1, null]
-      2: [2, 21]
-      3: [2, 23]
-      4: [2, 22]
-      5: [3, 31]
-      6: [3, 32]
-      7: [6, 61]
-      8: [7, 71]
-      9: [6, 62]
-      10: [7, 72]
-      11: [4, null]
-      12: [5, null]
-      13: [8, 81]
-      14: [8, 82]
-      15: [9, null]
-      16: [10, null]
-      17: [11, null]
-      19: [12, 122]
+      1: 1
+      2: 21
+      3: 23
+      4: 22
+      5: 31
+      6: 32
+      7: 61
+      8: 71
+      9: 62
+      10: 72
+      11: 4
+      12: 5
+      13: 81
+      14: 82
+      15: 9
+      16: 10
+      17: 11
+      19: 122
     comparabilidad: >
       Sin operativo de personas en tránsito (no existe el código 18). El cuestionario de 2024 pide
       incluir a quienes están temporalmente fuera del hogar, mientras que los censos anteriores

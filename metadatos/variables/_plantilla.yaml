@@ -1,4 +1,5 @@
 # Plantilla de ficha de variable armonizada. Copiar como <nombre>.yaml.
+# Reglas completas en docs/estructura_microdatos.md (sección "Capa 2").
 
 nombre: nombre_variable        # snake_case, único en el proyecto
 etiqueta: Etiqueta corta
@@ -9,22 +10,34 @@ definicion: >
   Qué mide la variable armonizada.
 universo: Todas las personas censadas.
 
-# Categorías armonizadas. "general" es comparable entre todos los censos;
-# "detallado" (opcional) conserva distinciones que solo existen en algunos censos.
+# Catálogo de la versión común (<variable>): las categorías generales son las de la versión
+# comparable (<variable>_comp); "detallado" (opcional) agrega las distinciones que solo hacen
+# algunos censos. Códigos generales de un dígito y detallados de dos. Etiquetas Sí/No entre comillas.
 categorias:
   - codigo: 1
     etiqueta: Categoría
     # detallado:
     #   - {codigo: 11, etiqueta: Subcategoría}
 
-# Una entrada por censo con microdatos (y por publicación, si aplica).
+# Universo común de la versión comparable (opcional): fuera de él, -1. Condiciones sobre variables
+# armonizadas: {min: n}, {max: n}, {en: [códigos]}; se puede usar <variable>_comp.
+# universo_comparable:
+#   edad: {min: 15}
+
+# Variables calculadas desde otra tabla de la capa 1 (opcional): derivada: conteo
+
+# Una entrada por censo que tenga la variable (sin entrada = NULL: el censo no la preguntó).
 censos:
   1992:
     tabla: personas
     variables_originales: [Variable]
     pregunta: null             # texto de la pregunta en el cuestionario, si se conoce
-    regla: >
-      Cómo se transforma (recodificación valor_original -> codigo).
-    recodificacion: {}         # {valor_original: codigo_armonizado}
+    universo: {edad: {min: 15}}  # opcional: universo del censo; fuera de él, -1
+    recodificacion: {}         # {código original: código común}
+    # rango: [0, 99]           # variables numéricas: valores que pasan tal cual
+    # fuera_de_rango: -2       # código para los demás valores no nulos
+    faltantes: {}              # {código original: -1 | -2 | -3}; `null` = valor vacío
+    clase: comparable          # comparable | con_reservas | solo_comun (solo_comun: _comp nulo)
     comparabilidad: null       # diferencias de definición, universo o captura
+    # control: {viviendas: [variable_original]}  # variables contadas: deben coincidir con esta
     estado: borrador           # borrador | verificado

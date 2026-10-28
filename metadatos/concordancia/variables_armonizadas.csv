@@ -1,0 +1,57 @@
+variable,unidad,censo,comparable,variables_originales,clase,estado,etiqueta
+tipo_vivienda,viviendas,1992,True,Tipo_vivienda,comparable,borrador,Tipo de vivienda
+tipo_vivienda,viviendas,2002,True,V1,comparable,borrador,Tipo de vivienda
+tipo_vivienda,viviendas,2017,True,P01,comparable,borrador,Tipo de vivienda
+tipo_vivienda,viviendas,2024,True,tipo_operativo + p2_tipo_vivienda,comparable,borrador,Tipo de vivienda
+condicion_ocupacion,viviendas,1992,True,Cond_ocupacion,con_reservas,borrador,Condición de ocupación de la vivienda
+condicion_ocupacion,viviendas,2002,True,V2,con_reservas,borrador,Condición de ocupación de la vivienda
+condicion_ocupacion,viviendas,2017,True,P02,comparable,borrador,Condición de ocupación de la vivienda
+condicion_ocupacion,viviendas,2024,True,p3b_estado_ocupacion,con_reservas,borrador,Condición de ocupación de la vivienda
+n_hogares,viviendas,1992,True,hogares,comparable,borrador,Número de hogares en la vivienda
+n_hogares,viviendas,2002,True,hogares,comparable,borrador,Número de hogares en la vivienda
+n_hogares,viviendas,2017,True,hogares,comparable,borrador,Número de hogares en la vivienda
+n_hogares,viviendas,2024,True,hogares,comparable,borrador,Número de hogares en la vivienda
+n_personas,viviendas,1992,False,personas,comparable,borrador,Número de personas
+n_personas,viviendas,2002,False,personas,comparable,borrador,Número de personas
+n_personas,viviendas,2017,False,personas,comparable,borrador,Número de personas
+n_personas,viviendas,2024,False,personas,comparable,borrador,Número de personas
+n_personas,hogares,1992,False,personas,comparable,borrador,Número de personas
+n_personas,hogares,2002,False,personas,comparable,borrador,Número de personas
+n_personas,hogares,2017,False,personas,comparable,borrador,Número de personas
+n_personas,hogares,2024,False,personas,comparable,borrador,Número de personas
+sexo,personas,1992,False,Sexo,comparable,borrador,Sexo
+sexo,personas,2002,False,P18,comparable,borrador,Sexo
+sexo,personas,2017,False,P08,comparable,borrador,Sexo
+sexo,personas,2024,False,sexo,comparable,verificado,Sexo
+edad,personas,1992,False,Edad,comparable,borrador,Edad en años cumplidos
+edad,personas,2002,False,P19,comparable,borrador,Edad en años cumplidos
+edad,personas,2017,False,P09,comparable,borrador,Edad en años cumplidos
+edad,personas,2024,False,edad,comparable,verificado,Edad en años cumplidos
+edad_85,personas,1992,False,Edad,comparable,borrador,"Edad en años cumplidos, con tope en 85"
+edad_85,personas,2002,False,P19,comparable,borrador,"Edad en años cumplidos, con tope en 85"
+edad_85,personas,2017,False,P09,comparable,borrador,"Edad en años cumplidos, con tope en 85"
+edad_85,personas,2024,False,edad,comparable,verificado,"Edad en años cumplidos, con tope en 85"
+parentesco,personas,1992,True,Parentesco,comparable,borrador,Relación de parentesco con el jefe(a) de hogar
+parentesco,personas,2002,True,P17,comparable,borrador,Relación de parentesco con el jefe(a) de hogar
+parentesco,personas,2017,True,P07,comparable,borrador,Relación de parentesco con el jefe(a) de hogar
+parentesco,personas,2024,True,parentesco,comparable,borrador,Relación de parentesco con el jefe(a) de hogar
+estado_civil,personas,1992,True,Estado_civil,comparable,borrador,Estado civil o conyugal
+estado_civil,personas,2002,True,P27,comparable,borrador,Estado civil o conyugal
+estado_civil,personas,2017,True,,no_existe,,Estado civil o conyugal
+estado_civil,personas,2024,True,p23_est_civil,comparable,borrador,Estado civil o conyugal
+alfabetismo,personas,1992,False,Leer,comparable,borrador,Sabe leer y escribir
+alfabetismo,personas,2002,False,P25,comparable,borrador,Sabe leer y escribir
+alfabetismo,personas,2017,False,,no_existe,,Sabe leer y escribir
+alfabetismo,personas,2024,False,p37_alfabet,comparable,borrador,Sabe leer y escribir
+asistencia_escolar,personas,1992,True,,no_existe,,Asiste actualmente a la educación formal
+asistencia_escolar,personas,2002,True,,no_existe,,Asiste actualmente a la educación formal
+asistencia_escolar,personas,2017,True,P13,comparable,borrador,Asiste actualmente a la educación formal
+asistencia_escolar,personas,2024,True,p33_edu_asiste,comparable,borrador,Asiste actualmente a la educación formal
+hijos_nacidos_vivos,personas,1992,True,Hijos_nacidos_vivos,comparable,borrador,Hijas e hijos nacidos vivos
+hijos_nacidos_vivos,personas,2002,True,P34,comparable,borrador,Hijas e hijos nacidos vivos
+hijos_nacidos_vivos,personas,2017,True,P19,comparable,borrador,Hijas e hijos nacidos vivos
+hijos_nacidos_vivos,personas,2024,True,p46a_tot_hijs_nac,comparable,borrador,Hijas e hijos nacidos vivos
+hijos_sobrevivientes,personas,1992,True,Hijos_vivos,comparable,borrador,Hijas e hijos vivos actualmente
+hijos_sobrevivientes,personas,2002,True,P35,comparable,borrador,Hijas e hijos vivos actualmente
+hijos_sobrevivientes,personas,2017,True,P20,comparable,borrador,Hijas e hijos vivos actualmente
+hijos_sobrevivientes,personas,2024,True,p47a_tot_hijs_sobrev,comparable,borrador,Hijas e hijos vivos actualmente

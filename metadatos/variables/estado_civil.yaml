@@ -1,0 +1,62 @@
+nombre: estado_civil
+etiqueta: Estado civil o conyugal
+unidad: persona
+tema: demografia
+nivel: ampliado
+definicion: Estado civil o conyugal actual declarado por la persona.
+universo: Personas de 14 años o más (1992) o de 15 años o más (2002, 2024). 2017 no lo preguntó.
+
+# recodificacion: {código original: código común}. La versión comparable (estado_civil_comp) es la
+# categoría general de cada código común; un código general en la versión común = el censo no distingue.
+categorias:
+  - {codigo: 1, etiqueta: Casado/a}
+  - codigo: 2
+    etiqueta: Conviviente o pareja
+    detallado:
+      - {codigo: 21, etiqueta: Conviviente o pareja sin acuerdo de unión civil}
+      - {codigo: 22, etiqueta: Conviviente civil (con acuerdo de unión civil)}
+  - codigo: 3
+    etiqueta: Separado/a, anulado/a o divorciado/a
+    detallado:
+      - {codigo: 31, etiqueta: Anulado/a}
+      - {codigo: 32, etiqueta: Separado/a}
+      - {codigo: 33, etiqueta: Divorciado/a}
+  - {codigo: 4, etiqueta: Viudo/a}
+  - {codigo: 5, etiqueta: Soltero/a}
+universo_comparable:
+  edad: {min: 15}
+
+nota_armonizacion: >
+  La versión comparable junta anulados, separados y divorciados: el divorcio existe desde 2004 y
+  antes la única forma de disolver el matrimonio era la nulidad. También junta a los convivientes
+  con y sin acuerdo de unión civil (vigente desde 2015). Universo comparable: 15 años o más (en 1992
+  los de 14 años quedan como no aplica).
+
+censos:
+  1992:
+    tabla: personas
+    variables_originales: [Estado_civil]
+    pregunta: "10. ¿Cuál es su estado civil actual?"
+    universo: {edad: {min: 14}}
+    recodificacion: {1: 1, 2: 2, 3: 5, 4: 4, 5: 32, 6: 31}
+    faltantes: {0: -1}
+    comparabilidad: >
+      Entre los 14 años (fuera del universo comparable) hay 21.406 casados y 3.651 convivientes de
+      241.434, una proporción alta: por verificar.
+    estado: borrador
+  2002:
+    tabla: personas
+    variables_originales: [P27]
+    pregunta: "27. ¿Cuál es su estado civil o conyugal actual?"
+    universo: {edad: {min: 15}}
+    recodificacion: {1: 1, 2: 2, 3: 5, 4: 31, 5: 32, 6: 4}
+    faltantes: {0: -1}
+    estado: borrador
+  2024:
+    tabla: personas
+    variables_originales: [p23_est_civil]
+    pregunta: "23. ¿Cuál es su estado conyugal o civil actual?"
+    universo: {edad: {min: 15}}
+    recodificacion: {1: 1, 2: 21, 3: 22, 4: 31, 5: 32, 6: 33, 7: 4, 8: 5}
+    faltantes: {-99: -2, null: -1}
+    estado: borrador

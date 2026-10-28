@@ -1,0 +1,40 @@
+nombre: alfabetismo
+etiqueta: Sabe leer y escribir
+unidad: persona
+tema: educacion
+nivel: ampliado
+definicion: Declaración de si la persona sabe leer y escribir.
+universo: Personas de 5 años o más. 2017 no lo preguntó.
+categorias:
+  - {codigo: 1, etiqueta: Sí}
+  - {codigo: 2, etiqueta: "No"}
+
+nota_armonizacion: >
+  Misma pregunta y mismo universo (5 años o más) en los tres censos que la hicieron: la versión
+  común es también la comparable.
+
+censos:
+  1992:
+    tabla: personas
+    variables_originales: [Leer]
+    pregunta: "9. ¿Sabe leer y escribir?"
+    universo: {edad: {min: 5}}
+    recodificacion: {1: 1, 2: 2}
+    faltantes: {0: -1}
+    estado: borrador
+  2002:
+    tabla: personas
+    variables_originales: [P25]
+    pregunta: "25. ¿Sabe usted leer y escribir?"
+    universo: {edad: {min: 5}}
+    recodificacion: {1: 1, 2: 2}
+    faltantes: {0: -1}
+    estado: borrador
+  2024:
+    tabla: personas
+    variables_originales: [p37_alfabet]
+    pregunta: "37. ¿Sabe leer y escribir?"
+    universo: {edad: {min: 5}}
+    recodificacion: {1: 1, 2: 2}
+    faltantes: {-99: -2, null: -1}
+    estado: borrador

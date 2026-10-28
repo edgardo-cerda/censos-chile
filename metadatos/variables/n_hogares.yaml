@@ -1,0 +1,42 @@
+nombre: n_hogares
+etiqueta: Número de hogares en la vivienda
+unidad: vivienda
+tema: vivienda
+nivel: ampliado
+definicion: Número de hogares censados en la vivienda.
+universo: Todas las viviendas.
+derivada: conteo
+categorias:
+  - {codigo: "0-92", etiqueta: Número de hogares}
+universo_comparable:
+  tipo_vivienda_comp: {min: 1, max: 6}
+  condicion_ocupacion_comp: {en: [1]}
+
+regla: >
+  Se cuentan los hogares de la capa 1 de cada vivienda, sin el hogar 0 (personas fuera de hogares
+  particulares en 1992 y 2024). Las viviendas sin hogares tienen 0.
+nota_armonizacion: >
+  En 2002 y 2017 las viviendas colectivas tienen un hogar 1 con todos sus residentes (hasta 92
+  hogares en una vivienda en 2002), mientras que en 1992 y 2024 sus residentes están en el hogar 0.
+  Por eso la versión comparable se limita a las viviendas particulares ocupadas con moradores
+  presentes, el universo de la pregunta en los cuatro censos.
+
+# control: variable original equivalente por tabla; el conteo debe coincidir con ella (dentro del
+# universo comparable).
+censos:
+  1992:
+    variables_originales: [hogares]
+    control: {viviendas: [hogares]}
+    estado: borrador
+  2002:
+    variables_originales: [hogares]
+    control: {viviendas: [v11]}
+    estado: borrador
+  2017:
+    variables_originales: [hogares]
+    control: {viviendas: [cant_hog]}
+    estado: borrador
+  2024:
+    variables_originales: [hogares]
+    control: {viviendas: [cant_hog]}
+    estado: borrador

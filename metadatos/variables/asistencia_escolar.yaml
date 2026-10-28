@@ -1,0 +1,36 @@
+nombre: asistencia_escolar
+etiqueta: Asiste actualmente a la educación formal
+unidad: persona
+tema: educacion
+nivel: ampliado
+definicion: Asistencia actual a un establecimiento de educación formal (parvularia, especial, básica, media o superior).
+universo: Todas las personas (2017, 2024). 1992 y 2002 no lo preguntaron (solo el último curso aprobado).
+
+# recodificacion: {código original: código común}; la versión comparable es la categoría general.
+categorias:
+  - {codigo: 1, etiqueta: Asiste}
+  - codigo: 2
+    etiqueta: No asiste
+    detallado:
+      - {codigo: 21, etiqueta: No asiste actualmente (asistió antes)}
+      - {codigo: 22, etiqueta: Nunca asistió}
+
+nota_armonizacion: >
+  2017 distingue entre quienes asistieron antes y quienes nunca asistieron; 2024 solo pregunta si
+  asiste. La versión comparable es asiste / no asiste.
+
+censos:
+  2017:
+    tabla: personas
+    variables_originales: [P13]
+    pregunta: "13. ¿Asiste actualmente a la educación formal?"
+    recodificacion: {1: 1, 2: 21, 3: 22}
+    faltantes: {99: -2}
+    estado: borrador
+  2024:
+    tabla: personas
+    variables_originales: [p33_edu_asiste]
+    pregunta: "33. ¿Asiste actualmente a la educación formal? Incluye educación parvularia, especial, básica, media y superior"
+    recodificacion: {1: 1, 2: 2}
+    faltantes: {-99: -2}
+    estado: borrador

@@ -92,6 +92,11 @@ Tablas de viviendas, hogares y personas por censo con:
       [estructura_microdatos.md](estructura_microdatos.md). Capa 1 con `pipelines/estandarizar_microdatos.py`
       y `validacion/validar_estandarizado.py`; capa 2 con `pipelines/armonizar_microdatos.py`.
       El vínculo con los archivos originales (fila y clave original) va en archivos de enlace aparte.
+- [ ] Etapa 1 de la armonización (variables directas): condición de ocupación, número de hogares y
+      de personas, estado civil, alfabetismo, asistencia escolar, hijos nacidos vivos y
+      sobrevivientes. Fichas en borrador, aplicadas en la capa 2 con versión común (`<variable>`) y
+      comparable (`<variable>_comp`). Falta revisión del autor.
+- [ ] Etapas 2 a 4 de la armonización ([estructura_microdatos.md](estructura_microdatos.md#etapas-de-la-armonizacion)).
 - [ ] Variables núcleo armonizadas: fichas en borrador de región, área, sexo, edad, edad_85,
       parentesco y tipo de vivienda, ya aplicadas en la capa 2. `validacion/revisar_fichas.py`
       comprueba que la recodificación cubra todos los códigos observados. Falta revisión del autor.

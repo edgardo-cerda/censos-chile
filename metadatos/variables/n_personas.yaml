@@ -1,0 +1,34 @@
+nombre: n_personas
+etiqueta: Número de personas
+unidad: vivienda, hogar
+tema: vivienda
+nivel: ampliado
+definicion: Número de personas censadas en la vivienda o en el hogar.
+universo: Todas las viviendas y todos los hogares.
+derivada: conteo
+categorias:
+  - {codigo: "0-7473", etiqueta: Número de personas}
+
+regla: Se cuentan las personas de la capa 1 de cada vivienda o de cada hogar (incluido el hogar 0).
+nota_armonizacion: >
+  Conteo directo, comparable entre censos. En 2024 cada persona en situación de calle es un
+  registro de vivienda propio, mientras que en 2017 los operativos agrupan a varias personas: para
+  comparar promedios conviene limitarse a las viviendas particulares.
+
+# control: variable original equivalente por tabla; el conteo debe coincidir con ella.
+censos:
+  1992:
+    variables_originales: [personas]
+    control: {hogares: [tp]}
+    estado: borrador
+  2002:
+    variables_originales: [personas]
+    estado: borrador
+  2017:
+    variables_originales: [personas]
+    control: {viviendas: [cant_per]}
+    estado: borrador
+  2024:
+    variables_originales: [personas]
+    control: {viviendas: [cant_per]}
+    estado: borrador

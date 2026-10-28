@@ -1,0 +1,71 @@
+nombre: condicion_ocupacion
+etiqueta: Condición de ocupación de la vivienda
+unidad: vivienda
+tema: vivienda
+nivel: ampliado
+definicion: Si la vivienda estaba ocupada (con moradores presentes o ausentes) o desocupada al momento del censo.
+universo: Todas las viviendas (1992, 2002, 2017); viviendas particulares (2024).
+
+# recodificacion: {código original: código común}; la versión comparable es la categoría general.
+categorias:
+  - {codigo: 1, etiqueta: Ocupada con moradores presentes}
+  - codigo: 2
+    etiqueta: Ocupada con moradores ausentes o sin entrevista
+    detallado:
+      - {codigo: 21, etiqueta: Ocupada con moradores ausentes}
+      - {codigo: 22, etiqueta: "Ocupada, sin entrevista por otras razones"}
+  - codigo: 3
+    etiqueta: Desocupada
+    detallado:
+      - {codigo: 31, etiqueta: En venta o arriendo}
+      - {codigo: 32, etiqueta: De temporada (veraneo u otro uso temporal)}
+      - {codigo: 33, etiqueta: Abandonada}
+      - {codigo: 34, etiqueta: Otra razón de desocupación}
+      - {codigo: 35, etiqueta: "En venta, arriendo, abandonada u otra razón (2017)"}
+universo_comparable:
+  tipo_vivienda_comp: {min: 1, max: 6}
+
+nota_armonizacion: >
+  1992 y 2002 solo distinguen ocupada con personas presentes, ocupada con personas ausentes y
+  desocupada. 2017 separa las de temporada; 2024 detalla la razón de desocupación y agrega las
+  viviendas ocupadas sin entrevista por otras razones. La versión comparable se limita a las
+  viviendas particulares (tipo_vivienda_comp 1 a 6), porque 2024 no clasifica las colectivas.
+
+censos:
+  1992:
+    tabla: viviendas
+    variables_originales: [Cond_ocupacion]
+    pregunta: "2. Indique si la vivienda está"
+    recodificacion: {1: 1, 2: 2, 3: 3}
+    clase: con_reservas
+    comparabilidad: No se sabe si las viviendas de temporada se clasificaron como desocupadas o como ocupadas con personas ausentes.
+    estado: borrador
+  2002:
+    tabla: viviendas
+    variables_originales: [V2]
+    pregunta: "2. Indique si la vivienda está"
+    recodificacion: {1: 1, 2: 2, 3: 3}
+    faltantes: {0: -1}
+    clase: con_reservas
+    comparabilidad: >
+      No se sabe si las viviendas de temporada se clasificaron como desocupadas o como ocupadas con
+      personas ausentes. El código 0 corresponde a los 295 registros de operativos (tipo de vivienda 8).
+    estado: borrador
+  2017:
+    tabla: viviendas
+    variables_originales: [P02]
+    pregunta: "2. Indique si la vivienda está"
+    recodificacion: {1: 1, 2: 21, 3: 35, 4: 32}
+    estado: borrador
+  2024:
+    tabla: viviendas
+    variables_originales: [p3b_estado_ocupacion]
+    pregunta: "3. Estado de ocupación de la vivienda"
+    recodificacion: {1: 1, 2: 21, 6: 22, 7: 31, 8: 32, 9: 33, 10: 34}
+    faltantes: {null: -1}
+    clase: con_reservas
+    comparabilidad: >
+      Las viviendas ocupadas sin entrevista por otras razones (código 6) no tienen equivalente en los
+      censos anteriores; en la versión comparable quedan con las de moradores ausentes. Las viviendas
+      colectivas y las personas en situación de calle no tienen condición de ocupación (no aplica).
+    estado: borrador

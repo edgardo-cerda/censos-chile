@@ -128,7 +128,25 @@ variable original (incluidas las claves del enlace) reproduce el inventario de
 ## Capa 2: armonizado
 
 Generada por `pipelines/armonizar_microdatos.py` desde la capa 1, las fichas de variables y
-`metadatos/territorio/comunas.csv`. Por ahora incluye las variables del núcleo.
+`metadatos/territorio/comunas.csv`. Incluye el núcleo y la etapa 1 de la armonización
+(ver [Etapas](#etapas-de-la-armonizacion)).
+
+**Dos versiones de cada variable.**
+
+| Columna | Versión | Qué garantiza |
+|---|---|---|
+| `<variable>` | común | Mismo nombre, código y etiqueta para la misma categoría en todos los censos. Conserva el detalle de cada censo (el catálogo es la unión de las categorías de todos) y el universo propio de cada censo. |
+| `<variable>_comp` | comparable | Categorías generales que significan lo mismo en todos los censos donde existe y universo común (el más restrictivo): fuera de él, -1. Es NULL en los censos que la ficha marca como `solo_comun`. |
+
+`<variable>_comp` solo existe cuando difiere de la versión común: la ficha tiene categorías
+detalladas, un `universo_comparable` o censos no comparables. Si no existe, la versión común ya es
+comparable (sexo, área, edad, alfabetismo, número de personas). La edad comparable conserva su
+nombre propio, `edad_85`.
+
+En la versión común, las categorías generales tienen códigos de un dígito y las detalladas, de dos
+(parentesco: 2 = cónyuge o conviviente; 21 = esposo/a, 22 = conviviente). Un código de un dígito
+en la versión común significa que el censo no distingue el detalle. La versión comparable es la
+categoría general de cada código.
 
 | Columna | Unidades | Contenido |
 |---|---|---|
@@ -137,16 +155,20 @@ Generada por `pipelines/armonizar_microdatos.py` desde la capa 1, las fichas de 
 | `region_dpa1974` | todas | 13 regiones (15 → 1, 14 → 10, 16 → 8) |
 | `comuna_entrega` | todas | código de comuna tal como viene en la capa 1 |
 | `area` | todas | ficha `area` |
-| `hogar_particular` | hogares, personas | la vivienda es particular (`tipo_vivienda` 1 a 6) |
-| `tipo_vivienda`, `tipo_vivienda_det` | viviendas | ficha `tipo_vivienda` |
+| `hogar_particular` | hogares, personas | la vivienda es particular (`tipo_vivienda_comp` 1 a 6) |
+| `tipo_vivienda`, `tipo_vivienda_comp` | viviendas | ficha `tipo_vivienda` |
+| `condicion_ocupacion`, `condicion_ocupacion_comp` | viviendas | ficha `condicion_ocupacion` |
+| `n_hogares`, `n_hogares_comp` | viviendas | hogares de la vivienda, sin el hogar 0 (ficha `n_hogares`) |
+| `n_personas` | viviendas, hogares | personas de la vivienda o del hogar (ficha `n_personas`) |
 | `sexo` | personas | ficha `sexo` |
 | `edad` | personas | edad original, sin tope (ficha `edad`) |
 | `edad_85` | personas | edad con tope común de 85 años (ficha `edad_85`) |
-| `parentesco`, `parentesco_det` | personas | ficha `parentesco` |
-
-**Códigos general y detallado.** La columna con el nombre de la variable trae el código general,
-comparable entre todos los censos. `<variable>_det` trae el detallado; cuando un censo no distingue
-el detalle, repite el código general (un código de un dígito en `_det` significa «sin más detalle»).
+| `parentesco`, `parentesco_comp` | personas | ficha `parentesco` |
+| `estado_civil`, `estado_civil_comp` | personas | ficha `estado_civil` (comparable: 15 años o más) |
+| `alfabetismo` | personas | ficha `alfabetismo` |
+| `asistencia_escolar`, `asistencia_escolar_comp` | personas | ficha `asistencia_escolar` (2017, 2024) |
+| `hijos_nacidos_vivos`, `hijos_nacidos_vivos_comp` | personas | ficha `hijos_nacidos_vivos` (comparable: mujeres de 15 años o más) |
+| `hijos_sobrevivientes`, `hijos_sobrevivientes_comp` | personas | ficha `hijos_sobrevivientes` (comparable: mujeres de 15 años o más con hijos) |
 
 **Faltantes comunes** en todas las variables armonizadas:
 
@@ -157,9 +179,25 @@ el detalle, repite el código general (un código de un dígito en `_det` signif
 | `-3` | Suprimido por anonimización (2024) |
 | `NULL` | El censo no hizo la pregunta |
 
-Cada ficha declara, por censo, su `recodificacion` (código original → armonizado), los `faltantes`
-(código original → -1, -2 o -3) o, para variables numéricas, el `rango` válido. Un código no previsto
-detiene el pipeline.
+**Fichas** (`metadatos/variables/<variable>.yaml`, ver `_plantilla.yaml`). Declaran el catálogo
+común (`categorias`, con `detallado`), el `universo_comparable` y, por censo:
+- `recodificacion` (código original → código común) o, para variables numéricas, `rango` (y
+  `fuera_de_rango`, el código para los demás valores);
+- `faltantes` (código original → -1, -2 o -3; `null` es el valor vacío);
+- `universo` del censo: fuera de él la versión común es -1, cualquiera sea el código (en 2002 el 0
+  de hijos nacidos vivos es a la vez "no aplica" y "ningún hijo");
+- `clase`: `comparable` (por omisión), `con_reservas` (la reserva va en `comparabilidad`) o
+  `solo_comun`.
+
+Los universos se escriben como condiciones sobre variables armonizadas (`edad: {min: 15}`,
+`sexo: {en: [2]}`, `tipo_vivienda_comp: {min: 1, max: 6}`). Un registro está fuera si alguna
+condición no se cumple o su variable no aplica (-1); si la variable es ignorada o suprimida (-2,
+-3), el registro conserva su valor. Un código original no previsto detiene el pipeline. Las
+variables contadas (`derivada: conteo`) se calculan desde otra tabla de la capa 1 y se contrastan
+con la variable original equivalente (`control`).
+
+La matriz variable × censo (variables originales, clase y estado de la ficha) se genera en
+`metadatos/concordancia/variables_armonizadas.csv`.
 
 **Territorio.** `metadatos/territorio/comunas.csv` (`herramientas/correspondencia_comunas.py`)
 tiene una fila por comuna de la DPA2018 con su código en cada entrega. 2002, 2017 y 2024 vienen en
@@ -173,8 +211,19 @@ Coihaique, Aisen, Cabo de Horno).
 **Controles** (en el mismo pipeline → `validacion/controles_armonizado.csv`): mismas filas que la
 capa 1; territorio y área sin nulos; región y provincia derivadas iguales a las de la entrega (2017,
 2024); hogar 0 = vivienda no particular (1992, 2024); edad suprimida solo en las comunas bajo umbral
-(2024). Las frecuencias de cada variable armonizada por censo quedan en
+(2024); ningún "no aplica" dentro del universo de cada censo; y los conteos (hogares y personas)
+iguales a las variables originales equivalentes. Las frecuencias de cada variable armonizada por censo quedan en
 `validacion/frecuencias_armonizado.csv` para revisión.
+
+## Etapas de la armonización
+
+| Etapa | Variables | Estado |
+|---|---|---|
+| 0. Núcleo | territorio, área, sexo, edad, `edad_85`, parentesco, tipo de vivienda | fichas en borrador |
+| 1. Directas | condición de ocupación, número de hogares y de personas, estado civil, alfabetismo, asistencia escolar, hijos nacidos vivos y sobrevivientes | fichas en borrador |
+| 2. Categorías gruesas comunes | materiales de la vivienda, agua, servicio higiénico, alumbrado, tenencia, religión, condición de actividad, categoría ocupacional, pueblo originario, migración (comunas en DPA2018, país, período de llegada) | pendiente |
+| 3. Construidas | nivel educacional (CINE 2011), años de estudio, ocupación y rama agregadas, tipo de hogar, jefatura, hacinamiento, allegamiento, índices de vivienda | pendiente |
+| 4. Solo nivel común | variables de un solo censo o no comparables (afrodescendencia, lengua indígena, nacionalidad, TIC, vehículos, discapacidad…) | pendiente |
 
 ## Orden de ejecución
 
@@ -188,6 +237,6 @@ python pipelines/poblacion_nucleo.py               # tabulado de población desd
 
 ## Pendiente
 
-- Llevar el resto de las variables a la capa 2 módulo a módulo (fase 3), con el mismo flujo de fichas.
+- Etapas 2 a 4 de la armonización, con el mismo flujo de fichas.
 - Integrar `variables_estandarizadas.csv` al diccionario consolidado (nombre estandarizado de cada variable).
 - Decidir si las capas 1 y 2 se publican (depende de las condiciones de entrega de 1992 y 2002).

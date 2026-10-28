@@ -1,25 +1,38 @@
 censo,tabla,control,resultado,detalle
 1992,viviendas,filas = capa 1,ok,3369928 / 3369928
 1992,viviendas,territorio y área sin nulos,ok,0 nulos
+1992,viviendas,n_hogares = hogares de la entrega,ok,0 distintos de 3101356
 1992,hogares,filas = capa 1,ok,3303894 / 3303894
 1992,hogares,territorio y área sin nulos,ok,0 nulos
 1992,hogares,hogar_particular sin nulos,ok,0 nulos
 1992,hogares,hogar 0 = vivienda no particular,ok,0 distintos
+1992,hogares,n_personas = tp de la entrega,ok,0 distintos de 3303894
 1992,personas,filas = capa 1,ok,13348401 / 13348401
 1992,personas,territorio y área sin nulos,ok,0 nulos
 1992,personas,hogar_particular sin nulos,ok,0 nulos
 1992,personas,hogar 0 = vivienda no particular,ok,0 distintos
+1992,personas,estado_civil: sin no aplica dentro del universo,ok,0 registros
+1992,personas,alfabetismo: sin no aplica dentro del universo,ok,0 registros
+1992,personas,hijos_nacidos_vivos: sin no aplica dentro del universo,ok,0 registros
+1992,personas,hijos_sobrevivientes: sin no aplica dentro del universo,ok,0 registros
 2002,viviendas,filas = capa 1,ok,4400247 / 4400247
 2002,viviendas,territorio y área sin nulos,ok,0 nulos
+2002,viviendas,n_hogares = v11 de la entrega,ok,0 distintos de 3899448
 2002,hogares,filas = capa 1,ok,4158237 / 4158237
 2002,hogares,territorio y área sin nulos,ok,0 nulos
 2002,hogares,hogar_particular sin nulos,ok,0 nulos
 2002,personas,filas = capa 1,ok,15116435 / 15116435
 2002,personas,territorio y área sin nulos,ok,0 nulos
 2002,personas,hogar_particular sin nulos,ok,0 nulos
+2002,personas,estado_civil: sin no aplica dentro del universo,ok,0 registros
+2002,personas,alfabetismo: sin no aplica dentro del universo,ok,0 registros
+2002,personas,hijos_nacidos_vivos: sin no aplica dentro del universo,ok,0 registros
+2002,personas,hijos_sobrevivientes: sin no aplica dentro del universo,ok,0 registros
 2017,viviendas,filas = capa 1,ok,6499574 / 6499574
 2017,viviendas,territorio y área sin nulos,ok,0 nulos
 2017,viviendas,región y provincia = entrega,ok,0 distintas
+2017,viviendas,n_hogares = cant_hog de la entrega,ok,0 distintos de 5508441
+2017,viviendas,n_personas = cant_per de la entrega,ok,0 distintos de 6499574
 2017,hogares,filas = capa 1,ok,5664678 / 5664678
 2017,hogares,territorio y área sin nulos,ok,0 nulos
 2017,hogares,región y provincia = entrega,ok,0 distintas
@@ -28,9 +41,13 @@ censo,tabla,control,resultado,detalle
 2017,personas,territorio y área sin nulos,ok,0 nulos
 2017,personas,región y provincia = entrega,ok,0 distintas
 2017,personas,hogar_particular sin nulos,ok,0 nulos
+2017,personas,hijos_nacidos_vivos: sin no aplica dentro del universo,ok,0 registros
+2017,personas,hijos_sobrevivientes: sin no aplica dentro del universo,ok,0 registros
 2024,viviendas,filas = capa 1,ok,7664466 / 7664466
 2024,viviendas,territorio y área sin nulos,ok,0 nulos
 2024,viviendas,región y provincia = entrega,ok,0 distintas
+2024,viviendas,n_hogares = cant_hog de la entrega,ok,0 distintos de 6408172
+2024,viviendas,n_personas = cant_per de la entrega,ok,0 distintos de 7664466
 2024,hogares,filas = capa 1,ok,6622597 / 6622597
 2024,hogares,territorio y área sin nulos,ok,0 nulos
 2024,hogares,región y provincia = entrega,ok,0 distintas
@@ -41,4 +58,8 @@ censo,tabla,control,resultado,detalle
 2024,personas,región y provincia = entrega,ok,0 distintas
 2024,personas,hogar_particular sin nulos,ok,0 nulos
 2024,personas,hogar 0 = vivienda no particular,ok,0 distintos
+2024,personas,estado_civil: sin no aplica dentro del universo,ok,0 registros
+2024,personas,alfabetismo: sin no aplica dentro del universo,ok,0 registros
+2024,personas,hijos_nacidos_vivos: sin no aplica dentro del universo,ok,0 registros
+2024,personas,hijos_sobrevivientes: sin no aplica dentro del universo,ok,0 registros
 2024,personas,edad suprimida solo en comunas bajo umbral,ok,0 de 151199 fuera

@@ -20,6 +20,8 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 | Estructura de microdatos | Tres capas: originales; capa 1 `estandarizado` (mismo contenido, forma común: Parquet, tablas viviendas/hogares/personas, identificadores y geografía comunes, nombres en minúsculas); capa 2 `armonizado` (variables de las fichas, mismo esquema en todos los censos). Ver [estructura_microdatos.md](estructura_microdatos.md). |
 | Enlace con los originales | En la capa 1, lo que vincula cada fila con su archivo original (`fila_origen` y la clave original: portafolio y vivienda, `id_zona_loc` y `nviv`, `id_vivienda` de 2024, más hogar, persona o pieza) va solo en un archivo aparte, `<censo>/enlaces/<tabla>.parquet`, unido por el identificador de la tabla. `n_hogar`, `n_persona` y `n_pieza` siguen en las tablas porque tienen significado propio. Piezas (1992) y portafolios (1992, 2002) tienen identificador propio (`id_pieza`, `id_portafolio`). |
 | Hogar 0 | El hogar 0 de 1992 y 2024 (personas fuera de hogares particulares) se mantiene como hogar propio, marcado con `hogar_ficticio`; la capa 2 agrega `hogar_particular` para todos los censos. |
+| Versiones armonizadas | Cada variable en dos versiones: `<variable>` común (mismo código y etiqueta en todos los censos, con el detalle y el universo propio de cada censo) y `<variable>_comp` comparable (categorías generales y universo común, el más restrictivo; fuera de él, -1). `_comp` solo existe si difiere de la común; la edad comparable conserva el nombre `edad_85`. |
+| Etapas de armonización | 0 núcleo; 1 variables directas; 2 categorías gruesas comunes; 3 variables construidas; 4 solo nivel común. Ver [estructura_microdatos.md](estructura_microdatos.md#etapas-de-la-armonizacion). |
 | Faltantes armonizados | -1 no aplica, -2 ignorado, -3 suprimido; NULL = el censo no hizo la pregunta. |
 | Procesamiento | Scripts en Python con DuckDB (se probó R y se descartó en favor de Python). |
 | Región | Dos versiones exactas: DPA1974 (13 regiones) y DPA2018 (16). |
@@ -80,10 +82,12 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 
 1. Revisión del diccionario consolidado por el autor; completar los códigos sin etiqueta de
    1992 y 2002 (99/9 probablemente "ignorado"; ocupación y rama 2002; uso de piezas 2002).
-2. Revisión de las fichas de parentesco y tipo de vivienda por el autor (operativos especiales de
-   1992 y 2002; efecto del censo de derecho de 2024 en viviendas colectivas).
-3. Serie de población por comuna (la correspondencia y la capa 2 ya están). Llevar el resto de las
-   variables a la capa 2 módulo a módulo.
+2. Revisión de las fichas por el autor: núcleo (parentesco y tipo de vivienda: operativos especiales
+   de 1992 y 2002; efecto del censo de derecho de 2024 en viviendas colectivas) y etapa 1
+   (condición de ocupación, número de hogares y personas, estado civil, alfabetismo, asistencia
+   escolar, hijos nacidos vivos y sobrevivientes).
+3. Etapa 2 de la armonización (categorías gruesas comunes) y serie de población por comuna (la
+   correspondencia y la capa 2 ya están).
 4. Cifras publicadas de referencia para 2002, 2017 y 2024, y regionales.
 5. Esqueleto de las librerías (`tabulado()`, `diccionario()`). Los microdatos de 2017 vienen en
    `.rar`: en R usar el paquete `archive`; en Python requiere una dependencia adicional.

@@ -1,0 +1,56 @@
+nombre: hijos_nacidos_vivos
+etiqueta: Hijas e hijos nacidos vivos
+unidad: persona
+tema: fecundidad
+nivel: ampliado
+definicion: Número total de hijas e hijos nacidos vivos que ha tenido la mujer.
+universo: Mujeres de 14 años o más (1992) o de 15 años o más (2002, 2017, 2024).
+categorias:
+  - {codigo: "0-30", etiqueta: Número de hijas e hijos nacidos vivos}
+universo_comparable:
+  sexo: {en: [2]}
+  edad: {min: 15}
+
+# rango: valores que pasan tal cual; fuera_de_rango: código para los demás valores no nulos.
+nota_armonizacion: >
+  Variable numérica: la versión común es el número declarado; la comparable aplica el universo
+  común (mujeres de 15 años o más), así que en 1992 las mujeres de 14 años quedan como no aplica.
+
+censos:
+  1992:
+    tabla: personas
+    variables_originales: [Hijos_nacidos_vivos]
+    pregunta: "17. ¿Cuántos hijos nacidos vivos ha tenido?"
+    universo: {sexo: {en: [2]}, edad: {min: 14}}
+    rango: [0, 18]
+    faltantes: {99: -2}
+    estado: borrador
+  2002:
+    tabla: personas
+    variables_originales: [P34]
+    pregunta: "34. ¿Cuántas hijas e hijos nacidos vivos ha tenido en total?"
+    universo: {sexo: {en: [2]}, edad: {min: 15}}
+    rango: [0, 30]
+    faltantes: {null: -2}
+    fuera_de_rango: -2
+    comparabilidad: >
+      El 0 de la base es a la vez "no aplica" (hombres y menores de 15) y "ningún hijo": se
+      distinguen por el universo. Sin código de ignorado: el vacío (345.063 mujeres) se toma como
+      ignorado. 150 mujeres declaran entre 31 y 99 hijos (probables errores de digitación): ignorado.
+    estado: borrador
+  2017:
+    tabla: personas
+    variables_originales: [P19]
+    pregunta: "19. ¿Cuántas hijas e hijos nacidos vivos ha tenido en total?"
+    universo: {sexo: {en: [2]}, edad: {min: 15}}
+    rango: [0, 23]
+    faltantes: {98: -1, 99: -2}
+    estado: borrador
+  2024:
+    tabla: personas
+    variables_originales: [p46a_tot_hijs_nac]
+    pregunta: "46. ¿Cuántas hijas e hijos nacidos vivos ha tenido en total?"
+    universo: {sexo: {en: [2]}, edad: {min: 15}}
+    rango: [0, 23]
+    faltantes: {-99: -2, null: -1}
+    estado: borrador
