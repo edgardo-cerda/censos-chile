@@ -1,0 +1,40 @@
+# Estructura de los microdatos del censo de 1992 (ver docs/estructura_microdatos.md).
+# Las tablas de origen se nombran con las claves de `microdatos` en config.yaml.
+
+censo: 1992
+formato: CSV exportado desde R (latin-1 en el encabezado, primera columna sin nombre con el número de fila).
+valores_nulos: ["", "NA"]   # además del vacío del CSV
+notacion_cientifica: true   # R escribe algunos enteros como 1e+05, 2e+05…
+excluir: [_fila]             # columna sin nombre de R con el número de fila: se reemplaza por fila_origen (se verifica que coincida)
+dpa_entrega: >
+  Comunas en la codificación "Origen 3" (ver Entrega_censo1992.xls): DPA de 15 regiones de 2007,
+  anterior a la provincia de Marga Marga (2010) y a la región de Ñuble (2018).
+
+geografia:
+  origen: portafolios
+  clave: Portafolios        # columna de la tabla geográfica
+  enlace: Portafolio        # columna que la referencia en viviendas, hogares y personas
+  comunes: {comuna: Comuna, area: Area, distrito: Distrito}
+
+tablas:
+  viviendas:
+    origen: viviendas
+    vivienda: [Portafolio, Vivienda]
+  hogares:
+    origen: hogares
+    vivienda: [Portafolio, Vivienda]
+    hogar: Hogar
+  personas:
+    origen: personas
+    vivienda: [Portafolio, Vivienda]
+    hogar: Hogar
+    persona: Persona
+  piezas:
+    origen: uso_piezas
+    vivienda: [Portafolio, Vivienda]
+    pieza: Pieza
+    huerfanas: 112   # piezas cuya vivienda (Portafolio + Vivienda) no está en VIVIENDAS_1992: quedan con id_vivienda nulo
+
+notas:
+  - Hogar 0 agrupa a las personas que no pertenecen a un hogar particular (viviendas colectivas,
+    parentesco 12, y operativos especiales, parentesco 99).

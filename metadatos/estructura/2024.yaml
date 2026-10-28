@@ -1,0 +1,28 @@
+# Estructura de los microdatos del censo de 2024 (ver docs/estructura_microdatos.md).
+
+censo: 2024
+formato: Parquet con nombres descriptivos (diccionario_variables_censo2024.xlsx).
+valores_nulos: []           # los nulos vienen como NULL del Parquet
+excluir: []
+dpa_entrega: DPA de 16 regiones (2018).
+
+comunes: {region: region, provincia: provincia, comuna: comuna, area: area}
+
+tablas:
+  viviendas:
+    origen: viviendas
+    vivienda: [id_vivienda]   # se conserva como id_vivienda_orig
+  hogares:
+    origen: hogares
+    vivienda: [id_vivienda]
+    hogar: id_hogar           # número de hogar dentro de la vivienda (0-26), no un identificador único
+  personas:
+    origen: personas
+    vivienda: [id_vivienda]
+    hogar: id_hogar
+    persona: id_persona       # número de persona dentro del hogar, no un identificador único
+
+notas:
+  - Hogar 0 agrupa a las personas de viviendas colectivas (tipo_operativo 3) y en situación de
+    calle (tipo_operativo 1).
+  - Anonimización - edad -66 = suprimida; comuna_bajo_umbral = 1 marca 51 comunas pequeñas.

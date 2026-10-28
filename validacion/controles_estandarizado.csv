@@ -1,0 +1,105 @@
+censo,tabla,control,resultado,detalle
+1992,viviendas,archivo y md5,ok,1992/viviendas.parquet
+1992,hogares,archivo y md5,ok,1992/hogares.parquet
+1992,personas,archivo y md5,ok,1992/personas.parquet
+1992,piezas,archivo y md5,ok,1992/piezas.parquet
+1992,portafolios,archivo y md5,ok,1992/portafolios.parquet
+1992,viviendas,filas = original,ok,3369928 / 3369928
+1992,viviendas,id_vivienda único y sin nulos (salvo huérfanas declaradas),ok,"3369928 distintos, 0 nulos"
+1992,viviendas,fila_origen de 1 a n,ok,"3369928 distintos, 1 a 3369928"
+1992,viviendas,comuna y área sin nulos,ok,0 nulos
+1992,viviendas,15 variables reproducen el inventario,ok,
+1992,hogares,filas = original,ok,3303894 / 3303894
+1992,hogares,id_hogar único y sin nulos (salvo huérfanas declaradas),ok,"3303894 distintos, 0 nulos"
+1992,hogares,fila_origen de 1 a n,ok,"3303894 distintos, 1 a 3303894"
+1992,hogares,id_vivienda existe en viviendas,ok,0 huérfanas (declaradas: 0)
+1992,hogares,id_hogar = id_vivienda * 100 + n_hogar,ok,0 incoherentes
+1992,hogares,comuna y área sin nulos,ok,0 nulos
+1992,hogares,34 variables reproducen el inventario,ok,
+1992,personas,filas = original,ok,13348401 / 13348401
+1992,personas,id_persona único y sin nulos (salvo huérfanas declaradas),ok,"13348401 distintos, 0 nulos"
+1992,personas,fila_origen de 1 a n,ok,"13348401 distintos, 1 a 13348401"
+1992,personas,id_hogar existe en hogares,ok,0 huérfanas (declaradas: 0)
+1992,personas,id_hogar = id_vivienda * 100 + n_hogar,ok,0 incoherentes
+1992,personas,id_persona = id_hogar * 10000 + n_persona,ok,0 incoherentes
+1992,personas,comuna y área sin nulos,ok,0 nulos
+1992,personas,32 variables reproducen el inventario,ok,
+1992,piezas,filas = original,ok,13772956 / 13772956
+1992,piezas,"id_vivienda, n_pieza único y sin nulos (salvo huérfanas declaradas)",ok,"13772844 distintos, 112 nulos"
+1992,piezas,fila_origen de 1 a n,ok,"13772956 distintos, 1 a 13772956"
+1992,piezas,id_vivienda existe en viviendas,ok,112 huérfanas (declaradas: 112)
+1992,piezas,10 variables reproducen el inventario,ok,
+1992,portafolios,filas = original,ok,259016 / 259016
+1992,portafolios,fila_origen de 1 a n,ok,"259016 distintos, 1 a 259016"
+1992,portafolios,16 variables reproducen el inventario,ok,
+2002,viviendas,archivo y md5,ok,2002/viviendas.parquet
+2002,hogares,archivo y md5,ok,2002/hogares.parquet
+2002,personas,archivo y md5,ok,2002/personas.parquet
+2002,portafolios,archivo y md5,ok,2002/portafolios.parquet
+2002,viviendas,filas = original,ok,4400247 / 4400247
+2002,viviendas,id_vivienda único y sin nulos (salvo huérfanas declaradas),ok,"4400247 distintos, 0 nulos"
+2002,viviendas,fila_origen de 1 a n,ok,"4400247 distintos, 1 a 4400247"
+2002,viviendas,comuna y área sin nulos,ok,0 nulos
+2002,viviendas,24 variables reproducen el inventario,ok,
+2002,hogares,suma de n_personas = personas,ok,15116435 / 15116435
+2002,hogares,id_hogar único y sin nulos (salvo huérfanas declaradas),ok,"4158237 distintos, 0 nulos"
+2002,hogares,id_vivienda existe en viviendas,ok,0 huérfanas (declaradas: 0)
+2002,hogares,id_hogar = id_vivienda * 100 + n_hogar,ok,0 incoherentes
+2002,hogares,comuna y área sin nulos,ok,0 nulos
+2002,personas,filas = original,ok,15116435 / 15116435
+2002,personas,id_persona único y sin nulos (salvo huérfanas declaradas),ok,"15116435 distintos, 0 nulos"
+2002,personas,fila_origen de 1 a n,ok,"15116435 distintos, 1 a 15116435"
+2002,personas,id_hogar existe en hogares,ok,0 huérfanas (declaradas: 0)
+2002,personas,id_hogar = id_vivienda * 100 + n_hogar,ok,0 incoherentes
+2002,personas,id_persona = id_hogar * 10000 + n_persona,ok,0 incoherentes
+2002,personas,comuna y área sin nulos,ok,0 nulos
+2002,personas,36 variables reproducen el inventario,ok,
+2002,portafolios,filas = original,ok,401170 / 401170
+2002,portafolios,fila_origen de 1 a n,ok,"401170 distintos, 1 a 401170"
+2002,portafolios,8 variables reproducen el inventario,ok,
+2017,viviendas,archivo y md5,ok,2017/viviendas.parquet
+2017,hogares,archivo y md5,ok,2017/hogares.parquet
+2017,personas,archivo y md5,ok,2017/personas.parquet
+2017,viviendas,filas = original,ok,6499574 / 6499574
+2017,viviendas,id_vivienda único y sin nulos (salvo huérfanas declaradas),ok,"6499574 distintos, 0 nulos"
+2017,viviendas,fila_origen de 1 a n,ok,"6499574 distintos, 1 a 6499574"
+2017,viviendas,comuna y área sin nulos,ok,0 nulos
+2017,viviendas,20 variables reproducen el inventario,ok,
+2017,hogares,filas = original,ok,5664678 / 5664678
+2017,hogares,id_hogar único y sin nulos (salvo huérfanas declaradas),ok,"5664678 distintos, 0 nulos"
+2017,hogares,fila_origen de 1 a n,ok,"5664678 distintos, 1 a 5664678"
+2017,hogares,id_vivienda existe en viviendas,ok,0 huérfanas (declaradas: 0)
+2017,hogares,id_hogar = id_vivienda * 100 + n_hogar,ok,0 incoherentes
+2017,hogares,comuna y área sin nulos,ok,0 nulos
+2017,hogares,11 variables reproducen el inventario,ok,
+2017,personas,filas = original,ok,17574003 / 17574003
+2017,personas,id_persona único y sin nulos (salvo huérfanas declaradas),ok,"17574003 distintos, 0 nulos"
+2017,personas,fila_origen de 1 a n,ok,"17574003 distintos, 1 a 17574003"
+2017,personas,id_hogar existe en hogares,ok,0 huérfanas (declaradas: 0)
+2017,personas,id_hogar = id_vivienda * 100 + n_hogar,ok,0 incoherentes
+2017,personas,id_persona = id_hogar * 10000 + n_persona,ok,0 incoherentes
+2017,personas,comuna y área sin nulos,ok,0 nulos
+2017,personas,48 variables reproducen el inventario,ok,
+2024,viviendas,archivo y md5,ok,2024/viviendas.parquet
+2024,hogares,archivo y md5,ok,2024/hogares.parquet
+2024,personas,archivo y md5,ok,2024/personas.parquet
+2024,viviendas,filas = original,ok,7664466 / 7664466
+2024,viviendas,id_vivienda único y sin nulos (salvo huérfanas declaradas),ok,"7664466 distintos, 0 nulos"
+2024,viviendas,fila_origen de 1 a n,ok,"7664466 distintos, 1 a 7664466"
+2024,viviendas,comuna y área sin nulos,ok,0 nulos
+2024,viviendas,26 variables reproducen el inventario,ok,
+2024,hogares,filas = original,ok,6622597 / 6622597
+2024,hogares,id_hogar único y sin nulos (salvo huérfanas declaradas),ok,"6622597 distintos, 0 nulos"
+2024,hogares,fila_origen de 1 a n,ok,"6622597 distintos, 1 a 6622597"
+2024,hogares,id_vivienda existe en viviendas,ok,0 huérfanas (declaradas: 0)
+2024,hogares,id_hogar = id_vivienda * 100 + n_hogar,ok,0 incoherentes
+2024,hogares,comuna y área sin nulos,ok,0 nulos
+2024,hogares,18 variables reproducen el inventario,ok,
+2024,personas,filas = original,ok,18480432 / 18480432
+2024,personas,id_persona único y sin nulos (salvo huérfanas declaradas),ok,"18480432 distintos, 0 nulos"
+2024,personas,fila_origen de 1 a n,ok,"18480432 distintos, 1 a 18480432"
+2024,personas,id_hogar existe en hogares,ok,0 huérfanas (declaradas: 0)
+2024,personas,id_hogar = id_vivienda * 100 + n_hogar,ok,0 incoherentes
+2024,personas,id_persona = id_hogar * 10000 + n_persona,ok,0 incoherentes
+2024,personas,comuna y área sin nulos,ok,0 nulos
+2024,personas,63 variables reproducen el inventario,ok,

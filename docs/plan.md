@@ -88,12 +88,16 @@ Tablas de viviendas, hogares y personas por censo con:
   Versión 0.1 generada (`herramientas/generar_diccionario.py`): 360 variables y 2.476 códigos;
   2017 y 2024 completos con etiquetas oficiales; quedan sin etiqueta 60 códigos de 1992 y 198 de
   2002 (sobre todo ocupación y rama a 2 dígitos y uso de piezas).
-- [ ] Variables núcleo armonizadas: fichas en borrador de región, área, sexo, edad, parentesco y
-      tipo de vivienda. `validacion/revisar_fichas.py` comprueba que la recodificación cubra todos
-      los códigos observados. Falta revisión del autor y aplicarlas en los pipelines.
+- [x] Estructura común de los microdatos en tres capas (originales, estandarizado, armonizado):
+      [estructura_microdatos.md](estructura_microdatos.md). Capa 1 con `pipelines/estandarizar_microdatos.py`
+      y `validacion/validar_estandarizado.py`; capa 2 con `pipelines/armonizar_microdatos.py`.
+- [ ] Variables núcleo armonizadas: fichas en borrador de región, área, sexo, edad, edad_85,
+      parentesco y tipo de vivienda, ya aplicadas en la capa 2. `validacion/revisar_fichas.py`
+      comprueba que la recodificación cubra todos los códigos observados. Falta revisión del autor.
 - [x] Serie de población por región (DPA1974 y DPA2018) × área × sexo × edad quinquenal,
-      1992–2024, desde microdatos (`pipelines/poblacion_nucleo.py`).
-- [ ] Serie por comuna (requiere correspondencia de comunas 1992 -> DPA2018).
+      1992–2024, desde la capa 2 (`pipelines/poblacion_nucleo.py`).
+- [ ] Serie por comuna. Correspondencia lista: `metadatos/territorio/comunas.csv`
+      (`herramientas/correspondencia_comunas.py`).
 - [ ] Validación de microdatos contra los libros publicados (`validacion/`): 1992 coincide;
       faltan cifras publicadas regionales y de 2002, 2017 y 2024.
 - [ ] Librerías Python y R v0.1: `tabulado()`, `microdatos()`, `diccionario()`, `territorio()`.

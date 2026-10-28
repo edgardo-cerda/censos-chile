@@ -1,0 +1,36 @@
+# Estructura de los microdatos del censo de 2002 (ver docs/estructura_microdatos.md).
+
+censo: 2002
+formato: CSV exportado desde R (primera columna sin nombre con el número de fila).
+valores_nulos: ["", "NA"]
+notacion_cientifica: true   # R escribe algunos enteros como 1e+05, 2e+05…
+excluir: [_fila]
+dpa_entrega: >
+  Geografía ya recodificada en la entrega a la DPA de 16 regiones (2018): comunas hasta 16305 y
+  columnas *_HOMOLOGADA_R16.
+
+geografia:
+  origen: portafolios
+  clave: Portafolio
+  enlace: Portafolio
+  comunes: {comuna: Comuna, area: Area, distrito: Distrito}
+
+tablas:
+  viviendas:
+    origen: viviendas
+    vivienda: [Portafolio, VN]
+  hogares:
+    # La entrega no trae tabla de hogares: se reconstruye desde personas, solo con las claves y
+    # el número de personas (las preguntas 12 a 16 del cuestionario no vienen en la entrega).
+    derivada_de: personas
+    vivienda: [Portafolio, VN]
+    hogar: HN
+  personas:
+    origen: personas
+    vivienda: [Portafolio, VN]
+    hogar: HN
+    persona: PN
+
+notas:
+  - No existe hogar 0; las personas de viviendas colectivas y operativos especiales tienen HN >= 1.
+  - VN_Renumerado se conserva como variable original; el enlace entre viviendas y personas es VN.

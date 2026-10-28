@@ -12,6 +12,11 @@ cache: "C:/ruta/a/censos-chile-datos/cache"
 
 memoria_duckdb: "4GB"
 
+# Microdatos en formato común (ver docs/estructura_microdatos.md).
+estandarizado: "C:/ruta/a/censos-chile-datos/estandarizado"   # capa 1: mismo contenido, forma común
+armonizado: "C:/ruta/a/censos-chile-datos/armonizado"         # capa 2: variables comparables entre censos
+temporal: "C:/ruta/a/censos-chile-datos/tmp"                  # base DuckDB de trabajo y desbordes de memoria
+
 # Tablas de microdatos, rutas relativas a datos_originales.
 microdatos:
   1992:

@@ -30,6 +30,8 @@ metadatos/
   catalogo_cuadros.csv      cuadros de las publicaciones (título, páginas, estado de digitalización)
   paginacion.csv            desfase entre página impresa y página del PDF de cada publicación
   variables/                fichas de variables armonizadas (una por variable)
+  estructura/               estructura de los microdatos de cada censo (tablas, claves, geografía)
+  territorio/               correspondencias territoriales (comunas de cada entrega → DPA2018)
   concordancia/             matriz concepto × censo
   diccionario/              etiquetas de variables y categorías por censo (oficiales o transcritas)
   inventario/               perfil automático de cada tabla de microdatos
@@ -50,13 +52,18 @@ Los microdatos no se versionan en este repositorio. Para correr las herramientas
 
 1. Copiar `config.ejemplo.yaml` como `config.yaml` y ajustar las rutas.
 2. `pip install -r herramientas/requirements.txt`
-3. `python herramientas/inventario_microdatos.py` (convierte y perfila los microdatos)
+3. `python herramientas/inventario_microdatos.py` (perfila los microdatos originales)
 4. `python herramientas/importar_etiquetas_oficiales.py` (etiquetas oficiales de 2017 y 2024)
 5. `python herramientas/generar_diccionario.py` (genera `productos/diccionario/diccionario_censos.xlsx`)
-6. `python pipelines/poblacion_nucleo.py` (genera el tabulado de población)
-7. `python validacion/validar_poblacion.py` (contrasta con cifras publicadas)
-8. `python validacion/revisar_fichas.py` (aplica las fichas de variables al inventario)
-9. `python pipelines/tabulados_publicaciones.py` (cuadros digitalizados de las publicaciones → tabulado y controles; ver [docs/digitalizacion.md](docs/digitalizacion.md))
+6. Microdatos en formato común ([docs/estructura_microdatos.md](docs/estructura_microdatos.md)):
+   - `python pipelines/estandarizar_microdatos.py` (capa 1: mismo contenido, forma común)
+   - `python validacion/validar_estandarizado.py` (contrasta la capa 1 con el inventario)
+   - `python herramientas/correspondencia_comunas.py` (comunas de cada entrega → DPA2018)
+   - `python pipelines/armonizar_microdatos.py` (capa 2: variables armonizadas y sus controles)
+7. `python pipelines/poblacion_nucleo.py` (genera el tabulado de población desde la capa 2)
+8. `python validacion/validar_poblacion.py` (contrasta con cifras publicadas)
+9. `python validacion/revisar_fichas.py` (aplica las fichas de variables al inventario)
+10. `python pipelines/tabulados_publicaciones.py` (cuadros digitalizados de las publicaciones → tabulado y controles; ver [docs/digitalizacion.md](docs/digitalizacion.md))
 
 ## Licencias
 

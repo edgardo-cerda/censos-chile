@@ -1,0 +1,30 @@
+# Estructura de los microdatos del censo de 2017 (ver docs/estructura_microdatos.md).
+
+censo: 2017
+formato: CSV separado por punto y coma, UTF-8 (extraído de los .rar públicos).
+valores_nulos: [""]
+excluir: []
+dpa_entrega: >
+  DPA de 16 regiones (2018). Las columnas *_15R traen la DPA de 15 regiones (2010), que sirve de
+  puente para los códigos de 1992.
+
+# Sin tabla geográfica: la geografía viene repetida en cada tabla.
+comunes: {region: REGION, provincia: PROVINCIA, comuna: COMUNA, area: AREA, distrito: DC}
+
+tablas:
+  viviendas:
+    origen: viviendas
+    vivienda: [ID_ZONA_LOC, NVIV]
+  hogares:
+    origen: hogares
+    vivienda: [ID_ZONA_LOC, NVIV]
+    hogar: NHOGAR
+  personas:
+    origen: personas
+    vivienda: [ID_ZONA_LOC, NVIV]
+    hogar: NHOGAR
+    persona: PERSONAN
+
+notas:
+  - No existe hogar 0; las personas de viviendas colectivas y operativos tienen NHOGAR 1 y
+    TIPO_HOGAR 98.

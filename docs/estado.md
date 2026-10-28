@@ -4,7 +4,7 @@ Punto de retorno para retomar el trabajo. El plan completo y su lista de tareas 
 [plan.md](plan.md); este archivo resume dónde quedó cada punto, las decisiones tomadas y lo
 que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 
-**Última actualización:** 2026-10-20 (solo commits locales; nada subido a GitHub todavía).
+**Última actualización:** 2026-10-27 (solo commits locales; nada subido a GitHub todavía).
 
 ## Decisiones tomadas
 
@@ -16,7 +16,11 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 | Librerías | Python y R. |
 | Microdatos 1992–2024 | Los de 1982 se descartaron (comunas con códigos propios sin nombres, sin libro de códigos, área urbana/rural que no reproduce lo publicado). 1982 se trata desde sus volúmenes publicados, como los censos anteriores. |
 | 2012 excluido | Resultados no validados como estadística oficial. |
-| Edad | Tope común de 85 años (2024 trunca en 85); edad suprimida de 2024 se informa como "ignorada". |
+| Edad | En los microdatos armonizados se conserva la edad original (`edad`) y se agrega `edad_85` con tope común de 85 años (2024 trunca en 85); la edad suprimida de 2024 es -3 y en los tabulados se informa como "ignorada". |
+| Estructura de microdatos | Tres capas: originales; capa 1 `estandarizado` (mismo contenido, forma común: Parquet, tablas viviendas/hogares/personas, identificadores y geografía comunes, nombres en minúsculas); capa 2 `armonizado` (variables de las fichas, mismo esquema en todos los censos). Ver [estructura_microdatos.md](estructura_microdatos.md). |
+| Hogar 0 | El hogar 0 de 1992 y 2024 (personas fuera de hogares particulares) se mantiene como hogar propio, marcado con `hogar_ficticio`; la capa 2 agrega `hogar_particular` para todos los censos. |
+| Faltantes armonizados | -1 no aplica, -2 ignorado, -3 suprimido; NULL = el censo no hizo la pregunta. |
+| Procesamiento | Scripts en Python con DuckDB (se probó R y se descartó en favor de Python). |
 | Región | Dos versiones exactas: DPA1974 (13 regiones) y DPA2018 (16). |
 | Diccionario consolidado | Antes de armonizar, consolidar variables y categorías de 1992–2024 en un Excel generado desde CSV versionados. |
 | Publicación | No subir a GitHub hasta que el autor lo indique. |
@@ -51,8 +55,10 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 | Diccionario consolidado (`productos/diccionario/diccionario_censos.xlsx`) | 🟡 v0.1: 360 variables, 2.476 códigos; 2017 y 2024 completos; faltan 60 códigos de 1992 y 198 de 2002 |
 | Fichas región, área, sexo, edad | 🟡 Borrador |
 | Fichas parentesco, tipo de vivienda | 🟡 Borrador; recodificación verificada contra el inventario (`validacion/revisar_fichas.py`) |
-| Serie de población región × área × sexo × edad, 1992–2024 | ✅ `productos/tabulados/poblacion_microdatos.csv` (8.448 filas) |
-| Serie por comuna | ⏳ Falta correspondencia de comunas 1992 → DPA2018 (por nombre, tablas `COMUNAS_1992`/`COMUNAS_2002`) |
+| Estructura común de microdatos, capa 1 (`estandarizado`) | ✅ 1992–2024; controles contra el inventario en `validacion/controles_estandarizado.csv` |
+| Capa 2 (`armonizado`): territorio, área, tipo de vivienda, sexo, edad, edad_85, parentesco | ✅ desde las fichas (en borrador); controles en `validacion/controles_armonizado.csv` |
+| Serie de población región × área × sexo × edad, 1992–2024 | ✅ `productos/tabulados/poblacion_microdatos.csv` (8.448 filas), ahora desde la capa 2 |
+| Serie por comuna | 🟡 Correspondencia de comunas lista (`metadatos/territorio/comunas.csv`: 1992 → DPA2018 vía la DPA de 15 regiones de 2017 y Marga Marga); falta el tabulado |
 | Validación contra publicaciones | 🟡 1992 coincide (total y urbano); faltan cifras regionales y de 2002, 2017, 2024 |
 | Librerías Python y R v0.1 | ⏳ No iniciado |
 | Sitio de documentación | ⏳ No iniciado |
@@ -75,7 +81,8 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
    1992 y 2002 (99/9 probablemente "ignorado"; ocupación y rama 2002; uso de piezas 2002).
 2. Revisión de las fichas de parentesco y tipo de vivienda por el autor (operativos especiales de
    1992 y 2002; efecto del censo de derecho de 2024 en viviendas colectivas).
-3. Correspondencia de comunas 1992 → DPA2018 y serie de población por comuna.
+3. Serie de población por comuna (la correspondencia y la capa 2 ya están). Llevar el resto de las
+   variables a la capa 2 módulo a módulo.
 4. Cifras publicadas de referencia para 2002, 2017 y 2024, y regionales.
 5. Esqueleto de las librerías (`tabulado()`, `diccionario()`). Los microdatos de 2017 vienen en
    `.rar`: en R usar el paquete `archive`; en Python requiere una dependencia adicional.
@@ -125,18 +132,23 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 
 - Repositorio local: `C:\Users\escerdae\proyectos\censos-chile`.
 - Datos originales (no versionados): carpeta `datos_originales` de `config.yaml`.
-- Caché Parquet: `C:/Users/escerdae/proyectos/censos-chile-datos/cache`.
+- Caché Parquet del inventario: `C:/Users/escerdae/proyectos/censos-chile-datos/cache`.
+- Microdatos en formato común: `censos-chile-datos/estandarizado` (capa 1) y `armonizado` (capa 2).
 - Regenerar productos:
   ```
   python herramientas/inventario_microdatos.py   # solo si cambian los microdatos
   python herramientas/importar_etiquetas_oficiales.py
   python herramientas/generar_diccionario.py
+  python pipelines/estandarizar_microdatos.py   # capa 1 (~25 min los cuatro censos)
+  python validacion/validar_estandarizado.py
+  python herramientas/correspondencia_comunas.py
+  python pipelines/armonizar_microdatos.py      # capa 2 y sus controles
   python pipelines/poblacion_nucleo.py
   python validacion/validar_poblacion.py
   python pipelines/tabulados_publicaciones.py   # cuadros digitalizados
   python herramientas/resumen_avance.py        # planilla de avance de los censos históricos
   ```
-- Hallazgos sobre cada base: [notas_microdatos.md](notas_microdatos.md).
+- Hallazgos sobre cada base: [notas_microdatos.md](notas_microdatos.md). Estructura común: [estructura_microdatos.md](estructura_microdatos.md).
 - Procedimiento de digitalización y notas de cada publicación: [digitalizacion.md](digitalizacion.md).
 - PDF de las publicaciones: `<datos_originales>/censos previos`. Ahí quedan también los archivos
   de la extracción previa (`notas_extraccion_censos_previos.txt`, `indices_censos_1930_1992.xlsx`,

@@ -43,7 +43,13 @@ El total de personas (11.329.736) y los totales por sexo sí coinciden con lo pu
   Los conteos coinciden con los publicados (mapuche 928.060; aymara 48.477; rapanui 21.848).
 - Incluye variables derivadas ajenas al cuestionario: `Puntaje`, `CSE_categoria`, `CSE_Decil`, `Quintil_por_puntaje`.
 - El código 0 corresponde a "no aplica" (verificado contra el universo de cada pregunta).
-- Tabla adicional `USO_PIEZAS` (13,8 millones de filas: una por pieza).
+- Tabla adicional `USO_PIEZAS` (13,8 millones de filas: una por pieza). 112 piezas apuntan a
+  viviendas (`Portafolio` + `Vivienda`) que no están en `VIVIENDAS_1992`; en la capa 1 quedan con
+  `id_vivienda` nulo.
+- R escribió algunos enteros en notación científica: los portafolios 100000 y 200000 aparecen como
+  `1e+05` y `2e+05` en todas las tablas. La capa 1 los lee como enteros.
+- Hogar 0 agrupa a las personas que no forman parte de un hogar particular (parentesco 12, viviendas
+  colectivas, y 99, operativos especiales).
 
 ## 2002
 
@@ -59,6 +65,8 @@ El total de personas (11.329.736) y los totales por sexo sí coinciden con lo pu
   opciones y quedan marcadas como `cuestionario_orden` o `inferido` en el diccionario.
 - El código 0 corresponde a "no aplica" (verificado contra el universo de cada pregunta).
 - Sin clasificación documentada para ocupación (`P31`) y rama (`P32`) a 2 dígitos.
+- Como en 1992, R escribió algunos portafolios en notación científica (`1e+05`…).
+- 25.627 portafolios no tienen viviendas; se conservan en la tabla `portafolios` de la capa 1.
 
 ## 2017
 
@@ -68,10 +76,14 @@ El total de personas (11.329.736) y los totales por sexo sí coinciden con lo pu
 - Rama de actividad (`P18`) en letras (secciones CIIU).
 - Las etiquetas oficiales de todas las variables vienen como `etiquetas_*.csv` dentro de los `.rar`
   públicos; códigos 98 = no aplica y 99 = missing.
+- No hay hogar 0: las personas de viviendas colectivas y operativos (parentesco 17 a 19) tienen
+  `NHOGAR` 1 y `TIPO_HOGAR` 98.
 
 ## 2024
 
 - Parquet con nombres descriptivos y diccionario oficial (`diccionario_variables_censo2024.xlsx`).
 - **Anonimización**: edad con tope en 85 y valor `-66` = suprimido; `comuna_bajo_umbral` marca
   comunas pequeñas. Esto limita la comparación de edades altas con censos anteriores.
-- Personas en situación de calle y viviendas colectivas se identifican con `tipo_operativo`.
+- Personas en situación de calle y viviendas colectivas se identifican con `tipo_operativo`; sus
+  personas están en el hogar 0.
+- `id_hogar` e `id_persona` son números dentro de la vivienda y del hogar, no identificadores únicos.

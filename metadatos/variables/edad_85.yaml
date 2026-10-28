@@ -1,0 +1,21 @@
+nombre: edad_85
+etiqueta: Edad en años cumplidos, con tope en 85
+unidad: persona
+tema: demografia
+nivel: nucleo
+definicion: Edad en años cumplidos con un tramo abierto común de 85 años o más.
+universo: Todas las personas censadas.
+derivada_de: edad
+categorias:
+  - {codigo: "0-84", etiqueta: Años cumplidos}
+  - {codigo: 85, etiqueta: 85 años o más}
+  - {codigo: -3, etiqueta: Suprimida por anonimización}
+nota_armonizacion: >
+  Tope común porque los microdatos públicos de 2024 truncan la edad en 85. Es la edad que usan los
+  tabulados (tramos quinquenales 0-4 … 80-84 y 85 o más; la edad suprimida se informa como ignorada).
+regla: edad_85 = mínimo(edad, 85) para edades válidas; los códigos de faltante de edad se conservan.
+censos:
+  1992: {tabla: personas, variables_originales: [Edad], estado: borrador}
+  2002: {tabla: personas, variables_originales: [P19], estado: borrador}
+  2017: {tabla: personas, variables_originales: [P09], estado: borrador}
+  2024: {tabla: personas, variables_originales: [edad], estado: verificado}
