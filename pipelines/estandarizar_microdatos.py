@@ -6,13 +6,17 @@ metadatos/estructura/<censo>.yaml y escribe, en la carpeta `estandarizado`:
   <censo>/viviendas.parquet, hogares.parquet, personas.parquet   (todos los censos)
   <censo>/piezas.parquet                                        (1992)
   <censo>/portafolios.parquet                                   (1992 y 2002: tabla geográfica)
+  <censo>/enlaces/<tabla>.parquet                               (vínculo con el archivo original)
   manifiesto.csv                                                (filas, columnas, md5, origen)
 
 y en el repositorio metadatos/estructura/variables_estandarizadas.csv (cada columna de la capa 1
 con su tabla y variable originales). Reglas en docs/estructura_microdatos.md:
   - columnas comunes al inicio: censo, id_vivienda, id_hogar, id_persona, n_hogar, n_persona,
-    hogar_ficticio, fila_origen y el bloque geográfico region, provincia, comuna, area, distrito;
+    hogar_ficticio y el bloque geográfico region, provincia, comuna, area, distrito;
   - id_hogar = id_vivienda * 100 + n_hogar; id_persona = id_hogar * 10000 + n_persona;
+    id_pieza e id_portafolio, correlativos en el orden de la clave original;
+  - lo que vincula con el original (fila_origen y la clave original) va solo al archivo de
+    enlace de cada tabla, con una fila por fila de la tabla y su mismo identificador;
   - nombres originales en minúsculas ASCII; los códigos se conservan tal cual (solo el vacío
     y el NA de las exportaciones de R pasan a NULL); enteros con el tipo más chico que alcance.
 
@@ -37,8 +41,8 @@ from pipelines.comun import (RAIZ, actualizar_csv, commit_actual, conectar, iden
 CENSOS = ["1992", "2002", "2017", "2024"]
 GEOGRAFIA = {"region": "SMALLINT", "provincia": "SMALLINT", "comuna": "INTEGER",
              "area": "SMALLINT", "distrito": "SMALLINT"}
-RESERVADOS = {"censo", "id_vivienda", "id_hogar", "id_persona", "n_hogar", "n_persona", "n_pieza",
-              "hogar_ficticio", "fila_origen", "n_personas", *GEOGRAFIA}
+RESERVADOS = {"censo", "id_vivienda", "id_hogar", "id_persona", "id_pieza", "id_portafolio", "n_hogar",
+              "n_persona", "n_pieza", "hogar_ficticio", "fila_origen", "n_personas", *GEOGRAFIA}
 MULT_HOGAR = 100        # n_hogar máximo observado: 92 (2002)
 MULT_PERSONA = 10_000   # n_persona máximo observado: 7.473 (2002)
 # Las exportaciones desde R escriben algunos enteros en notación científica (100000 -> "1e+05").
@@ -66,6 +70,17 @@ class Columna:
     rol: str
     tabla_original: str = ""
     variable_original: str = ""
+
+
+def nombre_columna(col: str) -> str:
+    """Nombre estandarizado de una columna original; `_orig` si choca con una columna común."""
+    nombre = nombre_estandar(col)
+    return nombre + "_orig" if nombre in RESERVADOS else nombre
+
+
+def claves_tabla(t: dict) -> list[str]:
+    """Columnas de la clave original de una tabla de la ficha de estructura."""
+    return [*t["vivienda"], *(t[r] for r in ("hogar", "persona", "pieza") if r in t)]
 
 
 # --- Lectura de los CSV originales ----------------------------------------------------------
@@ -208,10 +223,8 @@ class Estandarizador:
         for col in origen.columnas:
             if col in omitir:
                 continue
-            nombre = nombre_estandar(col)
-            if nombre in RESERVADOS:
-                nombre += "_orig"
-            cols.append(Columna(self.valor(alias, origen, col), nombre, origen.tipos[col], rol, origen.nombre, col))
+            cols.append(Columna(self.valor(alias, origen, col), nombre_columna(col), origen.tipos[col], rol,
+                                origen.nombre, col))
         return cols
 
     def bloque_geografico(self, mapa: dict, alias: str, origen: Origen) -> list[Columna]:
@@ -224,6 +237,18 @@ class Estandarizador:
                 cols.append(Columna(f"CAST({self.valor(alias, origen, col)} AS {tipo})", nombre, tipo,
                                     "geografia", origen.nombre, col))
         return cols
+
+    def clave_original(self, t: dict, origen: Origen) -> list[Columna]:
+        """Clave original de cada fila (vivienda y, si corresponde, hogar, persona o pieza): va al enlace."""
+        return [Columna(self.valor("x", origen, k), nombre_columna(k), origen.tipos[k], "enlace", origen.nombre, k)
+                for k in claves_tabla(t)]
+
+    def fila_origen(self, origen: Origen) -> Columna:
+        return Columna(f"x.{origen.fila}", "fila_origen", "BIGINT", "procedencia", origen.nombre, "(número de fila)")
+
+    def id_portafolio(self, alias: str) -> Columna:
+        return Columna(f"{alias}._id_geo", "id_portafolio", "BIGINT", "identificador", self.geo["origen"],
+                       f"{self.geo['clave']} (correlativo)")
 
     def geo_comun(self, origen: Origen) -> list[Columna]:
         if self.geo is None:
@@ -252,7 +277,13 @@ class Estandarizador:
         return f"{tipo} ids_viv i ON {self.condicion_ids(t, origen)}"
 
     def comprobar_enlaces(self, t: dict, origen: Origen) -> None:
-        """Las filas sin vivienda deben ser exactamente las declaradas en la ficha (`huerfanas`)."""
+        """La clave original es única y las filas sin vivienda son exactamente las declaradas en la
+        ficha (`huerfanas`)."""
+        if "derivada_de" not in t:
+            claves = ", ".join(self.valor("x", origen, k) for k in claves_tabla(t))
+            repetidas = uno(self.con, f"SELECT count(*) - count(DISTINCT ({claves})) FROM {origen.tabla} x")
+            if repetidas:
+                sys.exit(f"[{self.censo}] {origen.nombre}: {repetidas} claves originales repetidas.")
         huerfanas = uno(self.con, f"SELECT count(*) FROM {origen.tabla} x ANTI JOIN ids_viv i ON {self.condicion_ids(t, origen)}")
         if huerfanas != t.get("huerfanas", 0):
             sys.exit(f"[{self.censo}] {origen.nombre}: {huerfanas} filas sin vivienda (declaradas: {t.get('huerfanas', 0)}).")
@@ -273,26 +304,34 @@ class Estandarizador:
 
     # --- Escritura ----------------------------------------------------------------------------
 
-    def escribir(self, nombre: str, cols: list[Columna], desde: str, orden: str, archivos: list[str]) -> None:
+    def escribir(self, nombre: str, cols: list[Columna], enlace: list[Columna], desde: str, desde_enlace: str,
+                 orden: str, archivos: list[str]) -> None:
+        """Escribe la tabla y su enlace, ambos ordenados por el identificador de la tabla."""
+        origen = " + ".join(self.config["microdatos"][int(self.censo)][a] for a in archivos if a)
+        self.copiar(nombre, f"{nombre}.parquet", "datos", cols, desde, orden, origen)
+        self.copiar(nombre, f"enlaces/{nombre}.parquet", "enlace", enlace, desde_enlace, orden, origen)
+
+    def copiar(self, tabla: str, archivo: str, contenido: str, cols: list[Columna], desde: str, orden: str,
+               origen: str) -> None:
         variables = [c.variable for c in cols]
         repetidas = {v for v in variables if variables.count(v) > 1}
         if repetidas:
-            sys.exit(f"[{self.censo}] {nombre}: columnas repetidas: {', '.join(sorted(repetidas))}")
-        destino = self.salida / f"{nombre}.parquet"
+            sys.exit(f"[{self.censo}] {archivo}: columnas repetidas: {', '.join(sorted(repetidas))}")
+        destino = self.salida / archivo
         lista = ",\n  ".join(f"{c.expr} AS {ident(c.variable)}" for c in cols)
-        mensaje(f"[{self.censo}] escribiendo {nombre}")
+        mensaje(f"[{self.censo}] escribiendo {archivo}")
         escribir_parquet(self.con, f"SELECT {lista} FROM {desde} ORDER BY {orden}", destino)
         filas = uno(self.con, f"SELECT count(*) FROM read_parquet({ruta_sql(destino)})")
         for orden_col, c in enumerate(cols, start=1):
             d = asdict(c)
             del d["expr"]
-            self.mapa.append({"censo": self.censo, "tabla": nombre, "orden": orden_col, **d})
+            self.mapa.append({"censo": self.censo, "tabla": tabla, "archivo": f"{self.censo}/{archivo}",
+                              "orden": orden_col, **d})
         self.manifiesto.append({
-            "censo": self.censo, "tabla": nombre, "archivo": f"{self.censo}/{nombre}.parquet",
-            "filas": filas, "columnas": len(cols), "md5": md5(destino),
-            "origen": " + ".join(self.config["microdatos"][int(self.censo)][a] for a in archivos if a),
+            "censo": self.censo, "tabla": tabla, "contenido": contenido, "archivo": f"{self.censo}/{archivo}",
+            "filas": filas, "columnas": len(cols), "md5": md5(destino), "origen": origen,
         })
-        mensaje(f"[{self.censo}] {nombre}: {filas:_} filas, {len(cols)} columnas".replace("_", "."))
+        mensaje(f"[{self.censo}] {archivo}: {filas:_} filas, {len(cols)} columnas".replace("_", "."))
 
     # --- Proceso ------------------------------------------------------------------------------
 
@@ -328,40 +367,51 @@ class Estandarizador:
         repetidas = uno(self.con, f"SELECT count(*) - count(DISTINCT ({', '.join(k)})) FROM ids_viv")
         if repetidas:
             sys.exit(f"[{self.censo}] {repetidas} claves de vivienda repetidas.")
-        omitidas_geo = list(est["comunes"].values()) if geo is None else []
+
+        # 3. Identificador de portafolio (1992 y 2002): correlativo en el orden del número de portafolio.
+        if geo:
+            g = self.origenes[geo["origen"]]
+            clave_geo = self.valor("x", g, geo["clave"])
+            if uno(self.con, f"SELECT count(*) - count(DISTINCT {clave_geo}) FROM {g.tabla} x"):
+                sys.exit(f"[{self.censo}] {geo['clave']} repetido en {g.nombre}.")
+            self.con.execute(f"""CREATE TABLE geo AS SELECT row_number() OVER (ORDER BY {clave_geo}) AS _id_geo,
+                                 x.{g.fila} AS _fila_geo, * FROM {g.tabla} x""")
+            g.tabla, g.fila = "geo", "_fila_geo"
+
+        omitidas_geo = list(est["comunes"].values()) if geo is None else [geo["enlace"]]
         censo_col = Columna(f"{self.censo}::SMALLINT", "censo", "SMALLINT", "identificador")
         id_viv = Columna("i._id_viv", "id_vivienda", "BIGINT", "identificador", viv["origen"], " + ".join(viv["vivienda"]))
         archivo_geo = geo["origen"] if geo else ""
 
-        # 3. Viviendas.
+        # 4. Viviendas.
         self.comprobar_enlaces(viv, src_viv)
-        cols = [censo_col, id_viv,
-                Columna(f"x.{src_viv.fila}", "fila_origen", "BIGINT", "procedencia", viv["origen"], "(número de fila)"),
-                *self.geo_comun(src_viv)]
+        cols = [censo_col, id_viv, *([self.id_portafolio("g")] if geo else []), *self.geo_comun(src_viv)]
         if geo:
-            g = self.origenes[geo["origen"]]
             cols += self.originales(g, "g", {*self.excluir, geo["clave"], *geo["comunes"].values()}, rol="geografia")
-        cols += self.originales(src_viv, "x", {*self.excluir, *omitidas_geo})
-        self.escribir("viviendas", cols, f"{src_viv.tabla} x {self.union_ids(viv, src_viv)} {self.union_geo(src_viv)}",
-                      "id_vivienda", [viv["origen"], archivo_geo])
+        cols += self.originales(src_viv, "x", {*self.excluir, *omitidas_geo, *viv["vivienda"]})
+        enlace = [censo_col, id_viv, self.fila_origen(src_viv), *self.clave_original(viv, src_viv)]
+        desde = f"{src_viv.tabla} x {self.union_ids(viv, src_viv)}"
+        self.escribir("viviendas", cols, enlace, f"{desde} {self.union_geo(src_viv)}", desde, "id_vivienda",
+                      [viv["origen"], archivo_geo])
 
-        # 4. Hogares y personas (y piezas en 1992).
+        # 5. Hogares y personas (y piezas en 1992).
         for nombre, t in tablas.items():
             if nombre == "viviendas":
                 continue
             src = self.origenes[t.get("origen") or t["derivada_de"]]
             self.comprobar_enlaces(t, src)
             cols = [censo_col, id_viv]
-            omitir = {*self.excluir, *omitidas_geo}
+            omitir = {*self.excluir, *omitidas_geo, *t["vivienda"]}
             if "hogar" in t:
                 h = self.numero(t, "hogar", src)
-                cols.append(Columna(f"i._id_viv * {MULT_HOGAR} + {h}", "id_hogar", "BIGINT", "identificador",
-                                    src.nombre, f"id_vivienda * {MULT_HOGAR} + {t['hogar']}"))
+                id_tabla = Columna(f"i._id_viv * {MULT_HOGAR} + {h}", "id_hogar", "BIGINT", "identificador",
+                                   src.nombre, f"id_vivienda * {MULT_HOGAR} + {t['hogar']}")
+                cols.append(id_tabla)
                 if "persona" in t:
                     p = self.numero(t, "persona", src)
-                    cols.append(Columna(f"(i._id_viv * {MULT_HOGAR} + {h}) * {MULT_PERSONA} + {p}", "id_persona",
-                                        "BIGINT", "identificador", src.nombre,
-                                        f"id_hogar * {MULT_PERSONA} + {t['persona']}"))
+                    id_tabla = Columna(f"(i._id_viv * {MULT_HOGAR} + {h}) * {MULT_PERSONA} + {p}", "id_persona",
+                                       "BIGINT", "identificador", src.nombre, f"id_hogar * {MULT_PERSONA} + {t['persona']}")
+                    cols.append(id_tabla)
                 cols.append(Columna(f"CAST({h} AS SMALLINT)", "n_hogar", "SMALLINT", "identificador", src.nombre, t["hogar"]))
                 if "persona" in t:
                     cols.append(Columna(f"CAST({p} AS SMALLINT)", "n_persona", "SMALLINT", "identificador",
@@ -369,35 +419,38 @@ class Estandarizador:
                 cols.append(Columna(f"({h} = 0)", "hogar_ficticio", "BOOLEAN", "derivada", src.nombre, f"{t['hogar']} = 0"))
                 omitir |= {t["hogar"], t.get("persona")}
             if "pieza" in t:
-                cols.append(Columna(f"CAST({self.numero(t, 'pieza', src)} AS SMALLINT)", "n_pieza", "SMALLINT",
-                                    "identificador", src.nombre, t["pieza"]))
+                # Las piezas sin vivienda no tienen id_vivienda: su identificador es un correlativo propio.
+                n = self.numero(t, "pieza", src)
+                id_tabla = Columna(f"row_number() OVER (ORDER BY {', '.join([*self.claves(t, src), n])})", "id_pieza",
+                                   "BIGINT", "identificador", src.nombre, " + ".join(claves_tabla(t)))
+                cols += [id_tabla, Columna(f"CAST({n} AS SMALLINT)", "n_pieza", "SMALLINT", "identificador",
+                                           src.nombre, t["pieza"])]
                 omitir.add(t["pieza"])
-            orden = "id_persona" if "persona" in t else "id_hogar" if "hogar" in t else "id_vivienda, n_pieza"
-            desde = f"{src.tabla} x {self.union_ids(t, src)} {self.union_geo(src)}"
+            desde_enlace = f"{src.tabla} x {self.union_ids(t, src)}"
+            desde = f"{desde_enlace} {self.union_geo(src)}"
 
             if "derivada_de" in t:
                 # Tabla reconstruida (hogares de 2002): una fila por hogar distinto, sin variables propias.
-                claves_viv = Origen(src.nombre, src.tabla, t["vivienda"], src.tipos)
-                cols += [Columna("NULL::BIGINT", "fila_origen", "BIGINT", "procedencia"),
-                         *self.geo_comun(src),
-                         *self.originales(claves_viv, "x", set()),
+                fila = Columna("NULL::BIGINT", "fila_origen", "BIGINT", "procedencia")
+                cols += [*self.geo_comun(src),
                          Columna("CAST(count(*) AS SMALLINT)", "n_personas", "SMALLINT", "derivada", src.nombre,
                                  "(personas del hogar)")]
                 desde += " GROUP BY ALL"
+                desde_enlace += " GROUP BY ALL"
             else:
-                cols += [Columna(f"x.{src.fila}", "fila_origen", "BIGINT", "procedencia", src.nombre, "(número de fila)"),
-                         *self.geo_comun(src),
-                         *self.originales(src, "x", omitir)]
-            self.escribir(nombre, cols, desde, orden, [src.nombre, archivo_geo])
+                fila = self.fila_origen(src)
+                cols += [*self.geo_comun(src), *self.originales(src, "x", omitir)]
+            enlace = [censo_col, id_tabla, fila, *self.clave_original(t, src)]
+            self.escribir(nombre, cols, enlace, desde, desde_enlace, id_tabla.variable, [src.nombre, archivo_geo])
 
-        # 5. Tabla geográfica completa (incluye portafolios sin viviendas).
+        # 6. Tabla geográfica completa (incluye portafolios sin viviendas).
         if geo:
-            g = self.origenes[geo["origen"]]
-            cols = [censo_col,
-                    Columna(f"x.{g.fila}", "fila_origen", "BIGINT", "procedencia", g.nombre, "(número de fila)"),
+            cols = [censo_col, self.id_portafolio("x"),
                     *self.bloque_geografico(geo["comunes"], "x", g),
-                    *self.originales(g, "x", {*self.excluir, *geo["comunes"].values()})]
-            self.escribir(g.nombre, cols, f"{g.tabla} x", self.valor("x", g, geo["clave"]), [g.nombre])
+                    *self.originales(g, "x", {*self.excluir, geo["clave"], *geo["comunes"].values()})]
+            enlace = [censo_col, self.id_portafolio("x"), self.fila_origen(g),
+                      *self.clave_original({"vivienda": [geo["clave"]]}, g)]
+            self.escribir(g.nombre, cols, enlace, f"{g.tabla} x", f"{g.tabla} x", "id_portafolio", [g.nombre])
 
 
 def md5(ruta: Path) -> str:

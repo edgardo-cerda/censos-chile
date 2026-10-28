@@ -28,6 +28,7 @@ censos-chile-datos/
     2002/  viviendas.parquet  hogares.parquet  personas.parquet  portafolios.parquet
     2017/  viviendas.parquet  hogares.parquet  personas.parquet
     2024/  viviendas.parquet  hogares.parquet  personas.parquet
+      enlaces/               en cada censo: un archivo por tabla con el vínculo al archivo original
     manifiesto.csv           filas, columnas, md5, archivo original, commit y fecha
   armonizado/                capa 2: variables comparables, mismo esquema en todos los censos
     viviendas/<censo>.parquet  hogares/<censo>.parquet  personas/<censo>.parquet
@@ -35,8 +36,8 @@ censos-chile-datos/
 
 La capa 1 cambia la forma pero no el contenido: cada código queda como venía. La capa 2 cambia el
 contenido según las fichas de `metadatos/variables/`. Toda cifra de la capa 2 se puede rastrear
-hasta la capa 1 (por los identificadores) y de ahí hasta la fila del archivo original
-(`fila_origen`). Las rutas están en `config.yaml` (`estandarizado`, `armonizado`, `temporal`).
+hasta la capa 1 (por los identificadores) y de ahí, con los archivos de enlace, hasta la fila del
+archivo original (`fila_origen`) o su clave original. Las rutas están en `config.yaml` (`estandarizado`, `armonizado`, `temporal`).
 
 Todo el procesamiento es en Python con DuckDB (`herramientas/requirements.txt`); las utilidades
 comunes están en `pipelines/comun.py`.
@@ -52,7 +53,8 @@ tabla, sus claves, la tabla geográfica y los valores nulos.
 **Tablas.** Todos los censos tienen `viviendas`, `hogares` y `personas`.
 - 1992 agrega `piezas` (de `uso_piezas`) y 1992 y 2002 conservan `portafolios` completa: incluye
   los portafolios sin viviendas (2 en 1992 y 25.627 en 2002).
-- En 1992 y 2002 las columnas de `portafolios` también se copian en `viviendas`, y comuna, área y
+- En 1992 y 2002 las columnas de `portafolios` también se copian en `viviendas` (con
+  `id_portafolio`, salvo el número de portafolio, que va al enlace), y comuna, área y
   distrito en hogares y personas, para no tener que unir tablas en cada consulta.
 - En 2002 `hogares` se reconstruye desde personas: solo claves, geografía y `n_personas` (la entrega
   no trae las preguntas de hogar).
@@ -63,11 +65,12 @@ tabla, sus claves, la tabla geográfica y los valores nulos.
 |---|---|---|---|
 | `censo` | SMALLINT | todas | |
 | `id_vivienda` | BIGINT | todas menos portafolios | correlativo en el orden de la clave original de la vivienda |
+| `id_portafolio` | BIGINT | portafolios, viviendas (1992, 2002) | correlativo en el orden del número de portafolio |
 | `id_hogar` | BIGINT | hogares, personas | `id_vivienda * 100 + n_hogar` |
 | `id_persona` | BIGINT | personas | `id_hogar * 10000 + n_persona` |
+| `id_pieza` | BIGINT | piezas (1992) | correlativo en el orden de `Portafolio` + `Vivienda` + `Pieza` |
 | `n_hogar`, `n_persona`, `n_pieza` | SMALLINT | | número de orden original (columna original renombrada) |
 | `hogar_ficticio` | BOOLEAN | hogares, personas | `n_hogar = 0` (ver más abajo) |
-| `fila_origen` | BIGINT | todas | fila del archivo original (1 = primera fila de datos); nulo en los hogares reconstruidos de 2002 |
 | `region`, `provincia` | SMALLINT | | como vienen (2017, 2024); nulo si la entrega no los trae |
 | `comuna` | INTEGER | | código de la entrega (1992: «Origen 3»; resto: DPA2018) |
 | `area`, `distrito` | SMALLINT | | como vienen; 2024 no trae distrito |
@@ -76,6 +79,22 @@ Así, una persona se une a su hogar o a su vivienda con una sola columna, igual 
 Los multiplicadores cubren con holgura los máximos observados (92 hogares en una vivienda y 7.473
 personas en un hogar); el pipeline se detiene si algún censo los supera.
 
+**Enlace con los originales.** Lo que solo sirve para volver al archivo original no está en las
+tablas, sino en `<censo>/enlaces/<tabla>.parquet`: una fila por cada fila de la tabla, en el mismo
+orden, con el identificador de la tabla, `fila_origen` (fila del archivo original, 1 = primera fila
+de datos) y la clave original completa, con su tipo y su nombre estandarizado:
+
+| Censo | Clave original en el enlace |
+|---|---|
+| 1992 | `portafolio`, `vivienda` + `hogar`, `persona` o `pieza`; portafolios: `portafolios` |
+| 2002 | `portafolio`, `vn` + `hn`, `pn`; portafolios: `portafolio` |
+| 2017 | `id_zona_loc`, `nviv` + `nhogar`, `personan` |
+| 2024 | `id_vivienda_orig` + `id_hogar_orig`, `id_persona_orig` |
+
+Los números de hogar, persona y pieza se repiten en el enlace para que la clave original quede
+completa, pero también siguen en las tablas (`n_hogar`, `n_persona`, `n_pieza`) porque tienen
+significado propio. En los hogares reconstruidos de 2002, `fila_origen` es nulo.
+
 **Hogar 0.** En 1992 y 2024 el hogar 0 agrupa a las personas que no forman parte de un hogar
 particular (viviendas colectivas y personas en situación de calle o en tránsito). Se mantiene como un
 hogar propio marcado con `hogar_ficticio`. En 2002 y 2017 no existe hogar 0 (esas personas tienen
@@ -83,8 +102,9 @@ hogar 1); para todos los censos, la capa 2 trae `hogar_particular`.
 
 **Nombres.** Las demás columnas conservan su nombre original en minúsculas, ASCII y con guion bajo
 (`Agua_cañeria` → `agua_caneria`, `P18` → `p18`). Si coinciden con una columna común se les agrega
-`_orig` (2024: `id_vivienda_orig`). La correspondencia completa entre cada columna de la capa 1 y su
-tabla y variable originales está en `metadatos/estructura/variables_estandarizadas.csv`.
+`_orig` (2024: `id_vivienda_orig`). La correspondencia completa entre cada columna de la capa 1
+(tabla y archivo, de datos o de enlace) y su tabla y variable originales está en
+`metadatos/estructura/variables_estandarizadas.csv`.
 
 **Valores.** Los códigos se conservan tal cual (0, 98, 99, -66, -99…). Solo pasan a NULL el campo
 vacío y el `NA` de las exportaciones desde R (1992 y 2002). Esas exportaciones escriben algunos
@@ -95,13 +115,15 @@ chico que alcance (TINYINT, SMALLINT, INTEGER o BIGINT); si no, queda como texto
 nombre de R con el número de fila se reemplaza por `fila_origen` tras verificar que coinciden.
 
 **Filas sin vivienda.** 112 piezas de 1992 apuntan a viviendas que no existen en la entrega. Se
-conservan con `id_vivienda` nulo; la ficha de estructura declara su número (`huerfanas`) y el
-pipeline se detiene si cambia.
+conservan con `id_vivienda` nulo (pero con su `id_pieza`); la ficha de estructura declara su número
+(`huerfanas`) y el pipeline se detiene si cambia.
 
 **Controles** (`validacion/validar_estandarizado.py` → `validacion/controles_estandarizado.csv`):
 md5 de los archivos; mismas filas que el original; identificadores únicos y sin nulos; enlaces
-vivienda–hogar–persona completos; comuna y área sin nulos; y cada variable original reproduce el
-inventario de `metadatos/inventario/` (frecuencias completas o nulos, distintos, mínimo y máximo).
+portafolio–vivienda–hogar–persona completos; cada enlace con los mismos identificadores que su
+tabla (uno a uno), clave original única y `fila_origen` de 1 a n; comuna y área sin nulos; y cada
+variable original (incluidas las claves del enlace) reproduce el inventario de
+`metadatos/inventario/` (frecuencias completas o nulos, distintos, mínimo y máximo).
 
 ## Capa 2: armonizado
 

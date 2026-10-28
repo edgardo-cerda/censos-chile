@@ -4,7 +4,7 @@ Punto de retorno para retomar el trabajo. El plan completo y su lista de tareas 
 [plan.md](plan.md); este archivo resume dónde quedó cada punto, las decisiones tomadas y lo
 que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 
-**Última actualización:** 2026-10-27 (solo commits locales; nada subido a GitHub todavía).
+**Última actualización:** 2026-10-28 (solo commits locales; nada subido a GitHub todavía).
 
 ## Decisiones tomadas
 
@@ -18,6 +18,7 @@ que sigue. Actualizarlo al cerrar cada sesión de trabajo.
 | 2012 excluido | Resultados no validados como estadística oficial. |
 | Edad | En los microdatos armonizados se conserva la edad original (`edad`) y se agrega `edad_85` con tope común de 85 años (2024 trunca en 85); la edad suprimida de 2024 es -3 y en los tabulados se informa como "ignorada". |
 | Estructura de microdatos | Tres capas: originales; capa 1 `estandarizado` (mismo contenido, forma común: Parquet, tablas viviendas/hogares/personas, identificadores y geografía comunes, nombres en minúsculas); capa 2 `armonizado` (variables de las fichas, mismo esquema en todos los censos). Ver [estructura_microdatos.md](estructura_microdatos.md). |
+| Enlace con los originales | En la capa 1, lo que vincula cada fila con su archivo original (`fila_origen` y la clave original: portafolio y vivienda, `id_zona_loc` y `nviv`, `id_vivienda` de 2024, más hogar, persona o pieza) va solo en un archivo aparte, `<censo>/enlaces/<tabla>.parquet`, unido por el identificador de la tabla. `n_hogar`, `n_persona` y `n_pieza` siguen en las tablas porque tienen significado propio. Piezas (1992) y portafolios (1992, 2002) tienen identificador propio (`id_pieza`, `id_portafolio`). |
 | Hogar 0 | El hogar 0 de 1992 y 2024 (personas fuera de hogares particulares) se mantiene como hogar propio, marcado con `hogar_ficticio`; la capa 2 agrega `hogar_particular` para todos los censos. |
 | Faltantes armonizados | -1 no aplica, -2 ignorado, -3 suprimido; NULL = el censo no hizo la pregunta. |
 | Procesamiento | Scripts en Python con DuckDB (se probó R y se descartó en favor de Python). |

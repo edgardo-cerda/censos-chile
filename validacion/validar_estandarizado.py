@@ -3,12 +3,14 @@
   1. Archivos: existen y su md5 coincide con el manifiesto.
   2. Filas: cada tabla tiene las mismas filas que su archivo original (metadatos/inventario/archivos.csv);
      en los hogares reconstruidos de 2002, la suma de n_personas es el total de personas.
-  3. Identificadores: únicos y sin nulos (salvo las filas sin vivienda declaradas en la ficha);
-     fila_origen va de 1 a n.
-  4. Enlaces: todo hogar tiene vivienda, toda persona tiene hogar y la jerarquía de los
+  3. Identificadores: únicos y sin nulos.
+  4. Enlaces entre tablas: todo hogar tiene vivienda, toda persona tiene hogar, toda vivienda
+     tiene portafolio (salvo las filas sin vivienda declaradas en la ficha) y la jerarquía de los
      identificadores es coherente (id_hogar // 100 = id_vivienda).
-  5. Geografía: comuna y área sin nulos en viviendas, hogares y personas.
-  6. Contenido: cada variable original reproduce el inventario de metadatos/inventario/
+  5. Archivo de enlace: mismos identificadores que la tabla (uno a uno), clave original única y
+     fila_origen de 1 a n.
+  6. Geografía: comuna y área sin nulos en viviendas, hogares y personas.
+  7. Contenido: cada variable original reproduce el inventario de metadatos/inventario/
      (frecuencias completas cuando las hay; si no, nulos, valores distintos, mínimo y máximo).
 
 Escribe validacion/controles_estandarizado.csv y termina con error si algún control falla.
@@ -31,8 +33,10 @@ from pipelines.estandarizar_microdatos import CENSOS, MAPA, md5  # noqa: E402
 
 SALIDA = RAIZ / "validacion" / "controles_estandarizado.csv"
 INVENTARIO = RAIZ / "metadatos" / "inventario"
-CLAVES = {"viviendas": "id_vivienda", "hogares": "id_hogar", "personas": "id_persona", "piezas": "id_vivienda, n_pieza"}
-ENLACES = {"hogares": ("id_vivienda", "viviendas"), "personas": ("id_hogar", "hogares"), "piezas": ("id_vivienda", "viviendas")}
+CLAVES = {"viviendas": "id_vivienda", "hogares": "id_hogar", "personas": "id_persona", "piezas": "id_pieza",
+          "portafolios": "id_portafolio"}
+ENLACES = {"hogares": ("id_vivienda", "viviendas"), "personas": ("id_hogar", "hogares"), "piezas": ("id_vivienda", "viviendas"),
+           "viviendas": ("id_portafolio", "portafolios")}
 
 
 class Validador:
@@ -45,8 +49,9 @@ class Validador:
         self.filas_original = {a["tabla"]: int(a["filas"]) for a in archivos if a["censo"] == censo}
         self.resultados: list[dict] = []
 
-    def pq(self, tabla: str) -> str:
-        return f"read_parquet({ruta_sql(Path(self.config['estandarizado']) / self.censo / f'{tabla}.parquet')})"
+    def pq(self, tabla: str, enlace: bool = False) -> str:
+        archivo = f"enlaces/{tabla}.parquet" if enlace else f"{tabla}.parquet"
+        return f"read_parquet({ruta_sql(Path(self.config['estandarizado']) / self.censo / archivo)})"
 
     def registrar(self, tabla: str, control: str, ok: bool, detalle: str = "") -> None:
         self.resultados.append({"censo": self.censo, "tabla": tabla, "control": control,
@@ -64,12 +69,14 @@ class Validador:
         for m in self.manifiesto:
             ruta = Path(self.config["estandarizado"]) / m["archivo"]
             self.registrar(m["tabla"], "archivo y md5", ruta.exists() and md5(ruta) == m["md5"], m["archivo"])
+        tablas = {m["tabla"] for m in self.manifiesto}
         for m in self.manifiesto:
-            mensaje(f"[{self.censo}] {m['tabla']}")
-            self.validar_tabla(m["tabla"])
+            if m["contenido"] == "datos":
+                mensaje(f"[{self.censo}] {m['tabla']}")
+                self.validar_tabla(m["tabla"], tablas)
         return self.resultados
 
-    def validar_tabla(self, tabla: str) -> None:
+    def validar_tabla(self, tabla: str, tablas: set[str]) -> None:
         pq = self.pq(tabla)
         n = uno(self.con, f"SELECT count(*) FROM {pq}")
         origen = self.origen(tabla)
@@ -84,21 +91,13 @@ class Validador:
             suma = uno(self.con, f"SELECT sum(n_personas) FROM {pq}")
             self.registrar(tabla, "suma de n_personas = personas", suma == personas, f"{suma} / {personas}")
 
-        # 3. Identificadores y fila de origen.
-        if tabla in CLAVES:
-            clave = CLAVES[tabla]
-            primera = clave.split(",")[0]
-            d, nulos = self.con.execute(f"""SELECT count(DISTINCT ({clave})) FILTER (WHERE {primera} IS NOT NULL),
-                                                   count(*) FILTER (WHERE {primera} IS NULL) FROM {pq}""").fetchone()
-            self.registrar(tabla, f"{clave} único y sin nulos (salvo huérfanas declaradas)",
-                           d + nulos == n and nulos == huerfanas, f"{d} distintos, {nulos} nulos")
-        d, a, b, v = self.con.execute(f"""SELECT count(DISTINCT fila_origen), min(fila_origen), max(fila_origen),
-                                                 count(fila_origen) FROM {pq}""").fetchone()
-        if v:
-            self.registrar(tabla, "fila_origen de 1 a n", d == n and a == 1 and b == n, f"{d} distintos, {a} a {b}")
+        # 3. Identificador.
+        clave = CLAVES[tabla]
+        d, v = self.con.execute(f"SELECT count(DISTINCT {clave}), count({clave}) FROM {pq}").fetchone()
+        self.registrar(tabla, f"{clave} único y sin nulos", d == n and v == n, f"{d} distintos, {n - v} nulos")
 
-        # 4. Enlaces y jerarquía de identificadores.
-        if tabla in ENLACES:
+        # 4. Enlaces entre tablas y jerarquía de identificadores.
+        if tabla in ENLACES and ENLACES[tabla][1] in tablas:
             col, destino = ENLACES[tabla]
             h = uno(self.con, f"SELECT count(*) FROM {pq} x ANTI JOIN {self.pq(destino)} y ON x.{col} = y.{col}")
             self.registrar(tabla, f"{col} existe en {destino}", h == huerfanas, f"{h} huérfanas (declaradas: {huerfanas})")
@@ -111,14 +110,34 @@ class Validador:
                                   OR id_persona % 10000 <> n_persona) FROM {pq}""")
             self.registrar(tabla, "id_persona = id_hogar * 10000 + n_persona", m == 0, f"{m} incoherentes")
 
-        # 5. Geografía.
+        # 5. Archivo de enlace.
+        self.validar_enlace(tabla, n)
+
+        # 6. Geografía.
         if tabla in ("viviendas", "hogares", "personas"):
             g = uno(self.con, f"SELECT count(*) FILTER (WHERE comuna IS NULL OR area IS NULL) FROM {pq}")
             self.registrar(tabla, "comuna y área sin nulos", g == 0, f"{g} nulos")
 
-        # 6. Contenido de cada variable original contra el inventario.
+        # 7. Contenido de cada variable original contra el inventario.
         if origen:
             self.validar_contenido(tabla, origen)
+
+    def validar_enlace(self, tabla: str, n: int) -> None:
+        clave, pq, enl = CLAVES[tabla], self.pq(tabla), self.pq(tabla, enlace=True)
+        n_e = uno(self.con, f"SELECT count(*) FROM {enl}")
+        sueltas = uno(self.con, f"""SELECT count(*) FROM {pq} x FULL JOIN {enl} e ON x.{clave} = e.{clave}
+                                    WHERE x.{clave} IS NULL OR e.{clave} IS NULL""")
+        self.registrar(tabla, f"enlace: mismos {clave} que la tabla", n_e == n and sueltas == 0,
+                       f"{n_e} / {n} filas, {sueltas} sin pareja")
+        archivo = f"{self.censo}/enlaces/{tabla}.parquet"
+        claves = ", ".join(ident(m["variable"]) for m in self.mapa if m["archivo"] == archivo and m["rol"] == "enlace")
+        d = uno(self.con, f"SELECT count(DISTINCT ({claves})) FROM {enl}")
+        self.registrar(tabla, f"enlace: clave original ({claves}) única", d == n_e, f"{d} distintas")
+        d, a, b, v = self.con.execute(f"""SELECT count(DISTINCT fila_origen), min(fila_origen), max(fila_origen),
+                                                 count(fila_origen) FROM {enl}""").fetchone()
+        if v:
+            self.registrar(tabla, "enlace: fila_origen de 1 a n", d == n_e and a == 1 and b == n_e,
+                           f"{d} distintos, {a} a {b}")
 
     def validar_contenido(self, tabla: str, origen: str) -> None:
         inv_var = {v["variable"]: v for v in leer_csv(INVENTARIO / f"{self.censo}_{origen}_variables.csv")}
@@ -129,10 +148,10 @@ class Validador:
         variables = [m for m in self.mapa if m["tabla"] == tabla and m["tabla_original"] == origen
                      and m["variable_original"] in inv_var]
         malas = []
-        pq = self.pq(tabla)
         for m in variables:
             iv = inv_var[m["variable_original"]]
             c = ident(m["variable"])
+            pq = f"read_parquet({ruta_sql(Path(self.config['estandarizado']) / m['archivo'])})"
             nulos, distintos, minimo, maximo = self.con.execute(
                 f"""SELECT count(*) FILTER (WHERE {c} IS NULL), count(DISTINCT {c}),
                            min(TRY_CAST({c} AS DOUBLE)), max(TRY_CAST({c} AS DOUBLE)) FROM {pq}""").fetchone()

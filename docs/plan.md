@@ -91,6 +91,7 @@ Tablas de viviendas, hogares y personas por censo con:
 - [x] Estructura común de los microdatos en tres capas (originales, estandarizado, armonizado):
       [estructura_microdatos.md](estructura_microdatos.md). Capa 1 con `pipelines/estandarizar_microdatos.py`
       y `validacion/validar_estandarizado.py`; capa 2 con `pipelines/armonizar_microdatos.py`.
+      El vínculo con los archivos originales (fila y clave original) va en archivos de enlace aparte.
 - [ ] Variables núcleo armonizadas: fichas en borrador de región, área, sexo, edad, edad_85,
       parentesco y tipo de vivienda, ya aplicadas en la capa 2. `validacion/revisar_fichas.py`
       comprueba que la recodificación cubra todos los códigos observados. Falta revisión del autor.
