@@ -15,7 +15,8 @@ Columnas (ver docs/estructura_microdatos.md):
       <variable>_comp  comparable: categorías generales y universo común. Solo existe si difiere
                        de la común (la ficha tiene detalle, universo comparable o censos no comparables).
 Faltantes comunes: -1 no aplica, -2 ignorado, -3 suprimido; NULL = el censo no lo preguntó.
-Un código original que la ficha no prevé detiene el pipeline.
+Un código original que la ficha no prevé detiene el pipeline. No se editan valores por posibles
+inconsistencias: solo se recodifican.
 
 Escribe además validacion/controles_armonizado.csv, validacion/frecuencias_armonizado.csv y
 metadatos/concordancia/variables_armonizadas.csv (variable × censo: origen, clase y estado).
@@ -143,8 +144,6 @@ def comun_sql(nombre: str, censo: str) -> str:
         a, b = r["rango"]
         previas.append(f"WHEN {col} BETWEEN {a} AND {b} THEN {col}")
     resto = [*ramas(col, r.get("recodificacion")), *ramas(col, r.get("faltantes"))]
-    if "fuera_de_rango" in r:
-        resto.append(f"WHEN {col} IS NOT NULL THEN {r['fuera_de_rango']}")
     return caso(col, [*previas, *resto], f"{nombre} {censo}")
 
 

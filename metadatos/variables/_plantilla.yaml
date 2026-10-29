@@ -34,8 +34,7 @@ censos:
     pregunta: null             # texto de la pregunta en el cuestionario, si se conoce
     universo: {edad: {min: 15}}  # opcional: universo del censo; fuera de él, -1
     recodificacion: {}         # {código original: código común}
-    # rango: [0, 99]           # variables numéricas: valores que pasan tal cual
-    # fuera_de_rango: -2       # código para los demás valores no nulos
+    # rango: [0, 99]           # variables numéricas: valores que pasan tal cual (hasta el máximo observado)
     faltantes: {}              # {código original: -1 | -2 | -3}; `null` = valor vacío
     clase: comparable          # comparable | con_reservas | solo_comun (solo_comun: _comp nulo)
     comparabilidad: null       # diferencias de definición, universo o captura

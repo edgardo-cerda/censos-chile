@@ -181,13 +181,19 @@ categoría general de cada código.
 
 **Fichas** (`metadatos/variables/<variable>.yaml`, ver `_plantilla.yaml`). Declaran el catálogo
 común (`categorias`, con `detallado`), el `universo_comparable` y, por censo:
-- `recodificacion` (código original → código común) o, para variables numéricas, `rango` (y
-  `fuera_de_rango`, el código para los demás valores);
+- `recodificacion` (código original → código común) o, para variables numéricas, `rango` (los
+  valores que pasan tal cual, hasta el máximo observado);
 - `faltantes` (código original → -1, -2 o -3; `null` es el valor vacío);
-- `universo` del censo: fuera de él la versión común es -1, cualquiera sea el código (en 2002 el 0
-  de hijos nacidos vivos es a la vez "no aplica" y "ningún hijo");
+- `universo` del censo: fuera de él la versión común es -1 (fuera del universo las entregas solo
+  traen el código de "no aplica"; en 2002 el 0 de hijos nacidos vivos es a la vez "no aplica" y
+  "ningún hijo");
 - `clase`: `comparable` (por omisión), `con_reservas` (la reserva va en `comparabilidad`) o
   `solo_comun`.
+
+**No se editan valores.** La armonización solo recodifica: un valor declarado se conserva aunque
+parezca inconsistente (casados de 14 años, 90 hijos nacidos vivos). Las sospechas se anotan en
+`comparabilidad` y quedan para el análisis; el universo comparable puede excluir registros, pero
+por definición del universo, no por su valor.
 
 Los universos se escriben como condiciones sobre variables armonizadas (`edad: {min: 15}`,
 `sexo: {en: [2]}`, `tipo_vivienda_comp: {min: 1, max: 6}`). Un registro está fuera si alguna

@@ -8,7 +8,7 @@ universo: >
   Mujeres de 14 años o más (1992); mujeres de 15 años o más con al menos un hijo nacido vivo (2002,
   2017, 2024).
 categorias:
-  - {codigo: "0-30", etiqueta: Número de hijas e hijos vivos actualmente}
+  - {codigo: "0-93", etiqueta: Número de hijas e hijos vivos actualmente}
 universo_comparable:
   sexo: {en: [2]}
   edad: {min: 15}
@@ -33,13 +33,12 @@ censos:
     variables_originales: [P35]
     pregunta: "35. ¿Cuántos están vivos actualmente?"
     universo: {sexo: {en: [2]}, edad: {min: 15}, hijos_nacidos_vivos: {min: 1}}
-    rango: [0, 30]
+    rango: [0, 93]
     faltantes: {null: -2}
-    fuera_de_rango: -2
     comparabilidad: >
       Universo inferido de los datos: las mujeres sin hijos nacidos vivos tienen 0 o vacío (salto de
-      la pregunta). Entre las que tuvieron hijos, el vacío se toma como ignorado. Valores sobre 30:
-      ignorado (probables errores de digitación).
+      la pregunta). Entre las que tuvieron hijos, el vacío se toma como ignorado. Los valores sobre 30
+      (55 mujeres) se conservan tal cual.
     estado: borrador
   2017:
     tabla: personas

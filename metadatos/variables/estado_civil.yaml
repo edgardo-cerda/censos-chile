@@ -42,7 +42,7 @@ censos:
     faltantes: {0: -1}
     comparabilidad: >
       Entre los 14 años (fuera del universo comparable) hay 21.406 casados y 3.651 convivientes de
-      241.434, una proporción alta: por verificar.
+      241.434, una proporción alta. Se conservan tal cual en la versión común.
     estado: borrador
   2002:
     tabla: personas

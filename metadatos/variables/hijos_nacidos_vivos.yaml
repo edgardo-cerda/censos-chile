@@ -6,12 +6,12 @@ nivel: ampliado
 definicion: Número total de hijas e hijos nacidos vivos que ha tenido la mujer.
 universo: Mujeres de 14 años o más (1992) o de 15 años o más (2002, 2017, 2024).
 categorias:
-  - {codigo: "0-30", etiqueta: Número de hijas e hijos nacidos vivos}
+  - {codigo: "0-99", etiqueta: Número de hijas e hijos nacidos vivos}
 universo_comparable:
   sexo: {en: [2]}
   edad: {min: 15}
 
-# rango: valores que pasan tal cual; fuera_de_rango: código para los demás valores no nulos.
+# rango: valores que pasan tal cual (el máximo observado en cada censo).
 nota_armonizacion: >
   Variable numérica: la versión común es el número declarado; la comparable aplica el universo
   común (mujeres de 15 años o más), así que en 1992 las mujeres de 14 años quedan como no aplica.
@@ -30,13 +30,13 @@ censos:
     variables_originales: [P34]
     pregunta: "34. ¿Cuántas hijas e hijos nacidos vivos ha tenido en total?"
     universo: {sexo: {en: [2]}, edad: {min: 15}}
-    rango: [0, 30]
+    rango: [0, 99]
     faltantes: {null: -2}
-    fuera_de_rango: -2
     comparabilidad: >
       El 0 de la base es a la vez "no aplica" (hombres y menores de 15) y "ningún hijo": se
       distinguen por el universo. Sin código de ignorado: el vacío (345.063 mujeres) se toma como
-      ignorado. 150 mujeres declaran entre 31 y 99 hijos (probables errores de digitación): ignorado.
+      ignorado. 105 mujeres declaran entre 31 y 99 hijos: se conservan tal cual (no se editan
+      valores por posibles inconsistencias).
     estado: borrador
   2017:
     tabla: personas
